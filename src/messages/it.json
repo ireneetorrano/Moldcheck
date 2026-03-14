@@ -1,0 +1,39 @@
+{
+  "Navigation": {
+    "health": "Salute",
+    "moldTypes": "Tipi di muffa",
+    "remediation": "Bonifica",
+    "inspection": "Ispezione",
+    "portugal": "Portogallo",
+    "services": "Servizi",
+    "shop": "Negozio",
+    "tools": "Strumenti",
+    "articles": "Articoli",
+    "independenceBadge": "Diagnosi indipendente. Non vendiamo trattamenti."
+  },
+  "Footer": {
+    "articles": "Articoli",
+    "articlesHint": "Cluster editoriale fondativo",
+    "services": "Servizi",
+    "independentInspection": "Ispezione indipendente",
+    "about": "Chi siamo",
+    "aboutUs": "Chi siamo",
+    "contact": "Contatti",
+    "legal": "Legale",
+    "privacy": "Privacy"
+  },
+  "Articles": {
+    "eyebrow": "Pubblicazione editoriale",
+    "indexTitle": "Articoli",
+    "indexDescription": "Contenuti editoriali approfonditi pronti per una sezione pubblica multilingue.",
+    "emptyTitle": "La sezione articoli è pronta",
+    "emptyDescription": "A4 apparirà qui non appena il contenuto localizzato sarà aggiunto e completo.",
+    "readArticle": "Leggi l'articolo",
+    "publishedLabel": "Pubblicato",
+    "reviewedLabel": "Revisionato",
+    "sourcesTitle": "Fonti",
+    "metaTitle": "Articoli | MoldCheck.pt",
+    "metaDescription": "Articoli editoriali indipendenti su muffa, umidità, ispezione e salute indoor."
+  }
+}
+
