@@ -9,7 +9,7 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocal
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const params = useParams();
-  const href = pathname.includes("[") ? { pathname, params } : pathname;
+  const isDynamicPath = pathname.includes("[");
 
   return (
     <div className={`language-switcher${open ? " is-open" : ""}`}>
@@ -25,14 +25,25 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocal
         <ul className="language-switcher__menu">
           {activeLocales.map((locale) => (
             <li key={locale}>
-              <Link
-                className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
-                href={href}
-                locale={locale}
-                onClick={() => setOpen(false)}
-              >
-                {localeLabels[locale]}
-              </Link>
+              {isDynamicPath ? (
+                <Link
+                  className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
+                  href={{ pathname, params } as never}
+                  locale={locale}
+                  onClick={() => setOpen(false)}
+                >
+                  {localeLabels[locale]}
+                </Link>
+              ) : (
+                <Link
+                  className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
+                  href={pathname as never}
+                  locale={locale}
+                  onClick={() => setOpen(false)}
+                >
+                  {localeLabels[locale]}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
