@@ -51,16 +51,13 @@ p { margin: 0; }
 .site-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
   color: var(--mc-white);
 }
-.site-logo__mark {
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 999px;
-  background: var(--mc-teal-light);
+.site-logo__image {
+  width: auto;
+  height: 2.25rem;
+  object-fit: contain;
 }
-.site-logo__wordmark { font-family: var(--font-heading); font-size: 1.4rem; }
 .site-nav { display: flex; justify-content: center; gap: 0.35rem; flex-wrap: wrap; }
 .site-nav__link {
   color: rgba(255,255,255,0.92);

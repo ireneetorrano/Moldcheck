@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import { activeLocales, localeLabels, localeMarkers, type ActiveLocale } from "@/config/locales";
+import { Link, usePathname } from "@/lib/i18n/navigation";
 
 export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocale }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const params = useParams();
+  const href = pathname.includes("[") ? { pathname, params } : pathname;
 
   return (
     <div className={`language-switcher${open ? " is-open" : ""}`}>
@@ -20,12 +25,14 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocal
         <ul className="language-switcher__menu">
           {activeLocales.map((locale) => (
             <li key={locale}>
-              <a
+              <Link
                 className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
-                href={`/${locale}`}
+                href={href}
+                locale={locale}
+                onClick={() => setOpen(false)}
               >
                 {localeLabels[locale]}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
