@@ -101,6 +101,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/(site)/[locale]/editorial-policy/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/editorial-policy">> = Specific
+  const handler = {} as typeof import("../../src/app/(site)/[locale]/editorial-policy/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/(site)/[locale]/health/[slug]/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/[locale]/health/[slug]">> = Specific
@@ -285,6 +294,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/checkout">> = Specific
   const handler = {} as typeof import("../../src/app/api/checkout/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/newsletter/calculator-completed/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/newsletter/calculator-completed">> = Specific
+  const handler = {} as typeof import("../../src/app/api/newsletter/calculator-completed/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/newsletter/subscribe/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/newsletter/subscribe">> = Specific
+  const handler = {} as typeof import("../../src/app/api/newsletter/subscribe/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

@@ -36,6 +36,8 @@ declare namespace __next_route_internal_types__ {
     | `/_app`
     | `/_document`
     | `/api/checkout`
+    | `/api/newsletter/calculator-completed`
+    | `/api/newsletter/subscribe`
     | `/api/preview`
     | `/api/revalidate`
     | `/api/search`
@@ -46,6 +48,7 @@ declare namespace __next_route_internal_types__ {
     | `/${SafeSlug<T>}/articles`
     | `/${SafeSlug<T>}/articles/${SafeSlug<T>}`
     | `/${SafeSlug<T>}/contact`
+    | `/${SafeSlug<T>}/editorial-policy`
     | `/${SafeSlug<T>}/health`
     | `/${SafeSlug<T>}/health/${SafeSlug<T>}`
     | `/${SafeSlug<T>}/inspection`

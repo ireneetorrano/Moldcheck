@@ -7,7 +7,8 @@
     "dev:webpack": "next dev",
     "build": "next build",
     "start": "next start",
-    "clean": "node -e \"const fs=require('fs'); for (const dir of ['.next','.next-dev','next-dist']) { try { fs.rmSync(dir,{recursive:true,force:true}); } catch {} }\""
+    "clean": "node -e \"const fs=require('fs'); for (const dir of ['.next','.next-dev','next-dist']) { try { fs.rmSync(dir,{recursive:true,force:true}); } catch {} }\"",
+    "test": "vitest --run"
   },
   "dependencies": {
     "next": "15.5.12",
@@ -16,9 +17,16 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^24.3.0",
     "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.7",
-    "typescript": "5.9.3"
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "fast-check": "^4.6.0",
+    "jsdom": "^29.0.0",
+    "typescript": "5.9.3",
+    "vitest": "^4.1.0"
   }
 }

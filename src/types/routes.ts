@@ -10,6 +10,7 @@ export type GlobalRouteKey =
   | "tools"
   | "privacy"
   | "contact"
-  | "search";
+  | "search"
+  | "editorialPolicy";
 export type SectionKey = "mold-types" | "remediation" | "health" | "portugal" | "inspection" | "causes" | "species" | "legislation";
 export type LocalizedRouteMap<T extends string> = Record<T, Record<ActiveLocale, string>>;

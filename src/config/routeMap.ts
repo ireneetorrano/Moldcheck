@@ -27,6 +27,15 @@ export const globalRouteSlugs: LocalizedRouteMap<Exclude<GlobalRouteKey, "home" 
   },
   contact: { pt: "contacto", en: "contact", fr: "contact", de: "kontakt", nl: "contact", it: "contatti", es: "contacto" },
   search: { pt: "pesquisa", en: "search", fr: "recherche", de: "suche", nl: "zoeken", it: "cerca", es: "buscar" },
+  editorialPolicy: {
+    pt: "politica-editorial",
+    en: "editorial-policy",
+    fr: "politique-editoriale",
+    de: "redaktionsrichtlinie",
+    nl: "redactioneel-beleid",
+    it: "politica-editoriale",
+    es: "politica-editorial",
+  },
 };
 
 export const thankYouSlugs: Record<ActiveLocale, string> = {

@@ -34,6 +34,7 @@ interface HomeLocaleContent {
 
 const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
   pt: {
+    eyebrow: "RECURSO EDITORIAL INDEPENDENTE SOBRE BOLOR, HUMIDADE E QUALIDADE DO AR INTERIOR",
     description:
       "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa — para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
     heroTitle: "Portugal tem o segundo pior problema de bolor da Europa. A maioria das pessoas não sabe.",

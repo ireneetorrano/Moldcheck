@@ -166,6 +166,15 @@ const globalRouteSlugs = {
         nl: "zoeken",
         it: "cerca",
         es: "buscar"
+    },
+    editorialPolicy: {
+        pt: "politica-editorial",
+        en: "editorial-policy",
+        fr: "politique-editoriale",
+        de: "redaktionsrichtlinie",
+        nl: "redactioneel-beleid",
+        it: "politica-editoriale",
+        es: "politica-editorial"
     }
 };
 const thankYouSlugs = {
