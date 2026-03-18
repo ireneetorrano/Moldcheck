@@ -2204,13 +2204,20 @@ function ScrollReset() {
     _s();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ScrollReset.useEffect": ()=>{
-            if ("object" !== "undefined" && "scrollRestoration" in history) {
-                history.scrollRestoration = "manual";
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            // Let the browser restore scroll position on back/forward.
+            if ("scrollRestoration" in history) {
+                history.scrollRestoration = "auto";
             }
-            window.scrollTo({
-                top: 0,
-                behavior: "instant"
-            });
+            // Only force scroll-to-top on a fresh navigation, not on back/forward.
+            const navEntry = performance.getEntriesByType("navigation")[0];
+            if ((navEntry === null || navEntry === void 0 ? void 0 : navEntry.type) === "navigate") {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "instant"
+                });
+            }
         }
     }["ScrollReset.useEffect"], []);
     return null;

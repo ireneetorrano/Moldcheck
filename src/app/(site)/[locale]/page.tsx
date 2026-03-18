@@ -3,6 +3,10 @@ import { GlobalPageBlocks } from "@/features/content/components/GlobalPageBlocks
 import { buildGlobalPageMetadata, getGlobalPageContent } from "@/lib/sanity/pages";
 import { TrustBar } from "@/components/layout/TrustBar";
 import { HomeProblemSection } from "@/features/home/components/HomeProblemSection";
+import { HomeConflictSection } from "@/features/home/components/HomeConflictSection";
+import { HomeFeaturedSection } from "@/features/home/components/HomeFeaturedSection";
+import { HomeNextStepsSection } from "@/features/home/components/HomeNextStepsSection";
+import { HomeAboutSection } from "@/features/home/components/HomeAboutSection";
 
 export async function generateMetadata({
   params,
@@ -40,6 +44,10 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
         ) : null}
       </div>
       <HomeProblemSection locale={locale} />
+      <HomeConflictSection locale={locale} />
+      <HomeFeaturedSection locale={locale} />
+      <HomeNextStepsSection locale={locale} />
+      <HomeAboutSection locale={locale} />
       <GlobalPageBlocks page={page} disclosureVariant="homepage" />
     </>
   );

@@ -1,5 +1,7 @@
 import type { ActiveLocale } from "@/config/locales";
 import { getHomeProblemContent } from "@/features/content/data/homeContent";
+import { getArticlePath } from "@/lib/routing/paths";
+import { a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 
 /** Renders a paragraph, bolding any "Word:" prefix at the start. */
 function ProblemParagraph({ text }: { text: string }) {
@@ -20,6 +22,7 @@ function ProblemParagraph({ text }: { text: string }) {
 export function HomeProblemSection({ locale }: { locale: ActiveLocale }) {
   const { problemEyebrow, problemTitle, problemBody, problemLink } = getHomeProblemContent(locale);
   const paragraphs = problemBody.split("\n\n").filter(Boolean);
+  const articleHref = getArticlePath(locale, a4PortugalSlugs[locale]);
 
   return (
     <section className="home-problem">
@@ -31,7 +34,7 @@ export function HomeProblemSection({ locale }: { locale: ActiveLocale }) {
             <ProblemParagraph key={p} text={p} />
           ))}
         </div>
-        <a href="#" className="home-problem__link">{problemLink}</a>
+        <a href={articleHref} className="home-problem__link">{problemLink}</a>
       </div>
       <div className="home-problem__image-wrap">
         <img

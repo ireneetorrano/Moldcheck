@@ -801,9 +801,7 @@ function getEditorialPolicyContent(locale) {
                 layout: "utility",
                 cards: content.contactCards
             }
-        ],
-        disclosureTitle: content.disclosureTitle,
-        disclosureText: content.disclosureText
+        ]
     };
 }
 }),
@@ -873,7 +871,9 @@ function PageShell({ eyebrow, title, description, children }) {
 
 __turbopack_context__.s([
     "default",
-    ()=>EditorialPolicyPage
+    ()=>EditorialPolicyPage,
+    "generateMetadata",
+    ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/content/components/GlobalPageBlocks.tsx [app-rsc] (ecmascript)");
@@ -883,6 +883,44 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$
 ;
 ;
 ;
+const editorialPolicyMeta = {
+    pt: {
+        title: "Política Editorial — MoldCheck.pt",
+        description: "Como o MoldCheck.pt produz, revê e publica conteúdo. Independência editorial, fontes científicas e transparência sobre conflitos de interesse."
+    },
+    en: {
+        title: "Editorial Policy — MoldCheck.pt",
+        description: "How MoldCheck.pt produces, reviews and publishes content. Editorial independence, scientific sources and transparency about conflicts of interest."
+    },
+    fr: {
+        title: "Politique Éditoriale — MoldCheck.pt",
+        description: "Comment MoldCheck.pt produit, révise et publie du contenu. Indépendance éditoriale, sources scientifiques et transparence sur les conflits d'intérêts."
+    },
+    de: {
+        title: "Redaktionsrichtlinie — MoldCheck.pt",
+        description: "Wie MoldCheck.pt Inhalte erstellt, prüft und veröffentlicht. Redaktionelle Unabhängigkeit, wissenschaftliche Quellen und Transparenz bei Interessenkonflikten."
+    },
+    nl: {
+        title: "Redactioneel Beleid — MoldCheck.pt",
+        description: "Hoe MoldCheck.pt content produceert, beoordeelt en publiceert. Redactionele onafhankelijkheid, wetenschappelijke bronnen en transparantie over belangenconflicten."
+    },
+    it: {
+        title: "Politica Editoriale — MoldCheck.pt",
+        description: "Come MoldCheck.pt produce, rivede e pubblica contenuti. Indipendenza editoriale, fonti scientifiche e trasparenza sui conflitti di interesse."
+    },
+    es: {
+        title: "Política Editorial — MoldCheck.pt",
+        description: "Cómo MoldCheck.pt produce, revisa y publica contenido. Independencia editorial, fuentes científicas y transparencia sobre conflictos de interés."
+    }
+};
+async function generateMetadata({ params }) {
+    const { locale } = await params;
+    const meta = editorialPolicyMeta[locale] ?? editorialPolicyMeta.en;
+    return {
+        title: meta.title,
+        description: meta.description
+    };
+}
 async function EditorialPolicyPage({ params }) {
     const { locale } = await params;
     const page = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$data$2f$editorialPolicyContent$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getEditorialPolicyContent"])(locale);
@@ -894,14 +932,14 @@ async function EditorialPolicyPage({ params }) {
                 description: page.description
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/editorial-policy/page.tsx",
-                lineNumber: 16,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GlobalPageBlocks"], {
                 page: page
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/editorial-policy/page.tsx",
-                lineNumber: 17,
+                lineNumber: 65,
                 columnNumber: 7
             }, this)
         ]

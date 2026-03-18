@@ -3,15 +3,26 @@
 import { useEffect } from "react";
 
 /**
- * Disables browser scroll restoration and forces the page to the top on every
- * mount — including hard reloads — so the hero is always the first thing seen.
+ * Hands scroll restoration back to the browser for back/forward navigation,
+ * and only scrolls to top on genuine fresh page loads (type === "navigate").
  */
 export function ScrollReset() {
   useEffect(() => {
-    if (typeof window !== "undefined" && "scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
+    if (typeof window === "undefined") return;
+
+    // Let the browser restore scroll position on back/forward.
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "auto";
     }
-    window.scrollTo({ top: 0, behavior: "instant" });
+
+    // Only force scroll-to-top on a fresh navigation, not on back/forward.
+    const navEntry = performance.getEntriesByType(
+      "navigation"
+    )[0] as PerformanceNavigationTiming | undefined;
+
+    if (navEntry?.type === "navigate") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
   }, []);
 
   return null;

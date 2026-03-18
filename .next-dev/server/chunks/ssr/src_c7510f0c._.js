@@ -671,100 +671,93 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$newslette
 const copy = {
     pt: {
         brandBody: "Publicação editorial independente sobre bolor, humidade e qualidade do ar interior em Portugal.",
+        productsLabel: "Produtos",
         articles: "Artigos",
-        articlesLabel: "Artigos",
-        company: "Companhia",
+        company: "Empresa",
         about: "Sobre",
         editorialPolicy: "Política editorial",
         contact: "Contacto",
         legal: "Legal",
-        privacy: "Privacidade",
+        privacy: "Política de Privacidade",
         services: "Serviços",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Conteúdo informativo. Não substitui inspeção profissional nem aconselhamento médico."
     },
     en: {
         brandBody: "Independent editorial publication on mold, damp and indoor air quality in Portugal.",
+        productsLabel: "Products",
         articles: "Articles",
-        articlesLabel: "Articles",
         company: "Company",
         about: "About",
         editorialPolicy: "Editorial policy",
         contact: "Contact",
         legal: "Legal",
-        privacy: "Privacy",
+        privacy: "Privacy Policy",
         services: "Services",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Informational content only. Not a substitute for professional inspection or medical advice."
     },
     fr: {
         brandBody: "Publication éditoriale indépendante sur les moisissures, l'humidité et la qualité de l'air intérieur au Portugal.",
+        productsLabel: "Produits",
         articles: "Articles",
-        articlesLabel: "Articles",
         company: "Entreprise",
         about: "À propos",
         editorialPolicy: "Politique éditoriale",
         contact: "Contact",
         legal: "Mentions légales",
-        privacy: "Confidentialité",
+        privacy: "Politique de confidentialité",
         services: "Services",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Contenu informatif uniquement. Ne remplace pas une inspection professionnelle ni un avis médical."
     },
     de: {
         brandBody: "Unabhängige redaktionelle Publikation zu Schimmel, Feuchtigkeit und Innenraumluftqualität in Portugal.",
+        productsLabel: "Produkte",
         articles: "Artikel",
-        articlesLabel: "Artikel",
         company: "Unternehmen",
         about: "Über uns",
         editorialPolicy: "Redaktionsrichtlinie",
         contact: "Kontakt",
         legal: "Rechtliches",
-        privacy: "Datenschutz",
+        privacy: "Datenschutzerklärung",
         services: "Dienste",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Nur zu Informationszwecken. Kein Ersatz für professionelle Inspektion oder medizinischen Rat."
     },
     nl: {
         brandBody: "Onafhankelijke redactionele publicatie over schimmel, vocht en binnenluchtkwaliteit in Portugal.",
+        productsLabel: "Producten",
         articles: "Artikelen",
-        articlesLabel: "Artikelen",
         company: "Bedrijf",
         about: "Over ons",
         editorialPolicy: "Redactioneel beleid",
         contact: "Contact",
         legal: "Juridisch",
-        privacy: "Privacy",
+        privacy: "Privacybeleid",
         services: "Diensten",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Alleen informatieve inhoud. Geen vervanging voor professionele inspectie of medisch advies."
     },
     it: {
         brandBody: "Pubblicazione editoriale indipendente su muffa, umidità e qualità dell'aria interna in Portogallo.",
+        productsLabel: "Prodotti",
         articles: "Articoli",
-        articlesLabel: "Articoli",
         company: "Azienda",
         about: "Chi siamo",
         editorialPolicy: "Politica editoriale",
         contact: "Contatti",
         legal: "Legale",
-        privacy: "Privacy",
+        privacy: "Informativa sulla Privacy",
         services: "Servizi",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Solo contenuto informativo. Non sostituisce un'ispezione professionale né una consulenza medica."
     },
     es: {
         brandBody: "Publicación editorial independiente sobre moho, humedad y calidad del aire interior en Portugal.",
+        productsLabel: "Productos",
         articles: "Artículos",
-        articlesLabel: "Artículos",
-        company: "Compañía",
+        company: "Empresa",
         about: "Sobre",
         editorialPolicy: "Política editorial",
         contact: "Contacto",
         legal: "Legal",
-        privacy: "Privacidad",
+        privacy: "Política de Privacidad",
         services: "Servicios",
-        copyright: `© ${new Date().getFullYear()} MoldCheck.pt — FAIRBANK Group`,
         disclaimer: "Contenido informativo. No sustituye una inspección profesional ni asesoramiento médico."
     }
 };
@@ -793,129 +786,158 @@ function SiteFooter({ locale }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: c.brandBody
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                            lineNumber: 130,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "site-footer__column",
+                            className: "site-footer__nav",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    children: c.articlesLabel
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "site-footer__column",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            children: c.productsLabel
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 136,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "articles"),
+                                            children: c.articles
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 137,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "services"),
+                                            children: c.services
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 138,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "articles"),
-                                    children: c.articles
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "site-footer__column",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            children: c.company
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 142,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "about"),
+                                            children: c.about
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 143,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "editorialPolicy"),
+                                            children: c.editorialPolicy
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 144,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.inspectos.pt/",
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "InspectOS"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 145,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.propcheck.pt/",
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "PropCheck.pt"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 146,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "services"),
-                                    children: c.services
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 145,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                            lineNumber: 142,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "site-footer__column",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    children: c.company
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "site-footer__column",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            children: c.legal
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 150,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "contact"),
+                                            children: c.contact
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 151,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "privacy"),
+                                            children: c.privacy
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                            lineNumber: 152,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
                                     lineNumber: 149,
                                     columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "about"),
-                                    children: c.about
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 150,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "editorialPolicy"),
-                                    children: c.editorialPolicy
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 151,
-                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                            lineNumber: 148,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "site-footer__column",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    children: c.legal
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 155,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "privacy"),
-                                    children: c.privacy
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 156,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "contact"),
-                                    children: c.contact
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                    lineNumber: 157,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                            lineNumber: 154,
+                            lineNumber: 134,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                    lineNumber: 129,
+                    lineNumber: 121,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$newsletter$2f$components$2f$NewsletterSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NewsletterSection"], {
                     locale: locale
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                    lineNumber: 161,
+                    lineNumber: 157,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -925,10 +947,26 @@ function SiteFooter({ locale }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "site-footer__copyright",
-                                children: c.copyright
-                            }, void 0, false, {
+                                children: [
+                                    "© MoldCheck.pt",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.fairbank.pt/",
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        className: "site-footer__copyright-link",
+                                        children: "FAIRBANK"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/layout/SiteFooter.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 15
+                                    }, this),
+                                    " ",
+                                    "Group initiative"
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                lineNumber: 165,
+                                lineNumber: 161,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -936,29 +974,29 @@ function SiteFooter({ locale }) {
                                 children: c.disclaimer
                             }, void 0, false, {
                                 fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                                lineNumber: 166,
+                                lineNumber: 173,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                        lineNumber: 164,
+                        lineNumber: 160,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/SiteFooter.tsx",
-                    lineNumber: 163,
+                    lineNumber: 159,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/layout/SiteFooter.tsx",
-            lineNumber: 128,
+            lineNumber: 120,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/layout/SiteFooter.tsx",
-        lineNumber: 127,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }
