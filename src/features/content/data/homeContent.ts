@@ -578,7 +578,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     nextStepsTitle: "Siguientes pasos según tu situación",
     aboutTitle: "¿Quién está detrás de esto y por qué?",
     aboutCardEyebrow: "MoldCheck.pt",
-    aboutCardTitle: "Quién está detrás de esto  y por qué",
+    aboutCardTitle: "¿Quién está detrás de esto y por qué?",
     aboutBody:
       "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas  no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
     aboutLink: "Leer la política editorial completa →",

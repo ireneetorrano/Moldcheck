@@ -335,8 +335,6 @@ __turbopack_context__.s([
     "getAboutFallbackContent",
     ()=>getAboutFallbackContent
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/site.ts [app-rsc] (ecmascript)");
-;
 function paragraphsToBlocks(paragraphs) {
     return paragraphs.map((text, index)=>({
             _type: "block",
@@ -362,205 +360,31 @@ const aboutContentByLocale = {
             "Este site existe para preencher esse espaço."
         ],
         behindTitle: "Quem está por detrás disto",
-        behindBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente — não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade.",
-        policyTitle: "Como trabalhamos — e ao que nos comprometemos",
-        policyCards: [
-            {
-                eyebrow: "1. Independência de tratamentos",
-                title: "Sem conflito financeiro com a remediação",
-                body: "MoldCheck.pt não recebe pagamentos, comissões ou qualquer forma de compensação de empresas que vendem tratamentos de humidade, produtos anti-bolor, sistemas de ventilação ou serviços de remediação.\n\nIsto não significa que o site não possa cobrar por serviços próprios ou relacionados com a sua actividade legítima, como inspecções independentes, análises laboratoriais, reservas ou recursos digitais. Significa, sim, que não aceitamos dinheiro de empresas cujo interesse comercial dependa de recomendar ou vender a remediação do problema.\n\nQuando recomendamos um produto, método ou serviço, fazemo-lo porque tem base científica ou utilidade real para o utilizador — não porque uma empresa de tratamento nos pagou para o recomendar."
-            },
-            {
-                eyebrow: "2. Base científica",
-                title: "Literatura revista por pares e normas técnicas reconhecidas",
-                body: "Todo o conteúdo clínico e técnico deste site é fundamentado em literatura científica revisada por pares ou em normas técnicas reconhecidas internacionalmente. As nossas fontes primárias incluem:\n\nDiretrizes da OMS para a Qualidade do Ar Interior: Humidade e Bolor (2009)\n\nIICRC S520 — Norma para Remediação Profissional de Bolor, 4.ª edição (2024)\n\nEPA — Manual de Remediação de Bolor\n\nInstituto de Medicina — Espaços Interiores Húmidos e Saúde (2004)\n\nInvestigação publicada em revistas científicas com revisão por pares, com citação explícita"
-            },
-            {
-                eyebrow: "3. Honestidade sobre a incerteza",
-                title: "Distinguimos o que é robusto, sugestivo e ainda desconhecido",
-                body: "A ciência do bolor interior está em desenvolvimento activo. Há áreas onde a evidência é robusta e estabelecida — a ligação causal entre humidade e sintomas respiratórios, por exemplo. Há áreas onde a evidência é sugestiva mas não conclusiva — o CIRS, certos efeitos neurológicos dos MVOC. E há áreas onde simplesmente não sabemos.\n\nDistinguimos estas categorias explicitamente no nosso conteúdo. Não exageramos a certeza científica para criar urgência, nem minimizamos riscos documentados para evitar alarmar."
-            },
-            {
-                eyebrow: "4. Sem exagero de risco",
-                title: "Rigor antes de medo",
-                body: "O bolor em casa é um problema real com consequências documentadas para a saúde. Não é uma emergência mortal na maioria dos casos. Escrever sobre bolor com o objectivo de criar medo desproporcional — seja para vender tratamentos, seja para atrair tráfego — é uma prática que este site rejeita explicitamente."
-            },
-            {
-                eyebrow: "5. Transparência sobre limitações",
-                title: "O site não substitui avaliação médica, técnica ou laboratorial",
-                body: "Este site não substitui aconselhamento médico profissional, avaliação técnica presencial, ou diagnóstico laboratorial. Em artigos sobre saúde, este aviso é apresentado de forma proeminente."
-            },
-            {
-                eyebrow: "6. Actualização",
-                title: "Compromisso de rever conteúdo relevante",
-                body: "Comprometemo-nos a rever e actualizar o conteúdo quando nova evidência científica relevante for publicada. A data da última revisão é indicada em cada artigo."
-            },
-            {
-                eyebrow: "7. Erros e correcções",
-                title: "Correcções transparentes e registadas",
-                body: "Se identificar um erro factual no nosso conteúdo, contacte-nos. Corrigimos com transparência — o erro original, a correcção, e a data de actualização ficam registados."
-            }
-        ],
-        contactTitle: "Contacto",
-        contactCards: [
-            {
-                eyebrow: "Questões editoriais",
-                title: "Contacto geral",
-                body: `Para questões editoriais: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Escrever para ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Questões de inspecção",
-                title: "InspectOS",
-                body: "Para questões de inspecção: através da InspectOS em inspectos.pt",
-                ctaLabel: "Abrir InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Independência editorial",
-        disclosureText: "MoldCheck.pt defende diagnóstico independente e não aceita dinheiro de empresas cujo interesse comercial depende de vender a remediação do problema."
+        behindBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente — não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade."
     },
     en: {
         eyebrow: "About MoldCheck.pt",
         title: "What MoldCheck.pt is — and why it exists",
         description: "MoldCheck.pt exists to explain mold, damp and indoor risk in Portugal with editorial independence and scientific discipline.",
         introParagraphs: [
-            "MoldCheck.pt was born from a simple observation: Portugal has Europe’s second-worst mold problem, and there is no independent source of information for the people living with that reality.",
+            "MoldCheck.pt was born from a simple observation: Portugal has Europe's second-worst mold problem, and there is no independent source of information for the people living with that reality.",
             "The market offers free diagnoses from companies that make money from the treatments they recommend. Search engines largely return content produced by those same companies. Doctors rarely have training in domestic environmental medicine. And the main international reference standards — the 2009 WHO guidelines, the IICRC S520 standard — exist in English, in technical language, and remain inaccessible to the average resident.",
             "This site exists to fill that gap."
         ],
         behindTitle: "Who is behind this",
-        behindBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis — not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal’s mold problem and finding no honest information resource that addressed it directly.",
-        policyTitle: "How we work — and what we are committed to",
-        policyCards: [
-            {
-                eyebrow: "1. Independence from treatment",
-                title: "No financial conflict with remediation",
-                body: "MoldCheck.pt does not receive payments, commissions, or any form of compensation from companies that sell damp treatments, anti-mold products, ventilation systems, or remediation services.\n\nThis does not mean the site cannot charge for its own legitimate services or related activities, such as independent inspections, laboratory analysis, bookings, or digital resources. It means that we do not accept money from companies whose commercial interest depends on recommending or selling remediation.\n\nWhen we recommend a product, method, or service, we do so because it has scientific basis or real usefulness for the user — not because a remediation company paid us to recommend it."
-            },
-            {
-                eyebrow: "2. Scientific basis",
-                title: "Peer-reviewed literature and recognised standards",
-                body: "All clinical and technical content on this site is grounded in peer-reviewed scientific literature or internationally recognised technical standards. Our primary sources include:\n\nWHO Guidelines for Indoor Air Quality: Dampness and Mould (2009)\n\nIICRC S520 — Standard for Professional Mold Remediation, 4th edition (2024)\n\nEPA — Mold Remediation Guide\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed research with explicit citation"
-            },
-            {
-                eyebrow: "3. Honesty about uncertainty",
-                title: "We separate robust evidence from suggestive evidence",
-                body: "The science of indoor mold is still actively developing. There are areas where evidence is robust and well established — the causal link between dampness and respiratory symptoms, for example. There are areas where evidence is suggestive but not conclusive — CIRS, and certain neurological effects of MVOCs. And there are areas where we simply do not know.\n\nWe distinguish these categories explicitly in our content. We do not overstate scientific certainty to create urgency, nor do we downplay documented risks to avoid alarming readers."
-            },
-            {
-                eyebrow: "4. No risk exaggeration",
-                title: "Accuracy over fear",
-                body: "Residential mold is a real problem with documented health consequences. It is not a fatal emergency in most cases. Writing about mold with the objective of creating disproportionate fear — whether to sell treatments or drive traffic — is a practice this site explicitly rejects."
-            },
-            {
-                eyebrow: "5. Transparency about limitations",
-                title: "This site does not replace professional assessment",
-                body: "This site does not replace professional medical advice, on-site technical assessment, or laboratory diagnosis. In health articles, this notice is displayed prominently."
-            },
-            {
-                eyebrow: "6. Updates",
-                title: "We review and update when relevant evidence changes",
-                body: "We commit to reviewing and updating content when relevant new scientific evidence is published. The date of last review is indicated on each article."
-            },
-            {
-                eyebrow: "7. Errors and corrections",
-                title: "Corrections are logged transparently",
-                body: "If you identify a factual error in our content, contact us. We correct transparently — the original error, the correction, and the update date are all recorded."
-            }
-        ],
-        contactTitle: "Contact",
-        contactCards: [
-            {
-                eyebrow: "Editorial enquiries",
-                title: "General contact",
-                body: `Editorial enquiries: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Email ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Inspection enquiries",
-                title: "InspectOS",
-                body: "Inspection enquiries: via InspectOS at inspectos.pt",
-                ctaLabel: "Open InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Editorial independence",
-        disclosureText: "MoldCheck.pt defends independent diagnosis and does not accept money from companies whose commercial interest depends on selling remediation."
+        behindBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis — not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal's mold problem and finding no honest information resource that addressed it directly."
     },
     fr: {
         eyebrow: "À propos de MoldCheck.pt",
-        title: "Ce qu’est MoldCheck.pt — et pourquoi il existe",
-        description: "MoldCheck.pt existe pour expliquer les moisissures, l’humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
+        title: "Ce qu'est MoldCheck.pt — et pourquoi il existe",
+        description: "MoldCheck.pt existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
         introParagraphs: [
-            "MoldCheck.pt est né d’une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n’existe aucune source d’information indépendante pour les personnes qui vivent avec cette réalité.",
-            "Le marché propose des diagnostics gratuits d’entreprises qui gagnent de l’argent grâce aux traitements qu’elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales — les lignes directrices de l’OMS de 2009, la norme IICRC S520 — existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
+            "MoldCheck.pt est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
+            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales — les lignes directrices de l'OMS de 2009, la norme IICRC S520 — existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
             "Ce site existe pour combler ce manque."
         ],
         behindTitle: "Qui est derrière cela",
-        behindBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant — pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l’entreprise de remédiation est exactement le modèle que ce site défend. C’est aussi le modèle qu’InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l’essai fondateur de ce site après avoir découvert l’ampleur du problème au Portugal et constaté l’absence d’une ressource honnête pour l’expliquer.",
-        policyTitle: "Comment nous travaillons — et à quoi nous nous engageons",
-        policyCards: [
-            {
-                eyebrow: "1. Indépendance vis-à-vis des traitements",
-                title: "Aucun conflit financier avec la remédiation",
-                body: "MoldCheck.pt ne reçoit aucun paiement, commission ou autre forme de compensation de la part d’entreprises qui vendent des traitements contre l’humidité, des produits anti-moisissures, des systèmes de ventilation ou des services de remédiation.\n\nCela ne signifie pas que le site ne puisse pas facturer ses propres services légitimes ou des activités liées à sa mission, comme les inspections indépendantes, les analyses de laboratoire, les réservations ou les ressources numériques. Cela signifie que nous n’acceptons pas d’argent d’entreprises dont l’intérêt commercial dépend de la recommandation ou de la vente de la remédiation.\n\nLorsque nous recommandons un produit, une méthode ou un service, nous le faisons parce qu’il repose sur une base scientifique ou présente une utilité réelle pour l’utilisateur — et non parce qu’une entreprise de remédiation nous a payés pour le recommander."
-            },
-            {
-                eyebrow: "2. Base scientifique",
-                title: "Littérature évaluée par les pairs et normes reconnues",
-                body: "Tout le contenu clinique et technique de ce site repose sur de la littérature scientifique évaluée par les pairs ou sur des normes techniques reconnues au niveau international. Nos sources principales incluent :\n\nLignes directrices de l’OMS pour la qualité de l’air intérieur : humidité et moisissures (2009)\n\nIICRC S520 — norme de remédiation professionnelle des moisissures, 4e édition (2024)\n\nEPA — guide de remédiation des moisissures\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nRecherches scientifiques publiées avec citations explicites"
-            },
-            {
-                eyebrow: "3. Honnêteté face à l’incertitude",
-                title: "Nous distinguons les niveaux de preuve",
-                body: "La science des moisissures en intérieur évolue encore activement. Il existe des domaines où les preuves sont solides et bien établies — par exemple le lien causal entre l’humidité et les symptômes respiratoires. D’autres domaines reposent sur des preuves suggestives mais non concluantes — comme le CIRS ou certains effets neurologiques des MVOC. Et il y a aussi des domaines où nous ne savons tout simplement pas.\n\nNous distinguons explicitement ces catégories dans notre contenu. Nous n’exagérons pas la certitude scientifique pour créer un sentiment d’urgence, et nous ne minimisons pas les risques documentés pour éviter d’inquiéter."
-            },
-            {
-                eyebrow: "4. Pas d’exagération du risque",
-                title: "La précision avant la peur",
-                body: "Les moisissures dans le logement sont un problème réel, avec des conséquences sanitaires documentées. Ce n’est pas, dans la plupart des cas, une urgence mortelle. Écrire sur les moisissures dans le but de créer une peur disproportionnée — que ce soit pour vendre des traitements ou générer du trafic — est une pratique que ce site rejette explicitement."
-            },
-            {
-                eyebrow: "5. Transparence sur les limites",
-                title: "Le site ne remplace pas une évaluation professionnelle",
-                body: "Ce site ne remplace pas un avis médical professionnel, une évaluation technique sur place, ni un diagnostic de laboratoire. Dans les articles de santé, cet avertissement est affiché de manière visible."
-            },
-            {
-                eyebrow: "6. Mises à jour",
-                title: "Révision et actualisation lorsque la science évolue",
-                body: "Nous nous engageons à revoir et à actualiser le contenu lorsque de nouvelles preuves scientifiques pertinentes sont publiées. La date de dernière révision est indiquée sur chaque article."
-            },
-            {
-                eyebrow: "7. Erreurs et corrections",
-                title: "Corrections transparentes et documentées",
-                body: "Si vous identifiez une erreur factuelle dans notre contenu, contactez-nous. Nous corrigeons de manière transparente — l’erreur initiale, la correction et la date de mise à jour sont consignées."
-            }
-        ],
-        contactTitle: "Contact",
-        contactCards: [
-            {
-                eyebrow: "Questions éditoriales",
-                title: "Contact général",
-                body: `Questions éditoriales : ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Écrire à ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Questions liées aux inspections",
-                title: "InspectOS",
-                body: "Questions liées aux inspections : via InspectOS sur inspectos.pt",
-                ctaLabel: "Ouvrir InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Indépendance éditoriale",
-        disclosureText: "MoldCheck.pt défend le diagnostic indépendant et n’accepte pas d’argent d’entreprises dont l’intérêt commercial dépend de la vente de la remédiation."
+        behindBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant — pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
     },
     de: {
         eyebrow: "Über MoldCheck.pt",
@@ -572,65 +396,7 @@ const aboutContentByLocale = {
             "Diese Website existiert, um diese Lücke zu schließen."
         ],
         behindTitle: "Wer dahintersteht",
-        behindBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst — nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab.",
-        policyTitle: "Wie wir arbeiten — und wozu wir uns verpflichten",
-        policyCards: [
-            {
-                eyebrow: "1. Unabhängigkeit von Behandlungen",
-                title: "Kein finanzieller Interessenkonflikt mit Sanierung",
-                body: "MoldCheck.pt erhält keine Zahlungen, Provisionen oder sonstige Vergütungen von Unternehmen, die Feuchtigkeitsbehandlungen, Anti-Schimmel-Produkte, Lüftungssysteme oder Sanierungsleistungen verkaufen.\n\nDas bedeutet nicht, dass die Website keine legitimen eigenen Leistungen oder damit zusammenhängenden Angebote abrechnen darf, etwa unabhängige Inspektionen, Laboranalysen, Buchungen oder digitale Ressourcen. Es bedeutet vielmehr, dass wir kein Geld von Unternehmen annehmen, deren kommerzielles Interesse davon abhängt, die Sanierung des Problems zu empfehlen oder zu verkaufen.\n\nWenn wir ein Produkt, eine Methode oder eine Dienstleistung empfehlen, tun wir das, weil dafür eine wissenschaftliche Grundlage oder ein echter Nutzen für den Nutzer besteht — nicht weil uns ein Sanierungsunternehmen dafür bezahlt hat."
-            },
-            {
-                eyebrow: "2. Wissenschaftliche Grundlage",
-                title: "Peer-reviewte Literatur und anerkannte Standards",
-                body: "Alle klinischen und technischen Inhalte dieser Website beruhen auf peer-reviewter wissenschaftlicher Literatur oder auf international anerkannten technischen Standards. Zu unseren wichtigsten Quellen gehören:\n\nWHO-Leitlinien zur Innenraumluftqualität: Feuchtigkeit und Schimmel (2009)\n\nIICRC S520 — Standard für professionelle Schimmelsanierung, 4. Ausgabe (2024)\n\nEPA — Leitfaden zur Schimmelbeseitigung\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewte Forschung mit expliziten Quellenangaben"
-            },
-            {
-                eyebrow: "3. Ehrlichkeit im Umgang mit Unsicherheit",
-                title: "Wir unterscheiden klar zwischen Evidenzgraden",
-                body: "Die Wissenschaft zu Schimmel in Innenräumen entwickelt sich weiterhin aktiv. Es gibt Bereiche, in denen die Evidenz solide und gut belegt ist — zum Beispiel der kausale Zusammenhang zwischen Feuchtigkeit und Atemwegssymptomen. Es gibt Bereiche, in denen die Evidenz eher hinweisend als schlüssig ist — etwa CIRS oder bestimmte neurologische Wirkungen von MVOCs. Und es gibt Bereiche, in denen wir es schlicht nicht wissen.\n\nWir unterscheiden diese Kategorien ausdrücklich in unseren Inhalten. Wir übertreiben wissenschaftliche Gewissheit nicht, um Dringlichkeit zu erzeugen, und wir verharmlosen dokumentierte Risiken nicht, um Leser zu beruhigen."
-            },
-            {
-                eyebrow: "4. Keine Risikoübertreibung",
-                title: "Genauigkeit statt Angst",
-                body: "Schimmel in Wohnräumen ist ein reales Problem mit dokumentierten gesundheitlichen Folgen. In den meisten Fällen ist er kein lebensbedrohlicher Notfall. Über Schimmel mit dem Ziel zu schreiben, unverhältnismäßige Angst zu erzeugen — sei es, um Behandlungen zu verkaufen oder Reichweite zu generieren — ist eine Praxis, die diese Website ausdrücklich ablehnt."
-            },
-            {
-                eyebrow: "5. Transparenz über Grenzen",
-                title: "Die Website ersetzt keine professionelle Bewertung",
-                body: "Diese Website ersetzt keine professionelle medizinische Beratung, keine technische Vor-Ort-Bewertung und keine Labordiagnostik. In Gesundheitsartikeln wird dieser Hinweis deutlich sichtbar angezeigt."
-            },
-            {
-                eyebrow: "6. Aktualisierung",
-                title: "Überprüfung und Aktualisierung bei neuen Erkenntnissen",
-                body: "Wir verpflichten uns, Inhalte zu überprüfen und zu aktualisieren, wenn neue relevante wissenschaftliche Erkenntnisse veröffentlicht werden. Das Datum der letzten Überprüfung wird bei jedem Artikel angegeben."
-            },
-            {
-                eyebrow: "7. Fehler und Korrekturen",
-                title: "Korrekturen werden transparent dokumentiert",
-                body: "Wenn Sie einen sachlichen Fehler in unseren Inhalten feststellen, kontaktieren Sie uns. Wir korrigieren transparent — der ursprüngliche Fehler, die Korrektur und das Aktualisierungsdatum werden dokumentiert."
-            }
-        ],
-        contactTitle: "Kontakt",
-        contactCards: [
-            {
-                eyebrow: "Redaktionelle Anfragen",
-                title: "Allgemeiner Kontakt",
-                body: `Redaktionelle Anfragen: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `An ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail} schreiben`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Anfragen zu Inspektionen",
-                title: "InspectOS",
-                body: "Anfragen zu Inspektionen: über InspectOS auf inspectos.pt",
-                ctaLabel: "InspectOS öffnen",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Redaktionelle Unabhängigkeit",
-        disclosureText: "MoldCheck.pt verteidigt unabhängige Diagnose und nimmt kein Geld von Unternehmen an, deren kommerzielles Interesse vom Verkauf der Sanierung abhängt."
+        behindBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst — nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab."
     },
     nl: {
         eyebrow: "Over MoldCheck.pt",
@@ -642,205 +408,31 @@ const aboutContentByLocale = {
             "Deze website bestaat om dat gat te vullen."
         ],
         behindTitle: "Wie hierachter zit",
-        behindBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose — niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde.",
-        policyTitle: "Hoe wij werken — en waar wij ons aan verbinden",
-        policyCards: [
-            {
-                eyebrow: "1. Onafhankelijkheid van behandelingen",
-                title: "Geen financieel conflict met sanering",
-                body: "MoldCheck.pt ontvangt geen betalingen, commissies of enige andere vorm van vergoeding van bedrijven die vochtbehandelingen, antischimmelproducten, ventilatiesystemen of saneringsdiensten verkopen.\n\nDit betekent niet dat de site geen legitieme eigen diensten of verwante activiteiten in rekening kan brengen, zoals onafhankelijke inspecties, laboratoriumanalyses, boekingen of digitale middelen. Het betekent wél dat wij geen geld aannemen van bedrijven waarvan het commerciële belang afhangt van het aanbevelen of verkopen van sanering.\n\nWanneer wij een product, methode of dienst aanbevelen, doen wij dat omdat die een wetenschappelijke basis heeft of echt nuttig is voor de gebruiker — niet omdat een saneringsbedrijf ons daarvoor heeft betaald."
-            },
-            {
-                eyebrow: "2. Wetenschappelijke basis",
-                title: "Peer-reviewed literatuur en erkende normen",
-                body: "Alle klinische en technische inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijke literatuur of op internationaal erkende technische normen. Onze belangrijkste bronnen zijn onder meer:\n\nWHO-richtlijnen voor binnenluchtkwaliteit: vocht en schimmel (2009)\n\nIICRC S520 — standaard voor professionele schimmelsanering, 4e editie (2024)\n\nEPA — gids voor schimmelremediatie\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed onderzoek met expliciete bronvermelding"
-            },
-            {
-                eyebrow: "3. Eerlijkheid over onzekerheid",
-                title: "We maken verschillen in bewijs expliciet",
-                body: "De wetenschap rond schimmel binnenshuis is nog volop in ontwikkeling. Er zijn gebieden waar het bewijs sterk en goed gevestigd is — bijvoorbeeld het causale verband tussen vocht en ademhalingsklachten. Er zijn ook gebieden waar het bewijs suggestief maar niet sluitend is — zoals CIRS en bepaalde neurologische effecten van MVOC’s. En er zijn gebieden waar we het simpelweg nog niet weten.\n\nWij maken dat onderscheid expliciet in onze inhoud. We overdrijven wetenschappelijke zekerheid niet om urgentie te creëren, en we bagatelliseren gedocumenteerde risico’s niet om lezers gerust te stellen."
-            },
-            {
-                eyebrow: "4. Geen overdrijving van risico’s",
-                title: "Nauwkeurigheid boven angst",
-                body: "Schimmel in woningen is een reëel probleem met gedocumenteerde gevolgen voor de gezondheid. In de meeste gevallen is het geen levensbedreigende noodsituatie. Schrijven over schimmel met als doel buitensporige angst op te wekken — of dat nu is om behandelingen te verkopen of om verkeer aan te trekken — is een praktijk die deze website expliciet afwijst."
-            },
-            {
-                eyebrow: "5. Transparantie over beperkingen",
-                title: "De site vervangt geen professionele beoordeling",
-                body: "Deze website vervangt geen professioneel medisch advies, technische beoordeling ter plaatse of laboratoriumdiagnose. In gezondheidsartikelen wordt deze waarschuwing duidelijk weergegeven."
-            },
-            {
-                eyebrow: "6. Updates",
-                title: "Herziening en updates bij nieuwe inzichten",
-                body: "Wij verbinden ons ertoe de inhoud te herzien en bij te werken wanneer nieuwe relevante wetenschappelijke inzichten worden gepubliceerd. De datum van de laatste herziening wordt bij elk artikel vermeld."
-            },
-            {
-                eyebrow: "7. Fouten en correcties",
-                title: "Correcties worden transparant vastgelegd",
-                body: "Als je een feitelijke fout in onze inhoud vaststelt, neem dan contact met ons op. Wij corrigeren transparant — de oorspronkelijke fout, de correctie en de datum van de update worden vastgelegd."
-            }
-        ],
-        contactTitle: "Contact",
-        contactCards: [
-            {
-                eyebrow: "Redactionele vragen",
-                title: "Algemeen contact",
-                body: `Redactionele vragen: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Mail naar ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Vragen over inspecties",
-                title: "InspectOS",
-                body: "Vragen over inspecties: via InspectOS op inspectos.pt",
-                ctaLabel: "Open InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Redactionele onafhankelijkheid",
-        disclosureText: "MoldCheck.pt verdedigt onafhankelijke diagnose en accepteert geen geld van bedrijven waarvan het commerciële belang afhangt van de verkoop van sanering."
+        behindBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose — niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde."
     },
     it: {
-        eyebrow: "Informazioni su MoldCheck.pt",
-        title: "Che cos’è MoldCheck.pt — e perché esiste",
-        description: "MoldCheck.pt esiste per spiegare muffa, umidità e rischio indoor in Portogallo con indipendenza editoriale e base scientifica.",
+        eyebrow: "Chi siamo — MoldCheck.pt",
+        title: "Cos'è MoldCheck.pt — e perché esiste",
+        description: "MoldCheck.pt esiste per spiegare muffa, umidità e rischi per la qualità dell'aria interna in Portogallo con indipendenza editoriale e base scientifica.",
         introParagraphs: [
-            "MoldCheck.pt è nato da un’osservazione semplice: il Portogallo ha il secondo peggior problema di muffa in Europa e non esiste alcuna fonte di informazione indipendente per le persone che convivono con questa realtà.",
-            "Il mercato disponibile offre diagnosi gratuite da parte di aziende che guadagnano dai trattamenti che raccomandano. I motori di ricerca restituiscono soprattutto contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E gli standard internazionali di riferimento — le linee guida dell’OMS del 2009 e lo standard IICRC S520 — esistono in inglese, in linguaggio tecnico, poco accessibile al residente comune.",
+            "MoldCheck.pt è nato da una semplice osservazione: il Portogallo ha il secondo peggior problema di muffa in Europa, e non esiste alcuna fonte di informazione indipendente per le persone che vivono con questa realtà.",
+            "Il mercato offre diagnosi gratuite da parte di aziende che guadagnano con i trattamenti che raccomandano. I motori di ricerca restituiscono principalmente contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E i principali standard di riferimento internazionali — le linee guida OMS del 2009 e la norma IICRC S520 — esistono in inglese, in linguaggio tecnico, inaccessibili al consumatore comune.",
             "Questo sito esiste per colmare quel vuoto."
         ],
-        behindTitle: "Chi c’è dietro",
-        behindBody: "MoldCheck.pt è un’iniziativa del FAIRBANK Group. FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente — non con il trattamento. Un ispettore indipendente che fa pagare il proprio tempo e non riceve commissioni dall’impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondativo di questo sito dopo aver scoperto la reale dimensione del problema della muffa in Portogallo e aver constatato che non esisteva alcuna risorsa informativa onesta che lo affrontasse in modo diretto.",
-        policyTitle: "Come lavoriamo — e a che cosa ci impegniamo",
-        policyCards: [
-            {
-                eyebrow: "1. Indipendenza dai trattamenti",
-                title: "Nessun conflitto finanziario con la bonifica",
-                body: "MoldCheck.pt non riceve pagamenti, commissioni o alcuna forma di compensazione da aziende che vendono trattamenti contro l’umidità, prodotti antimuffa, sistemi di ventilazione o servizi di bonifica.\n\nCiò non significa che il sito non possa addebitare servizi propri o attività legittimamente collegate alla sua missione, come ispezioni indipendenti, analisi di laboratorio, prenotazioni o risorse digitali. Significa invece che non accettiamo denaro da aziende il cui interesse commerciale dipende dal raccomandare o vendere la bonifica del problema.\n\nQuando raccomandiamo un prodotto, un metodo o un servizio, lo facciamo perché ha una base scientifica o una reale utilità per l’utente — non perché un’azienda di bonifica ci ha pagato per raccomandarlo."
-            },
-            {
-                eyebrow: "2. Base scientifica",
-                title: "Letteratura peer-reviewed e standard riconosciuti",
-                body: "Tutti i contenuti clinici e tecnici di questo sito si basano su letteratura scientifica peer-reviewed o su standard tecnici riconosciuti a livello internazionale. Le nostre fonti principali includono:\n\nLinee guida dell’OMS per la qualità dell’aria interna: umidità e muffa (2009)\n\nIICRC S520 — Standard internazionale per la bonifica professionale della muffa, 4ª edizione (2024)\n\nEPA — Guida alla bonifica della muffa\n\nInstitute of Medicine — Ambienti interni umidi e salute (2004)\n\nRicerca scientifica peer-reviewed con citazione esplicita"
-            },
-            {
-                eyebrow: "3. Onestà sull’incertezza",
-                title: "Distinguiamo ciò che è solido, suggestivo e ancora incerto",
-                body: "La scienza della muffa indoor è in continua evoluzione. Ci sono aree in cui le prove sono solide e consolidate — per esempio il legame causale tra umidità e sintomi respiratori. Ci sono aree in cui le prove sono suggestive ma non conclusive — come il CIRS o alcuni effetti neurologici degli MVOC. E ci sono aree in cui semplicemente non sappiamo ancora abbastanza.\n\nDistinguiamo esplicitamente queste categorie nei nostri contenuti. Non esageriamo la certezza scientifica per creare urgenza, né minimizziamo rischi documentati per evitare di allarmare."
-            },
-            {
-                eyebrow: "4. Nessuna esagerazione del rischio",
-                title: "Rigore prima della paura",
-                body: "La muffa in casa è un problema reale con conseguenze documentate per la salute. Nella maggior parte dei casi non è un’emergenza mortale. Scrivere di muffa con l’obiettivo di creare una paura sproporzionata — sia per vendere trattamenti sia per attirare traffico — è una pratica che questo sito rifiuta esplicitamente."
-            },
-            {
-                eyebrow: "5. Trasparenza sui limiti",
-                title: "Il sito non sostituisce una valutazione professionale",
-                body: "Questo sito non sostituisce il parere medico professionale, la valutazione tecnica in presenza o la diagnosi di laboratorio. Negli articoli sulla salute, questo avviso viene mostrato in modo ben visibile."
-            },
-            {
-                eyebrow: "6. Aggiornamenti",
-                title: "Revisione e aggiornamento quando emergono nuove evidenze",
-                body: "Ci impegniamo a rivedere e aggiornare i contenuti quando vengono pubblicate nuove evidenze scientifiche rilevanti. La data dell’ultima revisione è indicata in ogni articolo."
-            },
-            {
-                eyebrow: "7. Errori e correzioni",
-                title: "Correzioni trasparenti e registrate",
-                body: "Se individui un errore fattuale nei nostri contenuti, contattaci. Correggiamo in modo trasparente — l’errore originale, la correzione e la data di aggiornamento vengono registrati."
-            }
-        ],
-        contactTitle: "Contatto",
-        contactCards: [
-            {
-                eyebrow: "Questioni editoriali",
-                title: "Contatto generale",
-                body: `Per questioni editoriali: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Scrivi a ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Questioni relative alle ispezioni",
-                title: "InspectOS",
-                body: "Per questioni relative alle ispezioni: tramite InspectOS su inspectos.pt",
-                ctaLabel: "Apri InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Indipendenza editoriale",
-        disclosureText: "MoldCheck.pt difende la diagnosi indipendente e non accetta denaro da aziende il cui interesse commerciale dipende dalla vendita della bonifica del problema."
+        behindTitle: "Chi c'è dietro",
+        behindBody: "MoldCheck.pt è un'iniziativa del FAIRBANK Group. Il FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente — non con il trattamento. Un ispettore indipendente che addebita il proprio tempo e non riceve commissioni dall'impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondatore di questo sito dopo aver scoperto la portata del problema in Portogallo e aver constatato l'assenza di una risorsa informativa onesta che lo affrontasse direttamente."
     },
     es: {
         eyebrow: "Sobre MoldCheck.pt",
         title: "Qué es MoldCheck.pt — y por qué existe",
-        description: "MoldCheck.pt existe para explicar moho, humedad y riesgo interior en Portugal con independencia editorial y base científica.",
+        description: "MoldCheck.pt existe para explicar el moho, la humedad y el riesgo interior en Portugal con independencia editorial y base científica.",
         introParagraphs: [
-            "MoldCheck.pt nació de una observación sencilla: Portugal tiene el segundo peor problema de moho de Europa y no existe ninguna fuente de información independiente para las personas que viven con esa realidad.",
-            "El mercado disponible ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los buscadores devuelven sobre todo contenido producido por esas mismas empresas. Los médicos rara vez tienen formación en medicina ambiental doméstica. Y los estándares internacionales de referencia — las directrices de la OMS de 2009 y la norma IICRC S520 — existen en inglés, en lenguaje técnico, inaccesible para el residente medio.",
-            "Este sitio existe para cubrir ese vacío."
+            "MoldCheck.pt nació de una observación simple: Portugal tiene el segundo peor problema de moho de Europa, y no existe ninguna fuente de información independiente para las personas que viven con esa realidad.",
+            "El mercado ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los motores de búsqueda devuelven principalmente contenido producido por esas mismas empresas. Los médicos raramente tienen formación en medicina ambiental doméstica. Y los principales estándares de referencia internacionales — las directrices de la OMS de 2009 y la norma IICRC S520 — existen en inglés, en lenguaje técnico, inaccesibles para el consumidor común.",
+            "Este sitio existe para llenar ese espacio."
         ],
-        behindTitle: "Quién está detrás",
-        behindBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK Group opera InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNuestra conexión comercial está con el diagnóstico independiente — no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión de la empresa de remediación es exactamente el modelo que este sitio defiende. También es el modelo que representa InspectOS.\n\nPieter Paul Castelein, fundador de FAIRBANK Group, escribió el ensayo fundacional de este sitio después de descubrir la magnitud del problema del moho en Portugal y comprobar que no existía ningún recurso informativo honesto que lo abordara de forma directa.",
-        policyTitle: "Cómo trabajamos — y a qué nos comprometemos",
-        policyCards: [
-            {
-                eyebrow: "1. Independencia frente a los tratamientos",
-                title: "Sin conflicto financiero con la remediación",
-                body: "MoldCheck.pt no recibe pagos, comisiones ni ninguna forma de compensación de empresas que venden tratamientos contra la humedad, productos antimoho, sistemas de ventilación o servicios de remediación.\n\nEsto no significa que el sitio no pueda cobrar por servicios propios o actividades legítimamente relacionadas con su misión, como inspecciones independientes, análisis de laboratorio, reservas o recursos digitales. Significa, en cambio, que no aceptamos dinero de empresas cuyo interés comercial depende de recomendar o vender la remediación del problema.\n\nCuando recomendamos un producto, método o servicio, lo hacemos porque tiene base científica o una utilidad real para el usuario — no porque una empresa de remediación nos haya pagado por recomendarlo."
-            },
-            {
-                eyebrow: "2. Base científica",
-                title: "Literatura revisada por pares y normas reconocidas",
-                body: "Todo el contenido clínico y técnico de este sitio se basa en literatura científica revisada por pares o en normas técnicas reconocidas internacionalmente. Nuestras fuentes principales incluyen:\n\nDirectrices de la OMS para la calidad del aire interior: humedad y moho (2009)\n\nIICRC S520 — Norma internacional para la remediación profesional del moho, 4.ª edición (2024)\n\nEPA — Guía de remediación del moho\n\nInstitute of Medicine — Espacios interiores húmedos y salud (2004)\n\nInvestigación revisada por pares con cita explícita"
-            },
-            {
-                eyebrow: "3. Honestidad sobre la incertidumbre",
-                title: "Distingimos lo sólido, lo sugestivo y lo incierto",
-                body: "La ciencia del moho interior está en desarrollo activo. Hay áreas donde la evidencia es sólida y está consolidada — por ejemplo, la relación causal entre humedad y síntomas respiratorios. Hay áreas donde la evidencia es sugestiva pero no concluyente — como el CIRS o ciertos efectos neurológicos de los MVOC. Y hay áreas donde simplemente todavía no lo sabemos.\n\nDistinguimos estas categorías de forma explícita en nuestro contenido. No exageramos la certeza científica para crear urgencia, ni minimizamos riesgos documentados para evitar alarmar."
-            },
-            {
-                eyebrow: "4. Sin exageración del riesgo",
-                title: "Rigor antes que miedo",
-                body: "El moho en la vivienda es un problema real con consecuencias documentadas para la salud. En la mayoría de los casos no es una emergencia mortal. Escribir sobre moho con el objetivo de generar miedo desproporcionado — ya sea para vender tratamientos o para atraer tráfico — es una práctica que este sitio rechaza expresamente."
-            },
-            {
-                eyebrow: "5. Transparencia sobre las limitaciones",
-                title: "El sitio no sustituye una evaluación profesional",
-                body: "Este sitio no sustituye el consejo médico profesional, la evaluación técnica presencial ni el diagnóstico de laboratorio. En los artículos sobre salud, este aviso aparece de forma destacada."
-            },
-            {
-                eyebrow: "6. Actualizaciones",
-                title: "Revisión y actualización cuando cambie la evidencia",
-                body: "Nos comprometemos a revisar y actualizar el contenido cuando se publiquen nuevas evidencias científicas relevantes. La fecha de la última revisión se indica en cada artículo."
-            },
-            {
-                eyebrow: "7. Errores y correcciones",
-                title: "Correcciones transparentes y registradas",
-                body: "Si identificas un error factual en nuestro contenido, contáctanos. Corregimos con transparencia — el error original, la corrección y la fecha de actualización quedan registradas."
-            }
-        ],
-        contactTitle: "Contacto",
-        contactCards: [
-            {
-                eyebrow: "Cuestiones editoriales",
-                title: "Contacto general",
-                body: `Para cuestiones editoriales: ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaLabel: `Escribir a ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`,
-                ctaHref: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contactEmail}`
-            },
-            {
-                eyebrow: "Cuestiones de inspección",
-                title: "InspectOS",
-                body: "Para cuestiones de inspección: a través de InspectOS en inspectos.pt",
-                ctaLabel: "Abrir InspectOS",
-                ctaHref: "https://inspectos.pt",
-                openInNewTab: true
-            }
-        ],
-        disclosureTitle: "Independencia editorial",
-        disclosureText: "MoldCheck.pt defiende el diagnóstico independiente y no acepta dinero de empresas cuyo interés comercial depende de vender la remediación del problema."
+        behindTitle: "Quién está detrás de esto",
+        behindBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. El FAIRBANK Group opera InspectOS, una plataforma de inspección independiente de inmuebles en Portugal.\n\nNuestra conexión comercial es con el diagnóstico independiente — no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión del saneador que va a ejecutar la obra es exactamente el modelo que este sitio defiende. Es también el modelo que InspectOS representa.\n\nPieter Paul Castelein, fundador del FAIRBANK Group, escribió el ensayo fundador de este sitio después de descubrir la escala del problema en Portugal y darse cuenta de que no había ningún recurso de información que lo abordara con honestidad."
     }
 };
 function getAboutFallbackContent(locale) {
@@ -865,21 +457,7 @@ function getAboutFallbackContent(locale) {
                 tone: "featured"
             }
         ],
-        sections: [
-            {
-                title: content.policyTitle,
-                tone: "band",
-                layout: "utility",
-                cards: content.policyCards
-            },
-            {
-                title: content.contactTitle,
-                layout: "utility",
-                cards: content.contactCards
-            }
-        ],
-        disclosureTitle: content.disclosureTitle,
-        disclosureText: content.disclosureText
+        sections: []
     };
 }
 }),
@@ -962,8 +540,18 @@ const foundationalArticles = [
 "use strict";
 
 __turbopack_context__.s([
+    "getHomeAboutContent",
+    ()=>getHomeAboutContent,
+    "getHomeConflictContent",
+    ()=>getHomeConflictContent,
     "getHomeFallbackContent",
-    ()=>getHomeFallbackContent
+    ()=>getHomeFallbackContent,
+    "getHomeFeaturedContent",
+    ()=>getHomeFeaturedContent,
+    "getHomeNextStepsContent",
+    ()=>getHomeNextStepsContent,
+    "getHomeProblemContent",
+    ()=>getHomeProblemContent
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/foundationalArticles.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/routing/paths.ts [app-rsc] (ecmascript)");
@@ -971,41 +559,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$pat
 ;
 const homeContentByLocale = {
     pt: {
-        description: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa — para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
+        eyebrow: "RECURSO EDITORIAL INDEPENDENTE SOBRE BOLOR, HUMIDADE E QUALIDADE DO AR INTERIOR",
+        description: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa  para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
         heroTitle: "Portugal tem o segundo pior problema de bolor da Europa. A maioria das pessoas não sabe.",
-        heroBody: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa — para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
+        heroBody: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa  para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
         heroPrimaryCtaLabel: "Fazer a avaliação gratuita",
         heroSecondaryCtaLabel: "Ler o guia de inspecção",
         trustBarText: "Baseado em investigação científica da OMS · Independente de empresas de tratamento · Sem publicidade · Iniciativa do FAIRBANK Group",
         problemTitle: "Porque é que Portugal tem tanto bolor?",
-        problemBody: "82% dos edifícios em Portugal foram construídos antes do ano 2000 — antes de qualquer requisito de isolamento ou eficiência energética. Porto tem uma humidade relativa média de 77%. Lisboa, no inverno, atinge os 84%.\n\nO resultado: condensação crónica, pontes térmicas, e paredes que retêm humidade durante décadas.\n\nO bolor não é azar. É o resultado previsível de edifícios mal equipados para o clima em que existem.",
+        problemBody: "82% dos edifícios em Portugal foram construídos antes do ano 2000  antes de qualquer requisito de isolamento ou eficiência energética. Porto tem uma humidade relativa média de 77%. Lisboa, no inverno, atinge os 84%.\n\nO resultado: condensação crónica, pontes térmicas, e paredes que retêm humidade durante décadas.\n\nO bolor não é azar. É o resultado previsível de edifícios mal equipados para o clima em que existem.",
         problemLink: "Saber mais sobre por que Portugal é vulnerável →",
         conflictTitle: "Porque é que o diagnóstico gratuito não é neutro",
-        conflictBody: "As principais empresas de tratamento de bolor em Portugal oferecem diagnósticos gratuitos. É uma estratégia comercial inteligente: a empresa que diagnostica o problema também vende a solução.\n\nNão existe em Portugal nenhuma entidade que avalie o bolor na sua casa e lhe diga o que tem — sem ganhar dinheiro com o que se segue.\n\nO MoldCheck.pt é essa alternativa. Não vendemos tratamentos. Não recebemos comissões. Publicamos o que a ciência diz.",
+        conflictBody: "As principais empresas de tratamento de bolor em Portugal oferecem diagnósticos gratuitos. É uma estratégia comercial inteligente: a empresa que diagnostica o problema também vende a solução.\n\nNão existe em Portugal nenhuma entidade que avalie o bolor na sua casa e lhe diga o que tem  sem ganhar dinheiro com o que se segue.\n\nO MoldCheck.pt é essa alternativa. Não vendemos tratamentos. Não recebemos comissões. Publicamos o que a ciência diz.",
         conflictLink: "Ler a nossa política editorial →",
         featuredTitle: "Comece aqui",
         featuredDescription: "",
-        nextStepsTitle: "Os próximos passos — consoante a sua situação",
-        aboutTitle: "Quem está por detrás disto — e porquê",
+        nextStepsTitle: "Os próximos passos  consoante a sua situação",
+        aboutTitle: "Quem está por detrás disto  e porquê",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Quem está por detrás disto — e porquê",
-        aboutBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS — plataforma de inspecção independente de imóveis em Portugal.\n\nNão vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma — não porque lucramos com o tratamento que se segue.\n\nTodo o conteúdo deste site é baseado em investigação científica revisada por pares, incluindo as diretrizes da OMS de 2009 e o padrão IICRC S520. Quando a ciência é incerta, dizemos que é incerta.",
+        aboutCardTitle: "Quem está por detrás disto  e porquê",
+        aboutBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS  plataforma de inspecção independente de imóveis em Portugal.\n\nNão vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma  não porque lucramos com o tratamento que se segue.\n\nTodo o conteúdo deste site é baseado em investigação científica revisada por pares, incluindo as diretrizes da OMS de 2009 e o padrão IICRC S520. Quando a ciência é incerta, dizemos que é incerta.",
         aboutLink: "Ler a política editorial completa →",
-        footerNote: "© MoldCheck.pt — Uma iniciativa do FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidade · Política Editorial · Contacto\nEste site não substitui aconselhamento médico ou técnico profissional.",
+        footerNote: "© MoldCheck.pt  Uma iniciativa do FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidade · Política Editorial · Contacto\nEste site não substitui aconselhamento médico ou técnico profissional.",
         featuredCards: [
             {
-                title: "Portugal tem o 2.º pior bolor da Europa — mas ninguém fala nisso",
+                title: "Portugal tem o 2.º pior bolor da Europa mas ninguém fala nisso",
                 body: "O ensaio fundador do MoldCheck.pt. Porquê este problema existe, porque é ignorado, e o que pode mudar.",
                 ctaLabel: "Ler artigo →"
             },
             {
                 title: "Porque é que a lixívia não resolve o bolor",
-                body: "A solução mais usada em Portugal não funciona. Aqui está o porquê — e o que realmente resulta.",
+                body: "A solução mais usada em Portugal não funciona. Aqui está o porquê  e o que realmente resulta.",
                 ctaLabel: "Ler artigo →"
             },
             {
                 title: "A sua casa está a afetar a sua saúde?",
-                body: "O que a OMS estabeleceu sobre bolor e doenças respiratórias — e os sintomas que a maioria das pessoas não associa à habitação.",
+                body: "O que a OMS estabeleceu sobre bolor e doenças respiratórias  e os sintomas que a maioria das pessoas não associa à habitação.",
                 ctaLabel: "Ler artigo →"
             },
             {
@@ -1016,22 +605,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situação 1 — “Tenho bolor visível”",
-                body: "Comece pelo guia de avaliação visual. Identifique a localização, a extensão, e o padrão — essa informação determina tudo o que se segue.",
+                title: "“Tenho bolor visível”",
+                body: "Comece pelo guia de avaliação visual. Identifique a localização, a extensão, e o padrão  essa informação determina tudo o que se segue.",
                 ctaLabel: "Guia de avaliação →"
             },
             {
-                title: "Situação 2 — “Tenho sintomas de saúde que melhoram fora de casa”",
+                title: "“Tenho sintomas de saúde que melhoram fora de casa”",
                 body: "Este é o sinal mais importante a levar a sério. Leia o artigo sobre saúde e bolor antes de qualquer outra acção.",
                 ctaLabel: "Artigo de saúde →"
             },
             {
-                title: "Situação 3 — “Não sei se tenho bolor”",
-                body: "Muitas das localizações mais problemáticas são invisíveis. O guia de inspecção diz-lhe onde procurar — e o que a ausência de bolor visível ainda não exclui.",
+                title: "“Não sei se tenho bolor”",
+                body: "Muitas das localizações mais problemáticas são invisíveis. O guia de inspecção diz-lhe onde procurar  e o que a ausência de bolor visível ainda não exclui.",
                 ctaLabel: "Começar a inspecção →"
             },
             {
-                title: "Situação 4 — “Preciso de ajuda profissional”",
+                title: "“Preciso de ajuda profissional”",
                 body: "Uma inspecção independente com medidor de humidade e câmara termográfica identifica a origem do problema sem vender o tratamento que se segue.",
                 ctaLabel: "Saber mais sobre inspecção independente →"
             }
@@ -1062,41 +651,41 @@ const homeContentByLocale = {
     },
     en: {
         eyebrow: "Independent editorial resource on mold, damp and indoor air quality",
-        description: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means — for your health, your home, and what to do next.",
+        description: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means  for your health, your home, and what to do next.",
         heroTitle: "Portugal has Europe’s second-worst mold problem. Most people don’t know it.",
-        heroBody: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means — for your health, your home, and what to do next.",
+        heroBody: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means  for your health, your home, and what to do next.",
         heroPrimaryCtaLabel: "Assess my home for free",
         heroSecondaryCtaLabel: "Read the inspection guide",
         trustBarText: "Based on WHO scientific research · Independent of treatment companies · No advertising · A FAIRBANK Group initiative",
         problemTitle: "Why does Portugal have so much mold?",
-        problemBody: "82% of buildings in Portugal were built before the year 2000 — before any meaningful insulation or energy-efficiency requirements. Porto has an average relative humidity of 77%. Lisbon in winter reaches 84%.\n\nThe result: chronic condensation, thermal bridges, and walls that retain moisture for decades.\n\nMold is not bad luck. It is the predictable result of buildings that were never properly equipped for the climate they exist in.",
+        problemBody: "82% of buildings in Portugal were built before the year 2000  before any meaningful insulation or energy-efficiency requirements. Porto has an average relative humidity of 77%. Lisbon in winter reaches 84%.\n\nThe result: chronic condensation, thermal bridges, and walls that retain moisture for decades.\n\nMold is not bad luck. It is the predictable result of buildings that were never properly equipped for the climate they exist in.",
         problemLink: "Learn more about why Portuguese buildings are vulnerable →",
         conflictTitle: "Why the free diagnosis isn’t neutral",
-        conflictBody: "Portugal’s major mold treatment companies offer free home diagnoses. It is a smart commercial strategy: the company that diagnoses the problem also sells the solution.\n\nThere is no independent entity in Portugal that will assess the mold in your home and tell you what you have — without making money from what comes next.\n\nMoldCheck.pt is that alternative. We do not sell treatments. We do not take commissions. We publish what the science says.",
+        conflictBody: "Portugal’s major mold treatment companies offer free home diagnoses. It is a smart commercial strategy: the company that diagnoses the problem also sells the solution.\n\nThere is no independent entity in Portugal that will assess the mold in your home and tell you what you have  without making money from what comes next.\n\nMoldCheck.pt is that alternative. We do not sell treatments. We do not take commissions. We publish what the science says.",
         conflictLink: "Read our editorial policy →",
         featuredTitle: "Start here",
         featuredDescription: "",
-        nextStepsTitle: "Next steps — depending on your situation",
-        aboutTitle: "Who is behind this — and why",
+        nextStepsTitle: "Next steps  depending on your situation",
+        aboutTitle: "Who is behind this  and why",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Who is behind this — and why",
-        aboutBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal.\n\nWe do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or a lab test, it is because we believe you need one — not because we profit from whatever treatment comes next.\n\nAll content on this site is based on peer-reviewed scientific research, including the 2009 WHO guidelines and the IICRC S520 standard. When the science is uncertain, we say so.",
+        aboutCardTitle: "Who is behind this  and why",
+        aboutBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal.\n\nWe do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or a lab test, it is because we believe you need one  not because we profit from whatever treatment comes next.\n\nAll content on this site is based on peer-reviewed scientific research, including the 2009 WHO guidelines and the IICRC S520 standard. When the science is uncertain, we say so.",
         aboutLink: "Read the full editorial policy →",
-        footerNote: "© MoldCheck.pt — A FAIRBANK Group initiative\nInspectOS · PropCheck.pt · Privacy Policy · Editorial Policy · Contact\nThis website does not replace professional medical or technical advice.",
+        footerNote: "© MoldCheck.pt  A FAIRBANK Group initiative\nInspectOS · PropCheck.pt · Privacy Policy · Editorial Policy · Contact\nThis website does not replace professional medical or technical advice.",
         featuredCards: [
             {
-                title: "Portugal has Europe’s second-worst mold problem — and nobody talks about it",
+                title: "Portugal has Europe’s second-worst mold problem  and nobody talks about it",
                 body: "The founding essay. Why this problem exists, why it is ignored, and what could change.",
                 ctaLabel: "Read article →"
             },
             {
                 title: "Why bleach doesn’t fix mold",
-                body: "Portugal’s most common solution doesn’t work. Here is why — and what actually does.",
+                body: "Portugal’s most common solution doesn’t work. Here is why  and what actually does.",
                 ctaLabel: "Read article →"
             },
             {
                 title: "Is your home affecting your health?",
-                body: "What the WHO established about mold and respiratory disease — and the symptoms most people do not connect to their housing.",
+                body: "What the WHO established about mold and respiratory disease  and the symptoms most people do not connect to their housing.",
                 ctaLabel: "Read article →"
             },
             {
@@ -1107,22 +696,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1 — “I have visible mold”",
-                body: "Start with the visual assessment guide. Identify the location, extent, and pattern — that information shapes everything that follows.",
+                title: "“I have visible mold”",
+                body: "Start with the visual assessment guide. Identify the location, extent, and pattern  that information shapes everything that follows.",
                 ctaLabel: "Assessment guide →"
             },
             {
-                title: "Situation 2 — “I have health symptoms that improve away from home”",
+                title: "“I have health symptoms that improve away from home”",
                 body: "This is the most important signal to take seriously. Read the health article before taking any other step.",
                 ctaLabel: "Health article →"
             },
             {
-                title: "Situation 3 — “I’m not sure whether I have mold”",
-                body: "Many of the most problematic locations are invisible. The inspection guide shows you where to look — and what the absence of visible mold still does not rule out.",
+                title: "“I’m not sure whether I have mold”",
+                body: "Many of the most problematic locations are invisible. The inspection guide shows you where to look  and what the absence of visible mold still does not rule out.",
                 ctaLabel: "Start the inspection →"
             },
             {
-                title: "Situation 4 — “I need professional help”",
+                title: "“I need professional help”",
                 body: "An independent inspection using a moisture meter and thermal imaging can identify the origin of the problem without selling the treatment that follows.",
                 ctaLabel: "Learn about independent inspection →"
             }
@@ -1130,41 +719,41 @@ const homeContentByLocale = {
     },
     fr: {
         eyebrow: "Ressource éditoriale indépendante sur les moisissures, l’humidité et la qualité de l’air intérieur",
-        description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie — pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+        description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie  pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
         heroTitle: "Le Portugal a le deuxième pire problème de moisissures en Europe. La plupart des gens ne le savent pas.",
-        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie — pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie  pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
         heroPrimaryCtaLabel: "Évaluer mon logement gratuitement",
         heroSecondaryCtaLabel: "Lire le guide d’inspection",
         trustBarText: "Basé sur la recherche scientifique de l’OMS · Indépendant des entreprises de traitement · Sans publicité · Une initiative du FAIRBANK Group",
         problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
-        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000 — avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
+        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000  avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
         problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais →",
         conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
-        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez — sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
+        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez  sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
         conflictLink: "Lire notre politique éditoriale →",
         featuredTitle: "Commencez ici",
         featuredDescription: "",
-        nextStepsTitle: "Les prochaines étapes — selon votre situation",
-        aboutTitle: "Qui est derrière cela — et pourquoi",
+        nextStepsTitle: "Les prochaines étapes  selon votre situation",
+        aboutTitle: "Qui est derrière cela  et pourquoi",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Qui est derrière cela — et pourquoi",
-        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin — pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
+        aboutCardTitle: "Qui est derrière cela  et pourquoi",
+        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin  pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
         aboutLink: "Lire la politique éditoriale complète →",
-        footerNote: "© MoldCheck.pt — Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
+        footerNote: "© MoldCheck.pt  Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
         featuredCards: [
             {
-                title: "Le Portugal a le 2e pire problème de moisissures en Europe — et personne n’en parle",
+                title: "Le Portugal a le 2e pire problème de moisissures en Europe  et personne n’en parle",
                 body: "L’essai fondateur. Pourquoi ce problème existe, pourquoi il est ignoré, et ce qui pourrait changer.",
                 ctaLabel: "Lire l’article →"
             },
             {
                 title: "Pourquoi l’eau de Javel ne résout pas les moisissures",
-                body: "La solution la plus utilisée au Portugal ne fonctionne pas. Voici pourquoi — et ce qui fonctionne vraiment.",
+                body: "La solution la plus utilisée au Portugal ne fonctionne pas. Voici pourquoi  et ce qui fonctionne vraiment.",
                 ctaLabel: "Lire l’article →"
             },
             {
                 title: "Votre logement affecte-t-il votre santé ?",
-                body: "Ce que l’OMS a établi sur les moisissures et les maladies respiratoires — et les symptômes que la plupart des gens ne relient pas à leur logement.",
+                body: "Ce que l’OMS a établi sur les moisissures et les maladies respiratoires  et les symptômes que la plupart des gens ne relient pas à leur logement.",
                 ctaLabel: "Lire l’article →"
             },
             {
@@ -1175,22 +764,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1 — « J’ai des moisissures visibles »",
-                body: "Commencez par le guide d’évaluation visuelle. Identifiez l’emplacement, l’étendue et le motif — ces informations déterminent tout ce qui suit.",
+                title: "« J’ai des moisissures visibles »",
+                body: "Commencez par le guide d’évaluation visuelle. Identifiez l’emplacement, l’étendue et le motif  ces informations déterminent tout ce qui suit.",
                 ctaLabel: "Guide d’évaluation →"
             },
             {
-                title: "Situation 2 — « J’ai des symptômes qui s’améliorent quand je quitte mon logement »",
+                title: "« J’ai des symptômes qui s’améliorent quand je quitte mon logement »",
                 body: "C’est le signal le plus important à prendre au sérieux. Lisez d’abord l’article sur la santé et les moisissures.",
                 ctaLabel: "Article santé →"
             },
             {
-                title: "Situation 3 — « Je ne sais pas si j’ai des moisissures »",
-                body: "Beaucoup des zones les plus problématiques sont invisibles. Le guide d’inspection vous dit où regarder — et ce que l’absence de moisissures visibles n’exclut toujours pas.",
+                title: "« Je ne sais pas si j’ai des moisissures »",
+                body: "Beaucoup des zones les plus problématiques sont invisibles. Le guide d’inspection vous dit où regarder  et ce que l’absence de moisissures visibles n’exclut toujours pas.",
                 ctaLabel: "Commencer l’inspection →"
             },
             {
-                title: "Situation 4 — « J’ai besoin d’une aide professionnelle »",
+                title: "« J’ai besoin d’une aide professionnelle »",
                 body: "Une inspection indépendante avec humidimètre et caméra thermique permet d’identifier l’origine du problème sans vous vendre ensuite le traitement.",
                 ctaLabel: "En savoir plus sur l’inspection indépendante →"
             }
@@ -1198,41 +787,41 @@ const homeContentByLocale = {
     },
     de: {
         eyebrow: "Unabhängige redaktionelle Quelle zu Schimmel, Feuchtigkeit und Innenraumluftqualität",
-        description: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet — für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
+        description: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet  für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
         heroTitle: "Portugal hat Europas zweitschlimmstes Schimmelproblem. Die meisten Menschen wissen das nicht.",
-        heroBody: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet — für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
+        heroBody: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet  für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
         heroPrimaryCtaLabel: "Meine Wohnung kostenlos beurteilen",
         heroSecondaryCtaLabel: "Den Inspektionsleitfaden lesen",
         trustBarText: "Basierend auf WHO-Forschung · Unabhängig von Behandlungsunternehmen · Keine Werbung · Eine Initiative der FAIRBANK Group",
         problemTitle: "Warum hat Portugal so viel Schimmel?",
-        problemBody: "82 % der Gebäude in Portugal wurden vor dem Jahr 2000 gebaut — bevor es nennenswerte Anforderungen an Dämmung oder Energieeffizienz gab. Porto hat eine durchschnittliche relative Luftfeuchtigkeit von 77 %. Lissabon erreicht im Winter 84 %.\n\nDas Ergebnis: chronische Kondensation, Wärmebrücken und Wände, die über Jahrzehnte Feuchtigkeit speichern.\n\nSchimmel ist kein Pech. Er ist das vorhersehbare Ergebnis von Gebäuden, die nie richtig für das Klima ausgelegt wurden, in dem sie stehen.",
+        problemBody: "82 % der Gebäude in Portugal wurden vor dem Jahr 2000 gebaut  bevor es nennenswerte Anforderungen an Dämmung oder Energieeffizienz gab. Porto hat eine durchschnittliche relative Luftfeuchtigkeit von 77 %. Lissabon erreicht im Winter 84 %.\n\nDas Ergebnis: chronische Kondensation, Wärmebrücken und Wände, die über Jahrzehnte Feuchtigkeit speichern.\n\nSchimmel ist kein Pech. Er ist das vorhersehbare Ergebnis von Gebäuden, die nie richtig für das Klima ausgelegt wurden, in dem sie stehen.",
         problemLink: "Mehr über die Anfälligkeit portugiesischer Gebäude erfahren →",
         conflictTitle: "Warum die kostenlose Diagnose nicht neutral ist",
-        conflictBody: "Portugals große Unternehmen für Schimmelbehandlung bieten kostenlose Hausdiagnosen an. Das ist eine kluge Geschäftsstrategie: Das Unternehmen, das das Problem diagnostiziert, verkauft auch die Lösung.\n\nEs gibt in Portugal keine unabhängige Stelle, die den Schimmel in Ihrer Wohnung bewertet und Ihnen sagt, was Sie haben — ohne an dem zu verdienen, was danach kommt.\n\nMoldCheck.pt ist diese Alternative. Wir verkaufen keine Behandlungen. Wir nehmen keine Provisionen. Wir veröffentlichen, was die Wissenschaft sagt.",
+        conflictBody: "Portugals große Unternehmen für Schimmelbehandlung bieten kostenlose Hausdiagnosen an. Das ist eine kluge Geschäftsstrategie: Das Unternehmen, das das Problem diagnostiziert, verkauft auch die Lösung.\n\nEs gibt in Portugal keine unabhängige Stelle, die den Schimmel in Ihrer Wohnung bewertet und Ihnen sagt, was Sie haben  ohne an dem zu verdienen, was danach kommt.\n\nMoldCheck.pt ist diese Alternative. Wir verkaufen keine Behandlungen. Wir nehmen keine Provisionen. Wir veröffentlichen, was die Wissenschaft sagt.",
         conflictLink: "Unsere Redaktionsrichtlinie lesen →",
         featuredTitle: "Beginnen Sie hier",
         featuredDescription: "",
-        nextStepsTitle: "Die nächsten Schritte — je nach Ihrer Situation",
-        aboutTitle: "Wer dahintersteht — und warum",
+        nextStepsTitle: "Die nächsten Schritte  je nach Ihrer Situation",
+        aboutTitle: "Wer dahintersteht  und warum",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Wer dahintersteht — und warum",
-        aboutBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. FAIRBANK betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nWir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie sie brauchen — nicht weil wir an der anschließenden Behandlung verdienen.\n\nAlle Inhalte auf dieser Website basieren auf begutachteter wissenschaftlicher Forschung, einschließlich der WHO-Leitlinien von 2009 und des IICRC-S520-Standards. Wenn die Wissenschaft unsicher ist, sagen wir das offen.",
+        aboutCardTitle: "Wer dahintersteht  und warum",
+        aboutBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. FAIRBANK betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nWir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie sie brauchen  nicht weil wir an der anschließenden Behandlung verdienen.\n\nAlle Inhalte auf dieser Website basieren auf begutachteter wissenschaftlicher Forschung, einschließlich der WHO-Leitlinien von 2009 und des IICRC-S520-Standards. Wenn die Wissenschaft unsicher ist, sagen wir das offen.",
         aboutLink: "Die vollständige Redaktionsrichtlinie lesen →",
-        footerNote: "© MoldCheck.pt — Eine Initiative der FAIRBANK Group\nInspectOS · PropCheck.pt · Datenschutzerklärung · Redaktionsrichtlinie · Kontakt\nDiese Website ersetzt keine professionelle medizinische oder technische Beratung.",
+        footerNote: "© MoldCheck.pt  Eine Initiative der FAIRBANK Group\nInspectOS · PropCheck.pt · Datenschutzerklärung · Redaktionsrichtlinie · Kontakt\nDiese Website ersetzt keine professionelle medizinische oder technische Beratung.",
         featuredCards: [
             {
-                title: "Portugal hat Europas zweitschlimmstes Schimmelproblem — und niemand spricht darüber",
+                title: "Portugal hat Europas zweitschlimmstes Schimmelproblem  und niemand spricht darüber",
                 body: "Der Gründungsessay. Warum dieses Problem besteht, warum es ignoriert wird und was sich ändern könnte.",
                 ctaLabel: "Artikel lesen →"
             },
             {
                 title: "Warum Bleichmittel Schimmel nicht beseitigt",
-                body: "Die am häufigsten genutzte Lösung in Portugal funktioniert nicht. Hier ist der Grund — und was tatsächlich hilft.",
+                body: "Die am häufigsten genutzte Lösung in Portugal funktioniert nicht. Hier ist der Grund  und was tatsächlich hilft.",
                 ctaLabel: "Artikel lesen →"
             },
             {
                 title: "Beeinflusst Ihre Wohnung Ihre Gesundheit?",
-                body: "Was die WHO über Schimmel und Atemwegserkrankungen festgestellt hat — und welche Symptome die meisten Menschen nicht mit ihrer Wohnung verbinden.",
+                body: "Was die WHO über Schimmel und Atemwegserkrankungen festgestellt hat  und welche Symptome die meisten Menschen nicht mit ihrer Wohnung verbinden.",
                 ctaLabel: "Artikel lesen →"
             },
             {
@@ -1243,22 +832,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1 — „Ich habe sichtbaren Schimmel“",
+                title: "„Ich habe sichtbaren Schimmel“",
                 body: "Beginnen Sie mit dem Leitfaden zur visuellen Einschätzung. Ort, Ausmaß und Muster bestimmen, was als Nächstes zu tun ist.",
                 ctaLabel: "Bewertungsleitfaden →"
             },
             {
-                title: "Situation 2 — „Ich habe gesundheitliche Symptome, die außerhalb der Wohnung besser werden“",
+                title: "„Ich habe gesundheitliche Symptome, die außerhalb der Wohnung besser werden“",
                 body: "Das ist das wichtigste Warnsignal. Lesen Sie zuerst den Gesundheitsartikel.",
                 ctaLabel: "Gesundheitsartikel →"
             },
             {
-                title: "Situation 3 — „Ich weiß nicht, ob ich Schimmel habe“",
-                body: "Viele der problematischsten Stellen sind unsichtbar. Der Inspektionsleitfaden zeigt Ihnen, wo Sie suchen müssen — und was das Fehlen von sichtbarem Schimmel dennoch nicht ausschließt.",
+                title: "„Ich weiß nicht, ob ich Schimmel habe“",
+                body: "Viele der problematischsten Stellen sind unsichtbar. Der Inspektionsleitfaden zeigt Ihnen, wo Sie suchen müssen  und was das Fehlen von sichtbarem Schimmel dennoch nicht ausschließt.",
                 ctaLabel: "Inspektion starten →"
             },
             {
-                title: "Situation 4 — „Ich brauche professionelle Hilfe“",
+                title: "„Ich brauche professionelle Hilfe“",
                 body: "Eine unabhängige Inspektion mit Feuchtigkeitsmesser und Wärmebildkamera kann die Ursache des Problems ermitteln, ohne Ihnen anschließend eine Behandlung zu verkaufen.",
                 ctaLabel: "Mehr über unabhängige Inspektion →"
             }
@@ -1266,41 +855,41 @@ const homeContentByLocale = {
     },
     nl: {
         eyebrow: "Onafhankelijke redactionele bron over schimmel, vocht en binnenluchtkwaliteit",
-        description: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent — voor je gezondheid, je woning en wat je daarna kunt doen.",
+        description: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent  voor je gezondheid, je woning en wat je daarna kunt doen.",
         heroTitle: "Portugal heeft het op één na ergste schimmelprobleem van Europa. De meeste mensen weten dat niet.",
-        heroBody: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent — voor je gezondheid, je woning en wat je daarna kunt doen.",
+        heroBody: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent  voor je gezondheid, je woning en wat je daarna kunt doen.",
         heroPrimaryCtaLabel: "Mijn woning gratis beoordelen",
         heroSecondaryCtaLabel: "De inspectiegids lezen",
         trustBarText: "Gebaseerd op WHO-wetenschappelijk onderzoek · Onafhankelijk van behandelingsbedrijven · Geen reclame · Een initiatief van de FAIRBANK Group",
         problemTitle: "Waarom heeft Portugal zoveel schimmel?",
-        problemBody: "82% van de gebouwen in Portugal is gebouwd vóór het jaar 2000 — vóór er betekenisvolle eisen bestonden voor isolatie of energie-efficiëntie. Porto heeft een gemiddelde relatieve luchtvochtigheid van 77%. Lissabon bereikt in de winter 84%.\n\nHet resultaat: chronische condensatie, koudebruggen en muren die tientallen jaren vocht vasthouden.\n\nSchimmel is geen pech. Het is het voorspelbare gevolg van gebouwen die nooit goed zijn aangepast aan het klimaat waarin ze bestaan.",
+        problemBody: "82% van de gebouwen in Portugal is gebouwd vóór het jaar 2000  vóór er betekenisvolle eisen bestonden voor isolatie of energie-efficiëntie. Porto heeft een gemiddelde relatieve luchtvochtigheid van 77%. Lissabon bereikt in de winter 84%.\n\nHet resultaat: chronische condensatie, koudebruggen en muren die tientallen jaren vocht vasthouden.\n\nSchimmel is geen pech. Het is het voorspelbare gevolg van gebouwen die nooit goed zijn aangepast aan het klimaat waarin ze bestaan.",
         problemLink: "Meer over de kwetsbaarheid van Portugese gebouwen →",
         conflictTitle: "Waarom een gratis diagnose niet neutraal is",
-        conflictBody: "De grote schimmelbehandelingsbedrijven in Portugal bieden gratis huisdiagnoses aan. Dat is een slimme commerciële strategie: het bedrijf dat het probleem diagnosticeert, verkoopt ook de oplossing.\n\nEr bestaat in Portugal geen onafhankelijke partij die de schimmel in jouw woning beoordeelt en je vertelt wat er aan de hand is — zonder geld te verdienen aan wat daarna komt.\n\nMoldCheck.pt is dat alternatief. We verkopen geen behandelingen. We ontvangen geen commissies. We publiceren wat de wetenschap zegt.",
+        conflictBody: "De grote schimmelbehandelingsbedrijven in Portugal bieden gratis huisdiagnoses aan. Dat is een slimme commerciële strategie: het bedrijf dat het probleem diagnosticeert, verkoopt ook de oplossing.\n\nEr bestaat in Portugal geen onafhankelijke partij die de schimmel in jouw woning beoordeelt en je vertelt wat er aan de hand is  zonder geld te verdienen aan wat daarna komt.\n\nMoldCheck.pt is dat alternatief. We verkopen geen behandelingen. We ontvangen geen commissies. We publiceren wat de wetenschap zegt.",
         conflictLink: "Lees ons redactioneel beleid →",
         featuredTitle: "Begin hier",
         featuredDescription: "",
-        nextStepsTitle: "Volgende stappen — afhankelijk van jouw situatie",
-        aboutTitle: "Wie hierachter zit — en waarom",
+        nextStepsTitle: "Volgende stappen  afhankelijk van jouw situatie",
+        aboutTitle: "Wie hierachter zit  en waarom",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Wie hierachter zit — en waarom",
-        aboutBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. FAIRBANK beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nWe verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt — niet omdat we verdienen aan de behandeling die daarop volgt.\n\nAlle inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijk onderzoek, waaronder de WHO-richtlijnen uit 2009 en de IICRC S520-standaard. Wanneer de wetenschap onzeker is, zeggen we dat ook.",
+        aboutCardTitle: "Wie hierachter zit  en waarom",
+        aboutBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. FAIRBANK beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nWe verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt  niet omdat we verdienen aan de behandeling die daarop volgt.\n\nAlle inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijk onderzoek, waaronder de WHO-richtlijnen uit 2009 en de IICRC S520-standaard. Wanneer de wetenschap onzeker is, zeggen we dat ook.",
         aboutLink: "Lees het volledige redactioneel beleid →",
-        footerNote: "© MoldCheck.pt — Een initiatief van de FAIRBANK Group\nInspectOS · PropCheck.pt · Privacybeleid · Redactioneel beleid · Contact\nDeze website vervangt geen professioneel medisch of technisch advies.",
+        footerNote: "© MoldCheck.pt  Een initiatief van de FAIRBANK Group\nInspectOS · PropCheck.pt · Privacybeleid · Redactioneel beleid · Contact\nDeze website vervangt geen professioneel medisch of technisch advies.",
         featuredCards: [
             {
-                title: "Portugal heeft het op één na ergste schimmelprobleem van Europa — en niemand heeft het erover",
+                title: "Portugal heeft het op één na ergste schimmelprobleem van Europa  en niemand heeft het erover",
                 body: "Het oprichtingsessay. Waarom dit probleem bestaat, waarom het wordt genegeerd en wat er kan veranderen.",
                 ctaLabel: "Artikel lezen →"
             },
             {
                 title: "Waarom bleekwater schimmel niet oplost",
-                body: "De meest gebruikte oplossing in Portugal werkt niet. Dit is waarom — en wat wél werkt.",
+                body: "De meest gebruikte oplossing in Portugal werkt niet. Dit is waarom  en wat wél werkt.",
                 ctaLabel: "Artikel lezen →"
             },
             {
                 title: "Heeft jouw woning invloed op je gezondheid?",
-                body: "Wat de WHO heeft vastgesteld over schimmel en luchtwegaandoeningen — en de symptomen die de meeste mensen niet met hun woning verbinden.",
+                body: "Wat de WHO heeft vastgesteld over schimmel en luchtwegaandoeningen  en de symptomen die de meeste mensen niet met hun woning verbinden.",
                 ctaLabel: "Artikel lezen →"
             },
             {
@@ -1311,22 +900,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situatie 1 — “Ik heb zichtbare schimmel”",
-                body: "Begin met de visuele beoordelingsgids. Bepaal de locatie, omvang en het patroon — die informatie bepaalt alles wat daarna komt.",
+                title: "“Ik heb zichtbare schimmel”",
+                body: "Begin met de visuele beoordelingsgids. Bepaal de locatie, omvang en het patroon  die informatie bepaalt alles wat daarna komt.",
                 ctaLabel: "Beoordelingsgids →"
             },
             {
-                title: "Situatie 2 — “Mijn gezondheidsklachten verbeteren buitenshuis”",
+                title: "“Mijn gezondheidsklachten verbeteren buitenshuis”",
                 body: "Dit is het belangrijkste signaal om serieus te nemen. Lees eerst het gezondheidsartikel.",
                 ctaLabel: "Gezondheidsartikel →"
             },
             {
-                title: "Situatie 3 — “Ik weet niet of ik schimmel heb”",
-                body: "Veel van de meest problematische plekken zijn onzichtbaar. De inspectiegids laat zien waar je moet kijken — en wat de afwezigheid van zichtbare schimmel nog steeds niet uitsluit.",
+                title: "“Ik weet niet of ik schimmel heb”",
+                body: "Veel van de meest problematische plekken zijn onzichtbaar. De inspectiegids laat zien waar je moet kijken  en wat de afwezigheid van zichtbare schimmel nog steeds niet uitsluit.",
                 ctaLabel: "Inspectie starten →"
             },
             {
-                title: "Situatie 4 — “Ik heb professionele hulp nodig”",
+                title: "“Ik heb professionele hulp nodig”",
                 body: "Een onafhankelijke inspectie met een vochtmeter en warmtebeeldcamera kan de oorzaak van het probleem vaststellen zonder de behandeling die daarna volgt aan je te verkopen.",
                 ctaLabel: "Meer over onafhankelijke inspectie →"
             }
@@ -1334,41 +923,41 @@ const homeContentByLocale = {
     },
     it: {
         eyebrow: "Risorsa editoriale indipendente su muffa, umidità e qualità dell’aria interna",
-        description: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo — per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
+        description: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo  per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
         heroTitle: "Il Portogallo ha il secondo peggior problema di muffa in Europa. La maggior parte delle persone che ci vivono non lo sa.",
-        heroBody: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo — per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
+        heroBody: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo  per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
         heroPrimaryCtaLabel: "Valuta gratuitamente la mia casa",
         heroSecondaryCtaLabel: "Leggi la guida all’ispezione",
         trustBarText: "Basato sulla ricerca scientifica dell’OMS · Indipendente dalle aziende di trattamento · Nessuna pubblicità · Un’iniziativa del FAIRBANK Group",
         problemTitle: "Perché in Portogallo c’è così tanta muffa?",
-        problemBody: "L’82% degli edifici in Portogallo è stato costruito prima dell’anno 2000 — prima di qualsiasi requisito significativo in materia di isolamento o efficienza energetica. Porto ha un’umidità relativa media del 77%. Lisbona, in inverno, raggiunge l’84%.\n\nIl risultato: condensa cronica, ponti termici e pareti che trattengono l’umidità per decenni.\n\nLa muffa non è sfortuna. È il risultato prevedibile di edifici che non sono mai stati attrezzati per il clima in cui si trovano.",
+        problemBody: "L’82% degli edifici in Portogallo è stato costruito prima dell’anno 2000  prima di qualsiasi requisito significativo in materia di isolamento o efficienza energetica. Porto ha un’umidità relativa media del 77%. Lisbona, in inverno, raggiunge l’84%.\n\nIl risultato: condensa cronica, ponti termici e pareti che trattengono l’umidità per decenni.\n\nLa muffa non è sfortuna. È il risultato prevedibile di edifici che non sono mai stati attrezzati per il clima in cui si trovano.",
         problemLink: "Scopri di più sul perché gli edifici portoghesi sono vulnerabili →",
         conflictTitle: "Perché una diagnosi gratuita non è neutrale",
-        conflictBody: "Le principali aziende di trattamento della muffa in Portogallo offrono diagnosi gratuite a domicilio. È una strategia commerciale intelligente: l’azienda che diagnostica il problema è anche quella che vende la soluzione.\n\nIn Portogallo non esiste alcuna entità indipendente che valuti la muffa nella tua casa e ti dica che cosa hai — senza guadagnare da ciò che viene dopo.\n\nMoldCheck.pt è quell’alternativa. Non vendiamo trattamenti. Non riceviamo commissioni. Pubblichiamo ciò che dice la scienza.",
+        conflictBody: "Le principali aziende di trattamento della muffa in Portogallo offrono diagnosi gratuite a domicilio. È una strategia commerciale intelligente: l’azienda che diagnostica il problema è anche quella che vende la soluzione.\n\nIn Portogallo non esiste alcuna entità indipendente che valuti la muffa nella tua casa e ti dica che cosa hai  senza guadagnare da ciò che viene dopo.\n\nMoldCheck.pt è quell’alternativa. Non vendiamo trattamenti. Non riceviamo commissioni. Pubblichiamo ciò che dice la scienza.",
         conflictLink: "Leggi la nostra politica editoriale →",
         featuredTitle: "Inizia da qui",
         featuredDescription: "",
-        nextStepsTitle: "I prossimi passi — in base alla tua situazione",
-        aboutTitle: "Chi c’è dietro tutto questo — e perché",
+        nextStepsTitle: "I prossimi passi  in base alla tua situazione",
+        aboutTitle: "Chi c’è dietro tutto questo  e perché",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Chi c’è dietro tutto questo — e perché",
-        aboutBody: "MoldCheck.pt è un’iniziativa del FAIRBANK Group. FAIRBANK gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nNon vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da aziende di risanamento. Quando consigliamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno — non perché guadagniamo dal trattamento che segue.\n\nTutti i contenuti di questo sito si basano su ricerca scientifica peer-reviewed, comprese le linee guida OMS del 2009 e lo standard IICRC S520. Quando la scienza è incerta, lo diciamo chiaramente.",
+        aboutCardTitle: "Chi c’è dietro tutto questo  e perché",
+        aboutBody: "MoldCheck.pt è un’iniziativa del FAIRBANK Group. FAIRBANK gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nNon vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da aziende di risanamento. Quando consigliamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno  non perché guadagniamo dal trattamento che segue.\n\nTutti i contenuti di questo sito si basano su ricerca scientifica peer-reviewed, comprese le linee guida OMS del 2009 e lo standard IICRC S520. Quando la scienza è incerta, lo diciamo chiaramente.",
         aboutLink: "Leggi la politica editoriale completa →",
-        footerNote: "© MoldCheck.pt — Un’iniziativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Informativa sulla Privacy · Politica Editoriale · Contatti\nQuesto sito non sostituisce un parere medico o tecnico professionale.",
+        footerNote: "© MoldCheck.pt  Un’iniziativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Informativa sulla Privacy · Politica Editoriale · Contatti\nQuesto sito non sostituisce un parere medico o tecnico professionale.",
         featuredCards: [
             {
-                title: "Il Portogallo ha il 2º peggior problema di muffa in Europa — e nessuno ne parla",
+                title: "Il Portogallo ha il 2º peggior problema di muffa in Europa  e nessuno ne parla",
                 body: "Il saggio fondativo di MoldCheck.pt. Perché questo problema esiste, perché viene ignorato e che cosa può cambiare.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
                 title: "Perché la candeggina non risolve la muffa",
-                body: "La soluzione più usata in Portogallo non funziona. Ecco perché — e che cosa funziona davvero.",
+                body: "La soluzione più usata in Portogallo non funziona. Ecco perché  e che cosa funziona davvero.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
                 title: "La tua casa sta influenzando la tua salute?",
-                body: "Che cosa ha stabilito l’OMS sulla muffa e sulle malattie respiratorie — e quali sintomi la maggior parte delle persone non collega alla propria abitazione.",
+                body: "Che cosa ha stabilito l’OMS sulla muffa e sulle malattie respiratorie  e quali sintomi la maggior parte delle persone non collega alla propria abitazione.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
@@ -1379,22 +968,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situazione 1 — “Ho muffa visibile”",
-                body: "Inizia dalla guida di valutazione visiva. Identifica posizione, estensione e schema del problema — queste informazioni determinano tutto ciò che viene dopo.",
+                title: "“Ho muffa visibile”",
+                body: "Inizia dalla guida di valutazione visiva. Identifica posizione, estensione e schema del problema  queste informazioni determinano tutto ciò che viene dopo.",
                 ctaLabel: "Guida di valutazione →"
             },
             {
-                title: "Situazione 2 — “Ho sintomi di salute che migliorano quando sono fuori casa”",
+                title: "“Ho sintomi di salute che migliorano quando sono fuori casa”",
                 body: "Questo è il segnale più importante da prendere sul serio. Leggi l’articolo su salute e muffa prima di qualsiasi altra azione.",
                 ctaLabel: "Articolo sulla salute →"
             },
             {
-                title: "Situazione 3 — “Non so se ho muffa”",
-                body: "Molti dei punti più problematici sono invisibili. La guida all’ispezione ti dice dove guardare — e che cosa l’assenza di muffa visibile non esclude ancora.",
+                title: "“Non so se ho muffa”",
+                body: "Molti dei punti più problematici sono invisibili. La guida all’ispezione ti dice dove guardare  e che cosa l’assenza di muffa visibile non esclude ancora.",
                 ctaLabel: "Inizia l’ispezione →"
             },
             {
-                title: "Situazione 4 — “Ho bisogno di aiuto professionale”",
+                title: "“Ho bisogno di aiuto professionale”",
                 body: "Un’ispezione indipendente con igrometro e termocamera individua l’origine del problema senza venderti il trattamento successivo.",
                 ctaLabel: "Scopri di più sull’ispezione indipendente →"
             }
@@ -1402,41 +991,41 @@ const homeContentByLocale = {
     },
     es: {
         eyebrow: "Recurso editorial independiente sobre moho, humedad y calidad del aire interior",
-        description: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso — para tu salud, para tu vivienda y para lo que puedes hacer después.",
+        description: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso  para tu salud, para tu vivienda y para lo que puedes hacer después.",
         heroTitle: "Portugal tiene el segundo peor problema de moho de Europa. La mayoría de la gente que vive aquí no lo sabe.",
-        heroBody: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso — para tu salud, para tu vivienda y para lo que puedes hacer después.",
-        heroPrimaryCtaLabel: "Evalúa mi vivienda gratis",
+        heroBody: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso  para tu salud, para tu vivienda y para lo que puedes hacer después.",
+        heroPrimaryCtaLabel: "Evalúa tu vivienda gratis",
         heroSecondaryCtaLabel: "Leer la guía de inspección",
         trustBarText: "Basado en investigación científica de la OMS · Independiente de empresas de tratamiento · Sin publicidad · Una iniciativa del FAIRBANK Group",
         problemTitle: "¿Por qué hay tanto moho en Portugal?",
-        problemBody: "El 82% de los edificios en Portugal se construyó antes del año 2000 — antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
+        problemBody: "El 82% de los edificios en Portugal se construyeron antes del año 2000 antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
         problemLink: "Descubre por qué los edificios portugueses son tan vulnerables →",
-        conflictTitle: "Por qué un diagnóstico gratuito no es neutral",
-        conflictBody: "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes — sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",
+        conflictTitle: "¿Por qué un diagnóstico gratuito no es neutral?",
+        conflictBody: "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes  sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",
         conflictLink: "Leer nuestra política editorial →",
         featuredTitle: "Empieza aquí",
         featuredDescription: "",
-        nextStepsTitle: "Siguientes pasos — según tu situación",
-        aboutTitle: "Quién está detrás de esto — y por qué",
+        nextStepsTitle: "Siguientes pasos según tu situación",
+        aboutTitle: "¿Quién está detrás de esto y por qué?",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Quién está detrás de esto — y por qué",
-        aboutBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas — no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
+        aboutCardTitle: "¿Quién está detrás de esto y por qué?",
+        aboutBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas  no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
         aboutLink: "Leer la política editorial completa →",
-        footerNote: "© MoldCheck.pt — Una iniciativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidad · Política Editorial · Contacto\nEste sitio web no sustituye el asesoramiento médico o técnico profesional.",
+        footerNote: "© MoldCheck.pt  Una iniciativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidad · Política Editorial · Contacto\nEste sitio web no sustituye el asesoramiento médico o técnico profesional.",
         featuredCards: [
             {
-                title: "Portugal tiene el segundo peor problema de moho de Europa — y nadie habla de ello",
+                title: "Portugal tiene el segundo peor problema de moho de Europa  y nadie habla de ello",
                 body: "El ensayo fundacional de MoldCheck.pt. Por qué existe este problema, por qué se ignora y qué puede cambiar.",
                 ctaLabel: "Leer artículo →"
             },
             {
                 title: "Por qué la lejía no resuelve el moho",
-                body: "La solución más utilizada en Portugal no funciona. Aquí está el porqué — y lo que realmente funciona.",
+                body: "La solución más utilizada en Portugal no funciona. Aquí está el porqué  y lo que realmente funciona.",
                 ctaLabel: "Leer artículo →"
             },
             {
                 title: "¿Tu vivienda está afectando a tu salud?",
-                body: "Lo que la OMS estableció sobre moho y enfermedades respiratorias — y los síntomas que la mayoría de la gente no relaciona con su vivienda.",
+                body: "Lo que la OMS estableció sobre moho y enfermedades respiratorias  y los síntomas que la mayoría de la gente no relaciona con su vivienda.",
                 ctaLabel: "Leer artículo →"
             },
             {
@@ -1447,22 +1036,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situación 1 — “Tengo moho visible”",
-                body: "Empieza por la guía de evaluación visual. Identifica la ubicación, la extensión y el patrón — esa información determina todo lo que viene después.",
+                title: "“Tengo moho visible”",
+                body: "Empieza por la guía de evaluación visual. Identifica la ubicación, la extensión y el patrón  esa información determina todo lo que viene después.",
                 ctaLabel: "Guía de evaluación →"
             },
             {
-                title: "Situación 2 — “Tengo síntomas de salud que mejoran fuera de casa”",
+                title: "“Tengo síntomas de salud que mejoran fuera de casa”",
                 body: "Esta es la señal más importante que debes tomarte en serio. Lee el artículo sobre salud y moho antes de cualquier otra acción.",
                 ctaLabel: "Artículo sobre salud →"
             },
             {
-                title: "Situación 3 — “No sé si tengo moho”",
-                body: "Muchas de las zonas más problemáticas son invisibles. La guía de inspección te dice dónde mirar — y qué cosas sigue sin descartar la ausencia de moho visible.",
+                title: "“No sé si tengo moho”",
+                body: "Muchas de las zonas más problemáticas son invisibles. La guía de inspección te dice dónde mirar  y qué cosas sigue sin descartar la ausencia de moho visible.",
                 ctaLabel: "Empezar la inspección →"
             },
             {
-                title: "Situación 4 — “Necesito ayuda profesional”",
+                title: "“Necesito ayuda profesional”",
                 body: "Una inspección independiente con higrómetro y cámara termográfica identifica el origen del problema sin venderte el tratamiento que viene después.",
                 ctaLabel: "Saber más sobre la inspección independiente →"
             }
@@ -1496,6 +1085,10 @@ function getConflictEyebrow(locale) {
 function getArticleHref(locale, section) {
     const articleKey = section === "remediation" ? "bleach" : section === "inspection" ? "inspection-guide" : section;
     const slug = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["foundationalArticles"].find((article)=>article.key === articleKey)?.slugs[locale];
+    // The portugal article lives in the /articles/ route, not /portugal/
+    if (section === "portugal") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getArticlePath"])(locale, slug ?? "");
+    }
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, section, slug);
 }
 function buildHomeSections(locale, content) {
@@ -1507,81 +1100,7 @@ function buildHomeSections(locale, content) {
         health: getArticleHref(locale, "health"),
         inspection: getArticleHref(locale, "inspection")
     };
-    const sections = [
-        {
-            eyebrow: getProblemEyebrow(locale),
-            title: content.problemTitle,
-            layout: "grid",
-            cards: [
-                {
-                    title: content.problemTitle,
-                    body: content.problemBody,
-                    tone: "featured",
-                    ctaLabel: content.problemLink,
-                    ctaHref: articleHrefs.portugal
-                }
-            ]
-        },
-        {
-            eyebrow: getConflictEyebrow(locale),
-            title: content.conflictTitle,
-            layout: "grid",
-            cards: [
-                {
-                    title: content.conflictTitle,
-                    body: content.conflictBody,
-                    tone: "warning",
-                    ctaLabel: content.conflictLink,
-                    ctaHref: aboutHref
-                }
-            ]
-        },
-        {
-            title: content.featuredTitle,
-            description: content.featuredDescription,
-            layout: "utility",
-            cards: content.featuredCards.map((card, index)=>({
-                    title: card.title,
-                    body: card.body,
-                    ctaLabel: card.ctaLabel,
-                    ctaHref: [
-                        articleHrefs.portugal,
-                        articleHrefs.remediation,
-                        articleHrefs.health,
-                        articleHrefs.inspection
-                    ][index]
-                }))
-        },
-        {
-            title: content.nextStepsTitle,
-            layout: "utility",
-            cards: content.nextStepCards.map((card, index)=>({
-                    title: card.title,
-                    body: card.body,
-                    ctaLabel: card.ctaLabel,
-                    ctaHref: [
-                        articleHrefs.inspection,
-                        articleHrefs.health,
-                        articleHrefs.inspection,
-                        servicesHref
-                    ][index]
-                }))
-        },
-        {
-            title: content.aboutTitle,
-            layout: "grid",
-            cards: [
-                {
-                    eyebrow: content.aboutCardEyebrow,
-                    title: content.aboutCardTitle,
-                    body: content.aboutBody,
-                    tone: "featured",
-                    ctaLabel: content.aboutLink,
-                    ctaHref: aboutHref
-                }
-            ]
-        }
-    ];
+    const sections = [];
     if (content.faqTitle && content.faqCards?.length) {
         sections.push({
             title: content.faqTitle,
@@ -1610,10 +1129,91 @@ function getHomeFallbackContent(locale) {
         heroSecondaryCtaLabel: content.heroSecondaryCtaLabel,
         heroSecondaryCtaHref: getArticleHref(locale, "inspection"),
         trustBarText: content.trustBarText,
-        seoTitle: locale === "pt" ? "MoldCheck — Informação Independente sobre Bolor em Portugal" : "MoldCheck.pt",
-        seoDescription: locale === "pt" ? "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação — sem vender tratamentos." : content.description,
+        seoTitle: ({
+            pt: "MoldCheck  Informação Independente sobre Bolor em Portugal",
+            en: "MoldCheck  Independent Information on Mold and Damp in Portugal",
+            fr: "MoldCheck  Information Indépendante sur les Moisissures au Portugal",
+            de: "MoldCheck  Unabhängige Informationen über Schimmel in Portugal",
+            nl: "MoldCheck  Onafhankelijke Informatie over Schimmel in Portugal",
+            it: "MoldCheck  Informazione Indipendente sulla Muffa in Portogallo",
+            es: "MoldCheck  Información Independiente sobre Moho en Portugal"
+        })[locale],
+        seoDescription: ({
+            pt: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação  sem vender tratamentos.",
+            en: "Portugal has the 2nd worst mold problem in Europe. Independent scientific information on diagnosis, health and remediation  without selling treatments.",
+            fr: "Le Portugal a le 2e pire problème de moisissures en Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation  sans vendre de traitements.",
+            de: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Unabhängige wissenschaftliche Informationen zu Diagnose, Gesundheit und Sanierung  ohne Behandlungen zu verkaufen.",
+            nl: "Portugal heeft het op één na grootste schimmelprobleem van Europa. Onafhankelijke wetenschappelijke informatie over diagnose, gezondheid en sanering  zonder behandelingen te verkopen.",
+            it: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica  senza vendere trattamenti.",
+            es: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación  sin vender tratamientos."
+        })[locale],
         sections: buildHomeSections(locale, content),
-        footerNote: content.footerNote
+        footerNote: undefined
+    };
+}
+function getHomeProblemContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    return {
+        problemEyebrow: getProblemEyebrow(locale),
+        problemTitle: c.problemTitle,
+        problemBody: c.problemBody,
+        problemLink: c.problemLink
+    };
+}
+function getHomeConflictContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    return {
+        conflictEyebrow: getConflictEyebrow(locale),
+        conflictTitle: c.conflictTitle,
+        conflictBody: c.conflictBody,
+        conflictLink: c.conflictLink,
+        conflictHref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "about")
+    };
+}
+function getHomeFeaturedContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    const hrefs = [
+        getArticleHref(locale, "portugal"),
+        getArticleHref(locale, "remediation"),
+        getArticleHref(locale, "health"),
+        getArticleHref(locale, "inspection")
+    ];
+    return {
+        featuredTitle: c.featuredTitle,
+        cards: c.featuredCards.map((card, i)=>({
+                title: card.title,
+                body: card.body,
+                ctaLabel: card.ctaLabel,
+                href: hrefs[i] ?? "#"
+            }))
+    };
+}
+function getHomeNextStepsContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    const hrefs = [
+        getArticleHref(locale, "inspection"),
+        getArticleHref(locale, "health"),
+        getArticleHref(locale, "inspection"),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, "inspection")
+    ];
+    return {
+        nextStepsTitle: c.nextStepsTitle,
+        cards: c.nextStepCards.map((card, i)=>({
+                title: card.title,
+                body: card.body,
+                ctaLabel: card.ctaLabel,
+                href: hrefs[i] ?? "#"
+            }))
+    };
+}
+function getHomeAboutContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    return {
+        aboutEyebrow: c.aboutCardEyebrow,
+        aboutTitle: c.aboutCardTitle,
+        aboutBody: c.aboutBody,
+        aboutLink: c.aboutLink,
+        aboutHref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "editorialPolicy")
     };
 }
 }),
@@ -2946,14 +2546,227 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$pat
 ;
 ;
 ;
+const pageSeoMeta = {
+    home: {
+        pt: {
+            title: "MoldCheck.pt — Informação Independente sobre Bolor em Portugal",
+            description: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação — sem vender tratamentos."
+        },
+        en: {
+            title: "MoldCheck.pt — Independent Mold Information for Portugal",
+            description: "Portugal has Europe's 2nd worst mold problem. Independent, science-based information on diagnosis, health and remediation — without selling treatments."
+        },
+        fr: {
+            title: "MoldCheck.pt — Information Indépendante sur les Moisissures au Portugal",
+            description: "Le Portugal a le 2e pire problème de moisissures d'Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation."
+        },
+        de: {
+            title: "MoldCheck.pt — Unabhängige Schimmelinformationen für Portugal",
+            description: "Portugal hat Europas zweitschlimmstes Schimmelproblem. Unabhängige, wissenschaftlich fundierte Informationen zu Diagnose, Gesundheit und Sanierung."
+        },
+        nl: {
+            title: "MoldCheck.pt — Onafhankelijke Schimmelinformatie voor Portugal",
+            description: "Portugal heeft het op één na ergste schimmelprobleem van Europa. Onafhankelijke, wetenschappelijke informatie over diagnose, gezondheid en sanering."
+        },
+        it: {
+            title: "MoldCheck.pt — Informazione Indipendente sulla Muffa in Portogallo",
+            description: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica."
+        },
+        es: {
+            title: "MoldCheck.pt — Información Independiente sobre Moho en Portugal",
+            description: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación."
+        }
+    },
+    about: {
+        pt: {
+            title: "Sobre o MoldCheck.pt — Quem Somos e Como Trabalhamos",
+            description: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. Não vendemos tratamentos. Publicamos o que a ciência diz — com política editorial transparente."
+        },
+        en: {
+            title: "About MoldCheck.pt — Who We Are and How We Work",
+            description: "MoldCheck.pt is a FAIRBANK Group initiative. We don't sell treatments. We publish what the science says — with a transparent editorial policy."
+        },
+        fr: {
+            title: "À Propos de MoldCheck.pt — Qui Nous Sommes",
+            description: "MoldCheck.pt est une initiative du FAIRBANK Group. Nous ne vendons pas de traitements. Nous publions ce que la science dit — avec une politique éditoriale transparente."
+        },
+        de: {
+            title: "Über MoldCheck.pt — Wer Wir Sind und Wie Wir Arbeiten",
+            description: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Wir verkaufen keine Behandlungen. Wir veröffentlichen, was die Wissenschaft sagt — mit transparenter Redaktionsrichtlinie."
+        },
+        nl: {
+            title: "Over MoldCheck.pt — Wie We Zijn en Hoe We Werken",
+            description: "MoldCheck.pt is een initiatief van de FAIRBANK Group. We verkopen geen behandelingen. We publiceren wat de wetenschap zegt — met transparant redactioneel beleid."
+        },
+        it: {
+            title: "Chi Siamo — MoldCheck.pt",
+            description: "MoldCheck.pt è un'iniziativa del FAIRBANK Group. Non vendiamo trattamenti. Pubblichiamo ciò che dice la scienza — con una politica editoriale trasparente."
+        },
+        es: {
+            title: "Sobre MoldCheck.pt — Quiénes Somos y Cómo Trabajamos",
+            description: "MoldCheck.pt es una iniciativa del FAIRBANK Group. No vendemos tratamientos. Publicamos lo que dice la ciencia — con una política editorial transparente."
+        }
+    },
+    services: {
+        pt: {
+            title: "Serviços de Inspecção Independente — MoldCheck.pt",
+            description: "Inspecções independentes de bolor e humidade em Portugal. Diagnóstico imparcial, sem comissões de tratamento. Conheça os serviços da InspectOS."
+        },
+        en: {
+            title: "Independent Inspection Services — MoldCheck.pt",
+            description: "Independent mold and damp inspections in Portugal. Impartial diagnosis, no treatment commissions. Discover InspectOS inspection services."
+        },
+        fr: {
+            title: "Services d'Inspection Indépendante — MoldCheck.pt",
+            description: "Inspections indépendantes de moisissures et d'humidité au Portugal. Diagnostic impartial, sans commissions de traitement."
+        },
+        de: {
+            title: "Unabhängige Inspektionsdienste — MoldCheck.pt",
+            description: "Unabhängige Schimmel- und Feuchtigkeitsinspektionen in Portugal. Unparteiische Diagnose, keine Behandlungsprovisionen."
+        },
+        nl: {
+            title: "Onafhankelijke Inspectiediensten — MoldCheck.pt",
+            description: "Onafhankelijke schimmel- en vochtinspecties in Portugal. Onpartijdige diagnose, geen behandelingscommissies."
+        },
+        it: {
+            title: "Servizi di Ispezione Indipendente — MoldCheck.pt",
+            description: "Ispezioni indipendenti di muffa e umidità in Portogallo. Diagnosi imparziale, senza commissioni di trattamento."
+        },
+        es: {
+            title: "Servicios de Inspección Independiente — MoldCheck.pt",
+            description: "Inspecciones independientes de moho y humedad en Portugal. Diagnóstico imparcial, sin comisiones de tratamiento."
+        }
+    },
+    contact: {
+        pt: {
+            title: "Contacto — MoldCheck.pt",
+            description: "Entre em contacto com a equipa editorial do MoldCheck.pt ou solicite informações sobre inspecções independentes em Portugal."
+        },
+        en: {
+            title: "Contact — MoldCheck.pt",
+            description: "Get in touch with the MoldCheck.pt editorial team or request information about independent inspections in Portugal."
+        },
+        fr: {
+            title: "Contact — MoldCheck.pt",
+            description: "Contactez l'équipe éditoriale de MoldCheck.pt ou demandez des informations sur les inspections indépendantes au Portugal."
+        },
+        de: {
+            title: "Kontakt — MoldCheck.pt",
+            description: "Nehmen Sie Kontakt mit dem Redaktionsteam von MoldCheck.pt auf oder fordern Sie Informationen zu unabhängigen Inspektionen in Portugal an."
+        },
+        nl: {
+            title: "Contact — MoldCheck.pt",
+            description: "Neem contact op met het redactieteam van MoldCheck.pt of vraag informatie aan over onafhankelijke inspecties in Portugal."
+        },
+        it: {
+            title: "Contatti — MoldCheck.pt",
+            description: "Contatta il team editoriale di MoldCheck.pt o richiedi informazioni sulle ispezioni indipendenti in Portogallo."
+        },
+        es: {
+            title: "Contacto — MoldCheck.pt",
+            description: "Contacta con el equipo editorial de MoldCheck.pt o solicita información sobre inspecciones independientes en Portugal."
+        }
+    },
+    privacy: {
+        pt: {
+            title: "Política de Privacidade — MoldCheck.pt",
+            description: "Política de privacidade e tratamento de dados do MoldCheck.pt."
+        },
+        en: {
+            title: "Privacy Policy — MoldCheck.pt",
+            description: "Privacy policy and data handling practices of MoldCheck.pt."
+        },
+        fr: {
+            title: "Politique de Confidentialité — MoldCheck.pt",
+            description: "Politique de confidentialité et pratiques de traitement des données de MoldCheck.pt."
+        },
+        de: {
+            title: "Datenschutzrichtlinie — MoldCheck.pt",
+            description: "Datenschutzrichtlinie und Datenverarbeitungspraktiken von MoldCheck.pt."
+        },
+        nl: {
+            title: "Privacybeleid — MoldCheck.pt",
+            description: "Privacybeleid en gegevensverwerkingspraktijken van MoldCheck.pt."
+        },
+        it: {
+            title: "Informativa sulla Privacy — MoldCheck.pt",
+            description: "Informativa sulla privacy e pratiche di trattamento dei dati di MoldCheck.pt."
+        },
+        es: {
+            title: "Política de Privacidad — MoldCheck.pt",
+            description: "Política de privacidad y prácticas de tratamiento de datos de MoldCheck.pt."
+        }
+    },
+    tools: {
+        pt: {
+            title: "Ferramentas de Avaliação de Humidade — MoldCheck.pt",
+            description: "Calculadoras e ferramentas editoriais para avaliar risco de humidade e bolor em casa. Baseadas em critérios científicos."
+        },
+        en: {
+            title: "Humidity & Mold Assessment Tools — MoldCheck.pt",
+            description: "Editorial calculators and tools to assess damp and mold risk at home. Based on scientific criteria."
+        },
+        fr: {
+            title: "Outils d'Évaluation de l'Humidité — MoldCheck.pt",
+            description: "Calculateurs et outils éditoriaux pour évaluer le risque d'humidité et de moisissures à domicile."
+        },
+        de: {
+            title: "Feuchtigkeits- und Schimmelbewertungstools — MoldCheck.pt",
+            description: "Redaktionelle Rechner und Tools zur Bewertung von Feuchtigkeits- und Schimmelrisiken zu Hause."
+        },
+        nl: {
+            title: "Vocht- en Schimmelbeoordelingstools — MoldCheck.pt",
+            description: "Redactionele calculators en tools om vocht- en schimmelrisico thuis te beoordelen."
+        },
+        it: {
+            title: "Strumenti di Valutazione dell'Umidità — MoldCheck.pt",
+            description: "Calcolatori e strumenti editoriali per valutare il rischio di umidità e muffa in casa."
+        },
+        es: {
+            title: "Herramientas de Evaluación de Humedad — MoldCheck.pt",
+            description: "Calculadoras y herramientas editoriales para evaluar el riesgo de humedad y moho en casa."
+        }
+    },
+    shop: {
+        pt: {
+            title: "Loja — MoldCheck.pt",
+            description: "Inspecções, análises laboratoriais e recursos digitais sobre bolor e humidade em Portugal."
+        },
+        en: {
+            title: "Shop — MoldCheck.pt",
+            description: "Inspections, laboratory analyses and digital resources on mold and damp in Portugal."
+        },
+        fr: {
+            title: "Boutique — MoldCheck.pt",
+            description: "Inspections, analyses en laboratoire et ressources numériques sur les moisissures et l'humidité au Portugal."
+        },
+        de: {
+            title: "Shop — MoldCheck.pt",
+            description: "Inspektionen, Laboranalysen und digitale Ressourcen zu Schimmel und Feuchtigkeit in Portugal."
+        },
+        nl: {
+            title: "Winkel — MoldCheck.pt",
+            description: "Inspecties, laboratoriumanalyses en digitale bronnen over schimmel en vocht in Portugal."
+        },
+        it: {
+            title: "Negozio — MoldCheck.pt",
+            description: "Ispezioni, analisi di laboratorio e risorse digitali su muffa e umidità in Portogallo."
+        },
+        es: {
+            title: "Tienda — MoldCheck.pt",
+            description: "Inspecciones, análisis de laboratorio y recursos digitales sobre moho y humedad en Portugal."
+        }
+    }
+};
 async function getGlobalPageContent(locale, pageKey) {
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$data$2f$globalPages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getDefaultGlobalPageContent"])(locale, pageKey);
 }
 async function buildGlobalPageMetadata(locale, pageKey) {
+    const seo = pageSeoMeta[pageKey]?.[locale];
     const page = await getGlobalPageContent(locale, pageKey);
     return {
-        title: page.seoTitle ?? page.title,
-        description: page.seoDescription ?? page.description ?? page.heroBody ?? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].name,
+        title: seo?.title ?? page.seoTitle ?? page.title,
+        description: seo?.description ?? page.seoDescription ?? page.description ?? page.heroBody ?? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].name,
         alternates: {
             canonical: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, pageKey),
             languages: Object.fromEntries(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["activeLocales"].map((item)=>[
@@ -3030,7 +2843,9 @@ function PageShell({ eyebrow, title, description, children }) {
 
 __turbopack_context__.s([
     "default",
-    ()=>PrivacyPage
+    ()=>PrivacyPage,
+    "generateMetadata",
+    ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/content/components/GlobalPageBlocks.tsx [app-rsc] (ecmascript)");
@@ -3040,6 +2855,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$
 ;
 ;
 ;
+async function generateMetadata({ params }) {
+    const { locale } = await params;
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buildGlobalPageMetadata"])(locale, "privacy");
+}
 async function PrivacyPage({ params }) {
     const { locale } = await params;
     const page = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPageContent"])(locale, "privacy");
@@ -3051,14 +2870,14 @@ async function PrivacyPage({ params }) {
                 description: page.description
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/privacy/page.tsx",
-                lineNumber: 11,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GlobalPageBlocks"], {
                 page: page
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/privacy/page.tsx",
-                lineNumber: 12,
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]

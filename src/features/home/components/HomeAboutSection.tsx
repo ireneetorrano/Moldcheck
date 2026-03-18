@@ -2,13 +2,13 @@ import type { ActiveLocale } from "@/config/locales";
 import { getHomeAboutContent } from "@/features/content/data/homeContent";
 
 const eyebrowByLocale: Record<ActiveLocale, string> = {
-  pt: "Quem está por detrás disto — e porquê",
-  en: "Who is behind this — and why",
-  fr: "Qui est derrière cela — et pourquoi",
-  de: "Wer dahintersteht — und warum",
-  nl: "Wie hierachter zit — en waarom",
-  it: "Chi c'è dietro tutto questo — e perché",
-  es: "Quién está detrás de esto — y por qué",
+  pt: "A NOSSA BASE EDITORIAL",
+  en: "OUR EDITORIAL FOUNDATION",
+  fr: "NOTRE BASE ÉDITORIALE",
+  de: "UNSERE REDAKTIONELLE GRUNDLAGE",
+  nl: "ONZE REDACTIONELE BASIS",
+  it: "LA NOSTRA BASE EDITORIALE",
+  es: "NUESTRA BASE EDITORIAL",
 };
 
 export function HomeAboutSection({ locale }: { locale: ActiveLocale }) {

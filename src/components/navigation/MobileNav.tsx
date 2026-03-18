@@ -31,7 +31,7 @@ const navLabels: Record<
   de: { articles: "Artikel", services: "Dienste", about: "Über", contact: "Kontakt" },
   nl: { articles: "Artikelen", services: "Diensten", about: "Over", contact: "Contact" },
   it: { articles: "Articoli", services: "Servizi", about: "Chi siamo", contact: "Contatti" },
-  es: { articles: "Artículos", services: "Servicios", about: "Sobre", contact: "Contacto" },
+  es: { articles: "Artículos", services: "Servicios", about: "Sobre nosotros", contact: "Contacto" },
 };
 
 const navKeys = ["articles", "services", "about", "contact"] as const;

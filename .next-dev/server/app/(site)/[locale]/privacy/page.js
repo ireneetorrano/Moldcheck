@@ -8,7 +8,7 @@ R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthor
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_ece394eb.js")
 R.c("server/chunks/ssr/src_messages_78d3d233._.js")
 R.c("server/chunks/ssr/node_modules_190fba35._.js")
-R.c("server/chunks/ssr/src_ba86583c._.js")
+R.c("server/chunks/ssr/src_c7510f0c._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__4c2b8fce._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_a3c25ebf._.js")
 R.m("[project]/.next-internal/server/app/(site)/[locale]/privacy/page/actions.js [app-rsc] (server actions loader, ecmascript)")

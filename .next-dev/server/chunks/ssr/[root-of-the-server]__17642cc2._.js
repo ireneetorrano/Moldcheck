@@ -332,6 +332,8 @@ const siteConfig = {
 "use strict";
 
 __turbopack_context__.s([
+    "getAboutContent",
+    ()=>getAboutContent,
     "getAboutFallbackContent",
     ()=>getAboutFallbackContent
 ]);
@@ -351,90 +353,107 @@ function paragraphsToBlocks(paragraphs) {
 }
 const aboutContentByLocale = {
     pt: {
-        eyebrow: "Sobre o MoldCheck.pt",
-        title: "O que é o MoldCheck.pt — e porque existe",
-        description: "MoldCheck.pt existe para explicar bolor, humidade e risco em Portugal com independência editorial e base científica.",
+        eyebrow: "Sobre o MoldCheck",
+        title: "O que é o MoldCheck  e porque existe",
+        description: "MoldCheck existe para explicar bolor, humidade e risco em Portugal com independência editorial e base científica.",
         introParagraphs: [
-            "O MoldCheck.pt nasceu de uma observação simples: Portugal tem o segundo pior problema de bolor da Europa, e não existe nenhuma fonte de informação independente para as pessoas que vivem com essa realidade.",
-            "O mercado disponível oferece diagnósticos gratuitos de empresas que ganham dinheiro com os tratamentos que recomendam. Os motores de busca devolvem sobretudo conteúdo produzido por essas mesmas empresas. Os médicos raramente têm formação em medicina ambiental doméstica. E os padrões internacionais de referência — as diretrizes da OMS de 2009, a norma IICRC S520 — existem em inglês, em linguagem técnica, inacessíveis ao consumidor comum.",
+            "O MoldCheck nasceu de uma observação simples: Portugal tem o segundo pior problema de bolor da Europa, e não existe nenhuma fonte de informação independente para as pessoas que vivem com essa realidade.",
+            "O mercado disponível oferece diagnósticos gratuitos de empresas que ganham dinheiro com os tratamentos que recomendam. Os motores de busca devolvem sobretudo conteúdo produzido por essas mesmas empresas. Os médicos raramente têm formação em medicina ambiental doméstica. E os padrões internacionais de referência  as diretrizes da OMS de 2009, a norma IICRC S520  existem em inglês, em linguagem técnica, inacessíveis ao consumidor comum.",
             "Este site existe para preencher esse espaço."
         ],
-        behindTitle: "Quem está por detrás disto",
-        behindBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente — não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade."
+        introEyebrow: "O MoldCheck nasceu de uma observação simples:",
+        behindEyebrow: "TRANSPARÊNCIA",
+        behindTitle: "Quem está por detrás disto?",
+        behindBody: "O MoldCheck é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente  não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade."
     },
     en: {
-        eyebrow: "About MoldCheck.pt",
-        title: "What MoldCheck.pt is — and why it exists",
-        description: "MoldCheck.pt exists to explain mold, damp and indoor risk in Portugal with editorial independence and scientific discipline.",
+        eyebrow: "About MoldCheck",
+        title: "What MoldCheck is  and why it exists",
+        description: "MoldCheck exists to explain mold, damp and indoor risk in Portugal with editorial independence and scientific discipline.",
         introParagraphs: [
-            "MoldCheck.pt was born from a simple observation: Portugal has Europe's second-worst mold problem, and there is no independent source of information for the people living with that reality.",
-            "The market offers free diagnoses from companies that make money from the treatments they recommend. Search engines largely return content produced by those same companies. Doctors rarely have training in domestic environmental medicine. And the main international reference standards — the 2009 WHO guidelines, the IICRC S520 standard — exist in English, in technical language, and remain inaccessible to the average resident.",
+            "MoldCheck was born from a simple observation: Portugal has Europe's second-worst mold problem, and there is no independent source of information for the people living with that reality.",
+            "The market offers free diagnoses from companies that make money from the treatments they recommend. Search engines largely return content produced by those same companies. Doctors rarely have training in domestic environmental medicine. And the main international reference standards  the 2009 WHO guidelines, the IICRC S520 standard  exist in English, in technical language, and remain inaccessible to the average resident.",
             "This site exists to fill that gap."
         ],
-        behindTitle: "Who is behind this",
-        behindBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis — not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal's mold problem and finding no honest information resource that addressed it directly."
+        introEyebrow: "MoldCheck was born from a simple observation:",
+        behindEyebrow: "TRANSPARENCY",
+        behindTitle: "Who is behind this?",
+        behindBody: "MoldCheck is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis  not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal's mold problem and finding no honest information resource that addressed it directly."
     },
     fr: {
-        eyebrow: "À propos de MoldCheck.pt",
-        title: "Ce qu'est MoldCheck.pt — et pourquoi il existe",
-        description: "MoldCheck.pt existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
+        eyebrow: "À propos de MoldCheck",
+        title: "Ce qu'est MoldCheck  et pourquoi il existe",
+        description: "MoldCheck existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
         introParagraphs: [
-            "MoldCheck.pt est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
-            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales — les lignes directrices de l'OMS de 2009, la norme IICRC S520 — existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
+            "MoldCheck est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
+            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales  les lignes directrices de l'OMS de 2009, la norme IICRC S520  existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
             "Ce site existe pour combler ce manque."
         ],
+        introEyebrow: "MoldCheck est né d'une observation simple :",
+        behindEyebrow: "TRANSPARENCE",
         behindTitle: "Qui est derrière cela",
-        behindBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant — pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
+        behindBody: "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant  pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
     },
     de: {
-        eyebrow: "Über MoldCheck.pt",
-        title: "Was MoldCheck.pt ist — und warum es existiert",
-        description: "MoldCheck.pt erklärt Schimmel, Feuchtigkeit und Innenraumrisiken in Portugal mit redaktioneller Unabhängigkeit und wissenschaftlicher Grundlage.",
+        eyebrow: "Über MoldCheck",
+        title: "Was MoldCheck ist  und warum es existiert",
+        description: "MoldCheck erklärt Schimmel, Feuchtigkeit und Innenraumrisiken in Portugal mit redaktioneller Unabhängigkeit und wissenschaftlicher Grundlage.",
         introParagraphs: [
-            "MoldCheck.pt entstand aus einer einfachen Beobachtung: Portugal hat Europas zweitschlimmstes Schimmelproblem, und es gibt keine unabhängige Informationsquelle für die Menschen, die mit dieser Realität leben.",
-            "Der Markt bietet kostenlose Diagnosen von Unternehmen an, die mit den von ihnen empfohlenen Behandlungen Geld verdienen. Suchmaschinen liefern überwiegend Inhalte, die genau von diesen Unternehmen produziert wurden. Ärztinnen und Ärzte haben nur selten eine Ausbildung in häuslicher Umweltmedizin. Und die wichtigsten internationalen Referenzstandards — die WHO-Leitlinien von 2009 und der IICRC S520 — liegen auf Englisch und in technischer Sprache vor und sind für die meisten Bewohner kaum zugänglich.",
+            "MoldCheck entstand aus einer einfachen Beobachtung: Portugal hat Europas zweitschlimmstes Schimmelproblem, und es gibt keine unabhängige Informationsquelle für die Menschen, die mit dieser Realität leben.",
+            "Der Markt bietet kostenlose Diagnosen von Unternehmen an, die mit den von ihnen empfohlenen Behandlungen Geld verdienen. Suchmaschinen liefern überwiegend Inhalte, die genau von diesen Unternehmen produziert wurden. Ärztinnen und Ärzte haben nur selten eine Ausbildung in häuslicher Umweltmedizin. Und die wichtigsten internationalen Referenzstandards  die WHO-Leitlinien von 2009 und der IICRC S520  liegen auf Englisch und in technischer Sprache vor und sind für die meisten Bewohner kaum zugänglich.",
             "Diese Website existiert, um diese Lücke zu schließen."
         ],
+        introEyebrow: "MoldCheck entstand aus einer einfachen Beobachtung:",
+        behindEyebrow: "TRANSPARENZ",
         behindTitle: "Wer dahintersteht",
-        behindBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst — nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab."
+        behindBody: "MoldCheck ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst  nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab."
     },
     nl: {
-        eyebrow: "Over MoldCheck.pt",
-        title: "Wat MoldCheck.pt is — en waarom het bestaat",
-        description: "MoldCheck.pt bestaat om schimmel, vocht en binnenrisico in Portugal uit te leggen met redactionele onafhankelijkheid en wetenschappelijke basis.",
+        eyebrow: "Over MoldCheck",
+        title: "Wat MoldCheck is  en waarom het bestaat",
+        description: "MoldCheck bestaat om schimmel, vocht en binnenrisico in Portugal uit te leggen met redactionele onafhankelijkheid en wetenschappelijke basis.",
         introParagraphs: [
-            "MoldCheck.pt ontstond vanuit een eenvoudige observatie: Portugal heeft het op één na ergste schimmelprobleem van Europa, en er bestaat geen onafhankelijke informatiebron voor de mensen die met die realiteit leven.",
-            "De markt biedt gratis diagnoses aan van bedrijven die geld verdienen met de behandelingen die ze aanbevelen. Zoekmachines tonen vooral content die door diezelfde bedrijven is geproduceerd. Artsen hebben zelden opleiding in huiselijke milieugeneeskunde. En de belangrijkste internationale referentienormen — de WHO-richtlijnen uit 2009 en de IICRC S520 — bestaan in het Engels, in technische taal, en zijn voor de gemiddelde bewoner moeilijk toegankelijk.",
+            "MoldCheck ontstond vanuit een eenvoudige observatie: Portugal heeft het op één na ergste schimmelprobleem van Europa, en er bestaat geen onafhankelijke informatiebron voor de mensen die met die realiteit leven.",
+            "De markt biedt gratis diagnoses aan van bedrijven die geld verdienen met de behandelingen die ze aanbevelen. Zoekmachines tonen vooral content die door diezelfde bedrijven is geproduceerd. Artsen hebben zelden opleiding in huiselijke milieugeneeskunde. En de belangrijkste internationale referentienormen  de WHO-richtlijnen uit 2009 en de IICRC S520  bestaan in het Engels, in technische taal, en zijn voor de gemiddelde bewoner moeilijk toegankelijk.",
             "Deze website bestaat om dat gat te vullen."
         ],
+        introEyebrow: "MoldCheck ontstond vanuit een eenvoudige observatie:",
+        behindEyebrow: "TRANSPARANTIE",
         behindTitle: "Wie hierachter zit",
-        behindBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose — niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde."
+        behindBody: "MoldCheck is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose  niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde."
     },
     it: {
-        eyebrow: "Chi siamo — MoldCheck.pt",
-        title: "Cos'è MoldCheck.pt — e perché esiste",
-        description: "MoldCheck.pt esiste per spiegare muffa, umidità e rischi per la qualità dell'aria interna in Portogallo con indipendenza editoriale e base scientifica.",
+        eyebrow: "Chi siamo  MoldCheck",
+        title: "Cos'è MoldCheck  e perché esiste",
+        description: "MoldCheck esiste per spiegare muffa, umidità e rischi per la qualità dell'aria interna in Portogallo con indipendenza editoriale e base scientifica.",
         introParagraphs: [
-            "MoldCheck.pt è nato da una semplice osservazione: il Portogallo ha il secondo peggior problema di muffa in Europa, e non esiste alcuna fonte di informazione indipendente per le persone che vivono con questa realtà.",
-            "Il mercato offre diagnosi gratuite da parte di aziende che guadagnano con i trattamenti che raccomandano. I motori di ricerca restituiscono principalmente contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E i principali standard di riferimento internazionali — le linee guida OMS del 2009 e la norma IICRC S520 — esistono in inglese, in linguaggio tecnico, inaccessibili al consumatore comune.",
+            "MoldCheck è nato da una semplice osservazione: il Portogallo ha il secondo peggior problema di muffa in Europa, e non esiste alcuna fonte di informazione indipendente per le persone che vivono con questa realtà.",
+            "Il mercato offre diagnosi gratuite da parte di aziende che guadagnano con i trattamenti che raccomandano. I motori di ricerca restituiscono principalmente contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E i principali standard di riferimento internazionali  le linee guida OMS del 2009 e la norma IICRC S520  esistono in inglese, in linguaggio tecnico, inaccessibili al consumatore comune.",
             "Questo sito esiste per colmare quel vuoto."
         ],
+        introEyebrow: "MoldCheck è nato da una semplice osservazione:",
+        behindEyebrow: "TRASPARENZA",
         behindTitle: "Chi c'è dietro",
-        behindBody: "MoldCheck.pt è un'iniziativa del FAIRBANK Group. Il FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente — non con il trattamento. Un ispettore indipendente che addebita il proprio tempo e non riceve commissioni dall'impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondatore di questo sito dopo aver scoperto la portata del problema in Portogallo e aver constatato l'assenza di una risorsa informativa onesta che lo affrontasse direttamente."
+        behindBody: "MoldCheck è un'iniziativa del FAIRBANK Group. Il FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente  non con il trattamento. Un ispettore indipendente che addebita il proprio tempo e non riceve commissioni dall'impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondatore di questo sito dopo aver scoperto la portata del problema in Portogallo e aver constatato l'assenza di una risorsa informativa onesta che lo affrontasse direttamente."
     },
     es: {
-        eyebrow: "Sobre MoldCheck.pt",
-        title: "Qué es MoldCheck.pt — y por qué existe",
-        description: "MoldCheck.pt existe para explicar el moho, la humedad y el riesgo interior en Portugal con independencia editorial y base científica.",
+        eyebrow: "Sobre MoldCheck",
+        title: "Qué es MoldCheck  y por qué existe",
+        description: "MoldCheck existe para explicar el moho, la humedad y el riesgo interior en Portugal con independencia editorial y base científica.",
         introParagraphs: [
-            "MoldCheck.pt nació de una observación simple: Portugal tiene el segundo peor problema de moho de Europa, y no existe ninguna fuente de información independiente para las personas que viven con esa realidad.",
-            "El mercado ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los motores de búsqueda devuelven principalmente contenido producido por esas mismas empresas. Los médicos raramente tienen formación en medicina ambiental doméstica. Y los principales estándares de referencia internacionales — las directrices de la OMS de 2009 y la norma IICRC S520 — existen en inglés, en lenguaje técnico, inaccesibles para el consumidor común.",
+            "MoldCheck nació de una observación simple: Portugal tiene el segundo peor problema de moho de Europa, y no existe ninguna fuente de información independiente para las personas que viven con esa realidad.",
+            "El mercado ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los motores de búsqueda devuelven principalmente contenido producido por esas mismas empresas. Los médicos raramente tienen formación en medicina ambiental doméstica. Y los principales estándares de referencia internacionales  las directrices de la OMS de 2009 y la norma IICRC S520  existen en inglés, en lenguaje técnico, inaccesibles para el consumidor común.",
             "Este sitio existe para llenar ese espacio."
         ],
-        behindTitle: "Quién está detrás de esto",
-        behindBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. El FAIRBANK Group opera InspectOS, una plataforma de inspección independiente de inmuebles en Portugal.\n\nNuestra conexión comercial es con el diagnóstico independiente — no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión del saneador que va a ejecutar la obra es exactamente el modelo que este sitio defiende. Es también el modelo que InspectOS representa.\n\nPieter Paul Castelein, fundador del FAIRBANK Group, escribió el ensayo fundador de este sitio después de descubrir la escala del problema en Portugal y darse cuenta de que no había ningún recurso de información que lo abordara con honestidad."
+        introEyebrow: "MoldCheck nació de una observación simple:",
+        behindEyebrow: "TRANSPARENCIA",
+        behindTitle: "¿Quién está detrás de esto?",
+        behindBody: "MoldCheck es una iniciativa del FAIRBANK Group. El FAIRBANK Group opera InspectOS, una plataforma de inspección independiente de inmuebles en Portugal.\n\nNuestra conexión comercial es con el diagnóstico independiente  no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión del saneador que va a ejecutar la obra es exactamente el modelo que este sitio defiende. Es también el modelo que InspectOS representa.\n\nPieter Paul Castelein, fundador del FAIRBANK Group, escribió el ensayo fundador de este sitio después de descubrir la escala del problema en Portugal y darse cuenta de que no había ningún recurso de información que lo abordara con honestidad."
     }
 };
+function getAboutContent(locale) {
+    return aboutContentByLocale[locale] ?? aboutContentByLocale.en;
+}
 function getAboutFallbackContent(locale) {
     const content = aboutContentByLocale[locale];
     if (!content) {
@@ -540,12 +559,16 @@ const foundationalArticles = [
 "use strict";
 
 __turbopack_context__.s([
+    "getHomeAboutContent",
+    ()=>getHomeAboutContent,
     "getHomeConflictContent",
     ()=>getHomeConflictContent,
     "getHomeFallbackContent",
     ()=>getHomeFallbackContent,
     "getHomeFeaturedContent",
     ()=>getHomeFeaturedContent,
+    "getHomeNextStepsContent",
+    ()=>getHomeNextStepsContent,
     "getHomeProblemContent",
     ()=>getHomeProblemContent
 ]);
@@ -601,22 +624,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situação 1  “Tenho bolor visível”",
+                title: "“Tenho bolor visível”",
                 body: "Comece pelo guia de avaliação visual. Identifique a localização, a extensão, e o padrão  essa informação determina tudo o que se segue.",
                 ctaLabel: "Guia de avaliação →"
             },
             {
-                title: "Situação 2  “Tenho sintomas de saúde que melhoram fora de casa”",
+                title: "“Tenho sintomas de saúde que melhoram fora de casa”",
                 body: "Este é o sinal mais importante a levar a sério. Leia o artigo sobre saúde e bolor antes de qualquer outra acção.",
                 ctaLabel: "Artigo de saúde →"
             },
             {
-                title: "Situação 3  “Não sei se tenho bolor”",
+                title: "“Não sei se tenho bolor”",
                 body: "Muitas das localizações mais problemáticas são invisíveis. O guia de inspecção diz-lhe onde procurar  e o que a ausência de bolor visível ainda não exclui.",
                 ctaLabel: "Começar a inspecção →"
             },
             {
-                title: "Situação 4  “Preciso de ajuda profissional”",
+                title: "“Preciso de ajuda profissional”",
                 body: "Uma inspecção independente com medidor de humidade e câmara termográfica identifica a origem do problema sem vender o tratamento que se segue.",
                 ctaLabel: "Saber mais sobre inspecção independente →"
             }
@@ -692,22 +715,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1  “I have visible mold”",
+                title: "“I have visible mold”",
                 body: "Start with the visual assessment guide. Identify the location, extent, and pattern  that information shapes everything that follows.",
                 ctaLabel: "Assessment guide →"
             },
             {
-                title: "Situation 2  “I have health symptoms that improve away from home”",
+                title: "“I have health symptoms that improve away from home”",
                 body: "This is the most important signal to take seriously. Read the health article before taking any other step.",
                 ctaLabel: "Health article →"
             },
             {
-                title: "Situation 3  “I’m not sure whether I have mold”",
+                title: "“I’m not sure whether I have mold”",
                 body: "Many of the most problematic locations are invisible. The inspection guide shows you where to look  and what the absence of visible mold still does not rule out.",
                 ctaLabel: "Start the inspection →"
             },
             {
-                title: "Situation 4  “I need professional help”",
+                title: "“I need professional help”",
                 body: "An independent inspection using a moisture meter and thermal imaging can identify the origin of the problem without selling the treatment that follows.",
                 ctaLabel: "Learn about independent inspection →"
             }
@@ -760,22 +783,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1  « J’ai des moisissures visibles »",
+                title: "« J’ai des moisissures visibles »",
                 body: "Commencez par le guide d’évaluation visuelle. Identifiez l’emplacement, l’étendue et le motif  ces informations déterminent tout ce qui suit.",
                 ctaLabel: "Guide d’évaluation →"
             },
             {
-                title: "Situation 2  « J’ai des symptômes qui s’améliorent quand je quitte mon logement »",
+                title: "« J’ai des symptômes qui s’améliorent quand je quitte mon logement »",
                 body: "C’est le signal le plus important à prendre au sérieux. Lisez d’abord l’article sur la santé et les moisissures.",
                 ctaLabel: "Article santé →"
             },
             {
-                title: "Situation 3  « Je ne sais pas si j’ai des moisissures »",
+                title: "« Je ne sais pas si j’ai des moisissures »",
                 body: "Beaucoup des zones les plus problématiques sont invisibles. Le guide d’inspection vous dit où regarder  et ce que l’absence de moisissures visibles n’exclut toujours pas.",
                 ctaLabel: "Commencer l’inspection →"
             },
             {
-                title: "Situation 4  « J’ai besoin d’une aide professionnelle »",
+                title: "« J’ai besoin d’une aide professionnelle »",
                 body: "Une inspection indépendante avec humidimètre et caméra thermique permet d’identifier l’origine du problème sans vous vendre ensuite le traitement.",
                 ctaLabel: "En savoir plus sur l’inspection indépendante →"
             }
@@ -828,22 +851,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situation 1  „Ich habe sichtbaren Schimmel“",
+                title: "„Ich habe sichtbaren Schimmel“",
                 body: "Beginnen Sie mit dem Leitfaden zur visuellen Einschätzung. Ort, Ausmaß und Muster bestimmen, was als Nächstes zu tun ist.",
                 ctaLabel: "Bewertungsleitfaden →"
             },
             {
-                title: "Situation 2  „Ich habe gesundheitliche Symptome, die außerhalb der Wohnung besser werden“",
+                title: "„Ich habe gesundheitliche Symptome, die außerhalb der Wohnung besser werden“",
                 body: "Das ist das wichtigste Warnsignal. Lesen Sie zuerst den Gesundheitsartikel.",
                 ctaLabel: "Gesundheitsartikel →"
             },
             {
-                title: "Situation 3  „Ich weiß nicht, ob ich Schimmel habe“",
+                title: "„Ich weiß nicht, ob ich Schimmel habe“",
                 body: "Viele der problematischsten Stellen sind unsichtbar. Der Inspektionsleitfaden zeigt Ihnen, wo Sie suchen müssen  und was das Fehlen von sichtbarem Schimmel dennoch nicht ausschließt.",
                 ctaLabel: "Inspektion starten →"
             },
             {
-                title: "Situation 4  „Ich brauche professionelle Hilfe“",
+                title: "„Ich brauche professionelle Hilfe“",
                 body: "Eine unabhängige Inspektion mit Feuchtigkeitsmesser und Wärmebildkamera kann die Ursache des Problems ermitteln, ohne Ihnen anschließend eine Behandlung zu verkaufen.",
                 ctaLabel: "Mehr über unabhängige Inspektion →"
             }
@@ -896,22 +919,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situatie 1  “Ik heb zichtbare schimmel”",
+                title: "“Ik heb zichtbare schimmel”",
                 body: "Begin met de visuele beoordelingsgids. Bepaal de locatie, omvang en het patroon  die informatie bepaalt alles wat daarna komt.",
                 ctaLabel: "Beoordelingsgids →"
             },
             {
-                title: "Situatie 2  “Mijn gezondheidsklachten verbeteren buitenshuis”",
+                title: "“Mijn gezondheidsklachten verbeteren buitenshuis”",
                 body: "Dit is het belangrijkste signaal om serieus te nemen. Lees eerst het gezondheidsartikel.",
                 ctaLabel: "Gezondheidsartikel →"
             },
             {
-                title: "Situatie 3  “Ik weet niet of ik schimmel heb”",
+                title: "“Ik weet niet of ik schimmel heb”",
                 body: "Veel van de meest problematische plekken zijn onzichtbaar. De inspectiegids laat zien waar je moet kijken  en wat de afwezigheid van zichtbare schimmel nog steeds niet uitsluit.",
                 ctaLabel: "Inspectie starten →"
             },
             {
-                title: "Situatie 4  “Ik heb professionele hulp nodig”",
+                title: "“Ik heb professionele hulp nodig”",
                 body: "Een onafhankelijke inspectie met een vochtmeter en warmtebeeldcamera kan de oorzaak van het probleem vaststellen zonder de behandeling die daarna volgt aan je te verkopen.",
                 ctaLabel: "Meer over onafhankelijke inspectie →"
             }
@@ -964,22 +987,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situazione 1  “Ho muffa visibile”",
+                title: "“Ho muffa visibile”",
                 body: "Inizia dalla guida di valutazione visiva. Identifica posizione, estensione e schema del problema  queste informazioni determinano tutto ciò che viene dopo.",
                 ctaLabel: "Guida di valutazione →"
             },
             {
-                title: "Situazione 2  “Ho sintomi di salute che migliorano quando sono fuori casa”",
+                title: "“Ho sintomi di salute che migliorano quando sono fuori casa”",
                 body: "Questo è il segnale più importante da prendere sul serio. Leggi l’articolo su salute e muffa prima di qualsiasi altra azione.",
                 ctaLabel: "Articolo sulla salute →"
             },
             {
-                title: "Situazione 3  “Non so se ho muffa”",
+                title: "“Non so se ho muffa”",
                 body: "Molti dei punti più problematici sono invisibili. La guida all’ispezione ti dice dove guardare  e che cosa l’assenza di muffa visibile non esclude ancora.",
                 ctaLabel: "Inizia l’ispezione →"
             },
             {
-                title: "Situazione 4  “Ho bisogno di aiuto professionale”",
+                title: "“Ho bisogno di aiuto professionale”",
                 body: "Un’ispezione indipendente con igrometro e termocamera individua l’origine del problema senza venderti il trattamento successivo.",
                 ctaLabel: "Scopri di più sull’ispezione indipendente →"
             }
@@ -1004,7 +1027,7 @@ const homeContentByLocale = {
         nextStepsTitle: "Siguientes pasos según tu situación",
         aboutTitle: "¿Quién está detrás de esto y por qué?",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Quién está detrás de esto  y por qué",
+        aboutCardTitle: "¿Quién está detrás de esto y por qué?",
         aboutBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas  no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
         aboutLink: "Leer la política editorial completa →",
         footerNote: "© MoldCheck.pt  Una iniciativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidad · Política Editorial · Contacto\nEste sitio web no sustituye el asesoramiento médico o técnico profesional.",
@@ -1032,22 +1055,22 @@ const homeContentByLocale = {
         ],
         nextStepCards: [
             {
-                title: "Situación 1  “Tengo moho visible”",
+                title: "“Tengo moho visible”",
                 body: "Empieza por la guía de evaluación visual. Identifica la ubicación, la extensión y el patrón  esa información determina todo lo que viene después.",
                 ctaLabel: "Guía de evaluación →"
             },
             {
-                title: "Situación 2  “Tengo síntomas de salud que mejoran fuera de casa”",
+                title: "“Tengo síntomas de salud que mejoran fuera de casa”",
                 body: "Esta es la señal más importante que debes tomarte en serio. Lee el artículo sobre salud y moho antes de cualquier otra acción.",
                 ctaLabel: "Artículo sobre salud →"
             },
             {
-                title: "Situación 3  “No sé si tengo moho”",
+                title: "“No sé si tengo moho”",
                 body: "Muchas de las zonas más problemáticas son invisibles. La guía de inspección te dice dónde mirar  y qué cosas sigue sin descartar la ausencia de moho visible.",
                 ctaLabel: "Empezar la inspección →"
             },
             {
-                title: "Situación 4  “Necesito ayuda profesional”",
+                title: "“Necesito ayuda profesional”",
                 body: "Una inspección independiente con higrómetro y cámara termográfica identifica el origen del problema sin venderte el tratamiento que viene después.",
                 ctaLabel: "Saber más sobre la inspección independiente →"
             }
@@ -1096,37 +1119,7 @@ function buildHomeSections(locale, content) {
         health: getArticleHref(locale, "health"),
         inspection: getArticleHref(locale, "inspection")
     };
-    const sections = [
-        {
-            title: content.nextStepsTitle,
-            layout: "utility",
-            cards: content.nextStepCards.map((card, index)=>({
-                    title: card.title,
-                    body: card.body,
-                    ctaLabel: card.ctaLabel,
-                    ctaHref: [
-                        articleHrefs.inspection,
-                        articleHrefs.health,
-                        articleHrefs.inspection,
-                        servicesHref
-                    ][index]
-                }))
-        },
-        {
-            title: content.aboutTitle,
-            layout: "grid",
-            cards: [
-                {
-                    eyebrow: content.aboutCardEyebrow,
-                    title: content.aboutCardTitle,
-                    body: content.aboutBody,
-                    tone: "featured",
-                    ctaLabel: content.aboutLink,
-                    ctaHref: aboutHref
-                }
-            ]
-        }
-    ];
+    const sections = [];
     if (content.faqTitle && content.faqCards?.length) {
         sections.push({
             title: content.faqTitle,
@@ -1174,7 +1167,7 @@ function getHomeFallbackContent(locale) {
             es: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación  sin vender tratamientos."
         })[locale],
         sections: buildHomeSections(locale, content),
-        footerNote: content.footerNote
+        footerNote: undefined
     };
 }
 function getHomeProblemContent(locale) {
@@ -1212,6 +1205,34 @@ function getHomeFeaturedContent(locale) {
                 ctaLabel: card.ctaLabel,
                 href: hrefs[i] ?? "#"
             }))
+    };
+}
+function getHomeNextStepsContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    const hrefs = [
+        getArticleHref(locale, "inspection"),
+        getArticleHref(locale, "health"),
+        getArticleHref(locale, "inspection"),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, "inspection")
+    ];
+    return {
+        nextStepsTitle: c.nextStepsTitle,
+        cards: c.nextStepCards.map((card, i)=>({
+                title: card.title,
+                body: card.body,
+                ctaLabel: card.ctaLabel,
+                href: hrefs[i] ?? "#"
+            }))
+    };
+}
+function getHomeAboutContent(locale) {
+    const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+    return {
+        aboutEyebrow: c.aboutCardEyebrow,
+        aboutTitle: c.aboutCardTitle,
+        aboutBody: c.aboutBody,
+        aboutLink: c.aboutLink,
+        aboutHref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "editorialPolicy")
     };
 }
 }),

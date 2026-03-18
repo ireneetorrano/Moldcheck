@@ -36,6 +36,7 @@ declare namespace __next_route_internal_types__ {
     | `/_app`
     | `/_document`
     | `/api/checkout`
+    | `/api/contact`
     | `/api/newsletter/calculator-completed`
     | `/api/newsletter/subscribe`
     | `/api/preview`

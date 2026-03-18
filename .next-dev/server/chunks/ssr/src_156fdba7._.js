@@ -1258,7 +1258,7 @@ const navLabels = {
     es: {
         articles: "Artículos",
         services: "Servicios",
-        about: "Sobre",
+        about: "Sobre nosotros",
         contact: "Contacto"
     }
 };
@@ -1369,7 +1369,7 @@ const navLabels = {
     es: {
         articles: "Artículos",
         services: "Servicios",
-        about: "Sobre",
+        about: "Sobre nosotros",
         contact: "Contacto"
     }
 };
@@ -1748,19 +1748,11 @@ function SubscriptionForm({ locale, onSuccess }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
         onSubmit: handleSubmit,
         noValidate: true,
-        className: "space-y-4",
+        className: "sub-form",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "sub-form__field",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        htmlFor: "newsletter-email",
-                        className: "block text-sm font-medium text-gray-700",
-                        children: t("emailLabel")
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         id: "newsletter-email",
                         type: "email",
@@ -1768,22 +1760,23 @@ function SubscriptionForm({ locale, onSuccess }) {
                         value: email,
                         onChange: (e)=>setEmail(e.target.value),
                         placeholder: t("emailPlaceholder"),
-                        className: "mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500",
+                        className: `sub-form__input${emailError ? " sub-form__input--error" : ""}`,
+                        "aria-label": t("emailLabel"),
                         "aria-describedby": emailError ? "newsletter-email-error" : undefined,
                         "aria-invalid": !!emailError
                     }, void 0, false, {
                         fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                        lineNumber: 56,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     emailError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         id: "newsletter-email-error",
-                        className: "mt-1 text-xs text-red-600",
+                        className: "sub-form__field-error",
                         role: "alert",
                         children: emailError
                     }, void 0, false, {
                         fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                        lineNumber: 68,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1793,63 +1786,63 @@ function SubscriptionForm({ locale, onSuccess }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-start gap-3",
+                className: "sub-form__consent",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         id: "newsletter-consent",
                         type: "checkbox",
                         checked: consent,
                         onChange: (e)=>setConsent(e.target.checked),
-                        className: "mt-0.5 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500",
+                        className: "sub-form__checkbox",
                         "aria-describedby": consentError ? "newsletter-consent-error" : undefined,
                         "aria-invalid": !!consentError
                     }, void 0, false, {
                         fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                        lineNumber: 75,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         htmlFor: "newsletter-consent",
-                        className: "text-sm text-gray-600",
+                        className: "sub-form__consent-label",
                         children: t("consentLabel")
                     }, void 0, false, {
                         fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                        lineNumber: 84,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                lineNumber: 74,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             consentError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 id: "newsletter-consent-error",
-                className: "text-xs text-red-600",
+                className: "sub-form__field-error",
                 role: "alert",
                 children: consentError
             }, void 0, false, {
                 fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                lineNumber: 89,
+                lineNumber: 87,
                 columnNumber: 9
             }, this),
             status === "error" && error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "rounded-md bg-red-50 px-3 py-2 text-sm text-red-700",
+                className: "sub-form__generic-error",
                 role: "alert",
                 children: t("errorGeneric")
             }, void 0, false, {
                 fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                lineNumber: 95,
+                lineNumber: 93,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "submit",
                 disabled: status === "loading",
-                className: "w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50",
+                className: "sub-form__submit",
                 children: status === "loading" ? "…" : t("submitButton")
             }, void 0, false, {
                 fileName: "[project]/src/features/newsletter/components/SubscriptionForm.tsx",
-                lineNumber: 100,
+                lineNumber: 98,
                 columnNumber: 7
             }, this)
         ]

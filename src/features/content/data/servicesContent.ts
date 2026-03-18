@@ -1,4 +1,4 @@
-﻿import type { ActiveLocale } from "@/config/locales";
+import type { ActiveLocale } from "@/config/locales";
 import { siteConfig } from "@/config/site";
 import type { GlobalPageCard, GlobalPageContent, PortableTextBlock } from "@/types/content";
 
@@ -6,6 +6,7 @@ interface ServicesLocaleContent {
   eyebrow: string;
   title: string;
   description: string;
+  independentTitle: string;
   independentParagraphs: string[];
   howItWorksTitle: string;
   howItWorksBody: string;
@@ -38,6 +39,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Inspecção Independente de Humidade e Bolor em Portugal",
     description:
       "Diagnóstico independente, análise laboratorial e monitorização apresentados com clareza, sem o enquadramento comercial do tratamento.",
+    independentTitle: "O que significa \"independente\"?",
     independentParagraphs: [
       "Em Portugal, o diagnóstico de problemas de humidade e bolor é quase sempre realizado pela empresa que vai vender o tratamento. O diagnóstico gratuito é o início de um funil comercial — não um serviço de informação imparcial.",
       "Uma inspecção independente funciona de forma diferente. O inspector cobra pelo seu tempo. Não recebe comissão do saneador, do fabricante do sistema de ventilação, nem de nenhuma outra empresa que possa beneficiar do resultado do diagnóstico. O seu único interesse é dizer-lhe com precisão o que tem.",
@@ -161,6 +163,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Independent Mold and Damp Inspection in Portugal",
     description:
       "Independent diagnosis, laboratory analysis and monitoring explained clearly, without the commercial framing of treatment sales.",
+    independentTitle: "What does \"independent\" mean?",
     independentParagraphs: [
       "In Portugal, damp and mold problems are almost always diagnosed by the same company that will later sell the treatment. A free diagnosis is the beginning of a sales funnel — not an impartial information service.",
       "An independent inspection works differently. The inspector charges for their time. They receive no commission from the remediation contractor, the ventilation system manufacturer, or any other company that might benefit from the diagnostic outcome. Their only interest is telling you precisely what you have.",
@@ -284,6 +287,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Inspection indépendante de l’humidité et des moisissures au Portugal",
     description:
       "Diagnostic indépendant, analyse en laboratoire et suivi présentés avec clarté, sans cadrage commercial orienté vers le traitement.",
+    independentTitle: "Que signifie \u00ab\u00a0ind\u00e9pendant\u00a0\u00bb ?",
     independentParagraphs: [
       "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est le début d’un entonnoir commercial — pas un service d’information impartial.",
       "Une inspection indépendante fonctionne différemment. L’inspecteur facture son temps. Il ne reçoit aucune commission de l’entreprise de remédiation, du fabricant du système de ventilation, ni d’aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire avec précision ce que vous avez.",
@@ -407,6 +411,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Unabhängige Schimmel- und Feuchtigkeitsinspektion in Portugal",
     description:
       "Unabhängige Diagnose, Laboranalyse und Monitoring klar erklärt, ohne die kommerzielle Logik des Behandlungsverkaufs.",
+    independentTitle: "Was bedeutet \u201eunabh\u00e4ngig\u201c?",
     independentParagraphs: [
       "In Portugal wird die Diagnose von Feuchtigkeits- und Schimmelproblemen fast immer von dem Unternehmen durchgeführt, das später auch die Behandlung verkauft. Die kostenlose Diagnose ist der Beginn eines Verkaufstrichters — kein unparteiischer Informationsdienst.",
       "Eine unabhängige Inspektion funktioniert anders. Der Inspektor berechnet seine Zeit. Er erhält keine Provision vom Sanierungsunternehmen, vom Hersteller eines Lüftungssystems oder von einem anderen Unternehmen, das vom Ergebnis der Diagnose profitieren könnte. Sein einziges Interesse ist es, Ihnen präzise zu sagen, was Sie tatsächlich haben.",
@@ -530,6 +535,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Onafhankelijke schimmel- en vochtinspectie in Portugal",
     description:
       "Onafhankelijke diagnose, laboratoriumanalyse en monitoring helder uitgelegd, zonder commerciële behandellogica.",
+    independentTitle: "Wat betekent \u201eonafhankelijk\u201c?",
     independentParagraphs: [
       "In Portugal wordt de diagnose van vocht- en schimmelproblemen bijna altijd uitgevoerd door het bedrijf dat vervolgens ook de behandeling verkoopt. De gratis diagnose is het begin van een verkooptrechter — geen onpartijdige informatiedienst.",
       "Een onafhankelijke inspectie werkt anders. De inspecteur rekent zijn tijd aan. Hij ontvangt geen commissie van het saneringsbedrijf, de fabrikant van het ventilatiesysteem of enig ander bedrijf dat voordeel zou kunnen hebben bij de uitkomst van de diagnose. Zijn enige belang is om je precies te vertellen wat er aan de hand is.",
@@ -653,6 +659,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Ispezione indipendente di umidità e muffa in Portogallo",
     description:
       "Diagnosi indipendente, analisi di laboratorio e monitoraggio spiegati con chiarezza, senza l’impostazione commerciale del trattamento.",
+    independentTitle: "Cosa significa \u00abindipendente\u00bb?",
     independentParagraphs: [
       "In Portogallo, la diagnosi dei problemi di umidità e muffa è quasi sempre effettuata dall’azienda che poi venderà il trattamento. La diagnosi gratuita è l’inizio di un funnel commerciale — non un servizio informativo imparziale.",
       "Un’ispezione indipendente funziona in modo diverso. L’ispettore fa pagare il proprio tempo. Non riceve commissioni dall’impresa di bonifica, dal produttore del sistema di ventilazione né da qualsiasi altra azienda che possa beneficiare del risultato della diagnosi. Il suo unico interesse è dirti con precisione che cosa hai.",
@@ -776,12 +783,13 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     title: "Inspección independiente de humedad y moho en Portugal",
     description:
       "Diagnóstico independiente, análisis de laboratorio y monitorización explicados con claridad, sin la lógica comercial del tratamiento.",
+    independentTitle: "\u00bfQu\u00e9 significa \u201cindependiente\u201d?",
     independentParagraphs: [
       "En Portugal, el diagnóstico de los problemas de humedad y moho casi siempre lo realiza la empresa que después venderá el tratamiento. El diagnóstico gratuito es el inicio de un embudo comercial — no un servicio de información imparcial.",
       "Una inspección independiente funciona de forma distinta. El inspector cobra por su tiempo. No recibe comisión de la empresa de remediación, del fabricante del sistema de ventilación ni de ninguna otra empresa que pueda beneficiarse del resultado del diagnóstico. Su único interés es decirte con precisión qué tienes.",
       "Este es el modelo que representa InspectOS — y el único modelo que MoldCheck.pt recomienda.",
     ],
-    howItWorksTitle: "Cómo funciona",
+    howItWorksTitle: "¿Cómo funcionan?",
     howItWorksBody:
       "Las inspecciones son realizadas por inspectores certificados de InspectOS equipados con:\n\nhigrómetro digital de precisión — medición de humedad relativa del aire y temperatura\n\nmedidor de humedad de materiales (moisture meter) — medición no invasiva del contenido de humedad en paredes, suelos y techos\n\ncámara termográfica — detección de puentes térmicos, infiltraciones ocultas y zonas de condensación invisibles a simple vista\n\ncapacidad de toma de muestras — superficies, materiales y aire, para análisis de laboratorio cuando sea necesario\n\nDespués de la inspección, recibes un informe escrito con: localización y extensión del problema, causa probable, recomendaciones basadas en evidencia científica e indicación clara de cuándo un análisis de laboratorio es o no necesario.\n\nEl informe no incluye un presupuesto de tratamiento. No recomendamos empresas concretas de saneamiento. No tenemos ningún acuerdo comercial con empresas de remediación.",
     servicesTitle: "Servicios disponibles",
@@ -872,8 +880,8 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         eyebrow: "Reserva",
         title: "Reservar a través de InspectOS",
         body:
-          "Las inspecciones se realizan a través de InspectOS — plataforma independiente de inspección inmobiliaria en Portugal.",
-        ctaLabel: "→ Reservar una inspección en InspectOS.pt",
+          "Las inspecciones se realizan a través de InspectOS plataforma independiente de inspección inmobiliaria en Portugal.",
+        ctaLabel: "Reservar una inspección en InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -881,7 +889,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         eyebrow: "Dudas",
         title: "Contáctanos antes de reservar",
         body: `Si tienes dudas sobre qué servicio se adapta mejor a tu situación, puedes contactarnos primero: ${siteConfig.contactEmail}`,
-        ctaLabel: `Escribir a ${siteConfig.contactEmail}`,
+        ctaLabel: `Contacta con ${siteConfig.contactEmail}`,
         ctaHref: `mailto:${siteConfig.contactEmail}`,
       },
     ],
@@ -895,6 +903,10 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
       "MoldCheck.pt es una iniciativa del FAIRBANK Group, la empresa detrás de InspectOS. No vendemos tratamientos contra la humedad. No recibimos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas — no porque ganemos dinero con el tratamiento posterior.",
   },
 };
+
+export function getServicesContent(locale: ActiveLocale): ServicesLocaleContent {
+  return servicesContentByLocale[locale] ?? servicesContentByLocale.en;
+}
 
 export function getServicesFallbackContent(locale: ActiveLocale): GlobalPageContent {
   const content = servicesContentByLocale[locale];
