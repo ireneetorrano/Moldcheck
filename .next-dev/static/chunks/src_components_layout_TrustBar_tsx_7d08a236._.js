@@ -12,13 +12,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
-// How long to pause at the centered resting position (ms)
+// Pause at the centered resting position (ms)
 const PAUSE_MS = 2500;
-// Scroll speed in px/s — slow and premium
+// Scroll speed px/s — slow and premium
 const SPEED = 38;
-// Gap between the end of the outgoing sentence and the start of the incoming one (px)
-// Must be large enough that the two copies never touch while one is visible
-const GAP = 400;
+// Empty gap between end of one sentence and start of the next (px)
+const GAP = 320;
 function TrustBar(param) {
     let { text } = param;
     _s();
@@ -36,22 +35,27 @@ function TrustBar(param) {
             const copyA = copyARef.current;
             const copyB = copyBRef.current;
             if (!section || !container || !copyA || !copyB) return;
-            // centeredX: the X position that places copyA perfectly centered in the container
+            // centeredX: X that places copyA perfectly centered in the container
             let centeredX = 0;
-            // cycleLength: how far copyA must travel before it is back at centeredX
-            // = containerWidth + GAP + textWidth  (full loop distance)
+            // cycleLength: distance copyA travels before returning to centeredX.
+            // Using textWidth + GAP means copyB is always exactly (textWidth + GAP) px
+            // to the right of copyA — so as copyA exits left, copyB enters right simultaneously.
             let cycleLength = 0;
             const measure = {
                 "TrustBar.useEffect.measure": ()=>{
                     const cw = container.offsetWidth;
                     const tw = copyA.offsetWidth;
-                    centeredX = (cw - tw) / 2;
-                    // copyB sits exactly one "cycle" to the right of copyA
-                    cycleLength = cw + GAP + tw;
+                    // Account for horizontal padding so centering is relative to the
+                    // padded content area, not the raw track edge
+                    const style = getComputedStyle(container);
+                    const pl = parseFloat(style.paddingLeft) || 0;
+                    const pr = parseFloat(style.paddingRight) || 0;
+                    const innerWidth = cw - pl - pr;
+                    centeredX = pl + (innerWidth - tw) / 2;
+                    cycleLength = tw + GAP;
                 }
             }["TrustBar.useEffect.measure"];
-            // Place both copies given a current offset from the resting position.
-            // offset=0 → copyA is centered, copyB is fully off-screen to the right.
+            // offset=0 → copyA centered, copyB is (tw + GAP) px to the right (off-screen)
             const place = {
                 "TrustBar.useEffect.place": (offset)=>{
                     const aX = centeredX - offset;
@@ -61,11 +65,11 @@ function TrustBar(param) {
                 }
             }["TrustBar.useEffect.place"];
             measure();
-            place(0); // initial resting state: copyA centered, copyB hidden right
+            place(0);
             let state = "pause";
             let pauseStart = 0;
             let scrollStart = 0;
-            let offset = 0; // distance scrolled from the resting position
+            let offset = 0;
             const tick = {
                 "TrustBar.useEffect.tick": (now)=>{
                     if (!runningRef.current) return;
@@ -81,8 +85,7 @@ function TrustBar(param) {
                         const elapsed = now - scrollStart;
                         offset = elapsed * (SPEED / 1000);
                         if (offset >= cycleLength) {
-                            // Full cycle complete — snap back to resting position without a visible jump
-                            // because at offset === cycleLength, copyA is exactly back at centeredX
+                            // copyA is back at centeredX — seamless return, no visible jump
                             offset = 0;
                             state = "pause";
                             pauseStart = 0;
@@ -103,7 +106,6 @@ function TrustBar(param) {
                     rafRef.current = requestAnimationFrame(tick);
                 }
             }["TrustBar.useEffect.start"];
-            // Only start when the bar enters the viewport
             const io = new IntersectionObserver({
                 "TrustBar.useEffect": (entries)=>{
                     if (entries[0].isIntersecting) {
@@ -146,7 +148,7 @@ function TrustBar(param) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 128,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -156,18 +158,18 @@ function TrustBar(param) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 129,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/layout/TrustBar.tsx",
-            lineNumber: 127,
+            lineNumber: 129,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/layout/TrustBar.tsx",
-        lineNumber: 126,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }

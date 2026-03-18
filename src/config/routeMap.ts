@@ -81,6 +81,7 @@ export const localizedPathnames = {
   "/privacy": localizeStatic(globalRouteSlugs.privacy),
   "/contact": localizeStatic(globalRouteSlugs.contact),
   "/search": localizeStatic(globalRouteSlugs.search),
+  "/editorial-policy": localizeStatic(globalRouteSlugs.editorialPolicy),
   "/mold-types": localizeStatic(sectionBaseSlugs["mold-types"]),
   "/mold-types/[slug]": localizeNested(sectionBaseSlugs["mold-types"]),
   "/remediation": localizeStatic(sectionBaseSlugs.remediation),

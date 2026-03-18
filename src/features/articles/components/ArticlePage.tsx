@@ -1,0 +1,144 @@
+import type { ArticleLocaleContent } from "@/features/content/data/articles/a4-portugal";
+import type { ActiveLocale } from "@/config/locales";
+import { ArticlePageClient, type TocItem } from "./ArticlePageClient";
+
+interface ArticlePageProps {
+  locale: ActiveLocale;
+  content: ArticleLocaleContent;
+  articleKey: string;
+  slugsByLocale: Record<ActiveLocale, string>;
+  section: string;
+}
+
+// ── Localized TOC title ───────────────────────────────────────────────────
+const tocTitles: Record<ActiveLocale, string> = {
+  pt: "Índice",
+  en: "Contents",
+  fr: "Sommaire",
+  de: "Inhalt",
+  nl: "Inhoud",
+  it: "Indice",
+  es: "Índice",
+};
+
+// ── Per-article TOC items (A4 portugal) ───────────────────────────────────
+// IDs are derived from the ## heading text in the body:
+//   text.toLowerCase().replace(/[^a-z0-9\s]/g,"").trim().replace(/\s+/g,"-")
+// "sources" and "faq" are fixed IDs on those sections.
+const a4TocItems: Record<ActiveLocale, TocItem[]> = {
+  pt: [
+    { id: "o-que-os-nmeros-dizem",    label: "Os números" },
+    { id: "o-que-encontrei-no-mercado", label: "O mercado" },
+    { id: "a-ligao-com-a-sade-que-raramente--feita", label: "Saúde" },
+    { id: "o-que-este-site--e-o-que-no-", label: "Este site" },
+    { id: "para-o-um-em-cada-quatro",  label: "Um em cada quatro" },
+    { id: "sources",                   label: "Fontes" },
+    { id: "faq",                       label: "FAQ" },
+  ],
+  en: [
+    { id: "the-number-that-stopped-me",       label: "The number" },
+    { id: "why-portuguese-buildings-are-different", label: "Buildings" },
+    { id: "the-response-that-isnt",           label: "The response" },
+    { id: "what-happened-after-we-moved",     label: "Personal" },
+    { id: "what-moldcheckpt-is--and-what-it-isnt", label: "About us" },
+    { id: "a-note-for-the-one-in-four",       label: "One in four" },
+    { id: "sources",                          label: "Sources" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+  fr: [
+    { id: "ce-que-les-chiffres-rvlent",       label: "Les chiffres" },
+    { id: "ce-que-jai-trouv-sur-le-march",    label: "Le marché" },
+    { id: "le-lien-avec-la-sant-que-personne-ne-fait", label: "Santé" },
+    { id: "ce-quest-ce-site--et-ce-quil-nest-pas", label: "Ce site" },
+    { id: "pour-celui-ou-celle-qui-reconnat-sa-situation", label: "Pour vous" },
+    { id: "sources",                          label: "Sources" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+  de: [
+    { id: "was-die-zahlen-zeigen",            label: "Die Zahlen" },
+    { id: "was-ich-auf-dem-markt-fand",       label: "Der Markt" },
+    { id: "die-verbindung-zur-gesundheit-die-niemand-herstellt", label: "Gesundheit" },
+    { id: "was-diese-website-ist--und-was-sie-nicht-ist", label: "Diese Website" },
+    { id: "fr-jeden-vierten",                 label: "Jeden Vierten" },
+    { id: "sources",                          label: "Quellen" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+  nl: [
+    { id: "wat-de-cijfers-zeggen",            label: "De cijfers" },
+    { id: "wat-ik-op-de-markt-aantrof",       label: "De markt" },
+    { id: "de-link-met-gezondheid-die-niemand-legt", label: "Gezondheid" },
+    { id: "wat-deze-website-is--en-wat-ze-niet-is", label: "Deze site" },
+    { id: "voor-iedereen-die-zich-herkent",   label: "Voor u" },
+    { id: "sources",                          label: "Bronnen" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+  it: [
+    { id: "i-numeri-che-nessuno-pubblica-in-evidenza", label: "I numeri" },
+    { id: "le-ragioni-strutturali-del-problema", label: "Le cause" },
+    { id: "il-mercato-della-diagnosi-non--indipendente", label: "Il mercato" },
+    { id: "quello-che-manca-un-sistema-di-ispezione-indipendente", label: "Cosa manca" },
+    { id: "quello-che-speriamo-cambi",        label: "Il futuro" },
+    { id: "sources",                          label: "Fonti" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+  es: [
+    { id: "por-qu-ocurre-esto",               label: "¿Por qué?" },
+    { id: "el-mercado-de-diagnstico-no-es-independiente", label: "El mercado" },
+    { id: "lo-que-falta-un-sistema-de-inspeccin-independiente", label: "Lo que falta" },
+    { id: "por-qu-esto-tambin-afecta-a-los-espaoles-en-portugal", label: "¿Nos afecta?" },
+    { id: "sources",                          label: "Fuentes" },
+    { id: "faq",                              label: "FAQ" },
+  ],
+};
+
+// ── Per-article TOC item registry ─────────────────────────────────────────
+const tocItemsByArticle: Record<string, Record<ActiveLocale, TocItem[]>> = {
+  "a4-portugal": a4TocItems,
+};
+
+// ── Section eyebrow labels ────────────────────────────────────────────────
+const sectionLabels: Record<string, Record<ActiveLocale, string>> = {
+  portugal: { pt: "Portugal", en: "Portugal", fr: "Portugal", de: "Portugal", nl: "Portugal", it: "Portogallo", es: "Portugal" },
+};
+
+// ── UI labels ─────────────────────────────────────────────────────────────
+const uiLabels: Record<ActiveLocale, { sources: string; disclosure: string; faq: string }> = {
+  pt: { sources: "Fontes",   disclosure: "Declaração de conflito de interesses", faq: "Perguntas frequentes" },
+  en: { sources: "Sources",  disclosure: "Disclosure",                           faq: "Frequently asked questions" },
+  fr: { sources: "Sources",  disclosure: "Déclaration d'intérêts",               faq: "Questions fréquentes" },
+  de: { sources: "Quellen",  disclosure: "Interessenerklärung",                  faq: "Häufig gestellte Fragen" },
+  nl: { sources: "Bronnen",  disclosure: "Belangenverklaring",                   faq: "Veelgestelde vragen" },
+  it: { sources: "Fonti",    disclosure: "Dichiarazione di interessi",            faq: "Domande frequenti" },
+  es: { sources: "Fuentes",  disclosure: "Declaración de intereses",             faq: "Preguntas frecuentes" },
+};
+
+export function ArticlePage({ locale, content, articleKey, slugsByLocale, section }: ArticlePageProps) {
+  const tocItems = tocItemsByArticle[articleKey]?.[locale] ?? [];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: content.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ArticlePageClient
+        locale={locale}
+        content={content}
+        sectionLabel={sectionLabels[section]?.[locale] ?? section}
+        tocTitle={tocTitles[locale]}
+        tocItems={tocItems}
+        slugsByLocale={slugsByLocale}
+        uiLabels={uiLabels[locale]}
+      />
+    </>
+  );
+}

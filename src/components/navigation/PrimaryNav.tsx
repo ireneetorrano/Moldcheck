@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import type { ActiveLocale } from "@/config/locales";
 import { getGlobalPath } from "@/lib/routing/paths";
 
@@ -14,23 +17,29 @@ const navLabels: Record<
   es: { articles: "Artículos", services: "Servicios", about: "Sobre", contact: "Contacto" },
 };
 
+const navKeys = ["articles", "services", "about", "contact"] as const;
+type NavKey = typeof navKeys[number];
+
 export function PrimaryNav({ locale }: { locale: ActiveLocale }) {
   const labels = navLabels[locale];
+  const pathname = usePathname();
 
   return (
     <nav className="site-nav" aria-label="Primary">
-      <a href={getGlobalPath(locale, "articles")} className="site-nav__link">
-        {labels.articles}
-      </a>
-      <a href={getGlobalPath(locale, "services")} className="site-nav__link">
-        {labels.services}
-      </a>
-      <a href={getGlobalPath(locale, "about")} className="site-nav__link">
-        {labels.about}
-      </a>
-      <a href={getGlobalPath(locale, "contact")} className="site-nav__link">
-        {labels.contact}
-      </a>
+      {navKeys.map((key) => {
+        const href = getGlobalPath(locale, key);
+        const isActive = pathname === href || pathname.startsWith(href + "/");
+        return (
+          <a
+            key={key}
+            href={href}
+            className={`site-nav__link${isActive ? " is-active" : ""}`}
+            aria-current={isActive ? "page" : undefined}
+          >
+            {labels[key]}
+          </a>
+        );
+      })}
     </nav>
   );
 }

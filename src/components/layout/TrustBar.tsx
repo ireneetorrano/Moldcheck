@@ -35,7 +35,13 @@ export function TrustBar({ text }: { text: string }) {
     const measure = () => {
       const cw = container.offsetWidth;
       const tw = copyA.offsetWidth;
-      centeredX = (cw - tw) / 2;
+      // Account for horizontal padding so centering is relative to the
+      // padded content area, not the raw track edge
+      const style = getComputedStyle(container);
+      const pl = parseFloat(style.paddingLeft) || 0;
+      const pr = parseFloat(style.paddingRight) || 0;
+      const innerWidth = cw - pl - pr;
+      centeredX = pl + (innerWidth - tw) / 2;
       cycleLength = tw + GAP;
     };
 

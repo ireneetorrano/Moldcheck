@@ -1,8 +1,23 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, usePathname as useNextPathname } from "next/navigation";
 import { activeLocales, localeLabels, localeMarkers, type ActiveLocale } from "@/config/locales";
 import { Link, usePathname } from "@/lib/i18n/navigation";
+import { getLocalizedArticlePath, getLocalizedGlobalPath } from "@/config/routeMap";
+import { a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
+
+// All known article slug maps — add new articles here as they are published
+const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs];
+
+function findArticleSlugMap(
+  currentLocale: ActiveLocale,
+  currentSlug: string
+): Record<ActiveLocale, string> | null {
+  for (const map of articleSlugMaps) {
+    if (map[currentLocale] === currentSlug) return map;
+  }
+  return null;
+}
 
 function GlobeIcon() {
   return (
@@ -24,9 +39,16 @@ function GlobeIcon() {
 }
 
 export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocale }) {
+  // next-intl pathname: strips locale prefix → e.g. "/articles/[slug]" or "/articulos/segundo-peor..."
   const pathname = usePathname();
+  // next/navigation pathname: full path → e.g. "/es/articulos/segundo-peor-problema-moho-europa"
+  const fullPathname = useNextPathname();
   const params = useParams();
   const isDynamicPath = pathname.includes("[");
+
+  // params.slug is the raw URL slug value — reliable regardless of locale
+  const currentSlug = typeof params?.slug === "string" ? params.slug : null;
+  const slugMap = currentSlug ? findArticleSlugMap(currentLocale, currentSlug) : null;
 
   return (
     <div className="language-switcher">
@@ -36,31 +58,54 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: ActiveLocal
         <span className="language-switcher__chevron" aria-hidden="true">▾</span>
       </button>
       <ul className="language-switcher__menu" role="listbox">
-        {activeLocales.map((locale) => (
-          <li key={locale}>
-            {isDynamicPath ? (
-              <Link
-                className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
-                href={{ pathname, params } as never}
-                locale={locale}
-                role="option"
-                aria-selected={locale === currentLocale}
-              >
-                {localeLabels[locale]}
-              </Link>
-            ) : (
-              <Link
-                className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
-                href={pathname as never}
-                locale={locale}
-                role="option"
-                aria-selected={locale === currentLocale}
-              >
-                {localeLabels[locale]}
-              </Link>
-            )}
-          </li>
-        ))}
+        {activeLocales.map((locale) => {
+          // Article page: build the translated URL directly from the slug map
+          if (slugMap) {
+            const targetSlug = slugMap[locale];
+            const href = targetSlug
+              ? getLocalizedArticlePath(locale, targetSlug)
+              : getLocalizedGlobalPath(locale, "articles");
+            return (
+              <li key={locale}>
+                <a
+                  href={href}
+                  className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
+                  role="option"
+                  aria-selected={locale === currentLocale}
+                >
+                  {localeLabels[locale]}
+                </a>
+              </li>
+            );
+          }
+
+          // All other pages: use next-intl Link
+          return (
+            <li key={locale}>
+              {isDynamicPath ? (
+                <Link
+                  className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
+                  href={{ pathname, params } as never}
+                  locale={locale}
+                  role="option"
+                  aria-selected={locale === currentLocale}
+                >
+                  {localeLabels[locale]}
+                </Link>
+              ) : (
+                <Link
+                  className={`language-switcher__option${locale === currentLocale ? " is-active" : ""}`}
+                  href={pathname as never}
+                  locale={locale}
+                  role="option"
+                  aria-selected={locale === currentLocale}
+                >
+                  {localeLabels[locale]}
+                </Link>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

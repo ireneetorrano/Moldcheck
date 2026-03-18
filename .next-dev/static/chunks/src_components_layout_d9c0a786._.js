@@ -45,7 +45,13 @@ function TrustBar(param) {
                 "TrustBar.useEffect.measure": ()=>{
                     const cw = container.offsetWidth;
                     const tw = copyA.offsetWidth;
-                    centeredX = (cw - tw) / 2;
+                    // Account for horizontal padding so centering is relative to the
+                    // padded content area, not the raw track edge
+                    const style = getComputedStyle(container);
+                    const pl = parseFloat(style.paddingLeft) || 0;
+                    const pr = parseFloat(style.paddingRight) || 0;
+                    const innerWidth = cw - pl - pr;
+                    centeredX = pl + (innerWidth - tw) / 2;
                     cycleLength = tw + GAP;
                 }
             }["TrustBar.useEffect.measure"];
@@ -142,7 +148,7 @@ function TrustBar(param) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 124,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -152,18 +158,18 @@ function TrustBar(param) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 125,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/layout/TrustBar.tsx",
-            lineNumber: 123,
+            lineNumber: 129,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/layout/TrustBar.tsx",
-        lineNumber: 122,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }

@@ -561,24 +561,24 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
       "Portugal tiene el segundo peor problema de moho de Europa. La mayoría de la gente que vive aquí no lo sabe.",
     heroBody:
       "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso — para tu salud, para tu vivienda y para lo que puedes hacer después.",
-    heroPrimaryCtaLabel: "Evalúa mi vivienda gratis",
+    heroPrimaryCtaLabel: "Evalúa tu vivienda gratis",
     heroSecondaryCtaLabel: "Leer la guía de inspección",
     trustBarText:
       "Basado en investigación científica de la OMS · Independiente de empresas de tratamiento · Sin publicidad · Una iniciativa del FAIRBANK Group",
     problemTitle: "¿Por qué hay tanto moho en Portugal?",
     problemBody:
-      "El 82% de los edificios en Portugal se construyó antes del año 2000 — antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
+      "El 82% de los edificios en Portugal se construyeron antes del año 2000 — antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
     problemLink: "Descubre por qué los edificios portugueses son tan vulnerables →",
-    conflictTitle: "Por qué un diagnóstico gratuito no es neutral",
+    conflictTitle: "¿Por qué un diagnóstico gratuito no es neutral?",
     conflictBody:
       "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes — sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",
     conflictLink: "Leer nuestra política editorial →",
     featuredTitle: "Empieza aquí",
     featuredDescription: "",
-    nextStepsTitle: "Siguientes pasos — según tu situación",
-    aboutTitle: "Quién está detrás de esto — y por qué",
+    nextStepsTitle: "Siguientes pasos según tu situación",
+    aboutTitle: "¿Quién está detrás de esto y por qué?",
     aboutCardEyebrow: "MoldCheck.pt",
-    aboutCardTitle: "Quién está detrás de esto — y por qué",
+    aboutCardTitle: "Quién está detrás de esto  y por qué",
     aboutBody:
       "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas — no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
     aboutLink: "Leer la política editorial completa →",
@@ -693,20 +693,6 @@ function buildHomeSections(locale: ActiveLocale, content: HomeLocaleContent): Gl
 
   const sections: GlobalPageSection[] = [
     {
-      eyebrow: getProblemEyebrow(locale),
-      title: content.problemTitle,
-      layout: "grid",
-      cards: [
-        {
-          title: content.problemTitle,
-          body: content.problemBody,
-          tone: "featured",
-          ctaLabel: content.problemLink,
-          ctaHref: articleHrefs.portugal,
-        },
-      ],
-    },
-    {
       eyebrow: getConflictEyebrow(locale),
       title: content.conflictTitle,
       layout: "grid",
@@ -798,15 +784,35 @@ export function getHomeFallbackContent(locale: ActiveLocale): GlobalPageContent 
     heroSecondaryCtaLabel: content.heroSecondaryCtaLabel,
     heroSecondaryCtaHref: getArticleHref(locale, "inspection"),
     trustBarText: content.trustBarText,
-    seoTitle:
-      locale === "pt"
-        ? "MoldCheck — Informação Independente sobre Bolor em Portugal"
-        : "MoldCheck.pt",
-    seoDescription:
-      locale === "pt"
-        ? "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação — sem vender tratamentos."
-        : content.description,
+    seoTitle: ({
+      pt: "MoldCheck — Informação Independente sobre Bolor em Portugal",
+      en: "MoldCheck — Independent Information on Mold and Damp in Portugal",
+      fr: "MoldCheck — Information Indépendante sur les Moisissures au Portugal",
+      de: "MoldCheck — Unabhängige Informationen über Schimmel in Portugal",
+      nl: "MoldCheck — Onafhankelijke Informatie over Schimmel in Portugal",
+      it: "MoldCheck — Informazione Indipendente sulla Muffa in Portogallo",
+      es: "MoldCheck — Información Independiente sobre Moho en Portugal",
+    } as Record<ActiveLocale, string>)[locale],
+    seoDescription: ({
+      pt: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação — sem vender tratamentos.",
+      en: "Portugal has the 2nd worst mold problem in Europe. Independent scientific information on diagnosis, health and remediation — without selling treatments.",
+      fr: "Le Portugal a le 2e pire problème de moisissures en Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation — sans vendre de traitements.",
+      de: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Unabhängige wissenschaftliche Informationen zu Diagnose, Gesundheit und Sanierung — ohne Behandlungen zu verkaufen.",
+      nl: "Portugal heeft het op één na grootste schimmelprobleem van Europa. Onafhankelijke wetenschappelijke informatie over diagnose, gezondheid en sanering — zonder behandelingen te verkopen.",
+      it: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica — senza vendere trattamenti.",
+      es: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación — sin vender tratamientos.",
+    } as Record<ActiveLocale, string>)[locale],
     sections: buildHomeSections(locale, content),
     footerNote: content.footerNote,
+  };
+}
+
+export function getHomeProblemContent(locale: ActiveLocale) {
+  const c = homeContentByLocale[locale] ?? homeContentByLocale.pt;
+  return {
+    problemEyebrow: getProblemEyebrow(locale),
+    problemTitle: c.problemTitle,
+    problemBody: c.problemBody,
+    problemLink: c.problemLink,
   };
 }

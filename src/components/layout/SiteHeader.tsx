@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { ActiveLocale } from "@/config/locales";
 import { LanguageSwitcher } from "@/components/navigation/LanguageSwitcher";
 import { PrimaryNav } from "@/components/navigation/PrimaryNav";
+import { MobileNav } from "@/components/navigation/MobileNav";
 
 export function SiteHeader({ locale }: { locale: ActiveLocale }) {
   return (
@@ -18,10 +19,15 @@ export function SiteHeader({ locale }: { locale: ActiveLocale }) {
               priority
             />
           </a>
+
+          {/* Desktop nav — hidden on mobile */}
           <PrimaryNav locale={locale} />
           <div className="site-header__actions">
             <LanguageSwitcher currentLocale={locale} />
           </div>
+
+          {/* Mobile hamburger + drawer — hidden on desktop */}
+          <MobileNav locale={locale} />
         </div>
       </div>
     </header>

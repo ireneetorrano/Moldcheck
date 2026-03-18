@@ -2,7 +2,7 @@ import type { ActiveLocale } from "@/config/locales";
 import { GlobalPageBlocks } from "@/features/content/components/GlobalPageBlocks";
 import { buildGlobalPageMetadata, getGlobalPageContent } from "@/lib/sanity/pages";
 import { TrustBar } from "@/components/layout/TrustBar";
-import { ScrollReset } from "@/components/layout/ScrollReset";
+import { HomeProblemSection } from "@/features/home/components/HomeProblemSection";
 
 export async function generateMetadata({
   params,
@@ -19,7 +19,6 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
 
   return (
     <>
-      <ScrollReset />
       <div className="home-hero-group">
         <section className={`home-hero home-hero--${locale}`}>
           <div className="home-hero__center">
@@ -40,6 +39,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
           <TrustBar text={page.trustBarText} />
         ) : null}
       </div>
+      <HomeProblemSection locale={locale} />
       <GlobalPageBlocks page={page} disclosureVariant="homepage" />
     </>
   );

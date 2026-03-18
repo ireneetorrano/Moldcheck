@@ -1,7 +1,12 @@
 import type { ActiveLocale } from "@/config/locales";
 import { GlobalPageBlocks } from "@/features/content/components/GlobalPageBlocks";
-import { getGlobalPageContent } from "@/lib/sanity/pages";
+import { buildGlobalPageMetadata, getGlobalPageContent } from "@/lib/sanity/pages";
 import { PageShell } from "@/components/shared/PageShell";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: ActiveLocale }> }) {
+  const { locale } = await params;
+  return buildGlobalPageMetadata(locale, "services");
+}
 
 export default async function ServicesPage({ params }: { params: Promise<{ locale: ActiveLocale }> }) {
   const { locale } = await params;

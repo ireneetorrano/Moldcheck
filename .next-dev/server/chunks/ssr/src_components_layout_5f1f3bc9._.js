@@ -40,7 +40,13 @@ function TrustBar({ text }) {
         const measure = ()=>{
             const cw = container.offsetWidth;
             const tw = copyA.offsetWidth;
-            centeredX = (cw - tw) / 2;
+            // Account for horizontal padding so centering is relative to the
+            // padded content area, not the raw track edge
+            const style = getComputedStyle(container);
+            const pl = parseFloat(style.paddingLeft) || 0;
+            const pr = parseFloat(style.paddingRight) || 0;
+            const innerWidth = cw - pl - pr;
+            centeredX = pl + (innerWidth - tw) / 2;
             cycleLength = tw + GAP;
         };
         // offset=0 → copyA centered, copyB is (tw + GAP) px to the right (off-screen)
@@ -123,7 +129,7 @@ function TrustBar({ text }) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 124,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -133,18 +139,18 @@ function TrustBar({ text }) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/TrustBar.tsx",
-                    lineNumber: 125,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/layout/TrustBar.tsx",
-            lineNumber: 123,
+            lineNumber: 129,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/layout/TrustBar.tsx",
-        lineNumber: 122,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }
