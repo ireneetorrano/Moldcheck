@@ -1,15 +1,5 @@
 {
-  "/(site)/[locale]/about/page": "app/(site)/[locale]/about/page.js",
-  "/(site)/[locale]/articles/[slug]/page": "app/(site)/[locale]/articles/[slug]/page.js",
-  "/(site)/[locale]/articles/page": "app/(site)/[locale]/articles/page.js",
-  "/(site)/[locale]/contact/page": "app/(site)/[locale]/contact/page.js",
-  "/(site)/[locale]/editorial-policy/page": "app/(site)/[locale]/editorial-policy/page.js",
-  "/(site)/[locale]/inspection/[slug]/page": "app/(site)/[locale]/inspection/[slug]/page.js",
   "/(site)/[locale]/page": "app/(site)/[locale]/page.js",
-  "/(site)/[locale]/portugal/[slug]/page": "app/(site)/[locale]/portugal/[slug]/page.js",
-  "/(site)/[locale]/privacy/page": "app/(site)/[locale]/privacy/page.js",
-  "/(site)/[locale]/remediation/[slug]/page": "app/(site)/[locale]/remediation/[slug]/page.js",
-  "/(site)/[locale]/services/page": "app/(site)/[locale]/services/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/contact/route": "app/api/contact/route.js"
+  "/(site)/[locale]/tools/[slug]/page": "app/(site)/[locale]/tools/[slug]/page.js",
+  "/api/newsletter/subscribe/route": "app/api/newsletter/subscribe/route.js"
 }

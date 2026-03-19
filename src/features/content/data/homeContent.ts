@@ -115,29 +115,6 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
         ctaLabel: "Saber mais sobre inspecção independente →",
       },
     ],
-    faqTitle: "FAQ",
-    faqCards: [
-      {
-        title: "1. Se não vejo bolor, posso descartá-lo?",
-        body: "Não. Pode estar oculto em cavidades, debaixo de pavimentos, por cima de tetos ou dentro do sistema de ar.",
-      },
-      {
-        title: "2. O cheiro a humidade significa sempre que há bolor?",
-        body: "Nem sempre, mas é um sinal que merece investigação, sobretudo se persistir.",
-      },
-      {
-        title: "3. Uma amostra de ar normal significa que a casa está bem?",
-        body: "Não necessariamente. Pode não refletir contaminação oculta ou partículas que esse método deteta mal.",
-      },
-      {
-        title: "4. Basta limpar a superfície ou aplicar lixívia?",
-        body: "Não como solução principal num problema real de danos por água. A causa e os materiais afetados são mais importantes.",
-      },
-      {
-        title: "5. ERMI ou HERTSMI-2 são definitivos?",
-        body: "Não. Podem acrescentar contexto, mas não substituem uma avaliação técnica completa.",
-      },
-    ],
   },
   en: {
     eyebrow: "Independent editorial resource on mold, damp and indoor air quality",

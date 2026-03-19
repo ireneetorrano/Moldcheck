@@ -52,6 +52,7 @@
     "submitButton": "Recibir checklist gratuita",
     "successTitle": "¡Checklist enviada!",
     "successBody": "Revisa tu bandeja de entrada. Te hemos enviado la checklist de 20 puntos y un enlace a la calculadora de riesgo.",
+    "successAlreadySubscribed": "Este correo ya está suscrito a la newsletter.",
     "errorGeneric": "Algo salió mal. Por favor, inténtalo de nuevo.",
     "errorInvalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
     "errorConsentRequired": "Debes aceptar los términos para continuar."

@@ -52,6 +52,7 @@
     "submitButton": "Kostenlose Checkliste erhalten",
     "successTitle": "Checkliste gesendet!",
     "successBody": "Überprüfen Sie Ihren Posteingang. Wir haben Ihnen die 20-Punkte-Checkliste und einen Link zum Risikorechner gesendet.",
+    "successAlreadySubscribed": "Diese E-Mail-Adresse ist bereits für den Newsletter angemeldet.",
     "errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
     "errorInvalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "errorConsentRequired": "Sie müssen den Bedingungen zustimmen, um fortzufahren."

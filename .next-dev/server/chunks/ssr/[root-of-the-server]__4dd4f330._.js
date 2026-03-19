@@ -323,7 +323,7 @@ const siteConfig = {
     name: "MoldCheck.pt",
     legalEntity: "FAIRBANK Group",
     defaultLocale: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["defaultLocale"],
-    domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://moldcheck.pt",
+    domain: ("TURBOPACK compile-time value", "http://localhost:3000") ?? "https://moldcheck.pt",
     editorialEmail: "info@moldcheck.pt",
     contactEmail: "info@moldcheck.pt"
 }; // TODO(CONFIG): Confirm production domain and non-www redirect at platform level.
@@ -642,29 +642,6 @@ const homeContentByLocale = {
                 title: "“Preciso de ajuda profissional”",
                 body: "Uma inspecção independente com medidor de humidade e câmara termográfica identifica a origem do problema sem vender o tratamento que se segue.",
                 ctaLabel: "Saber mais sobre inspecção independente →"
-            }
-        ],
-        faqTitle: "FAQ",
-        faqCards: [
-            {
-                title: "1. Se não vejo bolor, posso descartá-lo?",
-                body: "Não. Pode estar oculto em cavidades, debaixo de pavimentos, por cima de tetos ou dentro do sistema de ar."
-            },
-            {
-                title: "2. O cheiro a humidade significa sempre que há bolor?",
-                body: "Nem sempre, mas é um sinal que merece investigação, sobretudo se persistir."
-            },
-            {
-                title: "3. Uma amostra de ar normal significa que a casa está bem?",
-                body: "Não necessariamente. Pode não refletir contaminação oculta ou partículas que esse método deteta mal."
-            },
-            {
-                title: "4. Basta limpar a superfície ou aplicar lixívia?",
-                body: "Não como solução principal num problema real de danos por água. A causa e os materiais afetados são mais importantes."
-            },
-            {
-                title: "5. ERMI ou HERTSMI-2 são definitivos?",
-                body: "Não. Podem acrescentar contexto, mas não substituem uma avaliação técnica completa."
             }
         ]
     },

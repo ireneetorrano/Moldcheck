@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import type { ActiveLocale } from "@/config/locales";
 import { useSubscribe } from "../hooks/useSubscribe";
-import { SubscriptionFormSuccess } from "./SubscriptionFormSuccess";
 
 interface SubscriptionFormProps {
   locale: ActiveLocale;
@@ -19,9 +18,22 @@ export function SubscriptionForm({ locale, onSuccess }: SubscriptionFormProps) {
   const [emailError, setEmailError] = useState<string | null>(null);
   const [consentError, setConsentError] = useState<string | null>(null);
 
-  if (status === "success") {
+  if (status === "subscribed") {
     onSuccess?.();
-    return <SubscriptionFormSuccess />;
+    return (
+      <div className="sub-form__result sub-form__result--success" role="status">
+        <p className="sub-form__result-title">{t("successTitle")}</p>
+        <p className="sub-form__result-body">{t("successBody")}</p>
+      </div>
+    );
+  }
+
+  if (status === "already_subscribed") {
+    return (
+      <div className="sub-form__result sub-form__result--info" role="status">
+        <p className="sub-form__result-body">{t("successAlreadySubscribed")}</p>
+      </div>
+    );
   }
 
   function validate(): boolean {
@@ -44,7 +56,7 @@ export function SubscriptionForm({ locale, onSuccess }: SubscriptionFormProps) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!validate()) return;
-    await submit({ email, locale, gdprConsent: true });
+    await submit({ email, locale, consentAccepted: true });
   }
 
   return (
@@ -89,9 +101,15 @@ export function SubscriptionForm({ locale, onSuccess }: SubscriptionFormProps) {
         </p>
       )}
 
-      {status === "error" && error && (
+      {status === "error" && (
         <p className="sub-form__generic-error" role="alert">
+          {/* In dev the hook exposes the real server error; in prod falls back to generic */}
           {t("errorGeneric")}
+          {process.env.NODE_ENV !== "production" && error && (
+            <span style={{ display: "block", fontSize: "0.7rem", opacity: 0.7, marginTop: "0.25rem" }}>
+              {error}
+            </span>
+          )}
         </p>
       )}
 

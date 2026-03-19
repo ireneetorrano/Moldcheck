@@ -4,10 +4,10 @@ import { useState } from "react";
 import type { ActiveLocale } from "@/config/locales";
 import type { SubscribePayload, SubscribeResponse, ApiErrorResponse } from "../types";
 
-type Status = "idle" | "loading" | "success" | "error";
+export type SubscribeStatus = "idle" | "loading" | "subscribed" | "already_subscribed" | "error";
 
 export function useSubscribe() {
-  const [status, setStatus] = useState<Status>("idle");
+  const [status, setStatus] = useState<SubscribeStatus>("idle");
   const [error, setError] = useState<string | null>(null);
 
   async function submit(payload: SubscribePayload): Promise<void> {
@@ -21,12 +21,17 @@ export function useSubscribe() {
       });
 
       if (res.ok) {
-        setStatus("success");
+        const data = (await res.json()) as SubscribeResponse;
+        setStatus(data.status === "already_subscribed" ? "already_subscribed" : "subscribed");
         return;
       }
 
-      const data = (await res.json()) as ApiErrorResponse;
-      setError(data.error ?? "Unknown error");
+      let errorMsg = "Unknown error";
+      try {
+        const data = (await res.json()) as ApiErrorResponse;
+        errorMsg = data.error ?? errorMsg;
+      } catch { /* ignore parse failure */ }
+      setError(errorMsg);
       setStatus("error");
     } catch {
       setError("Network error");

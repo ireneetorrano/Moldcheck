@@ -52,6 +52,7 @@
     "submitButton": "Get free checklist",
     "successTitle": "Checklist sent!",
     "successBody": "Check your inbox. We've sent the 20-point checklist and a link to the risk calculator.",
+    "successAlreadySubscribed": "This email is already subscribed to the newsletter.",
     "errorGeneric": "Something went wrong. Please try again.",
     "errorInvalidEmail": "Please enter a valid email address.",
     "errorConsentRequired": "You must accept the terms to continue."

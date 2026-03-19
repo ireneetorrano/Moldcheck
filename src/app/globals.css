@@ -1301,6 +1301,25 @@ p { margin: 0; }
   cursor: not-allowed;
 }
 
+.sub-form__result {
+  padding: 1rem 0;
+}
+.sub-form__result-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.35rem;
+}
+.sub-form__result-body {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+.sub-form__result--info .sub-form__result-body {
+  color: rgba(255,255,255,0.55);
+}
+
 /* ── Back to top ─────────────────────────────────────────────────────────── */
 .back-to-top {
   position: fixed;

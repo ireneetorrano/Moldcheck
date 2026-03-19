@@ -52,6 +52,7 @@
     "submitButton": "Gratis checklist ontvangen",
     "successTitle": "Checklist verzonden!",
     "successBody": "Controleer je inbox. We hebben je de 20-punten checklist en een link naar de risicocalculator gestuurd.",
+    "successAlreadySubscribed": "Dit e-mailadres is al ingeschreven voor de nieuwsbrief.",
     "errorGeneric": "Er is iets misgegaan. Probeer het opnieuw.",
     "errorInvalidEmail": "Voer een geldig e-mailadres in.",
     "errorConsentRequired": "Je moet akkoord gaan met de voorwaarden om door te gaan."

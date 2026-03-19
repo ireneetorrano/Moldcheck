@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/pt/articles/segundo-pior-problema-bolor-europa":{},"/en/articles/europes-second-worst-mold-problem":{},"/fr/articles/deuxieme-pire-probleme-moisissures":{},"/de/articles/zweitschlimmstes-schimmelproblem-europa":{},"/nl/articles/op-een-na-ergste-schimmelprobleem":{},"/it/articles/secondo-peggior-problema-muffa-europa":{},"/es/articles/segundo-peor-problema-moho-europa":{}},"dynamicRoutes":{"/[locale]/articles/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/articles/[slug]","routeRegex":"^\\/([^/]+?)\\/articles\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"44927f3ebfd2c076ea1c0b21c36acba5","previewModeSigningKey":"f3fcc63c14eb5572173278d294892b30941f1d66916154cfb065ba3a4b9cef12","previewModeEncryptionKey":"408a451fe1a2e9ee139541deca481fb73c10e9876459c50dc8d972430af98182"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "ddb3d4bf4d6fa95bfa4ea36ccd78c62a",
+    "previewModeSigningKey": "b0da932c848f31f069d646fc48b64e0dc9c613e28fa16c311fc059cc19d5186f",
+    "previewModeEncryptionKey": "9232976a7edd408a1717fe60c3b10ad471ef948b9a6b0184304091a376da3da9"
+  }
+}

@@ -3,13 +3,13 @@ import type { ActiveLocale } from "@/config/locales";
 export interface SubscribePayload {
   email: string;
   locale: ActiveLocale;
-  gdprConsent: true;
-  hcaptchaToken?: string;
+  consentAccepted: boolean;
+  sourcePage?: string;
+  hp?: string;
 }
 
 export interface SubscribeResponse {
-  ok: true;
-  duplicate?: boolean;
+  status: "subscribed" | "already_subscribed";
 }
 
 export interface CalculatorCompletedPayload {
@@ -26,5 +26,5 @@ export interface CalculatorCompletedResponse {
 
 export interface ApiErrorResponse {
   error: string;
-  code: "VALIDATION_ERROR" | "ESP_ERROR" | "CAPTCHA_ERROR";
+  field?: string;
 }
