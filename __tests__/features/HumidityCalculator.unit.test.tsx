@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 /**
  * Unit tests for HumidityCalculator component
  * Validates: Requirements 3.1, 3.8

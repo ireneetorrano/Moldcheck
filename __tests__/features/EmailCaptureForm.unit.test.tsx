@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 /**
  * Unit tests for EmailCaptureForm component
  * Validates: Requirements 4.8

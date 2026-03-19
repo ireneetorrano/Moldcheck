@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 // Feature: newsletter-checklist-humidity-tool, Property 7: Answer preservation on back-navigation
 
 /**

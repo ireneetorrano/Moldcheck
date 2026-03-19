@@ -2,7 +2,6 @@ import type { ActiveLocale } from "@/config/locales";
 import { getServicesContent } from "@/features/content/data/servicesContent";
 import { buildGlobalPageMetadata } from "@/lib/sanity/pages";
 import { getGlobalPath } from "@/lib/routing/paths";
-import Link from "next/link";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: ActiveLocale }> }) {
   const { locale } = await params;
@@ -147,8 +146,8 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         <div className="services-levels__inner">
           {tiers.map(({ cards }, ti) => {
             if (!cards.length) return null;
-            const levelLabel = getLevelLabel(cards[0].eyebrow);
-            const levelTitle = getLevelTitle(cards[0].eyebrow);
+            const levelLabel = getLevelLabel(cards[0].eyebrow ?? "");
+            const levelTitle = getLevelTitle(cards[0].eyebrow ?? "");
             return (
               <div key={ti} className="services-level">
                 <div className="services-level__header">
@@ -197,9 +196,9 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
               <p className="services-cta-block__eyebrow">{contactCard.eyebrow}</p>
               <h2 className="services-cta-block__title">{contactCard.title}</h2>
               <p className="services-cta-block__body">{contactCard.body}</p>
-              <Link href={contactHref} className="services-cta-block__btn services-cta-block__btn--ghost">
+              <a href={contactHref} className="services-cta-block__btn services-cta-block__btn--ghost">
                 {contactCard.ctaLabel}
-              </Link>
+              </a>
             </div>
           )}
         </div>

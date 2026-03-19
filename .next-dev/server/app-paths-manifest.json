@@ -1,5 +1,0 @@
-{
-  "/(site)/[locale]/page": "app/(site)/[locale]/page.js",
-  "/(site)/[locale]/tools/[slug]/page": "app/(site)/[locale]/tools/[slug]/page.js",
-  "/api/newsletter/subscribe/route": "app/api/newsletter/subscribe/route.js"
-}

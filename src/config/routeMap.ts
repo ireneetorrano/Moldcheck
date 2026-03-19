@@ -89,7 +89,6 @@ export const localizedPathnames = {
   "/health": localizeStatic(sectionBaseSlugs.health),
   "/health/[slug]": localizeNested(sectionBaseSlugs.health),
   "/portugal": localizeStatic(sectionBaseSlugs.portugal),
-  "/portugal/[slug]": localizeNested(sectionBaseSlugs.portugal),
   "/inspection": localizeStatic(sectionBaseSlugs.inspection),
   "/inspection/[slug]": localizeNested(sectionBaseSlugs.inspection),
   "/municipalities/[slug]": localizeNested(sectionBaseSlugs.municipalities),

@@ -28,7 +28,7 @@ export function PrimaryNav({ locale }: { locale: ActiveLocale }) {
     <nav className="site-nav" aria-label="Primary">
       {navKeys.map((key) => {
         const href = getGlobalPath(locale, key);
-        const isActive = pathname === href || pathname.startsWith(href + "/");
+        const isActive = pathname === href || (pathname?.startsWith(href + "/") ?? false);
         return (
           <a
             key={key}

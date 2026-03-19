@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 /**
  * Unit tests for SubscriptionForm component
  * Validates: Requirements 1.4, 1.8, 1.9
