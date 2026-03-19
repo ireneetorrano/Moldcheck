@@ -5,11 +5,12 @@ import { usePathname } from "next/navigation";
 import { useParams } from "next/navigation";
 import { activeLocales, localeLabels, localeMarkers, type ActiveLocale } from "@/config/locales";
 import { getGlobalPath } from "@/lib/routing/paths";
-import { Link } from "@/lib/i18n/navigation";
+import { Link, usePathname as useIntlPathname } from "@/lib/i18n/navigation";
 import { getLocalizedArticlePath, getLocalizedGlobalPath } from "@/config/routeMap";
 import { a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
+import { a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
 
-const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs];
+const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs, a5MoldRiskSlugs];
 
 function findArticleSlugMap(
   currentLocale: ActiveLocale,
@@ -51,9 +52,10 @@ function GlobeIcon() {
 export function MobileNav({ locale }: { locale: ActiveLocale }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname() ?? "";
+  const intlPathname = useIntlPathname();
   const params = useParams();
   const labels = navLabels[locale];
-  const isDynamicPath = pathname.includes("[");
+  const isDynamicPath = intlPathname.includes("[");
 
   const currentSlug = typeof params?.slug === "string" ? params.slug : null;
   const slugMap = currentSlug ? findArticleSlugMap(locale, currentSlug) : null;
@@ -119,7 +121,7 @@ export function MobileNav({ locale }: { locale: ActiveLocale }) {
                 return (
                   <Link
                     key={loc}
-                    href={pathname as never}
+                    href={isDynamicPath ? ({ pathname: intlPathname, params } as never) : (intlPathname as never)}
                     locale={loc}
                     className={`mobile-nav__lang-option${loc === locale ? " is-active" : ""}`}
                     onClick={() => setOpen(false)}

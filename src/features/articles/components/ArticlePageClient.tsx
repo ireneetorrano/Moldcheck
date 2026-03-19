@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { ArticleLocaleContent, ArticleFaq, ArticleSource } from "@/features/content/data/articles/a4-portugal";
 import type { ActiveLocale } from "@/config/locales";
 import { ArticleLocaleContext } from "@/features/articles/context/ArticleLocaleContext";
+import { A5ArticleBody } from "./A5ArticleBody";
 
 export interface TocItem {
   id: string;
@@ -17,6 +18,7 @@ interface ArticlePageClientProps {
   tocTitle: string;
   tocItems: TocItem[];
   slugsByLocale: Record<ActiveLocale, string>;
+  articleKey: string;
   uiLabels: {
     sources: string;
     disclosure: string;
@@ -24,7 +26,7 @@ interface ArticlePageClientProps {
   };
 }
 
-// Render body paragraphs, injecting id anchors on ## headings
+// Render body paragraphs for standard articles (A4 etc.)
 function ArticleBody({ paragraphs }: { paragraphs: string[] }) {
   return (
     <>
@@ -85,6 +87,7 @@ export function ArticlePageClient({
   tocTitle,
   tocItems,
   slugsByLocale,
+  articleKey,
   uiLabels,
 }: ArticlePageClientProps) {
   const [activeId, setActiveId] = useState<string>("");
@@ -93,39 +96,31 @@ export function ArticlePageClient({
 
   // Show TOC after scrolling ~200px into the article
   useEffect(() => {
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      setTocVisible(scrollY > 200);
-    };
+    const onScroll = () => setTocVisible(window.scrollY > 200);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Section spy: track which anchor is in view
+  // Section spy: pick the topmost heading that has passed the 25% viewport mark
   useEffect(() => {
     const ids = tocItems.map((t) => t.id);
-    const observers: IntersectionObserver[] = [];
 
-    const callback = (entries: IntersectionObserverEntry[]) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          setActiveId(entry.target.id);
-        }
+    const update = () => {
+      const viewH = window.innerHeight;
+      const threshold = viewH * 0.25;
+      let best: string = "";
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top <= threshold) best = id;
       }
+      setActiveId(best);
     };
 
-    ids.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const obs = new IntersectionObserver(callback, {
-        rootMargin: "-20% 0px -70% 0px",
-        threshold: 0,
-      });
-      obs.observe(el);
-      observers.push(obs);
-    });
-
-    return () => observers.forEach((o) => o.disconnect());
+    window.addEventListener("scroll", update, { passive: true });
+    update(); // run once on mount
+    return () => window.removeEventListener("scroll", update);
   }, [tocItems]);
 
   const scrollTo = (id: string) => {
@@ -134,70 +129,75 @@ export function ArticlePageClient({
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  const isA5 = articleKey === "a5-mold-risk-guide";
+
   return (
     <ArticleLocaleContext.Provider value={slugsByLocale}>
-    <div className="article-layout">
-      {/* Sticky TOC — desktop only */}
-      <aside
-        className={`article-toc${tocVisible ? " article-toc--visible" : ""}`}
-        aria-label={tocTitle}
-      >
-        <p className="article-toc__title">{tocTitle}</p>
-        <nav>
-          <ol className="article-toc__list">
-            {tocItems.map((item) => (
-              <li key={item.id}>
-                <button
-                  className={`article-toc__item${activeId === item.id ? " is-active" : ""}`}
-                  onClick={() => scrollTo(item.id)}
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
-          </ol>
-        </nav>
-      </aside>
-
-      {/* Main article */}
-      <article className="article-page" ref={articleRef}>
-        <header className="article-page__header">
-          <div className="article-page__eyebrow">{sectionLabel}</div>
-          <h1 className="article-page__title">{content.title}</h1>
-          <p className="article-page__byline">{content.byline}</p>
-        </header>
-
-        <div className="article-page__body">
-          <ArticleBody paragraphs={content.body} />
-        </div>
-
-        {/* Disclosure */}
-        <aside className="article-page__disclosure">
-          <strong className="article-page__disclosure-label">{uiLabels.disclosure}</strong>
-          <p>{content.disclosure}</p>
+      <div className="article-layout">
+        {/* Sticky TOC — desktop only */}
+        <aside
+          className={`article-toc${tocVisible ? " article-toc--visible" : ""}`}
+          aria-label={tocTitle}
+        >
+          <p className="article-toc__title">{tocTitle}</p>
+          <nav>
+            <ol className="article-toc__list">
+              {tocItems.map((item) => (
+                <li key={item.id}>
+                  <button
+                    className={`article-toc__item${activeId === item.id ? " is-active" : ""}`}
+                    onClick={() => scrollTo(item.id)}
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </nav>
         </aside>
 
-        {/* Sources */}
-        <section id="sources" className="article-page__sources" aria-label={uiLabels.sources}>
-          <h2 className="article-page__section-heading">{uiLabels.sources}</h2>
-          <ol className="article-page__sources-list">
-            {content.sources.map((src: ArticleSource, i: number) => (
-              <li key={i}>{src.label}</li>
-            ))}
-          </ol>
-        </section>
+        {/* Main article */}
+        <article className="article-page" ref={articleRef}>
+          <header className="article-page__header">
+            <div className="article-page__eyebrow">{sectionLabel}</div>
+            <h1 className="article-page__title">{content.title}</h1>
+            <p className="article-page__byline">{content.byline}</p>
+          </header>
 
-        {/* FAQ — accordion */}
-        <section id="faq" className="article-page__faq" aria-label={uiLabels.faq}>
-          <div className="faq-accordion">
-            <h2 className="article-page__section-heading faq-accordion__heading">{uiLabels.faq}</h2>
-            {content.faq.map((item: ArticleFaq, i: number) => (
-              <FaqItem key={i} question={item.question} answer={item.answer} />
-            ))}
+          <div className="article-page__body">
+            {isA5
+              ? <A5ArticleBody paragraphs={content.body} />
+              : <ArticleBody paragraphs={content.body} />
+            }
           </div>
-        </section>
-      </article>
-    </div>
+
+          {/* Disclosure */}
+          <aside className="article-page__disclosure">
+            <strong className="article-page__disclosure-label">{uiLabels.disclosure}</strong>
+            <p>{content.disclosure}</p>
+          </aside>
+
+          {/* Sources */}
+          <section id="sources" className="article-page__sources" aria-label={uiLabels.sources}>
+            <h2 className="article-page__section-heading">{uiLabels.sources}</h2>
+            <ol className="article-page__sources-list">
+              {content.sources.map((src: ArticleSource, i: number) => (
+                <li key={i}>{src.label}</li>
+              ))}
+            </ol>
+          </section>
+
+          {/* FAQ — accordion */}
+          <section id="faq" className="article-page__faq" aria-label={uiLabels.faq}>
+            <div className="faq-accordion">
+              <h2 className="article-page__section-heading faq-accordion__heading">{uiLabels.faq}</h2>
+              {content.faq.map((item: ArticleFaq, i: number) => (
+                <FaqItem key={i} question={item.question} answer={item.answer} />
+              ))}
+            </div>
+          </section>
+        </article>
+      </div>
     </ArticleLocaleContext.Provider>
   );
 }

@@ -91,14 +91,90 @@ const a4TocItems: Record<ActiveLocale, TocItem[]> = {
   ],
 };
 
+// ── Per-article TOC items (A5 mold risk guide) ────────────────────────────
+const a5TocItems: Record<ActiveLocale, TocItem[]> = {
+  pt: [
+    { id: "o-que-este-guia-cobre",                    label: "O que cobre" },
+    { id: "sinais-de-alerta-que-a-maioria-das-pessoas-ignora", label: "Sinais de alerta" },
+    { id: "inspeo-diviso-a-diviso",                   label: "Inspecção" },
+    { id: "checklist-de-20-pontos",                   label: "Checklist" },
+    { id: "tabela-localizao--causa-provvel",           label: "Tabela" },
+    { id: "quando-pedir-ajuda-profissional",           label: "Ajuda profissional" },
+    { id: "sources",                                  label: "Fontes" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  en: [
+    { id: "what-this-guide-covers",                   label: "What it covers" },
+    { id: "warning-signs-most-people-ignore",         label: "Warning signs" },
+    { id: "room-by-room-inspection",                  label: "Inspection" },
+    { id: "20-point-checklist",                       label: "Checklist" },
+    { id: "location-to-probable-cause-table",         label: "Table" },
+    { id: "when-to-call-a-professional",              label: "Professional help" },
+    { id: "sources",                                  label: "Sources" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  fr: [
+    { id: "ce-que-ce-guide-couvre",                   label: "Ce que couvre" },
+    { id: "signaux-dalerte-que-la-plupart-des-gens-ignorent", label: "Signaux d'alerte" },
+    { id: "inspection-pice-par-pice",                 label: "Inspection" },
+    { id: "checklist-de-20-points",                   label: "Checklist" },
+    { id: "tableau--localisation--cause-probable",    label: "Tableau" },
+    { id: "quand-appeler-un-professionnel",            label: "Professionnel" },
+    { id: "sources",                                  label: "Sources" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  de: [
+    { id: "was-dieser-leitfaden-abdeckt",             label: "Was abgedeckt" },
+    { id: "warnsignale-die-die-meisten-menschen-ignorieren", label: "Warnsignale" },
+    { id: "raum-fr-raum-inspektion",                  label: "Inspektion" },
+    { id: "20-punkte-checkliste",                     label: "Checkliste" },
+    { id: "standort-zu-wahrscheinlicher-ursache-tabelle", label: "Tabelle" },
+    { id: "wann-einen-fachmann-rufen",                label: "Fachmann" },
+    { id: "sources",                                  label: "Quellen" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  nl: [
+    { id: "wat-deze-gids-behandelt",                  label: "Wat behandelt" },
+    { id: "waarschuwingssignalen-die-de-meeste-mensen-negeren", label: "Waarschuwingen" },
+    { id: "kamer-voor-kamer-inspectie",               label: "Inspectie" },
+    { id: "20-punten-checklist",                      label: "Checklist" },
+    { id: "locatie-naar-waarschijnlijke-oorzaak-tabel", label: "Tabel" },
+    { id: "wanneer-een-professional-te-bellen",       label: "Professional" },
+    { id: "sources",                                  label: "Bronnen" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  it: [
+    { id: "cosa-copre-questa-guida",                  label: "Cosa copre" },
+    { id: "segnali-di-allarme-che-la-maggior-parte-delle-persone-ignora", label: "Segnali" },
+    { id: "ispezione-stanza-per-stanza",              label: "Ispezione" },
+    { id: "checklist-di-20-punti",                    label: "Checklist" },
+    { id: "tabella-posizione--causa-probabile",       label: "Tabella" },
+    { id: "quando-chiamare-un-professionista",        label: "Professionista" },
+    { id: "sources",                                  label: "Fonti" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+  es: [
+    { id: "qu-cubre-esta-gua",                        label: "Qué cubre" },
+    { id: "seales-de-alerta-que-la-mayora-de-las-personas-ignora", label: "Señales" },
+    { id: "inspeccin-habitacin-por-habitacin",        label: "Inspección" },
+    { id: "lista-de-verificacin-de-20-puntos",        label: "Lista" },
+    { id: "tabla-ubicacin--causa-probable",           label: "Tabla" },
+    { id: "cundo-llamar-a-un-profesional",            label: "Profesional" },
+    { id: "sources",                                  label: "Fuentes" },
+    { id: "faq",                                      label: "FAQ" },
+  ],
+};
+
 // ── Per-article TOC item registry ─────────────────────────────────────────
 const tocItemsByArticle: Record<string, Record<ActiveLocale, TocItem[]>> = {
   "a4-portugal": a4TocItems,
+  "a5-mold-risk-guide": a5TocItems,
 };
 
 // ── Section eyebrow labels ────────────────────────────────────────────────
 const sectionLabels: Record<string, Record<ActiveLocale, string>> = {
   portugal: { pt: "Portugal", en: "Portugal", fr: "Portugal", de: "Portugal", nl: "Portugal", it: "Portogallo", es: "Portugal" },
+  inspection: { pt: "Inspecção", en: "Inspection", fr: "Inspection", de: "Inspektion", nl: "Inspectie", it: "Ispezione", es: "Inspección" },
 };
 
 // ── UI labels ─────────────────────────────────────────────────────────────
@@ -137,6 +213,7 @@ export function ArticlePage({ locale, content, articleKey, slugsByLocale, sectio
         tocTitle={tocTitles[locale]}
         tocItems={tocItems}
         slugsByLocale={slugsByLocale}
+        articleKey={articleKey}
         uiLabels={uiLabels[locale]}
       />
     </>

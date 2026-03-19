@@ -3,7 +3,7 @@ import type { SectionKey } from "@/types/routes";
 
 export interface FoundationalArticleAlternate {
   key: "black-mold" | "bleach" | "health" | "portugal" | "inspection-guide";
-  section: SectionKey;
+  section: SectionKey | "articles";
   slugs: Partial<Record<ActiveLocale, string>>;
 }
 
@@ -62,15 +62,15 @@ export const foundationalArticles: FoundationalArticleAlternate[] = [
   },
   {
     key: "inspection-guide",
-    section: "inspection",
+    section: "articles",
     slugs: {
-      pt: "avaliar-risco-bolor-casa-guia",
-      en: "assess-mold-risk-home-guide",
-      fr: "evaluer-risque-moisissures-guide",
-      de: "schimmelrisiko-wohnung-beurteilen",
-      nl: "schimmelrisico-woning-beoordelen",
-      it: "valutare-rischio-muffa-casa-guida",
-      es: "evaluar-riesgo-moho-casa-guia",
+      pt: "guia-completo-avaliar-risco-bolor-casa",
+      en: "assess-mold-risk-home-room-by-room-guide",
+      fr: "evaluer-risque-moisissures-logement-guide-piece-par-piece",
+      de: "schimmelrisiko-wohnung-selbst-beurteilen-leitfaden",
+      nl: "schimmelrisico-woning-beoordelen-kamer-voor-kamer-gids",
+      it: "valutare-rischio-muffa-casa-guida-stanza-per-stanza",
+      es: "evaluar-riesgo-moho-vivienda-guia-habitacion-por-habitacion",
     },
   },
 ];

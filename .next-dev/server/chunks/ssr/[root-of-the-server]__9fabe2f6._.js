@@ -246,15 +246,15 @@ const foundationalArticles = [
     },
     {
         key: "inspection-guide",
-        section: "inspection",
+        section: "articles",
         slugs: {
-            pt: "avaliar-risco-bolor-casa-guia",
-            en: "assess-mold-risk-home-guide",
-            fr: "evaluer-risque-moisissures-guide",
-            de: "schimmelrisiko-wohnung-beurteilen",
-            nl: "schimmelrisico-woning-beoordelen",
-            it: "valutare-rischio-muffa-casa-guida",
-            es: "evaluar-riesgo-moho-casa-guia"
+            pt: "guia-completo-avaliar-risco-bolor-casa",
+            en: "assess-mold-risk-home-room-by-room-guide",
+            fr: "evaluer-risque-moisissures-logement-guide-piece-par-piece",
+            de: "schimmelrisiko-wohnung-selbst-beurteilen-leitfaden",
+            nl: "schimmelrisico-woning-beoordelen-kamer-voor-kamer-gids",
+            it: "valutare-rischio-muffa-casa-guida-stanza-per-stanza",
+            es: "evaluar-riesgo-moho-vivienda-guia-habitacion-por-habitacion"
         }
     }
 ];
@@ -1407,7 +1407,7 @@ const servicesContentByLocale = {
                 eyebrow: "Reserva",
                 title: "Agendar através da InspectOS",
                 body: "As inspecções são realizadas através da InspectOS — plataforma independente de inspecção de imóveis em Portugal.",
-                ctaLabel: "→ Agendar inspecção em InspectOS.pt",
+                ctaLabel: "→ Agendar inspecção em InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },
@@ -1513,7 +1513,7 @@ const servicesContentByLocale = {
                 eyebrow: "Booking",
                 title: "Book through InspectOS",
                 body: "Inspections are booked through InspectOS — Portugal’s independent property inspection platform.",
-                ctaLabel: "→ Book an inspection at InspectOS.pt",
+                ctaLabel: "→ Book an inspection at InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },
@@ -1619,7 +1619,7 @@ const servicesContentByLocale = {
                 eyebrow: "Réservation",
                 title: "Réserver via InspectOS",
                 body: "Les inspections sont réservées via InspectOS — la plateforme indépendante d’inspection immobilière au Portugal.",
-                ctaLabel: "→ Réserver une inspection sur InspectOS.pt",
+                ctaLabel: "→ Réserver une inspection sur InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },
@@ -1725,7 +1725,7 @@ const servicesContentByLocale = {
                 eyebrow: "Reservierung",
                 title: "Inspektion über InspectOS buchen",
                 body: "Inspektionen werden über InspectOS gebucht — Portugals unabhängige Plattform für Immobilieninspektionen.",
-                ctaLabel: "→ Inspektion auf InspectOS.pt buchen",
+                ctaLabel: "→ Inspektion auf InspectOS buchen",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },
@@ -1831,7 +1831,7 @@ const servicesContentByLocale = {
                 eyebrow: "Boeking",
                 title: "Boek via InspectOS",
                 body: "Inspecties worden geboekt via InspectOS — het onafhankelijke vastgoedinspectieplatform in Portugal.",
-                ctaLabel: "→ Boek een inspectie op InspectOS.pt",
+                ctaLabel: "→ Boek een inspectie op InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },
@@ -1937,7 +1937,7 @@ const servicesContentByLocale = {
                 eyebrow: "Prenotazione",
                 title: "Prenota tramite InspectOS",
                 body: "Le ispezioni vengono effettuate tramite InspectOS — piattaforma indipendente di ispezione immobiliare in Portogallo.",
-                ctaLabel: "→ Prenota un’ispezione su InspectOS.pt",
+                ctaLabel: "→ Prenota un’ispezione su InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
             },

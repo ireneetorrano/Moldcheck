@@ -2910,4 +2910,203 @@ a.contact-info-card__value:hover {
   background: var(--mc-teal-dark, #1b5e5a);
 }
 
+.a5-table-wrap {
+  border: 1px solid var(--mc-border);
+  border-radius: 8px;
+  margin: .5rem 0 1rem;
+  overflow-x: auto;
+}
+
+.a5-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .9rem;
+}
+
+.a5-table__th {
+  background: var(--mc-teal-dark);
+  color: var(--mc-white);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: .75rem 1rem;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.a5-table__th--loc {
+  width: 38%;
+}
+
+.a5-table__th--cause {
+  width: 62%;
+}
+
+.a5-table__row {
+  border-top: 1px solid var(--mc-border);
+  transition: background .15s;
+}
+
+.a5-table__row:nth-child(2n) {
+  background: rgba(199, 219, 239, .133);
+}
+
+.a5-table__row:hover {
+  background: rgba(199, 219, 239, .45);
+}
+
+.a5-table__td {
+  color: var(--mc-ink);
+  vertical-align: top;
+  padding: .7rem 1rem;
+  line-height: 1.55;
+}
+
+.a5-table__td--loc {
+  color: var(--mc-teal-dark);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .a5-table__th--loc, .a5-table__th--cause {
+    width: auto;
+  }
+
+  .a5-table__td {
+    padding: .6rem .75rem;
+    font-size: .85rem;
+  }
+}
+
+.a5-rooms {
+  gap: .85rem;
+  margin: .5rem 0 1rem;
+  display: grid;
+}
+
+.a5-room {
+  border: 1px solid var(--mc-border);
+  background: var(--mc-white);
+  border-radius: 8px;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  transition: border-color .18s, box-shadow .18s;
+  display: flex;
+}
+
+.a5-room:hover {
+  border-color: var(--mc-teal-mid);
+  box-shadow: 0 4px 14px rgba(27, 77, 74, .08);
+}
+
+.a5-room__icon {
+  flex-shrink: 0;
+  margin-top: .1rem;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.a5-room__content {
+  gap: .35rem;
+  display: grid;
+}
+
+.a5-room__name {
+  color: var(--mc-teal-dark);
+  margin: 0;
+  font-size: .95rem;
+  font-weight: 700;
+}
+
+.a5-room__body {
+  color: var(--mc-ink-soft);
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 500px) {
+  .a5-room {
+    padding: .9rem 1rem;
+  }
+
+  .a5-room__icon {
+    font-size: 1.35rem;
+  }
+}
+
+.a5-checklist {
+  gap: 1.5rem;
+  margin: .5rem 0 1rem;
+  display: grid;
+}
+
+.a5-checklist__group {
+  gap: .6rem;
+  display: grid;
+}
+
+.a5-checklist__group-label {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--mc-teal-mid);
+  border-bottom: 1px solid var(--mc-border);
+  margin: 0;
+  padding-bottom: .4rem;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.a5-checklist__list {
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.a5-checklist__item {
+  align-items: flex-start;
+  gap: .75rem;
+  display: flex;
+}
+
+.a5-checklist__item--done .a5-checklist__text {
+  color: var(--mc-ink-soft);
+  opacity: .6;
+  text-decoration: line-through;
+}
+
+.a5-checklist__box {
+  border: 2px solid var(--mc-teal-mid);
+  cursor: pointer;
+  background: none;
+  border-radius: 3px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: .15rem;
+  padding: 0;
+  transition: background .15s, border-color .15s;
+  display: flex;
+}
+
+.a5-checklist__box--checked {
+  background: var(--mc-teal-mid);
+  border-color: var(--mc-teal-mid);
+}
+
+.a5-checklist__box:hover:not(.a5-checklist__box--checked) {
+  background: var(--mc-teal-light);
+}
+
+.a5-checklist__text {
+  color: var(--mc-ink);
+  font-size: .9rem;
+  line-height: 1.6;
+  transition: color .15s, opacity .15s;
+}
+
 /*# sourceMappingURL=src_app_globals_91e4631d.css.map*/

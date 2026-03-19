@@ -654,12 +654,13 @@ function getArticleHref(
       : section === "inspection"
         ? "inspection-guide"
         : section;
-  const slug = foundationalArticles.find((article) => article.key === articleKey)?.slugs[locale];
-  // The portugal article lives in the /articles/ route, not /portugal/
-  if (section === "portugal") {
-    return getArticlePath(locale, slug ?? "");
+  const article = foundationalArticles.find((a) => a.key === articleKey);
+  const slug = article?.slugs[locale] ?? "";
+  // Articles in the /articles/ route (portugal, inspection-guide)
+  if (article?.section === "articles") {
+    return getArticlePath(locale, slug);
   }
-  return getSectionPath(locale, section, slug);
+  return getSectionPath(locale, section as Parameters<typeof getSectionPath>[1], slug);
 }
 
 function buildHomeSections(locale: ActiveLocale, content: HomeLocaleContent): GlobalPageSection[] {

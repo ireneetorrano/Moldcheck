@@ -137,7 +137,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Agendar através da InspectOS",
         body:
           "As inspecções são realizadas através da InspectOS — plataforma independente de inspecção de imóveis em Portugal.",
-        ctaLabel: "→ Agendar inspecção em InspectOS.pt",
+        ctaLabel: "→ Agendar inspecção em InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -261,7 +261,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Book through InspectOS",
         body:
           "Inspections are booked through InspectOS — Portugal’s independent property inspection platform.",
-        ctaLabel: "→ Book an inspection at InspectOS.pt",
+        ctaLabel: "→ Book an inspection at InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -385,7 +385,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Réserver via InspectOS",
         body:
           "Les inspections sont réservées via InspectOS — la plateforme indépendante d’inspection immobilière au Portugal.",
-        ctaLabel: "→ Réserver une inspection sur InspectOS.pt",
+        ctaLabel: "→ Réserver une inspection sur InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -509,7 +509,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Inspektion über InspectOS buchen",
         body:
           "Inspektionen werden über InspectOS gebucht — Portugals unabhängige Plattform für Immobilieninspektionen.",
-        ctaLabel: "→ Inspektion auf InspectOS.pt buchen",
+        ctaLabel: "→ Inspektion auf InspectOS buchen",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -633,7 +633,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Boek via InspectOS",
         body:
           "Inspecties worden geboekt via InspectOS — het onafhankelijke vastgoedinspectieplatform in Portugal.",
-        ctaLabel: "→ Boek een inspectie op InspectOS.pt",
+        ctaLabel: "→ Boek een inspectie op InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },
@@ -757,7 +757,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         title: "Prenota tramite InspectOS",
         body:
           "Le ispezioni vengono effettuate tramite InspectOS — piattaforma indipendente di ispezione immobiliare in Portogallo.",
-        ctaLabel: "→ Prenota un’ispezione su InspectOS.pt",
+        ctaLabel: "→ Prenota un’ispezione su InspectOS",
         ctaHref: "https://inspectos.pt",
         openInNewTab: true,
       },

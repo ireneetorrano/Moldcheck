@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ActiveLocale } from "@/config/locales";
 import { activeLocales } from "@/config/locales";
 import { a4PortugalContent, a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
+import { a5MoldRiskContent, a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
 import { getLocalizedArticlePath } from "@/config/routeMap";
 
 const indexMeta: Record<ActiveLocale, { title: string; description: string; eyebrow: string; heading: string }> = {
@@ -50,8 +51,12 @@ export default async function ArticlesPage({
 }) {
   const { locale } = await params;
   const m = indexMeta[locale] ?? indexMeta.en;
+
   const a4 = a4PortugalContent[locale];
   const a4Href = getLocalizedArticlePath(locale, a4PortugalSlugs[locale]);
+
+  const a5 = a5MoldRiskContent[locale];
+  const a5Href = getLocalizedArticlePath(locale, a5MoldRiskSlugs[locale]);
 
   return (
     <div className="articles-index">
@@ -67,6 +72,16 @@ export default async function ArticlesPage({
               <p className="articles-index__card-title">{a4.title}</p>
               <p className="articles-index__card-byline">{a4.byline}</p>
               <p className="articles-index__card-desc">{a4.seoDescription}</p>
+              <span className="articles-index__card-cta">{readLabel[locale]}</span>
+            </article>
+          </a>
+        </li>
+        <li className="articles-index__card">
+          <a href={a5Href} className="articles-index__card-link">
+            <article>
+              <p className="articles-index__card-title">{a5.title}</p>
+              <p className="articles-index__card-byline">{a5.byline}</p>
+              <p className="articles-index__card-desc">{a5.seoDescription}</p>
               <span className="articles-index__card-cta">{readLabel[locale]}</span>
             </article>
           </a>
