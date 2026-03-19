@@ -47,7 +47,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Porque é que Portugal tem tanto bolor?",
     problemBody:
       "82% dos edifícios em Portugal foram construídos antes do ano 2000  antes de qualquer requisito de isolamento ou eficiência energética. Porto tem uma humidade relativa média de 77%. Lisboa, no inverno, atinge os 84%.\n\nO resultado: condensação crónica, pontes térmicas, e paredes que retêm humidade durante décadas.\n\nO bolor não é azar. É o resultado previsível de edifícios mal equipados para o clima em que existem.",
-    problemLink: "Saber mais sobre por que Portugal é vulnerável →",
+    problemLink: "Saber mais sobre por que Portugal é vulnerável",
     conflictTitle: "Porque é que o diagnóstico gratuito não é neutro",
     conflictBody:
       "As principais empresas de tratamento de bolor em Portugal oferecem diagnósticos gratuitos. É uma estratégia comercial inteligente: a empresa que diagnostica o problema também vende a solução.\n\nNão existe em Portugal nenhuma entidade que avalie o bolor na sua casa e lhe diga o que tem  sem ganhar dinheiro com o que se segue.\n\nO MoldCheck.pt é essa alternativa. Não vendemos tratamentos. Não recebemos comissões. Publicamos o que a ciência diz.",
@@ -130,7 +130,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Why does Portugal have so much mold?",
     problemBody:
       "82% of buildings in Portugal were built before the year 2000  before any meaningful insulation or energy-efficiency requirements. Porto has an average relative humidity of 77%. Lisbon in winter reaches 84%.\n\nThe result: chronic condensation, thermal bridges, and walls that retain moisture for decades.\n\nMold is not bad luck. It is the predictable result of buildings that were never properly equipped for the climate they exist in.",
-    problemLink: "Learn more about why Portuguese buildings are vulnerable →",
+    problemLink: "Learn more about why Portuguese buildings are vulnerable",
     conflictTitle: "Why the free diagnosis isn’t neutral",
     conflictBody:
       "Portugal’s major mold treatment companies offer free home diagnoses. It is a smart commercial strategy: the company that diagnoses the problem also sells the solution.\n\nThere is no independent entity in Portugal that will assess the mold in your home and tell you what you have  without making money from what comes next.\n\nMoldCheck.pt is that alternative. We do not sell treatments. We do not take commissions. We publish what the science says.",
@@ -214,7 +214,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
     problemBody:
       "82 % des bâtiments au Portugal ont été construits avant l’an 2000  avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
-    problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais →",
+    problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais",
     conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
     conflictBody:
       "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez  sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
@@ -297,7 +297,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Warum hat Portugal so viel Schimmel?",
     problemBody:
       "82 % der Gebäude in Portugal wurden vor dem Jahr 2000 gebaut  bevor es nennenswerte Anforderungen an Dämmung oder Energieeffizienz gab. Porto hat eine durchschnittliche relative Luftfeuchtigkeit von 77 %. Lissabon erreicht im Winter 84 %.\n\nDas Ergebnis: chronische Kondensation, Wärmebrücken und Wände, die über Jahrzehnte Feuchtigkeit speichern.\n\nSchimmel ist kein Pech. Er ist das vorhersehbare Ergebnis von Gebäuden, die nie richtig für das Klima ausgelegt wurden, in dem sie stehen.",
-    problemLink: "Mehr über die Anfälligkeit portugiesischer Gebäude erfahren →",
+    problemLink: "Mehr über die Anfälligkeit portugiesischer Gebäude erfahren",
     conflictTitle: "Warum die kostenlose Diagnose nicht neutral ist",
     conflictBody:
       "Portugals große Unternehmen für Schimmelbehandlung bieten kostenlose Hausdiagnosen an. Das ist eine kluge Geschäftsstrategie: Das Unternehmen, das das Problem diagnostiziert, verkauft auch die Lösung.\n\nEs gibt in Portugal keine unabhängige Stelle, die den Schimmel in Ihrer Wohnung bewertet und Ihnen sagt, was Sie haben  ohne an dem zu verdienen, was danach kommt.\n\nMoldCheck.pt ist diese Alternative. Wir verkaufen keine Behandlungen. Wir nehmen keine Provisionen. Wir veröffentlichen, was die Wissenschaft sagt.",
@@ -379,7 +379,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Waarom heeft Portugal zoveel schimmel?",
     problemBody:
       "82% van de gebouwen in Portugal is gebouwd vóór het jaar 2000  vóór er betekenisvolle eisen bestonden voor isolatie of energie-efficiëntie. Porto heeft een gemiddelde relatieve luchtvochtigheid van 77%. Lissabon bereikt in de winter 84%.\n\nHet resultaat: chronische condensatie, koudebruggen en muren die tientallen jaren vocht vasthouden.\n\nSchimmel is geen pech. Het is het voorspelbare gevolg van gebouwen die nooit goed zijn aangepast aan het klimaat waarin ze bestaan.",
-    problemLink: "Meer over de kwetsbaarheid van Portugese gebouwen →",
+    problemLink: "Meer over de kwetsbaarheid van Portugese gebouwen",
     conflictTitle: "Waarom een gratis diagnose niet neutraal is",
     conflictBody:
       "De grote schimmelbehandelingsbedrijven in Portugal bieden gratis huisdiagnoses aan. Dat is een slimme commerciële strategie: het bedrijf dat het probleem diagnosticeert, verkoopt ook de oplossing.\n\nEr bestaat in Portugal geen onafhankelijke partij die de schimmel in jouw woning beoordeelt en je vertelt wat er aan de hand is  zonder geld te verdienen aan wat daarna komt.\n\nMoldCheck.pt is dat alternatief. We verkopen geen behandelingen. We ontvangen geen commissies. We publiceren wat de wetenschap zegt.",
@@ -461,7 +461,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "Perché in Portogallo c’è così tanta muffa?",
     problemBody:
       "L’82% degli edifici in Portogallo è stato costruito prima dell’anno 2000  prima di qualsiasi requisito significativo in materia di isolamento o efficienza energetica. Porto ha un’umidità relativa media del 77%. Lisbona, in inverno, raggiunge l’84%.\n\nIl risultato: condensa cronica, ponti termici e pareti che trattengono l’umidità per decenni.\n\nLa muffa non è sfortuna. È il risultato prevedibile di edifici che non sono mai stati attrezzati per il clima in cui si trovano.",
-    problemLink: "Scopri di più sul perché gli edifici portoghesi sono vulnerabili →",
+    problemLink: "Scopri di più sul perché gli edifici portoghesi sono vulnerabili",
     conflictTitle: "Perché una diagnosi gratuita non è neutrale",
     conflictBody:
       "Le principali aziende di trattamento della muffa in Portogallo offrono diagnosi gratuite a domicilio. È una strategia commerciale intelligente: l’azienda che diagnostica il problema è anche quella che vende la soluzione.\n\nIn Portogallo non esiste alcuna entità indipendente che valuti la muffa nella tua casa e ti dica che cosa hai  senza guadagnare da ciò che viene dopo.\n\nMoldCheck.pt è quell’alternativa. Non vendiamo trattamenti. Non riceviamo commissioni. Pubblichiamo ciò che dice la scienza.",
@@ -545,7 +545,7 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     problemTitle: "¿Por qué hay tanto moho en Portugal?",
     problemBody:
       "El 82% de los edificios en Portugal se construyeron antes del año 2000 antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
-    problemLink: "Descubre por qué los edificios portugueses son tan vulnerables →",
+    problemLink: "Descubre por qué los edificios portugueses son tan vulnerables ",
     conflictTitle: "¿Por qué un diagnóstico gratuito no es neutral?",
     conflictBody:
       "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes  sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",

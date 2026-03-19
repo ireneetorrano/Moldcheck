@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { requireEnv } from "@backend/shared/env";
 import { esc } from "@backend/shared/utils";
 import type { NewsletterLocale } from "./schema";
-import { getChecklistUrl, getCalculatorUrl } from "./checklists";
+import { getChecklistUrl, getCalculatorUrl, getUnsubscribeUrl } from "./checklists";
 
 function getResend() {
   return new Resend(requireEnv("RESEND_API_KEY"));
@@ -17,6 +17,7 @@ interface EmailCopy {
   calculatorCta: string;
   closing: string;
   footer: string;
+  unsubscribeText: string;
 }
 
 const COPY: Record<NewsletterLocale, EmailCopy> = {
@@ -27,8 +28,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Descarregar checklist (PDF)",
     calculatorLabel: "Quer avaliar o risco da sua habitação?",
     calculatorCta: "Usar a calculadora gratuita de risco de humidade →",
-    closing: "Publicamos informação independente sobre bolor, humidade e qualidade do ar interior em Portugal. Pode cancelar a subscrição a qualquer momento.",
+    closing: "Publicamos informação independente sobre bolor, humidade e qualidade do ar interior em Portugal.",
     footer: "MoldCheck.pt · Uma iniciativa do FAIRBANK Group",
+    unsubscribeText: "Cancelar subscrição",
   },
   en: {
     subject: "Your free checklist — MoldCheck.pt",
@@ -37,8 +39,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Download checklist (PDF)",
     calculatorLabel: "Want to assess your home's risk?",
     calculatorCta: "Use the free humidity risk calculator →",
-    closing: "We publish independent information on mold, damp and indoor air quality in Portugal. You can unsubscribe at any time.",
+    closing: "We publish independent information on mold, damp and indoor air quality in Portugal.",
     footer: "MoldCheck.pt · A FAIRBANK Group initiative",
+    unsubscribeText: "Unsubscribe",
   },
   es: {
     subject: "Tu checklist gratuito — MoldCheck.pt",
@@ -47,8 +50,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Descargar checklist (PDF)",
     calculatorLabel: "¿Quieres evaluar el riesgo de tu vivienda?",
     calculatorCta: "Usar la calculadora gratuita de riesgo de humedad →",
-    closing: "Publicamos información independiente sobre moho, humedad y calidad del aire interior en Portugal. Puedes cancelar tu suscripción en cualquier momento.",
+    closing: "Publicamos información independiente sobre moho, humedad y calidad del aire interior en Portugal.",
     footer: "MoldCheck.pt · Una iniciativa del FAIRBANK Group",
+    unsubscribeText: "Cancelar suscripción",
   },
   fr: {
     subject: "Votre checklist gratuite — MoldCheck.pt",
@@ -57,8 +61,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Télécharger la checklist (PDF)",
     calculatorLabel: "Vous souhaitez évaluer le risque de votre logement ?",
     calculatorCta: "Utiliser le calculateur gratuit de risque d'humidité →",
-    closing: "Nous publions des informations indépendantes sur les moisissures, l'humidité et la qualité de l'air intérieur au Portugal. Vous pouvez vous désabonner à tout moment.",
+    closing: "Nous publions des informations indépendantes sur les moisissures, l'humidité et la qualité de l'air intérieur au Portugal.",
     footer: "MoldCheck.pt · Une initiative du FAIRBANK Group",
+    unsubscribeText: "Se désabonner",
   },
   de: {
     subject: "Ihre kostenlose Checkliste — MoldCheck.pt",
@@ -67,8 +72,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Checkliste herunterladen (PDF)",
     calculatorLabel: "Möchten Sie das Risiko Ihres Hauses einschätzen?",
     calculatorCta: "Kostenlosen Feuchtigkeitsrisikorechner nutzen →",
-    closing: "Wir veröffentlichen unabhängige Informationen zu Schimmel, Feuchtigkeit und Raumluftqualität in Portugal. Sie können sich jederzeit abmelden.",
+    closing: "Wir veröffentlichen unabhängige Informationen zu Schimmel, Feuchtigkeit und Raumluftqualität in Portugal.",
     footer: "MoldCheck.pt · Eine Initiative der FAIRBANK Group",
+    unsubscribeText: "Abmelden",
   },
   nl: {
     subject: "Uw gratis checklist — MoldCheck.pt",
@@ -77,8 +83,9 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Checklist downloaden (PDF)",
     calculatorLabel: "Wilt u het risico van uw woning beoordelen?",
     calculatorCta: "Gebruik de gratis vochtrisicocalculator →",
-    closing: "Wij publiceren onafhankelijke informatie over schimmel, vocht en binnenluchtkwaliteit in Portugal. U kunt zich op elk moment afmelden.",
+    closing: "Wij publiceren onafhankelijke informatie over schimmel, vocht en binnenluchtkwaliteit in Portugal.",
     footer: "MoldCheck.pt · Een initiatief van de FAIRBANK Group",
+    unsubscribeText: "Afmelden",
   },
   it: {
     subject: "La tua checklist gratuita — MoldCheck.pt",
@@ -87,12 +94,25 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     checklistCta: "Scarica la checklist (PDF)",
     calculatorLabel: "Vuoi valutare il rischio della tua abitazione?",
     calculatorCta: "Usa il calcolatore gratuito del rischio di umidità →",
-    closing: "Pubblichiamo informazioni indipendenti su muffa, umidità e qualità dell'aria interna in Portogallo. Puoi annullare l'iscrizione in qualsiasi momento.",
+    closing: "Pubblichiamo informazioni indipendenti su muffa, umidità e qualità dell'aria interna in Portogallo.",
     footer: "MoldCheck.pt · Un'iniziativa del FAIRBANK Group",
+    unsubscribeText: "Annulla iscrizione",
   },
 };
 
-function buildHtml(copy: EmailCopy, checklistUrl: string, calculatorUrl: string): string {
+function buildHtml(
+  copy: EmailCopy,
+  checklistUrl: string,
+  calculatorUrl: string,
+  unsubscribeUrl: string | null,
+  siteBase: string,
+): string {
+  const unsubscribeSection = unsubscribeUrl
+    ? `<p style="margin:8px 0 0;font-size:11px;color:#9ab5b4;">
+        <a href="${unsubscribeUrl}" style="color:#9ab5b4;text-decoration:underline;">${esc(copy.unsubscribeText)}</a>
+      </p>`
+    : "";
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -100,8 +120,8 @@ function buildHtml(copy: EmailCopy, checklistUrl: string, calculatorUrl: string)
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#f7fafa;padding:40px 16px;">
     <tr><td align="center">
       <table width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border:1px solid #d8e8e7;border-radius:6px;overflow:hidden;">
-        <tr><td style="background:#1b4d4a;padding:28px 32px;">
-          <p style="margin:0;font-family:'Palatino Linotype',Palatino,Georgia,serif;font-size:22px;color:#ffffff;letter-spacing:-0.02em;">MoldCheck.pt</p>
+        <tr><td style="background:#1b4d4a;padding:24px 32px;text-align:center;">
+          <img src="${siteBase}/img/logo_sin_fondo.png" alt="MoldCheck.pt" width="160" height="auto" style="display:block;margin:0 auto;max-width:160px;height:auto;border:0;" />
         </td></tr>
         <tr><td style="padding:32px;">
           <p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:#0f1c1b;">${esc(copy.greeting)}</p>
@@ -119,6 +139,7 @@ function buildHtml(copy: EmailCopy, checklistUrl: string, calculatorUrl: string)
         </td></tr>
         <tr><td style="background:#f7fafa;border-top:1px solid #d8e8e7;padding:16px 32px;">
           <p style="margin:0;font-size:11px;color:#9ab5b4;">${esc(copy.footer)}</p>
+          ${unsubscribeSection}
         </td></tr>
       </table>
     </td></tr>
@@ -127,16 +148,22 @@ function buildHtml(copy: EmailCopy, checklistUrl: string, calculatorUrl: string)
 </html>`;
 }
 
-export async function sendChecklistEmail(email: string, locale: NewsletterLocale): Promise<void> {
+export async function sendChecklistEmail(
+  email: string,
+  locale: NewsletterLocale,
+  unsubscribeToken: string | null = null,
+): Promise<void> {
   const resend = getResend();
   const from = process.env.CONTACT_FROM_EMAIL ?? "MoldCheck <no-reply@moldcheck.pt>";
   const copy = COPY[locale];
+  const siteBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moldcheck.pt";
+  const unsubscribeUrl = unsubscribeToken ? getUnsubscribeUrl(locale, unsubscribeToken) : null;
 
   const { error } = await resend.emails.send({
     from,
     to: email,
     subject: copy.subject,
-    html: buildHtml(copy, getChecklistUrl(locale), getCalculatorUrl(locale)),
+    html: buildHtml(copy, getChecklistUrl(locale), getCalculatorUrl(locale), unsubscribeUrl, siteBase),
   });
 
   if (error) throw new Error(`Resend error: ${JSON.stringify(error)}`);

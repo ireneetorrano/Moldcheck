@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/irene/OneDrive/Escritorio/MoldCheck_2/src/app/not-found.tsx"],"sourcesContent":["export default function NotFound() {\n  return <div style={{ padding: \"2rem\" }}>Page not found.</div>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBAAO,8OAAC;QAAI,OAAO;YAAE,SAAS;QAAO;kBAAG;;;;;;AAC1C","debugId":null}}]
+}

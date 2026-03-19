@@ -1,7 +1,11 @@
 import { validateNewsletterPayload, type NewsletterPayload } from "./schema";
-import { upsertNewsletterSubscriber, markChecklistSent } from "./supabase";
+import { upsertNewsletterSubscriber, markChecklistSent, getUnsubscribeToken } from "./supabase";
 import { sendChecklistEmail } from "./email";
+import { unsubscribeByToken } from "./unsubscribe";
 import { checkEnvPresence } from "@backend/shared/env";
+import type { NewsletterLocale } from "./schema";
+
+export { unsubscribeByToken };
 
 const REQUIRED_ENV = [
   "NEXT_PUBLIC_SUPABASE_URL",
@@ -16,7 +20,7 @@ function log(...args: unknown[]) {
 }
 
 export type SubscribeResult =
-  | { ok: true; status: "subscribed" | "already_subscribed" }
+  | { ok: true; status: "subscribed" | "resubscribed" | "already_subscribed" }
   | { ok: false; httpStatus: number; error: string; field?: string };
 
 export async function handleNewsletterSubscribe(
@@ -24,7 +28,6 @@ export async function handleNewsletterSubscribe(
 ): Promise<SubscribeResult> {
   log("── request received ──────────────────────────────");
 
-  // Env check
   const { ok: envOk, missing } = checkEnvPresence(REQUIRED_ENV);
   log("env vars present:", Object.fromEntries(REQUIRED_ENV.map((k) => [k, !!process.env[k]])));
   if (!envOk) {
@@ -33,7 +36,6 @@ export async function handleNewsletterSubscribe(
     return { ok: false, httpStatus: 500, error: DEV ? msg : "Internal server error" };
   }
 
-  // Validate
   const result = validateNewsletterPayload(body as NewsletterPayload);
   if (!result.ok) {
     log("validation failed:", result.error);
@@ -43,7 +45,6 @@ export async function handleNewsletterSubscribe(
   const { data } = result;
   log("validated — email:", data.email, "locale:", data.locale);
 
-  // Supabase upsert
   let upsert: Awaited<ReturnType<typeof upsertNewsletterSubscriber>>;
   try {
     log("upserting subscriber...");
@@ -60,10 +61,20 @@ export async function handleNewsletterSubscribe(
     return { ok: true, status: "already_subscribed" };
   }
 
-  // Send email
+  // subscribed or resubscribed — send email
+  const emailAddress = upsert.email;
+
+  // Fetch the unsubscribe token to include in the email
+  let unsubscribeToken: string | null = null;
+  try {
+    unsubscribeToken = await getUnsubscribeToken(data.emailNorm);
+  } catch (err) {
+    log("WARN could not fetch unsubscribe token (non-fatal):", err instanceof Error ? err.message : err);
+  }
+
   try {
     log("sending checklist email...");
-    await sendChecklistEmail(data.email, data.locale);
+    await sendChecklistEmail(emailAddress, data.locale as NewsletterLocale, unsubscribeToken);
     log("email sent OK");
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
@@ -71,7 +82,6 @@ export async function handleNewsletterSubscribe(
     return { ok: false, httpStatus: 500, error: DEV ? `Email error: ${msg}` : "Internal server error" };
   }
 
-  // Mark checklist sent (non-fatal)
   try {
     await markChecklistSent(data.emailNorm);
     log("markChecklistSent OK");
@@ -80,5 +90,5 @@ export async function handleNewsletterSubscribe(
   }
 
   log("── success ───────────────────────────────────────");
-  return { ok: true, status: "subscribed" };
+  return { ok: true, status: upsert.status };
 }

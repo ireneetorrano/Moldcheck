@@ -5,7 +5,6 @@ import { getMessages } from "next-intl/server";
 import { isActiveLocale, type ActiveLocale } from "@/config/locales";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { NewsletterPopup } from "@/features/newsletter/components/NewsletterPopup";
 import { ScrollReset } from "@/components/layout/ScrollReset";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { ReloadRedirect } from "@/components/layout/ReloadRedirect";
@@ -58,7 +57,6 @@ export default async function LocaleLayout({
         <SiteHeader locale={locale as ActiveLocale} />
         {children}
         <SiteFooter locale={locale as ActiveLocale} />
-        <NewsletterPopup locale={locale as ActiveLocale} />
         <BackToTop />
       </div>
     </NextIntlClientProvider>

@@ -57,6 +57,16 @@
     "errorInvalidEmail": "Veuillez saisir une adresse e-mail valide.",
     "errorConsentRequired": "Vous devez accepter les conditions pour continuer."
   },
+  "Unsubscribe": {
+    "pageTitle": "Se désabonner de la newsletter MoldCheck",
+    "heading": "Voulez-vous arrêter de recevoir les e-mails de MoldCheck ?",
+    "body": "Si vous confirmez, vous ne recevrez plus les mises à jour éditoriales ni la checklist humidité de MoldCheck.pt.",
+    "confirmButton": "Oui, me désabonner",
+    "successTitle": "Vous avez été désabonné.",
+    "successBody": "Vous ne recevrez plus d'e-mails de MoldCheck.pt. Vous pouvez vous réabonner à tout moment.",
+    "alreadyUnsubscribed": "Cette adresse e-mail est déjà désabonnée.",
+    "invalidToken": "Ce lien de désabonnement est invalide ou a expiré."
+  },
   "Calculator": {
     "title": "Calculatrice de risque d'humidité",
     "startButton": "Commencer l'évaluation",

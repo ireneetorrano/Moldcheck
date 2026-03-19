@@ -57,6 +57,16 @@
     "errorInvalidEmail": "Inserisci un indirizzo e-mail valido.",
     "errorConsentRequired": "Devi accettare i termini per continuare."
   },
+  "Unsubscribe": {
+    "pageTitle": "Annulla iscrizione alla newsletter MoldCheck",
+    "heading": "Vuoi smettere di ricevere e-mail da MoldCheck?",
+    "body": "Se confermi, non riceverai più aggiornamenti editoriali né la checklist sull'umidità da MoldCheck.pt.",
+    "confirmButton": "Sì, annulla iscrizione",
+    "successTitle": "Iscrizione annullata.",
+    "successBody": "Non riceverai più e-mail da MoldCheck.pt. Puoi iscriverti di nuovo in qualsiasi momento.",
+    "alreadyUnsubscribed": "Questo indirizzo e-mail è già disiscritto.",
+    "invalidToken": "Questo link di disiscrizione non è valido o è scaduto."
+  },
   "Calculator": {
     "title": "Calcolatrice del rischio di umidità",
     "startButton": "Inizia la valutazione",

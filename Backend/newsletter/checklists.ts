@@ -29,3 +29,18 @@ export function getCalculatorUrl(locale: NewsletterLocale): string {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moldcheck.pt";
   return `${base}${CALCULATOR_PATHS[locale]}`;
 }
+
+const UNSUBSCRIBE_PATHS: Record<NewsletterLocale, string> = {
+  es: "/es/newsletter/unsubscribe",
+  pt: "/pt/newsletter/unsubscribe",
+  en: "/en/newsletter/unsubscribe",
+  fr: "/fr/newsletter/unsubscribe",
+  de: "/de/newsletter/unsubscribe",
+  nl: "/nl/newsletter/unsubscribe",
+  it: "/it/newsletter/unsubscribe",
+};
+
+export function getUnsubscribeUrl(locale: NewsletterLocale, token: string): string {
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.moldcheck.pt";
+  return `${base}${UNSUBSCRIBE_PATHS[locale]}?token=${encodeURIComponent(token)}`;
+}

@@ -632,6 +632,18 @@ p { margin: 0; }
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+@media (hover: hover) {
+  .home-next-steps__card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  .home-next-steps__card:hover .home-next-steps__card-cta {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
 }
 .home-next-steps__card-top {
   display: flex;
@@ -2239,6 +2251,18 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+@media (hover: hover) {
+  .services-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--mc-teal-mid, #2a7a75);
+    box-shadow: 0 8px 24px rgba(27, 77, 74, 0.1);
+  }
+  .services-card--warning:hover {
+    border-color: #b8943a;
+    box-shadow: 0 8px 24px rgba(200, 168, 75, 0.15);
+  }
 }
 .services-card--warning {
   border-color: #c8a84b;
@@ -2381,4 +2405,56 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
   .services-level__grid { grid-template-columns: 1fr; }
   .services-footer-info { padding: 3rem 1.25rem 4rem; }
   .services-footer-info__inner { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ── Unsubscribe Page ────────────────────────────────────────────────────── */
+.unsubscribe-page {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+}
+.unsubscribe-page__card {
+  width: min(520px, 100%);
+  background: var(--mc-surface);
+  border: 1px solid var(--mc-border);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+.unsubscribe-page__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  color: var(--mc-ink);
+  margin: 0;
+  line-height: 1.25;
+}
+.unsubscribe-page__body {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--mc-ink-soft);
+  margin: 0;
+}
+.unsubscribe-page__body--muted {
+  color: var(--mc-ink-muted);
+}
+.unsubscribe-page__btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--mc-teal);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-btn, 4px);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+  width: fit-content;
+}
+.unsubscribe-page__btn:hover {
+  background: var(--mc-teal-dark, #1b5e5a);
 }

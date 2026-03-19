@@ -57,6 +57,16 @@
     "errorInvalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "errorConsentRequired": "Sie müssen den Bedingungen zustimmen, um fortzufahren."
   },
+  "Unsubscribe": {
+    "pageTitle": "Newsletter von MoldCheck abbestellen",
+    "heading": "Möchten Sie keine E-Mails von MoldCheck mehr erhalten?",
+    "body": "Wenn Sie bestätigen, erhalten Sie keine redaktionellen Updates und keine Feuchtigkeits-Checkliste mehr von MoldCheck.pt.",
+    "confirmButton": "Ja, abmelden",
+    "successTitle": "Sie wurden abgemeldet.",
+    "successBody": "Sie erhalten keine E-Mails mehr von MoldCheck.pt. Sie können sich jederzeit wieder anmelden.",
+    "alreadyUnsubscribed": "Diese E-Mail-Adresse ist bereits abgemeldet.",
+    "invalidToken": "Dieser Abmeldelink ist ungültig oder abgelaufen."
+  },
   "Calculator": {
     "title": "Feuchtigkeitsrisikorechner",
     "startButton": "Bewertung starten",
