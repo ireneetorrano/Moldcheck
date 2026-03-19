@@ -775,7 +775,7 @@ export function getHomeNextStepsContent(locale: ActiveLocale) {
     getArticleHref(locale, "inspection"),
     getArticleHref(locale, "health"),
     getArticleHref(locale, "inspection"),
-    getSectionPath(locale, "inspection"),
+    getGlobalPath(locale, "services"),
   ];
   return {
     nextStepsTitle: c.nextStepsTitle,
