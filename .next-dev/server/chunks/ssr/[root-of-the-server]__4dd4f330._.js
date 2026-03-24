@@ -354,101 +354,101 @@ function paragraphsToBlocks(paragraphs) {
 const aboutContentByLocale = {
     pt: {
         eyebrow: "Sobre o MoldCheck",
-        title: "O que é o MoldCheck  e porque existe",
+        title: "O que é o MoldCheck e porque existe",
         description: "MoldCheck existe para explicar bolor, humidade e risco em Portugal com independência editorial e base científica.",
         introParagraphs: [
             "O MoldCheck nasceu de uma observação simples: Portugal tem o segundo pior problema de bolor da Europa, e não existe nenhuma fonte de informação independente para as pessoas que vivem com essa realidade.",
-            "O mercado disponível oferece diagnósticos gratuitos de empresas que ganham dinheiro com os tratamentos que recomendam. Os motores de busca devolvem sobretudo conteúdo produzido por essas mesmas empresas. Os médicos raramente têm formação em medicina ambiental doméstica. E os padrões internacionais de referência  as diretrizes da OMS de 2009, a norma IICRC S520  existem em inglês, em linguagem técnica, inacessíveis ao consumidor comum.",
+            "O mercado disponível oferece diagnósticos gratuitos de empresas que ganham dinheiro com os tratamentos que recomendam. Os motores de busca devolvem sobretudo conteúdo produzido por essas mesmas empresas. Os médicos raramente têm formação em medicina ambiental doméstica. E os padrões internacionais de referência as diretrizes da OMS de 2009, a norma IICRC S520 existem em inglês, em linguagem técnica, inacessíveis ao consumidor comum.",
             "Este site existe para preencher esse espaço."
         ],
         introEyebrow: "O MoldCheck nasceu de uma observação simples:",
         behindEyebrow: "TRANSPARÊNCIA",
         behindTitle: "Quem está por detrás disto?",
-        behindBody: "O MoldCheck é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente  não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade."
+        behindBody: "O MoldCheck é uma iniciativa do FAIRBANK Group. O FAIRBANK Group opera a InspectOS, uma plataforma de inspecção independente de imóveis em Portugal.\n\nA nossa ligação comercial é com o diagnóstico independente não com o tratamento. Um inspector independente que cobra pelo seu tempo e não recebe comissão do saneador que vai executar a obra é exactamente o modelo que este site defende. É também o modelo que a InspectOS representa.\n\nPieter Paul Castelein, fundador do FAIRBANK Group, escreveu o ensaio fundador deste site depois de descobrir a escala do problema em Portugal e perceber que não havia nenhum recurso de informação que o abordasse com honestidade."
     },
     en: {
         eyebrow: "About MoldCheck",
-        title: "What MoldCheck is  and why it exists",
+        title: "What MoldCheck is and why it exists",
         description: "MoldCheck exists to explain mold, damp and indoor risk in Portugal with editorial independence and scientific discipline.",
         introParagraphs: [
             "MoldCheck was born from a simple observation: Portugal has Europe's second-worst mold problem, and there is no independent source of information for the people living with that reality.",
-            "The market offers free diagnoses from companies that make money from the treatments they recommend. Search engines largely return content produced by those same companies. Doctors rarely have training in domestic environmental medicine. And the main international reference standards  the 2009 WHO guidelines, the IICRC S520 standard  exist in English, in technical language, and remain inaccessible to the average resident.",
+            "The market offers free diagnoses from companies that make money from the treatments they recommend. Search engines largely return content produced by those same companies. Doctors rarely have training in domestic environmental medicine. And the main international reference standards the 2009 WHO guidelines, the IICRC S520 standard exist in English, in technical language, and remain inaccessible to the average resident.",
             "This site exists to fill that gap."
         ],
         introEyebrow: "MoldCheck was born from a simple observation:",
         behindEyebrow: "TRANSPARENCY",
         behindTitle: "Who is behind this?",
-        behindBody: "MoldCheck is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis  not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal's mold problem and finding no honest information resource that addressed it directly."
+        behindBody: "MoldCheck is a FAIRBANK Group initiative. FAIRBANK Group operates InspectOS, an independent property inspection platform in Portugal.\n\nOur commercial connection is with independent diagnosis not with treatment. An independent inspector who charges for their time and receives no commission from the remediation contractor is exactly the model this site defends. It is also the model InspectOS represents.\n\nPieter Paul Castelein, founder of FAIRBANK Group, wrote the founding essay for this site after discovering the scale of Portugal's mold problem and finding no honest information resource that addressed it directly."
     },
     fr: {
         eyebrow: "À propos de MoldCheck",
-        title: "Ce qu'est MoldCheck  et pourquoi il existe",
+        title: "Ce qu'est MoldCheck et pourquoi il existe",
         description: "MoldCheck existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
         introParagraphs: [
             "MoldCheck est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
-            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales  les lignes directrices de l'OMS de 2009, la norme IICRC S520  existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
+            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales les lignes directrices de l'OMS de 2009, la norme IICRC S520 existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
             "Ce site existe pour combler ce manque."
         ],
         introEyebrow: "MoldCheck est né d'une observation simple :",
         behindEyebrow: "TRANSPARENCE",
         behindTitle: "Qui est derrière cela",
-        behindBody: "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant  pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
+        behindBody: "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
     },
     de: {
         eyebrow: "Über MoldCheck",
-        title: "Was MoldCheck ist  und warum es existiert",
+        title: "Was MoldCheck ist und warum es existiert",
         description: "MoldCheck erklärt Schimmel, Feuchtigkeit und Innenraumrisiken in Portugal mit redaktioneller Unabhängigkeit und wissenschaftlicher Grundlage.",
         introParagraphs: [
             "MoldCheck entstand aus einer einfachen Beobachtung: Portugal hat Europas zweitschlimmstes Schimmelproblem, und es gibt keine unabhängige Informationsquelle für die Menschen, die mit dieser Realität leben.",
-            "Der Markt bietet kostenlose Diagnosen von Unternehmen an, die mit den von ihnen empfohlenen Behandlungen Geld verdienen. Suchmaschinen liefern überwiegend Inhalte, die genau von diesen Unternehmen produziert wurden. Ärztinnen und Ärzte haben nur selten eine Ausbildung in häuslicher Umweltmedizin. Und die wichtigsten internationalen Referenzstandards  die WHO-Leitlinien von 2009 und der IICRC S520  liegen auf Englisch und in technischer Sprache vor und sind für die meisten Bewohner kaum zugänglich.",
+            "Der Markt bietet kostenlose Diagnosen von Unternehmen an, die mit den von ihnen empfohlenen Behandlungen Geld verdienen. Suchmaschinen liefern überwiegend Inhalte, die genau von diesen Unternehmen produziert wurden. Ärztinnen und Ärzte haben nur selten eine Ausbildung in häuslicher Umweltmedizin. Und die wichtigsten internationalen Referenzstandards die WHO-Leitlinien von 2009 und der IICRC S520 liegen auf Englisch und in technischer Sprache vor und sind für die meisten Bewohner kaum zugänglich.",
             "Diese Website existiert, um diese Lücke zu schließen."
         ],
         introEyebrow: "MoldCheck entstand aus einer einfachen Beobachtung:",
         behindEyebrow: "TRANSPARENZ",
         behindTitle: "Wer dahintersteht",
-        behindBody: "MoldCheck ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst  nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab."
+        behindBody: "MoldCheck ist eine Initiative der FAIRBANK Group. Die FAIRBANK Group betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nUnsere kommerzielle Verbindung liegt im unabhängigen Diagnosedienst nicht in der Behandlung. Ein unabhängiger Inspektor, der seine Zeit berechnet und keine Provision vom Sanierungsunternehmen erhält, ist genau das Modell, für das diese Website eintritt. Genau dieses Modell verkörpert auch InspectOS.\n\nPieter Paul Castelein, Gründer der FAIRBANK Group, schrieb den Gründungsessay dieser Website, nachdem er das Ausmaß des Problems in Portugal erkannt und festgestellt hatte, dass es keine ehrliche Informationsquelle dazu gab."
     },
     nl: {
         eyebrow: "Over MoldCheck",
-        title: "Wat MoldCheck is  en waarom het bestaat",
+        title: "Wat MoldCheck is en waarom het bestaat",
         description: "MoldCheck bestaat om schimmel, vocht en binnenrisico in Portugal uit te leggen met redactionele onafhankelijkheid en wetenschappelijke basis.",
         introParagraphs: [
             "MoldCheck ontstond vanuit een eenvoudige observatie: Portugal heeft het op één na ergste schimmelprobleem van Europa, en er bestaat geen onafhankelijke informatiebron voor de mensen die met die realiteit leven.",
-            "De markt biedt gratis diagnoses aan van bedrijven die geld verdienen met de behandelingen die ze aanbevelen. Zoekmachines tonen vooral content die door diezelfde bedrijven is geproduceerd. Artsen hebben zelden opleiding in huiselijke milieugeneeskunde. En de belangrijkste internationale referentienormen  de WHO-richtlijnen uit 2009 en de IICRC S520  bestaan in het Engels, in technische taal, en zijn voor de gemiddelde bewoner moeilijk toegankelijk.",
+            "De markt biedt gratis diagnoses aan van bedrijven die geld verdienen met de behandelingen die ze aanbevelen. Zoekmachines tonen vooral content die door diezelfde bedrijven is geproduceerd. Artsen hebben zelden opleiding in huiselijke milieugeneeskunde. En de belangrijkste internationale referentienormen de WHO-richtlijnen uit 2009 en de IICRC S520 bestaan in het Engels, in technische taal, en zijn voor de gemiddelde bewoner moeilijk toegankelijk.",
             "Deze website bestaat om dat gat te vullen."
         ],
         introEyebrow: "MoldCheck ontstond vanuit een eenvoudige observatie:",
         behindEyebrow: "TRANSPARANTIE",
         behindTitle: "Wie hierachter zit",
-        behindBody: "MoldCheck is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose  niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde."
+        behindBody: "MoldCheck is een initiatief van de FAIRBANK Group. De FAIRBANK Group beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nOnze commerciële band ligt bij onafhankelijke diagnose niet bij behandeling. Een onafhankelijke inspecteur die betaald wordt voor zijn tijd en geen commissie ontvangt van het saneringsbedrijf is precies het model dat deze site verdedigt. Dat is ook het model dat InspectOS vertegenwoordigt.\n\nPieter Paul Castelein, oprichter van de FAIRBANK Group, schreef het oprichtingsessay van deze site nadat hij de omvang van het Portugese schimmelprobleem had ontdekt en merkte dat er geen eerlijke informatiebron bestond die dit rechtstreeks behandelde."
     },
     it: {
-        eyebrow: "Chi siamo  MoldCheck",
-        title: "Cos'è MoldCheck  e perché esiste",
+        eyebrow: "Chi siamo MoldCheck",
+        title: "Cos'è MoldCheck e perché esiste",
         description: "MoldCheck esiste per spiegare muffa, umidità e rischi per la qualità dell'aria interna in Portogallo con indipendenza editoriale e base scientifica.",
         introParagraphs: [
             "MoldCheck è nato da una semplice osservazione: il Portogallo ha il secondo peggior problema di muffa in Europa, e non esiste alcuna fonte di informazione indipendente per le persone che vivono con questa realtà.",
-            "Il mercato offre diagnosi gratuite da parte di aziende che guadagnano con i trattamenti che raccomandano. I motori di ricerca restituiscono principalmente contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E i principali standard di riferimento internazionali  le linee guida OMS del 2009 e la norma IICRC S520  esistono in inglese, in linguaggio tecnico, inaccessibili al consumatore comune.",
+            "Il mercato offre diagnosi gratuite da parte di aziende che guadagnano con i trattamenti che raccomandano. I motori di ricerca restituiscono principalmente contenuti prodotti da quelle stesse aziende. I medici raramente hanno una formazione in medicina ambientale domestica. E i principali standard di riferimento internazionali le linee guida OMS del 2009 e la norma IICRC S520 esistono in inglese, in linguaggio tecnico, inaccessibili al consumatore comune.",
             "Questo sito esiste per colmare quel vuoto."
         ],
         introEyebrow: "MoldCheck è nato da una semplice osservazione:",
         behindEyebrow: "TRASPARENZA",
         behindTitle: "Chi c'è dietro",
-        behindBody: "MoldCheck è un'iniziativa del FAIRBANK Group. Il FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente  non con il trattamento. Un ispettore indipendente che addebita il proprio tempo e non riceve commissioni dall'impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondatore di questo sito dopo aver scoperto la portata del problema in Portogallo e aver constatato l'assenza di una risorsa informativa onesta che lo affrontasse direttamente."
+        behindBody: "MoldCheck è un'iniziativa del FAIRBANK Group. Il FAIRBANK Group gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nIl nostro legame commerciale è con la diagnosi indipendente non con il trattamento. Un ispettore indipendente che addebita il proprio tempo e non riceve commissioni dall'impresa di risanamento è esattamente il modello che questo sito difende. È anche il modello che InspectOS rappresenta.\n\nPieter Paul Castelein, fondatore del FAIRBANK Group, ha scritto il saggio fondatore di questo sito dopo aver scoperto la portata del problema in Portogallo e aver constatato l'assenza di una risorsa informativa onesta che lo affrontasse direttamente."
     },
     es: {
         eyebrow: "Sobre MoldCheck",
-        title: "Qué es MoldCheck  y por qué existe",
+        title: "Qué es MoldCheck y por qué existe",
         description: "MoldCheck existe para explicar el moho, la humedad y el riesgo interior en Portugal con independencia editorial y base científica.",
         introParagraphs: [
             "MoldCheck nació de una observación simple: Portugal tiene el segundo peor problema de moho de Europa, y no existe ninguna fuente de información independiente para las personas que viven con esa realidad.",
-            "El mercado ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los motores de búsqueda devuelven principalmente contenido producido por esas mismas empresas. Los médicos raramente tienen formación en medicina ambiental doméstica. Y los principales estándares de referencia internacionales  las directrices de la OMS de 2009 y la norma IICRC S520  existen en inglés, en lenguaje técnico, inaccesibles para el consumidor común.",
+            "El mercado ofrece diagnósticos gratuitos de empresas que ganan dinero con los tratamientos que recomiendan. Los motores de búsqueda devuelven principalmente contenido producido por esas mismas empresas. Los médicos raramente tienen formación en medicina ambiental doméstica. Y los principales estándares de referencia internacionales las directrices de la OMS de 2009 y la norma IICRC S520 existen en inglés, en lenguaje técnico, inaccesibles para el consumidor común.",
             "Este sitio existe para llenar ese espacio."
         ],
         introEyebrow: "MoldCheck nació de una observación simple:",
         behindEyebrow: "TRANSPARENCIA",
         behindTitle: "¿Quién está detrás de esto?",
-        behindBody: "MoldCheck es una iniciativa del FAIRBANK Group. El FAIRBANK Group opera InspectOS, una plataforma de inspección independiente de inmuebles en Portugal.\n\nNuestra conexión comercial es con el diagnóstico independiente  no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión del saneador que va a ejecutar la obra es exactamente el modelo que este sitio defiende. Es también el modelo que InspectOS representa.\n\nPieter Paul Castelein, fundador del FAIRBANK Group, escribió el ensayo fundador de este sitio después de descubrir la escala del problema en Portugal y darse cuenta de que no había ningún recurso de información que lo abordara con honestidad."
+        behindBody: "MoldCheck es una iniciativa del FAIRBANK Group. El FAIRBANK Group opera InspectOS, una plataforma de inspección independiente de inmuebles en Portugal.\n\nNuestra conexión comercial es con el diagnóstico independiente no con el tratamiento. Un inspector independiente que cobra por su tiempo y no recibe comisión del saneador que va a ejecutar la obra es exactamente el modelo que este sitio defiende. Es también el modelo que InspectOS representa.\n\nPieter Paul Castelein, fundador del FAIRBANK Group, escribió el ensayo fundador de este sitio después de descubrir la escala del problema en Portugal y darse cuenta de que no había ningún recurso de información que lo abordara con honestidad."
     }
 };
 function getAboutContent(locale) {
@@ -579,27 +579,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$pat
 const homeContentByLocale = {
     pt: {
         eyebrow: "RECURSO EDITORIAL INDEPENDENTE SOBRE BOLOR, HUMIDADE E QUALIDADE DO AR INTERIOR",
-        description: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa  para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
+        description: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
         heroTitle: "Portugal tem o segundo pior problema de bolor da Europa. A maioria das pessoas não sabe.",
-        heroBody: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa  para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
+        heroBody: "Um em cada quatro portugueses vive em casa afetada por humidade ou bolor. MoldCheck.pt é o único recurso independente em Portugal dedicado a explicar o que isso significa para a sua saúde, para a sua casa, e para o que pode fazer a seguir.",
         heroPrimaryCtaLabel: "Fazer a avaliação gratuita",
         heroSecondaryCtaLabel: "Ler o guia de inspecção",
         trustBarText: "Baseado em investigação científica da OMS · Independente de empresas de tratamento · Sem publicidade · Iniciativa do FAIRBANK Group",
         problemTitle: "Porque é que Portugal tem tanto bolor?",
-        problemBody: "82% dos edifícios em Portugal foram construídos antes do ano 2000  antes de qualquer requisito de isolamento ou eficiência energética. Porto tem uma humidade relativa média de 77%. Lisboa, no inverno, atinge os 84%.\n\nO resultado: condensação crónica, pontes térmicas, e paredes que retêm humidade durante décadas.\n\nO bolor não é azar. É o resultado previsível de edifícios mal equipados para o clima em que existem.",
+        problemBody: "82% dos edifícios em Portugal foram construídos antes do ano 2000 antes de qualquer requisito de isolamento ou eficiência energética. Porto tem uma humidade relativa média de 77%. Lisboa, no inverno, atinge os 84%.\n\nO resultado: condensação crónica, pontes térmicas, e paredes que retêm humidade durante décadas.\n\nO bolor não é azar. É o resultado previsível de edifícios mal equipados para o clima em que existem.",
         problemLink: "Saber mais sobre por que Portugal é vulnerável",
         conflictTitle: "Porque é que o diagnóstico gratuito não é neutro",
-        conflictBody: "As principais empresas de tratamento de bolor em Portugal oferecem diagnósticos gratuitos. É uma estratégia comercial inteligente: a empresa que diagnostica o problema também vende a solução.\n\nNão existe em Portugal nenhuma entidade que avalie o bolor na sua casa e lhe diga o que tem  sem ganhar dinheiro com o que se segue.\n\nO MoldCheck.pt é essa alternativa. Não vendemos tratamentos. Não recebemos comissões. Publicamos o que a ciência diz.",
+        conflictBody: "As principais empresas de tratamento de bolor em Portugal oferecem diagnósticos gratuitos. É uma estratégia comercial inteligente: a empresa que diagnostica o problema também vende a solução.\n\nNão existe em Portugal nenhuma entidade que avalie o bolor na sua casa e lhe diga o que tem sem ganhar dinheiro com o que se segue.\n\nO MoldCheck.pt é essa alternativa. Não vendemos tratamentos. Não recebemos comissões. Publicamos o que a ciência diz.",
         conflictLink: "Ler a nossa política editorial →",
         featuredTitle: "Comece aqui",
         featuredDescription: "",
-        nextStepsTitle: "Os próximos passos  consoante a sua situação",
-        aboutTitle: "Quem está por detrás disto  e porquê",
+        nextStepsTitle: "Os próximos passos consoante a sua situação",
+        aboutTitle: "Quem está por detrás disto e porquê",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Quem está por detrás disto  e porquê",
-        aboutBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS  plataforma de inspecção independente de imóveis em Portugal.\n\nNão vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma  não porque lucramos com o tratamento que se segue.\n\nTodo o conteúdo deste site é baseado em investigação científica revisada por pares, incluindo as diretrizes da OMS de 2009 e o padrão IICRC S520. Quando a ciência é incerta, dizemos que é incerta.",
+        aboutCardTitle: "Quem está por detrás disto e porquê",
+        aboutBody: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS plataforma de inspecção independente de imóveis em Portugal.\n\nNão vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma não porque lucramos com o tratamento que se segue.\n\nTodo o conteúdo deste site é baseado em investigação científica revisada por pares, incluindo as diretrizes da OMS de 2009 e o padrão IICRC S520. Quando a ciência é incerta, dizemos que é incerta.",
         aboutLink: "Ler a política editorial completa →",
-        footerNote: "© MoldCheck.pt  Uma iniciativa do FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidade · Política Editorial · Contacto\nEste site não substitui aconselhamento médico ou técnico profissional.",
+        footerNote: "© MoldCheck.pt Uma iniciativa do FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidade · Política Editorial · Contacto\nEste site não substitui aconselhamento médico ou técnico profissional.",
         featuredCards: [
             {
                 title: "Portugal tem o 2.º pior bolor da Europa mas ninguém fala nisso",
@@ -608,12 +608,12 @@ const homeContentByLocale = {
             },
             {
                 title: "Porque é que a lixívia não resolve o bolor",
-                body: "A solução mais usada em Portugal não funciona. Aqui está o porquê  e o que realmente resulta.",
+                body: "A solução mais usada em Portugal não funciona. Aqui está o porquê e o que realmente resulta.",
                 ctaLabel: "Ler artigo →"
             },
             {
                 title: "A sua casa está a afetar a sua saúde?",
-                body: "O que a OMS estabeleceu sobre bolor e doenças respiratórias  e os sintomas que a maioria das pessoas não associa à habitação.",
+                body: "O que a OMS estabeleceu sobre bolor e doenças respiratórias e os sintomas que a maioria das pessoas não associa à habitação.",
                 ctaLabel: "Ler artigo →"
             },
             {
@@ -625,7 +625,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "“Tenho bolor visível”",
-                body: "Comece pelo guia de avaliação visual. Identifique a localização, a extensão, e o padrão  essa informação determina tudo o que se segue.",
+                body: "Comece pelo guia de avaliação visual. Identifique a localização, a extensão, e o padrão essa informação determina tudo o que se segue.",
                 ctaLabel: "Guia de avaliação →"
             },
             {
@@ -635,7 +635,7 @@ const homeContentByLocale = {
             },
             {
                 title: "“Não sei se tenho bolor”",
-                body: "Muitas das localizações mais problemáticas são invisíveis. O guia de inspecção diz-lhe onde procurar  e o que a ausência de bolor visível ainda não exclui.",
+                body: "Muitas das localizações mais problemáticas são invisíveis. O guia de inspecção diz-lhe onde procurar e o que a ausência de bolor visível ainda não exclui.",
                 ctaLabel: "Começar a inspecção →"
             },
             {
@@ -647,41 +647,41 @@ const homeContentByLocale = {
     },
     en: {
         eyebrow: "Independent editorial resource on mold, damp and indoor air quality",
-        description: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means  for your health, your home, and what to do next.",
+        description: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means for your health, your home, and what to do next.",
         heroTitle: "Portugal has Europe’s second-worst mold problem. Most people don’t know it.",
-        heroBody: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means  for your health, your home, and what to do next.",
+        heroBody: "One in four people in Portugal lives in housing affected by dampness or mold. MoldCheck.pt is Portugal’s only independent resource dedicated to explaining what that means for your health, your home, and what to do next.",
         heroPrimaryCtaLabel: "Assess my home for free",
         heroSecondaryCtaLabel: "Read the inspection guide",
         trustBarText: "Based on WHO scientific research · Independent of treatment companies · No advertising · A FAIRBANK Group initiative",
         problemTitle: "Why does Portugal have so much mold?",
-        problemBody: "82% of buildings in Portugal were built before the year 2000  before any meaningful insulation or energy-efficiency requirements. Porto has an average relative humidity of 77%. Lisbon in winter reaches 84%.\n\nThe result: chronic condensation, thermal bridges, and walls that retain moisture for decades.\n\nMold is not bad luck. It is the predictable result of buildings that were never properly equipped for the climate they exist in.",
+        problemBody: "82% of buildings in Portugal were built before the year 2000 before any meaningful insulation or energy-efficiency requirements. Porto has an average relative humidity of 77%. Lisbon in winter reaches 84%.\n\nThe result: chronic condensation, thermal bridges, and walls that retain moisture for decades.\n\nMold is not bad luck. It is the predictable result of buildings that were never properly equipped for the climate they exist in.",
         problemLink: "Learn more about why Portuguese buildings are vulnerable",
         conflictTitle: "Why the free diagnosis isn’t neutral",
-        conflictBody: "Portugal’s major mold treatment companies offer free home diagnoses. It is a smart commercial strategy: the company that diagnoses the problem also sells the solution.\n\nThere is no independent entity in Portugal that will assess the mold in your home and tell you what you have  without making money from what comes next.\n\nMoldCheck.pt is that alternative. We do not sell treatments. We do not take commissions. We publish what the science says.",
+        conflictBody: "Portugal’s major mold treatment companies offer free home diagnoses. It is a smart commercial strategy: the company that diagnoses the problem also sells the solution.\n\nThere is no independent entity in Portugal that will assess the mold in your home and tell you what you have without making money from what comes next.\n\nMoldCheck.pt is that alternative. We do not sell treatments. We do not take commissions. We publish what the science says.",
         conflictLink: "Read our editorial policy →",
         featuredTitle: "Start here",
         featuredDescription: "",
-        nextStepsTitle: "Next steps  depending on your situation",
-        aboutTitle: "Who is behind this  and why",
+        nextStepsTitle: "Next steps depending on your situation",
+        aboutTitle: "Who is behind this and why",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Who is behind this  and why",
-        aboutBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal.\n\nWe do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or a lab test, it is because we believe you need one  not because we profit from whatever treatment comes next.\n\nAll content on this site is based on peer-reviewed scientific research, including the 2009 WHO guidelines and the IICRC S520 standard. When the science is uncertain, we say so.",
+        aboutCardTitle: "Who is behind this and why",
+        aboutBody: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal.\n\nWe do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or a lab test, it is because we believe you need one not because we profit from whatever treatment comes next.\n\nAll content on this site is based on peer-reviewed scientific research, including the 2009 WHO guidelines and the IICRC S520 standard. When the science is uncertain, we say so.",
         aboutLink: "Read the full editorial policy →",
-        footerNote: "© MoldCheck.pt  A FAIRBANK Group initiative\nInspectOS · PropCheck.pt · Privacy Policy · Editorial Policy · Contact\nThis website does not replace professional medical or technical advice.",
+        footerNote: "© MoldCheck.pt A FAIRBANK Group initiative\nInspectOS · PropCheck.pt · Privacy Policy · Editorial Policy · Contact\nThis website does not replace professional medical or technical advice.",
         featuredCards: [
             {
-                title: "Portugal has Europe’s second-worst mold problem  and nobody talks about it",
+                title: "Portugal has Europe’s second-worst mold problem and nobody talks about it",
                 body: "The founding essay. Why this problem exists, why it is ignored, and what could change.",
                 ctaLabel: "Read article →"
             },
             {
                 title: "Why bleach doesn’t fix mold",
-                body: "Portugal’s most common solution doesn’t work. Here is why  and what actually does.",
+                body: "Portugal’s most common solution doesn’t work. Here is why and what actually does.",
                 ctaLabel: "Read article →"
             },
             {
                 title: "Is your home affecting your health?",
-                body: "What the WHO established about mold and respiratory disease  and the symptoms most people do not connect to their housing.",
+                body: "What the WHO established about mold and respiratory disease and the symptoms most people do not connect to their housing.",
                 ctaLabel: "Read article →"
             },
             {
@@ -693,7 +693,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "“I have visible mold”",
-                body: "Start with the visual assessment guide. Identify the location, extent, and pattern  that information shapes everything that follows.",
+                body: "Start with the visual assessment guide. Identify the location, extent, and pattern that information shapes everything that follows.",
                 ctaLabel: "Assessment guide →"
             },
             {
@@ -703,7 +703,7 @@ const homeContentByLocale = {
             },
             {
                 title: "“I’m not sure whether I have mold”",
-                body: "Many of the most problematic locations are invisible. The inspection guide shows you where to look  and what the absence of visible mold still does not rule out.",
+                body: "Many of the most problematic locations are invisible. The inspection guide shows you where to look and what the absence of visible mold still does not rule out.",
                 ctaLabel: "Start the inspection →"
             },
             {
@@ -715,41 +715,41 @@ const homeContentByLocale = {
     },
     fr: {
         eyebrow: "Ressource éditoriale indépendante sur les moisissures, l’humidité et la qualité de l’air intérieur",
-        description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie  pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+        description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
         heroTitle: "Le Portugal a le deuxième pire problème de moisissures en Europe. La plupart des gens ne le savent pas.",
-        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie  pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
         heroPrimaryCtaLabel: "Évaluer mon logement gratuitement",
         heroSecondaryCtaLabel: "Lire le guide d’inspection",
         trustBarText: "Basé sur la recherche scientifique de l’OMS · Indépendant des entreprises de traitement · Sans publicité · Une initiative du FAIRBANK Group",
         problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
-        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000  avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
+        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000 avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
         problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais",
         conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
-        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez  sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
+        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
         conflictLink: "Lire notre politique éditoriale →",
         featuredTitle: "Commencez ici",
         featuredDescription: "",
-        nextStepsTitle: "Les prochaines étapes  selon votre situation",
-        aboutTitle: "Qui est derrière cela  et pourquoi",
+        nextStepsTitle: "Les prochaines étapes selon votre situation",
+        aboutTitle: "Qui est derrière cela et pourquoi",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Qui est derrière cela  et pourquoi",
-        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin  pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
+        aboutCardTitle: "Qui est derrière cela et pourquoi",
+        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
         aboutLink: "Lire la politique éditoriale complète →",
-        footerNote: "© MoldCheck.pt  Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
+        footerNote: "© MoldCheck.pt Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
         featuredCards: [
             {
-                title: "Le Portugal a le 2e pire problème de moisissures en Europe  et personne n’en parle",
+                title: "Le Portugal a le 2e pire problème de moisissures en Europe et personne n’en parle",
                 body: "L’essai fondateur. Pourquoi ce problème existe, pourquoi il est ignoré, et ce qui pourrait changer.",
                 ctaLabel: "Lire l’article →"
             },
             {
                 title: "Pourquoi l’eau de Javel ne résout pas les moisissures",
-                body: "La solution la plus utilisée au Portugal ne fonctionne pas. Voici pourquoi  et ce qui fonctionne vraiment.",
+                body: "La solution la plus utilisée au Portugal ne fonctionne pas. Voici pourquoi et ce qui fonctionne vraiment.",
                 ctaLabel: "Lire l’article →"
             },
             {
                 title: "Votre logement affecte-t-il votre santé ?",
-                body: "Ce que l’OMS a établi sur les moisissures et les maladies respiratoires  et les symptômes que la plupart des gens ne relient pas à leur logement.",
+                body: "Ce que l’OMS a établi sur les moisissures et les maladies respiratoires et les symptômes que la plupart des gens ne relient pas à leur logement.",
                 ctaLabel: "Lire l’article →"
             },
             {
@@ -761,7 +761,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "« J’ai des moisissures visibles »",
-                body: "Commencez par le guide d’évaluation visuelle. Identifiez l’emplacement, l’étendue et le motif  ces informations déterminent tout ce qui suit.",
+                body: "Commencez par le guide d’évaluation visuelle. Identifiez l’emplacement, l’étendue et le motif ces informations déterminent tout ce qui suit.",
                 ctaLabel: "Guide d’évaluation →"
             },
             {
@@ -771,7 +771,7 @@ const homeContentByLocale = {
             },
             {
                 title: "« Je ne sais pas si j’ai des moisissures »",
-                body: "Beaucoup des zones les plus problématiques sont invisibles. Le guide d’inspection vous dit où regarder  et ce que l’absence de moisissures visibles n’exclut toujours pas.",
+                body: "Beaucoup des zones les plus problématiques sont invisibles. Le guide d’inspection vous dit où regarder et ce que l’absence de moisissures visibles n’exclut toujours pas.",
                 ctaLabel: "Commencer l’inspection →"
             },
             {
@@ -783,41 +783,41 @@ const homeContentByLocale = {
     },
     de: {
         eyebrow: "Unabhängige redaktionelle Quelle zu Schimmel, Feuchtigkeit und Innenraumluftqualität",
-        description: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet  für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
+        description: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
         heroTitle: "Portugal hat Europas zweitschlimmstes Schimmelproblem. Die meisten Menschen wissen das nicht.",
-        heroBody: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet  für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
+        heroBody: "Jede vierte Person in Portugal lebt in Wohnraum, der von Feuchtigkeit oder Schimmel betroffen ist. MoldCheck.pt ist Portugals einzige unabhängige Quelle, die erklärt, was das bedeutet für Ihre Gesundheit, Ihre Wohnung und was Sie als Nächstes tun können.",
         heroPrimaryCtaLabel: "Meine Wohnung kostenlos beurteilen",
         heroSecondaryCtaLabel: "Den Inspektionsleitfaden lesen",
         trustBarText: "Basierend auf WHO-Forschung · Unabhängig von Behandlungsunternehmen · Keine Werbung · Eine Initiative der FAIRBANK Group",
         problemTitle: "Warum hat Portugal so viel Schimmel?",
-        problemBody: "82 % der Gebäude in Portugal wurden vor dem Jahr 2000 gebaut  bevor es nennenswerte Anforderungen an Dämmung oder Energieeffizienz gab. Porto hat eine durchschnittliche relative Luftfeuchtigkeit von 77 %. Lissabon erreicht im Winter 84 %.\n\nDas Ergebnis: chronische Kondensation, Wärmebrücken und Wände, die über Jahrzehnte Feuchtigkeit speichern.\n\nSchimmel ist kein Pech. Er ist das vorhersehbare Ergebnis von Gebäuden, die nie richtig für das Klima ausgelegt wurden, in dem sie stehen.",
+        problemBody: "82 % der Gebäude in Portugal wurden vor dem Jahr 2000 gebaut bevor es nennenswerte Anforderungen an Dämmung oder Energieeffizienz gab. Porto hat eine durchschnittliche relative Luftfeuchtigkeit von 77 %. Lissabon erreicht im Winter 84 %.\n\nDas Ergebnis: chronische Kondensation, Wärmebrücken und Wände, die über Jahrzehnte Feuchtigkeit speichern.\n\nSchimmel ist kein Pech. Er ist das vorhersehbare Ergebnis von Gebäuden, die nie richtig für das Klima ausgelegt wurden, in dem sie stehen.",
         problemLink: "Mehr über die Anfälligkeit portugiesischer Gebäude erfahren",
         conflictTitle: "Warum die kostenlose Diagnose nicht neutral ist",
-        conflictBody: "Portugals große Unternehmen für Schimmelbehandlung bieten kostenlose Hausdiagnosen an. Das ist eine kluge Geschäftsstrategie: Das Unternehmen, das das Problem diagnostiziert, verkauft auch die Lösung.\n\nEs gibt in Portugal keine unabhängige Stelle, die den Schimmel in Ihrer Wohnung bewertet und Ihnen sagt, was Sie haben  ohne an dem zu verdienen, was danach kommt.\n\nMoldCheck.pt ist diese Alternative. Wir verkaufen keine Behandlungen. Wir nehmen keine Provisionen. Wir veröffentlichen, was die Wissenschaft sagt.",
+        conflictBody: "Portugals große Unternehmen für Schimmelbehandlung bieten kostenlose Hausdiagnosen an. Das ist eine kluge Geschäftsstrategie: Das Unternehmen, das das Problem diagnostiziert, verkauft auch die Lösung.\n\nEs gibt in Portugal keine unabhängige Stelle, die den Schimmel in Ihrer Wohnung bewertet und Ihnen sagt, was Sie haben ohne an dem zu verdienen, was danach kommt.\n\nMoldCheck.pt ist diese Alternative. Wir verkaufen keine Behandlungen. Wir nehmen keine Provisionen. Wir veröffentlichen, was die Wissenschaft sagt.",
         conflictLink: "Unsere Redaktionsrichtlinie lesen →",
         featuredTitle: "Beginnen Sie hier",
         featuredDescription: "",
-        nextStepsTitle: "Die nächsten Schritte  je nach Ihrer Situation",
-        aboutTitle: "Wer dahintersteht  und warum",
+        nextStepsTitle: "Die nächsten Schritte je nach Ihrer Situation",
+        aboutTitle: "Wer dahintersteht und warum",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Wer dahintersteht  und warum",
-        aboutBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. FAIRBANK betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nWir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie sie brauchen  nicht weil wir an der anschließenden Behandlung verdienen.\n\nAlle Inhalte auf dieser Website basieren auf begutachteter wissenschaftlicher Forschung, einschließlich der WHO-Leitlinien von 2009 und des IICRC-S520-Standards. Wenn die Wissenschaft unsicher ist, sagen wir das offen.",
+        aboutCardTitle: "Wer dahintersteht und warum",
+        aboutBody: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. FAIRBANK betreibt InspectOS, eine unabhängige Plattform für Immobilieninspektionen in Portugal.\n\nWir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie sie brauchen nicht weil wir an der anschließenden Behandlung verdienen.\n\nAlle Inhalte auf dieser Website basieren auf begutachteter wissenschaftlicher Forschung, einschließlich der WHO-Leitlinien von 2009 und des IICRC-S520-Standards. Wenn die Wissenschaft unsicher ist, sagen wir das offen.",
         aboutLink: "Die vollständige Redaktionsrichtlinie lesen →",
-        footerNote: "© MoldCheck.pt  Eine Initiative der FAIRBANK Group\nInspectOS · PropCheck.pt · Datenschutzerklärung · Redaktionsrichtlinie · Kontakt\nDiese Website ersetzt keine professionelle medizinische oder technische Beratung.",
+        footerNote: "© MoldCheck.pt Eine Initiative der FAIRBANK Group\nInspectOS · PropCheck.pt · Datenschutzerklärung · Redaktionsrichtlinie · Kontakt\nDiese Website ersetzt keine professionelle medizinische oder technische Beratung.",
         featuredCards: [
             {
-                title: "Portugal hat Europas zweitschlimmstes Schimmelproblem  und niemand spricht darüber",
+                title: "Portugal hat Europas zweitschlimmstes Schimmelproblem und niemand spricht darüber",
                 body: "Der Gründungsessay. Warum dieses Problem besteht, warum es ignoriert wird und was sich ändern könnte.",
                 ctaLabel: "Artikel lesen →"
             },
             {
                 title: "Warum Bleichmittel Schimmel nicht beseitigt",
-                body: "Die am häufigsten genutzte Lösung in Portugal funktioniert nicht. Hier ist der Grund  und was tatsächlich hilft.",
+                body: "Die am häufigsten genutzte Lösung in Portugal funktioniert nicht. Hier ist der Grund und was tatsächlich hilft.",
                 ctaLabel: "Artikel lesen →"
             },
             {
                 title: "Beeinflusst Ihre Wohnung Ihre Gesundheit?",
-                body: "Was die WHO über Schimmel und Atemwegserkrankungen festgestellt hat  und welche Symptome die meisten Menschen nicht mit ihrer Wohnung verbinden.",
+                body: "Was die WHO über Schimmel und Atemwegserkrankungen festgestellt hat und welche Symptome die meisten Menschen nicht mit ihrer Wohnung verbinden.",
                 ctaLabel: "Artikel lesen →"
             },
             {
@@ -839,7 +839,7 @@ const homeContentByLocale = {
             },
             {
                 title: "„Ich weiß nicht, ob ich Schimmel habe“",
-                body: "Viele der problematischsten Stellen sind unsichtbar. Der Inspektionsleitfaden zeigt Ihnen, wo Sie suchen müssen  und was das Fehlen von sichtbarem Schimmel dennoch nicht ausschließt.",
+                body: "Viele der problematischsten Stellen sind unsichtbar. Der Inspektionsleitfaden zeigt Ihnen, wo Sie suchen müssen und was das Fehlen von sichtbarem Schimmel dennoch nicht ausschließt.",
                 ctaLabel: "Inspektion starten →"
             },
             {
@@ -851,41 +851,41 @@ const homeContentByLocale = {
     },
     nl: {
         eyebrow: "Onafhankelijke redactionele bron over schimmel, vocht en binnenluchtkwaliteit",
-        description: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent  voor je gezondheid, je woning en wat je daarna kunt doen.",
+        description: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent voor je gezondheid, je woning en wat je daarna kunt doen.",
         heroTitle: "Portugal heeft het op één na ergste schimmelprobleem van Europa. De meeste mensen weten dat niet.",
-        heroBody: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent  voor je gezondheid, je woning en wat je daarna kunt doen.",
+        heroBody: "Eén op de vier mensen in Portugal woont in een huis met vocht- of schimmelproblemen. MoldCheck.pt is de enige onafhankelijke bron in Portugal die uitlegt wat dat betekent voor je gezondheid, je woning en wat je daarna kunt doen.",
         heroPrimaryCtaLabel: "Mijn woning gratis beoordelen",
         heroSecondaryCtaLabel: "De inspectiegids lezen",
         trustBarText: "Gebaseerd op WHO-wetenschappelijk onderzoek · Onafhankelijk van behandelingsbedrijven · Geen reclame · Een initiatief van de FAIRBANK Group",
         problemTitle: "Waarom heeft Portugal zoveel schimmel?",
-        problemBody: "82% van de gebouwen in Portugal is gebouwd vóór het jaar 2000  vóór er betekenisvolle eisen bestonden voor isolatie of energie-efficiëntie. Porto heeft een gemiddelde relatieve luchtvochtigheid van 77%. Lissabon bereikt in de winter 84%.\n\nHet resultaat: chronische condensatie, koudebruggen en muren die tientallen jaren vocht vasthouden.\n\nSchimmel is geen pech. Het is het voorspelbare gevolg van gebouwen die nooit goed zijn aangepast aan het klimaat waarin ze bestaan.",
+        problemBody: "82% van de gebouwen in Portugal is gebouwd vóór het jaar 2000 vóór er betekenisvolle eisen bestonden voor isolatie of energie-efficiëntie. Porto heeft een gemiddelde relatieve luchtvochtigheid van 77%. Lissabon bereikt in de winter 84%.\n\nHet resultaat: chronische condensatie, koudebruggen en muren die tientallen jaren vocht vasthouden.\n\nSchimmel is geen pech. Het is het voorspelbare gevolg van gebouwen die nooit goed zijn aangepast aan het klimaat waarin ze bestaan.",
         problemLink: "Meer over de kwetsbaarheid van Portugese gebouwen",
         conflictTitle: "Waarom een gratis diagnose niet neutraal is",
-        conflictBody: "De grote schimmelbehandelingsbedrijven in Portugal bieden gratis huisdiagnoses aan. Dat is een slimme commerciële strategie: het bedrijf dat het probleem diagnosticeert, verkoopt ook de oplossing.\n\nEr bestaat in Portugal geen onafhankelijke partij die de schimmel in jouw woning beoordeelt en je vertelt wat er aan de hand is  zonder geld te verdienen aan wat daarna komt.\n\nMoldCheck.pt is dat alternatief. We verkopen geen behandelingen. We ontvangen geen commissies. We publiceren wat de wetenschap zegt.",
+        conflictBody: "De grote schimmelbehandelingsbedrijven in Portugal bieden gratis huisdiagnoses aan. Dat is een slimme commerciële strategie: het bedrijf dat het probleem diagnosticeert, verkoopt ook de oplossing.\n\nEr bestaat in Portugal geen onafhankelijke partij die de schimmel in jouw woning beoordeelt en je vertelt wat er aan de hand is zonder geld te verdienen aan wat daarna komt.\n\nMoldCheck.pt is dat alternatief. We verkopen geen behandelingen. We ontvangen geen commissies. We publiceren wat de wetenschap zegt.",
         conflictLink: "Lees ons redactioneel beleid →",
         featuredTitle: "Begin hier",
         featuredDescription: "",
-        nextStepsTitle: "Volgende stappen  afhankelijk van jouw situatie",
-        aboutTitle: "Wie hierachter zit  en waarom",
+        nextStepsTitle: "Volgende stappen afhankelijk van jouw situatie",
+        aboutTitle: "Wie hierachter zit en waarom",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Wie hierachter zit  en waarom",
-        aboutBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. FAIRBANK beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nWe verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt  niet omdat we verdienen aan de behandeling die daarop volgt.\n\nAlle inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijk onderzoek, waaronder de WHO-richtlijnen uit 2009 en de IICRC S520-standaard. Wanneer de wetenschap onzeker is, zeggen we dat ook.",
+        aboutCardTitle: "Wie hierachter zit en waarom",
+        aboutBody: "MoldCheck.pt is een initiatief van de FAIRBANK Group. FAIRBANK beheert InspectOS, een onafhankelijk vastgoedinspectieplatform in Portugal.\n\nWe verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt niet omdat we verdienen aan de behandeling die daarop volgt.\n\nAlle inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijk onderzoek, waaronder de WHO-richtlijnen uit 2009 en de IICRC S520-standaard. Wanneer de wetenschap onzeker is, zeggen we dat ook.",
         aboutLink: "Lees het volledige redactioneel beleid →",
-        footerNote: "© MoldCheck.pt  Een initiatief van de FAIRBANK Group\nInspectOS · PropCheck.pt · Privacybeleid · Redactioneel beleid · Contact\nDeze website vervangt geen professioneel medisch of technisch advies.",
+        footerNote: "© MoldCheck.pt Een initiatief van de FAIRBANK Group\nInspectOS · PropCheck.pt · Privacybeleid · Redactioneel beleid · Contact\nDeze website vervangt geen professioneel medisch of technisch advies.",
         featuredCards: [
             {
-                title: "Portugal heeft het op één na ergste schimmelprobleem van Europa  en niemand heeft het erover",
+                title: "Portugal heeft het op één na ergste schimmelprobleem van Europa en niemand heeft het erover",
                 body: "Het oprichtingsessay. Waarom dit probleem bestaat, waarom het wordt genegeerd en wat er kan veranderen.",
                 ctaLabel: "Artikel lezen →"
             },
             {
                 title: "Waarom bleekwater schimmel niet oplost",
-                body: "De meest gebruikte oplossing in Portugal werkt niet. Dit is waarom  en wat wél werkt.",
+                body: "De meest gebruikte oplossing in Portugal werkt niet. Dit is waarom en wat wél werkt.",
                 ctaLabel: "Artikel lezen →"
             },
             {
                 title: "Heeft jouw woning invloed op je gezondheid?",
-                body: "Wat de WHO heeft vastgesteld over schimmel en luchtwegaandoeningen  en de symptomen die de meeste mensen niet met hun woning verbinden.",
+                body: "Wat de WHO heeft vastgesteld over schimmel en luchtwegaandoeningen en de symptomen die de meeste mensen niet met hun woning verbinden.",
                 ctaLabel: "Artikel lezen →"
             },
             {
@@ -897,7 +897,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "“Ik heb zichtbare schimmel”",
-                body: "Begin met de visuele beoordelingsgids. Bepaal de locatie, omvang en het patroon  die informatie bepaalt alles wat daarna komt.",
+                body: "Begin met de visuele beoordelingsgids. Bepaal de locatie, omvang en het patroon die informatie bepaalt alles wat daarna komt.",
                 ctaLabel: "Beoordelingsgids →"
             },
             {
@@ -907,7 +907,7 @@ const homeContentByLocale = {
             },
             {
                 title: "“Ik weet niet of ik schimmel heb”",
-                body: "Veel van de meest problematische plekken zijn onzichtbaar. De inspectiegids laat zien waar je moet kijken  en wat de afwezigheid van zichtbare schimmel nog steeds niet uitsluit.",
+                body: "Veel van de meest problematische plekken zijn onzichtbaar. De inspectiegids laat zien waar je moet kijken en wat de afwezigheid van zichtbare schimmel nog steeds niet uitsluit.",
                 ctaLabel: "Inspectie starten →"
             },
             {
@@ -919,41 +919,41 @@ const homeContentByLocale = {
     },
     it: {
         eyebrow: "Risorsa editoriale indipendente su muffa, umidità e qualità dell’aria interna",
-        description: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo  per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
+        description: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
         heroTitle: "Il Portogallo ha il secondo peggior problema di muffa in Europa. La maggior parte delle persone che ci vivono non lo sa.",
-        heroBody: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo  per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
+        heroBody: "Una persona su quattro in Portogallo vive in una casa colpita da umidità o muffa. MoldCheck.pt è l’unica risorsa indipendente in Portogallo dedicata a spiegare che cosa significa questo per la tua salute, per la tua casa e per ciò che puoi fare dopo.",
         heroPrimaryCtaLabel: "Valuta gratuitamente la mia casa",
         heroSecondaryCtaLabel: "Leggi la guida all’ispezione",
         trustBarText: "Basato sulla ricerca scientifica dell’OMS · Indipendente dalle aziende di trattamento · Nessuna pubblicità · Un’iniziativa del FAIRBANK Group",
         problemTitle: "Perché in Portogallo c’è così tanta muffa?",
-        problemBody: "L’82% degli edifici in Portogallo è stato costruito prima dell’anno 2000  prima di qualsiasi requisito significativo in materia di isolamento o efficienza energetica. Porto ha un’umidità relativa media del 77%. Lisbona, in inverno, raggiunge l’84%.\n\nIl risultato: condensa cronica, ponti termici e pareti che trattengono l’umidità per decenni.\n\nLa muffa non è sfortuna. È il risultato prevedibile di edifici che non sono mai stati attrezzati per il clima in cui si trovano.",
+        problemBody: "L’82% degli edifici in Portogallo è stato costruito prima dell’anno 2000 prima di qualsiasi requisito significativo in materia di isolamento o efficienza energetica. Porto ha un’umidità relativa media del 77%. Lisbona, in inverno, raggiunge l’84%.\n\nIl risultato: condensa cronica, ponti termici e pareti che trattengono l’umidità per decenni.\n\nLa muffa non è sfortuna. È il risultato prevedibile di edifici che non sono mai stati attrezzati per il clima in cui si trovano.",
         problemLink: "Scopri di più sul perché gli edifici portoghesi sono vulnerabili",
         conflictTitle: "Perché una diagnosi gratuita non è neutrale",
-        conflictBody: "Le principali aziende di trattamento della muffa in Portogallo offrono diagnosi gratuite a domicilio. È una strategia commerciale intelligente: l’azienda che diagnostica il problema è anche quella che vende la soluzione.\n\nIn Portogallo non esiste alcuna entità indipendente che valuti la muffa nella tua casa e ti dica che cosa hai  senza guadagnare da ciò che viene dopo.\n\nMoldCheck.pt è quell’alternativa. Non vendiamo trattamenti. Non riceviamo commissioni. Pubblichiamo ciò che dice la scienza.",
+        conflictBody: "Le principali aziende di trattamento della muffa in Portogallo offrono diagnosi gratuite a domicilio. È una strategia commerciale intelligente: l’azienda che diagnostica il problema è anche quella che vende la soluzione.\n\nIn Portogallo non esiste alcuna entità indipendente che valuti la muffa nella tua casa e ti dica che cosa hai senza guadagnare da ciò che viene dopo.\n\nMoldCheck.pt è quell’alternativa. Non vendiamo trattamenti. Non riceviamo commissioni. Pubblichiamo ciò che dice la scienza.",
         conflictLink: "Leggi la nostra politica editoriale →",
         featuredTitle: "Inizia da qui",
         featuredDescription: "",
-        nextStepsTitle: "I prossimi passi  in base alla tua situazione",
-        aboutTitle: "Chi c’è dietro tutto questo  e perché",
+        nextStepsTitle: "I prossimi passi in base alla tua situazione",
+        aboutTitle: "Chi c’è dietro tutto questo e perché",
         aboutCardEyebrow: "MoldCheck.pt",
-        aboutCardTitle: "Chi c’è dietro tutto questo  e perché",
-        aboutBody: "MoldCheck.pt è un’iniziativa del FAIRBANK Group. FAIRBANK gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nNon vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da aziende di risanamento. Quando consigliamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno  non perché guadagniamo dal trattamento che segue.\n\nTutti i contenuti di questo sito si basano su ricerca scientifica peer-reviewed, comprese le linee guida OMS del 2009 e lo standard IICRC S520. Quando la scienza è incerta, lo diciamo chiaramente.",
+        aboutCardTitle: "Chi c’è dietro tutto questo e perché",
+        aboutBody: "MoldCheck.pt è un’iniziativa del FAIRBANK Group. FAIRBANK gestisce InspectOS, una piattaforma indipendente di ispezione immobiliare in Portogallo.\n\nNon vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da aziende di risanamento. Quando consigliamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno non perché guadagniamo dal trattamento che segue.\n\nTutti i contenuti di questo sito si basano su ricerca scientifica peer-reviewed, comprese le linee guida OMS del 2009 e lo standard IICRC S520. Quando la scienza è incerta, lo diciamo chiaramente.",
         aboutLink: "Leggi la politica editoriale completa →",
-        footerNote: "© MoldCheck.pt  Un’iniziativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Informativa sulla Privacy · Politica Editoriale · Contatti\nQuesto sito non sostituisce un parere medico o tecnico professionale.",
+        footerNote: "© MoldCheck.pt Un’iniziativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Informativa sulla Privacy · Politica Editoriale · Contatti\nQuesto sito non sostituisce un parere medico o tecnico professionale.",
         featuredCards: [
             {
-                title: "Il Portogallo ha il 2º peggior problema di muffa in Europa  e nessuno ne parla",
+                title: "Il Portogallo ha il 2º peggior problema di muffa in Europa e nessuno ne parla",
                 body: "Il saggio fondativo di MoldCheck.pt. Perché questo problema esiste, perché viene ignorato e che cosa può cambiare.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
                 title: "Perché la candeggina non risolve la muffa",
-                body: "La soluzione più usata in Portogallo non funziona. Ecco perché  e che cosa funziona davvero.",
+                body: "La soluzione più usata in Portogallo non funziona. Ecco perché e che cosa funziona davvero.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
                 title: "La tua casa sta influenzando la tua salute?",
-                body: "Che cosa ha stabilito l’OMS sulla muffa e sulle malattie respiratorie  e quali sintomi la maggior parte delle persone non collega alla propria abitazione.",
+                body: "Che cosa ha stabilito l’OMS sulla muffa e sulle malattie respiratorie e quali sintomi la maggior parte delle persone non collega alla propria abitazione.",
                 ctaLabel: "Leggi l’articolo →"
             },
             {
@@ -965,7 +965,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "“Ho muffa visibile”",
-                body: "Inizia dalla guida di valutazione visiva. Identifica posizione, estensione e schema del problema  queste informazioni determinano tutto ciò che viene dopo.",
+                body: "Inizia dalla guida di valutazione visiva. Identifica posizione, estensione e schema del problema queste informazioni determinano tutto ciò che viene dopo.",
                 ctaLabel: "Guida di valutazione →"
             },
             {
@@ -975,7 +975,7 @@ const homeContentByLocale = {
             },
             {
                 title: "“Non so se ho muffa”",
-                body: "Molti dei punti più problematici sono invisibili. La guida all’ispezione ti dice dove guardare  e che cosa l’assenza di muffa visibile non esclude ancora.",
+                body: "Molti dei punti più problematici sono invisibili. La guida all’ispezione ti dice dove guardare e che cosa l’assenza di muffa visibile non esclude ancora.",
                 ctaLabel: "Inizia l’ispezione →"
             },
             {
@@ -987,9 +987,9 @@ const homeContentByLocale = {
     },
     es: {
         eyebrow: "Recurso editorial independiente sobre moho, humedad y calidad del aire interior",
-        description: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso  para tu salud, para tu vivienda y para lo que puedes hacer después.",
+        description: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso para tu salud, para tu vivienda y para lo que puedes hacer después.",
         heroTitle: "Portugal tiene el segundo peor problema de moho de Europa. La mayoría de la gente que vive aquí no lo sabe.",
-        heroBody: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso  para tu salud, para tu vivienda y para lo que puedes hacer después.",
+        heroBody: "Una de cada cuatro personas en Portugal vive en una vivienda afectada por humedad o moho. MoldCheck.pt es el único recurso independiente en Portugal dedicado a explicar qué significa eso para tu salud, para tu vivienda y para lo que puedes hacer después.",
         heroPrimaryCtaLabel: "Evalúa tu vivienda gratis",
         heroSecondaryCtaLabel: "Leer la guía de inspección",
         trustBarText: "Basado en investigación científica de la OMS · Independiente de empresas de tratamiento · Sin publicidad · Una iniciativa del FAIRBANK Group",
@@ -997,7 +997,7 @@ const homeContentByLocale = {
         problemBody: "El 82% de los edificios en Portugal se construyeron antes del año 2000 antes de cualquier requisito significativo de aislamiento o eficiencia energética. Oporto tiene una humedad relativa media del 77%. Lisboa, en invierno, alcanza el 84%.\n\nEl resultado: condensación crónica, puentes térmicos y paredes que retienen humedad durante décadas.\n\nEl moho no es mala suerte. Es el resultado previsible de edificios que nunca fueron preparados para el clima en el que existen.",
         problemLink: "Descubre por qué los edificios portugueses son tan vulnerables ",
         conflictTitle: "¿Por qué un diagnóstico gratuito no es neutral?",
-        conflictBody: "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes  sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",
+        conflictBody: "Las principales empresas de tratamiento de moho en Portugal ofrecen diagnósticos gratuitos en la vivienda. Es una estrategia comercial inteligente: la empresa que diagnostica el problema también vende la solución.\n\nNo existe en Portugal ninguna entidad independiente que evalúe el moho de tu vivienda y te diga qué tienes sin ganar dinero con lo que viene después.\n\nMoldCheck.pt es esa alternativa. No vendemos tratamientos. No cobramos comisiones. Publicamos lo que dice la ciencia.",
         conflictLink: "Leer nuestra política editorial →",
         featuredTitle: "Empieza aquí",
         featuredDescription: "",
@@ -1005,23 +1005,23 @@ const homeContentByLocale = {
         aboutTitle: "¿Quién está detrás de esto y por qué?",
         aboutCardEyebrow: "MoldCheck.pt",
         aboutCardTitle: "¿Quién está detrás de esto y por qué?",
-        aboutBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas  no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
+        aboutBody: "MoldCheck.pt es una iniciativa del FAIRBANK Group. FAIRBANK gestiona InspectOS, una plataforma independiente de inspección inmobiliaria en Portugal.\n\nNo vendemos tratamientos contra la humedad. No cobramos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas no porque ganemos dinero con el tratamiento posterior.\n\nTodo el contenido de este sitio se basa en investigación científica revisada por pares, incluidas las directrices de la OMS de 2009 y el estándar IICRC S520. Cuando la ciencia es incierta, lo decimos claramente.",
         aboutLink: "Leer la política editorial completa →",
-        footerNote: "© MoldCheck.pt  Una iniciativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidad · Política Editorial · Contacto\nEste sitio web no sustituye el asesoramiento médico o técnico profesional.",
+        footerNote: "© MoldCheck.pt Una iniciativa del FAIRBANK Group\nInspectOS · PropCheck.pt · Política de Privacidad · Política Editorial · Contacto\nEste sitio web no sustituye el asesoramiento médico o técnico profesional.",
         featuredCards: [
             {
-                title: "Portugal tiene el segundo peor problema de moho de Europa  y nadie habla de ello",
+                title: "Portugal tiene el segundo peor problema de moho de Europa y nadie habla de ello",
                 body: "El ensayo fundacional de MoldCheck.pt. Por qué existe este problema, por qué se ignora y qué puede cambiar.",
                 ctaLabel: "Leer artículo →"
             },
             {
                 title: "Por qué la lejía no resuelve el moho",
-                body: "La solución más utilizada en Portugal no funciona. Aquí está el porqué  y lo que realmente funciona.",
+                body: "La solución más utilizada en Portugal no funciona. Aquí está el porqué y lo que realmente funciona.",
                 ctaLabel: "Leer artículo →"
             },
             {
                 title: "¿Tu vivienda está afectando a tu salud?",
-                body: "Lo que la OMS estableció sobre moho y enfermedades respiratorias  y los síntomas que la mayoría de la gente no relaciona con su vivienda.",
+                body: "Lo que la OMS estableció sobre moho y enfermedades respiratorias y los síntomas que la mayoría de la gente no relaciona con su vivienda.",
                 ctaLabel: "Leer artículo →"
             },
             {
@@ -1033,7 +1033,7 @@ const homeContentByLocale = {
         nextStepCards: [
             {
                 title: "“Tengo moho visible”",
-                body: "Empieza por la guía de evaluación visual. Identifica la ubicación, la extensión y el patrón  esa información determina todo lo que viene después.",
+                body: "Empieza por la guía de evaluación visual. Identifica la ubicación, la extensión y el patrón esa información determina todo lo que viene después.",
                 ctaLabel: "Guía de evaluación →"
             },
             {
@@ -1043,7 +1043,7 @@ const homeContentByLocale = {
             },
             {
                 title: "“No sé si tengo moho”",
-                body: "Muchas de las zonas más problemáticas son invisibles. La guía de inspección te dice dónde mirar  y qué cosas sigue sin descartar la ausencia de moho visible.",
+                body: "Muchas de las zonas más problemáticas son invisibles. La guía de inspección te dice dónde mirar y qué cosas sigue sin descartar la ausencia de moho visible.",
                 ctaLabel: "Empezar la inspección →"
             },
             {
@@ -1082,8 +1082,8 @@ function getArticleHref(locale, section) {
     const articleKey = section === "remediation" ? "bleach" : section === "inspection" ? "inspection-guide" : section;
     const article = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["foundationalArticles"].find((a)=>a.key === articleKey);
     const slug = article?.slugs[locale] ?? "";
-    // Articles in the /articles/ route (portugal, inspection-guide)
-    if (article?.section === "articles") {
+    // Portugal and inspection-guide articles live canonically under /articles/
+    if (section === "portugal" || article?.section === "articles") {
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getArticlePath"])(locale, slug);
     }
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, section, slug);
@@ -1122,27 +1122,27 @@ function getHomeFallbackContent(locale) {
         heroTitle: content.heroTitle,
         heroBody: content.heroBody,
         heroPrimaryCtaLabel: content.heroPrimaryCtaLabel,
-        heroPrimaryCtaHref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "tools"),
+        heroPrimaryCtaHref: `${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "tools")}/humidity-risk-calculator`,
         heroSecondaryCtaLabel: content.heroSecondaryCtaLabel,
         heroSecondaryCtaHref: getArticleHref(locale, "inspection"),
         trustBarText: content.trustBarText,
         seoTitle: ({
-            pt: "MoldCheck  Informação Independente sobre Bolor em Portugal",
-            en: "MoldCheck  Independent Information on Mold and Damp in Portugal",
-            fr: "MoldCheck  Information Indépendante sur les Moisissures au Portugal",
-            de: "MoldCheck  Unabhängige Informationen über Schimmel in Portugal",
-            nl: "MoldCheck  Onafhankelijke Informatie over Schimmel in Portugal",
-            it: "MoldCheck  Informazione Indipendente sulla Muffa in Portogallo",
-            es: "MoldCheck  Información Independiente sobre Moho en Portugal"
+            pt: "MoldCheck Informação Independente sobre Bolor em Portugal",
+            en: "MoldCheck Independent Information on Mold and Damp in Portugal",
+            fr: "MoldCheck Information Indépendante sur les Moisissures au Portugal",
+            de: "MoldCheck Unabhängige Informationen über Schimmel in Portugal",
+            nl: "MoldCheck Onafhankelijke Informatie over Schimmel in Portugal",
+            it: "MoldCheck Informazione Indipendente sulla Muffa in Portogallo",
+            es: "MoldCheck Información Independiente sobre Moho en Portugal"
         })[locale],
         seoDescription: ({
-            pt: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação  sem vender tratamentos.",
-            en: "Portugal has the 2nd worst mold problem in Europe. Independent scientific information on diagnosis, health and remediation  without selling treatments.",
-            fr: "Le Portugal a le 2e pire problème de moisissures en Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation  sans vendre de traitements.",
-            de: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Unabhängige wissenschaftliche Informationen zu Diagnose, Gesundheit und Sanierung  ohne Behandlungen zu verkaufen.",
-            nl: "Portugal heeft het op één na grootste schimmelprobleem van Europa. Onafhankelijke wetenschappelijke informatie over diagnose, gezondheid en sanering  zonder behandelingen te verkopen.",
-            it: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica  senza vendere trattamenti.",
-            es: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación  sin vender tratamientos."
+            pt: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação sem vender tratamentos.",
+            en: "Portugal has the 2nd worst mold problem in Europe. Independent scientific information on diagnosis, health and remediation without selling treatments.",
+            fr: "Le Portugal a le 2e pire problème de moisissures en Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation sans vendre de traitements.",
+            de: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Unabhängige wissenschaftliche Informationen zu Diagnose, Gesundheit und Sanierung ohne Behandlungen zu verkaufen.",
+            nl: "Portugal heeft het op één na grootste schimmelprobleem van Europa. Onafhankelijke wetenschappelijke informatie over diagnose, gezondheid en sanering zonder behandelingen te verkopen.",
+            it: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica senza vendere trattamenti.",
+            es: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación sin vender tratamientos."
         })[locale],
         sections: buildHomeSections(locale, content),
         footerNote: undefined
@@ -1191,7 +1191,7 @@ function getHomeNextStepsContent(locale) {
         getArticleHref(locale, "inspection"),
         getArticleHref(locale, "health"),
         getArticleHref(locale, "inspection"),
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, "inspection")
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "services")
     ];
     return {
         nextStepsTitle: c.nextStepsTitle,
@@ -1356,17 +1356,17 @@ const privacyContentByLocale = {
         whoWeAreBody: "O MoldCheck.pt é gerido pelo FAIRBANK Group (designado nesta política como “nós”, “nos” ou “o responsável pelo tratamento”).\n\nResponsável pelo tratamento de dados:\nFAIRBANK Group, Lda.\n[Morada registada]\nLisboa, Portugal\nNIF: [número]\nContacto: info@moldcheck.pt\n\nO MoldCheck.pt é um website editorial independente dedicado a temas de humidade, bolor e qualidade do ar interior. O site pode também disponibilizar fluxos de marcação ou pagamento para inspecções, análises laboratoriais ou recursos digitais através de prestadores de pagamento terceiros, como a Stripe. Não recolhemos dados de saúde de forma activa.",
         whatDataTitle: "2. Que dados recolhemos",
         directDataTitle: "Dados que nos fornece directamente",
-        directDataBody: "Formulário de contacto ou contacto por email:\n— Endereço de e-mail\n— Nome (opcional)\n— Conteúdo da mensagem\n\nFinalidade: responder à sua mensagem.\nBase jurídica: consentimento (artigo 6.º, n.º 1, alínea a) do RGPD).\nConservação: 12 meses após a última comunicação, salvo obrigação legal de conservação mais longa.\n\nSubscrição de newsletter:\n— Endereço de e-mail\n— Idioma preferido\n— Data de subscrição\n\nFinalidade: envio de actualizações editoriais sobre bolor, humidade e qualidade do ar interior em Portugal.\nBase jurídica: consentimento (artigo 6.º, n.º 1, alínea a) do RGPD).\nConservação: até cancelamento da subscrição + 30 dias para processamento técnico.\n\nDownload de conteúdo gratuito (PDF / checklist):\n— Endereço de e-mail\n\nFinalidade: envio do documento solicitado e entrada automática na sequência de emails associada ao recurso descarregado.\nBase jurídica: consentimento e/ou execução de medidas pré-contratuais ou contratuais, conforme aplicável.\n\nCompras, reservas ou pagamentos (se aplicável):\n— Nome\n— Endereço de e-mail\n— Dados necessários para concluir a reserva ou compra\n— Informação transaccional limitada\n\nOs pagamentos são processados por prestadores de pagamento terceiros, como a Stripe. O MoldCheck.pt não armazena os dados completos do cartão de pagamento.",
+        directDataBody: "Formulário de contacto ou contacto por email:\n Endereço de e-mail\n Nome (opcional)\n Conteúdo da mensagem\n\nFinalidade: responder à sua mensagem.\nBase jurídica: consentimento (artigo 6.º, n.º 1, alínea a) do RGPD).\nConservação: 12 meses após a última comunicação, salvo obrigação legal de conservação mais longa.\n\nSubscrição de newsletter:\n Endereço de e-mail\n Idioma preferido\n Data de subscrição\n\nFinalidade: envio de actualizações editoriais sobre bolor, humidade e qualidade do ar interior em Portugal.\nBase jurídica: consentimento (artigo 6.º, n.º 1, alínea a) do RGPD).\nConservação: até cancelamento da subscrição + 30 dias para processamento técnico.\n\nDownload de conteúdo gratuito (PDF / checklist):\n Endereço de e-mail\n\nFinalidade: envio do documento solicitado e entrada automática na sequência de emails associada ao recurso descarregado.\nBase jurídica: consentimento e/ou execução de medidas pré-contratuais ou contratuais, conforme aplicável.\n\nCompras, reservas ou pagamentos (se aplicável):\n Nome\n Endereço de e-mail\n Dados necessários para concluir a reserva ou compra\n Informação transaccional limitada\n\nOs pagamentos são processados por prestadores de pagamento terceiros, como a Stripe. O MoldCheck.pt não armazena os dados completos do cartão de pagamento.",
         automaticDataTitle: "Dados recolhidos automaticamente",
-        automaticDataBody: "Análise de tráfego (Plausible Analytics):\nO MoldCheck.pt utiliza o Plausible Analytics, uma ferramenta de análise que não utiliza cookies, não recolhe dados pessoais identificáveis e não cria perfis de utilizador.\n\nOs dados recolhidos podem incluir: páginas visitadas, país aproximado, referenciador (URL de origem) e tipo de dispositivo. Nenhum destes dados é pessoal identificável.\n\nO Plausible não requer consentimento ao abrigo do RGPD ou da Lei n.º 41/2004 porque não processa dados pessoais identificáveis.\n\nCookies necessários:\n— Cookie de preferência de idioma: armazena a língua seleccionada pelo utilizador. Duração: 365 dias. Não requer consentimento.\n— Cookie de sessão: gestão de sessão técnica. Duração: sessão. Não requer consentimento.\n\nNão utilizamos cookies de publicidade, cookies de rastreamento de terceiros, pixels de redes sociais nem ferramentas de análise que recolham dados pessoais sem consentimento.",
+        automaticDataBody: "Análise de tráfego (Plausible Analytics):\nO MoldCheck.pt utiliza o Plausible Analytics, uma ferramenta de análise que não utiliza cookies, não recolhe dados pessoais identificáveis e não cria perfis de utilizador.\n\nOs dados recolhidos podem incluir: páginas visitadas, país aproximado, referenciador (URL de origem) e tipo de dispositivo. Nenhum destes dados é pessoal identificável.\n\nO Plausible não requer consentimento ao abrigo do RGPD ou da Lei n.º 41/2004 porque não processa dados pessoais identificáveis.\n\nCookies necessários:\n Cookie de preferência de idioma: armazena a língua seleccionada pelo utilizador. Duração: 365 dias. Não requer consentimento.\n Cookie de sessão: gestão de sessão técnica. Duração: sessão. Não requer consentimento.\n\nNão utilizamos cookies de publicidade, cookies de rastreamento de terceiros, pixels de redes sociais nem ferramentas de análise que recolham dados pessoais sem consentimento.",
         sharingTitle: "3. Partilha de dados com terceiros",
         sharingBody: "Não vendemos, alugamos nem cedemos os seus dados pessoais a terceiros para fins de marketing.\n\nOs seus dados podem ser partilhados com:\n\nPrestadores de serviços técnicos (subcontratantes nos termos do artigo 28.º do RGPD), tais como:\n\nfornecedor de alojamento do website\n\nplataforma de e-mail / newsletter\n\nPlausible Analytics\n\nStripe ou outro prestador de pagamentos\n\noutros fornecedores estritamente necessários para operar reservas, downloads ou formulários\n\nEntidades legais: divulgaremos dados pessoais às autoridades competentes se legalmente obrigados a fazê-lo (artigo 6.º, n.º 1, alínea c) do RGPD).",
         transfersTitle: "4. Transferências internacionais de dados",
-        transfersBody: "Os dados pessoais são tratados preferencialmente na União Europeia. Se um prestador de serviços tratar dados fora da UE/EEE, garantimos que exista:\n\numa decisão de adequação da Comissão Europeia, ou\n\nCláusulas Contratuais-Tipo (Standard Contractual Clauses — SCC) aprovadas pela Comissão Europeia.",
+        transfersBody: "Os dados pessoais são tratados preferencialmente na União Europeia. Se um prestador de serviços tratar dados fora da UE/EEE, garantimos que exista:\n\numa decisão de adequação da Comissão Europeia, ou\n\nCláusulas Contratuais-Tipo (Standard Contractual Clauses SCC) aprovadas pela Comissão Europeia.",
         rightsTitle: "5. Os seus direitos",
         rightsBody: "Ao abrigo do RGPD e da Lei n.º 58/2019, tem os seguintes direitos:\n\ndireito de acesso\n\ndireito de rectificação\n\ndireito ao apagamento\n\ndireito à limitação do tratamento\n\ndireito à portabilidade dos dados\n\ndireito de oposição\n\ndireito de retirar o consentimento a qualquer momento\n\nPara exercer qualquer destes direitos: info@moldcheck.pt\n\nResponderemos no prazo de 30 dias. Em casos complexos, este prazo pode ser estendido até 60 dias, sendo o utilizador informado dessa extensão.",
         complaintTitle: "6. Apresentação de reclamação à autoridade de controlo",
-        complaintBody: "Se considerar que o tratamento dos seus dados pessoais viola o RGPD, tem o direito de apresentar reclamação à:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisboa\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nPode também apresentar reclamação junto da autoridade de controlo do seu país de residência, se aplicável.",
+        complaintBody: "Se considerar que o tratamento dos seus dados pessoais viola o RGPD, tem o direito de apresentar reclamação à:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisboa\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nPode também apresentar reclamação junto da autoridade de controlo do seu país de residência, se aplicável.",
         securityTitle: "7. Segurança",
         securityBody: "Implementamos medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acesso não autorizado, divulgação, alteração ou destruição, incluindo transmissão cifrada (HTTPS/TLS), controlo de acesso e backups regulares.\n\nNenhum sistema é absolutamente seguro. Em caso de violação de dados com risco para os titulares, notificaremos a CNPD no prazo legal aplicável e, quando necessário, os titulares afectados sem demora injustificada.",
         childrenTitle: "8. Crianças",
@@ -1387,9 +1387,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt is operated by FAIRBANK Group (referred to in this policy as “we”, “us” or “the data controller”).\n\nData controller:\nFAIRBANK Group, Lda.\n[Registered address]\nLisbon, Portugal\nTax ID (NIF): [number]\nContact: info@moldcheck.pt\n\nMoldCheck.pt is an independent editorial website focused on damp, mold, and indoor air quality. The site may also offer booking or payment flows for inspections, laboratory analysis, or digital resources through third-party payment providers such as Stripe. We do not actively collect health data.",
         whatDataTitle: "2. What data we collect",
         directDataTitle: "Data you provide directly",
-        directDataBody: "Contact form or email enquiries:\n— Email address\n— Name (optional)\n— Message content\n\nPurpose: to respond to your message.\nLegal basis: consent (Article 6(1)(a) GDPR).\nRetention: 12 months after the last communication, unless a longer legal retention obligation applies.\n\nNewsletter subscription:\n— Email address\n— Preferred language\n— Subscription date\n\nPurpose: sending editorial updates about mold, damp, and indoor air quality in Portugal.\nLegal basis: consent (Article 6(1)(a) GDPR).\nRetention: until unsubscribe + 30 days for technical processing.\n\nFree content download (PDF / checklist):\n— Email address\n\nPurpose: delivering the requested document and automatically entering the user into the email sequence associated with that downloaded resource.\nLegal basis: consent and/or performance of pre-contractual or contractual steps, as applicable.\n\nPurchases, bookings, or payments (if applicable):\n— Name\n— Email address\n— Data necessary to complete the booking or purchase\n— Limited transaction information\n\nPayments are processed by third-party payment providers such as Stripe. MoldCheck.pt does not store full payment card details.",
+        directDataBody: "Contact form or email enquiries:\n Email address\n Name (optional)\n Message content\n\nPurpose: to respond to your message.\nLegal basis: consent (Article 6(1)(a) GDPR).\nRetention: 12 months after the last communication, unless a longer legal retention obligation applies.\n\nNewsletter subscription:\n Email address\n Preferred language\n Subscription date\n\nPurpose: sending editorial updates about mold, damp, and indoor air quality in Portugal.\nLegal basis: consent (Article 6(1)(a) GDPR).\nRetention: until unsubscribe + 30 days for technical processing.\n\nFree content download (PDF / checklist):\n Email address\n\nPurpose: delivering the requested document and automatically entering the user into the email sequence associated with that downloaded resource.\nLegal basis: consent and/or performance of pre-contractual or contractual steps, as applicable.\n\nPurchases, bookings, or payments (if applicable):\n Name\n Email address\n Data necessary to complete the booking or purchase\n Limited transaction information\n\nPayments are processed by third-party payment providers such as Stripe. MoldCheck.pt does not store full payment card details.",
         automaticDataTitle: "Automatically collected data",
-        automaticDataBody: "Traffic analytics (Plausible Analytics):\nMoldCheck.pt uses Plausible Analytics, an analytics tool that uses no cookies, collects no personally identifiable data, and creates no user profiles.\n\nData collected may include: pages visited, approximate country, referrer URL, and device type. None of this data is personally identifiable.\n\nPlausible does not require consent under the GDPR or Portuguese Law 41/2004 because it does not process personally identifiable data.\n\nNecessary cookies:\n— Language preference cookie: stores the user’s selected language. Duration: 365 days. No consent required.\n— Session cookie: technical session management. Duration: session. No consent required.\n\nWe do not use advertising cookies, third-party tracking cookies, social media pixels, or analytics tools that collect personal data without consent.",
+        automaticDataBody: "Traffic analytics (Plausible Analytics):\nMoldCheck.pt uses Plausible Analytics, an analytics tool that uses no cookies, collects no personally identifiable data, and creates no user profiles.\n\nData collected may include: pages visited, approximate country, referrer URL, and device type. None of this data is personally identifiable.\n\nPlausible does not require consent under the GDPR or Portuguese Law 41/2004 because it does not process personally identifiable data.\n\nNecessary cookies:\n Language preference cookie: stores the user’s selected language. Duration: 365 days. No consent required.\n Session cookie: technical session management. Duration: session. No consent required.\n\nWe do not use advertising cookies, third-party tracking cookies, social media pixels, or analytics tools that collect personal data without consent.",
         sharingTitle: "3. Sharing data with third parties",
         sharingBody: "We do not sell, rent, or transfer your personal data to third parties for marketing purposes.\n\nYour data may be shared with:\n\nTechnical service providers (data processors under Article 28 GDPR), such as:\n\nwebsite hosting provider\n\nemail / newsletter platform\n\nPlausible Analytics\n\nStripe or other payment providers\n\nother suppliers strictly necessary to operate bookings, downloads, or forms\n\nLegal authorities: we will disclose personal data to competent authorities if legally required to do so (Article 6(1)(c) GDPR).",
         transfersTitle: "4. International data transfers",
@@ -1397,7 +1397,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. Your rights",
         rightsBody: "Under the GDPR and Portuguese Law 58/2019, you have the following rights:\n\nright of access\n\nright to rectification\n\nright to erasure\n\nright to restriction of processing\n\nright to data portability\n\nright to object\n\nright to withdraw consent at any time\n\nTo exercise any of these rights: info@moldcheck.pt\n\nWe will respond within 30 days. In complex cases, this may be extended to 60 days, and you will be informed of the extension.",
         complaintTitle: "6. Right to lodge a complaint",
-        complaintBody: "If you believe our processing of your personal data violates the GDPR, you have the right to lodge a complaint with:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nYou may also lodge a complaint with the supervisory authority in your country of residence, where applicable.",
+        complaintBody: "If you believe our processing of your personal data violates the GDPR, you have the right to lodge a complaint with:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nYou may also lodge a complaint with the supervisory authority in your country of residence, where applicable.",
         securityTitle: "7. Security",
         securityBody: "We implement appropriate technical and organisational measures to protect personal data against unauthorised access, disclosure, alteration, or destruction, including encrypted transmission (HTTPS/TLS), access controls, and regular backups.\n\nNo system is absolutely secure. In the event of a data breach posing risk to individuals, we will notify the CNPD within the applicable legal timeframe and, where necessary, affected individuals without undue delay.",
         childrenTitle: "8. Children",
@@ -1418,9 +1418,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt est géré par le FAIRBANK Group (désigné dans cette politique comme « nous », « nos » ou « le responsable du traitement »).\n\nResponsable du traitement :\nFAIRBANK Group, Lda.\n[Adresse enregistrée]\nLisbonne, Portugal\nNIF : [numéro]\nContact : info@moldcheck.pt\n\nMoldCheck.pt est un site éditorial indépendant consacré à l’humidité, aux moisissures et à la qualité de l’air intérieur. Le site peut également proposer des réservations ou des paiements pour des inspections, des analyses de laboratoire ou des ressources numériques via des prestataires de paiement tiers tels que Stripe. Nous ne collectons pas activement de données de santé.",
         whatDataTitle: "2. Données que nous collectons",
         directDataTitle: "Données que vous fournissez directement",
-        directDataBody: "Formulaire de contact ou demandes par e-mail :\n— Adresse e-mail\n— Nom (facultatif)\n— Contenu du message\n\nFinalité : répondre à votre message.\nBase juridique : consentement (article 6, paragraphe 1, point a) du RGPD).\nConservation : 12 mois après le dernier échange, sauf obligation légale de conservation plus longue.\n\nAbonnement à la newsletter :\n— Adresse e-mail\n— Langue préférée\n— Date d’abonnement\n\nFinalité : envoi de mises à jour éditoriales sur les moisissures, l’humidité et la qualité de l’air intérieur au Portugal.\nBase juridique : consentement (article 6, paragraphe 1, point a) du RGPD).\nConservation : jusqu’à la désinscription + 30 jours pour le traitement technique.\n\nTéléchargement de contenu gratuit (PDF / checklist) :\n— Adresse e-mail\n\nFinalité : envoi du document demandé et inscription automatique de l’utilisateur à la séquence d’e-mails associée à cette ressource téléchargée.\nBase juridique : consentement et/ou exécution de mesures précontractuelles ou contractuelles, selon le cas.\n\nAchats, réservations ou paiements (le cas échéant) :\n— Nom\n— Adresse e-mail\n— Données nécessaires pour finaliser la réservation ou l’achat\n— Informations transactionnelles limitées\n\nLes paiements sont traités par des prestataires de paiement tiers tels que Stripe. MoldCheck.pt ne stocke pas les données complètes de carte bancaire.",
+        directDataBody: "Formulaire de contact ou demandes par e-mail :\n Adresse e-mail\n Nom (facultatif)\n Contenu du message\n\nFinalité : répondre à votre message.\nBase juridique : consentement (article 6, paragraphe 1, point a) du RGPD).\nConservation : 12 mois après le dernier échange, sauf obligation légale de conservation plus longue.\n\nAbonnement à la newsletter :\n Adresse e-mail\n Langue préférée\n Date d’abonnement\n\nFinalité : envoi de mises à jour éditoriales sur les moisissures, l’humidité et la qualité de l’air intérieur au Portugal.\nBase juridique : consentement (article 6, paragraphe 1, point a) du RGPD).\nConservation : jusqu’à la désinscription + 30 jours pour le traitement technique.\n\nTéléchargement de contenu gratuit (PDF / checklist) :\n Adresse e-mail\n\nFinalité : envoi du document demandé et inscription automatique de l’utilisateur à la séquence d’e-mails associée à cette ressource téléchargée.\nBase juridique : consentement et/ou exécution de mesures précontractuelles ou contractuelles, selon le cas.\n\nAchats, réservations ou paiements (le cas échéant) :\n Nom\n Adresse e-mail\n Données nécessaires pour finaliser la réservation ou l’achat\n Informations transactionnelles limitées\n\nLes paiements sont traités par des prestataires de paiement tiers tels que Stripe. MoldCheck.pt ne stocke pas les données complètes de carte bancaire.",
         automaticDataTitle: "Données collectées automatiquement",
-        automaticDataBody: "Analyse du trafic (Plausible Analytics) :\nMoldCheck.pt utilise Plausible Analytics, un outil d’analyse qui n’utilise pas de cookies, ne collecte pas de données personnelles identifiables et ne crée pas de profils utilisateurs.\n\nLes données collectées peuvent inclure : pages visitées, pays approximatif, URL de provenance et type d’appareil. Aucune de ces données n’est personnellement identifiable.\n\nPlausible ne nécessite pas de consentement au titre du RGPD ou de la loi portugaise 41/2004, car il ne traite pas de données personnelles identifiables.\n\nCookies nécessaires :\n— Cookie de préférence linguistique : stocke la langue sélectionnée par l’utilisateur. Durée : 365 jours. Aucun consentement requis.\n— Cookie de session : gestion technique de session. Durée : session. Aucun consentement requis.\n\nNous n’utilisons pas de cookies publicitaires, de cookies tiers de suivi, de pixels de réseaux sociaux ou d’outils d’analyse collectant des données personnelles sans consentement.",
+        automaticDataBody: "Analyse du trafic (Plausible Analytics) :\nMoldCheck.pt utilise Plausible Analytics, un outil d’analyse qui n’utilise pas de cookies, ne collecte pas de données personnelles identifiables et ne crée pas de profils utilisateurs.\n\nLes données collectées peuvent inclure : pages visitées, pays approximatif, URL de provenance et type d’appareil. Aucune de ces données n’est personnellement identifiable.\n\nPlausible ne nécessite pas de consentement au titre du RGPD ou de la loi portugaise 41/2004, car il ne traite pas de données personnelles identifiables.\n\nCookies nécessaires :\n Cookie de préférence linguistique : stocke la langue sélectionnée par l’utilisateur. Durée : 365 jours. Aucun consentement requis.\n Cookie de session : gestion technique de session. Durée : session. Aucun consentement requis.\n\nNous n’utilisons pas de cookies publicitaires, de cookies tiers de suivi, de pixels de réseaux sociaux ou d’outils d’analyse collectant des données personnelles sans consentement.",
         sharingTitle: "3. Partage des données avec des tiers",
         sharingBody: "Nous ne vendons, ne louons ni ne cédons vos données personnelles à des tiers à des fins marketing.\n\nVos données peuvent être partagées avec :\n\nPrestataires de services techniques (sous-traitants au sens de l’article 28 du RGPD), tels que :\n\nhébergeur du site\n\nplateforme e-mail / newsletter\n\nPlausible Analytics\n\nStripe ou autres prestataires de paiement\n\nautres fournisseurs strictement nécessaires au fonctionnement des réservations, téléchargements ou formulaires\n\nAutorités légales : nous divulguerons des données personnelles aux autorités compétentes si la loi nous y oblige (article 6, paragraphe 1, point c) du RGPD).",
         transfersTitle: "4. Transferts internationaux de données",
@@ -1428,7 +1428,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. Vos droits",
         rightsBody: "Au titre du RGPD et de la loi portugaise 58/2019, vous disposez des droits suivants :\n\ndroit d’accès\n\ndroit de rectification\n\ndroit à l’effacement\n\ndroit à la limitation du traitement\n\ndroit à la portabilité des données\n\ndroit d’opposition\n\ndroit de retirer votre consentement à tout moment\n\nPour exercer l’un de ces droits : info@moldcheck.pt\n\nNous répondrons dans un délai de 30 jours. Dans les cas complexes, ce délai peut être porté à 60 jours, et vous en serez informé.",
         complaintTitle: "6. Réclamation auprès de l’autorité de contrôle",
-        complaintBody: "Si vous estimez que le traitement de vos données personnelles viole le RGPD, vous avez le droit d’introduire une réclamation auprès de :\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbonne\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nVous pouvez également introduire une réclamation auprès de l’autorité de contrôle de votre pays de résidence, le cas échéant.",
+        complaintBody: "Si vous estimez que le traitement de vos données personnelles viole le RGPD, vous avez le droit d’introduire une réclamation auprès de :\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbonne\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nVous pouvez également introduire une réclamation auprès de l’autorité de contrôle de votre pays de résidence, le cas échéant.",
         securityTitle: "7. Sécurité",
         securityBody: "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données personnelles contre l’accès non autorisé, la divulgation, l’altération ou la destruction, notamment la transmission chiffrée (HTTPS/TLS), le contrôle d’accès et des sauvegardes régulières.\n\nAucun système n’est absolument sûr. En cas de violation de données présentant un risque pour les personnes concernées, nous notifierons la CNPD dans le délai légal applicable et, si nécessaire, les personnes concernées sans retard injustifié.",
         childrenTitle: "8. Mineurs",
@@ -1449,9 +1449,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt wird von der FAIRBANK Group betrieben (in dieser Erklärung als „wir“, „uns“ oder „Verantwortlicher“ bezeichnet).\n\nVerantwortlicher:\nFAIRBANK Group, Lda.\n[Eingetragene Adresse]\nLissabon, Portugal\nNIF: [Nummer]\nKontakt: info@moldcheck.pt\n\nMoldCheck.pt ist eine unabhängige redaktionelle Website zu Feuchtigkeit, Schimmel und Innenraumluftqualität. Die Website kann außerdem Buchungs- oder Zahlungsabläufe für Inspektionen, Laboranalysen oder digitale Ressourcen über Drittanbieter wie Stripe anbieten. Wir erheben keine Gesundheitsdaten aktiv.",
         whatDataTitle: "2. Welche Daten wir erheben",
         directDataTitle: "Daten, die Sie direkt bereitstellen",
-        directDataBody: "Kontaktformular oder Anfragen per E-Mail:\n— E-Mail-Adresse\n— Name (optional)\n— Inhalt der Nachricht\n\nZweck: Beantwortung Ihrer Nachricht.\nRechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).\nSpeicherung: 12 Monate nach der letzten Kommunikation, sofern keine längere gesetzliche Aufbewahrungspflicht besteht.\n\nNewsletter-Anmeldung:\n— E-Mail-Adresse\n— Bevorzugte Sprache\n— Datum der Anmeldung\n\nZweck: Versand redaktioneller Updates zu Schimmel, Feuchtigkeit und Innenraumluftqualität in Portugal.\nRechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).\nSpeicherung: bis zur Abmeldung + 30 Tage für die technische Verarbeitung.\n\nDownload kostenloser Inhalte (PDF / Checkliste):\n— E-Mail-Adresse\n\nZweck: Übermittlung des angeforderten Dokuments sowie automatische Aufnahme in die mit dieser heruntergeladenen Ressource verbundene E-Mail-Sequenz.\nRechtsgrundlage: Einwilligung und/oder Durchführung vorvertraglicher oder vertraglicher Maßnahmen, je nach Fall.\n\nKäufe, Buchungen oder Zahlungen (sofern zutreffend):\n— Name\n— E-Mail-Adresse\n— Daten, die zur Durchführung der Buchung oder des Kaufs erforderlich sind\n— Begrenzte Transaktionsinformationen\n\nZahlungen werden über Drittanbieter wie Stripe abgewickelt. MoldCheck.pt speichert keine vollständigen Zahlungskartendaten.",
+        directDataBody: "Kontaktformular oder Anfragen per E-Mail:\n E-Mail-Adresse\n Name (optional)\n Inhalt der Nachricht\n\nZweck: Beantwortung Ihrer Nachricht.\nRechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).\nSpeicherung: 12 Monate nach der letzten Kommunikation, sofern keine längere gesetzliche Aufbewahrungspflicht besteht.\n\nNewsletter-Anmeldung:\n E-Mail-Adresse\n Bevorzugte Sprache\n Datum der Anmeldung\n\nZweck: Versand redaktioneller Updates zu Schimmel, Feuchtigkeit und Innenraumluftqualität in Portugal.\nRechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).\nSpeicherung: bis zur Abmeldung + 30 Tage für die technische Verarbeitung.\n\nDownload kostenloser Inhalte (PDF / Checkliste):\n E-Mail-Adresse\n\nZweck: Übermittlung des angeforderten Dokuments sowie automatische Aufnahme in die mit dieser heruntergeladenen Ressource verbundene E-Mail-Sequenz.\nRechtsgrundlage: Einwilligung und/oder Durchführung vorvertraglicher oder vertraglicher Maßnahmen, je nach Fall.\n\nKäufe, Buchungen oder Zahlungen (sofern zutreffend):\n Name\n E-Mail-Adresse\n Daten, die zur Durchführung der Buchung oder des Kaufs erforderlich sind\n Begrenzte Transaktionsinformationen\n\nZahlungen werden über Drittanbieter wie Stripe abgewickelt. MoldCheck.pt speichert keine vollständigen Zahlungskartendaten.",
         automaticDataTitle: "Automatisch erhobene Daten",
-        automaticDataBody: "Traffic-Analyse (Plausible Analytics):\nMoldCheck.pt verwendet Plausible Analytics, ein Analysewerkzeug, das keine Cookies verwendet, keine personenbezogenen identifizierbaren Daten erhebt und keine Nutzerprofile erstellt.\n\nDie erhobenen Daten können umfassen: besuchte Seiten, ungefähres Land, Referrer-URL und Gerätetyp. Keine dieser Daten ist persönlich identifizierbar.\n\nPlausible erfordert keine Einwilligung nach DSGVO oder dem portugiesischen Gesetz 41/2004, da keine identifizierbaren personenbezogenen Daten verarbeitet werden.\n\nNotwendige Cookies:\n— Cookie zur Sprachpräferenz: speichert die vom Nutzer gewählte Sprache. Dauer: 365 Tage. Keine Einwilligung erforderlich.\n— Session-Cookie: technische Sitzungsverwaltung. Dauer: Sitzung. Keine Einwilligung erforderlich.\n\nWir verwenden keine Werbe-Cookies, keine Tracking-Cookies Dritter, keine Social-Media-Pixel und keine Analysewerkzeuge, die ohne Einwilligung personenbezogene Daten erheben.",
+        automaticDataBody: "Traffic-Analyse (Plausible Analytics):\nMoldCheck.pt verwendet Plausible Analytics, ein Analysewerkzeug, das keine Cookies verwendet, keine personenbezogenen identifizierbaren Daten erhebt und keine Nutzerprofile erstellt.\n\nDie erhobenen Daten können umfassen: besuchte Seiten, ungefähres Land, Referrer-URL und Gerätetyp. Keine dieser Daten ist persönlich identifizierbar.\n\nPlausible erfordert keine Einwilligung nach DSGVO oder dem portugiesischen Gesetz 41/2004, da keine identifizierbaren personenbezogenen Daten verarbeitet werden.\n\nNotwendige Cookies:\n Cookie zur Sprachpräferenz: speichert die vom Nutzer gewählte Sprache. Dauer: 365 Tage. Keine Einwilligung erforderlich.\n Session-Cookie: technische Sitzungsverwaltung. Dauer: Sitzung. Keine Einwilligung erforderlich.\n\nWir verwenden keine Werbe-Cookies, keine Tracking-Cookies Dritter, keine Social-Media-Pixel und keine Analysewerkzeuge, die ohne Einwilligung personenbezogene Daten erheben.",
         sharingTitle: "3. Weitergabe von Daten an Dritte",
         sharingBody: "Wir verkaufen, vermieten oder überlassen Ihre personenbezogenen Daten nicht zu Marketingzwecken an Dritte.\n\nIhre Daten können weitergegeben werden an:\n\nTechnische Dienstleister (Auftragsverarbeiter gemäß Art. 28 DSGVO), wie z. B.:\n\nHosting-Anbieter der Website\n\nE-Mail- / Newsletter-Plattform\n\nPlausible Analytics\n\nStripe oder andere Zahlungsdienstleister\n\nandere Anbieter, die für Buchungen, Downloads oder Formulare technisch erforderlich sind\n\nBehörden: Wir legen personenbezogene Daten gegenüber zuständigen Behörden offen, wenn wir gesetzlich dazu verpflichtet sind (Art. 6 Abs. 1 lit. c DSGVO).",
         transfersTitle: "4. Internationale Datenübermittlungen",
@@ -1459,7 +1459,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. Ihre Rechte",
         rightsBody: "Nach DSGVO und dem portugiesischen Gesetz 58/2019 haben Sie folgende Rechte:\n\nRecht auf Auskunft\n\nRecht auf Berichtigung\n\nRecht auf Löschung\n\nRecht auf Einschränkung der Verarbeitung\n\nRecht auf Datenübertragbarkeit\n\nRecht auf Widerspruch\n\nRecht auf Widerruf Ihrer Einwilligung jederzeit\n\nZur Ausübung dieser Rechte: info@moldcheck.pt\n\nWir antworten innerhalb von 30 Tagen. In komplexen Fällen kann diese Frist auf 60 Tage verlängert werden; darüber werden Sie informiert.",
         complaintTitle: "6. Beschwerderecht bei der Aufsichtsbehörde",
-        complaintBody: "Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, eine Beschwerde einzureichen bei:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lissabon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nSie können sich gegebenenfalls auch an die Datenschutzaufsichtsbehörde Ihres Wohnsitzlandes wenden.",
+        complaintBody: "Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, eine Beschwerde einzureichen bei:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lissabon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nSie können sich gegebenenfalls auch an die Datenschutzaufsichtsbehörde Ihres Wohnsitzlandes wenden.",
         securityTitle: "7. Sicherheit",
         securityBody: "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um personenbezogene Daten vor unbefugtem Zugriff, Offenlegung, Veränderung oder Zerstörung zu schützen, einschließlich verschlüsselter Übertragung (HTTPS/TLS), Zugangskontrollen und regelmäßiger Backups.\n\nKein System ist absolut sicher. Im Falle einer Datenschutzverletzung mit Risiko für Betroffene werden wir die CNPD innerhalb der gesetzlich vorgeschriebenen Frist benachrichtigen und, sofern erforderlich, die betroffenen Personen ohne unangemessene Verzögerung informieren.",
         childrenTitle: "8. Kinder",
@@ -1480,9 +1480,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt wordt beheerd door de FAIRBANK Group (hierna aangeduid als “wij”, “ons” of “de verwerkingsverantwoordelijke”).\n\nVerwerkingsverantwoordelijke:\nFAIRBANK Group, Lda.\n[Geregistreerd adres]\nLissabon, Portugal\nNIF: [nummer]\nContact: info@moldcheck.pt\n\nMoldCheck.pt is een onafhankelijke redactionele website over vocht, schimmel en binnenluchtkwaliteit. De site kan ook boekings- of betaalstromen aanbieden voor inspecties, laboratoriumanalyses of digitale middelen via externe betalingsverwerkers zoals Stripe. Wij verzamelen niet actief gezondheidsgegevens.",
         whatDataTitle: "2. Welke gegevens we verzamelen",
         directDataTitle: "Gegevens die je rechtstreeks verstrekt",
-        directDataBody: "Contactformulier of contact per e-mail:\n— E-mailadres\n— Naam (optioneel)\n— Inhoud van het bericht\n\nDoel: beantwoorden van je bericht.\nRechtsgrondslag: toestemming (art. 6 lid 1 sub a AVG).\nBewaring: 12 maanden na de laatste communicatie, tenzij een langere wettelijke bewaarplicht geldt.\n\nNieuwsbriefinschrijving:\n— E-mailadres\n— Voorkeurstaal\n— Datum van inschrijving\n\nDoel: het versturen van redactionele updates over schimmel, vocht en binnenluchtkwaliteit in Portugal.\nRechtsgrondslag: toestemming (art. 6 lid 1 sub a AVG).\nBewaring: tot uitschrijving + 30 dagen voor technische verwerking.\n\nDownload van gratis inhoud (PDF / checklist):\n— E-mailadres\n\nDoel: levering van het aangevraagde document en automatische opname van de gebruiker in de e-mailreeks die bij die gedownloade bron hoort.\nRechtsgrondslag: toestemming en/of uitvoering van precontractuele of contractuele stappen, afhankelijk van het geval.\n\nAankopen, boekingen of betalingen (indien van toepassing):\n— Naam\n— E-mailadres\n— Gegevens die nodig zijn om de boeking of aankoop uit te voeren\n— Beperkte transactie-informatie\n\nBetalingen worden verwerkt door externe betalingsaanbieders zoals Stripe. MoldCheck.pt slaat geen volledige kaartgegevens op.",
+        directDataBody: "Contactformulier of contact per e-mail:\n E-mailadres\n Naam (optioneel)\n Inhoud van het bericht\n\nDoel: beantwoorden van je bericht.\nRechtsgrondslag: toestemming (art. 6 lid 1 sub a AVG).\nBewaring: 12 maanden na de laatste communicatie, tenzij een langere wettelijke bewaarplicht geldt.\n\nNieuwsbriefinschrijving:\n E-mailadres\n Voorkeurstaal\n Datum van inschrijving\n\nDoel: het versturen van redactionele updates over schimmel, vocht en binnenluchtkwaliteit in Portugal.\nRechtsgrondslag: toestemming (art. 6 lid 1 sub a AVG).\nBewaring: tot uitschrijving + 30 dagen voor technische verwerking.\n\nDownload van gratis inhoud (PDF / checklist):\n E-mailadres\n\nDoel: levering van het aangevraagde document en automatische opname van de gebruiker in de e-mailreeks die bij die gedownloade bron hoort.\nRechtsgrondslag: toestemming en/of uitvoering van precontractuele of contractuele stappen, afhankelijk van het geval.\n\nAankopen, boekingen of betalingen (indien van toepassing):\n Naam\n E-mailadres\n Gegevens die nodig zijn om de boeking of aankoop uit te voeren\n Beperkte transactie-informatie\n\nBetalingen worden verwerkt door externe betalingsaanbieders zoals Stripe. MoldCheck.pt slaat geen volledige kaartgegevens op.",
         automaticDataTitle: "Automatisch verzamelde gegevens",
-        automaticDataBody: "Verkeersanalyse (Plausible Analytics):\nMoldCheck.pt gebruikt Plausible Analytics, een analysetool die geen cookies gebruikt, geen persoonlijk identificeerbare gegevens verzamelt en geen gebruikersprofielen opbouwt.\n\nDe verzamelde gegevens kunnen omvatten: bezochte pagina’s, benaderd land, referrer-URL en apparaattype. Geen van deze gegevens is persoonlijk identificeerbaar.\n\nPlausible vereist geen toestemming onder de AVG of de Portugese wet 41/2004, omdat het geen identificeerbare persoonsgegevens verwerkt.\n\nNoodzakelijke cookies:\n— Cookie voor taalvoorkeur: slaat de door de gebruiker gekozen taal op. Duur: 365 dagen. Geen toestemming vereist.\n— Sessiecookie: technisch sessiebeheer. Duur: sessie. Geen toestemming vereist.\n\nWij gebruiken geen advertentiecookies, geen trackingcookies van derden, geen social media-pixels en geen analysetools die zonder toestemming persoonsgegevens verzamelen.",
+        automaticDataBody: "Verkeersanalyse (Plausible Analytics):\nMoldCheck.pt gebruikt Plausible Analytics, een analysetool die geen cookies gebruikt, geen persoonlijk identificeerbare gegevens verzamelt en geen gebruikersprofielen opbouwt.\n\nDe verzamelde gegevens kunnen omvatten: bezochte pagina’s, benaderd land, referrer-URL en apparaattype. Geen van deze gegevens is persoonlijk identificeerbaar.\n\nPlausible vereist geen toestemming onder de AVG of de Portugese wet 41/2004, omdat het geen identificeerbare persoonsgegevens verwerkt.\n\nNoodzakelijke cookies:\n Cookie voor taalvoorkeur: slaat de door de gebruiker gekozen taal op. Duur: 365 dagen. Geen toestemming vereist.\n Sessiecookie: technisch sessiebeheer. Duur: sessie. Geen toestemming vereist.\n\nWij gebruiken geen advertentiecookies, geen trackingcookies van derden, geen social media-pixels en geen analysetools die zonder toestemming persoonsgegevens verzamelen.",
         sharingTitle: "3. Delen van gegevens met derden",
         sharingBody: "Wij verkopen, verhuren of verstrekken jouw persoonsgegevens niet aan derden voor marketingdoeleinden.\n\nJe gegevens kunnen worden gedeeld met:\n\nTechnische dienstverleners (verwerkers in de zin van art. 28 AVG), zoals:\n\nhostingprovider van de website\n\ne-mail- / nieuwsbriefplatform\n\nPlausible Analytics\n\nStripe of andere betalingsaanbieders\n\nandere leveranciers die strikt noodzakelijk zijn voor boekingen, downloads of formulieren\n\nWettelijke autoriteiten: wij verstrekken persoonsgegevens aan bevoegde autoriteiten indien wij daartoe wettelijk verplicht zijn (art. 6 lid 1 sub c AVG).",
         transfersTitle: "4. Internationale gegevensdoorgiften",
@@ -1490,7 +1490,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. Jouw rechten",
         rightsBody: "Op grond van de AVG en de Portugese wet 58/2019 heb je de volgende rechten:\n\nrecht op inzage\n\nrecht op rectificatie\n\nrecht op wissing\n\nrecht op beperking van verwerking\n\nrecht op gegevensoverdraagbaarheid\n\nrecht van bezwaar\n\nrecht om toestemming op elk moment in te trekken\n\nOm een van deze rechten uit te oefenen: info@moldcheck.pt\n\nWij reageren binnen 30 dagen. In complexe gevallen kan deze termijn worden verlengd tot 60 dagen; je wordt dan daarvan op de hoogte gebracht.",
         complaintTitle: "6. Klacht indienen bij de toezichthouder",
-        complaintBody: "Als je van mening bent dat de verwerking van jouw persoonsgegevens in strijd is met de AVG, heb je het recht een klacht in te dienen bij:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lissabon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nJe kunt indien van toepassing ook een klacht indienen bij de toezichthouder in jouw land van verblijf.",
+        complaintBody: "Als je van mening bent dat de verwerking van jouw persoonsgegevens in strijd is met de AVG, heb je het recht een klacht in te dienen bij:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lissabon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nJe kunt indien van toepassing ook een klacht indienen bij de toezichthouder in jouw land van verblijf.",
         securityTitle: "7. Beveiliging",
         securityBody: "Wij nemen passende technische en organisatorische maatregelen om persoonsgegevens te beschermen tegen ongeoorloofde toegang, openbaarmaking, wijziging of vernietiging, waaronder versleutelde overdracht (HTTPS/TLS), toegangscontrole en regelmatige back-ups.\n\nGeen enkel systeem is volledig veilig. In geval van een datalek met risico voor betrokkenen zullen wij de CNPD binnen de toepasselijke wettelijke termijn informeren en, indien nodig, de betrokken personen zonder onnodige vertraging waarschuwen.",
         childrenTitle: "8. Minderjarigen",
@@ -1511,9 +1511,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt è gestito dal FAIRBANK Group (di seguito denominato “noi”, “ci” o “titolare del trattamento”).\n\nTitolare del trattamento:\nFAIRBANK Group, Lda.\n[Indirizzo registrato]\nLisbona, Portogallo\nNIF: [numero]\nContatto: info@moldcheck.pt\n\nMoldCheck.pt è un sito editoriale indipendente dedicato a umidità, muffa e qualità dell’aria interna. Il sito può inoltre offrire flussi di prenotazione o pagamento per ispezioni, analisi di laboratorio o risorse digitali tramite fornitori di pagamento terzi come Stripe. Non raccogliamo attivamente dati sanitari.",
         whatDataTitle: "2. Quali dati raccogliamo",
         directDataTitle: "Dati forniti direttamente dall’utente",
-        directDataBody: "Modulo di contatto o richieste via e-mail:\n— Indirizzo e-mail\n— Nome (facoltativo)\n— Contenuto del messaggio\n\nFinalità: rispondere al messaggio inviato.\nBase giuridica: consenso (art. 6, par. 1, lett. a, RGPD).\nConservazione: 12 mesi dall’ultima comunicazione, salvo obblighi legali di conservazione più lunghi.\n\nIscrizione alla newsletter:\n— Indirizzo e-mail\n— Lingua preferita\n— Data di iscrizione\n\nFinalità: invio di aggiornamenti editoriali su muffa, umidità e qualità dell’aria interna in Portogallo.\nBase giuridica: consenso (art. 6, par. 1, lett. a, RGPD).\nConservazione: fino alla cancellazione + 30 giorni per il trattamento tecnico.\n\nDownload di contenuti gratuiti (PDF / checklist):\n— Indirizzo e-mail\n\nFinalità: invio del documento richiesto e inserimento automatico dell’utente nella sequenza email associata alla risorsa scaricata.\nBase giuridica: consenso e/o esecuzione di misure precontrattuali o contrattuali, a seconda del caso.\n\nAcquisti, prenotazioni o pagamenti (se applicabile):\n— Nome\n— Indirizzo e-mail\n— Dati necessari per completare la prenotazione o l’acquisto\n— Informazioni transazionali limitate\n\nI pagamenti sono elaborati da fornitori di pagamento terzi come Stripe. MoldCheck.pt non memorizza i dati completi della carta di pagamento.",
+        directDataBody: "Modulo di contatto o richieste via e-mail:\n Indirizzo e-mail\n Nome (facoltativo)\n Contenuto del messaggio\n\nFinalità: rispondere al messaggio inviato.\nBase giuridica: consenso (art. 6, par. 1, lett. a, RGPD).\nConservazione: 12 mesi dall’ultima comunicazione, salvo obblighi legali di conservazione più lunghi.\n\nIscrizione alla newsletter:\n Indirizzo e-mail\n Lingua preferita\n Data di iscrizione\n\nFinalità: invio di aggiornamenti editoriali su muffa, umidità e qualità dell’aria interna in Portogallo.\nBase giuridica: consenso (art. 6, par. 1, lett. a, RGPD).\nConservazione: fino alla cancellazione + 30 giorni per il trattamento tecnico.\n\nDownload di contenuti gratuiti (PDF / checklist):\n Indirizzo e-mail\n\nFinalità: invio del documento richiesto e inserimento automatico dell’utente nella sequenza email associata alla risorsa scaricata.\nBase giuridica: consenso e/o esecuzione di misure precontrattuali o contrattuali, a seconda del caso.\n\nAcquisti, prenotazioni o pagamenti (se applicabile):\n Nome\n Indirizzo e-mail\n Dati necessari per completare la prenotazione o l’acquisto\n Informazioni transazionali limitate\n\nI pagamenti sono elaborati da fornitori di pagamento terzi come Stripe. MoldCheck.pt non memorizza i dati completi della carta di pagamento.",
         automaticDataTitle: "Dati raccolti automaticamente",
-        automaticDataBody: "Analisi del traffico (Plausible Analytics):\nMoldCheck.pt utilizza Plausible Analytics, uno strumento di analisi che non utilizza cookie, non raccoglie dati personali identificabili e non crea profili utente.\n\nI dati raccolti possono includere: pagine visitate, paese approssimativo, URL di provenienza e tipo di dispositivo. Nessuno di questi dati è personalmente identificabile.\n\nPlausible non richiede consenso ai sensi del RGPD o della legge portoghese 41/2004, poiché non tratta dati personali identificabili.\n\nCookie necessari:\n— Cookie di preferenza della lingua: memorizza la lingua selezionata dall’utente. Durata: 365 giorni. Nessun consenso richiesto.\n— Cookie di sessione: gestione tecnica della sessione. Durata: sessione. Nessun consenso richiesto.\n\nNon utilizziamo cookie pubblicitari, cookie di tracciamento di terze parti, pixel dei social media o strumenti di analisi che raccolgano dati personali senza consenso.",
+        automaticDataBody: "Analisi del traffico (Plausible Analytics):\nMoldCheck.pt utilizza Plausible Analytics, uno strumento di analisi che non utilizza cookie, non raccoglie dati personali identificabili e non crea profili utente.\n\nI dati raccolti possono includere: pagine visitate, paese approssimativo, URL di provenienza e tipo di dispositivo. Nessuno di questi dati è personalmente identificabile.\n\nPlausible non richiede consenso ai sensi del RGPD o della legge portoghese 41/2004, poiché non tratta dati personali identificabili.\n\nCookie necessari:\n Cookie di preferenza della lingua: memorizza la lingua selezionata dall’utente. Durata: 365 giorni. Nessun consenso richiesto.\n Cookie di sessione: gestione tecnica della sessione. Durata: sessione. Nessun consenso richiesto.\n\nNon utilizziamo cookie pubblicitari, cookie di tracciamento di terze parti, pixel dei social media o strumenti di analisi che raccolgano dati personali senza consenso.",
         sharingTitle: "3. Condivisione dei dati con terzi",
         sharingBody: "Non vendiamo, affittiamo né cediamo i dati personali a terzi per finalità di marketing.\n\nI dati possono essere condivisi con:\n\nFornitori di servizi tecnici (responsabili del trattamento ai sensi dell’art. 28 RGPD), quali:\n\nfornitore di hosting del sito\n\npiattaforma e-mail / newsletter\n\nPlausible Analytics\n\nStripe o altri fornitori di pagamento\n\naltri fornitori strettamente necessari per prenotazioni, download o moduli\n\nAutorità competenti: comunicheremo dati personali alle autorità competenti se legalmente obbligati a farlo (art. 6, par. 1, lett. c, RGPD).",
         transfersTitle: "4. Trasferimenti internazionali di dati",
@@ -1521,7 +1521,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. I vostri diritti",
         rightsBody: "Ai sensi del RGPD e della legge portoghese 58/2019, avete i seguenti diritti:\n\ndiritto di accesso\n\ndiritto di rettifica\n\ndiritto alla cancellazione\n\ndiritto alla limitazione del trattamento\n\ndiritto alla portabilità dei dati\n\ndiritto di opposizione\n\ndiritto di revocare il consenso in qualsiasi momento\n\nPer esercitare uno di questi diritti: info@moldcheck.pt\n\nRisponderemo entro 30 giorni. Nei casi complessi, il termine può essere esteso fino a 60 giorni, e ne daremo comunicazione.",
         complaintTitle: "6. Reclamo all’autorità di controllo",
-        complaintBody: "Se ritenete che il trattamento dei vostri dati personali violi il RGPD, avete il diritto di presentare reclamo a:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbona\nPortogallo\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nPotete inoltre presentare reclamo presso l’autorità di controllo del vostro paese di residenza, ove applicabile.",
+        complaintBody: "Se ritenete che il trattamento dei vostri dati personali violi il RGPD, avete il diritto di presentare reclamo a:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbona\nPortogallo\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nPotete inoltre presentare reclamo presso l’autorità di controllo del vostro paese di residenza, ove applicabile.",
         securityTitle: "7. Sicurezza",
         securityBody: "Adottiamo misure tecniche e organizzative adeguate per proteggere i dati personali da accessi non autorizzati, divulgazione, alterazione o distruzione, inclusi trasmissione cifrata (HTTPS/TLS), controlli di accesso e backup regolari.\n\nNessun sistema è completamente sicuro. In caso di violazione dei dati con rischio per gli interessati, notificheremo la CNPD entro il termine legale applicabile e, se necessario, gli interessati senza ritardo ingiustificato.",
         childrenTitle: "8. Minori",
@@ -1542,9 +1542,9 @@ const privacyContentByLocale = {
         whoWeAreBody: "MoldCheck.pt está gestionado por FAIRBANK Group (en adelante, “nosotros”, “nos” o “el responsable del tratamiento”).\n\nResponsable del tratamiento:\nFAIRBANK Group, Lda.\n[Dirección registrada]\nLisboa, Portugal\nNIF: [número]\nContacto: info@moldcheck.pt\n\nMoldCheck.pt es un sitio editorial independiente dedicado a la humedad, el moho y la calidad del aire interior. El sitio también puede ofrecer flujos de reserva o pago para inspecciones, análisis de laboratorio o recursos digitales a través de proveedores de pago externos como Stripe. No recopilamos activamente datos de salud.",
         whatDataTitle: "2. Qué datos recopilamos",
         directDataTitle: "Datos que usted proporciona directamente",
-        directDataBody: "Formulario de contacto o contacto por correo electrónico:\n— Dirección de correo electrónico\n— Nombre (opcional)\n— Contenido del mensaje\n\nFinalidad: responder a su mensaje.\nBase jurídica: consentimiento (artículo 6.1.a del RGPD).\nConservación: 12 meses desde la última comunicación, salvo obligación legal de conservación más prolongada.\n\nSuscripción a la newsletter:\n— Dirección de correo electrónico\n— Idioma preferido\n— Fecha de suscripción\n\nFinalidad: envío de actualizaciones editoriales sobre moho, humedad y calidad del aire interior en Portugal.\nBase jurídica: consentimiento (artículo 6.1.a del RGPD).\nConservación: hasta la baja + 30 días para procesamiento técnico.\n\nDescarga de contenido gratuito (PDF / checklist):\n— Dirección de correo electrónico\n\nFinalidad: envío del documento solicitado y entrada automática del usuario en la secuencia de emails asociada al recurso descargado.\nBase jurídica: consentimiento y/o ejecución de medidas precontractuales o contractuales, según corresponda.\n\nCompras, reservas o pagos (cuando proceda):\n— Nombre\n— Dirección de correo electrónico\n— Datos necesarios para completar la reserva o compra\n— Información transaccional limitada\n\nLos pagos son procesados por proveedores de pago externos, como Stripe. MoldCheck.pt no almacena los datos completos de la tarjeta de pago.",
+        directDataBody: "Formulario de contacto o contacto por correo electrónico:\n Dirección de correo electrónico\n Nombre (opcional)\n Contenido del mensaje\n\nFinalidad: responder a su mensaje.\nBase jurídica: consentimiento (artículo 6.1.a del RGPD).\nConservación: 12 meses desde la última comunicación, salvo obligación legal de conservación más prolongada.\n\nSuscripción a la newsletter:\n Dirección de correo electrónico\n Idioma preferido\n Fecha de suscripción\n\nFinalidad: envío de actualizaciones editoriales sobre moho, humedad y calidad del aire interior en Portugal.\nBase jurídica: consentimiento (artículo 6.1.a del RGPD).\nConservación: hasta la baja + 30 días para procesamiento técnico.\n\nDescarga de contenido gratuito (PDF / checklist):\n Dirección de correo electrónico\n\nFinalidad: envío del documento solicitado y entrada automática del usuario en la secuencia de emails asociada al recurso descargado.\nBase jurídica: consentimiento y/o ejecución de medidas precontractuales o contractuales, según corresponda.\n\nCompras, reservas o pagos (cuando proceda):\n Nombre\n Dirección de correo electrónico\n Datos necesarios para completar la reserva o compra\n Información transaccional limitada\n\nLos pagos son procesados por proveedores de pago externos, como Stripe. MoldCheck.pt no almacena los datos completos de la tarjeta de pago.",
         automaticDataTitle: "Datos recopilados automáticamente",
-        automaticDataBody: "Análisis de tráfico (Plausible Analytics):\nMoldCheck.pt utiliza Plausible Analytics, una herramienta de análisis que no utiliza cookies, no recopila datos personales identificables y no crea perfiles de usuario.\n\nLos datos recopilados pueden incluir: páginas visitadas, país aproximado, URL de procedencia y tipo de dispositivo. Ninguno de estos datos es personalmente identificable.\n\nPlausible no requiere consentimiento al amparo del RGPD o de la Ley portuguesa 41/2004, ya que no procesa datos personales identificables.\n\nCookies necesarias:\n— Cookie de preferencia de idioma: almacena el idioma seleccionado por el usuario. Duración: 365 días. No requiere consentimiento.\n— Cookie de sesión: gestión técnica de sesión. Duración: sesión. No requiere consentimiento.\n\nNo utilizamos cookies publicitarias, cookies de seguimiento de terceros, píxeles de redes sociales ni herramientas de análisis que recopilen datos personales sin consentimiento.",
+        automaticDataBody: "Análisis de tráfico (Plausible Analytics):\nMoldCheck.pt utiliza Plausible Analytics, una herramienta de análisis que no utiliza cookies, no recopila datos personales identificables y no crea perfiles de usuario.\n\nLos datos recopilados pueden incluir: páginas visitadas, país aproximado, URL de procedencia y tipo de dispositivo. Ninguno de estos datos es personalmente identificable.\n\nPlausible no requiere consentimiento al amparo del RGPD o de la Ley portuguesa 41/2004, ya que no procesa datos personales identificables.\n\nCookies necesarias:\n Cookie de preferencia de idioma: almacena el idioma seleccionado por el usuario. Duración: 365 días. No requiere consentimiento.\n Cookie de sesión: gestión técnica de sesión. Duración: sesión. No requiere consentimiento.\n\nNo utilizamos cookies publicitarias, cookies de seguimiento de terceros, píxeles de redes sociales ni herramientas de análisis que recopilen datos personales sin consentimiento.",
         sharingTitle: "3. Compartición de datos con terceros",
         sharingBody: "No vendemos, alquilamos ni cedemos sus datos personales a terceros con fines de marketing.\n\nSus datos pueden compartirse con:\n\nProveedores de servicios técnicos (encargados del tratamiento en el sentido del artículo 28 del RGPD), tales como:\n\nproveedor de alojamiento del sitio web\n\nplataforma de email / newsletter\n\nPlausible Analytics\n\nStripe u otros proveedores de pago\n\notros proveedores estrictamente necesarios para reservas, descargas o formularios\n\nAutoridades legales: divulgaremos datos personales a las autoridades competentes si estamos legalmente obligados a hacerlo (artículo 6.1.c del RGPD).",
         transfersTitle: "4. Transferencias internacionales de datos",
@@ -1552,7 +1552,7 @@ const privacyContentByLocale = {
         rightsTitle: "5. Sus derechos",
         rightsBody: "En virtud del RGPD y de la Ley portuguesa 58/2019, usted tiene los siguientes derechos:\n\nderecho de acceso\n\nderecho de rectificación\n\nderecho de supresión\n\nderecho a la limitación del tratamiento\n\nderecho a la portabilidad de los datos\n\nderecho de oposición\n\nderecho a retirar el consentimiento en cualquier momento\n\nPara ejercer cualquiera de estos derechos: info@moldcheck.pt\n\nResponderemos en un plazo de 30 días. En casos complejos, este plazo podrá ampliarse hasta 60 días, informándole de dicha ampliación.",
         complaintTitle: "6. Reclamación ante la autoridad de control",
-        complaintBody: "Si considera que el tratamiento de sus datos personales vulnera el RGPD, tiene derecho a presentar una reclamación ante:\n\nCNPD — Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisboa\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nTambién puede presentar una reclamación ante la autoridad de control de su país de residencia, cuando proceda.",
+        complaintBody: "Si considera que el tratamiento de sus datos personales vulnera el RGPD, tiene derecho a presentar una reclamación ante:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisboa\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nTambién puede presentar una reclamación ante la autoridad de control de su país de residencia, cuando proceda.",
         securityTitle: "7. Seguridad",
         securityBody: "Aplicamos medidas técnicas y organizativas adecuadas para proteger los datos personales frente a accesos no autorizados, divulgación, alteración o destrucción, incluyendo transmisión cifrada (HTTPS/TLS), controles de acceso y copias de seguridad periódicas.\n\nNingún sistema es completamente seguro. En caso de violación de datos con riesgo para los interesados, notificaremos a la CNPD dentro del plazo legal aplicable y, cuando sea necesario, a las personas afectadas sin demora indebida.",
         childrenTitle: "8. Menores",
@@ -1622,80 +1622,80 @@ const servicesContentByLocale = {
         description: "Diagnóstico independente, análise laboratorial e monitorização apresentados com clareza, sem o enquadramento comercial do tratamento.",
         independentTitle: "O que significa \"independente\"?",
         independentParagraphs: [
-            "Em Portugal, o diagnóstico de problemas de humidade e bolor é quase sempre realizado pela empresa que vai vender o tratamento. O diagnóstico gratuito é o início de um funil comercial — não um serviço de informação imparcial.",
+            "Em Portugal, o diagnóstico de problemas de humidade e bolor é quase sempre realizado pela empresa que vai vender o tratamento. O diagnóstico gratuito é o início de um funil comercial não um serviço de informação imparcial.",
             "Uma inspecção independente funciona de forma diferente. O inspector cobra pelo seu tempo. Não recebe comissão do saneador, do fabricante do sistema de ventilação, nem de nenhuma outra empresa que possa beneficiar do resultado do diagnóstico. O seu único interesse é dizer-lhe com precisão o que tem.",
-            "Este é o modelo que a InspectOS representa — e o único modelo que o MoldCheck.pt recomenda."
+            "Este é o modelo que a InspectOS representa e o único modelo que o MoldCheck.pt recomenda."
         ],
         howItWorksTitle: "Como funciona",
-        howItWorksBody: "As inspecções são realizadas por inspectores certificados da InspectOS equipados com:\n\nHigrómetro digital de precisão — medição de humidade relativa do ar e temperatura\n\nMedidor de humidade de materiais — medição não invasiva do teor de humidade em paredes, pavimentos e tetos\n\nCâmara termográfica — detecção de pontes térmicas, infiltrações ocultas e zonas de condensação invisíveis a olho nu\n\nCapacidade de colheita de amostras — superfícies, materiais e ar, para análise laboratorial quando indicado\n\nApós a inspecção, recebe um relatório escrito com: localização e extensão do problema, causa provável, recomendações baseadas em evidência científica, e indicação clara de quando uma análise laboratorial é ou não necessária.\n\nO relatório não inclui um orçamento de tratamento. Não recomendamos empresas específicas de saneamento. Não temos acordo comercial com nenhuma empresa de remediação.",
+        howItWorksBody: "As inspecções são realizadas por inspectores certificados da InspectOS equipados com:\n\nHigrómetro digital de precisão medição de humidade relativa do ar e temperatura\n\nMedidor de humidade de materiais medição não invasiva do teor de humidade em paredes, pavimentos e tetos\n\nCâmara termográfica detecção de pontes térmicas, infiltrações ocultas e zonas de condensação invisíveis a olho nu\n\nCapacidade de colheita de amostras superfícies, materiais e ar, para análise laboratorial quando indicado\n\nApós a inspecção, recebe um relatório escrito com: localização e extensão do problema, causa provável, recomendações baseadas em evidência científica, e indicação clara de quando uma análise laboratorial é ou não necessária.\n\nO relatório não inclui um orçamento de tratamento. Não recomendamos empresas específicas de saneamento. Não temos acordo comercial com nenhuma empresa de remediação.",
         servicesTitle: "Serviços disponíveis",
         tier1Cards: [
             {
-                eyebrow: "NÍVEL 1 — Inspecção Visual e Instrumental",
+                eyebrow: "NÍVEL 1 Inspecção Visual e Instrumental",
                 title: "Inspecção Padrão",
-                body: "Inspecção completa da habitação com higrómetro, medidor de humidade e câmara termográfica. Inclui relatório escrito.\n\nPreço indicativo: €250–€400 (habitação até 100 m²) · €400–€800 (habitação até 250 m²)"
+                body: "Inspecção completa da habitação com higrómetro, medidor de humidade e câmara termográfica. Inclui relatório escrito.\n\nPreço indicativo: €250 €400 (habitação até 100 m²) · €400 €800 (habitação até 250 m²)"
             },
             {
-                eyebrow: "NÍVEL 1 — Inspecção Visual e Instrumental",
+                eyebrow: "NÍVEL 1 Inspecção Visual e Instrumental",
                 title: "Inspecção Pré-Compra",
-                body: "Para quem está a considerar comprar uma habitação e quer saber exactamente o que tem antes de assinar. Inclui relatório utilizável em negociação ou eventual rescisão de promessa.\n\nPreço indicativo: €350–€600"
+                body: "Para quem está a considerar comprar uma habitação e quer saber exactamente o que tem antes de assinar. Inclui relatório utilizável em negociação ou eventual rescisão de promessa.\n\nPreço indicativo: €350 €600"
             },
             {
-                eyebrow: "NÍVEL 1 — Inspecção Visual e Instrumental",
+                eyebrow: "NÍVEL 1 Inspecção Visual e Instrumental",
                 title: "Inspecção Pós-Inundação / Emergência",
-                body: "Para habitações afectadas por inundação, rotura de canalização, ou infiltração súbita. Foco na avaliação de danos por água e risco de contaminação fúngica. Resposta rápida disponível.\n\nPreço indicativo: €300–€500"
+                body: "Para habitações afectadas por inundação, rotura de canalização, ou infiltração súbita. Foco na avaliação de danos por água e risco de contaminação fúngica. Resposta rápida disponível.\n\nPreço indicativo: €300 €500"
             },
             {
-                eyebrow: "NÍVEL 1 — Inspecção Visual e Instrumental",
+                eyebrow: "NÍVEL 1 Inspecção Visual e Instrumental",
                 title: "Verificação Pós-Remediação",
-                body: "Para confirmar, de forma independente, que uma obra de saneamento foi bem executada e que o problema está efectivamente resolvido — antes de pagar o valor final ao saneador.\n\nPreço indicativo: €200–€350"
+                body: "Para confirmar, de forma independente, que uma obra de saneamento foi bem executada e que o problema está efectivamente resolvido antes de pagar o valor final ao saneador.\n\nPreço indicativo: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "NÍVEL 2 — Análise Laboratorial",
+                eyebrow: "NÍVEL 2 Análise Laboratorial",
                 title: "Amostragem de Ar + Análise Micológica",
-                body: "Quando a inspecção visual e instrumental não é suficiente para identificar as espécies presentes ou quantificar o risco com precisão, recomendamos análise laboratorial.\n\nColheita de amostras de ar em interiores e exteriores com análise em laboratório certificado (ISO 17025). Identifica espécies fúngicas presentes e compara concentrações interior/exterior.\n\nPreço indicativo: €500–€900 (inclui inspecção, colheita e análise)"
+                body: "Quando a inspecção visual e instrumental não é suficiente para identificar as espécies presentes ou quantificar o risco com precisão, recomendamos análise laboratorial.\n\nColheita de amostras de ar em interiores e exteriores com análise em laboratório certificado (ISO 17025). Identifica espécies fúngicas presentes e compara concentrações interior/exterior.\n\nPreço indicativo: €500 €900 (inclui inspecção, colheita e análise)"
             },
             {
-                eyebrow: "NÍVEL 2 — Análise Laboratorial",
+                eyebrow: "NÍVEL 2 Análise Laboratorial",
                 title: "Amostragem de Superfície e Material",
-                body: "Colheita de amostras de superfícies visíveis e, quando indicado, de materiais de construção. Adequado para identificação de espécies em pontos específicos.\n\nPreço indicativo: €300–€600"
+                body: "Colheita de amostras de superfícies visíveis e, quando indicado, de materiais de construção. Adequado para identificação de espécies em pontos específicos.\n\nPreço indicativo: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "NÍVEL 3 — Análise Especializada Internacional",
+                eyebrow: "NÍVEL 3 Análise Especializada Internacional",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Para situações que requerem diagnóstico de precisão — nomeadamente suspeita de Stachybotrys, histórico de danos graves por água, ou casos com sintomas de saúde persistentes.\n\nAnálise de poeira acumulada por MSqPCR — o método mais sensível disponível para detectar história de contaminação fúngica, incluindo espécies de difícil detecção por amostragem de ar. Enviado para laboratório parceiro nos EUA.\n\nPreço indicativo: €600–€900"
+                body: "Para situações que requerem diagnóstico de precisão nomeadamente suspeita de Stachybotrys, histórico de danos graves por água, ou casos com sintomas de saúde persistentes.\n\nAnálise de poeira acumulada por MSqPCR o método mais sensível disponível para detectar história de contaminação fúngica, incluindo espécies de difícil detecção por amostragem de ar. Enviado para laboratório parceiro nos EUA.\n\nPreço indicativo: €600 €900"
             },
             {
-                eyebrow: "NÍVEL 3 — HERTSMI-2",
+                eyebrow: "NÍVEL 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Versão simplificada do ERMI focada nas 5 espécies mais relevantes clinicamente: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Desenvolvido especificamente para avaliação clínica em contexto de CIRS/doenças relacionadas com edifícios.\n\nPreço indicativo: €450–€700\n\nNota importante: O MoldCheck.pt / InspectOS é o único prestador de serviços HERTSMI-2 na Península Ibérica e, tanto quanto sabemos, em toda a Europa. O laboratório de referência para este teste é o Mycometrics (EUA).",
+                body: "Versão simplificada do ERMI focada nas 5 espécies mais relevantes clinicamente: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Desenvolvido especificamente para avaliação clínica em contexto de CIRS/doenças relacionadas com edifícios.\n\nPreço indicativo: €450 €700\n\nNota importante: O MoldCheck.pt / InspectOS é o único prestador de serviços HERTSMI-2 na Península Ibérica e, tanto quanto sabemos, em toda a Europa. O laboratório de referência para este teste é o Mycometrics (EUA).",
                 tone: "warning"
             },
             {
-                eyebrow: "NÍVEL 3 — Análise Especializada Internacional",
+                eyebrow: "NÍVEL 3 Análise Especializada Internacional",
                 title: "Painel de Micotoxinas em Superfícies",
-                body: "Análise química de micotoxinas em amostras de superfície. Relevante quando há suspeita de produção de toxinas e impacto na saúde.\n\nPreço indicativo: €700–€1.200"
+                body: "Análise química de micotoxinas em amostras de superfície. Relevante quando há suspeita de produção de toxinas e impacto na saúde.\n\nPreço indicativo: €700 €1.200"
             },
             {
-                eyebrow: "NÍVEL 3 — Análise Especializada Internacional",
+                eyebrow: "NÍVEL 3 Análise Especializada Internacional",
                 title: "Microbioma Completo do Edifício (NGS)",
-                body: "Sequenciação genómica de nova geração — identificação abrangente de todos os fungos e bactérias presentes. O diagnóstico mais completo disponível para edifícios com historial complexo de danos por água.\n\nPreço indicativo: €1.000–€1.500"
+                body: "Sequenciação genómica de nova geração identificação abrangente de todos os fungos e bactérias presentes. O diagnóstico mais completo disponível para edifícios com historial complexo de danos por água.\n\nPreço indicativo: €1.000 €1.500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "NÍVEL 4 — Monitorização Contínua",
+                eyebrow: "NÍVEL 4 Monitorização Contínua",
                 title: "Sensor de Qualidade do Ar Interior + Acompanhamento",
-                body: "Instalação de sensor de monitorização contínua (CO₂, TVOC, temperatura, humidade relativa). Relatório mensal com análise de tendências. Adequado para habitações com problemas recorrentes ou para monitorização pós-remediação.\n\nPreço indicativo: €150–€300 (instalação) + €25–€60/mês"
+                body: "Instalação de sensor de monitorização contínua (CO₂, TVOC, temperatura, humidade relativa). Relatório mensal com análise de tendências. Adequado para habitações com problemas recorrentes ou para monitorização pós-remediação.\n\nPreço indicativo: €150 €300 (instalação) + €25 €60/mês"
             },
             {
-                eyebrow: "NÍVEL 4 — Monitorização Contínua",
+                eyebrow: "NÍVEL 4 Monitorização Contínua",
                 title: "Reinspecção Anual",
-                body: "Para habitações com historial de problemas de humidade. Visita anual para avaliação de condições e detecção precoce de recidivas.\n\nPreço indicativo: €180–€280/ano"
+                body: "Para habitações com historial de problemas de humidade. Visita anual para avaliação de condições e detecção precoce de recidivas.\n\nPreço indicativo: €180 €280/ano"
             }
         ],
         bookingTitle: "Como agendar",
@@ -1703,7 +1703,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Reserva",
                 title: "Agendar através da InspectOS",
-                body: "As inspecções são realizadas através da InspectOS — plataforma independente de inspecção de imóveis em Portugal.",
+                body: "As inspecções são realizadas através da InspectOS plataforma independente de inspecção de imóveis em Portugal.",
                 ctaLabel: "→ Agendar inspecção em InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -1717,10 +1717,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Cobertura geográfica",
-        coverageBody: "Actualmente com cobertura disponível em Lisboa, Porto, Setúbal, Cascais, Sintra, Braga e Algarve (Faro, Lagos, Albufeira). Cobertura em expansão — consulte disponibilidade para a sua área.",
+        coverageBody: "Actualmente com cobertura disponível em Lisboa, Porto, Setúbal, Cascais, Sintra, Braga e Algarve (Faro, Lagos, Albufeira). Cobertura em expansão consulte disponibilidade para a sua área.",
         pricingTitle: "Nota sobre preços",
         pricingBody: "Os preços indicados são intervalos aproximados baseados na dimensão e complexidade da habitação. O preço final é confirmado após contacto inicial e antes de qualquer compromisso. Não existe taxa de diagnóstico: o custo total da inspecção é o preço do serviço.",
-        disclosureText: "MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS. Não vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma — não porque lucramos com o tratamento que se segue."
+        disclosureText: "MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS. Não vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspecção ou análise laboratorial, é porque acreditamos que precisa de uma não porque lucramos com o tratamento que se segue."
     },
     en: {
         eyebrow: "Independent inspection services",
@@ -1728,80 +1728,80 @@ const servicesContentByLocale = {
         description: "Independent diagnosis, laboratory analysis and monitoring explained clearly, without the commercial framing of treatment sales.",
         independentTitle: "What does \"independent\" mean?",
         independentParagraphs: [
-            "In Portugal, damp and mold problems are almost always diagnosed by the same company that will later sell the treatment. A free diagnosis is the beginning of a sales funnel — not an impartial information service.",
+            "In Portugal, damp and mold problems are almost always diagnosed by the same company that will later sell the treatment. A free diagnosis is the beginning of a sales funnel not an impartial information service.",
             "An independent inspection works differently. The inspector charges for their time. They receive no commission from the remediation contractor, the ventilation system manufacturer, or any other company that might benefit from the diagnostic outcome. Their only interest is telling you precisely what you have.",
-            "This is the model InspectOS represents — and the only model MoldCheck.pt recommends."
+            "This is the model InspectOS represents and the only model MoldCheck.pt recommends."
         ],
         howItWorksTitle: "How it works",
-        howItWorksBody: "Inspections are carried out by certified InspectOS inspectors equipped with:\n\nPrecision digital hygrometer — measures relative humidity and air temperature\n\nMaterials moisture meter — non-invasive measurement of moisture content in walls, floors, and ceilings\n\nThermal imaging camera — detects thermal bridges, hidden water ingress, and condensation zones invisible to the naked eye\n\nSample collection capability — surfaces, materials, and air, for laboratory analysis when indicated\n\nAfter the inspection, you receive a written report covering: the location and extent of the problem, the probable cause, evidence-based recommendations, and a clear indication of when laboratory analysis is — or is not — necessary.\n\nThe report does not include a treatment quote. We do not recommend specific remediation companies. We have no commercial agreements with remediation firms.",
+        howItWorksBody: "Inspections are carried out by certified InspectOS inspectors equipped with:\n\nPrecision digital hygrometer measures relative humidity and air temperature\n\nMaterials moisture meter non-invasive measurement of moisture content in walls, floors, and ceilings\n\nThermal imaging camera detects thermal bridges, hidden water ingress, and condensation zones invisible to the naked eye\n\nSample collection capability surfaces, materials, and air, for laboratory analysis when indicated\n\nAfter the inspection, you receive a written report covering: the location and extent of the problem, the probable cause, evidence-based recommendations, and a clear indication of when laboratory analysis is or is not necessary.\n\nThe report does not include a treatment quote. We do not recommend specific remediation companies. We have no commercial agreements with remediation firms.",
         servicesTitle: "Available services",
         tier1Cards: [
             {
-                eyebrow: "TIER 1 — Visual and Instrumental Inspection",
+                eyebrow: "TIER 1 Visual and Instrumental Inspection",
                 title: "Standard Inspection",
-                body: "Full property inspection with hygrometer, moisture meter, and thermal imaging camera. Includes written report.\n\nIndicative price: €250–€400 (up to 100 m²) · €400–€800 (up to 250 m²)"
+                body: "Full property inspection with hygrometer, moisture meter, and thermal imaging camera. Includes written report.\n\nIndicative price: €250 €400 (up to 100 m²) · €400 €800 (up to 250 m²)"
             },
             {
-                eyebrow: "TIER 1 — Visual and Instrumental Inspection",
+                eyebrow: "TIER 1 Visual and Instrumental Inspection",
                 title: "Pre-Purchase Inspection",
-                body: "For anyone considering buying a property and wanting to know exactly what they are buying before signing. Includes a report suitable for negotiation or contract withdrawal discussions.\n\nIndicative price: €350–€600"
+                body: "For anyone considering buying a property and wanting to know exactly what they are buying before signing. Includes a report suitable for negotiation or contract withdrawal discussions.\n\nIndicative price: €350 €600"
             },
             {
-                eyebrow: "TIER 1 — Visual and Instrumental Inspection",
+                eyebrow: "TIER 1 Visual and Instrumental Inspection",
                 title: "Post-Flood / Emergency Inspection",
-                body: "For properties affected by flooding, burst pipes, or sudden water ingress. Focused on water damage assessment and fungal contamination risk. Rapid response available.\n\nIndicative price: €300–€500"
+                body: "For properties affected by flooding, burst pipes, or sudden water ingress. Focused on water damage assessment and fungal contamination risk. Rapid response available.\n\nIndicative price: €300 €500"
             },
             {
-                eyebrow: "TIER 1 — Visual and Instrumental Inspection",
+                eyebrow: "TIER 1 Visual and Instrumental Inspection",
                 title: "Post-Remediation Verification",
-                body: "Independent confirmation that remediation work was properly carried out and that the problem has genuinely been resolved — before making final payment to the contractor.\n\nIndicative price: €200–€350"
+                body: "Independent confirmation that remediation work was properly carried out and that the problem has genuinely been resolved before making final payment to the contractor.\n\nIndicative price: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "TIER 2 — Laboratory Analysis",
+                eyebrow: "TIER 2 Laboratory Analysis",
                 title: "Air Sampling + Mycological Analysis",
-                body: "When visual and instrumental inspection is not enough to identify the species present or quantify risk precisely, we recommend laboratory analysis.\n\nIndoor and outdoor air sample collection with analysis at an ISO 17025 certified laboratory. Identifies fungal species present and compares indoor and outdoor concentrations.\n\nIndicative price: €500–€900 (includes inspection, collection, and analysis)"
+                body: "When visual and instrumental inspection is not enough to identify the species present or quantify risk precisely, we recommend laboratory analysis.\n\nIndoor and outdoor air sample collection with analysis at an ISO 17025 certified laboratory. Identifies fungal species present and compares indoor and outdoor concentrations.\n\nIndicative price: €500 €900 (includes inspection, collection, and analysis)"
             },
             {
-                eyebrow: "TIER 2 — Laboratory Analysis",
+                eyebrow: "TIER 2 Laboratory Analysis",
                 title: "Surface and Material Sampling",
-                body: "Sample collection from visible surfaces and, when indicated, building materials. Suitable for species identification at specific points of concern.\n\nIndicative price: €300–€600"
+                body: "Sample collection from visible surfaces and, when indicated, building materials. Suitable for species identification at specific points of concern.\n\nIndicative price: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "TIER 3 — Specialist International Analysis",
+                eyebrow: "TIER 3 Specialist International Analysis",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "For situations requiring precision diagnosis — especially suspected Stachybotrys, a history of serious water damage, or persistent health-related concerns.\n\nAccumulated dust analysis by MSqPCR — the most sensitive method currently available for detecting a history of fungal contamination, including species that air sampling often misses. Sent to a partner laboratory in the United States.\n\nIndicative price: €600–€900"
+                body: "For situations requiring precision diagnosis especially suspected Stachybotrys, a history of serious water damage, or persistent health-related concerns.\n\nAccumulated dust analysis by MSqPCR the most sensitive method currently available for detecting a history of fungal contamination, including species that air sampling often misses. Sent to a partner laboratory in the United States.\n\nIndicative price: €600 €900"
             },
             {
-                eyebrow: "TIER 3 — HERTSMI-2",
+                eyebrow: "TIER 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "A simplified ERMI focused on the five species considered most clinically relevant: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, and Wallemia sebi. Developed specifically for clinical assessment in the context of CIRS and building-related illness.\n\nIndicative price: €450–€700\n\nImportant note: MoldCheck.pt / InspectOS is the only HERTSMI-2 service provider on the Iberian Peninsula and, to our knowledge, in Europe. The reference laboratory for this test is Mycometrics (USA).",
+                body: "A simplified ERMI focused on the five species considered most clinically relevant: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, and Wallemia sebi. Developed specifically for clinical assessment in the context of CIRS and building-related illness.\n\nIndicative price: €450 €700\n\nImportant note: MoldCheck.pt / InspectOS is the only HERTSMI-2 service provider on the Iberian Peninsula and, to our knowledge, in Europe. The reference laboratory for this test is Mycometrics (USA).",
                 tone: "warning"
             },
             {
-                eyebrow: "TIER 3 — Specialist International Analysis",
+                eyebrow: "TIER 3 Specialist International Analysis",
                 title: "Surface Mycotoxin Panel",
-                body: "Chemical analysis of mycotoxins in surface samples. Relevant where toxin production and health effects are suspected.\n\nIndicative price: €700–€1,200"
+                body: "Chemical analysis of mycotoxins in surface samples. Relevant where toxin production and health effects are suspected.\n\nIndicative price: €700 €1,200"
             },
             {
-                eyebrow: "TIER 3 — Specialist International Analysis",
+                eyebrow: "TIER 3 Specialist International Analysis",
                 title: "Full Building Microbiome (NGS)",
-                body: "Next-generation genomic sequencing — comprehensive identification of all fungi and bacteria present. The most complete diagnostic currently available for buildings with a complex history of water damage.\n\nIndicative price: €1,000–€1,500"
+                body: "Next-generation genomic sequencing comprehensive identification of all fungi and bacteria present. The most complete diagnostic currently available for buildings with a complex history of water damage.\n\nIndicative price: €1,000 €1,500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "TIER 4 — Continuous Monitoring",
+                eyebrow: "TIER 4 Continuous Monitoring",
                 title: "Indoor Air Quality Sensor + Monitoring",
-                body: "Installation of a continuous monitoring sensor (CO₂, TVOC, temperature, relative humidity). Monthly reporting with trend analysis. Suitable for properties with recurring issues or for post-remediation monitoring.\n\nIndicative price: €150–€300 (installation) + €25–€60/month"
+                body: "Installation of a continuous monitoring sensor (CO₂, TVOC, temperature, relative humidity). Monthly reporting with trend analysis. Suitable for properties with recurring issues or for post-remediation monitoring.\n\nIndicative price: €150 €300 (installation) + €25 €60/month"
             },
             {
-                eyebrow: "TIER 4 — Continuous Monitoring",
+                eyebrow: "TIER 4 Continuous Monitoring",
                 title: "Annual Re-Inspection",
-                body: "For properties with a history of damp-related problems. Annual visit for condition assessment and early detection of recurrence.\n\nIndicative price: €180–€280/year"
+                body: "For properties with a history of damp-related problems. Annual visit for condition assessment and early detection of recurrence.\n\nIndicative price: €180 €280/year"
             }
         ],
         bookingTitle: "How to book",
@@ -1809,7 +1809,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Booking",
                 title: "Book through InspectOS",
-                body: "Inspections are booked through InspectOS — Portugal’s independent property inspection platform.",
+                body: "Inspections are booked through InspectOS Portugal’s independent property inspection platform.",
                 ctaLabel: "→ Book an inspection at InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -1823,10 +1823,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Geographic coverage",
-        coverageBody: "Currently available in Lisbon, Porto, Setúbal, Cascais, Sintra, Braga, and the Algarve (Faro, Lagos, Albufeira). Coverage is expanding — check availability for your area.",
+        coverageBody: "Currently available in Lisbon, Porto, Setúbal, Cascais, Sintra, Braga, and the Algarve (Faro, Lagos, Albufeira). Coverage is expanding check availability for your area.",
         pricingTitle: "A note on pricing",
         pricingBody: "The prices shown are indicative ranges based on property size and complexity. Final pricing is confirmed after initial contact and before any commitment. There is no separate diagnostic fee: the inspection price is the full service price.",
-        disclosureText: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal. We do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or laboratory analysis, it is because we believe you need one — not because we profit from whatever treatment may follow."
+        disclosureText: "MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK operates InspectOS, an independent property inspection platform in Portugal. We do not sell damp treatments. We do not take commissions from remediation companies. When we recommend an inspection or laboratory analysis, it is because we believe you need one not because we profit from whatever treatment may follow."
     },
     fr: {
         eyebrow: "Inspection indépendante",
@@ -1834,80 +1834,80 @@ const servicesContentByLocale = {
         description: "Diagnostic indépendant, analyse en laboratoire et suivi présentés avec clarté, sans cadrage commercial orienté vers le traitement.",
         independentTitle: "Que signifie \u00ab\u00a0ind\u00e9pendant\u00a0\u00bb ?",
         independentParagraphs: [
-            "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est le début d’un entonnoir commercial — pas un service d’information impartial.",
+            "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est le début d’un entonnoir commercial pas un service d’information impartial.",
             "Une inspection indépendante fonctionne différemment. L’inspecteur facture son temps. Il ne reçoit aucune commission de l’entreprise de remédiation, du fabricant du système de ventilation, ni d’aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire avec précision ce que vous avez.",
-            "C’est le modèle qu’InspectOS représente — et le seul modèle que MoldCheck.pt recommande."
+            "C’est le modèle qu’InspectOS représente et le seul modèle que MoldCheck.pt recommande."
         ],
         howItWorksTitle: "Comment cela fonctionne",
-        howItWorksBody: "Les inspections sont réalisées par des inspecteurs certifiés InspectOS équipés de :\n\nHygromètre numérique de précision — mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux — mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique — détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement — surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité — ou non — d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de remédiation spécifiques. Nous n’avons aucun accord commercial avec des entreprises de remédiation.",
+        howItWorksBody: "Les inspections sont réalisées par des inspecteurs certifiés InspectOS équipés de :\n\nHygromètre numérique de précision mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité ou non d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de remédiation spécifiques. Nous n’avons aucun accord commercial avec des entreprises de remédiation.",
         servicesTitle: "Services disponibles",
         tier1Cards: [
             {
-                eyebrow: "NIVEAU 1 — Inspection visuelle et instrumentale",
+                eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
                 title: "Inspection standard",
-                body: "Inspection complète du logement avec hygromètre, humidimètre et caméra thermographique. Inclut un rapport écrit.\n\nPrix indicatif : €250–€400 (jusqu’à 100 m²) · €400–€800 (jusqu’à 250 m²)"
+                body: "Inspection complète du logement avec hygromètre, humidimètre et caméra thermographique. Inclut un rapport écrit.\n\nPrix indicatif : €250 €400 (jusqu’à 100 m²) · €400 €800 (jusqu’à 250 m²)"
             },
             {
-                eyebrow: "NIVEAU 1 — Inspection visuelle et instrumentale",
+                eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
                 title: "Inspection pré-achat",
-                body: "Pour les personnes qui envisagent d’acheter un bien et souhaitent savoir exactement ce qu’elles achètent avant de signer. Inclut un rapport utilisable pour la négociation ou dans le cadre d’un désistement.\n\nPrix indicatif : €350–€600"
+                body: "Pour les personnes qui envisagent d’acheter un bien et souhaitent savoir exactement ce qu’elles achètent avant de signer. Inclut un rapport utilisable pour la négociation ou dans le cadre d’un désistement.\n\nPrix indicatif : €350 €600"
             },
             {
-                eyebrow: "NIVEAU 1 — Inspection visuelle et instrumentale",
+                eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
                 title: "Inspection post-inondation / urgence",
-                body: "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Réponse rapide disponible.\n\nPrix indicatif : €300–€500"
+                body: "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Réponse rapide disponible.\n\nPrix indicatif : €300 €500"
             },
             {
-                eyebrow: "NIVEAU 1 — Inspection visuelle et instrumentale",
+                eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
                 title: "Vérification post-remédiation",
-                body: "Confirmation indépendante que les travaux de remédiation ont été correctement effectués et que le problème est réellement résolu — avant le paiement final au prestataire.\n\nPrix indicatif : €200–€350"
+                body: "Confirmation indépendante que les travaux de remédiation ont été correctement effectués et que le problème est réellement résolu avant le paiement final au prestataire.\n\nPrix indicatif : €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "NIVEAU 2 — Analyse en laboratoire",
+                eyebrow: "NIVEAU 2 Analyse en laboratoire",
                 title: "Prélèvement d’air + analyse mycologique",
-                body: "Lorsque l’inspection visuelle et instrumentale ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur avec analyse dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500–€900 (inclut inspection, prélèvement et analyse)"
+                body: "Lorsque l’inspection visuelle et instrumentale ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur avec analyse dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500 €900 (inclut inspection, prélèvement et analyse)"
             },
             {
-                eyebrow: "NIVEAU 2 — Analyse en laboratoire",
+                eyebrow: "NIVEAU 2 Analyse en laboratoire",
                 title: "Prélèvement de surface et de matériaux",
-                body: "Prélèvement d’échantillons sur des surfaces visibles et, si nécessaire, sur des matériaux de construction. Adapté à l’identification d’espèces sur des zones spécifiques.\n\nPrix indicatif : €300–€600"
+                body: "Prélèvement d’échantillons sur des surfaces visibles et, si nécessaire, sur des matériaux de construction. Adapté à l’identification d’espèces sur des zones spécifiques.\n\nPrix indicatif : €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "NIVEAU 3 — Analyse spécialisée internationale",
+                eyebrow: "NIVEAU 3 Analyse spécialisée internationale",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Pour les situations nécessitant un diagnostic de précision — notamment en cas de suspicion de Stachybotrys, d’antécédents de dégâts des eaux importants, ou de symptômes persistants.\n\nAnalyse de poussières accumulées par MSqPCR — la méthode la plus sensible disponible pour détecter un historique de contamination fongique, y compris des espèces souvent invisibles à l’échantillonnage de l’air. Envoyé à un laboratoire partenaire aux États-Unis.\n\nPrix indicatif : €600–€900"
+                body: "Pour les situations nécessitant un diagnostic de précision notamment en cas de suspicion de Stachybotrys, d’antécédents de dégâts des eaux importants, ou de symptômes persistants.\n\nAnalyse de poussières accumulées par MSqPCR la méthode la plus sensible disponible pour détecter un historique de contamination fongique, y compris des espèces souvent invisibles à l’échantillonnage de l’air. Envoyé à un laboratoire partenaire aux États-Unis.\n\nPrix indicatif : €600 €900"
             },
             {
-                eyebrow: "NIVEAU 3 — HERTSMI-2",
+                eyebrow: "NIVEAU 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Version simplifiée de l’ERMI, centrée sur les cinq espèces les plus pertinentes sur le plan clinique : Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum et Wallemia sebi. Développé spécifiquement pour l’évaluation clinique dans le contexte du CIRS et des maladies liées aux bâtiments.\n\nPrix indicatif : €450–€700\n\nNote importante : MoldCheck.pt / InspectOS est le seul prestataire HERTSMI-2 dans la péninsule Ibérique et, à notre connaissance, en Europe. Le laboratoire de référence pour ce test est Mycometrics (États-Unis).",
+                body: "Version simplifiée de l’ERMI, centrée sur les cinq espèces les plus pertinentes sur le plan clinique : Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum et Wallemia sebi. Développé spécifiquement pour l’évaluation clinique dans le contexte du CIRS et des maladies liées aux bâtiments.\n\nPrix indicatif : €450 €700\n\nNote importante : MoldCheck.pt / InspectOS est le seul prestataire HERTSMI-2 dans la péninsule Ibérique et, à notre connaissance, en Europe. Le laboratoire de référence pour ce test est Mycometrics (États-Unis).",
                 tone: "warning"
             },
             {
-                eyebrow: "NIVEAU 3 — Analyse spécialisée internationale",
+                eyebrow: "NIVEAU 3 Analyse spécialisée internationale",
                 title: "Panneau de mycotoxines de surface",
-                body: "Analyse chimique des mycotoxines dans des échantillons de surface. Pertinente lorsqu’une production de toxines et un impact sur la santé sont suspectés.\n\nPrix indicatif : €700–€1 200"
+                body: "Analyse chimique des mycotoxines dans des échantillons de surface. Pertinente lorsqu’une production de toxines et un impact sur la santé sont suspectés.\n\nPrix indicatif : €700 €1 200"
             },
             {
-                eyebrow: "NIVEAU 3 — Analyse spécialisée internationale",
+                eyebrow: "NIVEAU 3 Analyse spécialisée internationale",
                 title: "Microbiome complet du bâtiment (NGS)",
-                body: "Séquençage génomique de nouvelle génération — identification complète de tous les champignons et bactéries présents. Le diagnostic le plus complet actuellement disponible pour les bâtiments ayant un historique complexe de dégâts des eaux.\n\nPrix indicatif : €1 000–€1 500"
+                body: "Séquençage génomique de nouvelle génération identification complète de tous les champignons et bactéries présents. Le diagnostic le plus complet actuellement disponible pour les bâtiments ayant un historique complexe de dégâts des eaux.\n\nPrix indicatif : €1 000 €1 500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "NIVEAU 4 — Surveillance continue",
+                eyebrow: "NIVEAU 4 Surveillance continue",
                 title: "Capteur de qualité de l’air intérieur + suivi",
-                body: "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-remédiation.\n\nPrix indicatif : €150–€300 (installation) + €25–€60/mois"
+                body: "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-remédiation.\n\nPrix indicatif : €150 €300 (installation) + €25 €60/mois"
             },
             {
-                eyebrow: "NIVEAU 4 — Surveillance continue",
+                eyebrow: "NIVEAU 4 Surveillance continue",
                 title: "Réinspection annuelle",
-                body: "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter précocement une récidive.\n\nPrix indicatif : €180–€280/an"
+                body: "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter précocement une récidive.\n\nPrix indicatif : €180 €280/an"
             }
         ],
         bookingTitle: "Comment réserver",
@@ -1915,7 +1915,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Réservation",
                 title: "Réserver via InspectOS",
-                body: "Les inspections sont réservées via InspectOS — la plateforme indépendante d’inspection immobilière au Portugal.",
+                body: "Les inspections sont réservées via InspectOS la plateforme indépendante d’inspection immobilière au Portugal.",
                 ctaLabel: "→ Réserver une inspection sur InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -1929,10 +1929,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Couverture géographique",
-        coverageBody: "Couverture actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion — vérifiez la disponibilité pour votre zone.",
+        coverageBody: "Couverture actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion vérifiez la disponibilité pour votre zone.",
         pricingTitle: "Note sur les prix",
         pricingBody: "Les prix indiqués sont des fourchettes approximatives basées sur la taille et la complexité du logement. Le prix final est confirmé après un premier contact et avant tout engagement. Il n’existe pas de frais séparés de diagnostic : le coût total de l’inspection correspond au prix du service.",
-        disclosureText: "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne recevons aucune commission de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons qu’elle est nécessaire — pas parce que nous profitons du traitement qui pourrait suivre."
+        disclosureText: "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne recevons aucune commission de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons qu’elle est nécessaire pas parce que nous profitons du traitement qui pourrait suivre."
     },
     de: {
         eyebrow: "Unabhängige Inspektion",
@@ -1940,80 +1940,80 @@ const servicesContentByLocale = {
         description: "Unabhängige Diagnose, Laboranalyse und Monitoring klar erklärt, ohne die kommerzielle Logik des Behandlungsverkaufs.",
         independentTitle: "Was bedeutet \u201eunabh\u00e4ngig\u201c?",
         independentParagraphs: [
-            "In Portugal wird die Diagnose von Feuchtigkeits- und Schimmelproblemen fast immer von dem Unternehmen durchgeführt, das später auch die Behandlung verkauft. Die kostenlose Diagnose ist der Beginn eines Verkaufstrichters — kein unparteiischer Informationsdienst.",
+            "In Portugal wird die Diagnose von Feuchtigkeits- und Schimmelproblemen fast immer von dem Unternehmen durchgeführt, das später auch die Behandlung verkauft. Die kostenlose Diagnose ist der Beginn eines Verkaufstrichters kein unparteiischer Informationsdienst.",
             "Eine unabhängige Inspektion funktioniert anders. Der Inspektor berechnet seine Zeit. Er erhält keine Provision vom Sanierungsunternehmen, vom Hersteller eines Lüftungssystems oder von einem anderen Unternehmen, das vom Ergebnis der Diagnose profitieren könnte. Sein einziges Interesse ist es, Ihnen präzise zu sagen, was Sie tatsächlich haben.",
-            "Das ist das Modell, das InspectOS repräsentiert — und das einzige Modell, das MoldCheck.pt empfiehlt."
+            "Das ist das Modell, das InspectOS repräsentiert und das einzige Modell, das MoldCheck.pt empfiehlt."
         ],
         howItWorksTitle: "Wie es funktioniert",
-        howItWorksBody: "Inspektionen werden von zertifizierten InspectOS-Inspektoren durchgeführt, ausgestattet mit:\n\nPräzisions-Digitalhygrometer — Messung der relativen Luftfeuchtigkeit und Temperatur\n\nMaterialfeuchtemessgerät — zerstörungsfreie Messung des Feuchtegehalts in Wänden, Böden und Decken\n\nWärmebildkamera — Erkennung von Wärmebrücken, verborgenen Wassereintritten und Kondensationszonen\n\nProbenahmemöglichkeit — Oberflächen, Materialien und Luft für Laboranalysen, wenn dies angezeigt ist\n\nNach der Inspektion erhalten Sie einen schriftlichen Bericht mit: Ort und Ausmaß des Problems, wahrscheinlicher Ursache, wissenschaftlich fundierten Empfehlungen und einer klaren Einschätzung, ob eine Laboranalyse erforderlich ist oder nicht.\n\nDer Bericht enthält kein Angebot für Behandlungsmaßnahmen. Wir empfehlen keine bestimmten Sanierungsunternehmen. Wir haben keine geschäftlichen Vereinbarungen mit Sanierungsfirmen.",
+        howItWorksBody: "Inspektionen werden von zertifizierten InspectOS-Inspektoren durchgeführt, ausgestattet mit:\n\nPräzisions-Digitalhygrometer Messung der relativen Luftfeuchtigkeit und Temperatur\n\nMaterialfeuchtemessgerät zerstörungsfreie Messung des Feuchtegehalts in Wänden, Böden und Decken\n\nWärmebildkamera Erkennung von Wärmebrücken, verborgenen Wassereintritten und Kondensationszonen\n\nProbenahmemöglichkeit Oberflächen, Materialien und Luft für Laboranalysen, wenn dies angezeigt ist\n\nNach der Inspektion erhalten Sie einen schriftlichen Bericht mit: Ort und Ausmaß des Problems, wahrscheinlicher Ursache, wissenschaftlich fundierten Empfehlungen und einer klaren Einschätzung, ob eine Laboranalyse erforderlich ist oder nicht.\n\nDer Bericht enthält kein Angebot für Behandlungsmaßnahmen. Wir empfehlen keine bestimmten Sanierungsunternehmen. Wir haben keine geschäftlichen Vereinbarungen mit Sanierungsfirmen.",
         servicesTitle: "Verfügbare Leistungen",
         tier1Cards: [
             {
-                eyebrow: "STUFE 1 — Visuelle und instrumentelle Inspektion",
+                eyebrow: "STUFE 1 Visuelle und instrumentelle Inspektion",
                 title: "Standard-Inspektion",
-                body: "Vollständige Inspektion der Immobilie mit Hygrometer, Feuchtemessgerät und Wärmebildkamera. Einschließlich schriftlichem Bericht.\n\nRichtpreis: €250–€400 (bis 100 m²) · €400–€800 (bis 250 m²)"
+                body: "Vollständige Inspektion der Immobilie mit Hygrometer, Feuchtemessgerät und Wärmebildkamera. Einschließlich schriftlichem Bericht.\n\nRichtpreis: €250 €400 (bis 100 m²) · €400 €800 (bis 250 m²)"
             },
             {
-                eyebrow: "STUFE 1 — Visuelle und instrumentelle Inspektion",
+                eyebrow: "STUFE 1 Visuelle und instrumentelle Inspektion",
                 title: "Vor-Kauf-Inspektion",
-                body: "Für Personen, die den Kauf einer Immobilie erwägen und vor der Unterzeichnung genau wissen möchten, was sie kaufen. Einschließlich Bericht, der für Preisverhandlungen oder Rücktrittsentscheidungen verwendet werden kann.\n\nRichtpreis: €350–€600"
+                body: "Für Personen, die den Kauf einer Immobilie erwägen und vor der Unterzeichnung genau wissen möchten, was sie kaufen. Einschließlich Bericht, der für Preisverhandlungen oder Rücktrittsentscheidungen verwendet werden kann.\n\nRichtpreis: €350 €600"
             },
             {
-                eyebrow: "STUFE 1 — Visuelle und instrumentelle Inspektion",
+                eyebrow: "STUFE 1 Visuelle und instrumentelle Inspektion",
                 title: "Nach-Überflutung / Notfall-Inspektion",
-                body: "Für Immobilien, die von Überschwemmung, Rohrbruch oder plötzlichem Wassereintritt betroffen sind. Fokus auf Wasserschadensbewertung und Risiko einer Pilzkontamination. Schnelle Reaktion möglich.\n\nRichtpreis: €300–€500"
+                body: "Für Immobilien, die von Überschwemmung, Rohrbruch oder plötzlichem Wassereintritt betroffen sind. Fokus auf Wasserschadensbewertung und Risiko einer Pilzkontamination. Schnelle Reaktion möglich.\n\nRichtpreis: €300 €500"
             },
             {
-                eyebrow: "STUFE 1 — Visuelle und instrumentelle Inspektion",
+                eyebrow: "STUFE 1 Visuelle und instrumentelle Inspektion",
                 title: "Nach-Sanierungs-Verifizierung",
-                body: "Unabhängige Bestätigung, dass Sanierungsarbeiten korrekt durchgeführt wurden und das Problem tatsächlich behoben ist — bevor die Schlusszahlung an den Auftragnehmer erfolgt.\n\nRichtpreis: €200–€350"
+                body: "Unabhängige Bestätigung, dass Sanierungsarbeiten korrekt durchgeführt wurden und das Problem tatsächlich behoben ist bevor die Schlusszahlung an den Auftragnehmer erfolgt.\n\nRichtpreis: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "STUFE 2 — Laboranalyse",
+                eyebrow: "STUFE 2 Laboranalyse",
                 title: "Luftprobenahme + mykologische Analyse",
-                body: "Wenn die visuelle und instrumentelle Inspektion nicht ausreicht, um vorhandene Arten zu identifizieren oder das Risiko präzise einzuschätzen, empfehlen wir eine Laboranalyse.\n\nEntnahme von Innen- und Außenluftproben mit Analyse in einem ISO-17025-zertifizierten Labor. Identifiziert vorhandene Pilzarten und vergleicht Innen- und Außenkonzentrationen.\n\nRichtpreis: €500–€900 (einschließlich Inspektion, Probenahme und Analyse)"
+                body: "Wenn die visuelle und instrumentelle Inspektion nicht ausreicht, um vorhandene Arten zu identifizieren oder das Risiko präzise einzuschätzen, empfehlen wir eine Laboranalyse.\n\nEntnahme von Innen- und Außenluftproben mit Analyse in einem ISO-17025-zertifizierten Labor. Identifiziert vorhandene Pilzarten und vergleicht Innen- und Außenkonzentrationen.\n\nRichtpreis: €500 €900 (einschließlich Inspektion, Probenahme und Analyse)"
             },
             {
-                eyebrow: "STUFE 2 — Laboranalyse",
+                eyebrow: "STUFE 2 Laboranalyse",
                 title: "Oberflächen- und Materialprobenahme",
-                body: "Entnahme von Proben von sichtbaren Oberflächen und, wenn erforderlich, von Baumaterialien. Geeignet zur Identifikation von Arten an konkreten Problemstellen.\n\nRichtpreis: €300–€600"
+                body: "Entnahme von Proben von sichtbaren Oberflächen und, wenn erforderlich, von Baumaterialien. Geeignet zur Identifikation von Arten an konkreten Problemstellen.\n\nRichtpreis: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "STUFE 3 — Spezialisierte internationale Analyse",
+                eyebrow: "STUFE 3 Spezialisierte internationale Analyse",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Für Situationen, die eine hochpräzise Diagnose erfordern — insbesondere bei Verdacht auf Stachybotrys, bei einer Vorgeschichte schwerer Wasserschäden oder bei anhaltenden gesundheitlichen Beschwerden.\n\nAnalyse von angesammeltem Staub mittels MSqPCR — die empfindlichste Methode, um eine Vorgeschichte von Pilzkontamination nachzuweisen, einschließlich Arten, die bei Luftprobenahmen häufig übersehen werden. Versand an ein Partnerlabor in den USA.\n\nRichtpreis: €600–€900"
+                body: "Für Situationen, die eine hochpräzise Diagnose erfordern insbesondere bei Verdacht auf Stachybotrys, bei einer Vorgeschichte schwerer Wasserschäden oder bei anhaltenden gesundheitlichen Beschwerden.\n\nAnalyse von angesammeltem Staub mittels MSqPCR die empfindlichste Methode, um eine Vorgeschichte von Pilzkontamination nachzuweisen, einschließlich Arten, die bei Luftprobenahmen häufig übersehen werden. Versand an ein Partnerlabor in den USA.\n\nRichtpreis: €600 €900"
             },
             {
-                eyebrow: "STUFE 3 — HERTSMI-2",
+                eyebrow: "STUFE 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Vereinfachte ERMI-Version mit Fokus auf die fünf klinisch relevantesten Arten: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum und Wallemia sebi. Speziell entwickelt für die klinische Bewertung im Kontext von CIRS und gebäudebedingten Erkrankungen.\n\nRichtpreis: €450–€700\n\nWichtiger Hinweis: MoldCheck.pt / InspectOS ist der einzige HERTSMI-2-Anbieter auf der Iberischen Halbinsel und nach unserem Kenntnisstand in Europa. Das Referenzlabor für diesen Test ist Mycometrics (USA).",
+                body: "Vereinfachte ERMI-Version mit Fokus auf die fünf klinisch relevantesten Arten: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum und Wallemia sebi. Speziell entwickelt für die klinische Bewertung im Kontext von CIRS und gebäudebedingten Erkrankungen.\n\nRichtpreis: €450 €700\n\nWichtiger Hinweis: MoldCheck.pt / InspectOS ist der einzige HERTSMI-2-Anbieter auf der Iberischen Halbinsel und nach unserem Kenntnisstand in Europa. Das Referenzlabor für diesen Test ist Mycometrics (USA).",
                 tone: "warning"
             },
             {
-                eyebrow: "STUFE 3 — Spezialisierte internationale Analyse",
+                eyebrow: "STUFE 3 Spezialisierte internationale Analyse",
                 title: "Mykotoxin-Oberflächenpanel",
-                body: "Chemische Analyse von Mykotoxinen in Oberflächenproben. Relevant, wenn der Verdacht auf Toxinbildung und gesundheitliche Auswirkungen besteht.\n\nRichtpreis: €700–€1.200"
+                body: "Chemische Analyse von Mykotoxinen in Oberflächenproben. Relevant, wenn der Verdacht auf Toxinbildung und gesundheitliche Auswirkungen besteht.\n\nRichtpreis: €700 €1.200"
             },
             {
-                eyebrow: "STUFE 3 — Spezialisierte internationale Analyse",
+                eyebrow: "STUFE 3 Spezialisierte internationale Analyse",
                 title: "Vollständiges Gebäudemikrobiom (NGS)",
-                body: "Genomische Sequenzierung der nächsten Generation — umfassende Identifikation aller vorhandenen Pilze und Bakterien. Die vollständigste derzeit verfügbare Diagnostik für Gebäude mit komplexer Vorgeschichte von Wasserschäden.\n\nRichtpreis: €1.000–€1.500"
+                body: "Genomische Sequenzierung der nächsten Generation umfassende Identifikation aller vorhandenen Pilze und Bakterien. Die vollständigste derzeit verfügbare Diagnostik für Gebäude mit komplexer Vorgeschichte von Wasserschäden.\n\nRichtpreis: €1.000 €1.500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "STUFE 4 — Kontinuierliche Überwachung",
+                eyebrow: "STUFE 4 Kontinuierliche Überwachung",
                 title: "Sensor für Innenraumluftqualität + Monitoring",
-                body: "Installation eines Sensors zur kontinuierlichen Überwachung (CO₂, TVOC, Temperatur, relative Luftfeuchtigkeit). Monatlicher Bericht mit Trendanalyse. Geeignet für Immobilien mit wiederkehrenden Problemen oder zur Nachkontrolle nach einer Sanierung.\n\nRichtpreis: €150–€300 (Installation) + €25–€60/Monat"
+                body: "Installation eines Sensors zur kontinuierlichen Überwachung (CO₂, TVOC, Temperatur, relative Luftfeuchtigkeit). Monatlicher Bericht mit Trendanalyse. Geeignet für Immobilien mit wiederkehrenden Problemen oder zur Nachkontrolle nach einer Sanierung.\n\nRichtpreis: €150 €300 (Installation) + €25 €60/Monat"
             },
             {
-                eyebrow: "STUFE 4 — Kontinuierliche Überwachung",
+                eyebrow: "STUFE 4 Kontinuierliche Überwachung",
                 title: "Jährliche Nachinspektion",
-                body: "Für Immobilien mit einer Vorgeschichte von Feuchtigkeitsproblemen. Jährlicher Besuch zur Zustandsbewertung und frühen Erkennung möglicher Rückfälle.\n\nRichtpreis: €180–€280/Jahr"
+                body: "Für Immobilien mit einer Vorgeschichte von Feuchtigkeitsproblemen. Jährlicher Besuch zur Zustandsbewertung und frühen Erkennung möglicher Rückfälle.\n\nRichtpreis: €180 €280/Jahr"
             }
         ],
         bookingTitle: "Buchung",
@@ -2021,7 +2021,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Reservierung",
                 title: "Inspektion über InspectOS buchen",
-                body: "Inspektionen werden über InspectOS gebucht — Portugals unabhängige Plattform für Immobilieninspektionen.",
+                body: "Inspektionen werden über InspectOS gebucht Portugals unabhängige Plattform für Immobilieninspektionen.",
                 ctaLabel: "→ Inspektion auf InspectOS buchen",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -2035,10 +2035,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Geografische Abdeckung",
-        coverageBody: "Derzeit verfügbar in Lissabon, Porto, Setúbal, Cascais, Sintra, Braga und an der Algarve (Faro, Lagos, Albufeira). Das Angebot wird erweitert — bitte Verfügbarkeit für Ihre Region prüfen.",
+        coverageBody: "Derzeit verfügbar in Lissabon, Porto, Setúbal, Cascais, Sintra, Braga und an der Algarve (Faro, Lagos, Albufeira). Das Angebot wird erweitert bitte Verfügbarkeit für Ihre Region prüfen.",
         pricingTitle: "Hinweis zu den Preisen",
         pricingBody: "Die angegebenen Preise sind Richtwerte auf Basis von Größe und Komplexität der Immobilie. Der Endpreis wird nach dem Erstkontakt und vor jeder verbindlichen Zusage bestätigt. Es gibt keine separate Diagnosegebühr: Die Gesamtkosten der Inspektion entsprechen dem Preis der Leistung.",
-        disclosureText: "MoldCheck.pt ist eine Initiative der FAIRBANK Group, dem Unternehmen hinter InspectOS. Wir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass sie notwendig ist — nicht weil wir an einer nachfolgenden Behandlung verdienen."
+        disclosureText: "MoldCheck.pt ist eine Initiative der FAIRBANK Group, dem Unternehmen hinter InspectOS. Wir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass sie notwendig ist nicht weil wir an einer nachfolgenden Behandlung verdienen."
     },
     nl: {
         eyebrow: "Onafhankelijke inspectie",
@@ -2046,80 +2046,80 @@ const servicesContentByLocale = {
         description: "Onafhankelijke diagnose, laboratoriumanalyse en monitoring helder uitgelegd, zonder commerciële behandellogica.",
         independentTitle: "Wat betekent \u201eonafhankelijk\u201c?",
         independentParagraphs: [
-            "In Portugal wordt de diagnose van vocht- en schimmelproblemen bijna altijd uitgevoerd door het bedrijf dat vervolgens ook de behandeling verkoopt. De gratis diagnose is het begin van een verkooptrechter — geen onpartijdige informatiedienst.",
+            "In Portugal wordt de diagnose van vocht- en schimmelproblemen bijna altijd uitgevoerd door het bedrijf dat vervolgens ook de behandeling verkoopt. De gratis diagnose is het begin van een verkooptrechter geen onpartijdige informatiedienst.",
             "Een onafhankelijke inspectie werkt anders. De inspecteur rekent zijn tijd aan. Hij ontvangt geen commissie van het saneringsbedrijf, de fabrikant van het ventilatiesysteem of enig ander bedrijf dat voordeel zou kunnen hebben bij de uitkomst van de diagnose. Zijn enige belang is om je precies te vertellen wat er aan de hand is.",
-            "Dit is het model dat InspectOS vertegenwoordigt — en het enige model dat MoldCheck.pt aanbeveelt."
+            "Dit is het model dat InspectOS vertegenwoordigt en het enige model dat MoldCheck.pt aanbeveelt."
         ],
         howItWorksTitle: "Hoe het werkt",
-        howItWorksBody: "Inspecties worden uitgevoerd door gecertificeerde InspectOS-inspecteurs die beschikken over:\n\nPrecisie digitale hygrometer — meting van relatieve luchtvochtigheid en temperatuur\n\nVochtmeter voor materialen — niet-invasieve meting van het vochtgehalte in muren, vloeren en plafonds\n\nWarmtebeeldcamera — detectie van koudebruggen, verborgen waterinsijpeling en condensatiezones\n\nMogelijkheid tot monstername — oppervlakken, materialen en lucht, voor laboratoriumanalyse wanneer nodig\n\nNa de inspectie ontvang je een schriftelijk rapport met: de locatie en omvang van het probleem, de waarschijnlijke oorzaak, wetenschappelijk onderbouwde aanbevelingen, en een duidelijke indicatie of laboratoriumanalyse wel of niet nodig is.\n\nHet rapport bevat geen offerte voor behandeling. Wij bevelen geen specifieke saneringsbedrijven aan. Wij hebben geen commerciële afspraken met saneringsfirma’s.",
+        howItWorksBody: "Inspecties worden uitgevoerd door gecertificeerde InspectOS-inspecteurs die beschikken over:\n\nPrecisie digitale hygrometer meting van relatieve luchtvochtigheid en temperatuur\n\nVochtmeter voor materialen niet-invasieve meting van het vochtgehalte in muren, vloeren en plafonds\n\nWarmtebeeldcamera detectie van koudebruggen, verborgen waterinsijpeling en condensatiezones\n\nMogelijkheid tot monstername oppervlakken, materialen en lucht, voor laboratoriumanalyse wanneer nodig\n\nNa de inspectie ontvang je een schriftelijk rapport met: de locatie en omvang van het probleem, de waarschijnlijke oorzaak, wetenschappelijk onderbouwde aanbevelingen, en een duidelijke indicatie of laboratoriumanalyse wel of niet nodig is.\n\nHet rapport bevat geen offerte voor behandeling. Wij bevelen geen specifieke saneringsbedrijven aan. Wij hebben geen commerciële afspraken met saneringsfirma’s.",
         servicesTitle: "Beschikbare diensten",
         tier1Cards: [
             {
-                eyebrow: "NIVEAU 1 — Visuele en instrumentele inspectie",
+                eyebrow: "NIVEAU 1 Visuele en instrumentele inspectie",
                 title: "Standaardinspectie",
-                body: "Volledige woninginspectie met hygrometer, vochtmeter en warmtebeeldcamera. Inclusief schriftelijk rapport.\n\nIndicatieve prijs: €250–€400 (tot 100 m²) · €400–€800 (tot 250 m²)"
+                body: "Volledige woninginspectie met hygrometer, vochtmeter en warmtebeeldcamera. Inclusief schriftelijk rapport.\n\nIndicatieve prijs: €250 €400 (tot 100 m²) · €400 €800 (tot 250 m²)"
             },
             {
-                eyebrow: "NIVEAU 1 — Visuele en instrumentele inspectie",
+                eyebrow: "NIVEAU 1 Visuele en instrumentele inspectie",
                 title: "Pre-aankoopinspectie",
-                body: "Voor wie overweegt een woning te kopen en vóór ondertekening exact wil weten wat er aan de hand is. Inclusief rapport bruikbaar voor prijsonderhandeling of heroverweging van de aankoop.\n\nIndicatieve prijs: €350–€600"
+                body: "Voor wie overweegt een woning te kopen en vóór ondertekening exact wil weten wat er aan de hand is. Inclusief rapport bruikbaar voor prijsonderhandeling of heroverweging van de aankoop.\n\nIndicatieve prijs: €350 €600"
             },
             {
-                eyebrow: "NIVEAU 1 — Visuele en instrumentele inspectie",
+                eyebrow: "NIVEAU 1 Visuele en instrumentele inspectie",
                 title: "Inspectie na overstroming / noodgeval",
-                body: "Voor woningen die getroffen zijn door overstroming, gesprongen leidingen of plotselinge waterinsijpeling. Gericht op beoordeling van waterschade en risico op schimmelbesmetting. Snelle interventie mogelijk.\n\nIndicatieve prijs: €300–€500"
+                body: "Voor woningen die getroffen zijn door overstroming, gesprongen leidingen of plotselinge waterinsijpeling. Gericht op beoordeling van waterschade en risico op schimmelbesmetting. Snelle interventie mogelijk.\n\nIndicatieve prijs: €300 €500"
             },
             {
-                eyebrow: "NIVEAU 1 — Visuele en instrumentele inspectie",
+                eyebrow: "NIVEAU 1 Visuele en instrumentele inspectie",
                 title: "Verificatie na sanering",
-                body: "Onafhankelijke bevestiging dat saneringswerk correct is uitgevoerd en dat het probleem werkelijk is opgelost — vóór de eindbetaling aan de uitvoerder.\n\nIndicatieve prijs: €200–€350"
+                body: "Onafhankelijke bevestiging dat saneringswerk correct is uitgevoerd en dat het probleem werkelijk is opgelost vóór de eindbetaling aan de uitvoerder.\n\nIndicatieve prijs: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "NIVEAU 2 — Laboratoriumanalyse",
+                eyebrow: "NIVEAU 2 Laboratoriumanalyse",
                 title: "Luchtmonstering + mycologische analyse",
-                body: "Wanneer visuele en instrumentele inspectie niet volstaat om aanwezige soorten te identificeren of het risico nauwkeurig te beoordelen, bevelen we laboratoriumanalyse aan.\n\nVerzameling van binnen- en buitenluchtmonsters met analyse in een ISO 17025-gecertificeerd laboratorium. Identificeert aanwezige schimmelsoorten en vergelijkt concentraties binnen en buiten.\n\nIndicatieve prijs: €500–€900 (inclusief inspectie, monstername en analyse)"
+                body: "Wanneer visuele en instrumentele inspectie niet volstaat om aanwezige soorten te identificeren of het risico nauwkeurig te beoordelen, bevelen we laboratoriumanalyse aan.\n\nVerzameling van binnen- en buitenluchtmonsters met analyse in een ISO 17025-gecertificeerd laboratorium. Identificeert aanwezige schimmelsoorten en vergelijkt concentraties binnen en buiten.\n\nIndicatieve prijs: €500 €900 (inclusief inspectie, monstername en analyse)"
             },
             {
-                eyebrow: "NIVEAU 2 — Laboratoriumanalyse",
+                eyebrow: "NIVEAU 2 Laboratoriumanalyse",
                 title: "Oppervlakte- en materiaalmonsters",
-                body: "Monstername van zichtbare oppervlakken en, indien nodig, van bouwmaterialen. Geschikt voor soortidentificatie op specifieke probleemlocaties.\n\nIndicatieve prijs: €300–€600"
+                body: "Monstername van zichtbare oppervlakken en, indien nodig, van bouwmaterialen. Geschikt voor soortidentificatie op specifieke probleemlocaties.\n\nIndicatieve prijs: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "NIVEAU 3 — Gespecialiseerde internationale analyse",
+                eyebrow: "NIVEAU 3 Gespecialiseerde internationale analyse",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Voor situaties die een zeer nauwkeurige diagnose vereisen — vooral bij vermoeden van Stachybotrys, een voorgeschiedenis van ernstige waterschade of aanhoudende gezondheidsklachten.\n\nAnalyse van opgehoopt stof via MSqPCR — de gevoeligste methode die momenteel beschikbaar is om een geschiedenis van schimmelverontreiniging vast te stellen, inclusief soorten die vaak niet worden gedetecteerd via luchtmonsters. Verzonden naar een partnerlaboratorium in de VS.\n\nIndicatieve prijs: €600–€900"
+                body: "Voor situaties die een zeer nauwkeurige diagnose vereisen vooral bij vermoeden van Stachybotrys, een voorgeschiedenis van ernstige waterschade of aanhoudende gezondheidsklachten.\n\nAnalyse van opgehoopt stof via MSqPCR de gevoeligste methode die momenteel beschikbaar is om een geschiedenis van schimmelverontreiniging vast te stellen, inclusief soorten die vaak niet worden gedetecteerd via luchtmonsters. Verzonden naar een partnerlaboratorium in de VS.\n\nIndicatieve prijs: €600 €900"
             },
             {
-                eyebrow: "NIVEAU 3 — HERTSMI-2",
+                eyebrow: "NIVEAU 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Vereenvoudigde versie van ERMI, gericht op de vijf klinisch meest relevante soorten: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum en Wallemia sebi. Speciaal ontwikkeld voor klinische beoordeling in de context van CIRS en gebouwgerelateerde klachten.\n\nIndicatieve prijs: €450–€700\n\nBelangrijke opmerking: MoldCheck.pt / InspectOS is de enige HERTSMI-2-aanbieder op het Iberisch Schiereiland en, voor zover wij weten, in heel Europa. Het referentielaboratorium voor deze test is Mycometrics (VS).",
+                body: "Vereenvoudigde versie van ERMI, gericht op de vijf klinisch meest relevante soorten: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum en Wallemia sebi. Speciaal ontwikkeld voor klinische beoordeling in de context van CIRS en gebouwgerelateerde klachten.\n\nIndicatieve prijs: €450 €700\n\nBelangrijke opmerking: MoldCheck.pt / InspectOS is de enige HERTSMI-2-aanbieder op het Iberisch Schiereiland en, voor zover wij weten, in heel Europa. Het referentielaboratorium voor deze test is Mycometrics (VS).",
                 tone: "warning"
             },
             {
-                eyebrow: "NIVEAU 3 — Gespecialiseerde internationale analyse",
+                eyebrow: "NIVEAU 3 Gespecialiseerde internationale analyse",
                 title: "Mycotoxine-oppervlaktepanel",
-                body: "Chemische analyse van mycotoxinen in oppervlakte-monsters. Relevant wanneer toxineproductie en gezondheidseffecten worden vermoed.\n\nIndicatieve prijs: €700–€1.200"
+                body: "Chemische analyse van mycotoxinen in oppervlakte-monsters. Relevant wanneer toxineproductie en gezondheidseffecten worden vermoed.\n\nIndicatieve prijs: €700 €1.200"
             },
             {
-                eyebrow: "NIVEAU 3 — Gespecialiseerde internationale analyse",
+                eyebrow: "NIVEAU 3 Gespecialiseerde internationale analyse",
                 title: "Volledig gebouwmicrobioom (NGS)",
-                body: "Next-generation genomische sequencing — uitgebreide identificatie van alle aanwezige schimmels en bacteriën. De meest volledige diagnostiek die momenteel beschikbaar is voor gebouwen met een complexe voorgeschiedenis van waterschade.\n\nIndicatieve prijs: €1.000–€1.500"
+                body: "Next-generation genomische sequencing uitgebreide identificatie van alle aanwezige schimmels en bacteriën. De meest volledige diagnostiek die momenteel beschikbaar is voor gebouwen met een complexe voorgeschiedenis van waterschade.\n\nIndicatieve prijs: €1.000 €1.500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "NIVEAU 4 — Continue monitoring",
+                eyebrow: "NIVEAU 4 Continue monitoring",
                 title: "Binnenluchtkwaliteitssensor + monitoring",
-                body: "Installatie van een sensor voor continue monitoring (CO₂, TVOC, temperatuur, relatieve luchtvochtigheid). Maandelijks rapport met trendanalyse. Geschikt voor woningen met terugkerende problemen of voor monitoring na sanering.\n\nIndicatieve prijs: €150–€300 (installatie) + €25–€60/maand"
+                body: "Installatie van een sensor voor continue monitoring (CO₂, TVOC, temperatuur, relatieve luchtvochtigheid). Maandelijks rapport met trendanalyse. Geschikt voor woningen met terugkerende problemen of voor monitoring na sanering.\n\nIndicatieve prijs: €150 €300 (installatie) + €25 €60/maand"
             },
             {
-                eyebrow: "NIVEAU 4 — Continue monitoring",
+                eyebrow: "NIVEAU 4 Continue monitoring",
                 title: "Jaarlijkse herinspectie",
-                body: "Voor woningen met een geschiedenis van vochtproblemen. Jaarlijks bezoek voor conditiebeoordeling en vroege detectie van terugkeer van het probleem.\n\nIndicatieve prijs: €180–€280/jaar"
+                body: "Voor woningen met een geschiedenis van vochtproblemen. Jaarlijks bezoek voor conditiebeoordeling en vroege detectie van terugkeer van het probleem.\n\nIndicatieve prijs: €180 €280/jaar"
             }
         ],
         bookingTitle: "Hoe te boeken",
@@ -2127,7 +2127,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Boeking",
                 title: "Boek via InspectOS",
-                body: "Inspecties worden geboekt via InspectOS — het onafhankelijke vastgoedinspectieplatform in Portugal.",
+                body: "Inspecties worden geboekt via InspectOS het onafhankelijke vastgoedinspectieplatform in Portugal.",
                 ctaLabel: "→ Boek een inspectie op InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -2141,10 +2141,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Geografische dekking",
-        coverageBody: "Momenteel beschikbaar in Lissabon, Porto, Setúbal, Cascais, Sintra, Braga en de Algarve (Faro, Lagos, Albufeira). Dekking wordt uitgebreid — controleer de beschikbaarheid voor jouw regio.",
+        coverageBody: "Momenteel beschikbaar in Lissabon, Porto, Setúbal, Cascais, Sintra, Braga en de Algarve (Faro, Lagos, Albufeira). Dekking wordt uitgebreid controleer de beschikbaarheid voor jouw regio.",
         pricingTitle: "Opmerking over prijzen",
         pricingBody: "De vermelde prijzen zijn richtprijzen op basis van de grootte en complexiteit van de woning. De definitieve prijs wordt bevestigd na eerste contact en vóór enige verbintenis. Er is geen aparte diagnosetoeslag: de totale kost van de inspectie is de prijs van de dienst.",
-        disclosureText: "MoldCheck.pt is een initiatief van de FAIRBANK Group, het bedrijf achter InspectOS. Wij verkopen geen vochtbehandelingen. Wij ontvangen geen commissies van saneringsbedrijven. Wanneer wij een inspectie of laboratoriumanalyse aanbevelen, is dat omdat wij denken dat je die nodig hebt — niet omdat wij verdienen aan de behandeling die daarop volgt."
+        disclosureText: "MoldCheck.pt is een initiatief van de FAIRBANK Group, het bedrijf achter InspectOS. Wij verkopen geen vochtbehandelingen. Wij ontvangen geen commissies van saneringsbedrijven. Wanneer wij een inspectie of laboratoriumanalyse aanbevelen, is dat omdat wij denken dat je die nodig hebt niet omdat wij verdienen aan de behandeling die daarop volgt."
     },
     it: {
         eyebrow: "Ispezione indipendente",
@@ -2152,80 +2152,80 @@ const servicesContentByLocale = {
         description: "Diagnosi indipendente, analisi di laboratorio e monitoraggio spiegati con chiarezza, senza l’impostazione commerciale del trattamento.",
         independentTitle: "Cosa significa \u00abindipendente\u00bb?",
         independentParagraphs: [
-            "In Portogallo, la diagnosi dei problemi di umidità e muffa è quasi sempre effettuata dall’azienda che poi venderà il trattamento. La diagnosi gratuita è l’inizio di un funnel commerciale — non un servizio informativo imparziale.",
+            "In Portogallo, la diagnosi dei problemi di umidità e muffa è quasi sempre effettuata dall’azienda che poi venderà il trattamento. La diagnosi gratuita è l’inizio di un funnel commerciale non un servizio informativo imparziale.",
             "Un’ispezione indipendente funziona in modo diverso. L’ispettore fa pagare il proprio tempo. Non riceve commissioni dall’impresa di bonifica, dal produttore del sistema di ventilazione né da qualsiasi altra azienda che possa beneficiare del risultato della diagnosi. Il suo unico interesse è dirti con precisione che cosa hai.",
-            "Questo è il modello rappresentato da InspectOS — ed è l’unico modello che MoldCheck.pt raccomanda."
+            "Questo è il modello rappresentato da InspectOS ed è l’unico modello che MoldCheck.pt raccomanda."
         ],
         howItWorksTitle: "Come funziona",
-        howItWorksBody: "Le ispezioni vengono effettuate da ispettori certificati InspectOS dotati di:\n\nigrometro digitale di precisione — misurazione dell’umidità relativa dell’aria e della temperatura\n\nmisuratore di umidità dei materiali (moisture meter) — misurazione non invasiva del contenuto di umidità in pareti, pavimenti e soffitti\n\ntermocamera — rilevazione di ponti termici, infiltrazioni nascoste e zone di condensazione invisibili a occhio nudo\n\ncapacità di prelievo di campioni — superfici, materiali e aria, per analisi di laboratorio quando necessario\n\nDopo l’ispezione ricevi un rapporto scritto con: localizzazione ed estensione del problema, causa probabile, raccomandazioni basate su evidenze scientifiche e indicazione chiara di quando sia o non sia necessaria un’analisi di laboratorio.\n\nIl rapporto non include un preventivo di trattamento. Non raccomandiamo aziende specifiche di bonifica. Non abbiamo alcun accordo commerciale con imprese di bonifica.",
+        howItWorksBody: "Le ispezioni vengono effettuate da ispettori certificati InspectOS dotati di:\n\nigrometro digitale di precisione misurazione dell’umidità relativa dell’aria e della temperatura\n\nmisuratore di umidità dei materiali (moisture meter) misurazione non invasiva del contenuto di umidità in pareti, pavimenti e soffitti\n\ntermocamera rilevazione di ponti termici, infiltrazioni nascoste e zone di condensazione invisibili a occhio nudo\n\ncapacità di prelievo di campioni superfici, materiali e aria, per analisi di laboratorio quando necessario\n\nDopo l’ispezione ricevi un rapporto scritto con: localizzazione ed estensione del problema, causa probabile, raccomandazioni basate su evidenze scientifiche e indicazione chiara di quando sia o non sia necessaria un’analisi di laboratorio.\n\nIl rapporto non include un preventivo di trattamento. Non raccomandiamo aziende specifiche di bonifica. Non abbiamo alcun accordo commerciale con imprese di bonifica.",
         servicesTitle: "Servizi disponibili",
         tier1Cards: [
             {
-                eyebrow: "LIVELLO 1 — Ispezione visiva e strumentale",
+                eyebrow: "LIVELLO 1 Ispezione visiva e strumentale",
                 title: "Ispezione standard",
-                body: "Ispezione completa dell’abitazione con igrometro, misuratore di umidità e termocamera. Include rapporto scritto.\n\nPrezzo indicativo: €250–€400 (abitazione fino a 100 m²) | €400–€800 (abitazione fino a 250 m²)"
+                body: "Ispezione completa dell’abitazione con igrometro, misuratore di umidità e termocamera. Include rapporto scritto.\n\nPrezzo indicativo: €250 €400 (abitazione fino a 100 m²) | €400 €800 (abitazione fino a 250 m²)"
             },
             {
-                eyebrow: "LIVELLO 1 — Ispezione visiva e strumentale",
+                eyebrow: "LIVELLO 1 Ispezione visiva e strumentale",
                 title: "Ispezione pre-acquisto",
-                body: "Per chi sta valutando l’acquisto di un immobile e vuole sapere esattamente che cosa sta comprando prima di firmare. Include rapporto utilizzabile in fase di negoziazione o di recesso da una promessa di acquisto.\n\nPrezzo indicativo: €350–€600"
+                body: "Per chi sta valutando l’acquisto di un immobile e vuole sapere esattamente che cosa sta comprando prima di firmare. Include rapporto utilizzabile in fase di negoziazione o di recesso da una promessa di acquisto.\n\nPrezzo indicativo: €350 €600"
             },
             {
-                eyebrow: "LIVELLO 1 — Ispezione visiva e strumentale",
+                eyebrow: "LIVELLO 1 Ispezione visiva e strumentale",
                 title: "Ispezione post-alluvione / emergenza",
-                body: "Per abitazioni colpite da allagamento, rottura di tubazioni o infiltrazione improvvisa. Focalizzata sulla valutazione dei danni da acqua e del rischio di contaminazione fungina. Disponibile risposta rapida.\n\nPrezzo indicativo: €300–€500"
+                body: "Per abitazioni colpite da allagamento, rottura di tubazioni o infiltrazione improvvisa. Focalizzata sulla valutazione dei danni da acqua e del rischio di contaminazione fungina. Disponibile risposta rapida.\n\nPrezzo indicativo: €300 €500"
             },
             {
-                eyebrow: "LIVELLO 1 — Ispezione visiva e strumentale",
+                eyebrow: "LIVELLO 1 Ispezione visiva e strumentale",
                 title: "Verifica post-bonifica",
-                body: "Conferma indipendente che un intervento di bonifica sia stato eseguito correttamente e che il problema sia realmente risolto — prima di effettuare il pagamento finale all’impresa.\n\nPrezzo indicativo: €200–€350"
+                body: "Conferma indipendente che un intervento di bonifica sia stato eseguito correttamente e che il problema sia realmente risolto prima di effettuare il pagamento finale all’impresa.\n\nPrezzo indicativo: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "LIVELLO 2 — Analisi di laboratorio",
+                eyebrow: "LIVELLO 2 Analisi di laboratorio",
                 title: "Campionamento dell’aria + analisi micologica",
-                body: "Quando l’ispezione visiva e strumentale non è sufficiente per identificare le specie presenti o quantificare con precisione il rischio, raccomandiamo un’analisi di laboratorio.\n\nPrelievo di campioni d’aria interni ed esterni con analisi in laboratorio certificato ISO 17025. Identifica le specie fungine presenti e confronta le concentrazioni interne/esterne.\n\nPrezzo indicativo: €500–€900 (include ispezione, prelievo e analisi)"
+                body: "Quando l’ispezione visiva e strumentale non è sufficiente per identificare le specie presenti o quantificare con precisione il rischio, raccomandiamo un’analisi di laboratorio.\n\nPrelievo di campioni d’aria interni ed esterni con analisi in laboratorio certificato ISO 17025. Identifica le specie fungine presenti e confronta le concentrazioni interne/esterne.\n\nPrezzo indicativo: €500 €900 (include ispezione, prelievo e analisi)"
             },
             {
-                eyebrow: "LIVELLO 2 — Analisi di laboratorio",
+                eyebrow: "LIVELLO 2 Analisi di laboratorio",
                 title: "Campionamento di superfici e materiali",
-                body: "Prelievo di campioni da superfici visibili e, quando indicato, da materiali da costruzione. Adatto all’identificazione delle specie in punti specifici di interesse.\n\nPrezzo indicativo: €300–€600"
+                body: "Prelievo di campioni da superfici visibili e, quando indicato, da materiali da costruzione. Adatto all’identificazione delle specie in punti specifici di interesse.\n\nPrezzo indicativo: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "LIVELLO 3 — Analisi specialistica internazionale",
+                eyebrow: "LIVELLO 3 Analisi specialistica internazionale",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Per situazioni che richiedono una diagnosi di precisione — in particolare sospetto di Stachybotrys, storico di gravi danni da acqua o casi con sintomi di salute persistenti.\n\nAnalisi della polvere accumulata tramite MSqPCR — il metodo più sensibile disponibile per rilevare una storia di contaminazione fungina, comprese specie difficili da individuare con il solo campionamento dell’aria. Inviato a laboratorio partner negli Stati Uniti.\n\nPrezzo indicativo: €600–€900"
+                body: "Per situazioni che richiedono una diagnosi di precisione in particolare sospetto di Stachybotrys, storico di gravi danni da acqua o casi con sintomi di salute persistenti.\n\nAnalisi della polvere accumulata tramite MSqPCR il metodo più sensibile disponibile per rilevare una storia di contaminazione fungina, comprese specie difficili da individuare con il solo campionamento dell’aria. Inviato a laboratorio partner negli Stati Uniti.\n\nPrezzo indicativo: €600 €900"
             },
             {
-                eyebrow: "LIVELLO 3 — HERTSMI-2",
+                eyebrow: "LIVELLO 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Versione semplificata dell’ERMI focalizzata sulle 5 specie clinicamente più rilevanti: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Sviluppato specificamente per la valutazione clinica in contesto di CIRS / malattie correlate agli edifici.\n\n⚠️ Nota importante: MoldCheck.pt / InspectOS è l’unico fornitore di servizi HERTSMI-2 nella Penisola Iberica e, per quanto ne sappiamo, in tutta Europa. Il laboratorio di riferimento per questo test è Mycometrics (USA).\n\nPrezzo indicativo: €450–€700",
+                body: "Versione semplificata dell’ERMI focalizzata sulle 5 specie clinicamente più rilevanti: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Sviluppato specificamente per la valutazione clinica in contesto di CIRS / malattie correlate agli edifici.\n\n⚠️ Nota importante: MoldCheck.pt / InspectOS è l’unico fornitore di servizi HERTSMI-2 nella Penisola Iberica e, per quanto ne sappiamo, in tutta Europa. Il laboratorio di riferimento per questo test è Mycometrics (USA).\n\nPrezzo indicativo: €450 €700",
                 tone: "warning"
             },
             {
-                eyebrow: "LIVELLO 3 — Analisi specialistica internazionale",
+                eyebrow: "LIVELLO 3 Analisi specialistica internazionale",
                 title: "Pannello di micotossine su superfici",
-                body: "Analisi chimica delle micotossine in campioni di superficie. Rilevante quando si sospetta produzione di tossine e impatto sulla salute.\n\nPrezzo indicativo: €700–€1.200"
+                body: "Analisi chimica delle micotossine in campioni di superficie. Rilevante quando si sospetta produzione di tossine e impatto sulla salute.\n\nPrezzo indicativo: €700 €1.200"
             },
             {
-                eyebrow: "LIVELLO 3 — Analisi specialistica internazionale",
+                eyebrow: "LIVELLO 3 Analisi specialistica internazionale",
                 title: "Microbioma completo dell’edificio (NGS)",
-                body: "Sequenziamento genomico di nuova generazione — identificazione completa di tutti i funghi e batteri presenti. La diagnosi più completa disponibile per edifici con storia complessa di danni da acqua.\n\nPrezzo indicativo: €1.000–€1.500"
+                body: "Sequenziamento genomico di nuova generazione identificazione completa di tutti i funghi e batteri presenti. La diagnosi più completa disponibile per edifici con storia complessa di danni da acqua.\n\nPrezzo indicativo: €1.000 €1.500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "LIVELLO 4 — Monitoraggio continuo",
+                eyebrow: "LIVELLO 4 Monitoraggio continuo",
                 title: "Sensore di qualità dell’aria interna + monitoraggio",
-                body: "Installazione di sensore per monitoraggio continuo (CO₂, TVOC, temperatura, umidità relativa). Rapporto mensile con analisi delle tendenze. Adatto per abitazioni con problemi ricorrenti o per monitoraggio post-bonifica.\n\nPrezzo indicativo: €150–€300 (installazione) + €25–€60/mese"
+                body: "Installazione di sensore per monitoraggio continuo (CO₂, TVOC, temperatura, umidità relativa). Rapporto mensile con analisi delle tendenze. Adatto per abitazioni con problemi ricorrenti o per monitoraggio post-bonifica.\n\nPrezzo indicativo: €150 €300 (installazione) + €25 €60/mese"
             },
             {
-                eyebrow: "LIVELLO 4 — Monitoraggio continuo",
+                eyebrow: "LIVELLO 4 Monitoraggio continuo",
                 title: "Re-ispezione annuale",
-                body: "Per abitazioni con storico di problemi di umidità. Visita annuale per valutazione delle condizioni e rilevazione precoce di eventuali recidive.\n\nPrezzo indicativo: €180–€280/anno"
+                body: "Per abitazioni con storico di problemi di umidità. Visita annuale per valutazione delle condizioni e rilevazione precoce di eventuali recidive.\n\nPrezzo indicativo: €180 €280/anno"
             }
         ],
         bookingTitle: "Come prenotare",
@@ -2233,7 +2233,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "Prenotazione",
                 title: "Prenota tramite InspectOS",
-                body: "Le ispezioni vengono effettuate tramite InspectOS — piattaforma indipendente di ispezione immobiliare in Portogallo.",
+                body: "Le ispezioni vengono effettuate tramite InspectOS piattaforma indipendente di ispezione immobiliare in Portogallo.",
                 ctaLabel: "→ Prenota un’ispezione su InspectOS",
                 ctaHref: "https://inspectos.pt",
                 openInNewTab: true
@@ -2247,10 +2247,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Copertura geografica",
-        coverageBody: "Attualmente disponibile in Lisbona, Porto, Setúbal, Cascais, Sintra, Braga e Algarve (Faro, Lagos, Albufeira). Copertura in espansione — verifica la disponibilità per la tua zona.",
+        coverageBody: "Attualmente disponibile in Lisbona, Porto, Setúbal, Cascais, Sintra, Braga e Algarve (Faro, Lagos, Albufeira). Copertura in espansione verifica la disponibilità per la tua zona.",
         pricingTitle: "Nota sui prezzi",
         pricingBody: "I prezzi indicati sono intervalli orientativi basati sulla dimensione e sulla complessità dell’abitazione. Il prezzo finale viene confermato dopo il contatto iniziale e prima di qualsiasi impegno. Non esiste una tariffa di diagnosi separata: il costo totale dell’ispezione coincide con il prezzo del servizio.",
-        disclosureText: "MoldCheck.pt è un’iniziativa del FAIRBANK Group, l’azienda dietro InspectOS. Non vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da imprese di bonifica. Quando raccomandiamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno — non perché traiamo profitto dal trattamento successivo."
+        disclosureText: "MoldCheck.pt è un’iniziativa del FAIRBANK Group, l’azienda dietro InspectOS. Non vendiamo trattamenti contro l’umidità. Non riceviamo commissioni da imprese di bonifica. Quando raccomandiamo un’ispezione o un’analisi di laboratorio, è perché riteniamo che tu ne abbia bisogno non perché traiamo profitto dal trattamento successivo."
     },
     es: {
         eyebrow: "Inspección independiente",
@@ -2258,80 +2258,80 @@ const servicesContentByLocale = {
         description: "Diagnóstico independiente, análisis de laboratorio y monitorización explicados con claridad, sin la lógica comercial del tratamiento.",
         independentTitle: "\u00bfQu\u00e9 significa \u201cindependiente\u201d?",
         independentParagraphs: [
-            "En Portugal, el diagnóstico de los problemas de humedad y moho casi siempre lo realiza la empresa que después venderá el tratamiento. El diagnóstico gratuito es el inicio de un embudo comercial — no un servicio de información imparcial.",
+            "En Portugal, el diagnóstico de los problemas de humedad y moho casi siempre lo realiza la empresa que después venderá el tratamiento. El diagnóstico gratuito es el inicio de un embudo comercial no un servicio de información imparcial.",
             "Una inspección independiente funciona de forma distinta. El inspector cobra por su tiempo. No recibe comisión de la empresa de remediación, del fabricante del sistema de ventilación ni de ninguna otra empresa que pueda beneficiarse del resultado del diagnóstico. Su único interés es decirte con precisión qué tienes.",
-            "Este es el modelo que representa InspectOS — y el único modelo que MoldCheck.pt recomienda."
+            "Este es el modelo que representa InspectOS y el único modelo que MoldCheck.pt recomienda."
         ],
         howItWorksTitle: "¿Cómo funcionan?",
-        howItWorksBody: "Las inspecciones son realizadas por inspectores certificados de InspectOS equipados con:\n\nhigrómetro digital de precisión — medición de humedad relativa del aire y temperatura\n\nmedidor de humedad de materiales (moisture meter) — medición no invasiva del contenido de humedad en paredes, suelos y techos\n\ncámara termográfica — detección de puentes térmicos, infiltraciones ocultas y zonas de condensación invisibles a simple vista\n\ncapacidad de toma de muestras — superficies, materiales y aire, para análisis de laboratorio cuando sea necesario\n\nDespués de la inspección, recibes un informe escrito con: localización y extensión del problema, causa probable, recomendaciones basadas en evidencia científica e indicación clara de cuándo un análisis de laboratorio es o no necesario.\n\nEl informe no incluye un presupuesto de tratamiento. No recomendamos empresas concretas de saneamiento. No tenemos ningún acuerdo comercial con empresas de remediación.",
+        howItWorksBody: "Las inspecciones son realizadas por inspectores certificados de InspectOS equipados con:\n\nhigrómetro digital de precisión medición de humedad relativa del aire y temperatura\n\nmedidor de humedad de materiales (moisture meter) medición no invasiva del contenido de humedad en paredes, suelos y techos\n\ncámara termográfica detección de puentes térmicos, infiltraciones ocultas y zonas de condensación invisibles a simple vista\n\ncapacidad de toma de muestras superficies, materiales y aire, para análisis de laboratorio cuando sea necesario\n\nDespués de la inspección, recibes un informe escrito con: localización y extensión del problema, causa probable, recomendaciones basadas en evidencia científica e indicación clara de cuándo un análisis de laboratorio es o no necesario.\n\nEl informe no incluye un presupuesto de tratamiento. No recomendamos empresas concretas de saneamiento. No tenemos ningún acuerdo comercial con empresas de remediación.",
         servicesTitle: "Servicios disponibles",
         tier1Cards: [
             {
-                eyebrow: "NIVEL 1 — Inspección visual e instrumental",
+                eyebrow: "NIVEL 1 Inspección visual e instrumental",
                 title: "Inspección estándar",
-                body: "Inspección completa de la vivienda con higrómetro, medidor de humedad y cámara termográfica. Incluye informe escrito.\n\nPrecio orientativo: €250–€400 (vivienda de hasta 100 m²) | €400–€800 (vivienda de hasta 250 m²)"
+                body: "Inspección completa de la vivienda con higrómetro, medidor de humedad y cámara termográfica. Incluye informe escrito.\n\nPrecio orientativo: €250 €400 (vivienda de hasta 100 m²) | €400 €800 (vivienda de hasta 250 m²)"
             },
             {
-                eyebrow: "NIVEL 1 — Inspección visual e instrumental",
+                eyebrow: "NIVEL 1 Inspección visual e instrumental",
                 title: "Inspección precompra",
-                body: "Para quien esté considerando comprar una vivienda y quiera saber exactamente qué tiene antes de firmar. Incluye informe utilizable para negociación o desistimiento de promesa de compra.\n\nPrecio orientativo: €350–€600"
+                body: "Para quien esté considerando comprar una vivienda y quiera saber exactamente qué tiene antes de firmar. Incluye informe utilizable para negociación o desistimiento de promesa de compra.\n\nPrecio orientativo: €350 €600"
             },
             {
-                eyebrow: "NIVEL 1 — Inspección visual e instrumental",
+                eyebrow: "NIVEL 1 Inspección visual e instrumental",
                 title: "Inspección postinundación / emergencia",
-                body: "Para viviendas afectadas por inundación, rotura de tuberías o infiltración repentina. Enfocada en la evaluación de daños por agua y riesgo de contaminación fúngica. Respuesta rápida disponible.\n\nPrecio orientativo: €300–€500"
+                body: "Para viviendas afectadas por inundación, rotura de tuberías o infiltración repentina. Enfocada en la evaluación de daños por agua y riesgo de contaminación fúngica. Respuesta rápida disponible.\n\nPrecio orientativo: €300 €500"
             },
             {
-                eyebrow: "NIVEL 1 — Inspección visual e instrumental",
+                eyebrow: "NIVEL 1 Inspección visual e instrumental",
                 title: "Verificación postremediación",
-                body: "Confirmación independiente de que una obra de saneamiento se ha ejecutado correctamente y que el problema está realmente resuelto — antes de pagar el importe final a la empresa.\n\nPrecio orientativo: €200–€350"
+                body: "Confirmación independiente de que una obra de saneamiento se ha ejecutado correctamente y que el problema está realmente resuelto antes de pagar el importe final a la empresa.\n\nPrecio orientativo: €200 €350"
             }
         ],
         tier2Cards: [
             {
-                eyebrow: "NIVEL 2 — Análisis de laboratorio",
+                eyebrow: "NIVEL 2 Análisis de laboratorio",
                 title: "Muestreo de aire + análisis micológico",
-                body: "Cuando la inspección visual e instrumental no es suficiente para identificar las especies presentes o cuantificar el riesgo con precisión, recomendamos análisis de laboratorio.\n\nToma de muestras de aire interior y exterior con análisis en laboratorio certificado ISO 17025. Identifica las especies fúngicas presentes y compara las concentraciones interior/exterior.\n\nPrecio orientativo: €500–€900 (incluye inspección, toma de muestras y análisis)"
+                body: "Cuando la inspección visual e instrumental no es suficiente para identificar las especies presentes o cuantificar el riesgo con precisión, recomendamos análisis de laboratorio.\n\nToma de muestras de aire interior y exterior con análisis en laboratorio certificado ISO 17025. Identifica las especies fúngicas presentes y compara las concentraciones interior/exterior.\n\nPrecio orientativo: €500 €900 (incluye inspección, toma de muestras y análisis)"
             },
             {
-                eyebrow: "NIVEL 2 — Análisis de laboratorio",
+                eyebrow: "NIVEL 2 Análisis de laboratorio",
                 title: "Muestreo de superficies y materiales",
-                body: "Toma de muestras de superficies visibles y, cuando procede, de materiales de construcción. Adecuado para la identificación de especies en puntos específicos de interés.\n\nPrecio orientativo: €300–€600"
+                body: "Toma de muestras de superficies visibles y, cuando procede, de materiales de construcción. Adecuado para la identificación de especies en puntos específicos de interés.\n\nPrecio orientativo: €300 €600"
             }
         ],
         tier3Cards: [
             {
-                eyebrow: "NIVEL 3 — Análisis especializado internacional",
+                eyebrow: "NIVEL 3 Análisis especializado internacional",
                 title: "ERMI (Environmental Relative Moldiness Index)",
-                body: "Para situaciones que requieren un diagnóstico de precisión — especialmente sospecha de Stachybotrys, historial de daños graves por agua o casos con síntomas de salud persistentes.\n\nAnálisis del polvo acumulado mediante MSqPCR — el método más sensible disponible para detectar historial de contaminación fúngica, incluidas especies difíciles de detectar mediante muestreo de aire. Enviado a laboratorio colaborador en Estados Unidos.\n\nPrecio orientativo: €600–€900"
+                body: "Para situaciones que requieren un diagnóstico de precisión especialmente sospecha de Stachybotrys, historial de daños graves por agua o casos con síntomas de salud persistentes.\n\nAnálisis del polvo acumulado mediante MSqPCR el método más sensible disponible para detectar historial de contaminación fúngica, incluidas especies difíciles de detectar mediante muestreo de aire. Enviado a laboratorio colaborador en Estados Unidos.\n\nPrecio orientativo: €600 €900"
             },
             {
-                eyebrow: "NIVEL 3 — HERTSMI-2",
+                eyebrow: "NIVEL 3 HERTSMI-2",
                 title: "HERTSMI-2",
-                body: "Versión simplificada del ERMI centrada en las 5 especies clínicamente más relevantes: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Desarrollado específicamente para evaluación clínica en contexto de CIRS / enfermedades relacionadas con edificios.\n\n⚠️ Nota importante: MoldCheck.pt / InspectOS es el único proveedor de servicios HERTSMI-2 en la Península Ibérica y, hasta donde sabemos, en toda Europa. El laboratorio de referencia para esta prueba es Mycometrics (EE. UU.).\n\nPrecio orientativo: €450–€700",
+                body: "Versión simplificada del ERMI centrada en las 5 especies clínicamente más relevantes: Stachybotrys chartarum, Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Wallemia sebi. Desarrollado específicamente para evaluación clínica en contexto de CIRS / enfermedades relacionadas con edificios.\n\n⚠️ Nota importante: MoldCheck.pt / InspectOS es el único proveedor de servicios HERTSMI-2 en la Península Ibérica y, hasta donde sabemos, en toda Europa. El laboratorio de referencia para esta prueba es Mycometrics (EE. UU.).\n\nPrecio orientativo: €450 €700",
                 tone: "warning"
             },
             {
-                eyebrow: "NIVEL 3 — Análisis especializado internacional",
+                eyebrow: "NIVEL 3 Análisis especializado internacional",
                 title: "Panel de micotoxinas en superficies",
-                body: "Análisis químico de micotoxinas en muestras de superficie. Relevante cuando existe sospecha de producción de toxinas e impacto en la salud.\n\nPrecio orientativo: €700–€1.200"
+                body: "Análisis químico de micotoxinas en muestras de superficie. Relevante cuando existe sospecha de producción de toxinas e impacto en la salud.\n\nPrecio orientativo: €700 €1.200"
             },
             {
-                eyebrow: "NIVEL 3 — Análisis especializado internacional",
+                eyebrow: "NIVEL 3 Análisis especializado internacional",
                 title: "Microbioma completo del edificio (NGS)",
-                body: "Secuenciación genómica de nueva generación — identificación integral de todos los hongos y bacterias presentes. El diagnóstico más completo disponible para edificios con historial complejo de daños por agua.\n\nPrecio orientativo: €1.000–€1.500"
+                body: "Secuenciación genómica de nueva generación identificación integral de todos los hongos y bacterias presentes. El diagnóstico más completo disponible para edificios con historial complejo de daños por agua.\n\nPrecio orientativo: €1.000 €1.500"
             }
         ],
         tier4Cards: [
             {
-                eyebrow: "NIVEL 4 — Monitorización continua",
+                eyebrow: "NIVEL 4 Monitorización continua",
                 title: "Sensor de calidad del aire interior + seguimiento",
-                body: "Instalación de sensor de monitorización continua (CO₂, TVOC, temperatura, humedad relativa). Informe mensual con análisis de tendencias. Adecuado para viviendas con problemas recurrentes o para seguimiento postremediación.\n\nPrecio orientativo: €150–€300 (instalación) + €25–€60/mes"
+                body: "Instalación de sensor de monitorización continua (CO₂, TVOC, temperatura, humedad relativa). Informe mensual con análisis de tendencias. Adecuado para viviendas con problemas recurrentes o para seguimiento postremediación.\n\nPrecio orientativo: €150 €300 (instalación) + €25 €60/mes"
             },
             {
-                eyebrow: "NIVEL 4 — Monitorización continua",
+                eyebrow: "NIVEL 4 Monitorización continua",
                 title: "Reinspección anual",
-                body: "Para viviendas con historial de problemas de humedad. Visita anual para evaluación de condiciones y detección temprana de recurrencias.\n\nPrecio orientativo: €180–€280/año"
+                body: "Para viviendas con historial de problemas de humedad. Visita anual para evaluación de condiciones y detección temprana de recurrencias.\n\nPrecio orientativo: €180 €280/año"
             }
         ],
         bookingTitle: "Cómo reservar",
@@ -2353,10 +2353,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Cobertura geográfica",
-        coverageBody: "Actualmente disponible en Lisboa, Oporto, Setúbal, Cascais, Sintra, Braga y Algarve (Faro, Lagos, Albufeira). Cobertura en expansión — consulta disponibilidad para tu zona.",
+        coverageBody: "Actualmente disponible en Lisboa, Oporto, Setúbal, Cascais, Sintra, Braga y Algarve (Faro, Lagos, Albufeira). Cobertura en expansión consulta disponibilidad para tu zona.",
         pricingTitle: "Nota sobre precios",
         pricingBody: "Los precios indicados son rangos orientativos basados en el tamaño y la complejidad de la vivienda. El precio final se confirma tras el contacto inicial y antes de cualquier compromiso. No existe una tasa de diagnóstico separada: el coste total de la inspección es el precio del servicio.",
-        disclosureText: "MoldCheck.pt es una iniciativa del FAIRBANK Group, la empresa detrás de InspectOS. No vendemos tratamientos contra la humedad. No recibimos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas — no porque ganemos dinero con el tratamiento posterior."
+        disclosureText: "MoldCheck.pt es una iniciativa del FAIRBANK Group, la empresa detrás de InspectOS. No vendemos tratamientos contra la humedad. No recibimos comisiones de empresas de remediación. Cuando recomendamos una inspección o un análisis de laboratorio, es porque creemos que lo necesitas no porque ganemos dinero con el tratamiento posterior."
     }
 };
 function getServicesContent(locale) {
@@ -2392,17 +2392,17 @@ function getServicesFallbackContent(locale) {
                 cards: content.tier1Cards
             },
             {
-                title: locale === "pt" ? "NÍVEL 2 — Análise Laboratorial (laboratório europeu)" : locale === "en" ? "TIER 2 — Laboratory Analysis (European laboratory)" : locale === "fr" ? "NIVEAU 2 — Analyse en laboratoire (laboratoire européen)" : locale === "de" ? "STUFE 2 — Laboranalyse (europäisches Labor)" : locale === "nl" ? "NIVEAU 2 — Laboratoriumanalyse (Europees laboratorium)" : locale === "it" ? "LIVELLO 2 — Analisi di laboratorio (laboratorio europeo)" : "NIVEL 2 — Análisis de laboratorio (laboratorio europeo)",
+                title: locale === "pt" ? "NÍVEL 2 Análise Laboratorial (laboratório europeu)" : locale === "en" ? "TIER 2 Laboratory Analysis (European laboratory)" : locale === "fr" ? "NIVEAU 2 Analyse en laboratoire (laboratoire européen)" : locale === "de" ? "STUFE 2 Laboranalyse (europäisches Labor)" : locale === "nl" ? "NIVEAU 2 Laboratoriumanalyse (Europees laboratorium)" : locale === "it" ? "LIVELLO 2 Analisi di laboratorio (laboratorio europeo)" : "NIVEL 2 Análisis de laboratorio (laboratorio europeo)",
                 layout: "utility",
                 cards: content.tier2Cards
             },
             {
-                title: locale === "pt" ? "NÍVEL 3 — Análise Especializada Internacional" : locale === "en" ? "TIER 3 — Specialist International Analysis" : locale === "fr" ? "NIVEAU 3 — Analyse spécialisée internationale" : locale === "de" ? "STUFE 3 — Spezialisierte internationale Analyse" : locale === "nl" ? "NIVEAU 3 — Gespecialiseerde internationale analyse" : locale === "it" ? "LIVELLO 3 — Analisi specialistica internazionale" : "NIVEL 3 — Análisis especializado internacional",
+                title: locale === "pt" ? "NÍVEL 3 Análise Especializada Internacional" : locale === "en" ? "TIER 3 Specialist International Analysis" : locale === "fr" ? "NIVEAU 3 Analyse spécialisée internationale" : locale === "de" ? "STUFE 3 Spezialisierte internationale Analyse" : locale === "nl" ? "NIVEAU 3 Gespecialiseerde internationale analyse" : locale === "it" ? "LIVELLO 3 Analisi specialistica internazionale" : "NIVEL 3 Análisis especializado internacional",
                 layout: "utility",
                 cards: content.tier3Cards
             },
             {
-                title: locale === "pt" ? "NÍVEL 4 — Monitorização Contínua" : locale === "en" ? "TIER 4 — Continuous Monitoring" : locale === "fr" ? "NIVEAU 4 — Surveillance continue" : locale === "de" ? "STUFE 4 — Kontinuierliche Überwachung" : locale === "nl" ? "NIVEAU 4 — Continue monitoring" : locale === "it" ? "LIVELLO 4 — Monitoraggio continuo" : "NIVEL 4 — Monitorización continua",
+                title: locale === "pt" ? "NÍVEL 4 Monitorização Contínua" : locale === "en" ? "TIER 4 Continuous Monitoring" : locale === "fr" ? "NIVEAU 4 Surveillance continue" : locale === "de" ? "STUFE 4 Kontinuierliche Überwachung" : locale === "nl" ? "NIVEAU 4 Continue monitoring" : locale === "it" ? "LIVELLO 4 Monitoraggio continuo" : "NIVEL 4 Monitorización continua",
                 layout: "utility",
                 cards: content.tier4Cards
             },
@@ -2558,211 +2558,211 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$pat
 const pageSeoMeta = {
     home: {
         pt: {
-            title: "MoldCheck.pt — Informação Independente sobre Bolor em Portugal",
-            description: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação — sem vender tratamentos."
+            title: "MoldCheck.pt Informação Independente sobre Bolor em Portugal",
+            description: "Portugal tem o 2.º pior problema de bolor da Europa. Informação científica independente sobre diagnóstico, saúde e remediação sem vender tratamentos."
         },
         en: {
-            title: "MoldCheck.pt — Independent Mold Information for Portugal",
-            description: "Portugal has Europe's 2nd worst mold problem. Independent, science-based information on diagnosis, health and remediation — without selling treatments."
+            title: "MoldCheck.pt Independent Mold Information for Portugal",
+            description: "Portugal has Europe's 2nd worst mold problem. Independent, science-based information on diagnosis, health and remediation without selling treatments."
         },
         fr: {
-            title: "MoldCheck.pt — Information Indépendante sur les Moisissures au Portugal",
+            title: "MoldCheck.pt Information Indépendante sur les Moisissures au Portugal",
             description: "Le Portugal a le 2e pire problème de moisissures d'Europe. Information scientifique indépendante sur le diagnostic, la santé et la remédiation."
         },
         de: {
-            title: "MoldCheck.pt — Unabhängige Schimmelinformationen für Portugal",
+            title: "MoldCheck.pt Unabhängige Schimmelinformationen für Portugal",
             description: "Portugal hat Europas zweitschlimmstes Schimmelproblem. Unabhängige, wissenschaftlich fundierte Informationen zu Diagnose, Gesundheit und Sanierung."
         },
         nl: {
-            title: "MoldCheck.pt — Onafhankelijke Schimmelinformatie voor Portugal",
+            title: "MoldCheck.pt Onafhankelijke Schimmelinformatie voor Portugal",
             description: "Portugal heeft het op één na ergste schimmelprobleem van Europa. Onafhankelijke, wetenschappelijke informatie over diagnose, gezondheid en sanering."
         },
         it: {
-            title: "MoldCheck.pt — Informazione Indipendente sulla Muffa in Portogallo",
+            title: "MoldCheck.pt Informazione Indipendente sulla Muffa in Portogallo",
             description: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Informazione scientifica indipendente su diagnosi, salute e bonifica."
         },
         es: {
-            title: "MoldCheck.pt — Información Independiente sobre Moho en Portugal",
+            title: "MoldCheck.pt Información Independiente sobre Moho en Portugal",
             description: "Portugal tiene el segundo peor problema de moho de Europa. Información científica independiente sobre diagnóstico, salud y remediación."
         }
     },
     about: {
         pt: {
-            title: "Sobre o MoldCheck.pt — Quem Somos e Como Trabalhamos",
-            description: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. Não vendemos tratamentos. Publicamos o que a ciência diz — com política editorial transparente."
+            title: "Sobre o MoldCheck.pt Quem Somos e Como Trabalhamos",
+            description: "O MoldCheck.pt é uma iniciativa do FAIRBANK Group. Não vendemos tratamentos. Publicamos o que a ciência diz com política editorial transparente."
         },
         en: {
-            title: "About MoldCheck.pt — Who We Are and How We Work",
-            description: "MoldCheck.pt is a FAIRBANK Group initiative. We don't sell treatments. We publish what the science says — with a transparent editorial policy."
+            title: "About MoldCheck.pt Who We Are and How We Work",
+            description: "MoldCheck.pt is a FAIRBANK Group initiative. We don't sell treatments. We publish what the science says with a transparent editorial policy."
         },
         fr: {
-            title: "À Propos de MoldCheck.pt — Qui Nous Sommes",
-            description: "MoldCheck.pt est une initiative du FAIRBANK Group. Nous ne vendons pas de traitements. Nous publions ce que la science dit — avec une politique éditoriale transparente."
+            title: "À Propos de MoldCheck.pt Qui Nous Sommes",
+            description: "MoldCheck.pt est une initiative du FAIRBANK Group. Nous ne vendons pas de traitements. Nous publions ce que la science dit avec une politique éditoriale transparente."
         },
         de: {
-            title: "Über MoldCheck.pt — Wer Wir Sind und Wie Wir Arbeiten",
-            description: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Wir verkaufen keine Behandlungen. Wir veröffentlichen, was die Wissenschaft sagt — mit transparenter Redaktionsrichtlinie."
+            title: "Über MoldCheck.pt Wer Wir Sind und Wie Wir Arbeiten",
+            description: "MoldCheck.pt ist eine Initiative der FAIRBANK Group. Wir verkaufen keine Behandlungen. Wir veröffentlichen, was die Wissenschaft sagt mit transparenter Redaktionsrichtlinie."
         },
         nl: {
-            title: "Over MoldCheck.pt — Wie We Zijn en Hoe We Werken",
-            description: "MoldCheck.pt is een initiatief van de FAIRBANK Group. We verkopen geen behandelingen. We publiceren wat de wetenschap zegt — met transparant redactioneel beleid."
+            title: "Over MoldCheck.pt Wie We Zijn en Hoe We Werken",
+            description: "MoldCheck.pt is een initiatief van de FAIRBANK Group. We verkopen geen behandelingen. We publiceren wat de wetenschap zegt met transparant redactioneel beleid."
         },
         it: {
-            title: "Chi Siamo — MoldCheck.pt",
-            description: "MoldCheck.pt è un'iniziativa del FAIRBANK Group. Non vendiamo trattamenti. Pubblichiamo ciò che dice la scienza — con una politica editoriale trasparente."
+            title: "Chi Siamo MoldCheck.pt",
+            description: "MoldCheck.pt è un'iniziativa del FAIRBANK Group. Non vendiamo trattamenti. Pubblichiamo ciò che dice la scienza con una politica editoriale trasparente."
         },
         es: {
-            title: "Sobre MoldCheck.pt — Quiénes Somos y Cómo Trabajamos",
-            description: "MoldCheck.pt es una iniciativa del FAIRBANK Group. No vendemos tratamientos. Publicamos lo que dice la ciencia — con una política editorial transparente."
+            title: "Sobre MoldCheck.pt Quiénes Somos y Cómo Trabajamos",
+            description: "MoldCheck.pt es una iniciativa del FAIRBANK Group. No vendemos tratamientos. Publicamos lo que dice la ciencia con una política editorial transparente."
         }
     },
     services: {
         pt: {
-            title: "Serviços de Inspecção Independente — MoldCheck.pt",
+            title: "Serviços de Inspecção Independente MoldCheck.pt",
             description: "Inspecções independentes de bolor e humidade em Portugal. Diagnóstico imparcial, sem comissões de tratamento. Conheça os serviços da InspectOS."
         },
         en: {
-            title: "Independent Inspection Services — MoldCheck.pt",
+            title: "Independent Inspection Services MoldCheck.pt",
             description: "Independent mold and damp inspections in Portugal. Impartial diagnosis, no treatment commissions. Discover InspectOS inspection services."
         },
         fr: {
-            title: "Services d'Inspection Indépendante — MoldCheck.pt",
+            title: "Services d'Inspection Indépendante MoldCheck.pt",
             description: "Inspections indépendantes de moisissures et d'humidité au Portugal. Diagnostic impartial, sans commissions de traitement."
         },
         de: {
-            title: "Unabhängige Inspektionsdienste — MoldCheck.pt",
+            title: "Unabhängige Inspektionsdienste MoldCheck.pt",
             description: "Unabhängige Schimmel- und Feuchtigkeitsinspektionen in Portugal. Unparteiische Diagnose, keine Behandlungsprovisionen."
         },
         nl: {
-            title: "Onafhankelijke Inspectiediensten — MoldCheck.pt",
+            title: "Onafhankelijke Inspectiediensten MoldCheck.pt",
             description: "Onafhankelijke schimmel- en vochtinspecties in Portugal. Onpartijdige diagnose, geen behandelingscommissies."
         },
         it: {
-            title: "Servizi di Ispezione Indipendente — MoldCheck.pt",
+            title: "Servizi di Ispezione Indipendente MoldCheck.pt",
             description: "Ispezioni indipendenti di muffa e umidità in Portogallo. Diagnosi imparziale, senza commissioni di trattamento."
         },
         es: {
-            title: "Servicios de Inspección Independiente — MoldCheck.pt",
+            title: "Servicios de Inspección Independiente MoldCheck.pt",
             description: "Inspecciones independientes de moho y humedad en Portugal. Diagnóstico imparcial, sin comisiones de tratamiento."
         }
     },
     contact: {
         pt: {
-            title: "Contacto — MoldCheck.pt",
+            title: "Contacto MoldCheck.pt",
             description: "Entre em contacto com a equipa editorial do MoldCheck.pt ou solicite informações sobre inspecções independentes em Portugal."
         },
         en: {
-            title: "Contact — MoldCheck.pt",
+            title: "Contact MoldCheck.pt",
             description: "Get in touch with the MoldCheck.pt editorial team or request information about independent inspections in Portugal."
         },
         fr: {
-            title: "Contact — MoldCheck.pt",
+            title: "Contact MoldCheck.pt",
             description: "Contactez l'équipe éditoriale de MoldCheck.pt ou demandez des informations sur les inspections indépendantes au Portugal."
         },
         de: {
-            title: "Kontakt — MoldCheck.pt",
+            title: "Kontakt MoldCheck.pt",
             description: "Nehmen Sie Kontakt mit dem Redaktionsteam von MoldCheck.pt auf oder fordern Sie Informationen zu unabhängigen Inspektionen in Portugal an."
         },
         nl: {
-            title: "Contact — MoldCheck.pt",
+            title: "Contact MoldCheck.pt",
             description: "Neem contact op met het redactieteam van MoldCheck.pt of vraag informatie aan over onafhankelijke inspecties in Portugal."
         },
         it: {
-            title: "Contatti — MoldCheck.pt",
+            title: "Contatti MoldCheck.pt",
             description: "Contatta il team editoriale di MoldCheck.pt o richiedi informazioni sulle ispezioni indipendenti in Portogallo."
         },
         es: {
-            title: "Contacto — MoldCheck.pt",
+            title: "Contacto MoldCheck.pt",
             description: "Contacta con el equipo editorial de MoldCheck.pt o solicita información sobre inspecciones independientes en Portugal."
         }
     },
     privacy: {
         pt: {
-            title: "Política de Privacidade — MoldCheck.pt",
+            title: "Política de Privacidade MoldCheck.pt",
             description: "Política de privacidade e tratamento de dados do MoldCheck.pt."
         },
         en: {
-            title: "Privacy Policy — MoldCheck.pt",
+            title: "Privacy Policy MoldCheck.pt",
             description: "Privacy policy and data handling practices of MoldCheck.pt."
         },
         fr: {
-            title: "Politique de Confidentialité — MoldCheck.pt",
+            title: "Politique de Confidentialité MoldCheck.pt",
             description: "Politique de confidentialité et pratiques de traitement des données de MoldCheck.pt."
         },
         de: {
-            title: "Datenschutzrichtlinie — MoldCheck.pt",
+            title: "Datenschutzrichtlinie MoldCheck.pt",
             description: "Datenschutzrichtlinie und Datenverarbeitungspraktiken von MoldCheck.pt."
         },
         nl: {
-            title: "Privacybeleid — MoldCheck.pt",
+            title: "Privacybeleid MoldCheck.pt",
             description: "Privacybeleid en gegevensverwerkingspraktijken van MoldCheck.pt."
         },
         it: {
-            title: "Informativa sulla Privacy — MoldCheck.pt",
+            title: "Informativa sulla Privacy MoldCheck.pt",
             description: "Informativa sulla privacy e pratiche di trattamento dei dati di MoldCheck.pt."
         },
         es: {
-            title: "Política de Privacidad — MoldCheck.pt",
+            title: "Política de Privacidad MoldCheck.pt",
             description: "Política de privacidad y prácticas de tratamiento de datos de MoldCheck.pt."
         }
     },
     tools: {
         pt: {
-            title: "Ferramentas de Avaliação de Humidade — MoldCheck.pt",
+            title: "Ferramentas de Avaliação de Humidade MoldCheck.pt",
             description: "Calculadoras e ferramentas editoriais para avaliar risco de humidade e bolor em casa. Baseadas em critérios científicos."
         },
         en: {
-            title: "Humidity & Mold Assessment Tools — MoldCheck.pt",
+            title: "Humidity & Mold Assessment Tools MoldCheck.pt",
             description: "Editorial calculators and tools to assess damp and mold risk at home. Based on scientific criteria."
         },
         fr: {
-            title: "Outils d'Évaluation de l'Humidité — MoldCheck.pt",
+            title: "Outils d'Évaluation de l'Humidité MoldCheck.pt",
             description: "Calculateurs et outils éditoriaux pour évaluer le risque d'humidité et de moisissures à domicile."
         },
         de: {
-            title: "Feuchtigkeits- und Schimmelbewertungstools — MoldCheck.pt",
+            title: "Feuchtigkeits- und Schimmelbewertungstools MoldCheck.pt",
             description: "Redaktionelle Rechner und Tools zur Bewertung von Feuchtigkeits- und Schimmelrisiken zu Hause."
         },
         nl: {
-            title: "Vocht- en Schimmelbeoordelingstools — MoldCheck.pt",
+            title: "Vocht- en Schimmelbeoordelingstools MoldCheck.pt",
             description: "Redactionele calculators en tools om vocht- en schimmelrisico thuis te beoordelen."
         },
         it: {
-            title: "Strumenti di Valutazione dell'Umidità — MoldCheck.pt",
+            title: "Strumenti di Valutazione dell'Umidità MoldCheck.pt",
             description: "Calcolatori e strumenti editoriali per valutare il rischio di umidità e muffa in casa."
         },
         es: {
-            title: "Herramientas de Evaluación de Humedad — MoldCheck.pt",
+            title: "Herramientas de Evaluación de Humedad MoldCheck.pt",
             description: "Calculadoras y herramientas editoriales para evaluar el riesgo de humedad y moho en casa."
         }
     },
     shop: {
         pt: {
-            title: "Loja — MoldCheck.pt",
+            title: "Loja MoldCheck.pt",
             description: "Inspecções, análises laboratoriais e recursos digitais sobre bolor e humidade em Portugal."
         },
         en: {
-            title: "Shop — MoldCheck.pt",
+            title: "Shop MoldCheck.pt",
             description: "Inspections, laboratory analyses and digital resources on mold and damp in Portugal."
         },
         fr: {
-            title: "Boutique — MoldCheck.pt",
+            title: "Boutique MoldCheck.pt",
             description: "Inspections, analyses en laboratoire et ressources numériques sur les moisissures et l'humidité au Portugal."
         },
         de: {
-            title: "Shop — MoldCheck.pt",
+            title: "Shop MoldCheck.pt",
             description: "Inspektionen, Laboranalysen und digitale Ressourcen zu Schimmel und Feuchtigkeit in Portugal."
         },
         nl: {
-            title: "Winkel — MoldCheck.pt",
+            title: "Winkel MoldCheck.pt",
             description: "Inspecties, laboratoriumanalyses en digitale bronnen over schimmel en vocht in Portugal."
         },
         it: {
-            title: "Negozio — MoldCheck.pt",
+            title: "Negozio MoldCheck.pt",
             description: "Ispezioni, analisi di laboratorio e risorse digitali su muffa e umidità in Portogallo."
         },
         es: {
-            title: "Tienda — MoldCheck.pt",
+            title: "Tienda MoldCheck.pt",
             description: "Inspecciones, análisis de laboratorio y recursos digitales sobre moho y humedad en Portugal."
         }
     }
@@ -2842,47 +2842,47 @@ const a4PortugalSlugs = {
 };
 const a4PortugalContent = {
     pt: {
-        seoTitle: "Portugal Tem o Segundo Pior Problema de Bolor da Europa — MoldCheck.pt",
+        seoTitle: "Portugal Tem o Segundo Pior Problema de Bolor da Europa MoldCheck.pt",
         seoDescription: "Portugal tem o segundo pior problema de bolor da Europa. Dados Eurostat, causas estruturais e o défice de diagnóstico independente explicados.",
         focusKeyword: "bolor Portugal Europa",
         title: "Portugal Tem o Segundo Pior Problema de Bolor da Europa. Porque é que Ninguém Fala Nisso?",
         byline: "Por Pieter Paul Castelein, FAIRBANK Group",
         body: [
             "Cresci na Holanda. Em quarenta anos, nunca vi bolor numa casa.",
-            "Não porque as casas holandesas sejam perfeitas — não são. Mas porque a construção neerlandesa assume que vai chover, sempre, e que a humidade precisa de ser gerida activamente: isolamento adequado, ventilação mecânica, materiais que resistem à humidade. O problema é incorporado no processo de construção antes de existir.",
+            "Não porque as casas holandesas sejam perfeitas não são. Mas porque a construção neerlandesa assume que vai chover, sempre, e que a humidade precisa de ser gerida activamente: isolamento adequado, ventilação mecânica, materiais que resistem à humidade. O problema é incorporado no processo de construção antes de existir.",
             "Quando me mudei para Portugal há vários anos, aprendi que a relação com a humidade nas habitações é completamente diferente. A humidade nas paredes é mencionada com uma espécie de resignação, como se fosse uma característica do clima que simplesmente se aceita. O bolor atrás dos roupeiros é descoberto por acaso, tratado com lixívia, e esquecido até voltar. As alergias e a tosse persistente do inverno são atribuídas ao frio, ao ar, a tudo excepto às paredes onde se passa a maior parte da vida.",
             "Fui curioso. Comecei a procurar os dados.",
             "## O que os números dizem",
-            "O inquérito EU-SILC do Eurostat — o maior estudo sistemático de condições de vida na União Europeia — pergunta regularmente aos respondentes se vivem em habitação com humidade ou bolor. Os resultados para Portugal são consistentes ao longo dos anos: entre 24 e 26 por cento da população portuguesa vive em habitação afectada por humidade ou bolor.",
+            "O inquérito EU-SILC do Eurostat o maior estudo sistemático de condições de vida na União Europeia pergunta regularmente aos respondentes se vivem em habitação com humidade ou bolor. Os resultados para Portugal são consistentes ao longo dos anos: entre 24 e 26 por cento da população portuguesa vive em habitação afectada por humidade ou bolor.",
             "É o segundo valor mais alto da União Europeia. Só o Chipre está pior.",
             "A média europeia é de cerca de 14 por cento. Portugal tem quase o dobro.",
-            "Os Censos 2021 do INE completam o quadro: 82 por cento dos edifícios portugueses foram construídos antes do ano 2000, antes de qualquer requisito significativo de eficiência energética ou isolamento. Mais de um terço dos edifícios precisam de obras. Não obras de remodelação — obras de reparação básica.",
+            "Os Censos 2021 do INE completam o quadro: 82 por cento dos edifícios portugueses foram construídos antes do ano 2000, antes de qualquer requisito significativo de eficiência energética ou isolamento. Mais de um terço dos edifícios precisam de obras. Não obras de remodelação obras de reparação básica.",
             "E depois de perceber a escala do problema, fui perceber o que existia para ajudar as pessoas a lidar com ele.",
             "## O que encontrei no mercado",
-            "Portugal tem várias empresas no mercado do tratamento de humidade e bolor. Algumas são grandes, com décadas de actividade e milhares de intervenções por ano. Oferecem diagnósticos gratuitos. Chegam a casa, avaliam o problema, e propõem soluções — sistemas de ventilação, injecções de resina, produtos de encapsulamento — por valores que podem chegar a vários milhares de euros.",
+            "Portugal tem várias empresas no mercado do tratamento de humidade e bolor. Algumas são grandes, com décadas de actividade e milhares de intervenções por ano. Oferecem diagnósticos gratuitos. Chegam a casa, avaliam o problema, e propõem soluções sistemas de ventilação, injecções de resina, produtos de encapsulamento por valores que podem chegar a vários milhares de euros.",
             "Estas empresas podem ter soluções legítimas para problemas reais. Isso não é o ponto.",
-            "O ponto é este: em Portugal, o diagnóstico é feito pela empresa que vende o tratamento. Não existe, em Portugal, nenhuma entidade independente — sem ligação a empresas de tratamento, sem interesse comercial no resultado do diagnóstico — que avalie o problema de bolor na sua casa e lhe diga honestamente o que tem e o que precisa.",
+            "O ponto é este: em Portugal, o diagnóstico é feito pela empresa que vende o tratamento. Não existe, em Portugal, nenhuma entidade independente sem ligação a empresas de tratamento, sem interesse comercial no resultado do diagnóstico que avalie o problema de bolor na sua casa e lhe diga honestamente o que tem e o que precisa.",
             "É como se, no sector da saúde, o único serviço de diagnóstico disponível fosse gerido pela empresa farmacêutica que vende a medicação que o diagnóstico vai recomendar. Ninguém aceitaria isso na medicina. Aceitamos na habitação porque nunca tivemos alternativa.",
             "## A ligação com a saúde que raramente é feita",
             "Há mais uma camada nisto que me parece importante dizer claramente.",
             "A Organização Mundial de Saúde estimou, nas suas diretrizes de 2009 sobre qualidade do ar interior, que 13 por cento dos casos de asma infantil na Região Europeia da OMS são atribuíveis à humidade residencial. A investigação de Taborda-Barata e colegas, publicada em 2023 na revista científica Pulmonology, descreve uma \"ausência generalizada de consciencialização na população\" em Portugal sobre a ligação entre qualidade do ar interior e saúde respiratória.",
             "Um em cada quatro portugueses vive em habitação com humidade ou bolor. Treze por cento dos casos de asma infantil são potencialmente atribuíveis a esta condição. E a ligação entre as paredes onde se vive e os sintomas com que se lida no inverno raramente entra na consulta médica, raramente entra na conversa com o senhorio, raramente entra em nenhuma conversa.",
             "Isto não é um problema menor de qualidade de vida. É um problema de saúde pública sub-reconhecido à escala de um quarto da população.",
-            "## O que este site é — e o que não é",
+            "## O que este site é e o que não é",
             "O MoldCheck.pt não é uma empresa de tratamentos. Não vende sistemas de ventilação, produtos de impermeabilização, nem qualquer outro serviço de intervenção em habitações.",
-            "É um recurso de informação independente. Publicamos o que a ciência diz sobre bolor — sobre as espécies, sobre os riscos para a saúde, sobre os métodos de detecção e remediação que têm base científica. Quando um método não funciona, dizemos que não funciona. Quando a informação disponível é incerta, dizemos que é incerta.",
-            "Somos transparentes sobre quem somos: o MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS — plataforma de inspecção independente de imóveis em Portugal. A nossa ligação comercial é com a inspecção e o diagnóstico independentes. Não temos interesse no tratamento que se segue ao diagnóstico. Quando recomendamos uma avaliação profissional, é porque acreditamos que precisa de uma — não porque ganhamos dinheiro com o que acontece depois.",
-            "A distinção importa. O conflito de interesse que existe no mercado actual não é entre educação e diagnóstico. É entre diagnóstico e tratamento. Um inspector independente que cobra pelo seu tempo e não tem participação nos lucros da remediação é a solução para o problema que este site descreve — não parte dele.",
+            "É um recurso de informação independente. Publicamos o que a ciência diz sobre bolor sobre as espécies, sobre os riscos para a saúde, sobre os métodos de detecção e remediação que têm base científica. Quando um método não funciona, dizemos que não funciona. Quando a informação disponível é incerta, dizemos que é incerta.",
+            "Somos transparentes sobre quem somos: o MoldCheck.pt é uma iniciativa do FAIRBANK Group, a empresa por detrás da InspectOS plataforma de inspecção independente de imóveis em Portugal. A nossa ligação comercial é com a inspecção e o diagnóstico independentes. Não temos interesse no tratamento que se segue ao diagnóstico. Quando recomendamos uma avaliação profissional, é porque acreditamos que precisa de uma não porque ganhamos dinheiro com o que acontece depois.",
+            "A distinção importa. O conflito de interesse que existe no mercado actual não é entre educação e diagnóstico. É entre diagnóstico e tratamento. Um inspector independente que cobra pelo seu tempo e não tem participação nos lucros da remediação é a solução para o problema que este site descreve não parte dele.",
             "## Para o um em cada quatro",
-            "Se está a ler isto e vive em Portugal, há uma probabilidade de um em quatro de que a sua habitação tenha humidade ou bolor. Pode saber disso — talvez tenha uma mancha que aparece todos os invernos, ou um cheiro que não consegue eliminar, ou um roupeiro que nunca encosta bem à parede. Ou pode não saber — porque o bolor mais problemático cresce em lugares que nunca vê, e os sintomas que provoca são fáceis de atribuir a outras causas.",
+            "Se está a ler isto e vive em Portugal, há uma probabilidade de um em quatro de que a sua habitação tenha humidade ou bolor. Pode saber disso talvez tenha uma mancha que aparece todos os invernos, ou um cheiro que não consegue eliminar, ou um roupeiro que nunca encosta bem à parede. Ou pode não saber porque o bolor mais problemático cresce em lugares que nunca vê, e os sintomas que provoca são fáceis de atribuir a outras causas.",
             "Este site foi construído para si. Para que tenha acesso à informação que existe, sem a mediação de quem tem interesse no diagnóstico que lhe vai apresentar.",
             "O problema de bolor em Portugal não é inevitável. Não é uma característica do clima que se aceita. É um problema com causas identificáveis, com soluções com base científica, e com um défice claro de informação independente que este site tenta, em parte, colmatar.",
             "Começamos aqui."
         ],
-        disclosure: "Pieter Paul Castelein trabalha no FAIRBANK Group, a empresa por detrás da InspectOS — plataforma de inspeção independente de imóveis em Portugal. O MoldCheck.pt é uma iniciativa do FAIRBANK Group. Não vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspeção ou análise laboratorial, é porque acreditamos que precisa de uma — não porque lucramos com o tratamento que se segue.",
+        disclosure: "Pieter Paul Castelein trabalha no FAIRBANK Group, a empresa por detrás da InspectOS plataforma de inspeção independente de imóveis em Portugal. O MoldCheck.pt é uma iniciativa do FAIRBANK Group. Não vendemos tratamentos de humidade. Não recebemos comissões de empresas de remediação. Quando recomendamos uma inspeção ou análise laboratorial, é porque acreditamos que precisa de uma não porque lucramos com o tratamento que se segue.",
         sources: [
             {
-                label: "Eurostat EU-SILC Housing Quality Survey 2020–2023"
+                label: "Eurostat EU-SILC Housing Quality Survey 2020 2023"
             },
             {
                 label: "INE Censos 2021"
@@ -2921,74 +2921,74 @@ const a4PortugalContent = {
         ]
     },
     en: {
-        seoTitle: "Portugal Has Europe's Second-Worst Mold Problem — MoldCheck.pt",
+        seoTitle: "Portugal Has Europe's Second-Worst Mold Problem MoldCheck.pt",
         seoDescription: "Portugal has Europe's second-worst mold problem. Eurostat data, structural causes, and the absence of independent diagnosis explained.",
         focusKeyword: "mold Portugal Europe",
         title: "Portugal Has Europe's Second-Worst Mold Problem. Why Is Nobody Talking About It?",
         byline: "By Pieter Paul Castelein, FAIRBANK Group",
         body: [
             "When I moved from the Netherlands to Portugal, I brought with me a particular blindness.",
-            "In the Netherlands, mold is not something people discuss. It's not something you discover behind a wardrobe and resign yourself to. It's not part of the standard conversation when you rent an apartment or buy a house. Dutch buildings are built cold and tight — double-glazed, insulated, ventilated. The idea that a home could make your family chronically ill through something growing in its walls wasn't something that had ever occurred to me. Not once.",
+            "In the Netherlands, mold is not something people discuss. It's not something you discover behind a wardrobe and resign yourself to. It's not part of the standard conversation when you rent an apartment or buy a house. Dutch buildings are built cold and tight double-glazed, insulated, ventilated. The idea that a home could make your family chronically ill through something growing in its walls wasn't something that had ever occurred to me. Not once.",
             "Then I lived in Lisbon. And the blindness started to lift.",
-            "I saw it in properties I visited professionally — on bathroom ceilings, blooming in bedroom corners, climbing up north-facing walls in dark patches that tenants had clearly learned to ignore. I saw it described in property listings as \"some humidity\" the way someone might mention a slightly noisy neighbour — unfortunate but manageable. I heard Portuguese friends talk about it with a shrug: é o clima, it's the climate, what can you do.",
+            "I saw it in properties I visited professionally on bathroom ceilings, blooming in bedroom corners, climbing up north-facing walls in dark patches that tenants had clearly learned to ignore. I saw it described in property listings as \"some humidity\" the way someone might mention a slightly noisy neighbour unfortunate but manageable. I heard Portuguese friends talk about it with a shrug: é o clima, it's the climate, what can you do.",
             "What I didn't see, for longer than I should have, was the connection between what was growing in our walls and what was happening to my health.",
-            "I suffered from severe allergies for years. The kind that wear you down — persistent, exhausting, always there, always requiring management. I tried everything a person tries. And then we moved. We moved to a well-built house, properly insulated, properly ventilated, without a trace of mold anywhere. And something shifted. Not immediately. But over months, the whole family's health changed. The allergies that had defined my daily life didn't disappear overnight, but they retreated in a way that nothing else had ever produced.",
-            "I am not a doctor. I cannot tell you with medical certainty that our old house was making us sick. What I can tell you is that I know the difference between how we felt then and how we feel now. And I know that when I started looking into the science — seriously looking, past the hardware store advice and the treatment company brochures — what I found was not reassuring.",
+            "I suffered from severe allergies for years. The kind that wear you down persistent, exhausting, always there, always requiring management. I tried everything a person tries. And then we moved. We moved to a well-built house, properly insulated, properly ventilated, without a trace of mold anywhere. And something shifted. Not immediately. But over months, the whole family's health changed. The allergies that had defined my daily life didn't disappear overnight, but they retreated in a way that nothing else had ever produced.",
+            "I am not a doctor. I cannot tell you with medical certainty that our old house was making us sick. What I can tell you is that I know the difference between how we felt then and how we feel now. And I know that when I started looking into the science seriously looking, past the hardware store advice and the treatment company brochures what I found was not reassuring.",
             "What I found was that this is not normal. That the level of mold in Portuguese housing is not an unavoidable consequence of living near the Atlantic. That it is a public health problem, documented by European statistics, confirmed by respiratory medicine research, and almost entirely unaddressed.",
             "## The number that stopped me",
             "Here it is: 24 to 26 percent.",
             "That is the share of Portugal's population living in housing affected by dampness or mold, according to Eurostat's EU-SILC survey data. One in four Portuguese people. In a country of ten million, that is roughly two and a half million people waking up every morning in homes where something is growing in the walls that shouldn't be.",
             "The EU average is around 14 percent. Portugal's figure is nearly double that. Among all 27 EU member states, only Cyprus has a higher rate of mold-affected housing. This is not a minor statistical footnote. This is a structural public health failure.",
-            "The World Health Organization's 2009 guidelines on dampness and mold — still the international benchmark — are direct about what this means medically. There is sufficient scientific evidence of a causal relationship between living in damp, moldy housing and upper respiratory tract symptoms, asthma exacerbation, allergic rhinitis, and hypersensitivity pneumonitis. The WHO estimates that 13 percent of childhood asthma in the European Region is attributable to residential dampness. Not caused by genetics. Not by outdoor air. By the homes where children sleep.",
+            "The World Health Organization's 2009 guidelines on dampness and mold still the international benchmark are direct about what this means medically. There is sufficient scientific evidence of a causal relationship between living in damp, moldy housing and upper respiratory tract symptoms, asthma exacerbation, allergic rhinitis, and hypersensitivity pneumonitis. The WHO estimates that 13 percent of childhood asthma in the European Region is attributable to residential dampness. Not caused by genetics. Not by outdoor air. By the homes where children sleep.",
             "Thirteen percent. In Portugal's case, given our mold prevalence, that number may be higher.",
-            "I want to be careful here, because this site will always be careful. We do not traffic in panic. Not every damp patch is a health emergency. Not every household with visible mold is facing a medical crisis. Individual risk depends on species, exposure duration, ventilation, and personal susceptibility. But the aggregate picture — across millions of Portuguese homes — is one that deserves serious, honest attention. And it is getting almost none.",
+            "I want to be careful here, because this site will always be careful. We do not traffic in panic. Not every damp patch is a health emergency. Not every household with visible mold is facing a medical crisis. Individual risk depends on species, exposure duration, ventilation, and personal susceptibility. But the aggregate picture across millions of Portuguese homes is one that deserves serious, honest attention. And it is getting almost none.",
             "## Why Portuguese buildings are different",
-            "This is not Portugal's fault in the way that a policy failure is a fault. Portuguese buildings were built the way they were built because of decades of construction practice, energy economics, and regulation — or its absence.",
+            "This is not Portugal's fault in the way that a policy failure is a fault. Portuguese buildings were built the way they were built because of decades of construction practice, energy economics, and regulation or its absence.",
             "Walk through any Lisbon neighbourhood and you are looking at buildings from three distinct eras of construction, each with its own vulnerability profile.",
-            "Pre-1960 buildings are stone and brick, often beautiful, often without any damp-proof course separating the walls from the ground. Capillary rise — moisture from the earth wicking upward through masonry — is endemic in this stock. The ground floor apartments of the Mouraria, the Alfama, parts of Bairro Alto — many of them are in permanent conversation with the moisture below them.",
-            "The 1960s through 1990s brought Portugal's rapid urbanisation — reinforced concrete frames with hollow brick infill, metal window frames conducting cold directly from the exterior to the interior, no insulation to speak of, single-glazed windows. These buildings were designed for a time when energy was cheap and indoor comfort standards were different. The metal frames are thermal bridges: they conduct cold so efficiently that in a Lisbon winter, the surface temperature around a window frame can drop below the dew point of the indoor air. The moisture in the air — from cooking, breathing, showering — condenses on that cold surface and runs down the wall. Behind the wardrobe placed against that wall, where no one looks, mold finds its substrate.",
-            "Porto's annual average relative humidity is 77 percent. Lisbon's in winter is 78 to 84 percent. The Azores, Madeira, and the northern coastal regions can be higher still. When you have old buildings, minimal insulation, and sustained humidity — you have the conditions for mold. Not as an anomaly. As a certainty.",
-            "According to the INE Censos 2021, 82 percent of Portugal's buildings were constructed before the year 2000. 35.8 percent — over 1.27 million buildings — are classified as needing repair. More than one in three buildings in this country is deteriorating faster than it is being maintained or renovated.",
+            "Pre-1960 buildings are stone and brick, often beautiful, often without any damp-proof course separating the walls from the ground. Capillary rise moisture from the earth wicking upward through masonry is endemic in this stock. The ground floor apartments of the Mouraria, the Alfama, parts of Bairro Alto many of them are in permanent conversation with the moisture below them.",
+            "The 1960s through 1990s brought Portugal's rapid urbanisation reinforced concrete frames with hollow brick infill, metal window frames conducting cold directly from the exterior to the interior, no insulation to speak of, single-glazed windows. These buildings were designed for a time when energy was cheap and indoor comfort standards were different. The metal frames are thermal bridges: they conduct cold so efficiently that in a Lisbon winter, the surface temperature around a window frame can drop below the dew point of the indoor air. The moisture in the air from cooking, breathing, showering condenses on that cold surface and runs down the wall. Behind the wardrobe placed against that wall, where no one looks, mold finds its substrate.",
+            "Porto's annual average relative humidity is 77 percent. Lisbon's in winter is 78 to 84 percent. The Azores, Madeira, and the northern coastal regions can be higher still. When you have old buildings, minimal insulation, and sustained humidity you have the conditions for mold. Not as an anomaly. As a certainty.",
+            "According to the INE Censos 2021, 82 percent of Portugal's buildings were constructed before the year 2000. 35.8 percent over 1.27 million buildings are classified as needing repair. More than one in three buildings in this country is deteriorating faster than it is being maintained or renovated.",
             "This is the physical reality that the statistics sit on top of. The 24 to 26 percent mold prevalence figure is not a mystery. It is the entirely predictable outcome of the building stock Portugal has, in the climate Portugal has, with the renovation investment Portugal has made.",
             "## The response that isn't",
-            "What I find harder to explain — and harder to accept — is the absence of a serious response to this.",
-            "Portugal has no residential indoor air quality standard. The last attempt — Decreto-Lei 79/2006 — was revoked in 2013 and never replaced. A homeowner in Portugal has no legally defined right to mold-free housing, no national standard against which to measure their home's air quality, no regulatory framework that compels a landlord to address a documented mold problem.",
-            "The European Union's new Energy Performance of Buildings Directive (EPBD 2024/1275), which Portugal must transpose into national law by May 2026, introduces for the first time a legal concept of Indoor Environmental Quality. It requires IEQ monitoring in renovated non-residential zero-emission buildings. This is progress. But it is commercial buildings. Residential properties — where 24 to 26 percent of people are already affected — remain outside the scope.",
+            "What I find harder to explain and harder to accept is the absence of a serious response to this.",
+            "Portugal has no residential indoor air quality standard. The last attempt Decreto-Lei 79/2006 was revoked in 2013 and never replaced. A homeowner in Portugal has no legally defined right to mold-free housing, no national standard against which to measure their home's air quality, no regulatory framework that compels a landlord to address a documented mold problem.",
+            "The European Union's new Energy Performance of Buildings Directive (EPBD 2024/1275), which Portugal must transpose into national law by May 2026, introduces for the first time a legal concept of Indoor Environmental Quality. It requires IEQ monitoring in renovated non-residential zero-emission buildings. This is progress. But it is commercial buildings. Residential properties where 24 to 26 percent of people are already affected remain outside the scope.",
             "Meanwhile, the dominant \"solution\" available to Portuguese consumers is a free diagnosis from a company that profits from selling you a treatment. This model has become so normalized that consumers don't question it. Of course the assessment is free. Of course the same technician who finds your problem will quote you for solving it. You would not accept this from a doctor. You would not accept a free medical diagnosis from a pharmaceutical company that profits when you buy their drug. But in the mold treatment market in Portugal, this is simply how things work.",
-            "I understand why it works this way. Mold treatment is not a simple product. It requires site visits, skilled labour, proprietary systems. Someone has to pay for the initial assessment, and if the consumer won't, the treatment company will — because they recoup it downstream. The business logic is coherent.",
+            "I understand why it works this way. Mold treatment is not a simple product. It requires site visits, skilled labour, proprietary systems. Someone has to pay for the initial assessment, and if the consumer won't, the treatment company will because they recoup it downstream. The business logic is coherent.",
             "The problem is what it does to the information available to consumers. When the only accessible diagnosis comes from a company motivated to find a problem and sell a solution, the information produced by that diagnosis is not neutral. The consumer has no independent check. No second opinion. No way to know whether the treatment recommended is the right one, the minimal necessary one, or the most profitable one.",
-            "There is, as of the time I'm writing this, no independent residential mold inspection service with laboratory diagnostic capability operating in Portugal. No certified mold inspectors in the sense that the US or UK would recognise — no equivalent of the ACAC's Council-certified Microbial Investigator qualification on the Iberian Peninsula. No Portuguese laboratory offering the DNA-based mold testing that has been standard in American residential diagnostics for twenty years.",
-            "This is a gap so large it is almost difficult to see. It has the quality of the invisible — present everywhere, noticed almost nowhere.",
+            "There is, as of the time I'm writing this, no independent residential mold inspection service with laboratory diagnostic capability operating in Portugal. No certified mold inspectors in the sense that the US or UK would recognise no equivalent of the ACAC's Council-certified Microbial Investigator qualification on the Iberian Peninsula. No Portuguese laboratory offering the DNA-based mold testing that has been standard in American residential diagnostics for twenty years.",
+            "This is a gap so large it is almost difficult to see. It has the quality of the invisible present everywhere, noticed almost nowhere.",
             "## What happened after we moved",
             "I want to come back to the personal for a moment, because the personal is why this site exists.",
-            "After we moved to a properly built house — well-insulated, properly ventilated, without the cold spots and condensation problems of the previous property — my allergies began to improve. My family's health improved. The constant low-level respiratory irritation that had become so normal I had stopped noticing it as unusual — it wasn't there anymore.",
+            "After we moved to a properly built house well-insulated, properly ventilated, without the cold spots and condensation problems of the previous property my allergies began to improve. My family's health improved. The constant low-level respiratory irritation that had become so normal I had stopped noticing it as unusual it wasn't there anymore.",
             "I cannot give you a controlled clinical study. I can tell you that the correlation was stark enough that I started asking questions I should have asked years earlier. What was growing in our old home? What species? What concentrations? What was it producing? What were we breathing every night while we slept?",
-            "I started reading the science. The WHO guidelines. The research on Stachybotrys chartarum — the species behind the \"toxic black mold\" you may have heard of — and its production of trichothecene mycotoxins that inhibit protein synthesis at the cellular level. The work of researchers like Górny et al., showing that fungal fragments too small to see carry immunological activity many times more potent than the spores themselves. The 2023 paper by Taborda-Barata and colleagues in the journal Pulmonology, specifically reviewing indoor air pollution and respiratory disease from a Portuguese perspective, describing the \"generalised absence of awareness among the population\" about the link between indoor air quality and respiratory health.",
-            "I am a Dutch entrepreneur who has lived in Portugal for years, built companies in the Portuguese real estate and PropTech space, and become — through personal experience and professional immersion — genuinely angry about the gap between what the science says about mold and what Portuguese consumers are being told.",
+            "I started reading the science. The WHO guidelines. The research on Stachybotrys chartarum the species behind the \"toxic black mold\" you may have heard of and its production of trichothecene mycotoxins that inhibit protein synthesis at the cellular level. The work of researchers like Górny et al., showing that fungal fragments too small to see carry immunological activity many times more potent than the spores themselves. The 2023 paper by Taborda-Barata and colleagues in the journal Pulmonology, specifically reviewing indoor air pollution and respiratory disease from a Portuguese perspective, describing the \"generalised absence of awareness among the population\" about the link between indoor air quality and respiratory health.",
+            "I am a Dutch entrepreneur who has lived in Portugal for years, built companies in the Portuguese real estate and PropTech space, and become through personal experience and professional immersion genuinely angry about the gap between what the science says about mold and what Portuguese consumers are being told.",
             "That anger is why this site exists.",
-            "## What MoldCheck.pt is — and what it isn't",
-            "MoldCheck.pt is an independent public health resource. It is published by FAIRBANK Group, which also operates InspectOS — a professional property inspection platform. We disclose this completely and without apology.",
+            "## What MoldCheck.pt is and what it isn't",
+            "MoldCheck.pt is an independent public health resource. It is published by FAIRBANK Group, which also operates InspectOS a professional property inspection platform. We disclose this completely and without apology.",
             "What MoldCheck.pt will never do: sell you a treatment. Accept undisclosed sponsorship from mold treatment companies. Recommend products for commission. Generate fear to drive conversions. Write about mold health risks in ways that go beyond what the evidence actually supports.",
-            "What it will do: publish the science accurately, in plain Portuguese and plain English, without sanitising the parts that are uncomfortable. Explain what is known, what is emerging, and what is still uncertain. Give you the information you need to ask better questions — of your landlord, your doctor, your contractor, and any company offering to fix your mold problem.",
-            "Portugal is changing. The EPBD transposition in 2026 will begin to shift the regulatory baseline. Storm Kristin in January 2026 — which caused billions of euros in damage across Portugal and left tens of thousands of buildings with water ingress — has created a new cohort of properties entering the window where mold colonisation begins within 24 to 48 hours of flooding. The conversation about building quality and health is slowly beginning.",
+            "What it will do: publish the science accurately, in plain Portuguese and plain English, without sanitising the parts that are uncomfortable. Explain what is known, what is emerging, and what is still uncertain. Give you the information you need to ask better questions of your landlord, your doctor, your contractor, and any company offering to fix your mold problem.",
+            "Portugal is changing. The EPBD transposition in 2026 will begin to shift the regulatory baseline. Storm Kristin in January 2026 which caused billions of euros in damage across Portugal and left tens of thousands of buildings with water ingress has created a new cohort of properties entering the window where mold colonisation begins within 24 to 48 hours of flooding. The conversation about building quality and health is slowly beginning.",
             "We want to be part of accelerating that conversation. Not by selling anything. By being honest about a problem that has been normalised for too long.",
             "## A note for the one in four",
-            "If you are reading this and you recognise something in it — the mold on the bedroom wall, the persistent cough, the allergy that doesn't respond to treatment, the symptoms that somehow improve when you spend time away from home — I want to say something directly.",
+            "If you are reading this and you recognise something in it the mold on the bedroom wall, the persistent cough, the allergy that doesn't respond to treatment, the symptoms that somehow improve when you spend time away from home I want to say something directly.",
             "You are not imagining it. You are not overreacting. The connection between your home environment and your health is real, it is scientifically documented, and it is under-recognised by most of the systems that should be addressing it.",
             "This site is for you. The information here is free. We have no interest in making your problem seem larger than it is, or smaller. We just want you to have what I didn't have when I first started asking these questions: honest, independent information, grounded in evidence, with no commercial agenda attached.",
             "That's a simple thing. It shouldn't be unusual.",
             "In Portugal, for now, it is."
         ],
-        disclosure: "Pieter Paul Castelein works at FAIRBANK Group, the company behind InspectOS — an independent property inspection platform operating in Portugal. MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK does not sell damp treatments. FAIRBANK does not take commissions from remediation companies. When we recommend an inspection or lab test, it is because we believe you need one — not because we profit from whatever treatment follows.\n\nThe information on this site is educational and does not constitute medical advice. If you are experiencing health symptoms, please consult a qualified healthcare professional.",
+        disclosure: "Pieter Paul Castelein works at FAIRBANK Group, the company behind InspectOS an independent property inspection platform operating in Portugal. MoldCheck.pt is a FAIRBANK Group initiative. FAIRBANK does not sell damp treatments. FAIRBANK does not take commissions from remediation companies. When we recommend an inspection or lab test, it is because we believe you need one not because we profit from whatever treatment follows.\n\nThe information on this site is educational and does not constitute medical advice. If you are experiencing health symptoms, please consult a qualified healthcare professional.",
         sources: [
             {
-                label: "Eurostat EU-SILC Housing Quality Survey 2020–2023"
+                label: "Eurostat EU-SILC Housing Quality Survey 2020 2023"
             },
             {
                 label: "WHO Guidelines for Indoor Air Quality: Dampness and Mould (2009)"
             },
             {
-                label: "INE Censos 2021 — Building Stock Condition Data"
+                label: "INE Censos 2021 Building Stock Condition Data"
             },
             {
                 label: "Taborda-Barata et al., \"Indoor air pollution and respiratory diseases: A general update and a Portuguese perspective,\" Pulmonology (2023)"
@@ -2997,7 +2997,7 @@ const a4PortugalContent = {
                 label: "Górny et al., \"Fungal fragments as respiratory tract hazards,\" Environmental Health Perspectives (2002)"
             },
             {
-                label: "EPBD Directive 2024/1275 — Energy Performance of Buildings"
+                label: "EPBD Directive 2024/1275 Energy Performance of Buildings"
             },
             {
                 label: "Cotality/CoreLogic, Storm Kristin Impact Report, Portugal (January 2026)"
@@ -3030,53 +3030,53 @@ const a4PortugalContent = {
         ]
     },
     fr: {
-        seoTitle: "Le Portugal a le Deuxième Plus Grave Problème de Moisissures en Europe — MoldCheck.pt",
+        seoTitle: "Le Portugal a le Deuxième Plus Grave Problème de Moisissures en Europe MoldCheck.pt",
         seoDescription: "Le Portugal a le deuxième pire problème de moisissures d'Europe. Données Eurostat, causes structurelles et absence de diagnostic indépendant expliqués.",
         focusKeyword: "moisissures Portugal Europe",
         title: "Le Portugal a le Deuxième Plus Grave Problème de Moisissures en Europe. Pourquoi Personne n'en Parle ?",
         byline: "Par Pieter Paul Castelein, FAIRBANK Group",
         body: [
             "J'ai grandi aux Pays-Bas. En quarante ans, je n'ai jamais vu de moisissures dans une maison.",
-            "Pas parce que les maisons néerlandaises sont parfaites — elles ne le sont pas. Mais parce que la construction hollandaise part du principe qu'il va pleuvoir, toujours, et que l'humidité doit être gérée activement : isolation suffisante, ventilation mécanique, matériaux résistants à l'humidité. Le problème est intégré dans le processus de construction avant même d'exister.",
+            "Pas parce que les maisons néerlandaises sont parfaites elles ne le sont pas. Mais parce que la construction hollandaise part du principe qu'il va pleuvoir, toujours, et que l'humidité doit être gérée activement : isolation suffisante, ventilation mécanique, matériaux résistants à l'humidité. Le problème est intégré dans le processus de construction avant même d'exister.",
             "Quand je me suis installé au Portugal il y a plusieurs années, j'ai découvert une relation à l'humidité dans les logements qui est fondamentalement différente. L'humidité dans les murs est mentionnée avec une sorte de résignation, comme si c'était une caractéristique du climat qu'on accepte simplement. Les moisissures derrière les armoires sont découvertes par hasard, traitées à l'eau de Javel, oubliées jusqu'à ce qu'elles reviennent. Les allergies et la toux persistante de l'hiver sont attribuées au froid, à l'air, à tout sauf aux murs dans lesquels on passe la majorité de sa vie.",
             "J'ai voulu comprendre. J'ai cherché les données.",
             "## Ce que les chiffres révèlent",
-            "L'enquête EU-SILC d'Eurostat — la plus grande étude systématique sur les conditions de vie dans l'Union européenne — interroge régulièrement les personnes sur leur logement pour savoir s'il est affecté par l'humidité ou les moisissures. Les résultats pour le Portugal sont constants d'une année sur l'autre : entre 24 et 26 pour cent de la population portugaise vit dans un logement affecté par l'humidité ou les moisissures.",
+            "L'enquête EU-SILC d'Eurostat la plus grande étude systématique sur les conditions de vie dans l'Union européenne interroge régulièrement les personnes sur leur logement pour savoir s'il est affecté par l'humidité ou les moisissures. Les résultats pour le Portugal sont constants d'une année sur l'autre : entre 24 et 26 pour cent de la population portugaise vit dans un logement affecté par l'humidité ou les moisissures.",
             "C'est le deuxième chiffre le plus élevé de l'Union européenne. Seul Chypre fait pire.",
             "La moyenne européenne est d'environ 14 pour cent. Le Portugal a presque le double.",
-            "Le recensement INE de 2021 complète ce tableau : 82 pour cent des bâtiments portugais ont été construits avant l'an 2000, avant toute exigence significative d'efficacité énergétique ou d'isolation. Plus d'un tiers des bâtiments ont besoin de travaux. Pas de rénovation — de réparations de base.",
-            "Pour les résidents français au Portugal — et vous êtes nombreux, la communauté française représente l'une des plus importantes parmi les résidents européens — cette réalité est particulièrement importante à connaître. Que vous soyez propriétaire d'une résidence principale à Lisbonne, d'une maison secondaire en Algarve, ou locataire dans le Grand Porto, les bâtiments dans lesquels vous vivez ont été construits dans un contexte réglementaire très différent de ce que vous connaissez en France.",
+            "Le recensement INE de 2021 complète ce tableau : 82 pour cent des bâtiments portugais ont été construits avant l'an 2000, avant toute exigence significative d'efficacité énergétique ou d'isolation. Plus d'un tiers des bâtiments ont besoin de travaux. Pas de rénovation de réparations de base.",
+            "Pour les résidents français au Portugal et vous êtes nombreux, la communauté française représente l'une des plus importantes parmi les résidents européens cette réalité est particulièrement importante à connaître. Que vous soyez propriétaire d'une résidence principale à Lisbonne, d'une maison secondaire en Algarve, ou locataire dans le Grand Porto, les bâtiments dans lesquels vous vivez ont été construits dans un contexte réglementaire très différent de ce que vous connaissez en France.",
             "## Ce que j'ai trouvé sur le marché",
-            "Le Portugal dispose de plusieurs entreprises sur le marché du traitement de l'humidité et des moisissures. Certaines sont importantes, avec des décennies d'activité et des milliers d'interventions par an. Elles proposent des diagnostics gratuits. Elles viennent chez vous, évaluent le problème, et proposent des solutions — systèmes de ventilation, injections de résine, produits d'encapsulation — pour des montants qui peuvent atteindre plusieurs milliers d'euros.",
+            "Le Portugal dispose de plusieurs entreprises sur le marché du traitement de l'humidité et des moisissures. Certaines sont importantes, avec des décennies d'activité et des milliers d'interventions par an. Elles proposent des diagnostics gratuits. Elles viennent chez vous, évaluent le problème, et proposent des solutions systèmes de ventilation, injections de résine, produits d'encapsulation pour des montants qui peuvent atteindre plusieurs milliers d'euros.",
             "Ces entreprises peuvent proposer des solutions légitimes pour des problèmes réels. Ce n'est pas le sujet.",
-            "Le sujet est celui-ci : au Portugal, le diagnostic est effectué par l'entreprise qui vend le traitement. Il n'existe au Portugal aucune entité indépendante — sans lien avec les entreprises de traitement, sans intérêt commercial dans le résultat du diagnostic — qui évalue le problème de moisissures dans votre logement et vous dit honnêtement ce que vous avez et ce dont vous avez besoin.",
+            "Le sujet est celui-ci : au Portugal, le diagnostic est effectué par l'entreprise qui vend le traitement. Il n'existe au Portugal aucune entité indépendante sans lien avec les entreprises de traitement, sans intérêt commercial dans le résultat du diagnostic qui évalue le problème de moisissures dans votre logement et vous dit honnêtement ce que vous avez et ce dont vous avez besoin.",
             "C'est comme si, dans le domaine de la santé, le seul service de diagnostic disponible était géré par la société pharmaceutique qui vend le médicament que le diagnostic va recommander. Personne n'accepterait cela en médecine. Nous l'acceptons dans le logement parce que nous n'avons jamais eu d'alternative.",
             "En France, le Diagnostiqueur Immobilier est une profession réglementée et certifiée, indépendante des entreprises de travaux. Cette infrastructure de diagnostic indépendant n'existe pas encore pour les moisissures résidentielles au Portugal.",
             "## Le lien avec la santé que personne ne fait",
             "Il y a une autre dimension de ce problème qui mérite d'être dite clairement.",
             "L'Organisation mondiale de la santé a estimé, dans ses directives de 2009 sur la qualité de l'air intérieur, que 13 pour cent des cas d'asthme infantile dans la région européenne de l'OMS sont attribuables à l'humidité résidentielle. Des recherches de Taborda-Barata et collègues, publiées en 2023 dans la revue scientifique Pulmonology, décrivent une « absence généralisée de sensibilisation » au Portugal concernant le lien entre la qualité de l'air intérieur et la santé respiratoire.",
-            "Un Portugais sur quatre vit dans un logement humide ou avec des moisissures. Treize pour cent des cas d'asthme infantile sont potentiellement attribuables à cette condition. Et le lien entre les murs dans lesquels on vit et les symptômes dont on souffre en hiver entre rarement dans la consultation médicale — ni en France, ni au Portugal.",
+            "Un Portugais sur quatre vit dans un logement humide ou avec des moisissures. Treize pour cent des cas d'asthme infantile sont potentiellement attribuables à cette condition. Et le lien entre les murs dans lesquels on vit et les symptômes dont on souffre en hiver entre rarement dans la consultation médicale ni en France, ni au Portugal.",
             "Ce n'est pas un problème mineur de qualité de vie. C'est un problème de santé publique sous-reconnu à l'échelle d'un quart de la population.",
-            "## Ce qu'est ce site — et ce qu'il n'est pas",
+            "## Ce qu'est ce site et ce qu'il n'est pas",
             "MoldCheck.pt n'est pas une entreprise de traitement. Nous ne vendons pas de systèmes de ventilation, de produits d'imperméabilisation, ni aucun autre service d'intervention dans les logements.",
-            "C'est une ressource d'information indépendante. Nous publions ce que la science dit sur les moisissures — sur les espèces, sur les risques pour la santé, sur les méthodes de détection et de remédiation qui ont une base scientifique. Quand une méthode ne fonctionne pas, nous disons qu'elle ne fonctionne pas. Quand les informations disponibles sont incertaines, nous disons qu'elles sont incertaines.",
-            "Nous sommes transparents sur notre identité : MoldCheck.pt est une initiative du FAIRBANK Group, la société à l'origine d'InspectOS — plateforme d'inspection indépendante de biens immobiliers au Portugal. Notre lien commercial est avec l'inspection et le diagnostic indépendants. Nous n'avons aucun intérêt dans le traitement qui suit le diagnostic. Quand nous recommandons une évaluation professionnelle, c'est parce que nous pensons que vous en avez besoin — pas parce que nous gagnons de l'argent sur ce qui se passe ensuite.",
+            "C'est une ressource d'information indépendante. Nous publions ce que la science dit sur les moisissures sur les espèces, sur les risques pour la santé, sur les méthodes de détection et de remédiation qui ont une base scientifique. Quand une méthode ne fonctionne pas, nous disons qu'elle ne fonctionne pas. Quand les informations disponibles sont incertaines, nous disons qu'elles sont incertaines.",
+            "Nous sommes transparents sur notre identité : MoldCheck.pt est une initiative du FAIRBANK Group, la société à l'origine d'InspectOS plateforme d'inspection indépendante de biens immobiliers au Portugal. Notre lien commercial est avec l'inspection et le diagnostic indépendants. Nous n'avons aucun intérêt dans le traitement qui suit le diagnostic. Quand nous recommandons une évaluation professionnelle, c'est parce que nous pensons que vous en avez besoin pas parce que nous gagnons de l'argent sur ce qui se passe ensuite.",
             "## Pour celui ou celle qui reconnaît sa situation",
-            "Si vous vivez au Portugal et que vous lisez ceci, il y a une probabilité sur quatre que votre logement soit affecté par l'humidité ou les moisissures. Vous le savez peut-être déjà — une tache qui réapparaît chaque hiver, une odeur que vous n'arrivez pas à éliminer, une pièce qui ne sèche jamais vraiment. Ou vous ne le savez peut-être pas — parce que les moisissures les plus problématiques poussent dans des endroits que vous ne voyez jamais, et les symptômes qu'elles provoquent sont faciles à attribuer à d'autres causes.",
+            "Si vous vivez au Portugal et que vous lisez ceci, il y a une probabilité sur quatre que votre logement soit affecté par l'humidité ou les moisissures. Vous le savez peut-être déjà une tache qui réapparaît chaque hiver, une odeur que vous n'arrivez pas à éliminer, une pièce qui ne sèche jamais vraiment. Ou vous ne le savez peut-être pas parce que les moisissures les plus problématiques poussent dans des endroits que vous ne voyez jamais, et les symptômes qu'elles provoquent sont faciles à attribuer à d'autres causes.",
             "Ce site a été construit pour vous. Pour que vous ayez accès à l'information qui existe, sans la médiation de ceux qui ont un intérêt dans le diagnostic qu'ils vont vous présenter.",
             "Le problème des moisissures au Portugal n'est pas inévitable. Ce n'est pas une caractéristique du climat qu'on accepte. C'est un problème avec des causes identifiables, des solutions fondées sur la science, et un manque évident d'information indépendante que ce site cherche, en partie, à combler.",
             "Nous commençons ici."
         ],
-        disclosure: "Pieter Paul Castelein travaille au sein du FAIRBANK Group, la société à l'origine d'InspectOS — plateforme d'inspection indépendante de biens immobiliers au Portugal. MoldCheck.pt est une initiative du FAIRBANK Group. Nous ne vendons pas de traitements contre l'humidité. Nous ne percevons pas de commissions des entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin — pas parce que nous tirons profit du traitement qui suit.",
+        disclosure: "Pieter Paul Castelein travaille au sein du FAIRBANK Group, la société à l'origine d'InspectOS plateforme d'inspection indépendante de biens immobiliers au Portugal. MoldCheck.pt est une initiative du FAIRBANK Group. Nous ne vendons pas de traitements contre l'humidité. Nous ne percevons pas de commissions des entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin pas parce que nous tirons profit du traitement qui suit.",
         sources: [
             {
-                label: "Eurostat EU-SILC Housing Quality Survey 2020–2023"
+                label: "Eurostat EU-SILC Housing Quality Survey 2020 2023"
             },
             {
                 label: "INE Censos 2021"
             },
             {
-                label: "OMS — Lignes directrices relatives à la qualité de l'air intérieur : humidité et moisissures (2009)"
+                label: "OMS Lignes directrices relatives à la qualité de l'air intérieur : humidité et moisissures (2009)"
             },
             {
                 label: "Taborda-Barata et al., Pulmonology (2023)"
@@ -3109,52 +3109,52 @@ const a4PortugalContent = {
         ]
     },
     de: {
-        seoTitle: "Portugal Hat das Zweitschlimmste Schimmelproblem Europas — MoldCheck.pt",
+        seoTitle: "Portugal Hat das Zweitschlimmste Schimmelproblem Europas MoldCheck.pt",
         seoDescription: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Eurostat-Daten, strukturelle Ursachen und das Fehlen unabhängiger Diagnose erklärt.",
         focusKeyword: "Schimmel Portugal Europa",
         title: "Portugal Hat das Zweitschlimmste Schimmelproblem Europas. Warum Spricht Niemand Darüber?",
         byline: "Von Pieter Paul Castelein, FAIRBANK Group",
         body: [
             "Ich bin in den Niederlanden aufgewachsen. In vierzig Jahren habe ich in keinem einzigen Haus Schimmel gesehen.",
-            "Nicht weil niederländische Häuser perfekt sind — das sind sie nicht. Sondern weil der niederländische Baustil davon ausgeht, dass es regnen wird — immer — und dass Feuchtigkeit aktiv gemanagt werden muss: ausreichende Dämmung, mechanische Lüftung, feuchtigkeitsresistente Materialien. Das Problem wird in den Bauprozess integriert, bevor es entstehen kann.",
-            "Als ich vor einigen Jahren nach Portugal zog, lernte ich, dass die Beziehung zur Feuchtigkeit in Wohngebäuden hier grundlegend anders ist. Feuchte Wände werden mit einer Art Resignation erwähnt, als ob es sich um eine Eigenschaft des Klimas handele, die man einfach akzeptiert. Schimmel hinter Schränken wird zufällig entdeckt, mit Bleiche behandelt, vergessen — bis er wiederkommt. Allergien und hartnäckiger Winterhusten werden der Kälte, der Luft, allem Möglichen zugeschrieben — nur nicht den Wänden, in denen man die meiste Zeit seines Lebens verbringt.",
+            "Nicht weil niederländische Häuser perfekt sind das sind sie nicht. Sondern weil der niederländische Baustil davon ausgeht, dass es regnen wird immer und dass Feuchtigkeit aktiv gemanagt werden muss: ausreichende Dämmung, mechanische Lüftung, feuchtigkeitsresistente Materialien. Das Problem wird in den Bauprozess integriert, bevor es entstehen kann.",
+            "Als ich vor einigen Jahren nach Portugal zog, lernte ich, dass die Beziehung zur Feuchtigkeit in Wohngebäuden hier grundlegend anders ist. Feuchte Wände werden mit einer Art Resignation erwähnt, als ob es sich um eine Eigenschaft des Klimas handele, die man einfach akzeptiert. Schimmel hinter Schränken wird zufällig entdeckt, mit Bleiche behandelt, vergessen bis er wiederkommt. Allergien und hartnäckiger Winterhusten werden der Kälte, der Luft, allem Möglichen zugeschrieben nur nicht den Wänden, in denen man die meiste Zeit seines Lebens verbringt.",
             "Ich wurde neugierig. Ich suchte die Daten.",
             "## Was die Zahlen zeigen",
-            "Die EU-SILC-Erhebung von Eurostat — die größte systematische Studie zu Lebensbedingungen in der Europäischen Union — befragt die Bevölkerung regelmäßig, ob sie in feuchten oder schimmelbelasteten Wohnungen lebt. Die Ergebnisse für Portugal sind über die Jahre konstant: Zwischen 24 und 26 Prozent der portugiesischen Bevölkerung lebt in Wohnungen, die von Feuchtigkeit oder Schimmel betroffen sind.",
+            "Die EU-SILC-Erhebung von Eurostat die größte systematische Studie zu Lebensbedingungen in der Europäischen Union befragt die Bevölkerung regelmäßig, ob sie in feuchten oder schimmelbelasteten Wohnungen lebt. Die Ergebnisse für Portugal sind über die Jahre konstant: Zwischen 24 und 26 Prozent der portugiesischen Bevölkerung lebt in Wohnungen, die von Feuchtigkeit oder Schimmel betroffen sind.",
             "Das ist der zweithöchste Wert in der Europäischen Union. Nur Zypern ist schlechter.",
             "Der EU-Durchschnitt liegt bei etwa 14 Prozent. Portugal hat fast das Doppelte.",
-            "Die INE-Volkszählung 2021 vervollständigt das Bild: 82 Prozent der portugiesischen Gebäude wurden vor dem Jahr 2000 gebaut — vor jeglichen nennenswerten Energieeffizienz- oder Dämmanforderungen. Mehr als ein Drittel der Gebäude sind reparaturbedürftig. Nicht Renovierung — grundlegende Instandhaltung.",
-            "Für deutsche Bewohner in Portugal — und es werden immer mehr, die Community wächst stetig — ist diese Realität besonders wichtig zu kennen. Ob Sie eine Hauptresidenz in Lissabon, ein Ferienhaus an der Algarve oder eine Mietwohnung im Großraum Porto haben: Die Gebäude, in denen Sie leben, wurden unter völlig anderen regulatorischen Bedingungen gebaut als das, was Sie aus Deutschland kennen.",
+            "Die INE-Volkszählung 2021 vervollständigt das Bild: 82 Prozent der portugiesischen Gebäude wurden vor dem Jahr 2000 gebaut vor jeglichen nennenswerten Energieeffizienz- oder Dämmanforderungen. Mehr als ein Drittel der Gebäude sind reparaturbedürftig. Nicht Renovierung grundlegende Instandhaltung.",
+            "Für deutsche Bewohner in Portugal und es werden immer mehr, die Community wächst stetig ist diese Realität besonders wichtig zu kennen. Ob Sie eine Hauptresidenz in Lissabon, ein Ferienhaus an der Algarve oder eine Mietwohnung im Großraum Porto haben: Die Gebäude, in denen Sie leben, wurden unter völlig anderen regulatorischen Bedingungen gebaut als das, was Sie aus Deutschland kennen.",
             "## Was ich auf dem Markt fand",
-            "Portugal hat mehrere Unternehmen auf dem Markt für Feuchtigkeits- und Schimmelbehandlung. Einige sind groß, mit jahrzehntelanger Tätigkeit und Tausenden von Interventionen pro Jahr. Sie bieten kostenlose Diagnosen an. Sie kommen zu Ihnen nach Hause, bewerten das Problem und schlagen Lösungen vor — Lüftungssysteme, Harzinjektionen, Verkapselungsprodukte — für Beträge, die mehrere Tausend Euro erreichen können.",
+            "Portugal hat mehrere Unternehmen auf dem Markt für Feuchtigkeits- und Schimmelbehandlung. Einige sind groß, mit jahrzehntelanger Tätigkeit und Tausenden von Interventionen pro Jahr. Sie bieten kostenlose Diagnosen an. Sie kommen zu Ihnen nach Hause, bewerten das Problem und schlagen Lösungen vor Lüftungssysteme, Harzinjektionen, Verkapselungsprodukte für Beträge, die mehrere Tausend Euro erreichen können.",
             "Diese Unternehmen können für spezifische Probleme legitime Lösungen anbieten. Das ist nicht der Punkt.",
-            "Der Punkt ist folgender: In Portugal wird die Diagnose von demselben Unternehmen gestellt, das die Behandlung verkauft. Es gibt in Portugal keine unabhängige Einrichtung — ohne Verbindung zu Behandlungsunternehmen, ohne kommerzielles Interesse am Diagnoseergebnis — die das Schimmelproblem in Ihrer Wohnung bewertet und Ihnen ehrlich sagt, was Sie haben und was Sie brauchen.",
+            "Der Punkt ist folgender: In Portugal wird die Diagnose von demselben Unternehmen gestellt, das die Behandlung verkauft. Es gibt in Portugal keine unabhängige Einrichtung ohne Verbindung zu Behandlungsunternehmen, ohne kommerzielles Interesse am Diagnoseergebnis die das Schimmelproblem in Ihrer Wohnung bewertet und Ihnen ehrlich sagt, was Sie haben und was Sie brauchen.",
             "Das ist so, als ob im Gesundheitswesen der einzige verfügbare Diagnosedienst vom Pharmaunternehmen betrieben würde, das das Medikament verkauft, das die Diagnose empfehlen wird. In der Medizin würde das niemand akzeptieren. Im Wohnbereich akzeptieren wir es, weil wir nie eine Alternative hatten.",
-            "In Deutschland gibt es den zertifizierten Sachverständigen für Schimmel — eine Instanz, die unabhängig von Sanierungsunternehmen arbeitet. Diese Infrastruktur existiert für Wohnimmobilien in Portugal noch nicht.",
+            "In Deutschland gibt es den zertifizierten Sachverständigen für Schimmel eine Instanz, die unabhängig von Sanierungsunternehmen arbeitet. Diese Infrastruktur existiert für Wohnimmobilien in Portugal noch nicht.",
             "## Die Verbindung zur Gesundheit, die niemand herstellt",
             "Die Weltgesundheitsorganisation schätzte in ihren Leitlinien von 2009 zur Innenraumluftqualität, dass 13 Prozent der Kindheitsfälle von Asthma in der europäischen WHO-Region auf Wohnraumfeuchtigkeit zurückzuführen sind. Forschungen von Taborda-Barata und Kollegen, veröffentlicht 2023 in der wissenschaftlichen Zeitschrift Pulmonology, beschreiben ein „weitverbreitetes Mangel an Bewusstsein in Portugal über den Zusammenhang zwischen Innenraumluftqualität und Atemwegsgesundheit.",
             "Jeder vierte Portugiese lebt in feuchten oder schimmelbelasteten Wohnungen. Dreizehn Prozent der Kindheitsasthma-Fälle sind potenziell darauf zurückzuführen. Und die Verbindung zwischen den Wänden, in denen man lebt, und den Symptomen, mit denen man im Winter kämpft, taucht selten in der ärztlichen Konsultation auf.",
             "Das ist kein geringes Lebensqualitätsproblem. Es ist ein im Ausmaß eines Viertels der Bevölkerung unterschätztes öffentliches Gesundheitsproblem.",
-            "## Was diese Website ist — und was sie nicht ist",
+            "## Was diese Website ist und was sie nicht ist",
             "MoldCheck.pt ist kein Behandlungsunternehmen. Wir verkaufen keine Lüftungssysteme, keine Abdichtungsprodukte und keine anderen Eingriffsdienste für Wohngebäude.",
-            "Es ist eine unabhängige Informationsressource. Wir veröffentlichen, was die Wissenschaft über Schimmel sagt — über Arten, Gesundheitsrisiken, Erkennungs- und Sanierungsmethoden mit wissenschaftlicher Grundlage. Wenn eine Methode nicht funktioniert, sagen wir das. Wenn Informationen unsicher sind, sagen wir das.",
-            "Wir sind transparent über unsere Identität: MoldCheck.pt ist eine Initiative der FAIRBANK Group, dem Unternehmen hinter InspectOS — einer unabhängigen Immobilieninspektionsplattform in Portugal. Unsere kommerzielle Verbindung liegt bei der unabhängigen Inspektion und Diagnose. Wir haben kein Interesse an der Behandlung, die auf die Diagnose folgt. Wenn wir eine professionelle Bewertung empfehlen, dann weil wir glauben, dass Sie eine brauchen — nicht weil wir an dem verdienen, was danach kommt.",
+            "Es ist eine unabhängige Informationsressource. Wir veröffentlichen, was die Wissenschaft über Schimmel sagt über Arten, Gesundheitsrisiken, Erkennungs- und Sanierungsmethoden mit wissenschaftlicher Grundlage. Wenn eine Methode nicht funktioniert, sagen wir das. Wenn Informationen unsicher sind, sagen wir das.",
+            "Wir sind transparent über unsere Identität: MoldCheck.pt ist eine Initiative der FAIRBANK Group, dem Unternehmen hinter InspectOS einer unabhängigen Immobilieninspektionsplattform in Portugal. Unsere kommerzielle Verbindung liegt bei der unabhängigen Inspektion und Diagnose. Wir haben kein Interesse an der Behandlung, die auf die Diagnose folgt. Wenn wir eine professionelle Bewertung empfehlen, dann weil wir glauben, dass Sie eine brauchen nicht weil wir an dem verdienen, was danach kommt.",
             "## Für jeden Vierten",
-            "Wenn Sie das lesen und in Portugal leben, gibt es eine Wahrscheinlichkeit von eins zu vier, dass Ihre Wohnung von Feuchtigkeit oder Schimmel betroffen ist. Vielleicht wissen Sie das bereits — ein Fleck, der jeden Winter wiederkommt, ein Geruch, den Sie nicht loswerden. Oder Sie wissen es nicht — weil der problematischste Schimmel an Orten wächst, die Sie nie sehen, und die Symptome, die er verursacht, leicht anderen Ursachen zugeschrieben werden können.",
-            "Diese Website wurde für Sie gebaut. Damit Sie Zugang zu den vorhandenen Informationen haben — ohne die Vermittlung derer, die ein Interesse an der Diagnose haben, die sie Ihnen präsentieren werden.",
+            "Wenn Sie das lesen und in Portugal leben, gibt es eine Wahrscheinlichkeit von eins zu vier, dass Ihre Wohnung von Feuchtigkeit oder Schimmel betroffen ist. Vielleicht wissen Sie das bereits ein Fleck, der jeden Winter wiederkommt, ein Geruch, den Sie nicht loswerden. Oder Sie wissen es nicht weil der problematischste Schimmel an Orten wächst, die Sie nie sehen, und die Symptome, die er verursacht, leicht anderen Ursachen zugeschrieben werden können.",
+            "Diese Website wurde für Sie gebaut. Damit Sie Zugang zu den vorhandenen Informationen haben ohne die Vermittlung derer, die ein Interesse an der Diagnose haben, die sie Ihnen präsentieren werden.",
             "Das Schimmelproblem in Portugal ist nicht unvermeidlich. Es ist kein Klimamerkmal, das man einfach akzeptiert. Es ist ein Problem mit identifizierbaren Ursachen, wissenschaftlich fundierten Lösungen und einem klaren Mangel an unabhängigen Informationen, den diese Website versucht, zumindest teilweise zu beheben.",
             "Wir beginnen hier."
         ],
-        disclosure: "Pieter Paul Castelein arbeitet bei der FAIRBANK Group, dem Unternehmen hinter InspectOS — einer unabhängigen Immobilieninspektionsplattform in Portugal. MoldCheck.pt ist eine Initiative der FAIRBANK Group. Wir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie eine brauchen — nicht weil wir von der nachfolgenden Behandlung profitieren.",
+        disclosure: "Pieter Paul Castelein arbeitet bei der FAIRBANK Group, dem Unternehmen hinter InspectOS einer unabhängigen Immobilieninspektionsplattform in Portugal. MoldCheck.pt ist eine Initiative der FAIRBANK Group. Wir verkaufen keine Feuchtigkeitsbehandlungen. Wir erhalten keine Provisionen von Sanierungsunternehmen. Wenn wir eine Inspektion oder Laboranalyse empfehlen, dann weil wir glauben, dass Sie eine brauchen nicht weil wir von der nachfolgenden Behandlung profitieren.",
         sources: [
             {
-                label: "Eurostat EU-SILC Housing Quality Survey 2020–2023"
+                label: "Eurostat EU-SILC Housing Quality Survey 2020 2023"
             },
             {
                 label: "INE Censos 2021"
             },
             {
-                label: "WHO — Leitlinien für die Innenraumluftqualität: Feuchtigkeit und Schimmel (2009)"
+                label: "WHO Leitlinien für die Innenraumluftqualität: Feuchtigkeit und Schimmel (2009)"
             },
             {
                 label: "Taborda-Barata et al., Pulmonology (2023)"
@@ -3187,53 +3187,53 @@ const a4PortugalContent = {
         ]
     },
     nl: {
-        seoTitle: "Portugal Heeft het Op Één Na Ergste Schimmelprobleem van Europa — MoldCheck.pt",
+        seoTitle: "Portugal Heeft het Op Één Na Ergste Schimmelprobleem van Europa MoldCheck.pt",
         seoDescription: "Portugal heeft het op één na ergste schimmelprobleem van Europa. Eurostat-cijfers, structurele oorzaken en het ontbreken van onafhankelijke diagnose uitgelegd.",
         focusKeyword: "schimmel Portugal Europa",
         title: "Portugal Heeft het Op Één Na Ergste Schimmelprobleem van Europa. Waarom Heeft Niemand Het Erover?",
         byline: "Door Pieter Paul Castelein, FAIRBANK Group",
         body: [
             "Ik ben opgegroeid in Nederland. In veertig jaar heb ik nooit schimmel in een huis gezien.",
-            "Niet omdat Nederlandse huizen perfect zijn — dat zijn ze niet. Maar omdat de Nederlandse bouw ervan uitgaat dat het gaat regenen, altijd, en dat vocht actief beheerd moet worden: voldoende isolatie, mechanische ventilatie, vochtbestendige materialen. Het probleem wordt in het bouwproces geïntegreerd voordat het kan ontstaan.",
-            "Toen ik een aantal jaren geleden naar Portugal verhuisde, ontdekte ik dat de relatie met vocht in woningen hier fundamenteel anders is. Vochtige muren worden vermeld met een soort berusting, alsof het een eigenschap van het klimaat is die je gewoon accepteert. Schimmel achter kasten wordt toevallig ontdekt, behandeld met bleekwater, vergeten — totdat het terugkomt. Allergieën en hardnekkige winterhoest worden toegeschreven aan de kou, de lucht, aan alles behalve de muren waarin je het grootste deel van je leven doorbrengt.",
+            "Niet omdat Nederlandse huizen perfect zijn dat zijn ze niet. Maar omdat de Nederlandse bouw ervan uitgaat dat het gaat regenen, altijd, en dat vocht actief beheerd moet worden: voldoende isolatie, mechanische ventilatie, vochtbestendige materialen. Het probleem wordt in het bouwproces geïntegreerd voordat het kan ontstaan.",
+            "Toen ik een aantal jaren geleden naar Portugal verhuisde, ontdekte ik dat de relatie met vocht in woningen hier fundamenteel anders is. Vochtige muren worden vermeld met een soort berusting, alsof het een eigenschap van het klimaat is die je gewoon accepteert. Schimmel achter kasten wordt toevallig ontdekt, behandeld met bleekwater, vergeten totdat het terugkomt. Allergieën en hardnekkige winterhoest worden toegeschreven aan de kou, de lucht, aan alles behalve de muren waarin je het grootste deel van je leven doorbrengt.",
             "Ik werd nieuwsgierig. Ik zocht de cijfers op.",
             "## Wat de cijfers zeggen",
-            "Het EU-SILC-onderzoek van Eurostat — de grootste systematische studie naar levensomstandigheden in de Europese Unie — vraagt bewoners regelmatig of ze in een woning leven die door vocht of schimmel is aangetast. De resultaten voor Portugal zijn jaar na jaar consistent: tussen de 24 en 26 procent van de Portugese bevolking leeft in een woning die door vocht of schimmel is aangetast.",
+            "Het EU-SILC-onderzoek van Eurostat de grootste systematische studie naar levensomstandigheden in de Europese Unie vraagt bewoners regelmatig of ze in een woning leven die door vocht of schimmel is aangetast. De resultaten voor Portugal zijn jaar na jaar consistent: tussen de 24 en 26 procent van de Portugese bevolking leeft in een woning die door vocht of schimmel is aangetast.",
             "Dat is het op één na hoogste cijfer in de Europese Unie. Alleen Cyprus scoort slechter.",
             "Het EU-gemiddelde ligt op ongeveer 14 procent. Portugal heeft bijna het dubbele.",
-            "De INE-volkstelling van 2021 completeert het beeld: 82 procent van de Portugese gebouwen is vóór het jaar 2000 gebouwd — vóór enige betekenisvolle eis voor energie-efficiëntie of isolatie. Meer dan een derde van alle gebouwen heeft reparaties nodig. Geen renovatie — basisonderhoud.",
-            "Als Nederlander herken ik dit patroon direct. We zijn gewend aan vochtig klimaat én aan woningen die daartegen bestand zijn. Portugal heeft het vochtige klimaat — Porto heeft een gemiddelde luchtvochtigheid van 77 procent, Lissabon in de winter 78 tot 84 procent — maar de bouw gaat er niet systematisch mee om. Dat is geen klimaatprobleem. Dat is een bouwkundig en informatieprobleem.",
+            "De INE-volkstelling van 2021 completeert het beeld: 82 procent van de Portugese gebouwen is vóór het jaar 2000 gebouwd vóór enige betekenisvolle eis voor energie-efficiëntie of isolatie. Meer dan een derde van alle gebouwen heeft reparaties nodig. Geen renovatie basisonderhoud.",
+            "Als Nederlander herken ik dit patroon direct. We zijn gewend aan vochtig klimaat én aan woningen die daartegen bestand zijn. Portugal heeft het vochtige klimaat Porto heeft een gemiddelde luchtvochtigheid van 77 procent, Lissabon in de winter 78 tot 84 procent maar de bouw gaat er niet systematisch mee om. Dat is geen klimaatprobleem. Dat is een bouwkundig en informatieprobleem.",
             "## Wat ik op de markt aantrof",
-            "Portugal heeft meerdere bedrijven op de markt voor vocht- en schimmelbehandeling. Sommige zijn groot, met tientallen jaren ervaring en duizenden interventies per jaar. Ze bieden gratis diagnoses aan. Ze komen bij je thuis, beoordelen het probleem en stellen oplossingen voor — ventilatiesystemen, harzinjecties, inkapselingsproducten — voor bedragen die kunnen oplopen tot duizenden euro's.",
+            "Portugal heeft meerdere bedrijven op de markt voor vocht- en schimmelbehandeling. Sommige zijn groot, met tientallen jaren ervaring en duizenden interventies per jaar. Ze bieden gratis diagnoses aan. Ze komen bij je thuis, beoordelen het probleem en stellen oplossingen voor ventilatiesystemen, harzinjecties, inkapselingsproducten voor bedragen die kunnen oplopen tot duizenden euro's.",
             "Deze bedrijven kunnen voor specifieke problemen legitieme oplossingen bieden. Dat is niet het punt.",
-            "Het punt is dit: in Portugal wordt de diagnose gesteld door hetzelfde bedrijf dat de behandeling verkoopt. Er bestaat in Portugal geen onafhankelijke instantie — zonder band met behandelingsbedrijven, zonder commercieel belang bij de uitkomst van de diagnose — die het schimmelprobleem in jouw woning beoordeelt en je eerlijk vertelt wat je hebt en wat je nodig hebt.",
+            "Het punt is dit: in Portugal wordt de diagnose gesteld door hetzelfde bedrijf dat de behandeling verkoopt. Er bestaat in Portugal geen onafhankelijke instantie zonder band met behandelingsbedrijven, zonder commercieel belang bij de uitkomst van de diagnose die het schimmelprobleem in jouw woning beoordeelt en je eerlijk vertelt wat je hebt en wat je nodig hebt.",
             "Het is alsof de enige beschikbare diagnostische dienst in de gezondheidszorg wordt gerund door het farmaceutisch bedrijf dat het medicijn verkoopt dat de diagnose gaat aanbevelen. In de geneeskunde zou niemand dat accepteren. In de woningmarkt accepteren we het, omdat we nooit een alternatief hebben gehad.",
-            "In Nederland kennen we de gecertificeerde schimmelinspecteur — een professional die onafhankelijk van saneringsbedrijven opereert. Die infrastructuur bestaat voor residentieel vastgoed in Portugal nog niet.",
+            "In Nederland kennen we de gecertificeerde schimmelinspecteur een professional die onafhankelijk van saneringsbedrijven opereert. Die infrastructuur bestaat voor residentieel vastgoed in Portugal nog niet.",
             "## De link met gezondheid die niemand legt",
             "De Wereldgezondheidsorganisatie schatte in haar richtlijnen van 2009 voor binnenluchtkwaliteit dat 13 procent van de gevallen van astma bij kinderen in de Europese WHO-regio toe te schrijven is aan vochtige woonomstandigheden. Onderzoek van Taborda-Barata en collega's, gepubliceerd in 2023 in het wetenschappelijk tijdschrift Pulmonology, beschrijft een \"wijdverspreide afwezigheid van bewustzijn\" in Portugal over het verband tussen binnenluchtkwaliteit en luchtwegaandoeningen.",
             "Eén op de vier Portugezen leeft in een woning met vocht of schimmel. Dertien procent van de gevallen van kindastma is hier mogelijk aan toe te schrijven. En de link tussen de muren waarin je leeft en de symptomen waarmee je elke winter kampt, komt zelden aan bod bij de huisarts.",
             "Dit is geen klein leefkwaliteitsprobleem. Het is een onderkend volksgezondheidsprobleem op de schaal van een kwart van de bevolking.",
-            "## Wat deze website is — en wat ze niet is",
+            "## Wat deze website is en wat ze niet is",
             "MoldCheck.pt is geen behandelingsbedrijf. We verkopen geen ventilatiesystemen, geen waterdichtingsproducten, en geen andere interventiediensten voor woningen.",
-            "Het is een onafhankelijke informatiebron. We publiceren wat de wetenschap zegt over schimmel — over soorten, gezondheidsrisico's, detectie- en saneringsmethoden met wetenschappelijke basis. Als een methode niet werkt, zeggen we dat. Als informatie onzeker is, zeggen we dat.",
-            "We zijn transparant over wie we zijn: MoldCheck.pt is een initiatief van de FAIRBANK Group, het bedrijf achter InspectOS — een onafhankelijk vastgoedinspectieplatform in Portugal. Onze commerciële verbinding ligt bij onafhankelijke inspectie en diagnose. We hebben geen belang bij de behandeling die op de diagnose volgt. Als we een professionele beoordeling aanbevelen, is dat omdat we denken dat je die nodig hebt — niet omdat we verdienen aan wat daarna komt.",
+            "Het is een onafhankelijke informatiebron. We publiceren wat de wetenschap zegt over schimmel over soorten, gezondheidsrisico's, detectie- en saneringsmethoden met wetenschappelijke basis. Als een methode niet werkt, zeggen we dat. Als informatie onzeker is, zeggen we dat.",
+            "We zijn transparant over wie we zijn: MoldCheck.pt is een initiatief van de FAIRBANK Group, het bedrijf achter InspectOS een onafhankelijk vastgoedinspectieplatform in Portugal. Onze commerciële verbinding ligt bij onafhankelijke inspectie en diagnose. We hebben geen belang bij de behandeling die op de diagnose volgt. Als we een professionele beoordeling aanbevelen, is dat omdat we denken dat je die nodig hebt niet omdat we verdienen aan wat daarna komt.",
             "## Voor iedereen die zich herkent",
-            "Als je dit leest en in Portugal woont — of een woning bezit in Portugal — is er een kans van één op vier dat jouw woning door vocht of schimmel is aangetast. Misschien weet je dat al. Of misschien niet — want de meest problematische schimmel groeit op plekken die je nooit ziet, en de symptomen die het veroorzaakt zijn makkelijk aan andere oorzaken toe te schrijven.",
+            "Als je dit leest en in Portugal woont of een woning bezit in Portugal is er een kans van één op vier dat jouw woning door vocht of schimmel is aangetast. Misschien weet je dat al. Of misschien niet want de meest problematische schimmel groeit op plekken die je nooit ziet, en de symptomen die het veroorzaakt zijn makkelijk aan andere oorzaken toe te schrijven.",
             "Als Nederlander in Portugal weet ik hoe verrassend dit kan zijn. We zijn niet gewend aan dit probleem. Maar juist daarom is het belangrijk om er open de ogen voor te hebben.",
-            "Deze website is gebouwd voor iedereen die toegang wil tot de beschikbare informatie — zonder de tussenkomst van partijen die belang hebben bij de diagnose die ze je gaan presenteren.",
+            "Deze website is gebouwd voor iedereen die toegang wil tot de beschikbare informatie zonder de tussenkomst van partijen die belang hebben bij de diagnose die ze je gaan presenteren.",
             "Het schimmelprobleem in Portugal is niet onvermijdelijk. Het is een probleem met identificeerbare oorzaken, wetenschappelijk onderbouwde oplossingen, en een duidelijk gebrek aan onafhankelijke informatie dat deze website deels probeert te vullen.",
             "We beginnen hier."
         ],
-        disclosure: "Pieter Paul Castelein werkt bij de FAIRBANK Group, het bedrijf achter InspectOS — een onafhankelijk vastgoedinspectieplatform in Portugal. MoldCheck.pt is een initiatief van de FAIRBANK Group. We verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt — niet omdat we verdienen aan de behandeling die daarop volgt.",
+        disclosure: "Pieter Paul Castelein werkt bij de FAIRBANK Group, het bedrijf achter InspectOS een onafhankelijk vastgoedinspectieplatform in Portugal. MoldCheck.pt is een initiatief van de FAIRBANK Group. We verkopen geen vochtbehandelingen. We ontvangen geen commissies van saneringsbedrijven. Als we een inspectie of laboratoriumanalyse aanbevelen, is dat omdat we denken dat je die nodig hebt niet omdat we verdienen aan de behandeling die daarop volgt.",
         sources: [
             {
-                label: "Eurostat EU-SILC Housing Quality Survey 2020–2023"
+                label: "Eurostat EU-SILC Housing Quality Survey 2020 2023"
             },
             {
                 label: "INE Censos 2021"
             },
             {
-                label: "WHO — Richtlijnen voor binnenluchtkwaliteit: vocht en schimmel (2009)"
+                label: "WHO Richtlijnen voor binnenluchtkwaliteit: vocht en schimmel (2009)"
             },
             {
                 label: "Taborda-Barata et al., Pulmonology (2023)"
@@ -3266,38 +3266,38 @@ const a4PortugalContent = {
         ]
     },
     es: {
-        seoTitle: "Portugal tiene el segundo peor problema de moho de Europa — MoldCheck.pt",
+        seoTitle: "Portugal tiene el segundo peor problema de moho de Europa MoldCheck.pt",
         seoDescription: "Portugal tiene el segundo peor problema de moho de Europa. Datos Eurostat, causas estructurales y ausencia de diagnóstico independiente explicados.",
         focusKeyword: "moho Portugal Europa",
         title: "Portugal tiene el segundo peor problema de moho de Europa. Casi nadie habla de ello.",
-        byline: "De Pieter Paul Castelein, FAIRBANK Group",
+        byline: "de MoldCheck.pt",
         body: [
-            "El 24–26% de los hogares portugueses declaran tener problemas de humedad o moho. Este es el dato de Eurostat EU-SILC — público, no controvertido, raramente citado.",
-            "Solo Chipre lo hace peor dentro de la Unión Europea. La media europea se sitúa en torno al 13–15%. Portugal casi duplica esa cifra.",
-            "## ¿Por qué ocurre esto?",
+            "El 24 26% de los hogares portugueses declaran tener problemas de humedad o moho. Este es el dato de Eurostat EU-SILC público, no controvertido, raramente citado.",
+            "Solo Chipre lo hace peor dentro de la Unión Europea. La media europea se sitúa en torno al 13 15%. Portugal casi duplica esa cifra.",
+            "## Por qué ocurre esto",
             "No es una cuestión de negligencia. Es física e historia.",
-            "El 82% de los edificios residenciales portugueses se construyó antes del año 2000 — antes de cualquier requisito significativo de aislamiento térmico o eficiencia energética. Estos edificios tienen puentes térmicos severos: marcos de ventanas de aluminio sin rotura de puente térmico, paredes exteriores delgadas, forjados sin aislar.",
+            "El 82% de los edificios residenciales portugueses se construyó antes del año 2000 antes de cualquier requisito significativo de aislamiento térmico o eficiencia energética. Estos edificios tienen puentes térmicos severos: marcos de ventanas de aluminio sin rotura de puente térmico, paredes exteriores delgadas, forjados sin aislar.",
             "Cuando el aire interior húmedo entra en contacto con estas superficies frías en invierno, condensa. Oporto tiene una humedad relativa media anual del 77%. Lisboa alcanza el 84% en las semanas más húmedas del invierno. Estos valores no son excepcionales en Portugal: son normales. Un edificio no diseñado para gestionar estas condiciones produce condensación estructural, no accidental.",
             "A esto se suma el hábito cultural de no calentar las casas en invierno, lo que mantiene las superficies de las paredes frías incluso en los días más húmedos.",
             "## El mercado de diagnóstico no es independiente",
             "En Portugal existe un mercado estructurado de empresas de tratamiento contra la humedad. Las principales ofrecen diagnósticos gratuitos a domicilio.",
-            "Esta oferta es comercialmente inteligente: la empresa que diagnostica el problema es la misma que venderá la solución. No existe un conflicto de intereses declarado — pero existe estructuralmente.",
+            "Esta oferta es comercialmente inteligente: la empresa que diagnostica el problema es la misma que venderá la solución. No existe un conflicto de intereses declarado pero existe estructuralmente.",
             "No se trata de acusar a estas empresas de incompetencia o mala fe. Se trata de señalar que en Portugal no existe ninguna entidad que evalúe el moho en una vivienda sin obtener beneficio del tratamiento que le sigue.",
             "## Lo que falta: un sistema de inspección independiente",
             "En España existe el técnico de prevención de riesgos laborales con competencia en calidad del aire, y los peritos de edificación. En Francia existe el diagnostiqueur immobilier certificado e independiente. En el Reino Unido existen los damp surveyors acreditados.",
             "En Portugal no existe nada equivalente para el diagnóstico residencial de humedad y moho. No hay un registro, no hay una certificación reconocida, no hay un marco normativo que separe quien diagnostica de quien trata.",
-            "MoldCheck.pt e InspectOS existen para comenzar a llenar este vacío — con inspectores que cobran por su tiempo, sin comisiones sobre las soluciones que siguen.",
-            "## ¿Por qué esto también afecta a los españoles en Portugal?",
-            "La comunidad española en Portugal ha crecido significativamente en los últimos años. Muchos llegan sin conocer el mercado inmobiliario local, sin la red de contactos que ayuda a los portugueses a gestionar los problemas de vivienda, y a menudo con expectativas de calidad constructiva calibradas en España — que, con todos sus problemas, tiene estándares de construcción mediamente superiores a los de Portugal en lo que respecta al aislamiento.",
-            "Comprar o alquilar una vivienda en Portugal sin una evaluación independiente de la humedad es un riesgo real. No porque los vendedores o propietarios sean necesariamente deshonestos, sino porque los problemas de humedad son con frecuencia invisibles en verano — la estación en que se realiza la mayoría de las compras — y porque no existe una obligación de información equivalente a la vigente en muchos otros países europeos."
+            "MoldCheck.pt e InspectOS existen para comenzar a llenar este vacío con inspectores que cobran por su tiempo, sin comisiones sobre las soluciones que siguen.",
+            "## Por qué esto también afecta a los españoles en Portugal",
+            "La comunidad española en Portugal ha crecido significativamente en los últimos años. Muchos llegan sin conocer el mercado inmobiliario local, sin la red de contactos que ayuda a los portugueses a gestionar los problemas de vivienda, y a menudo con expectativas de calidad constructiva calibradas en España que, con todos sus problemas, tiene estándares de construcción mediamente superiores a los de Portugal en lo que respecta al aislamiento.",
+            "Comprar o alquilar una vivienda en Portugal sin una evaluación independiente de la humedad es un riesgo real. No porque los vendedores o propietarios sean necesariamente deshonestos, sino porque los problemas de humedad son con frecuencia invisibles en verano la estación en que se realiza la mayoría de las compras y porque no existe una obligación de información equivalente a la vigente en muchos otros países europeos."
         ],
-        disclosure: "MoldCheck.pt es una iniciativa del FAIRBANK Group, la empresa que opera InspectOS — plataforma de inspección inmobiliaria independiente en Portugal. No vendemos tratamientos contra la humedad. No recibimos comisiones de empresas de saneamiento.",
+        disclosure: "MoldCheck.pt es una iniciativa del FAIRBANK Group, la empresa que opera InspectOS plataforma de inspección inmobiliaria independiente en Portugal. No vendemos tratamientos contra la humedad. No recibimos comisiones de empresas de saneamiento.",
         sources: [
             {
                 label: "Eurostat EU-SILC, Housing conditions data (2023)"
             },
             {
-                label: "INE, Censos 2021 — Caracterização do parque habitacional"
+                label: "INE, Censos 2021 Caracterização do parque habitacional"
             },
             {
                 label: "EPBD Directiva 2024/1275/UE"
@@ -3333,52 +3333,52 @@ const a4PortugalContent = {
         ]
     },
     it: {
-        seoTitle: "Il Portogallo ha il secondo peggior problema di muffa in Europa — MoldCheck.pt",
+        seoTitle: "Il Portogallo ha il secondo peggior problema di muffa in Europa MoldCheck.pt",
         seoDescription: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Dati Eurostat, cause strutturali e assenza di diagnosi indipendente spiegati.",
         focusKeyword: "muffa Portogallo Europa",
         title: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Quasi nessuno ne parla.",
         byline: "di MoldCheck.pt",
         body: [
             "Ho scoperto il problema della muffa in Portogallo nel modo in cui la maggior parte delle persone scopre qualcosa di scomodo: di persona.",
-            "Vengo dall'Olanda. Ho vissuto in case costruite con criteri di isolamento che in Portogallo sarebbero considerati di lusso. Quando mi sono trasferito a Lisbona, ho iniziato ad accusare sintomi che non avevo mai avuto: naso chiuso cronico, tosse secca, stanchezza. Ho attribuito tutto all'\"adattamento\" — al clima diverso, alla nuova città.",
+            "Vengo dall'Olanda. Ho vissuto in case costruite con criteri di isolamento che in Portogallo sarebbero considerati di lusso. Quando mi sono trasferito a Lisbona, ho iniziato ad accusare sintomi che non avevo mai avuto: naso chiuso cronico, tosse secca, stanchezza. Ho attribuito tutto all'\"adattamento\" al clima diverso, alla nuova città.",
             "Poi ho comprato un misuratore di umidità. Settantotto percento di umidità relativa in camera da letto, nel mese di novembre. Ho iniziato a guardare gli angoli. Ho trovato quello che stavo cercando.",
             "## I numeri che nessuno pubblica in evidenza",
             "Il programma EU-SILC di Eurostat pubblica ogni anno dati sull'abitazione in Europa. Tra le variabili rilevate c'è la percentuale di famiglie che segnalano problemi di umidità o muffa nelle proprie abitazioni.",
             "Il dato più recente disponibile per il Portogallo: 24-26% delle famiglie.",
             "Soltanto Cipro fa peggio tra i paesi dell'Unione Europea.",
             "Per confronto, la media europea è circa il 13-15%. Il Portogallo è quasi il doppio.",
-            "Questi dati esistono. Sono pubblici. Non sono controversi. Ma sono assenti dal dibattito pubblico portoghese, dalle campagne di salute pubblica, e dalla conversazione sui problemi dell'abitazione — che in Portogallo si concentra quasi esclusivamente sul costo degli affitti.",
+            "Questi dati esistono. Sono pubblici. Non sono controversi. Ma sono assenti dal dibattito pubblico portoghese, dalle campagne di salute pubblica, e dalla conversazione sui problemi dell'abitazione che in Portogallo si concentra quasi esclusivamente sul costo degli affitti.",
             "## Le ragioni strutturali del problema",
             "Il problema della muffa in Portogallo non è casuale. È il risultato prevedibile di tre fattori che si sommano:",
-            "Il parco edilizio. L'82% degli edifici residenziali portoghesi è stato costruito prima del 2000 — prima di qualsiasi requisito significativo di isolamento termico o efficienza energetica. Questi edifici hanno ponti termici massicci: telai di finestre in alluminio senza taglio termico, pareti esterne sottili, solai non isolati. Quando l'aria interna umida entra in contatto con queste superfici fredde in inverno, condensa.",
-            "Il clima. Porto ha un'umidità relativa media annua del 77%. Lisbona, nelle settimane più umide dell'inverno, raggiunge l'84%. Questi valori non sono eccezionali per il Portogallo — sono normali. Un edificio non progettato per gestire queste condizioni produce condensa strutturale, non accidentale.",
-            "La cultura del riscaldamento. La tradizione portoghese di non riscaldare le case d'inverno — per ragioni economiche e storiche — mantiene le superfici delle pareti fredde anche nelle giornate più umide. Questo amplifica la condensa su ogni superficie che non raggiunge la temperatura del punto di rugiada.",
-            "Il risultato è che circa un portoghese su quattro vive in una casa con problemi di umidità o muffa — non perché non si curi della propria abitazione, ma perché vive in un edificio strutturalmente inadeguato al proprio clima.",
+            "Il parco edilizio. L'82% degli edifici residenziali portoghesi è stato costruito prima del 2000 prima di qualsiasi requisito significativo di isolamento termico o efficienza energetica. Questi edifici hanno ponti termici massicci: telai di finestre in alluminio senza taglio termico, pareti esterne sottili, solai non isolati. Quando l'aria interna umida entra in contatto con queste superfici fredde in inverno, condensa.",
+            "Il clima. Porto ha un'umidità relativa media annua del 77%. Lisbona, nelle settimane più umide dell'inverno, raggiunge l'84%. Questi valori non sono eccezionali per il Portogallo sono normali. Un edificio non progettato per gestire queste condizioni produce condensa strutturale, non accidentale.",
+            "La cultura del riscaldamento. La tradizione portoghese di non riscaldare le case d'inverno per ragioni economiche e storiche mantiene le superfici delle pareti fredde anche nelle giornate più umide. Questo amplifica la condensa su ogni superficie che non raggiunge la temperatura del punto di rugiada.",
+            "Il risultato è che circa un portoghese su quattro vive in una casa con problemi di umidità o muffa non perché non si curi della propria abitazione, ma perché vive in un edificio strutturalmente inadeguato al proprio clima.",
             "## Il mercato della diagnosi non è indipendente",
             "In Portogallo esiste un mercato strutturato delle aziende di trattamento contro l'umidità. Le principali offrono diagnosi gratuite a domicilio.",
-            "Questa offerta è intelligente dal punto di vista commerciale: l'azienda che diagnostica il problema è la stessa che venderà la soluzione. Non esiste un conflitto di interessi dichiarato — ma esiste strutturalmente.",
+            "Questa offerta è intelligente dal punto di vista commerciale: l'azienda che diagnostica il problema è la stessa che venderà la soluzione. Non esiste un conflitto di interessi dichiarato ma esiste strutturalmente.",
             "Non si tratta di accusare queste aziende di incompetenza o malafede. Si tratta di notare che non esiste in Portogallo nessuna entità che valuti la muffa in un'abitazione senza guadagnare dal trattamento che ne consegue.",
-            "Per gli italiani residenti in Portogallo — o per chiunque stia valutando un acquisto immobiliare o un contratto di locazione — questa asimmetria è importante da comprendere.",
+            "Per gli italiani residenti in Portogallo o per chiunque stia valutando un acquisto immobiliare o un contratto di locazione questa asimmetria è importante da comprendere.",
             "## Quello che manca: un sistema di ispezione indipendente",
-            "In Francia esiste il diagnostiqueur immobilier — un professionista certificato e indipendente che valuta le condizioni di un immobile senza interesse nelle soluzioni che propone. In Germania esiste il Sachverständiger für Schimmelpilze. Nel Regno Unito esistono i damp surveyors accreditati.",
+            "In Francia esiste il diagnostiqueur immobilier un professionista certificato e indipendente che valuta le condizioni di un immobile senza interesse nelle soluzioni che propone. In Germania esiste il Sachverständiger für Schimmelpilze. Nel Regno Unito esistono i damp surveyors accreditati.",
             "In Portogallo non esiste nulla di equivalente per la diagnostica residenziale dell'umidità e della muffa. Non esiste un registro, non esiste una certificazione riconosciuta, non esiste un quadro normativo che separi chi diagnostica da chi tratta.",
-            "Il MoldCheck.pt e la InspectOS esistono per cominciare a colmare questo vuoto — con ispettori che fatturano il proprio tempo, senza commissioni sulle soluzioni che seguono.",
+            "Il MoldCheck.pt e la InspectOS esistono per cominciare a colmare questo vuoto con ispettori che fatturano il proprio tempo, senza commissioni sulle soluzioni che seguono.",
             "Non è la soluzione sistemica che il Portogallo necessita. Ma è la soluzione disponibile ora, per le persone che hanno bisogno di sapere con che cosa hanno a che fare prima di decidere cosa fare.",
             "## Perché questo riguarda anche gli italiani in Portogallo",
-            "La comunità italiana in Portogallo è cresciuta significativamente negli ultimi anni. Molti arrivano senza conoscere il mercato immobiliare locale, senza la rete di contatti che aiuta i portoghesi a navigare i problemi dell'abitazione, e spesso con aspettative di qualità costruttiva calibrate sull'Italia — che, nonostante i suoi problemi, ha standard edilizi mediamente superiori al Portogallo.",
-            "Comprare o affittare casa in Portogallo senza una valutazione indipendente dell'umidità è un rischio reale. Non perché i venditori o i proprietari siano necessariamente disonesti, ma perché i problemi di umidità sono spesso non visibili in estate — la stagione in cui la maggior parte degli acquisti viene effettuata — e perché non esiste un obbligo di disclosure equivalente a quello vigente in molti altri paesi europei.",
+            "La comunità italiana in Portogallo è cresciuta significativamente negli ultimi anni. Molti arrivano senza conoscere il mercato immobiliare locale, senza la rete di contatti che aiuta i portoghesi a navigare i problemi dell'abitazione, e spesso con aspettative di qualità costruttiva calibrate sull'Italia che, nonostante i suoi problemi, ha standard edilizi mediamente superiori al Portogallo.",
+            "Comprare o affittare casa in Portogallo senza una valutazione indipendente dell'umidità è un rischio reale. Non perché i venditori o i proprietari siano necessariamente disonesti, ma perché i problemi di umidità sono spesso non visibili in estate la stagione in cui la maggior parte degli acquisti viene effettuata e perché non esiste un obbligo di disclosure equivalente a quello vigente in molti altri paesi europei.",
             "## Quello che speriamo cambi",
-            "Una parte della risposta è normativa: la trasposizione della direttiva EPBD 2024/1275 — che dovrà avvenire entro maggio 2026 — porterà nuovi requisiti sulle prestazioni energetiche degli edifici, inclusi quelli legati all'umidità. Questo creerà pressione strutturale verso un'edilizia più sana.",
+            "Una parte della risposta è normativa: la trasposizione della direttiva EPBD 2024/1275 che dovrà avvenire entro maggio 2026 porterà nuovi requisiti sulle prestazioni energetiche degli edifici, inclusi quelli legati all'umidità. Questo creerà pressione strutturale verso un'edilizia più sana.",
             "Un'altra parte è culturale: la muffa nelle abitazioni viene ancora trattata come un problema estetico o di manutenzione ordinaria, non come un problema di salute pubblica. Finché questa percezione non cambia, il problema sistemico rimane invisibile.",
-            "Il MoldCheck.pt non può cambiare il mercato immobiliare portoghese. Può però offrire informazioni oneste alle persone che ne hanno bisogno — in tutte le lingue di chi vive in Portogallo."
+            "Il MoldCheck.pt non può cambiare il mercato immobiliare portoghese. Può però offrire informazioni oneste alle persone che ne hanno bisogno in tutte le lingue di chi vive in Portogallo."
         ],
-        disclosure: "MoldCheck.pt è un'iniziativa del FAIRBANK Group, la società che gestisce InspectOS — piattaforma di ispezione immobiliare indipendente in Portogallo. Non vendiamo trattamenti contro l'umidità. Non riceviamo commissioni da aziende di risanamento. Quando raccomandiamo un'ispezione o un'analisi di laboratorio, è perché riteniamo che ne abbiate bisogno — non perché guadagniamo dal trattamento che ne consegue.",
+        disclosure: "MoldCheck.pt è un'iniziativa del FAIRBANK Group, la società che gestisce InspectOS piattaforma di ispezione immobiliare indipendente in Portogallo. Non vendiamo trattamenti contro l'umidità. Non riceviamo commissioni da aziende di risanamento. Quando raccomandiamo un'ispezione o un'analisi di laboratorio, è perché riteniamo che ne abbiate bisogno non perché guadagniamo dal trattamento che ne consegue.",
         sources: [
             {
                 label: "Eurostat EU-SILC, Housing conditions data (2023)"
             },
             {
-                label: "INE, Censos 2021 — Caracterização do parque habitacional"
+                label: "INE, Censos 2021 Caracterização do parque habitacional"
             },
             {
                 label: "EPBD Direttiva 2024/1275/UE"

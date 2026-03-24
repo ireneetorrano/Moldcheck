@@ -1,140 +1,138 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useState, useEffect, useRef } from "react";
 import type { ActiveLocale } from "@/config/locales";
 import type { Answers, CalculatorPhase } from "../types";
-import { QUESTIONS } from "../lib/questions";
 import { computeScore, getBand } from "../lib/scoring";
-import { CalculatorStep } from "./CalculatorStep";
+import { getCalcI18n } from "../lib/i18n";
+import { analytics } from "../lib/analytics";
+import { saveToStorage, loadFromStorage, clearStorage, readAnswersFromUrl } from "../lib/queryString";
+import { CalculatorForm } from "./CalculatorForm";
 import { CalculatorResult } from "./CalculatorResult";
 
 interface HumidityCalculatorProps {
   locale: ActiveLocale;
+  /** When true, skip the idle intro and go straight to the form (unless a saved result exists) */
+  startDirect?: boolean;
 }
 
-export function HumidityCalculator({ locale }: HumidityCalculatorProps) {
-  const t = useTranslations("Calculator");
-  const [phase, setPhase] = useState<CalculatorPhase>({ phase: "idle" });
-  const [stepError, setStepError] = useState<string | null>(null);
+// Navbar height to offset scroll-to-result
+const NAVBAR_OFFSET = 80;
 
-  function start() {
-    setPhase({ phase: "step", stepIndex: 0, answers: {} });
-    setStepError(null);
-  }
+export function HumidityCalculator({ locale, startDirect }: HumidityCalculatorProps) {
+  const i18n = getCalcI18n(locale);
+  const [phase, setPhase] = useState<CalculatorPhase>(
+    startDirect ? { phase: "form", answers: {} } : { phase: "idle" }
+  );
+  const resultRef = useRef<HTMLDivElement>(null);
+  const topRef = useRef<HTMLDivElement>(null);
 
-  function handleAnswer(questionId: string, value: string) {
-    if (phase.phase !== "step") return;
-    setPhase({
-      ...phase,
-      answers: { ...phase.answers, [questionId]: value },
-    });
-    setStepError(null);
-  }
-
-  function handleNext() {
-    if (phase.phase !== "step") return;
-    const currentQuestion = QUESTIONS[phase.stepIndex];
-    if (currentQuestion.required && !phase.answers[currentQuestion.id]) {
-      setStepError(t("errorRequired"));
+  // On mount: restore from URL params or localStorage directly into result state
+  useEffect(() => {
+    const fromUrl = readAnswersFromUrl();
+    if (fromUrl) {
+      const score = computeScore(fromUrl);
+      const band = getBand(score);
+      setPhase({ phase: "result", answers: fromUrl, score, band });
       return;
     }
-    setStepError(null);
-    if (phase.stepIndex < QUESTIONS.length - 1) {
-      setPhase({ ...phase, stepIndex: phase.stepIndex + 1 });
-    } else {
-      const score = computeScore(phase.answers, QUESTIONS);
-      const band = getBand(score);
-      setPhase({ phase: "result", answers: phase.answers, score, band });
+    const stored = loadFromStorage();
+    if (stored) {
+      const band = getBand(stored.score);
+      setPhase({ phase: "result", answers: stored.answers, score: stored.score, band });
     }
+  }, []);
+
+  // Scroll to result top whenever we enter result phase
+  useEffect(() => {
+    if (phase.phase !== "result") return;
+    // Wait one frame for the DOM to render the result block
+    const raf = requestAnimationFrame(() => {
+      if (!resultRef.current) return;
+      const top = resultRef.current.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [phase.phase]);
+
+  function handleStart() {
+    analytics.calculatorStarted();
+    setPhase({ phase: "form", answers: {} });
   }
 
-  function handleBack() {
-    if (phase.phase !== "step" || phase.stepIndex === 0) return;
-    setStepError(null);
-    setPhase({ ...phase, stepIndex: phase.stepIndex - 1 });
+  function handleChange(id: string, value: string) {
+    if (phase.phase !== "form") return;
+    setPhase({ ...phase, answers: { ...phase.answers, [id]: value } });
   }
 
-  if (phase.phase === "idle") {
-    return (
-      <div className="mx-auto max-w-xl space-y-4 py-8 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
-        <button
-          onClick={start}
-          className="rounded-md bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700"
-        >
-          {t("startButton")}
-        </button>
+  function handleSubmit() {
+    if (phase.phase !== "form") return;
+    const score = computeScore(phase.answers);
+    const band = getBand(score);
+    analytics.calculatorCompleted(band);
+    saveToStorage(phase.answers, score);
+    setPhase({ phase: "result", answers: phase.answers, score, band });
+  }
+
+  const [scrollToTop, setScrollToTop] = useState(false);
+
+  // Scroll to top of calculator after reset
+  useEffect(() => {
+    if (!scrollToTop) return;
+    setScrollToTop(false);
+    const raf = requestAnimationFrame(() => {
+      if (!topRef.current) return;
+      const top = topRef.current.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [scrollToTop]);
+
+  function handleReset() {
+    clearStorage();
+    setPhase(startDirect ? { phase: "form", answers: {} } : { phase: "idle" });
+    setScrollToTop(true);
+  }
+
+  return (
+    <div className="humidity-calculator">
+      {/* Hero / intro — always visible */}
+      <div ref={topRef} className="calc-hero">
+        <p className="calc-hero__eyebrow">{i18n.pageEyebrow}</p>
+        <h1 className="calc-hero__title">{i18n.pageTitle}</h1>
+        <p className="calc-hero__intro">{i18n.pageIntro}</p>
+        {phase.phase === "idle" && (
+          <div className="calc-hero__actions">
+            <button type="button" onClick={handleStart} className="calc-start-btn">
+              {i18n.startCta}
+            </button>
+          </div>
+        )}
       </div>
-    );
-  }
 
-  if (phase.phase === "step") {
-    const question = QUESTIONS[phase.stepIndex];
-    const isLast = phase.stepIndex === QUESTIONS.length - 1;
-    const progress = Math.round(((phase.stepIndex + 1) / QUESTIONS.length) * 100);
+      {/* Form */}
+      {phase.phase === "form" && (
+        <CalculatorForm
+          i18n={i18n}
+          answers={phase.answers}
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+        />
+      )}
 
-    return (
-      <div className="mx-auto max-w-xl space-y-6 py-8">
-        <div className="h-1.5 w-full rounded-full bg-gray-200">
-          <div
-            className="h-1.5 rounded-full bg-blue-500 transition-all"
-            style={{ width: `${progress}%` }}
+      {/* Result — ref used for scroll target */}
+      {phase.phase === "result" && (
+        <div ref={resultRef}>
+          <CalculatorResult
+            locale={locale}
+            i18n={i18n}
+            answers={phase.answers}
+            score={phase.score}
+            band={phase.band}
+            onReset={handleReset}
           />
         </div>
-        <p className="text-xs text-gray-400">
-          {phase.stepIndex + 1} / {QUESTIONS.length}
-        </p>
-
-        <CalculatorStep
-          question={question}
-          value={phase.answers[question.id]}
-          onChange={(val) => handleAnswer(question.id, val)}
-          error={stepError}
-        />
-
-        <div className="flex gap-3">
-          {phase.stepIndex > 0 && (
-            <button
-              onClick={handleBack}
-              className="rounded-md border border-gray-300 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-            >
-              {t("backButton")}
-            </button>
-          )}
-          <button
-            onClick={handleNext}
-            className="ml-auto rounded-md bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-700"
-          >
-            {isLast ? t("submitButton") : t("nextButton")}
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (phase.phase === "result") {
-    return (
-      <div className="mx-auto max-w-xl py-8">
-        <CalculatorResult
-          locale={locale}
-          score={phase.score}
-          band={phase.band}
-          emailCaptured={false}
-          onEmailCapture={() => setPhase({ phase: "submitted" })}
-          onSkip={() => setPhase({ phase: "skipped" })}
-        />
-      </div>
-    );
-  }
-
-  if (phase.phase === "submitted" || phase.phase === "skipped") {
-    return (
-      <div className="mx-auto max-w-xl py-8">
-        <p className="text-sm text-gray-500">{t("emailCaptureSuccess")}</p>
-      </div>
-    );
-  }
-
-  return null;
+      )}
+    </div>
+  );
 }

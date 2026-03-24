@@ -1,4 +1,4 @@
-import type { ActiveLocale } from "@/config/locales";
+﻿import type { ActiveLocale } from "@/config/locales";
 import { siteConfig } from "@/config/site";
 import type { GlobalPageCard, GlobalPageContent } from "@/types/content";
 
@@ -17,7 +17,7 @@ interface EditorialPolicyLocaleContent {
 const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent> = {
   pt: {
     eyebrow: "Política editorial",
-    title: "Como trabalhamos — e ao que nos comprometemos",
+    title: "Como trabalhamos e ao que nos comprometemos",
     description:
       "O MoldCheck.pt é uma publicação editorial independente. Esta página explica os nossos princípios editoriais, as nossas fontes, e o que nos distingue de outros recursos sobre bolor e humidade.",
     policyTitle: "Os nossos compromissos editoriais",
@@ -25,22 +25,22 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "1. Independência de tratamentos",
         title: "Sem conflito financeiro com a remediação",
-        body: "MoldCheck.pt não recebe pagamentos, comissões ou qualquer forma de compensação de empresas que vendem tratamentos de humidade, produtos anti-bolor, sistemas de ventilação ou serviços de remediação.\n\nIsto não significa que o site não possa cobrar por serviços próprios ou relacionados com a sua actividade legítima, como inspecções independentes, análises laboratoriais, reservas ou recursos digitais. Significa, sim, que não aceitamos dinheiro de empresas cujo interesse comercial dependa de recomendar ou vender a remediação do problema.\n\nQuando recomendamos um produto, método ou serviço, fazemo-lo porque tem base científica ou utilidade real para o utilizador — não porque uma empresa de tratamento nos pagou para o recomendar.",
+        body: "MoldCheck.pt não recebe pagamentos, comissões ou qualquer forma de compensação de empresas que vendem tratamentos de humidade, produtos anti-bolor, sistemas de ventilação ou serviços de remediação.\n\nIsto não significa que o site não possa cobrar por serviços próprios ou relacionados com a sua actividade legítima, como inspecções independentes, análises laboratoriais, reservas ou recursos digitais. Significa, sim, que não aceitamos dinheiro de empresas cujo interesse comercial dependa de recomendar ou vender a remediação do problema.\n\nQuando recomendamos um produto, método ou serviço, fazemo-lo porque tem base científica ou utilidade real para o utilizador não porque uma empresa de tratamento nos pagou para o recomendar.",
       },
       {
         eyebrow: "2. Base científica",
         title: "Literatura revista por pares e normas técnicas reconhecidas",
-        body: "Todo o conteúdo clínico e técnico deste site é fundamentado em literatura científica revisada por pares ou em normas técnicas reconhecidas internacionalmente. As nossas fontes primárias incluem:\n\nDiretrizes da OMS para a Qualidade do Ar Interior: Humidade e Bolor (2009)\n\nIICRC S520 — Norma para Remediação Profissional de Bolor, 4.ª edição (2024)\n\nEPA — Manual de Remediação de Bolor\n\nInstituto de Medicina — Espaços Interiores Húmidos e Saúde (2004)\n\nInvestigação publicada em revistas científicas com revisão por pares, com citação explícita",
+        body: "Todo o conteúdo clínico e técnico deste site é fundamentado em literatura científica revisada por pares ou em normas técnicas reconhecidas internacionalmente. As nossas fontes primárias incluem:\n\nDiretrizes da OMS para a Qualidade do Ar Interior: Humidade e Bolor (2009)\n\nIICRC S520 Norma para Remediação Profissional de Bolor, 4.ª edição (2024)\n\nEPA Manual de Remediação de Bolor\n\nInstituto de Medicina Espaços Interiores Húmidos e Saúde (2004)\n\nInvestigação publicada em revistas científicas com revisão por pares, com citação explícita",
       },
       {
         eyebrow: "3. Honestidade sobre a incerteza",
         title: "Distinguimos o que é robusto, sugestivo e ainda desconhecido",
-        body: "A ciência do bolor interior está em desenvolvimento activo. Há áreas onde a evidência é robusta e estabelecida — a ligação causal entre humidade e sintomas respiratórios, por exemplo. Há áreas onde a evidência é sugestiva mas não conclusiva — o CIRS, certos efeitos neurológicos dos MVOC. E há áreas onde simplesmente não sabemos.\n\nDistinguimos estas categorias explicitamente no nosso conteúdo. Não exageramos a certeza científica para criar urgência, nem minimizamos riscos documentados para evitar alarmar.",
+        body: "A ciência do bolor interior está em desenvolvimento activo. Há áreas onde a evidência é robusta e estabelecida a ligação causal entre humidade e sintomas respiratórios, por exemplo. Há áreas onde a evidência é sugestiva mas não conclusiva o CIRS, certos efeitos neurológicos dos MVOC. E há áreas onde simplesmente não sabemos.\n\nDistinguimos estas categorias explicitamente no nosso conteúdo. Não exageramos a certeza científica para criar urgência, nem minimizamos riscos documentados para evitar alarmar.",
       },
       {
         eyebrow: "4. Sem exagero de risco",
         title: "Rigor antes de medo",
-        body: "O bolor em casa é um problema real com consequências documentadas para a saúde. Não é uma emergência mortal na maioria dos casos. Escrever sobre bolor com o objectivo de criar medo desproporcional — seja para vender tratamentos, seja para atrair tráfego — é uma prática que este site rejeita explicitamente.",
+        body: "O bolor em casa é um problema real com consequências documentadas para a saúde. Não é uma emergência mortal na maioria dos casos. Escrever sobre bolor com o objectivo de criar medo desproporcional seja para vender tratamentos, seja para atrair tráfego é uma prática que este site rejeita explicitamente.",
       },
       {
         eyebrow: "5. Transparência sobre limitações",
@@ -55,7 +55,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Erros e correcções",
         title: "Correcções transparentes e registadas",
-        body: "Se identificar um erro factual no nosso conteúdo, contacte-nos. Corrigimos com transparência — o erro original, a correcção, e a data de actualização ficam registados.",
+        body: "Se identificar um erro factual no nosso conteúdo, contacte-nos. Corrigimos com transparência o erro original, a correcção, e a data de actualização ficam registados.",
       },
     ],
     contactTitle: "Contacto",
@@ -82,7 +82,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   en: {
     eyebrow: "Editorial policy",
-    title: "How we work — and what we commit to",
+    title: "How we work and what we commit to",
     description:
       "MoldCheck.pt is an independent editorial publication. This page explains our editorial principles, our sources, and what distinguishes us from other mold and damp resources.",
     policyTitle: "Our editorial commitments",
@@ -90,22 +90,22 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "1. Independence from treatment",
         title: "No financial conflict with remediation",
-        body: "MoldCheck.pt does not receive payments, commissions, or any form of compensation from companies that sell damp treatments, anti-mold products, ventilation systems, or remediation services.\n\nThis does not mean the site cannot charge for its own legitimate services or related activities, such as independent inspections, laboratory analysis, bookings, or digital resources. It means that we do not accept money from companies whose commercial interest depends on recommending or selling remediation.\n\nWhen we recommend a product, method, or service, we do so because it has scientific basis or real usefulness for the user — not because a remediation company paid us to recommend it.",
+        body: "MoldCheck.pt does not receive payments, commissions, or any form of compensation from companies that sell damp treatments, anti-mold products, ventilation systems, or remediation services.\n\nThis does not mean the site cannot charge for its own legitimate services or related activities, such as independent inspections, laboratory analysis, bookings, or digital resources. It means that we do not accept money from companies whose commercial interest depends on recommending or selling remediation.\n\nWhen we recommend a product, method, or service, we do so because it has scientific basis or real usefulness for the user not because a remediation company paid us to recommend it.",
       },
       {
         eyebrow: "2. Scientific basis",
         title: "Peer-reviewed literature and recognised standards",
-        body: "All clinical and technical content on this site is grounded in peer-reviewed scientific literature or internationally recognised technical standards. Our primary sources include:\n\nWHO Guidelines for Indoor Air Quality: Dampness and Mould (2009)\n\nIICRC S520 — Standard for Professional Mold Remediation, 4th edition (2024)\n\nEPA — Mold Remediation Guide\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed research with explicit citation",
+        body: "All clinical and technical content on this site is grounded in peer-reviewed scientific literature or internationally recognised technical standards. Our primary sources include:\n\nWHO Guidelines for Indoor Air Quality: Dampness and Mould (2009)\n\nIICRC S520 Standard for Professional Mold Remediation, 4th edition (2024)\n\nEPA Mold Remediation Guide\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed research with explicit citation",
       },
       {
         eyebrow: "3. Honesty about uncertainty",
         title: "We separate robust evidence from suggestive evidence",
-        body: "The science of indoor mold is still actively developing. There are areas where evidence is robust and well established — the causal link between dampness and respiratory symptoms, for example. There are areas where evidence is suggestive but not conclusive — CIRS, and certain neurological effects of MVOCs. And there are areas where we simply do not know.\n\nWe distinguish these categories explicitly in our content. We do not overstate scientific certainty to create urgency, nor do we downplay documented risks to avoid alarming readers.",
+        body: "The science of indoor mold is still actively developing. There are areas where evidence is robust and well established the causal link between dampness and respiratory symptoms, for example. There are areas where evidence is suggestive but not conclusive CIRS, and certain neurological effects of MVOCs. And there are areas where we simply do not know.\n\nWe distinguish these categories explicitly in our content. We do not overstate scientific certainty to create urgency, nor do we downplay documented risks to avoid alarming readers.",
       },
       {
         eyebrow: "4. No risk exaggeration",
         title: "Accuracy over fear",
-        body: "Residential mold is a real problem with documented health consequences. It is not a fatal emergency in most cases. Writing about mold with the objective of creating disproportionate fear — whether to sell treatments or drive traffic — is a practice this site explicitly rejects.",
+        body: "Residential mold is a real problem with documented health consequences. It is not a fatal emergency in most cases. Writing about mold with the objective of creating disproportionate fear whether to sell treatments or drive traffic is a practice this site explicitly rejects.",
       },
       {
         eyebrow: "5. Transparency about limitations",
@@ -120,7 +120,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Errors and corrections",
         title: "Corrections are logged transparently",
-        body: "If you identify a factual error in our content, contact us. We correct transparently — the original error, the correction, and the update date are all recorded.",
+        body: "If you identify a factual error in our content, contact us. We correct transparently the original error, the correction, and the update date are all recorded.",
       },
     ],
     contactTitle: "Contact",
@@ -147,7 +147,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   fr: {
     eyebrow: "Politique éditoriale",
-    title: "Comment nous travaillons — et à quoi nous nous engageons",
+    title: "Comment nous travaillons et à quoi nous nous engageons",
     description:
       "MoldCheck.pt est une publication éditoriale indépendante. Cette page explique nos principes éditoriaux, nos sources et ce qui nous distingue des autres ressources sur les moisissures et l'humidité.",
     policyTitle: "Nos engagements éditoriaux",
@@ -160,7 +160,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "2. Base scientifique",
         title: "Littérature évaluée par les pairs et normes reconnues",
-        body: "Tout le contenu clinique et technique de ce site repose sur de la littérature scientifique évaluée par les pairs ou sur des normes techniques reconnues au niveau international. Nos sources principales incluent :\n\nLignes directrices de l'OMS pour la qualité de l'air intérieur : humidité et moisissures (2009)\n\nIICRC S520 — norme de remédiation professionnelle des moisissures, 4e édition (2024)\n\nEPA — guide de remédiation des moisissures\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nRecherches scientifiques publiées avec citations explicites",
+        body: "Tout le contenu clinique et technique de ce site repose sur de la littérature scientifique évaluée par les pairs ou sur des normes techniques reconnues au niveau international. Nos sources principales incluent :\n\nLignes directrices de l'OMS pour la qualité de l'air intérieur : humidité et moisissures (2009)\n\nIICRC S520 norme de remédiation professionnelle des moisissures, 4e édition (2024)\n\nEPA guide de remédiation des moisissures\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nRecherches scientifiques publiées avec citations explicites",
       },
       {
         eyebrow: "3. Honnêteté face à l'incertitude",
@@ -185,7 +185,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Erreurs et corrections",
         title: "Corrections transparentes et documentées",
-        body: "Si vous identifiez une erreur factuelle dans notre contenu, contactez-nous. Nous corrigeons de manière transparente — l'erreur initiale, la correction et la date de mise à jour sont consignées.",
+        body: "Si vous identifiez une erreur factuelle dans notre contenu, contactez-nous. Nous corrigeons de manière transparente l'erreur initiale, la correction et la date de mise à jour sont consignées.",
       },
     ],
     contactTitle: "Contact",
@@ -212,7 +212,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   de: {
     eyebrow: "Redaktionsrichtlinie",
-    title: "Wie wir arbeiten — und wozu wir uns verpflichten",
+    title: "Wie wir arbeiten und wozu wir uns verpflichten",
     description:
       "MoldCheck.pt ist eine unabhängige redaktionelle Publikation. Diese Seite erläutert unsere redaktionellen Grundsätze, unsere Quellen und was uns von anderen Ressourcen zu Schimmel und Feuchtigkeit unterscheidet.",
     policyTitle: "Unsere redaktionellen Verpflichtungen",
@@ -225,7 +225,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "2. Wissenschaftliche Grundlage",
         title: "Peer-reviewte Literatur und anerkannte Standards",
-        body: "Alle klinischen und technischen Inhalte dieser Website beruhen auf peer-reviewter wissenschaftlicher Literatur oder auf international anerkannten technischen Standards. Zu unseren wichtigsten Quellen gehören:\n\nWHO-Leitlinien zur Innenraumluftqualität: Feuchtigkeit und Schimmel (2009)\n\nIICRC S520 — Standard für professionelle Schimmelsanierung, 4. Ausgabe (2024)\n\nEPA — Leitfaden zur Schimmelbeseitigung\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewte Forschung mit expliziten Quellenangaben",
+        body: "Alle klinischen und technischen Inhalte dieser Website beruhen auf peer-reviewter wissenschaftlicher Literatur oder auf international anerkannten technischen Standards. Zu unseren wichtigsten Quellen gehören:\n\nWHO-Leitlinien zur Innenraumluftqualität: Feuchtigkeit und Schimmel (2009)\n\nIICRC S520 Standard für professionelle Schimmelsanierung, 4. Ausgabe (2024)\n\nEPA Leitfaden zur Schimmelbeseitigung\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nPeer-reviewte Forschung mit expliziten Quellenangaben",
       },
       {
         eyebrow: "3. Ehrlichkeit im Umgang mit Unsicherheit",
@@ -250,7 +250,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Fehler und Korrekturen",
         title: "Korrekturen werden transparent dokumentiert",
-        body: "Wenn Sie einen sachlichen Fehler in unseren Inhalten feststellen, kontaktieren Sie uns. Wir korrigieren transparent — der ursprüngliche Fehler, die Korrektur und das Aktualisierungsdatum werden dokumentiert.",
+        body: "Wenn Sie einen sachlichen Fehler in unseren Inhalten feststellen, kontaktieren Sie uns. Wir korrigieren transparent der ursprüngliche Fehler, die Korrektur und das Aktualisierungsdatum werden dokumentiert.",
       },
     ],
     contactTitle: "Kontakt",
@@ -277,7 +277,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   nl: {
     eyebrow: "Redactioneel beleid",
-    title: "Hoe wij werken — en waar wij ons aan verbinden",
+    title: "Hoe wij werken en waar wij ons aan verbinden",
     description:
       "MoldCheck.pt is een onafhankelijke redactionele publicatie. Deze pagina legt onze redactionele principes, onze bronnen en wat ons onderscheidt van andere bronnen over schimmel en vocht uit.",
     policyTitle: "Onze redactionele verbintenissen",
@@ -290,7 +290,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "2. Wetenschappelijke basis",
         title: "Peer-reviewed literatuur en erkende normen",
-        body: "Alle klinische en technische inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijke literatuur of op internationaal erkende technische normen. Onze belangrijkste bronnen zijn:\n\nWHO-richtlijnen voor binnenluchtkwaliteit: vocht en schimmel (2009)\n\nIICRC S520 — norm voor professionele schimmelsanering, 4e editie (2024)\n\nEPA — handleiding voor schimmelsanering\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed onderzoek met expliciete bronvermelding",
+        body: "Alle klinische en technische inhoud op deze site is gebaseerd op peer-reviewed wetenschappelijke literatuur of op internationaal erkende technische normen. Onze belangrijkste bronnen zijn:\n\nWHO-richtlijnen voor binnenluchtkwaliteit: vocht en schimmel (2009)\n\nIICRC S520 norm voor professionele schimmelsanering, 4e editie (2024)\n\nEPA handleiding voor schimmelsanering\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nPeer-reviewed onderzoek met expliciete bronvermelding",
       },
       {
         eyebrow: "3. Eerlijkheid over onzekerheid",
@@ -315,7 +315,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Fouten en correcties",
         title: "Correcties worden transparant gedocumenteerd",
-        body: "Als u een feitelijke fout in onze inhoud ontdekt, neem dan contact met ons op. Wij corrigeren transparant — de oorspronkelijke fout, de correctie en de datum van bijwerking worden gedocumenteerd.",
+        body: "Als u een feitelijke fout in onze inhoud ontdekt, neem dan contact met ons op. Wij corrigeren transparant de oorspronkelijke fout, de correctie en de datum van bijwerking worden gedocumenteerd.",
       },
     ],
     contactTitle: "Contact",
@@ -342,7 +342,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   it: {
     eyebrow: "Politica editoriale",
-    title: "Come lavoriamo — e a cosa ci impegniamo",
+    title: "Come lavoriamo e a cosa ci impegniamo",
     description:
       "MoldCheck.pt è una pubblicazione editoriale indipendente. Questa pagina spiega i nostri principi editoriali, le nostre fonti e ciò che ci distingue da altre risorse su muffa e umidità.",
     policyTitle: "I nostri impegni editoriali",
@@ -355,7 +355,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "2. Base scientifica",
         title: "Letteratura peer-reviewed e standard riconosciuti",
-        body: "Tutti i contenuti clinici e tecnici di questo sito si basano su letteratura scientifica peer-reviewed o su standard tecnici riconosciuti a livello internazionale. Le nostre fonti principali includono:\n\nLinee guida OMS per la qualità dell'aria interna: umidità e muffe (2009)\n\nIICRC S520 — Standard per la bonifica professionale delle muffe, 4a edizione (2024)\n\nEPA — Guida alla bonifica delle muffe\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nRicerche peer-reviewed con citazione esplicita",
+        body: "Tutti i contenuti clinici e tecnici di questo sito si basano su letteratura scientifica peer-reviewed o su standard tecnici riconosciuti a livello internazionale. Le nostre fonti principali includono:\n\nLinee guida OMS per la qualità dell'aria interna: umidità e muffe (2009)\n\nIICRC S520 Standard per la bonifica professionale delle muffe, 4a edizione (2024)\n\nEPA Guida alla bonifica delle muffe\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nRicerche peer-reviewed con citazione esplicita",
       },
       {
         eyebrow: "3. Onestà sull'incertezza",
@@ -380,7 +380,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Errori e correzioni",
         title: "Le correzioni sono documentate in modo trasparente",
-        body: "Se identifichi un errore fattuale nei nostri contenuti, contattaci. Correggiamo in modo trasparente — l'errore originale, la correzione e la data di aggiornamento sono tutti registrati.",
+        body: "Se identifichi un errore fattuale nei nostri contenuti, contattaci. Correggiamo in modo trasparente l'errore originale, la correzione e la data di aggiornamento sono tutti registrati.",
       },
     ],
     contactTitle: "Contatti",
@@ -407,7 +407,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
   },
   es: {
     eyebrow: "Política editorial",
-    title: "Cómo trabajamos — y a qué nos comprometemos",
+    title: "Cómo trabajamos y a qué nos comprometemos",
     description:
       "MoldCheck.pt es una publicación editorial independiente. Esta página explica nuestros principios editoriales, nuestras fuentes y lo que nos distingue de otros recursos sobre moho y humedad.",
     policyTitle: "Nuestros compromisos editoriales",
@@ -420,7 +420,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "2. Base científica",
         title: "Literatura revisada por pares y normas reconocidas",
-        body: "Todo el contenido clínico y técnico de este sitio se basa en literatura científica revisada por pares o en normas técnicas reconocidas internacionalmente. Nuestras fuentes principales incluyen:\n\nDirectrices de la OMS para la calidad del aire interior: humedad y moho (2009)\n\nIICRC S520 — Norma para la remediación profesional del moho, 4.ª edición (2024)\n\nEPA — Guía de remediación del moho\n\nInstitute of Medicine — Damp Indoor Spaces and Health (2004)\n\nInvestigación revisada por pares con cita explícita",
+        body: "Todo el contenido clínico y técnico de este sitio se basa en literatura científica revisada por pares o en normas técnicas reconocidas internacionalmente. Nuestras fuentes principales incluyen:\n\nDirectrices de la OMS para la calidad del aire interior: humedad y moho (2009)\n\nIICRC S520 Norma para la remediación profesional del moho, 4.ª edición (2024)\n\nEPA Guía de remediación del moho\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nInvestigación revisada por pares con cita explícita",
       },
       {
         eyebrow: "3. Honestidad sobre la incertidumbre",
@@ -445,7 +445,7 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "7. Errores y correcciones",
         title: "Las correcciones se documentan de forma transparente",
-        body: "Si identifica un error factual en nuestro contenido, contáctenos. Corregimos de forma transparente — el error original, la corrección y la fecha de actualización quedan registrados.",
+        body: "Si identifica un error factual en nuestro contenido, contáctenos. Corregimos de forma transparente el error original, la corrección y la fecha de actualización quedan registrados.",
       },
     ],
     contactTitle: "Contacto",

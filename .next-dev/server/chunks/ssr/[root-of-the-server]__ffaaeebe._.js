@@ -1631,10 +1631,11 @@ function getConflictEyebrow(locale) {
 }
 function getArticleHref(locale, section) {
     const articleKey = section === "remediation" ? "bleach" : section === "inspection" ? "inspection-guide" : section;
-    const slug = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["foundationalArticles"].find((article)=>article.key === articleKey)?.slugs[locale];
-    // The portugal article lives in the /articles/ route, not /portugal/
-    if (section === "portugal") {
-        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getArticlePath"])(locale, slug ?? "");
+    const article = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["foundationalArticles"].find((a)=>a.key === articleKey);
+    const slug = article?.slugs[locale] ?? "";
+    // Articles in the /articles/ route (portugal, inspection-guide)
+    if (article?.section === "articles") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getArticlePath"])(locale, slug);
     }
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, section, slug);
 }
@@ -1672,7 +1673,7 @@ function getHomeFallbackContent(locale) {
         heroTitle: content.heroTitle,
         heroBody: content.heroBody,
         heroPrimaryCtaLabel: content.heroPrimaryCtaLabel,
-        heroPrimaryCtaHref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "tools"),
+        heroPrimaryCtaHref: `${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "tools")}/humidity-risk-calculator`,
         heroSecondaryCtaLabel: content.heroSecondaryCtaLabel,
         heroSecondaryCtaHref: getArticleHref(locale, "inspection"),
         trustBarText: content.trustBarText,
@@ -1741,7 +1742,7 @@ function getHomeNextStepsContent(locale) {
         getArticleHref(locale, "inspection"),
         getArticleHref(locale, "health"),
         getArticleHref(locale, "inspection"),
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSectionPath"])(locale, "inspection")
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$routing$2f$paths$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPath"])(locale, "services")
     ];
     return {
         nextStepsTitle: c.nextStepsTitle,

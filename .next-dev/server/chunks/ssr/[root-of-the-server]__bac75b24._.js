@@ -65,7 +65,7 @@ const content = {
         emailLabel: "Email",
         phoneLabel: "Telefone",
         responseLabel: "Tempo de resposta",
-        responseValue: "Em 1–2 dias úteis",
+        responseValue: "Em 1 2 dias úteis",
         note: "MoldCheck.pt é uma publicação editorial independente. Não vendemos tratamentos nem recebemos comissões de empresas de remediação.",
         labelFullName: "Nome completo",
         labelEmail: "Email",
@@ -98,7 +98,7 @@ const content = {
         errMessageRequired: "A mensagem é obrigatória.",
         errMessageMax: "Máximo 500 caracteres.",
         errConsentRequired: "Deve aceitar a política de privacidade.",
-        metaTitle: "Contacto — MoldCheck.pt",
+        metaTitle: "Contacto MoldCheck.pt",
         metaDescription: "Contacte o MoldCheck.pt para consultas sobre inspeção independente de humidade e bolor."
     },
     en: {
@@ -108,7 +108,7 @@ const content = {
         emailLabel: "Email",
         phoneLabel: "Phone",
         responseLabel: "Response time",
-        responseValue: "Within 1–2 business days",
+        responseValue: "Within 1 2 business days",
         note: "MoldCheck.pt is an independent editorial publication. We do not sell treatments or take commissions from remediation companies.",
         labelFullName: "Full name",
         labelEmail: "Email",
@@ -141,7 +141,7 @@ const content = {
         errMessageRequired: "Message is required.",
         errMessageMax: "Maximum 500 characters.",
         errConsentRequired: "You must accept the privacy policy.",
-        metaTitle: "Contact — MoldCheck.pt",
+        metaTitle: "Contact MoldCheck.pt",
         metaDescription: "Contact MoldCheck.pt for enquiries about independent damp and mold inspection."
     },
     fr: {
@@ -151,7 +151,7 @@ const content = {
         emailLabel: "Email",
         phoneLabel: "Téléphone",
         responseLabel: "Délai de réponse",
-        responseValue: "Sous 1–2 jours ouvrables",
+        responseValue: "Sous 1 2 jours ouvrables",
         note: "MoldCheck.pt est une publication éditoriale indépendante. Nous ne vendons pas de traitements et ne percevons pas de commissions d'entreprises de remédiation.",
         labelFullName: "Nom complet",
         labelEmail: "Email",
@@ -184,7 +184,7 @@ const content = {
         errMessageRequired: "Le message est obligatoire.",
         errMessageMax: "Maximum 500 caractères.",
         errConsentRequired: "Vous devez accepter la politique de confidentialité.",
-        metaTitle: "Contact — MoldCheck.pt",
+        metaTitle: "Contact MoldCheck.pt",
         metaDescription: "Contactez MoldCheck.pt pour des questions sur l'inspection indépendante de l'humidité et des moisissures."
     },
     de: {
@@ -194,7 +194,7 @@ const content = {
         emailLabel: "E-Mail",
         phoneLabel: "Telefon",
         responseLabel: "Antwortzeit",
-        responseValue: "Innerhalb von 1–2 Werktagen",
+        responseValue: "Innerhalb von 1 2 Werktagen",
         note: "MoldCheck.pt ist eine unabhängige redaktionelle Publikation. Wir verkaufen keine Behandlungen und erhalten keine Provisionen von Sanierungsunternehmen.",
         labelFullName: "Vollständiger Name",
         labelEmail: "E-Mail",
@@ -227,7 +227,7 @@ const content = {
         errMessageRequired: "Nachricht ist erforderlich.",
         errMessageMax: "Maximal 500 Zeichen.",
         errConsentRequired: "Sie müssen die Datenschutzerklärung akzeptieren.",
-        metaTitle: "Kontakt — MoldCheck.pt",
+        metaTitle: "Kontakt MoldCheck.pt",
         metaDescription: "Kontaktieren Sie MoldCheck.pt für Anfragen zur unabhängigen Feuchtigkeits- und Schimmelinspektion."
     },
     nl: {
@@ -237,7 +237,7 @@ const content = {
         emailLabel: "E-mail",
         phoneLabel: "Telefoon",
         responseLabel: "Reactietijd",
-        responseValue: "Binnen 1–2 werkdagen",
+        responseValue: "Binnen 1 2 werkdagen",
         note: "MoldCheck.pt is een onafhankelijke redactionele publicatie. We verkopen geen behandelingen en ontvangen geen commissies van saneringsbedrijven.",
         labelFullName: "Volledige naam",
         labelEmail: "E-mail",
@@ -270,7 +270,7 @@ const content = {
         errMessageRequired: "Bericht is verplicht.",
         errMessageMax: "Maximaal 500 tekens.",
         errConsentRequired: "Je moet het privacybeleid accepteren.",
-        metaTitle: "Contact — MoldCheck.pt",
+        metaTitle: "Contact MoldCheck.pt",
         metaDescription: "Neem contact op met MoldCheck.pt voor vragen over onafhankelijke vocht- en schimmelinspectie."
     },
     it: {
@@ -280,7 +280,7 @@ const content = {
         emailLabel: "Email",
         phoneLabel: "Telefono",
         responseLabel: "Tempo di risposta",
-        responseValue: "Entro 1–2 giorni lavorativi",
+        responseValue: "Entro 1 2 giorni lavorativi",
         note: "MoldCheck.pt è una pubblicazione editoriale indipendente. Non vendiamo trattamenti né riceviamo commissioni da aziende di risanamento.",
         labelFullName: "Nome completo",
         labelEmail: "Email",
@@ -313,7 +313,7 @@ const content = {
         errMessageRequired: "Il messaggio è obbligatorio.",
         errMessageMax: "Massimo 500 caratteri.",
         errConsentRequired: "Devi accettare l'informativa sulla privacy.",
-        metaTitle: "Contatti — MoldCheck.pt",
+        metaTitle: "Contatti MoldCheck.pt",
         metaDescription: "Contatta MoldCheck.pt per consulenze sull'ispezione indipendente di umidità e muffa."
     },
     es: {
@@ -323,7 +323,7 @@ const content = {
         emailLabel: "Email",
         phoneLabel: "Teléfono",
         responseLabel: "Tiempo de respuesta",
-        responseValue: "En 1–2 días hábiles",
+        responseValue: "En 1 2 días hábiles",
         note: "MoldCheck.pt es una publicación editorial independiente. No vendemos tratamientos ni cobramos comisiones de empresas de remediación.",
         labelFullName: "Nombre completo",
         labelEmail: "Email",
@@ -356,7 +356,7 @@ const content = {
         errMessageRequired: "El mensaje es obligatorio.",
         errMessageMax: "Máximo 500 caracteres.",
         errConsentRequired: "Debes aceptar la política de privacidad.",
-        metaTitle: "Contacto — MoldCheck.pt",
+        metaTitle: "Contacto MoldCheck.pt",
         metaDescription: "Contacta con MoldCheck.pt para consultas sobre inspección independiente de humedad y moho."
     }
 };

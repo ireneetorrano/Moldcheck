@@ -1,0 +1,3608 @@
+module.exports = [
+"[project]/src/features/tools/lib/calculatorConfig.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "BAND_THRESHOLDS",
+    ()=>BAND_THRESHOLDS,
+    "CHECKLIST_IDS",
+    ()=>CHECKLIST_IDS,
+    "QUESTIONS",
+    ()=>QUESTIONS,
+    "SECTION_KEYS",
+    ()=>SECTION_KEYS
+]);
+const QUESTIONS = [
+    // ── Section 1: The Building ──────────────────────────────────────────────
+    {
+        id: "buildingType",
+        sectionKey: "building",
+        labelKey: "q_buildingType",
+        options: [
+            {
+                value: "apartment_block",
+                labelKey: "opt_apartment_block",
+                score: 4
+            },
+            {
+                value: "detached",
+                labelKey: "opt_detached",
+                score: 2
+            },
+            {
+                value: "semi_detached",
+                labelKey: "opt_semi_detached",
+                score: 3
+            },
+            {
+                value: "ground_floor_apt",
+                labelKey: "opt_ground_floor_apt",
+                score: 8
+            },
+            {
+                value: "top_floor_apt",
+                labelKey: "opt_top_floor_apt",
+                score: 6
+            }
+        ]
+    },
+    {
+        id: "constructionYear",
+        sectionKey: "building",
+        labelKey: "q_constructionYear",
+        options: [
+            {
+                value: "before_1960",
+                labelKey: "opt_before_1960",
+                score: 14
+            },
+            {
+                value: "1960_1980",
+                labelKey: "opt_1960_1980",
+                score: 12
+            },
+            {
+                value: "1980_2000",
+                labelKey: "opt_1980_2000",
+                score: 7
+            },
+            {
+                value: "2000_2015",
+                labelKey: "opt_2000_2015",
+                score: 3
+            },
+            {
+                value: "after_2015",
+                labelKey: "opt_after_2015",
+                score: -2
+            }
+        ]
+    },
+    {
+        id: "location",
+        sectionKey: "building",
+        labelKey: "q_location",
+        options: [
+            {
+                value: "lisbon",
+                labelKey: "opt_lisbon",
+                score: 6
+            },
+            {
+                value: "porto",
+                labelKey: "opt_porto",
+                score: 8
+            },
+            {
+                value: "algarve",
+                labelKey: "opt_algarve",
+                score: 2
+            },
+            {
+                value: "interior",
+                labelKey: "opt_interior",
+                score: 3
+            },
+            {
+                value: "islands",
+                labelKey: "opt_islands",
+                score: 7
+            }
+        ]
+    },
+    {
+        id: "floorLevel",
+        sectionKey: "building",
+        labelKey: "q_floorLevel",
+        options: [
+            {
+                value: "ground",
+                labelKey: "opt_ground",
+                score: 8
+            },
+            {
+                value: "first_third",
+                labelKey: "opt_first_third",
+                score: 3
+            },
+            {
+                value: "fourth_plus",
+                labelKey: "opt_fourth_plus",
+                score: 2
+            },
+            {
+                value: "top_floor",
+                labelKey: "opt_top_floor",
+                score: 5
+            },
+            {
+                value: "only_floor",
+                labelKey: "opt_only_floor",
+                score: 4
+            }
+        ]
+    },
+    {
+        id: "windowType",
+        sectionKey: "building",
+        labelKey: "q_windowType",
+        options: [
+            {
+                value: "single_alu",
+                labelKey: "opt_single_alu",
+                score: 12
+            },
+            {
+                value: "double_no_break",
+                labelKey: "opt_double_no_break",
+                score: 7
+            },
+            {
+                value: "double_thermal",
+                labelKey: "opt_double_thermal",
+                score: -2
+            },
+            {
+                value: "triple",
+                labelKey: "opt_triple",
+                score: -4
+            }
+        ]
+    },
+    // ── Section 2: Current Conditions ───────────────────────────────────────
+    {
+        id: "hygrometer",
+        sectionKey: "conditions",
+        labelKey: "q_hygrometer",
+        options: [
+            {
+                value: "below_60",
+                labelKey: "opt_below_60",
+                score: 0
+            },
+            {
+                value: "60_70",
+                labelKey: "opt_60_70",
+                score: 8
+            },
+            {
+                value: "70_80",
+                labelKey: "opt_70_80",
+                score: 14
+            },
+            {
+                value: "above_80",
+                labelKey: "opt_above_80",
+                score: 18
+            },
+            {
+                value: "no_hygro",
+                labelKey: "opt_no_hygro",
+                score: 4
+            }
+        ]
+    },
+    {
+        id: "moldHistory",
+        sectionKey: "conditions",
+        labelKey: "q_moldHistory",
+        options: [
+            {
+                value: "none",
+                labelKey: "opt_mold_none",
+                score: 0
+            },
+            {
+                value: "small_nonporous",
+                labelKey: "opt_mold_small_nonporous",
+                score: 5
+            },
+            {
+                value: "large_porous",
+                labelKey: "opt_mold_large_porous",
+                score: 12
+            },
+            {
+                value: "recurrent",
+                labelKey: "opt_mold_recurrent",
+                score: 18
+            }
+        ]
+    },
+    {
+        id: "odour",
+        sectionKey: "conditions",
+        labelKey: "q_odour",
+        options: [
+            {
+                value: "none",
+                labelKey: "opt_odour_none",
+                score: 0
+            },
+            {
+                value: "occasional",
+                labelKey: "opt_odour_occasional",
+                score: 4
+            },
+            {
+                value: "regular",
+                labelKey: "opt_odour_regular",
+                score: 9
+            },
+            {
+                value: "strong",
+                labelKey: "opt_odour_strong",
+                score: 15
+            }
+        ]
+    },
+    {
+        id: "waterEvents",
+        sectionKey: "conditions",
+        labelKey: "q_waterEvents",
+        options: [
+            {
+                value: "none",
+                labelKey: "opt_water_none",
+                score: 0
+            },
+            {
+                value: "minor",
+                labelKey: "opt_water_minor",
+                score: 5
+            },
+            {
+                value: "moderate",
+                labelKey: "opt_water_moderate",
+                score: 10
+            },
+            {
+                value: "major",
+                labelKey: "opt_water_major",
+                score: 16
+            }
+        ]
+    },
+    // ── Section 3: Lifestyle ─────────────────────────────────────────────────
+    {
+        id: "bathroomVent",
+        sectionKey: "lifestyle",
+        labelKey: "q_bathroomVent",
+        options: [
+            {
+                value: "window_only",
+                labelKey: "opt_bv_window",
+                score: 8
+            },
+            {
+                value: "extractor_out",
+                labelKey: "opt_bv_extractor",
+                score: 0
+            },
+            {
+                value: "extractor_unk",
+                labelKey: "opt_bv_unknown",
+                score: 5
+            },
+            {
+                value: "no_vent",
+                labelKey: "opt_bv_none",
+                score: 14
+            }
+        ]
+    },
+    {
+        id: "kitchenVent",
+        sectionKey: "lifestyle",
+        labelKey: "q_kitchenVent",
+        options: [
+            {
+                value: "window_only",
+                labelKey: "opt_kv_window",
+                score: 6
+            },
+            {
+                value: "recirculation",
+                labelKey: "opt_kv_recirculation",
+                score: 8
+            },
+            {
+                value: "extraction",
+                labelKey: "opt_kv_extraction",
+                score: 0
+            }
+        ]
+    },
+    {
+        id: "laundryDrying",
+        sectionKey: "lifestyle",
+        labelKey: "q_laundryDrying",
+        options: [
+            {
+                value: "always_outside",
+                labelKey: "opt_ld_always_outside",
+                score: 0
+            },
+            {
+                value: "mostly_outside",
+                labelKey: "opt_ld_mostly_outside",
+                score: 2
+            },
+            {
+                value: "sometimes_in",
+                labelKey: "opt_ld_sometimes_in",
+                score: 5
+            },
+            {
+                value: "usually_in",
+                labelKey: "opt_ld_usually_in",
+                score: 9
+            }
+        ]
+    },
+    {
+        id: "heating",
+        sectionKey: "lifestyle",
+        labelKey: "q_heating",
+        options: [
+            {
+                value: "always_18",
+                labelKey: "opt_heat_always",
+                score: 0
+            },
+            {
+                value: "most_days",
+                labelKey: "opt_heat_most",
+                score: 3
+            },
+            {
+                value: "occasional",
+                labelKey: "opt_heat_occasional",
+                score: 7
+            },
+            {
+                value: "rarely",
+                labelKey: "opt_heat_rarely",
+                score: 10
+            }
+        ]
+    },
+    {
+        id: "occupants",
+        sectionKey: "lifestyle",
+        labelKey: "q_occupants",
+        options: [
+            {
+                value: "one",
+                labelKey: "opt_occ_1",
+                score: 1
+            },
+            {
+                value: "two",
+                labelKey: "opt_occ_2",
+                score: 2
+            },
+            {
+                value: "three_four",
+                labelKey: "opt_occ_34",
+                score: 4
+            },
+            {
+                value: "five_plus",
+                labelKey: "opt_occ_5p",
+                score: 8
+            }
+        ]
+    }
+];
+const SECTION_KEYS = [
+    "building",
+    "conditions",
+    "lifestyle"
+];
+const BAND_THRESHOLDS = [
+    {
+        band: "critical",
+        min: 76
+    },
+    {
+        band: "high",
+        min: 51
+    },
+    {
+        band: "moderate",
+        min: 26
+    },
+    {
+        band: "low",
+        min: 0
+    }
+];
+const CHECKLIST_IDS = [
+    "cl_skirting",
+    "cl_lower_walls",
+    "cl_ceiling",
+    "cl_behind_furniture",
+    "cl_window_frames",
+    "cl_bathroom_ceiling",
+    "cl_grout",
+    "cl_extractor",
+    "cl_kitchen_ceiling",
+    "cl_condensation_windows",
+    "cl_hidden_water",
+    "cl_porous_materials",
+    "cl_moisture_meter",
+    "cl_ventilation_check",
+    "cl_thermal_bridge",
+    "cl_roof_terrace",
+    "cl_basement_floor",
+    "cl_wardrobe_back",
+    "cl_professional_assessment",
+    "cl_monitoring"
+];
+}),
+"[project]/src/features/tools/lib/scoring.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "computeScore",
+    ()=>computeScore,
+    "getBand",
+    ()=>getBand,
+    "getDetectedRiskFactors",
+    ()=>getDetectedRiskFactors,
+    "getPriorityChecklist",
+    ()=>getPriorityChecklist
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/calculatorConfig.ts [app-ssr] (ecmascript)");
+;
+function computeScore(answers) {
+    let total = 0;
+    for (const q of __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["QUESTIONS"]){
+        const val = answers[q.id];
+        if (!val) continue;
+        const opt = q.options.find((o)=>o.value === val);
+        if (opt) total += opt.score;
+    }
+    return Math.min(100, Math.max(0, Math.round(total)));
+}
+function getBand(score) {
+    for (const { band, min } of __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BAND_THRESHOLDS"]){
+        if (score >= min) return band;
+    }
+    return "low";
+}
+function getPriorityChecklist(answers) {
+    const items = [];
+    const add = (id)=>{
+        if (!items.includes(id)) items.push(id);
+    };
+    // Ground floor → rising damp
+    if (answers.floorLevel === "ground" || answers.buildingType === "ground_floor_apt") {
+        add("cl_skirting");
+        add("cl_lower_walls");
+        add("cl_basement_floor");
+    }
+    // Major water event → hidden damage
+    if (answers.waterEvents === "major" || answers.waterEvents === "moderate") {
+        add("cl_hidden_water");
+        add("cl_ceiling");
+        add("cl_porous_materials");
+    }
+    // High humidity
+    if (answers.hygrometer === "above_80" || answers.hygrometer === "70_80") {
+        add("cl_moisture_meter");
+        add("cl_ventilation_check");
+        add("cl_condensation_windows");
+    }
+    // Recurrent mold
+    if (answers.moldHistory === "recurrent" || answers.moldHistory === "large_porous") {
+        add("cl_professional_assessment");
+        add("cl_hidden_water");
+        add("cl_porous_materials");
+    }
+    // Poor bathroom ventilation
+    if (answers.bathroomVent === "no_vent" || answers.bathroomVent === "window_only") {
+        add("cl_bathroom_ceiling");
+        add("cl_grout");
+        add("cl_extractor");
+    }
+    // Single glazing / thermal bridge risk
+    if (answers.windowType === "single_alu" || answers.windowType === "double_no_break") {
+        add("cl_window_frames");
+        add("cl_thermal_bridge");
+        add("cl_behind_furniture");
+    }
+    // Top floor
+    if (answers.floorLevel === "top_floor" || answers.buildingType === "top_floor_apt") {
+        add("cl_roof_terrace");
+        add("cl_ceiling");
+    }
+    // Laundry indoors
+    if (answers.laundryDrying === "usually_in" || answers.laundryDrying === "sometimes_in") {
+        add("cl_ventilation_check");
+        add("cl_condensation_windows");
+    }
+    // Old building
+    if (answers.constructionYear === "before_1960" || answers.constructionYear === "1960_1980") {
+        add("cl_wardrobe_back");
+        add("cl_thermal_bridge");
+        add("cl_behind_furniture");
+    }
+    // Strong odour
+    if (answers.odour === "strong" || answers.odour === "regular") {
+        add("cl_professional_assessment");
+        add("cl_hidden_water");
+    }
+    // Fallback — always include monitoring
+    add("cl_monitoring");
+    return items.slice(0, 5);
+}
+function getDetectedRiskFactors(answers) {
+    const factors = [];
+    if (answers.hygrometer === "above_80" || answers.hygrometer === "70_80") {
+        factors.push("high_humidity");
+    }
+    if (answers.moldHistory === "recurrent") {
+        factors.push("recurrent_mold");
+    }
+    if (answers.waterEvents === "major" || answers.waterEvents === "moderate") {
+        factors.push("water_event");
+    }
+    if (answers.bathroomVent === "no_vent") {
+        factors.push("no_bathroom_vent");
+    }
+    if (answers.windowType === "single_alu") {
+        factors.push("thermal_bridge_windows");
+    }
+    if (answers.constructionYear === "before_1960" || answers.constructionYear === "1960_1980") {
+        factors.push("old_building");
+    }
+    if (answers.odour === "strong" || answers.odour === "regular") {
+        factors.push("musty_odour");
+    }
+    if (answers.laundryDrying === "usually_in") {
+        factors.push("indoor_laundry");
+    }
+    if (answers.heating === "rarely") {
+        factors.push("poor_heating");
+    }
+    if (answers.floorLevel === "ground" || answers.buildingType === "ground_floor_apt") {
+        factors.push("ground_floor");
+    }
+    return factors.slice(0, 5);
+}
+}),
+"[project]/src/config/foundationalArticles.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "foundationalArticles",
+    ()=>foundationalArticles
+]);
+const foundationalArticles = [
+    {
+        key: "black-mold",
+        section: "mold-types",
+        slugs: {
+            pt: "bolor-negro-mitos-factos",
+            en: "black-mold-facts-science",
+            fr: "moisissures-noires-science",
+            de: "schwarzer-schimmel-wissenschaft",
+            nl: "zwarte-schimmel-wetenschap",
+            it: "muffa-nera-scienza",
+            es: "moho-negro-ciencia"
+        }
+    },
+    {
+        key: "bleach",
+        section: "remediation",
+        slugs: {
+            pt: "lixivia-nao-resolve-bolor",
+            en: "why-bleach-doesnt-fix-mold",
+            fr: "eau-de-javel-ne-resout-pas-moisissures",
+            de: "bleichmittel-loest-schimmel-nicht",
+            nl: "bleekwater-lost-schimmel-niet-op",
+            it: "candeggina-non-risolve-muffa",
+            es: "lejia-no-resuelve-moho"
+        }
+    },
+    {
+        key: "health",
+        section: "health",
+        slugs: {
+            pt: "casa-afeta-saude-bolor",
+            en: "is-your-home-making-you-ill-mold",
+            fr: "logement-affecte-sante-moisissures",
+            de: "macht-wohnung-krank-schimmel",
+            nl: "woning-maakt-je-ziek-schimmel",
+            it: "casa-influisce-salute-muffa",
+            es: "vivienda-afecta-salud-moho"
+        }
+    },
+    {
+        key: "portugal",
+        section: "portugal",
+        slugs: {
+            pt: "segundo-pior-problema-bolor-europa",
+            en: "europes-second-worst-mold-problem",
+            fr: "deuxieme-pire-probleme-moisissures",
+            de: "zweitschlimmstes-schimmelproblem-europa",
+            nl: "op-een-na-ergste-schimmelprobleem",
+            it: "secondo-peggior-problema-muffa-europa",
+            es: "segundo-peor-problema-moho-europa"
+        }
+    },
+    {
+        key: "inspection-guide",
+        section: "articles",
+        slugs: {
+            pt: "guia-completo-avaliar-risco-bolor-casa",
+            en: "assess-mold-risk-home-room-by-room-guide",
+            fr: "evaluer-risque-moisissures-logement-guide-piece-par-piece",
+            de: "schimmelrisiko-wohnung-selbst-beurteilen-leitfaden",
+            nl: "schimmelrisico-woning-beoordelen-kamer-voor-kamer-gids",
+            it: "valutare-rischio-muffa-casa-guida-stanza-per-stanza",
+            es: "evaluar-riesgo-moho-vivienda-guia-habitacion-por-habitacion"
+        }
+    }
+];
+}),
+"[project]/src/features/tools/lib/i18n.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildProfileText",
+    ()=>buildProfileText,
+    "getCalcI18n",
+    ()=>getCalcI18n
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$routeMap$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/routeMap.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/foundationalArticles.ts [app-ssr] (ecmascript)");
+;
+;
+function checklistPdf(locale) {
+    return `/checklists/moldcheck-checklist-${locale}.pdf`;
+}
+function inspectionHref(locale) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$routeMap$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getLocalizedGlobalPath"])(locale, "services");
+}
+function healthArticleHref(locale) {
+    const slug = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["foundationalArticles"].find((a)=>a.key === "health")?.slugs[locale] ?? "";
+    return `/${locale}/${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$routeMap$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["globalRouteSlugs"].articles[locale]}/${slug}`;
+}
+function moldCausesHref(locale) {
+    const slug = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$foundationalArticles$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["foundationalArticles"].find((a)=>a.key === "bleach")?.slugs[locale] ?? "";
+    return `/${locale}/${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$routeMap$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["globalRouteSlugs"].articles[locale]}/${slug}`;
+}
+function buildQuestions(locale) {
+    const m = QUESTION_STRINGS[locale];
+    return m;
+}
+// ---------------------------------------------------------------------------
+// Per-locale string tables
+// ---------------------------------------------------------------------------
+const QUESTION_STRINGS = {
+    pt: {
+        q_buildingType: {
+            label: "Tipo de edifício",
+            options: {
+                apartment_block: "Apartamento em bloco",
+                detached: "Moradia isolada",
+                semi_detached: "Moradia geminada",
+                ground_floor_apt: "Apartamento no rés-do-chão",
+                top_floor_apt: "Apartamento no último andar"
+            }
+        },
+        q_constructionYear: {
+            label: "Ano de construção",
+            options: {
+                before_1960: "Antes de 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Depois de 2015"
+            }
+        },
+        q_location: {
+            label: "Localização",
+            options: {
+                lisbon: "Área de Lisboa",
+                porto: "Área do Porto",
+                algarve: "Algarve",
+                interior: "Interior",
+                islands: "Ilhas (Açores/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Piso",
+            options: {
+                ground: "Rés-do-chão",
+                first_third: "1.º 3.º andar",
+                fourth_plus: "4.º andar ou superior",
+                top_floor: "Último andar",
+                only_floor: "Único piso"
+            }
+        },
+        q_windowType: {
+            label: "Tipo de janelas",
+            options: {
+                single_alu: "Vidro simples, alumínio",
+                double_no_break: "Vidro duplo, alumínio sem corte térmico",
+                double_thermal: "Vidro duplo com corte térmico",
+                triple: "Vidro triplo ou mais recente"
+            }
+        },
+        q_hygrometer: {
+            label: "Tem higrómetro?",
+            options: {
+                below_60: "Sim leitura abaixo de 60%",
+                "60_70": "Sim 60 70%",
+                "70_80": "Sim 70 80%",
+                above_80: "Sim acima de 80%",
+                no_hygro: "Não"
+            }
+        },
+        q_moldHistory: {
+            label: "Viu bolor nos últimos 12 meses?",
+            options: {
+                none: "Não",
+                small_nonporous: "Sim, área pequena em superfície não porosa",
+                large_porous: "Sim, área maior ou superfície porosa",
+                recurrent: "Sim, voltou após limpeza"
+            }
+        },
+        q_odour: {
+            label: "Cheiro a mofo sem bolor visível?",
+            options: {
+                none: "Não",
+                occasional: "Ocasionalmente",
+                regular: "Sim, regularmente",
+                strong: "Sim, forte e persistente"
+            }
+        },
+        q_waterEvents: {
+            label: "Eventos de água nos últimos 3 anos?",
+            options: {
+                none: "Nenhum",
+                minor: "Menor fuga pequena, reparada",
+                moderate: "Moderado inundação ou fuga significativa",
+                major: "Grave inundação com exposição prolongada"
+            }
+        },
+        q_bathroomVent: {
+            label: "Ventilação da casa de banho",
+            options: {
+                window_only: "Só janela",
+                extractor_out: "Extrator que expulsa para o exterior",
+                extractor_unk: "Extrator não sei para onde expulsa",
+                no_vent: "Sem ventilação"
+            }
+        },
+        q_kitchenVent: {
+            label: "Ventilação da cozinha",
+            options: {
+                window_only: "Só janela",
+                recirculation: "Hotte de recirculação",
+                extraction: "Hotte de extração (expulsa para o exterior)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Secagem de roupa",
+            options: {
+                always_outside: "Sempre no exterior",
+                mostly_outside: "Maioritariamente no exterior",
+                sometimes_in: "Às vezes no interior",
+                usually_in: "Habitualmente no interior"
+            }
+        },
+        q_heating: {
+            label: "Aquecimento no inverno",
+            options: {
+                always_18: "Sempre aquecido a 18°C+",
+                most_days: "Aquecido na maioria dos dias",
+                occasional: "Aquecido ocasionalmente",
+                rarely: "Raramente ou nunca"
+            }
+        },
+        q_occupants: {
+            label: "Número de ocupantes",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    en: {
+        q_buildingType: {
+            label: "Building type",
+            options: {
+                apartment_block: "Apartment in a block",
+                detached: "Detached house",
+                semi_detached: "Semi-detached",
+                ground_floor_apt: "Ground floor apartment",
+                top_floor_apt: "Top floor apartment"
+            }
+        },
+        q_constructionYear: {
+            label: "Construction year",
+            options: {
+                before_1960: "Before 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "After 2015"
+            }
+        },
+        q_location: {
+            label: "Location",
+            options: {
+                lisbon: "Lisbon area",
+                porto: "Porto area",
+                algarve: "Algarve",
+                interior: "Interior",
+                islands: "Islands (Açores/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Floor level",
+            options: {
+                ground: "Ground floor",
+                first_third: "1st 3rd floor",
+                fourth_plus: "4th floor or higher",
+                top_floor: "Top floor",
+                only_floor: "Only floor"
+            }
+        },
+        q_windowType: {
+            label: "Window type",
+            options: {
+                single_alu: "Single glazing, aluminium",
+                double_no_break: "Double glazing, aluminium no thermal break",
+                double_thermal: "Double glazing, thermal break",
+                triple: "Triple glazing or newer"
+            }
+        },
+        q_hygrometer: {
+            label: "Do you have a hygrometer?",
+            options: {
+                below_60: "Yes reading below 60%",
+                "60_70": "Yes 60 70%",
+                "70_80": "Yes 70 80%",
+                above_80: "Yes above 80%",
+                no_hygro: "No"
+            }
+        },
+        q_moldHistory: {
+            label: "Have you seen mold in the past 12 months?",
+            options: {
+                none: "No",
+                small_nonporous: "Yes, small area on non-porous surface",
+                large_porous: "Yes, larger area or porous surface",
+                recurrent: "Yes, came back after cleaning"
+            }
+        },
+        q_odour: {
+            label: "Musty smell without visible mold?",
+            options: {
+                none: "No",
+                occasional: "Occasionally",
+                regular: "Yes, regularly",
+                strong: "Yes, strong and persistent"
+            }
+        },
+        q_waterEvents: {
+            label: "Water events in past 3 years?",
+            options: {
+                none: "None",
+                minor: "Minor small leak, repaired",
+                moderate: "Moderate flooding or significant leak",
+                major: "Major flooding with prolonged exposure"
+            }
+        },
+        q_bathroomVent: {
+            label: "Bathroom ventilation",
+            options: {
+                window_only: "Window only",
+                extractor_out: "Extractor fan that exhausts outside",
+                extractor_unk: "Extractor fan not sure where it exhausts",
+                no_vent: "No ventilation"
+            }
+        },
+        q_kitchenVent: {
+            label: "Kitchen ventilation",
+            options: {
+                window_only: "Window only",
+                recirculation: "Recirculation hood",
+                extraction: "Extraction hood (exhausts outside)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Laundry drying",
+            options: {
+                always_outside: "Always outside",
+                mostly_outside: "Mostly outside",
+                sometimes_in: "Sometimes indoors",
+                usually_in: "Usually indoors"
+            }
+        },
+        q_heating: {
+            label: "Heating in winter",
+            options: {
+                always_18: "Always heated to 18°C+",
+                most_days: "Heated most days",
+                occasional: "Heated occasionally",
+                rarely: "Rarely or never heated"
+            }
+        },
+        q_occupants: {
+            label: "Number of occupants",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    fr: {
+        q_buildingType: {
+            label: "Type de bâtiment",
+            options: {
+                apartment_block: "Appartement en immeuble",
+                detached: "Maison individuelle",
+                semi_detached: "Maison mitoyenne",
+                ground_floor_apt: "Appartement au rez-de-chaussée",
+                top_floor_apt: "Appartement au dernier étage"
+            }
+        },
+        q_constructionYear: {
+            label: "Année de construction",
+            options: {
+                before_1960: "Avant 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Après 2015"
+            }
+        },
+        q_location: {
+            label: "Localisation",
+            options: {
+                lisbon: "Région de Lisbonne",
+                porto: "Région de Porto",
+                algarve: "Algarve",
+                interior: "Intérieur",
+                islands: "Îles (Açores/Madère)"
+            }
+        },
+        q_floorLevel: {
+            label: "Étage",
+            options: {
+                ground: "Rez-de-chaussée",
+                first_third: "1er 3e étage",
+                fourth_plus: "4e étage ou plus",
+                top_floor: "Dernier étage",
+                only_floor: "Seul étage"
+            }
+        },
+        q_windowType: {
+            label: "Type de fenêtres",
+            options: {
+                single_alu: "Simple vitrage, aluminium",
+                double_no_break: "Double vitrage, aluminium sans rupture thermique",
+                double_thermal: "Double vitrage avec rupture thermique",
+                triple: "Triple vitrage ou plus récent"
+            }
+        },
+        q_hygrometer: {
+            label: "Avez-vous un hygromètre ?",
+            options: {
+                below_60: "Oui lecture inférieure à 60 %",
+                "60_70": "Oui 60 70 %",
+                "70_80": "Oui 70 80 %",
+                above_80: "Oui supérieure à 80 %",
+                no_hygro: "Non"
+            }
+        },
+        q_moldHistory: {
+            label: "Avez-vous vu des moisissures ces 12 derniers mois ?",
+            options: {
+                none: "Non",
+                small_nonporous: "Oui, petite zone sur surface non poreuse",
+                large_porous: "Oui, zone plus grande ou surface poreuse",
+                recurrent: "Oui, réapparues après nettoyage"
+            }
+        },
+        q_odour: {
+            label: "Odeur de moisi sans moisissures visibles ?",
+            options: {
+                none: "Non",
+                occasional: "Occasionnellement",
+                regular: "Oui, régulièrement",
+                strong: "Oui, forte et persistante"
+            }
+        },
+        q_waterEvents: {
+            label: "Événements liés à l'eau ces 3 dernières années ?",
+            options: {
+                none: "Aucun",
+                minor: "Mineur petite fuite, réparée",
+                moderate: "Modéré inondation ou fuite importante",
+                major: "Majeur inondation avec exposition prolongée"
+            }
+        },
+        q_bathroomVent: {
+            label: "Ventilation de la salle de bain",
+            options: {
+                window_only: "Fenêtre uniquement",
+                extractor_out: "Extracteur évacuant vers l'extérieur",
+                extractor_unk: "Extracteur ne sais pas où il évacue",
+                no_vent: "Pas de ventilation"
+            }
+        },
+        q_kitchenVent: {
+            label: "Ventilation de la cuisine",
+            options: {
+                window_only: "Fenêtre uniquement",
+                recirculation: "Hotte à recirculation",
+                extraction: "Hotte d'extraction (évacue vers l'extérieur)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Séchage du linge",
+            options: {
+                always_outside: "Toujours à l'extérieur",
+                mostly_outside: "Principalement à l'extérieur",
+                sometimes_in: "Parfois à l'intérieur",
+                usually_in: "Habituellement à l'intérieur"
+            }
+        },
+        q_heating: {
+            label: "Chauffage en hiver",
+            options: {
+                always_18: "Toujours chauffé à 18°C+",
+                most_days: "Chauffé la plupart des jours",
+                occasional: "Chauffé occasionnellement",
+                rarely: "Rarement ou jamais"
+            }
+        },
+        q_occupants: {
+            label: "Nombre d'occupants",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    de: {
+        q_buildingType: {
+            label: "Gebäudetyp",
+            options: {
+                apartment_block: "Wohnung in einem Block",
+                detached: "Freistehendes Haus",
+                semi_detached: "Doppelhaushälfte",
+                ground_floor_apt: "Erdgeschosswohnung",
+                top_floor_apt: "Dachgeschosswohnung"
+            }
+        },
+        q_constructionYear: {
+            label: "Baujahr",
+            options: {
+                before_1960: "Vor 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Nach 2015"
+            }
+        },
+        q_location: {
+            label: "Standort",
+            options: {
+                lisbon: "Raum Lissabon",
+                porto: "Raum Porto",
+                algarve: "Algarve",
+                interior: "Landesinneres",
+                islands: "Inseln (Azoren/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Stockwerk",
+            options: {
+                ground: "Erdgeschoss",
+                first_third: "1. 3. Etage",
+                fourth_plus: "4. Etage oder höher",
+                top_floor: "Oberste Etage",
+                only_floor: "Einzige Etage"
+            }
+        },
+        q_windowType: {
+            label: "Fenstertyp",
+            options: {
+                single_alu: "Einfachverglasung, Aluminium",
+                double_no_break: "Doppelverglasung, Aluminium ohne Wärmebrückenunterbrechung",
+                double_thermal: "Doppelverglasung mit Wärmebrückenunterbrechung",
+                triple: "Dreifachverglasung oder neuer"
+            }
+        },
+        q_hygrometer: {
+            label: "Haben Sie ein Hygrometer?",
+            options: {
+                below_60: "Ja Messwert unter 60 %",
+                "60_70": "Ja 60 70 %",
+                "70_80": "Ja 70 80 %",
+                above_80: "Ja über 80 %",
+                no_hygro: "Nein"
+            }
+        },
+        q_moldHistory: {
+            label: "Haben Sie in den letzten 12 Monaten Schimmel gesehen?",
+            options: {
+                none: "Nein",
+                small_nonporous: "Ja, kleine Fläche auf nicht-poröser Oberfläche",
+                large_porous: "Ja, größere Fläche oder poröse Oberfläche",
+                recurrent: "Ja, nach Reinigung wieder aufgetreten"
+            }
+        },
+        q_odour: {
+            label: "Muffiger Geruch ohne sichtbaren Schimmel?",
+            options: {
+                none: "Nein",
+                occasional: "Gelegentlich",
+                regular: "Ja, regelmäßig",
+                strong: "Ja, stark und anhaltend"
+            }
+        },
+        q_waterEvents: {
+            label: "Wasserschäden in den letzten 3 Jahren?",
+            options: {
+                none: "Keine",
+                minor: "Gering kleiner Leck, repariert",
+                moderate: "Mittel Überschwemmung oder erheblicher Leck",
+                major: "Schwer Überschwemmung mit längerer Exposition"
+            }
+        },
+        q_bathroomVent: {
+            label: "Badezimmerbelüftung",
+            options: {
+                window_only: "Nur Fenster",
+                extractor_out: "Abluftventilator nach außen",
+                extractor_unk: "Abluftventilator unbekanntes Ziel",
+                no_vent: "Keine Belüftung"
+            }
+        },
+        q_kitchenVent: {
+            label: "Küchenbelüftung",
+            options: {
+                window_only: "Nur Fenster",
+                recirculation: "Umlufthaube",
+                extraction: "Ablufthaube (nach außen)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Wäschetrocknung",
+            options: {
+                always_outside: "Immer draußen",
+                mostly_outside: "Meistens draußen",
+                sometimes_in: "Manchmal drinnen",
+                usually_in: "Meistens drinnen"
+            }
+        },
+        q_heating: {
+            label: "Heizung im Winter",
+            options: {
+                always_18: "Immer auf 18°C+ geheizt",
+                most_days: "Die meisten Tage geheizt",
+                occasional: "Gelegentlich geheizt",
+                rarely: "Selten oder nie geheizt"
+            }
+        },
+        q_occupants: {
+            label: "Anzahl der Bewohner",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    nl: {
+        q_buildingType: {
+            label: "Type gebouw",
+            options: {
+                apartment_block: "Appartement in een blok",
+                detached: "Vrijstaand huis",
+                semi_detached: "Halfvrijstaand huis",
+                ground_floor_apt: "Begane grond appartement",
+                top_floor_apt: "Appartement op de bovenste verdieping"
+            }
+        },
+        q_constructionYear: {
+            label: "Bouwjaar",
+            options: {
+                before_1960: "Voor 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Na 2015"
+            }
+        },
+        q_location: {
+            label: "Locatie",
+            options: {
+                lisbon: "Regio Lissabon",
+                porto: "Regio Porto",
+                algarve: "Algarve",
+                interior: "Binnenland",
+                islands: "Eilanden (Azoren/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Verdieping",
+            options: {
+                ground: "Begane grond",
+                first_third: "1e 3e verdieping",
+                fourth_plus: "4e verdieping of hoger",
+                top_floor: "Bovenste verdieping",
+                only_floor: "Enige verdieping"
+            }
+        },
+        q_windowType: {
+            label: "Type ramen",
+            options: {
+                single_alu: "Enkel glas, aluminium",
+                double_no_break: "Dubbel glas, aluminium zonder thermische onderbreking",
+                double_thermal: "Dubbel glas met thermische onderbreking",
+                triple: "Driedubbel glas of nieuwer"
+            }
+        },
+        q_hygrometer: {
+            label: "Heeft u een hygrometer?",
+            options: {
+                below_60: "Ja meting onder 60%",
+                "60_70": "Ja 60 70%",
+                "70_80": "Ja 70 80%",
+                above_80: "Ja boven 80%",
+                no_hygro: "Nee"
+            }
+        },
+        q_moldHistory: {
+            label: "Heeft u de afgelopen 12 maanden schimmel gezien?",
+            options: {
+                none: "Nee",
+                small_nonporous: "Ja, klein gebied op niet-poreus oppervlak",
+                large_porous: "Ja, groter gebied of poreus oppervlak",
+                recurrent: "Ja, teruggekomen na schoonmaken"
+            }
+        },
+        q_odour: {
+            label: "Muffe geur zonder zichtbare schimmel?",
+            options: {
+                none: "Nee",
+                occasional: "Af en toe",
+                regular: "Ja, regelmatig",
+                strong: "Ja, sterk en aanhoudend"
+            }
+        },
+        q_waterEvents: {
+            label: "Waterincidenten afgelopen 3 jaar?",
+            options: {
+                none: "Geen",
+                minor: "Klein kleine lekkage, gerepareerd",
+                moderate: "Matig overstroming of aanzienlijke lekkage",
+                major: "Ernstig overstroming met langdurige blootstelling"
+            }
+        },
+        q_bathroomVent: {
+            label: "Badkamerventilatie",
+            options: {
+                window_only: "Alleen raam",
+                extractor_out: "Afzuigventilator naar buiten",
+                extractor_unk: "Afzuigventilator weet niet waar naartoe",
+                no_vent: "Geen ventilatie"
+            }
+        },
+        q_kitchenVent: {
+            label: "Keukenventilatie",
+            options: {
+                window_only: "Alleen raam",
+                recirculation: "Recirculatiekap",
+                extraction: "Afzuigkap (naar buiten)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Was drogen",
+            options: {
+                always_outside: "Altijd buiten",
+                mostly_outside: "Meestal buiten",
+                sometimes_in: "Soms binnen",
+                usually_in: "Meestal binnen"
+            }
+        },
+        q_heating: {
+            label: "Verwarming in de winter",
+            options: {
+                always_18: "Altijd verwarmd tot 18°C+",
+                most_days: "De meeste dagen verwarmd",
+                occasional: "Af en toe verwarmd",
+                rarely: "Zelden of nooit verwarmd"
+            }
+        },
+        q_occupants: {
+            label: "Aantal bewoners",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    it: {
+        q_buildingType: {
+            label: "Tipo di edificio",
+            options: {
+                apartment_block: "Appartamento in condominio",
+                detached: "Casa indipendente",
+                semi_detached: "Casa bifamiliare",
+                ground_floor_apt: "Appartamento al piano terra",
+                top_floor_apt: "Appartamento all'ultimo piano"
+            }
+        },
+        q_constructionYear: {
+            label: "Anno di costruzione",
+            options: {
+                before_1960: "Prima del 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Dopo il 2015"
+            }
+        },
+        q_location: {
+            label: "Posizione",
+            options: {
+                lisbon: "Area di Lisbona",
+                porto: "Area di Porto",
+                algarve: "Algarve",
+                interior: "Entroterra",
+                islands: "Isole (Azzorre/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Piano",
+            options: {
+                ground: "Piano terra",
+                first_third: "1° 3° piano",
+                fourth_plus: "4° piano o superiore",
+                top_floor: "Ultimo piano",
+                only_floor: "Piano unico"
+            }
+        },
+        q_windowType: {
+            label: "Tipo di finestre",
+            options: {
+                single_alu: "Vetro singolo, alluminio",
+                double_no_break: "Doppio vetro, alluminio senza taglio termico",
+                double_thermal: "Doppio vetro con taglio termico",
+                triple: "Triplo vetro o più recente"
+            }
+        },
+        q_hygrometer: {
+            label: "Ha un igrometro?",
+            options: {
+                below_60: "Sì lettura sotto il 60%",
+                "60_70": "Sì 60 70%",
+                "70_80": "Sì 70 80%",
+                above_80: "Sì sopra l'80%",
+                no_hygro: "No"
+            }
+        },
+        q_moldHistory: {
+            label: "Ha visto muffa negli ultimi 12 mesi?",
+            options: {
+                none: "No",
+                small_nonporous: "Sì, piccola area su superficie non porosa",
+                large_porous: "Sì, area più grande o superficie porosa",
+                recurrent: "Sì, ricomparsa dopo la pulizia"
+            }
+        },
+        q_odour: {
+            label: "Odore di muffa senza muffa visibile?",
+            options: {
+                none: "No",
+                occasional: "Occasionalmente",
+                regular: "Sì, regolarmente",
+                strong: "Sì, forte e persistente"
+            }
+        },
+        q_waterEvents: {
+            label: "Eventi d'acqua negli ultimi 3 anni?",
+            options: {
+                none: "Nessuno",
+                minor: "Minore piccola perdita, riparata",
+                moderate: "Moderato allagamento o perdita significativa",
+                major: "Grave allagamento con esposizione prolungata"
+            }
+        },
+        q_bathroomVent: {
+            label: "Ventilazione del bagno",
+            options: {
+                window_only: "Solo finestra",
+                extractor_out: "Estrattore che espelle all'esterno",
+                extractor_unk: "Estrattore non so dove espelle",
+                no_vent: "Nessuna ventilazione"
+            }
+        },
+        q_kitchenVent: {
+            label: "Ventilazione della cucina",
+            options: {
+                window_only: "Solo finestra",
+                recirculation: "Cappa a ricircolo",
+                extraction: "Cappa aspirante (espelle all'esterno)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Asciugatura del bucato",
+            options: {
+                always_outside: "Sempre all'esterno",
+                mostly_outside: "Principalmente all'esterno",
+                sometimes_in: "A volte all'interno",
+                usually_in: "Di solito all'interno"
+            }
+        },
+        q_heating: {
+            label: "Riscaldamento in inverno",
+            options: {
+                always_18: "Sempre riscaldato a 18°C+",
+                most_days: "Riscaldato la maggior parte dei giorni",
+                occasional: "Riscaldato occasionalmente",
+                rarely: "Raramente o mai"
+            }
+        },
+        q_occupants: {
+            label: "Numero di occupanti",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    },
+    es: {
+        q_buildingType: {
+            label: "Tipo de edificio",
+            options: {
+                apartment_block: "Apartamento en bloque",
+                detached: "Casa independiente",
+                semi_detached: "Casa adosada",
+                ground_floor_apt: "Apartamento en planta baja",
+                top_floor_apt: "Apartamento en el último piso"
+            }
+        },
+        q_constructionYear: {
+            label: "Año de construcción",
+            options: {
+                before_1960: "Antes de 1960",
+                "1960_1980": "1960 1980",
+                "1980_2000": "1980 2000",
+                "2000_2015": "2000 2015",
+                after_2015: "Después de 2015"
+            }
+        },
+        q_location: {
+            label: "Ubicación",
+            options: {
+                lisbon: "Área de Lisboa",
+                porto: "Área de Oporto",
+                algarve: "Algarve",
+                interior: "Interior",
+                islands: "Islas (Azores/Madeira)"
+            }
+        },
+        q_floorLevel: {
+            label: "Planta",
+            options: {
+                ground: "Planta baja",
+                first_third: "1.ª 3.ª planta",
+                fourth_plus: "4.ª planta o superior",
+                top_floor: "Último piso",
+                only_floor: "Planta única"
+            }
+        },
+        q_windowType: {
+            label: "Tipo de ventanas",
+            options: {
+                single_alu: "Vidrio simple, aluminio",
+                double_no_break: "Doble vidrio, aluminio sin rotura de puente térmico",
+                double_thermal: "Doble vidrio con rotura de puente térmico",
+                triple: "Triple vidrio o más reciente"
+            }
+        },
+        q_hygrometer: {
+            label: "¿Tiene higrómetro?",
+            options: {
+                below_60: "Sí lectura por debajo del 60%",
+                "60_70": "Sí 60 70%",
+                "70_80": "Sí 70 80%",
+                above_80: "Sí por encima del 80%",
+                no_hygro: "No"
+            }
+        },
+        q_moldHistory: {
+            label: "¿Ha visto moho en los últimos 12 meses?",
+            options: {
+                none: "No",
+                small_nonporous: "Sí, área pequeña en superficie no porosa",
+                large_porous: "Sí, área mayor o superficie porosa",
+                recurrent: "Sí, volvió después de limpiar"
+            }
+        },
+        q_odour: {
+            label: "¿Olor a humedad sin moho visible?",
+            options: {
+                none: "No",
+                occasional: "Ocasionalmente",
+                regular: "Sí, regularmente",
+                strong: "Sí, fuerte y persistente"
+            }
+        },
+        q_waterEvents: {
+            label: "¿Incidentes de agua en los últimos 3 años?",
+            options: {
+                none: "Ninguno",
+                minor: "Menor pequeña fuga, reparada",
+                moderate: "Moderado inundación o fuga significativa",
+                major: "Grave inundación con exposición prolongada"
+            }
+        },
+        q_bathroomVent: {
+            label: "Ventilación del baño",
+            options: {
+                window_only: "Solo ventana",
+                extractor_out: "Extractor que expulsa al exterior",
+                extractor_unk: "Extractor no sé adónde expulsa",
+                no_vent: "Sin ventilación"
+            }
+        },
+        q_kitchenVent: {
+            label: "Ventilación de la cocina",
+            options: {
+                window_only: "Solo ventana",
+                recirculation: "Campana de recirculación",
+                extraction: "Campana extractora (expulsa al exterior)"
+            }
+        },
+        q_laundryDrying: {
+            label: "Secado de ropa",
+            options: {
+                always_outside: "Siempre en el exterior",
+                mostly_outside: "Principalmente en el exterior",
+                sometimes_in: "A veces en el interior",
+                usually_in: "Habitualmente en el interior"
+            }
+        },
+        q_heating: {
+            label: "Calefacción en invierno",
+            options: {
+                always_18: "Siempre calefaccionado a 18°C+",
+                most_days: "Calefaccionado la mayoría de los días",
+                occasional: "Calefaccionado ocasionalmente",
+                rarely: "Raramente o nunca"
+            }
+        },
+        q_occupants: {
+            label: "Número de ocupantes",
+            options: {
+                one: "1",
+                two: "2",
+                three_four: "3 4",
+                five_plus: "5+"
+            }
+        }
+    }
+};
+// ---------------------------------------------------------------------------
+// Checklist item strings per locale
+// ---------------------------------------------------------------------------
+const CHECKLIST_STRINGS = {
+    pt: {
+        cl_skirting: "Verificar rodapés e paredes inferiores quanto a manchas de humidade",
+        cl_lower_walls: "Inspecionar paredes abaixo de 50 cm quanto a eflorescências ou descoloração",
+        cl_ceiling: "Verificar teto e cantos superiores quanto a manchas de humidade",
+        cl_behind_furniture: "Mover móveis encostados a paredes exteriores e verificar atrás",
+        cl_window_frames: "Inspecionar caixilhos de janelas e peitoris quanto a condensação e bolor",
+        cl_bathroom_ceiling: "Verificar teto da casa de banho e cantos quanto a bolor",
+        cl_grout: "Inspecionar juntas de azulejos e silicone quanto a bolor negro",
+        cl_extractor: "Testar extrator da casa de banho verificar se expulsa para o exterior",
+        cl_kitchen_ceiling: "Verificar teto da cozinha e área acima do fogão",
+        cl_condensation_windows: "Registar condensação nas janelas de manhã durante o inverno",
+        cl_hidden_water: "Verificar sob lavatórios, atrás de eletrodomésticos e em tectos falsos",
+        cl_porous_materials: "Inspecionar materiais porosos (gesso, madeira, tecidos) quanto a manchas",
+        cl_moisture_meter: "Usar medidor de humidade em paredes suspeitas",
+        cl_ventilation_check: "Avaliar fluxo de ar em todas as divisões verificar entradas e saídas",
+        cl_thermal_bridge: "Identificar pontes térmicas cantos frios, paredes exteriores",
+        cl_roof_terrace: "Inspecionar terraço ou telhado quanto a drenagem e impermeabilização",
+        cl_basement_floor: "Verificar pavimento e paredes da cave quanto a humidade ascendente",
+        cl_wardrobe_back: "Verificar interior e fundo de armários encostados a paredes exteriores",
+        cl_professional_assessment: "Considerar avaliação profissional independente com medidor de humidade",
+        cl_monitoring: "Instalar higrómetro e monitorizar humidade semanalmente"
+    },
+    en: {
+        cl_skirting: "Check skirting boards and lower walls for damp staining",
+        cl_lower_walls: "Inspect walls below 50 cm for efflorescence or discolouration",
+        cl_ceiling: "Check ceiling and upper corners for moisture staining",
+        cl_behind_furniture: "Move furniture away from external walls and check behind",
+        cl_window_frames: "Inspect window frames and sills for condensation and mold",
+        cl_bathroom_ceiling: "Check bathroom ceiling and corners for mold",
+        cl_grout: "Inspect tile grout and silicone sealant for black mold",
+        cl_extractor: "Test bathroom extractor verify it exhausts outside",
+        cl_kitchen_ceiling: "Check kitchen ceiling and area above the hob",
+        cl_condensation_windows: "Record window condensation in the morning during winter",
+        cl_hidden_water: "Check under sinks, behind appliances and in false ceilings",
+        cl_porous_materials: "Inspect porous materials (plaster, wood, fabrics) for staining",
+        cl_moisture_meter: "Use a moisture meter on suspect walls",
+        cl_ventilation_check: "Assess airflow in all rooms check inlets and outlets",
+        cl_thermal_bridge: "Identify thermal bridges cold corners, external walls",
+        cl_roof_terrace: "Inspect roof or terrace for drainage and waterproofing",
+        cl_basement_floor: "Check basement floor and walls for rising damp",
+        cl_wardrobe_back: "Check inside and back of wardrobes against external walls",
+        cl_professional_assessment: "Consider independent professional assessment with moisture meter",
+        cl_monitoring: "Install a hygrometer and monitor humidity weekly"
+    },
+    fr: {
+        cl_skirting: "Vérifier les plinthes et les murs inférieurs pour des taches d'humidité",
+        cl_lower_walls: "Inspecter les murs en dessous de 50 cm pour des efflorescences ou décolorations",
+        cl_ceiling: "Vérifier le plafond et les coins supérieurs pour des taches d'humidité",
+        cl_behind_furniture: "Déplacer les meubles des murs extérieurs et vérifier derrière",
+        cl_window_frames: "Inspecter les cadres de fenêtres et les rebords pour condensation et moisissures",
+        cl_bathroom_ceiling: "Vérifier le plafond et les coins de la salle de bain pour des moisissures",
+        cl_grout: "Inspecter les joints de carrelage et le silicone pour des moisissures noires",
+        cl_extractor: "Tester l'extracteur de la salle de bain vérifier qu'il évacue vers l'extérieur",
+        cl_kitchen_ceiling: "Vérifier le plafond de la cuisine et la zone au-dessus de la cuisinière",
+        cl_condensation_windows: "Noter la condensation sur les fenêtres le matin en hiver",
+        cl_hidden_water: "Vérifier sous les éviers, derrière les appareils et dans les faux plafonds",
+        cl_porous_materials: "Inspecter les matériaux poreux (plâtre, bois, tissus) pour des taches",
+        cl_moisture_meter: "Utiliser un hygromètre sur les murs suspects",
+        cl_ventilation_check: "Évaluer la circulation d'air dans toutes les pièces",
+        cl_thermal_bridge: "Identifier les ponts thermiques coins froids, murs extérieurs",
+        cl_roof_terrace: "Inspecter le toit ou la terrasse pour le drainage et l'étanchéité",
+        cl_basement_floor: "Vérifier le sol et les murs du sous-sol pour l'humidité ascendante",
+        cl_wardrobe_back: "Vérifier l'intérieur et le fond des armoires contre les murs extérieurs",
+        cl_professional_assessment: "Envisager une évaluation professionnelle indépendante",
+        cl_monitoring: "Installer un hygromètre et surveiller l'humidité chaque semaine"
+    },
+    de: {
+        cl_skirting: "Sockelleisten und untere Wände auf Feuchtigkeitsflecken prüfen",
+        cl_lower_walls: "Wände unter 50 cm auf Ausblühungen oder Verfärbungen untersuchen",
+        cl_ceiling: "Decke und obere Ecken auf Feuchtigkeitsflecken prüfen",
+        cl_behind_furniture: "Möbel von Außenwänden wegbewegen und dahinter prüfen",
+        cl_window_frames: "Fensterrahmen und -bänke auf Kondensation und Schimmel untersuchen",
+        cl_bathroom_ceiling: "Badezimmerdecke und -ecken auf Schimmel prüfen",
+        cl_grout: "Fliesenfugen und Silikondichtungen auf schwarzen Schimmel untersuchen",
+        cl_extractor: "Badezimmerventilator testen prüfen ob er nach außen entlüftet",
+        cl_kitchen_ceiling: "Küchendecke und Bereich über dem Herd prüfen",
+        cl_condensation_windows: "Fensterkondensation morgens im Winter notieren",
+        cl_hidden_water: "Unter Waschbecken, hinter Geräten und in Zwischendecken prüfen",
+        cl_porous_materials: "Poröse Materialien (Putz, Holz, Stoffe) auf Flecken untersuchen",
+        cl_moisture_meter: "Feuchtigkeitsmesser an verdächtigen Wänden einsetzen",
+        cl_ventilation_check: "Luftzirkulation in allen Räumen bewerten",
+        cl_thermal_bridge: "Wärmebrücken identifizieren kalte Ecken, Außenwände",
+        cl_roof_terrace: "Dach oder Terrasse auf Entwässerung und Abdichtung prüfen",
+        cl_basement_floor: "Kellerboden und -wände auf aufsteigende Feuchtigkeit prüfen",
+        cl_wardrobe_back: "Innenseite und Rückwand von Schränken an Außenwänden prüfen",
+        cl_professional_assessment: "Unabhängige professionelle Begutachtung in Betracht ziehen",
+        cl_monitoring: "Hygrometer installieren und Luftfeuchtigkeit wöchentlich überwachen"
+    },
+    nl: {
+        cl_skirting: "Controleer plinten en onderste muren op vochtplekken",
+        cl_lower_walls: "Inspecteer muren onder 50 cm op uitbloeiingen of verkleuring",
+        cl_ceiling: "Controleer plafond en bovenste hoeken op vochtplekken",
+        cl_behind_furniture: "Verplaats meubels van buitenmuren en controleer erachter",
+        cl_window_frames: "Inspecteer raamkozijnen en vensterbanken op condensatie en schimmel",
+        cl_bathroom_ceiling: "Controleer badkamerplafond en -hoeken op schimmel",
+        cl_grout: "Inspecteer tegelvoegen en siliconenkit op zwarte schimmel",
+        cl_extractor: "Test badkamerventilator controleer of hij naar buiten afvoert",
+        cl_kitchen_ceiling: "Controleer keukenplafond en gebied boven het fornuis",
+        cl_condensation_windows: "Noteer raamcondensatie 's ochtends in de winter",
+        cl_hidden_water: "Controleer onder gootstenen, achter apparaten en in verlaagde plafonds",
+        cl_porous_materials: "Inspecteer poreuze materialen (pleister, hout, stoffen) op vlekken",
+        cl_moisture_meter: "Gebruik een vochtmeter op verdachte muren",
+        cl_ventilation_check: "Beoordeel luchtcirculatie in alle kamers",
+        cl_thermal_bridge: "Identificeer koudebruggen koude hoeken, buitenmuren",
+        cl_roof_terrace: "Inspecteer dak of terras op afwatering en waterdichting",
+        cl_basement_floor: "Controleer keldervloer en -muren op opstijgend vocht",
+        cl_wardrobe_back: "Controleer binnenkant en achterkant van kasten tegen buitenmuren",
+        cl_professional_assessment: "Overweeg een onafhankelijke professionele beoordeling",
+        cl_monitoring: "Installeer een hygrometer en monitor de luchtvochtigheid wekelijks"
+    },
+    it: {
+        cl_skirting: "Controllare battiscopa e pareti inferiori per macchie di umidità",
+        cl_lower_walls: "Ispezionare le pareti sotto i 50 cm per efflorescenze o scolorimenti",
+        cl_ceiling: "Controllare soffitto e angoli superiori per macchie di umidità",
+        cl_behind_furniture: "Spostare i mobili dalle pareti esterne e controllare dietro",
+        cl_window_frames: "Ispezionare telai e davanzali delle finestre per condensa e muffa",
+        cl_bathroom_ceiling: "Controllare soffitto e angoli del bagno per la muffa",
+        cl_grout: "Ispezionare le fughe delle piastrelle e il silicone per muffa nera",
+        cl_extractor: "Testare l'estrattore del bagno verificare che espella all'esterno",
+        cl_kitchen_ceiling: "Controllare il soffitto della cucina e l'area sopra i fornelli",
+        cl_condensation_windows: "Registrare la condensa sulle finestre al mattino in inverno",
+        cl_hidden_water: "Controllare sotto i lavandini, dietro gli elettrodomestici e nei controsoffitti",
+        cl_porous_materials: "Ispezionare i materiali porosi (intonaco, legno, tessuti) per macchie",
+        cl_moisture_meter: "Usare un misuratore di umidità sulle pareti sospette",
+        cl_ventilation_check: "Valutare il flusso d'aria in tutti i locali",
+        cl_thermal_bridge: "Identificare i ponti termici angoli freddi, pareti esterne",
+        cl_roof_terrace: "Ispezionare il tetto o la terrazza per drenaggio e impermeabilizzazione",
+        cl_basement_floor: "Controllare pavimento e pareti del seminterrato per umidità di risalita",
+        cl_wardrobe_back: "Controllare l'interno e il retro degli armadi contro le pareti esterne",
+        cl_professional_assessment: "Considerare una valutazione professionale indipendente",
+        cl_monitoring: "Installare un igrometro e monitorare l'umidità settimanalmente"
+    },
+    es: {
+        cl_skirting: "Revisar rodapiés y paredes inferiores en busca de manchas de humedad",
+        cl_lower_walls: "Inspeccionar paredes por debajo de 50 cm en busca de eflorescencias o decoloración",
+        cl_ceiling: "Revisar el techo y las esquinas superiores en busca de manchas de humedad",
+        cl_behind_furniture: "Mover muebles de las paredes exteriores y revisar detrás",
+        cl_window_frames: "Inspeccionar marcos de ventanas y alféizares en busca de condensación y moho",
+        cl_bathroom_ceiling: "Revisar el techo y las esquinas del baño en busca de moho",
+        cl_grout: "Inspeccionar las juntas de azulejos y el sellador de silicona en busca de moho negro",
+        cl_extractor: "Probar el extractor del baño verificar que expulsa al exterior",
+        cl_kitchen_ceiling: "Revisar el techo de la cocina y el área sobre los fogones",
+        cl_condensation_windows: "Registrar la condensación en las ventanas por la mañana en invierno",
+        cl_hidden_water: "Revisar bajo los fregaderos, detrás de los electrodomésticos y en los falsos techos",
+        cl_porous_materials: "Inspeccionar materiales porosos (yeso, madera, telas) en busca de manchas",
+        cl_moisture_meter: "Usar un medidor de humedad en paredes sospechosas",
+        cl_ventilation_check: "Evaluar el flujo de aire en todas las habitaciones",
+        cl_thermal_bridge: "Identificar puentes térmicos esquinas frías, paredes exteriores",
+        cl_roof_terrace: "Inspeccionar el tejado o la terraza en busca de drenaje e impermeabilización",
+        cl_basement_floor: "Revisar el suelo y las paredes del sótano en busca de humedad ascendente",
+        cl_wardrobe_back: "Revisar el interior y la parte trasera de los armarios contra las paredes exteriores",
+        cl_professional_assessment: "Considerar una evaluación profesional independiente",
+        cl_monitoring: "Instalar un higrómetro y monitorizar la humedad semanalmente"
+    }
+};
+// ---------------------------------------------------------------------------
+// Risk factor strings per locale
+// ---------------------------------------------------------------------------
+const RISK_FACTOR_STRINGS = {
+    pt: {
+        high_humidity: {
+            title: "Humidade interior elevada",
+            description: "Leitura do higrómetro acima de 70% zona de risco ativo para bolor."
+        },
+        recurrent_mold: {
+            title: "Bolor recorrente após limpeza",
+            description: "O bolor que regressa indica uma fonte de humidade não resolvida."
+        },
+        water_event: {
+            title: "Evento de água significativo",
+            description: "Inundação ou fuga grave aumenta o risco de danos ocultos."
+        },
+        no_bathroom_vent: {
+            title: "Sem ventilação na casa de banho",
+            description: "A humidade do banho fica retida sem extração adequada."
+        },
+        thermal_bridge_windows: {
+            title: "Risco de ponte térmica nas janelas",
+            description: "Vidro simples em alumínio cria superfícies frias onde condensa."
+        },
+        old_building: {
+            title: "Edifício antigo sem isolamento",
+            description: "Construção anterior a 1980 raramente tem isolamento adequado."
+        },
+        musty_odour: {
+            title: "Cheiro a mofo persistente",
+            description: "Odor forte sem bolor visível pode indicar crescimento oculto."
+        },
+        indoor_laundry: {
+            title: "Secagem de roupa no interior",
+            description: "Adiciona humidade significativa ao ar interior."
+        },
+        poor_heating: {
+            title: "Aquecimento insuficiente",
+            description: "Espaços frios favorecem a condensação nas superfícies."
+        },
+        ground_floor: {
+            title: "Rés-do-chão ou cave",
+            description: "Maior exposição à humidade ascendente do solo."
+        }
+    },
+    en: {
+        high_humidity: {
+            title: "High indoor humidity",
+            description: "Hygrometer reading above 70% active mold risk zone."
+        },
+        recurrent_mold: {
+            title: "Recurrent mold after cleaning",
+            description: "Mold that returns indicates an unresolved moisture source."
+        },
+        water_event: {
+            title: "Significant water event",
+            description: "Flooding or major leak increases risk of hidden damage."
+        },
+        no_bathroom_vent: {
+            title: "No bathroom ventilation",
+            description: "Shower humidity is trapped without adequate extraction."
+        },
+        thermal_bridge_windows: {
+            title: "Thermal bridge window risk",
+            description: "Single aluminium glazing creates cold surfaces where condensation forms."
+        },
+        old_building: {
+            title: "Older building without insulation",
+            description: "Pre-1980 construction rarely has adequate insulation."
+        },
+        musty_odour: {
+            title: "Persistent musty odour",
+            description: "Strong smell without visible mold may indicate hidden growth."
+        },
+        indoor_laundry: {
+            title: "Indoor laundry drying",
+            description: "Adds significant moisture to indoor air."
+        },
+        poor_heating: {
+            title: "Insufficient heating",
+            description: "Cold spaces encourage condensation on surfaces."
+        },
+        ground_floor: {
+            title: "Ground floor or basement",
+            description: "Greater exposure to rising damp from the ground."
+        }
+    },
+    fr: {
+        high_humidity: {
+            title: "Humidité intérieure élevée",
+            description: "Lecture de l'hygromètre supérieure à 70 % zone de risque actif."
+        },
+        recurrent_mold: {
+            title: "Moisissures récurrentes après nettoyage",
+            description: "Des moisissures qui reviennent indiquent une source d'humidité non résolue."
+        },
+        water_event: {
+            title: "Événement hydrique significatif",
+            description: "Une inondation ou une fuite majeure augmente le risque de dommages cachés."
+        },
+        no_bathroom_vent: {
+            title: "Pas de ventilation dans la salle de bain",
+            description: "L'humidité de la douche reste piégée sans extraction adéquate."
+        },
+        thermal_bridge_windows: {
+            title: "Risque de pont thermique aux fenêtres",
+            description: "Le simple vitrage en aluminium crée des surfaces froides où la condensation se forme."
+        },
+        old_building: {
+            title: "Bâtiment ancien sans isolation",
+            description: "Les constructions antérieures à 1980 ont rarement une isolation adéquate."
+        },
+        musty_odour: {
+            title: "Odeur de moisi persistante",
+            description: "Une forte odeur sans moisissures visibles peut indiquer une croissance cachée."
+        },
+        indoor_laundry: {
+            title: "Séchage du linge à l'intérieur",
+            description: "Ajoute une humidité significative à l'air intérieur."
+        },
+        poor_heating: {
+            title: "Chauffage insuffisant",
+            description: "Les espaces froids favorisent la condensation sur les surfaces."
+        },
+        ground_floor: {
+            title: "Rez-de-chaussée ou sous-sol",
+            description: "Plus grande exposition à l'humidité ascendante du sol."
+        }
+    },
+    de: {
+        high_humidity: {
+            title: "Hohe Innenraumfeuchtigkeit",
+            description: "Hygrometerwert über 70 % aktive Schimmelrisikozone."
+        },
+        recurrent_mold: {
+            title: "Wiederkehrender Schimmel nach Reinigung",
+            description: "Schimmel, der zurückkommt, weist auf eine ungelöste Feuchtigkeitsquelle hin."
+        },
+        water_event: {
+            title: "Erheblicher Wasserschaden",
+            description: "Überschwemmung oder größerer Leck erhöht das Risiko versteckter Schäden."
+        },
+        no_bathroom_vent: {
+            title: "Keine Badezimmerbelüftung",
+            description: "Duschfeuchtigkeit bleibt ohne ausreichende Absaugung eingeschlossen."
+        },
+        thermal_bridge_windows: {
+            title: "Wärmebrückenrisiko bei Fenstern",
+            description: "Einfachverglasung aus Aluminium erzeugt kalte Oberflächen, auf denen Kondensation entsteht."
+        },
+        old_building: {
+            title: "Älteres Gebäude ohne Dämmung",
+            description: "Gebäude vor 1980 haben selten eine ausreichende Dämmung."
+        },
+        musty_odour: {
+            title: "Anhaltender muffiger Geruch",
+            description: "Starker Geruch ohne sichtbaren Schimmel kann auf verstecktes Wachstum hinweisen."
+        },
+        indoor_laundry: {
+            title: "Wäschetrocknung im Innenraum",
+            description: "Fügt der Innenraumluft erhebliche Feuchtigkeit hinzu."
+        },
+        poor_heating: {
+            title: "Unzureichende Heizung",
+            description: "Kalte Räume begünstigen Kondensation auf Oberflächen."
+        },
+        ground_floor: {
+            title: "Erdgeschoss oder Keller",
+            description: "Größere Exposition gegenüber aufsteigender Feuchtigkeit aus dem Boden."
+        }
+    },
+    nl: {
+        high_humidity: {
+            title: "Hoge binnenluchtvochtigkeit",
+            description: "Hygrometerlectuur boven 70% actieve schimmelrisicozone."
+        },
+        recurrent_mold: {
+            title: "Terugkerende schimmel na schoonmaken",
+            description: "Schimmel die terugkomt wijst op een onopgeloste vochtbron."
+        },
+        water_event: {
+            title: "Significant waterincident",
+            description: "Overstroming of grote lekkage vergroot het risico op verborgen schade."
+        },
+        no_bathroom_vent: {
+            title: "Geen badkamerventilatie",
+            description: "Douchelucht blijft gevangen zonder adequate afzuiging."
+        },
+        thermal_bridge_windows: {
+            title: "Koudebrug risicovensters",
+            description: "Enkel aluminium glas creëert koude oppervlakken waar condensatie ontstaat."
+        },
+        old_building: {
+            title: "Ouder gebouw zonder isolatie",
+            description: "Gebouwen van voor 1980 hebben zelden adequate isolatie."
+        },
+        musty_odour: {
+            title: "Aanhoudende muffe geur",
+            description: "Sterke geur zonder zichtbare schimmel kan wijzen op verborgen groei."
+        },
+        indoor_laundry: {
+            title: "Was binnenshuis drogen",
+            description: "Voegt aanzienlijk vocht toe aan de binnenlucht."
+        },
+        poor_heating: {
+            title: "Onvoldoende verwarming",
+            description: "Koude ruimtes bevorderen condensatie op oppervlakken."
+        },
+        ground_floor: {
+            title: "Begane grond of kelder",
+            description: "Grotere blootstelling aan opstijgend vocht uit de grond."
+        }
+    },
+    it: {
+        high_humidity: {
+            title: "Umidità interna elevata",
+            description: "Lettura dell'igrometro superiore al 70% zona di rischio attivo per la muffa."
+        },
+        recurrent_mold: {
+            title: "Muffa ricorrente dopo la pulizia",
+            description: "La muffa che ritorna indica una fonte di umidità non risolta."
+        },
+        water_event: {
+            title: "Evento idrico significativo",
+            description: "Un'inondazione o una perdita grave aumenta il rischio di danni nascosti."
+        },
+        no_bathroom_vent: {
+            title: "Nessuna ventilazione nel bagno",
+            description: "L'umidità della doccia rimane intrappolata senza un'estrazione adeguata."
+        },
+        thermal_bridge_windows: {
+            title: "Rischio di ponte termico alle finestre",
+            description: "Il vetro singolo in alluminio crea superfici fredde dove si forma la condensa."
+        },
+        old_building: {
+            title: "Edificio vecchio senza isolamento",
+            description: "Le costruzioni precedenti al 1980 raramente hanno un isolamento adeguato."
+        },
+        musty_odour: {
+            title: "Odore di muffa persistente",
+            description: "Un odore forte senza muffa visibile può indicare una crescita nascosta."
+        },
+        indoor_laundry: {
+            title: "Asciugatura del bucato all'interno",
+            description: "Aggiunge umidità significativa all'aria interna."
+        },
+        poor_heating: {
+            title: "Riscaldamento insufficiente",
+            description: "Gli spazi freddi favoriscono la condensa sulle superfici."
+        },
+        ground_floor: {
+            title: "Piano terra o seminterrato",
+            description: "Maggiore esposizione all'umidità di risalita dal suolo."
+        }
+    },
+    es: {
+        high_humidity: {
+            title: "Humedad interior elevada",
+            description: "Lectura del higrómetro por encima del 70% zona de riesgo activo de moho."
+        },
+        recurrent_mold: {
+            title: "Moho recurrente después de limpiar",
+            description: "El moho que vuelve indica una fuente de humedad no resuelta."
+        },
+        water_event: {
+            title: "Incidente de agua significativo",
+            description: "Una inundación o fuga grave aumenta el riesgo de daños ocultos."
+        },
+        no_bathroom_vent: {
+            title: "Sin ventilación en el baño",
+            description: "La humedad de la ducha queda atrapada sin extracción adecuada."
+        },
+        thermal_bridge_windows: {
+            title: "Riesgo de puente térmico en ventanas",
+            description: "El vidrio simple de aluminio crea superficies frías donde se forma condensación."
+        },
+        old_building: {
+            title: "Edificio antiguo sin aislamiento",
+            description: "Las construcciones anteriores a 1980 raramente tienen aislamiento adecuado."
+        },
+        musty_odour: {
+            title: "Olor a humedad persistente",
+            description: "Un olor fuerte sin moho visible puede indicar crecimiento oculto."
+        },
+        indoor_laundry: {
+            title: "Secado de ropa en el interior",
+            description: "Añade humedad significativa al aire interior."
+        },
+        poor_heating: {
+            title: "Calefacción insuficiente",
+            description: "Los espacios fríos favorecen la condensación en las superficies."
+        },
+        ground_floor: {
+            title: "Planta baja o sótano",
+            description: "Mayor exposición a la humedad ascendente del suelo."
+        }
+    }
+};
+const UI_STRINGS = {
+    pt: {
+        pageEyebrow: "FERRAMENTA GRATUITA",
+        pageTitle: "Calculadora de Risco de Humidade",
+        pageIntro: "Responda a 14 perguntas sobre o seu edifício, condições atuais e estilo de vida. Obtenha uma pontuação de risco personalizada, os fatores-chave identificados e uma lista de verificação prioritária sem registo, sem email.",
+        pageMeta: "Avalie o risco de humidade e bolor na sua casa com esta calculadora gratuita. Resultado imediato, sem registo.",
+        startCta: "Iniciar avaliação gratuita",
+        section1Title: "Secção 1: O edifício",
+        section2Title: "Secção 2: Condições atuais",
+        section3Title: "Secção 3: Estilo de vida",
+        calculateButton: "Ver o meu resultado",
+        resetButton: "Recomeçar",
+        resultTitle: "O seu resultado",
+        scoreLabel: "Pontuação de risco",
+        bandLabels: {
+            low: "Risco baixo",
+            moderate: "Risco moderado",
+            high: "Risco elevado",
+            critical: "Risco crítico"
+        },
+        profileLabel: "O seu perfil de risco",
+        factorsLabel: "Fatores de risco identificados",
+        nextStepsLabel: "O que fazer a seguir",
+        checklistLabel: "Prioridades da sua lista de verificação",
+        ctaPrimary: {
+            low: {
+                label: "Descarregar a lista de verificação gratuita de 20 pontos"
+            },
+            moderate: {
+                label: "Descarregar lista de verificação + ler: o que causa bolor"
+            },
+            high: {
+                label: "Agendar uma inspecção independente"
+            },
+            critical: {
+                label: "Agendar uma inspecção recomendamos o mais cedo possível"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Ler: a sua casa está a afetar a sua saúde?"
+            },
+            moderate: {
+                label: "Considerar uma inspecção independente"
+            },
+            high: {
+                label: "Descarregar lista de verificação"
+            },
+            critical: {
+                label: "Descarregar lista de verificação"
+            }
+        },
+        shareLabel: "Partilhar resultado",
+        shareCopied: "Ligação copiada!",
+        previousResultLabel: "Tem um resultado anterior guardado.",
+        previousResultCta: "Restaurar",
+        previousResultDismiss: "Ignorar",
+        validationError: "Por favor, responda a todas as perguntas antes de continuar."
+    },
+    en: {
+        pageEyebrow: "FREE TOOL",
+        pageTitle: "Humidity Risk Calculator",
+        pageIntro: "Answer 14 questions about your building, current conditions and lifestyle. Get a personalised risk score, key factors identified and a priority checklist no registration, no email required.",
+        pageMeta: "Assess the humidity and mold risk in your home with this free calculator. Instant result, no registration.",
+        startCta: "Start free assessment",
+        section1Title: "Section 1: The building",
+        section2Title: "Section 2: Current conditions",
+        section3Title: "Section 3: Lifestyle",
+        calculateButton: "See my result",
+        resetButton: "Start again",
+        resultTitle: "Your result",
+        scoreLabel: "Risk score",
+        bandLabels: {
+            low: "Low risk",
+            moderate: "Moderate risk",
+            high: "High risk",
+            critical: "Critical risk"
+        },
+        profileLabel: "Your risk profile",
+        factorsLabel: "Risk factors identified",
+        nextStepsLabel: "What to do next",
+        checklistLabel: "Your checklist priorities",
+        ctaPrimary: {
+            low: {
+                label: "Download the free 20-point checklist"
+            },
+            moderate: {
+                label: "Download checklist + read: what causes mold"
+            },
+            high: {
+                label: "Book an independent inspection"
+            },
+            critical: {
+                label: "Book an inspection we recommend sooner rather than later"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Read: is your home affecting your health?"
+            },
+            moderate: {
+                label: "Consider an independent inspection"
+            },
+            high: {
+                label: "Download checklist"
+            },
+            critical: {
+                label: "Download checklist"
+            }
+        },
+        shareLabel: "Share result",
+        shareCopied: "Link copied!",
+        previousResultLabel: "You have a saved result from a previous session.",
+        previousResultCta: "Restore",
+        previousResultDismiss: "Dismiss",
+        validationError: "Please answer all questions before continuing."
+    },
+    fr: {
+        pageEyebrow: "OUTIL GRATUIT",
+        pageTitle: "Calculateur de risque d'humidité",
+        pageIntro: "Répondez à 14 questions sur votre bâtiment, les conditions actuelles et votre mode de vie. Obtenez un score de risque personnalisé, les facteurs clés identifiés et une liste de contrôle prioritaire sans inscription, sans email.",
+        pageMeta: "Évaluez le risque d'humidité et de moisissures dans votre logement avec ce calculateur gratuit. Résultat immédiat, sans inscription.",
+        startCta: "Commencer l'évaluation gratuite",
+        section1Title: "Section 1 : Le bâtiment",
+        section2Title: "Section 2 : Conditions actuelles",
+        section3Title: "Section 3 : Mode de vie",
+        calculateButton: "Voir mon résultat",
+        resetButton: "Recommencer",
+        resultTitle: "Votre résultat",
+        scoreLabel: "Score de risque",
+        bandLabels: {
+            low: "Risque faible",
+            moderate: "Risque modéré",
+            high: "Risque élevé",
+            critical: "Risque critique"
+        },
+        profileLabel: "Votre profil de risque",
+        factorsLabel: "Facteurs de risque identifiés",
+        nextStepsLabel: "Que faire ensuite",
+        checklistLabel: "Vos priorités de liste de contrôle",
+        ctaPrimary: {
+            low: {
+                label: "Télécharger la liste de contrôle gratuite de 20 points"
+            },
+            moderate: {
+                label: "Télécharger la liste + lire : ce qui cause les moisissures"
+            },
+            high: {
+                label: "Réserver une inspection indépendante"
+            },
+            critical: {
+                label: "Réserver une inspection nous recommandons le plus tôt possible"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Lire : votre logement affecte-t-il votre santé ?"
+            },
+            moderate: {
+                label: "Envisager une inspection indépendante"
+            },
+            high: {
+                label: "Télécharger la liste de contrôle"
+            },
+            critical: {
+                label: "Télécharger la liste de contrôle"
+            }
+        },
+        shareLabel: "Partager le résultat",
+        shareCopied: "Lien copié !",
+        previousResultLabel: "Vous avez un résultat enregistré d'une session précédente.",
+        previousResultCta: "Restaurer",
+        previousResultDismiss: "Ignorer",
+        validationError: "Veuillez répondre à toutes les questions avant de continuer."
+    },
+    de: {
+        pageEyebrow: "KOSTENLOSES TOOL",
+        pageTitle: "Feuchtigkeitsrisiko-Rechner",
+        pageIntro: "Beantworten Sie 14 Fragen zu Ihrem Gebäude, den aktuellen Bedingungen und Ihrem Lebensstil. Erhalten Sie eine personalisierte Risikobewertung, identifizierte Schlüsselfaktoren und eine priorisierte Checkliste ohne Registrierung, ohne E-Mail.",
+        pageMeta: "Bewerten Sie das Feuchtigkeits- und Schimmelrisiko in Ihrer Wohnung mit diesem kostenlosen Rechner. Sofortiges Ergebnis, keine Registrierung.",
+        startCta: "Kostenlose Bewertung starten",
+        section1Title: "Abschnitt 1: Das Gebäude",
+        section2Title: "Abschnitt 2: Aktuelle Bedingungen",
+        section3Title: "Abschnitt 3: Lebensstil",
+        calculateButton: "Mein Ergebnis anzeigen",
+        resetButton: "Neu starten",
+        resultTitle: "Ihr Ergebnis",
+        scoreLabel: "Risikobewertung",
+        bandLabels: {
+            low: "Geringes Risiko",
+            moderate: "Mittleres Risiko",
+            high: "Hohes Risiko",
+            critical: "Kritisches Risiko"
+        },
+        profileLabel: "Ihr Risikoprofil",
+        factorsLabel: "Identifizierte Risikofaktoren",
+        nextStepsLabel: "Was als Nächstes zu tun ist",
+        checklistLabel: "Ihre Checklisten-Prioritäten",
+        ctaPrimary: {
+            low: {
+                label: "Kostenlose 20-Punkte-Checkliste herunterladen"
+            },
+            moderate: {
+                label: "Checkliste herunterladen + lesen: Was verursacht Schimmel"
+            },
+            high: {
+                label: "Unabhängige Inspektion buchen"
+            },
+            critical: {
+                label: "Inspektion buchen wir empfehlen so bald wie möglich"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Lesen: Beeinflusst Ihre Wohnung Ihre Gesundheit?"
+            },
+            moderate: {
+                label: "Unabhängige Inspektion in Betracht ziehen"
+            },
+            high: {
+                label: "Checkliste herunterladen"
+            },
+            critical: {
+                label: "Checkliste herunterladen"
+            }
+        },
+        shareLabel: "Ergebnis teilen",
+        shareCopied: "Link kopiert!",
+        previousResultLabel: "Sie haben ein gespeichertes Ergebnis aus einer früheren Sitzung.",
+        previousResultCta: "Wiederherstellen",
+        previousResultDismiss: "Verwerfen",
+        validationError: "Bitte beantworten Sie alle Fragen, bevor Sie fortfahren."
+    },
+    nl: {
+        pageEyebrow: "GRATIS TOOL",
+        pageTitle: "Vochtrisico Calculator",
+        pageIntro: "Beantwoord 14 vragen over uw gebouw, huidige omstandigheden en levensstijl. Ontvang een gepersonaliseerde risicoscore, geïdentificeerde sleutelfactoren en een prioriteitslijst geen registratie, geen e-mail vereist.",
+        pageMeta: "Beoordeel het vocht- en schimmelrisico in uw woning met deze gratis calculator. Direct resultaat, geen registratie.",
+        startCta: "Gratis beoordeling starten",
+        section1Title: "Sectie 1: Het gebouw",
+        section2Title: "Sectie 2: Huidige omstandigheden",
+        section3Title: "Sectie 3: Levensstijl",
+        calculateButton: "Mijn resultaat bekijken",
+        resetButton: "Opnieuw beginnen",
+        resultTitle: "Uw resultaat",
+        scoreLabel: "Risicoscore",
+        bandLabels: {
+            low: "Laag risico",
+            moderate: "Matig risico",
+            high: "Hoog risico",
+            critical: "Kritiek risico"
+        },
+        profileLabel: "Uw risicoprofiel",
+        factorsLabel: "Geïdentificeerde risicofactoren",
+        nextStepsLabel: "Wat te doen",
+        checklistLabel: "Uw checklistprioriteiten",
+        ctaPrimary: {
+            low: {
+                label: "Download de gratis 20-punten checklist"
+            },
+            moderate: {
+                label: "Download checklist + lees: wat veroorzaakt schimmel"
+            },
+            high: {
+                label: "Boek een onafhankelijke inspectie"
+            },
+            critical: {
+                label: "Boek een inspectie wij raden zo snel mogelijk aan"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Lees: beïnvloedt uw woning uw gezondheid?"
+            },
+            moderate: {
+                label: "Overweeg een onafhankelijke inspectie"
+            },
+            high: {
+                label: "Download checklist"
+            },
+            critical: {
+                label: "Download checklist"
+            }
+        },
+        shareLabel: "Resultaat delen",
+        shareCopied: "Link gekopieerd!",
+        previousResultLabel: "U heeft een opgeslagen resultaat van een vorige sessie.",
+        previousResultCta: "Herstellen",
+        previousResultDismiss: "Negeren",
+        validationError: "Beantwoord alle vragen voordat u verdergaat."
+    },
+    it: {
+        pageEyebrow: "STRUMENTO GRATUITO",
+        pageTitle: "Calcolatore del rischio di umidità",
+        pageIntro: "Rispondi a 14 domande sul tuo edificio, le condizioni attuali e il tuo stile di vita. Ottieni un punteggio di rischio personalizzato, i fattori chiave identificati e una lista di controllo prioritaria senza registrazione, senza email.",
+        pageMeta: "Valuta il rischio di umidità e muffa nella tua casa con questo calcolatore gratuito. Risultato immediato, senza registrazione.",
+        startCta: "Inizia la valutazione gratuita",
+        section1Title: "Sezione 1: L'edificio",
+        section2Title: "Sezione 2: Condizioni attuali",
+        section3Title: "Sezione 3: Stile di vita",
+        calculateButton: "Vedi il mio risultato",
+        resetButton: "Ricomincia",
+        resultTitle: "Il tuo risultato",
+        scoreLabel: "Punteggio di rischio",
+        bandLabels: {
+            low: "Rischio basso",
+            moderate: "Rischio moderato",
+            high: "Rischio elevato",
+            critical: "Rischio critico"
+        },
+        profileLabel: "Il tuo profilo di rischio",
+        factorsLabel: "Fattori di rischio identificati",
+        nextStepsLabel: "Cosa fare dopo",
+        checklistLabel: "Le tue priorità della lista di controllo",
+        ctaPrimary: {
+            low: {
+                label: "Scarica la lista di controllo gratuita di 20 punti"
+            },
+            moderate: {
+                label: "Scarica la lista + leggi: cosa causa la muffa"
+            },
+            high: {
+                label: "Prenota un'ispezione indipendente"
+            },
+            critical: {
+                label: "Prenota un'ispezione raccomandiamo prima possibile"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Leggi: la tua casa influisce sulla tua salute?"
+            },
+            moderate: {
+                label: "Considera un'ispezione indipendente"
+            },
+            high: {
+                label: "Scarica la lista di controllo"
+            },
+            critical: {
+                label: "Scarica la lista di controllo"
+            }
+        },
+        shareLabel: "Condividi risultato",
+        shareCopied: "Link copiato!",
+        previousResultLabel: "Hai un risultato salvato da una sessione precedente.",
+        previousResultCta: "Ripristina",
+        previousResultDismiss: "Ignora",
+        validationError: "Rispondi a tutte le domande prima di continuare."
+    },
+    es: {
+        pageEyebrow: "HERRAMIENTA GRATUITA",
+        pageTitle: "Calculadora de riesgo de humedad",
+        pageIntro: "Responde 14 preguntas sobre tu edificio, las condiciones actuales y tu estilo de vida. Obtén una puntuación de riesgo personalizada, los factores clave identificados y una lista de verificación prioritaria sin registro, sin email.",
+        pageMeta: "Evalúa el riesgo de humedad y moho en tu vivienda con esta calculadora gratuita. Resultado inmediato, sin registro.",
+        startCta: "Iniciar evaluación gratuita",
+        section1Title: "Sección 1: El edificio",
+        section2Title: "Sección 2: Condiciones actuales",
+        section3Title: "Sección 3: Estilo de vida",
+        calculateButton: "Ver mi resultado",
+        resetButton: "Empezar de nuevo",
+        resultTitle: "Tu resultado",
+        scoreLabel: "Puntuación de riesgo",
+        bandLabels: {
+            low: "Riesgo bajo",
+            moderate: "Riesgo moderado",
+            high: "Riesgo alto",
+            critical: "Riesgo crítico"
+        },
+        profileLabel: "Tu perfil de riesgo",
+        factorsLabel: "Factores de riesgo identificados",
+        nextStepsLabel: "Qué hacer a continuación",
+        checklistLabel: "Tus prioridades de lista de verificación",
+        ctaPrimary: {
+            low: {
+                label: "Descargar la lista de verificación gratuita de 20 puntos"
+            },
+            moderate: {
+                label: "Descargar lista + leer: qué causa el moho"
+            },
+            high: {
+                label: "Reservar una inspección independiente"
+            },
+            critical: {
+                label: "Reservar una inspección recomendamos cuanto antes"
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: "Leer: ¿tu vivienda afecta tu salud?"
+            },
+            moderate: {
+                label: "Considerar una inspección independiente"
+            },
+            high: {
+                label: "Descargar lista de verificación"
+            },
+            critical: {
+                label: "Descargar lista de verificación"
+            }
+        },
+        shareLabel: "Compartir resultado",
+        shareCopied: "¡Enlace copiado!",
+        previousResultLabel: "Tienes un resultado guardado de una sesión anterior.",
+        previousResultCta: "Restaurar",
+        previousResultDismiss: "Ignorar",
+        validationError: "Por favor, responde todas las preguntas antes de continuar."
+    }
+};
+// ---------------------------------------------------------------------------
+// Profile text generation
+// ---------------------------------------------------------------------------
+function buildProfileText(locale, answers) {
+    const q = QUESTION_STRINGS[locale];
+    const buildingOpt = q.q_buildingType?.options[answers.buildingType] ?? "";
+    const yearOpt = q.q_constructionYear?.options[answers.constructionYear] ?? "";
+    const locationOpt = q.q_location?.options[answers.location] ?? "";
+    const hygroOpt = q.q_hygrometer?.options[answers.hygrometer] ?? "";
+    const moldOpt = q.q_moldHistory?.options[answers.moldHistory] ?? "";
+    const templates = {
+        pt: `${buildingOpt} construído ${yearOpt.toLowerCase()}, na ${locationOpt}${hygroOpt ? `, com humidade ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` e histórico de bolor (${moldOpt.toLowerCase()})` : ""} este perfil combina características estruturais com sinais de alerta que merecem atenção.`,
+        en: `A ${buildingOpt.toLowerCase()} built ${yearOpt.toLowerCase()}, in the ${locationOpt}${hygroOpt ? `, with humidity ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` and a mold history (${moldOpt.toLowerCase()})` : ""} this profile combines structural characteristics with warning signals that deserve attention.`,
+        fr: `Un ${buildingOpt.toLowerCase()} construit ${yearOpt.toLowerCase()}, dans la ${locationOpt}${hygroOpt ? `, avec une humidité ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` et un historique de moisissures (${moldOpt.toLowerCase()})` : ""} ce profil combine des caractéristiques structurelles avec des signaux d'alerte qui méritent attention.`,
+        de: `Ein ${buildingOpt.toLowerCase()}, gebaut ${yearOpt.toLowerCase()}, in der ${locationOpt}${hygroOpt ? `, mit Luftfeuchtigkeit ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` und einer Schimmelgeschichte (${moldOpt.toLowerCase()})` : ""} dieses Profil kombiniert strukturelle Merkmale mit Warnsignalen, die Aufmerksamkeit verdienen.`,
+        nl: `Een ${buildingOpt.toLowerCase()} gebouwd ${yearOpt.toLowerCase()}, in de ${locationOpt}${hygroOpt ? `, met luchtvochtigheid ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` en een schimmelgeschiedenis (${moldOpt.toLowerCase()})` : ""} dit profiel combineert structurele kenmerken met waarschuwingssignalen die aandacht verdienen.`,
+        it: `Un ${buildingOpt.toLowerCase()} costruito ${yearOpt.toLowerCase()}, nella ${locationOpt}${hygroOpt ? `, con umidità ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` e una storia di muffa (${moldOpt.toLowerCase()})` : ""} questo profilo combina caratteristiche strutturali con segnali di allerta che meritano attenzione.`,
+        es: `Un ${buildingOpt.toLowerCase()} construido ${yearOpt.toLowerCase()}, en la ${locationOpt}${hygroOpt ? `, con humedad ${hygroOpt.toLowerCase()}` : ""}${moldOpt && answers.moldHistory !== "none" ? ` e historial de moho (${moldOpt.toLowerCase()})` : ""} este perfil combina características estructurales con señales de alerta que merecen atención.`
+    };
+    return templates[locale] ?? templates.en;
+}
+function getCalcI18n(locale) {
+    const ui = UI_STRINGS[locale];
+    const questions = buildQuestions(locale);
+    const checklistItems = CHECKLIST_STRINGS[locale];
+    const riskFactorLabels = RISK_FACTOR_STRINGS[locale];
+    return {
+        locale,
+        pageEyebrow: ui.pageEyebrow,
+        pageTitle: ui.pageTitle,
+        pageIntro: ui.pageIntro,
+        pageMeta: ui.pageMeta,
+        startCta: ui.startCta,
+        section1Title: ui.section1Title,
+        section2Title: ui.section2Title,
+        section3Title: ui.section3Title,
+        calculateButton: ui.calculateButton,
+        resetButton: ui.resetButton,
+        resultTitle: ui.resultTitle,
+        scoreLabel: ui.scoreLabel,
+        bandLabels: ui.bandLabels,
+        profileLabel: ui.profileLabel,
+        factorsLabel: ui.factorsLabel,
+        nextStepsLabel: ui.nextStepsLabel,
+        checklistLabel: ui.checklistLabel,
+        ctaPrimary: {
+            low: {
+                label: ui.ctaPrimary.low.label,
+                href: checklistPdf(locale)
+            },
+            moderate: {
+                label: ui.ctaPrimary.moderate.label,
+                href: checklistPdf(locale)
+            },
+            high: {
+                label: ui.ctaPrimary.high.label,
+                href: inspectionHref(locale)
+            },
+            critical: {
+                label: ui.ctaPrimary.critical.label,
+                href: inspectionHref(locale)
+            }
+        },
+        ctaSecondary: {
+            low: {
+                label: ui.ctaSecondary.low.label,
+                href: healthArticleHref(locale)
+            },
+            moderate: {
+                label: ui.ctaSecondary.moderate.label,
+                href: inspectionHref(locale)
+            },
+            high: {
+                label: ui.ctaSecondary.high.label,
+                href: checklistPdf(locale)
+            },
+            critical: {
+                label: ui.ctaSecondary.critical.label,
+                href: checklistPdf(locale)
+            }
+        },
+        questions,
+        checklistItems,
+        riskFactorLabels,
+        shareLabel: ui.shareLabel,
+        shareCopied: ui.shareCopied,
+        previousResultLabel: ui.previousResultLabel,
+        previousResultCta: ui.previousResultCta,
+        previousResultDismiss: ui.previousResultDismiss,
+        validationError: ui.validationError,
+        profileTemplates: {
+            buildingType: {},
+            year: {},
+            location: {},
+            hygrometer: {},
+            mold: {},
+            connector: "",
+            suffix: ""
+        }
+    };
+}
+;
+}),
+"[project]/src/features/tools/lib/analytics.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "analytics",
+    ()=>analytics
+]);
+function plausible() {
+    if ("TURBOPACK compile-time truthy", 1) return null;
+    //TURBOPACK unreachable
+    ;
+}
+function track(event, props) {
+    try {
+        plausible()?.(event, props ? {
+            props
+        } : undefined);
+    } catch  {
+    // fail silently — Plausible may not be loaded
+    }
+}
+const analytics = {
+    calculatorStarted: ()=>track("calculator_started"),
+    calculatorCompleted: (band)=>{
+        track("calculator_completed");
+        const eventMap = {
+            low: "score_low",
+            moderate: "score_moderate",
+            high: "score_high",
+            critical: "score_critical"
+        };
+        track(eventMap[band]);
+    },
+    ctaChecklistClicked: ()=>track("cta_checklist_clicked"),
+    ctaInspectionClicked: ()=>track("cta_inspection_clicked")
+};
+}),
+"[project]/src/features/tools/lib/queryString.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildShareUrl",
+    ()=>buildShareUrl,
+    "clearStorage",
+    ()=>clearStorage,
+    "decodeAnswers",
+    ()=>decodeAnswers,
+    "encodeAnswers",
+    ()=>encodeAnswers,
+    "loadFromStorage",
+    ()=>loadFromStorage,
+    "readAnswersFromUrl",
+    ()=>readAnswersFromUrl,
+    "saveToStorage",
+    ()=>saveToStorage
+]);
+const PARAM_KEY = "calc";
+function encodeAnswers(answers) {
+    try {
+        return btoa(JSON.stringify(answers));
+    } catch  {
+        return "";
+    }
+}
+function decodeAnswers(encoded) {
+    try {
+        const decoded = JSON.parse(atob(encoded));
+        if (typeof decoded === "object" && decoded !== null) {
+            return decoded;
+        }
+        return null;
+    } catch  {
+        return null;
+    }
+}
+function buildShareUrl(answers) {
+    if ("TURBOPACK compile-time truthy", 1) return "";
+    //TURBOPACK unreachable
+    ;
+    const url = undefined;
+}
+function readAnswersFromUrl() {
+    if ("TURBOPACK compile-time truthy", 1) return null;
+    //TURBOPACK unreachable
+    ;
+    const params = undefined;
+    const encoded = undefined;
+}
+const STORAGE_KEY = "mc_calc_state";
+function saveToStorage(answers, score) {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            answers,
+            score,
+            ts: Date.now()
+        }));
+    } catch  {
+    // storage may be unavailable
+    }
+}
+function loadFromStorage() {
+    try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (parsed?.answers && typeof parsed.score === "number") {
+            return {
+                answers: parsed.answers,
+                score: parsed.score
+            };
+        }
+        return null;
+    } catch  {
+        return null;
+    }
+}
+function clearStorage() {
+    try {
+        localStorage.removeItem(STORAGE_KEY);
+    } catch  {
+    // storage may be unavailable
+    }
+}
+}),
+"[project]/src/features/tools/components/CalculatorForm.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CalculatorForm",
+    ()=>CalculatorForm
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/calculatorConfig.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+const SECTION_TITLES = {
+    building: "section1Title",
+    conditions: "section2Title",
+    lifestyle: "section3Title"
+};
+function CalculatorForm({ i18n, answers, onChange, onSubmit }) {
+    const [showValidation, setShowValidation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const firstMissingRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const sections = [
+        "building",
+        "conditions",
+        "lifestyle"
+    ];
+    const missingIds = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["QUESTIONS"].filter((q)=>!answers[q.id]).map((q)=>q.id);
+    function handleSubmit() {
+        if (missingIds.length > 0) {
+            setShowValidation(true);
+            // Scroll to first unanswered question
+            setTimeout(()=>{
+                firstMissingRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 50);
+            return;
+        }
+        onSubmit();
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "calc-form",
+        children: [
+            sections.map((sectionKey)=>{
+                const sectionQuestions = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$calculatorConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["QUESTIONS"].filter((q)=>q.sectionKey === sectionKey);
+                const titleKey = SECTION_TITLES[sectionKey];
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    className: "calc-section",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "calc-section__title",
+                            children: i18n[titleKey]
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                            lineNumber: 46,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "calc-section__questions",
+                            children: sectionQuestions.map((q, idx)=>{
+                                const qStrings = i18n.questions[q.labelKey];
+                                if (!qStrings) return null;
+                                const isMissing = showValidation && missingIds.includes(q.id);
+                                const isFirstMissing = showValidation && missingIds[0] === q.id;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
+                                    className: `calc-question${isMissing ? " calc-question--error" : ""}`,
+                                    ref: isFirstMissing ? firstMissingRef : undefined,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("legend", {
+                                            className: "calc-question__label",
+                                            children: [
+                                                qStrings.label,
+                                                isMissing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "calc-question__required-mark",
+                                                    "aria-hidden": "true",
+                                                    children: " *"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                                    lineNumber: 62,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "calc-question__options",
+                                            children: q.options.map((opt)=>{
+                                                const optLabel = qStrings.options[opt.value] ?? opt.value;
+                                                const isSelected = answers[q.id] === opt.value;
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    className: `calc-option${isSelected ? " calc-option--selected" : ""}`,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            type: "radio",
+                                                            name: q.id,
+                                                            value: opt.value,
+                                                            checked: isSelected,
+                                                            onChange: ()=>{
+                                                                onChange(q.id, opt.value);
+                                                                setShowValidation(false);
+                                                            },
+                                                            className: "calc-option__radio"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                                            lineNumber: 74,
+                                                            columnNumber: 29
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "calc-option__text",
+                                                            children: optLabel
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                                            lineNumber: 85,
+                                                            columnNumber: 29
+                                                        }, this)
+                                                    ]
+                                                }, opt.value, true, {
+                                                    fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                                    lineNumber: 70,
+                                                    columnNumber: 27
+                                                }, this);
+                                            })
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                            lineNumber: 65,
+                                            columnNumber: 21
+                                        }, this),
+                                        isMissing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "calc-question__error-msg",
+                                            role: "alert",
+                                            children: i18n.validationError
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                            lineNumber: 91,
+                                            columnNumber: 23
+                                        }, this)
+                                    ]
+                                }, q.id, true, {
+                                    fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                                    lineNumber: 54,
+                                    columnNumber: 19
+                                }, this);
+                            })
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                            lineNumber: 47,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, sectionKey, true, {
+                    fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                    lineNumber: 45,
+                    columnNumber: 11
+                }, this);
+            }),
+            showValidation && missingIds.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-validation-banner",
+                role: "alert",
+                children: i18n.validationError
+            }, void 0, false, {
+                fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                lineNumber: 104,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-form__submit",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "button",
+                    onClick: handleSubmit,
+                    className: "calc-submit-btn",
+                    children: i18n.calculateButton
+                }, void 0, false, {
+                    fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                    lineNumber: 110,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+                lineNumber: 109,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/tools/components/CalculatorForm.tsx",
+        lineNumber: 40,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/features/tools/components/CalculatorResult.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CalculatorResult",
+    ()=>CalculatorResult
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/scoring.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/i18n.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/queryString.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/analytics.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+const BAND_CONFIG = {
+    low: {
+        color: "#1a7a4a",
+        bg: "#f0faf4",
+        border: "#a8d5b8",
+        gauge: "#2a9d5c"
+    },
+    moderate: {
+        color: "#92600a",
+        bg: "#fffbf0",
+        border: "#f0d080",
+        gauge: "#d4a017"
+    },
+    high: {
+        color: "#b84a00",
+        bg: "#fff8f5",
+        border: "#f0b090",
+        gauge: "#e05a00"
+    },
+    critical: {
+        color: "#8b0000",
+        bg: "#fff5f5",
+        border: "#f0a0a0",
+        gauge: "#c00000"
+    }
+};
+function ScoreGauge({ score, band }) {
+    const cfg = BAND_CONFIG[band];
+    const pct = Math.min(100, Math.max(0, score));
+    const circumference = 2 * Math.PI * 54;
+    const offset = circumference - pct / 100 * circumference;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "calc-gauge",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                viewBox: "0 0 120 120",
+                className: "calc-gauge__svg",
+                "aria-hidden": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "60",
+                        cy: "60",
+                        r: "54",
+                        fill: "none",
+                        stroke: "#e8f0ef",
+                        strokeWidth: "10"
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "60",
+                        cy: "60",
+                        r: "54",
+                        fill: "none",
+                        stroke: cfg.gauge,
+                        strokeWidth: "10",
+                        strokeDasharray: circumference,
+                        strokeDashoffset: offset,
+                        strokeLinecap: "round",
+                        transform: "rotate(-90 60 60)",
+                        style: {
+                            transition: "stroke-dashoffset 0.8s ease"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-gauge__inner",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "calc-gauge__score",
+                        style: {
+                            color: cfg.color
+                        },
+                        children: score
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "calc-gauge__max",
+                        children: "/100"
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+function CalculatorResult({ locale, i18n, answers, score, band, onReset }) {
+    const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const cfg = BAND_CONFIG[band];
+    const profileText = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildProfileText"])(locale, answers);
+    const factorKeys = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDetectedRiskFactors"])(answers);
+    const checklistIds = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getPriorityChecklist"])(answers);
+    const primaryCta = i18n.ctaPrimary[band];
+    const secondaryCta = i18n.ctaSecondary[band];
+    function handleShare() {
+        const url = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildShareUrl"])(answers);
+        navigator.clipboard.writeText(url).then(()=>{
+            setCopied(true);
+            setTimeout(()=>setCopied(false), 2000);
+        }).catch(()=>{});
+    }
+    function handlePrimaryClick() {
+        if (band === "high" || band === "critical") {
+            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].ctaInspectionClicked();
+        } else {
+            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].ctaChecklistClicked();
+        }
+    }
+    function handleSecondaryClick() {
+        if (band === "moderate") {
+            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].ctaInspectionClicked();
+        } else {
+            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].ctaChecklistClicked();
+        }
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "calc-result",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__badge",
+                style: {
+                    background: cfg.bg,
+                    borderColor: cfg.border
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ScoreGauge, {
+                        score: score,
+                        band: band
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "calc-result__badge-text",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "calc-result__score-label",
+                                children: i18n.scoreLabel
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 96,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "calc-result__band-label",
+                                style: {
+                                    color: cfg.color
+                                },
+                                children: i18n.bandLabels[band]
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 97,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 95,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 93,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__block",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "calc-result__block-title",
+                        children: i18n.profileLabel
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 105,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "calc-result__profile-text",
+                        children: profileText
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 104,
+                columnNumber: 7
+            }, this),
+            factorKeys.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__block",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "calc-result__block-title",
+                        children: i18n.factorsLabel
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 112,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: "calc-result__factors",
+                        children: factorKeys.map((key)=>{
+                            const factor = i18n.riskFactorLabels[key];
+                            if (!factor) return null;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "calc-result__factor",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "calc-result__factor-title",
+                                        children: factor.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "calc-result__factor-desc",
+                                        children: factor.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                        lineNumber: 120,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, key, true, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 118,
+                                columnNumber: 17
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 113,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 111,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__block",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "calc-result__block-title",
+                        children: i18n.nextStepsLabel
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 130,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "calc-result__ctas",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: primaryCta.href,
+                                className: "calc-cta calc-cta--primary",
+                                target: primaryCta.href.startsWith("/") ? undefined : "_blank",
+                                rel: primaryCta.href.startsWith("/") ? undefined : "noopener noreferrer",
+                                onClick: handlePrimaryClick,
+                                children: primaryCta.label
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 132,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: secondaryCta.href,
+                                className: "calc-cta calc-cta--secondary",
+                                target: secondaryCta.href.startsWith("/") ? undefined : "_blank",
+                                rel: secondaryCta.href.startsWith("/") ? undefined : "noopener noreferrer",
+                                onClick: handleSecondaryClick,
+                                children: secondaryCta.label
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 141,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 131,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 129,
+                columnNumber: 7
+            }, this),
+            checklistIds.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__block",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "calc-result__block-title",
+                        children: i18n.checklistLabel
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 156,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: "calc-result__checklist",
+                        children: checklistIds.map((id)=>{
+                            const text = i18n.checklistItems[id];
+                            if (!text) return null;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "calc-result__checklist-item",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "calc-result__check-icon",
+                                        "aria-hidden": "true",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            width: "16",
+                                            height: "16",
+                                            viewBox: "0 0 16 16",
+                                            fill: "none",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                    cx: "8",
+                                                    cy: "8",
+                                                    r: "7.5",
+                                                    stroke: "#2a7a75",
+                                                    strokeWidth: "1"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    d: "M4.5 8l2.5 2.5 4.5-5",
+                                                    stroke: "#2a7a75",
+                                                    strokeWidth: "1.5",
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                                    lineNumber: 166,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: text
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                        lineNumber: 169,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, id, true, {
+                                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                                lineNumber: 162,
+                                columnNumber: 17
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 157,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 155,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "calc-result__actions",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: handleShare,
+                        className: "calc-share-btn",
+                        children: copied ? i18n.shareCopied : i18n.shareLabel
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 179,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: onReset,
+                        className: "calc-reset-btn",
+                        children: i18n.resetButton
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                        lineNumber: 182,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+                lineNumber: 178,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/tools/components/CalculatorResult.tsx",
+        lineNumber: 91,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/features/tools/components/HumidityCalculator.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "HumidityCalculator",
+    ()=>HumidityCalculator
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/scoring.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/i18n.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/analytics.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/lib/queryString.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$components$2f$CalculatorForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/components/CalculatorForm.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$components$2f$CalculatorResult$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/tools/components/CalculatorResult.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+// Navbar height to offset scroll-to-result
+const NAVBAR_OFFSET = 80;
+function HumidityCalculator({ locale, startDirect }) {
+    const i18n = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCalcI18n"])(locale);
+    const [phase, setPhase] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(startDirect ? {
+        phase: "form",
+        answers: {}
+    } : {
+        phase: "idle"
+    });
+    const resultRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const topRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    // On mount: restore from URL params or localStorage directly into result state
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const fromUrl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["readAnswersFromUrl"])();
+        if (fromUrl) {
+            const score = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["computeScore"])(fromUrl);
+            const band = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getBand"])(score);
+            setPhase({
+                phase: "result",
+                answers: fromUrl,
+                score,
+                band
+            });
+            return;
+        }
+        const stored = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loadFromStorage"])();
+        if (stored) {
+            const band = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getBand"])(stored.score);
+            setPhase({
+                phase: "result",
+                answers: stored.answers,
+                score: stored.score,
+                band
+            });
+        }
+    }, []);
+    // Scroll to result top whenever we enter result phase
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (phase.phase !== "result") return;
+        // Wait one frame for the DOM to render the result block
+        const raf = requestAnimationFrame(()=>{
+            if (!resultRef.current) return;
+            const top = resultRef.current.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
+            window.scrollTo({
+                top,
+                behavior: "smooth"
+            });
+        });
+        return ()=>cancelAnimationFrame(raf);
+    }, [
+        phase.phase
+    ]);
+    function handleStart() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].calculatorStarted();
+        setPhase({
+            phase: "form",
+            answers: {}
+        });
+    }
+    function handleChange(id, value) {
+        if (phase.phase !== "form") return;
+        setPhase({
+            ...phase,
+            answers: {
+                ...phase.answers,
+                [id]: value
+            }
+        });
+    }
+    function handleSubmit() {
+        if (phase.phase !== "form") return;
+        const score = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["computeScore"])(phase.answers);
+        const band = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$scoring$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getBand"])(score);
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$analytics$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analytics"].calculatorCompleted(band);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["saveToStorage"])(phase.answers, score);
+        setPhase({
+            phase: "result",
+            answers: phase.answers,
+            score,
+            band
+        });
+    }
+    const [scrollToTop, setScrollToTop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Scroll to top of calculator after reset
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!scrollToTop) return;
+        setScrollToTop(false);
+        const raf = requestAnimationFrame(()=>{
+            if (!topRef.current) return;
+            const top = topRef.current.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
+            window.scrollTo({
+                top,
+                behavior: "smooth"
+            });
+        });
+        return ()=>cancelAnimationFrame(raf);
+    }, [
+        scrollToTop
+    ]);
+    function handleReset() {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$lib$2f$queryString$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clearStorage"])();
+        setPhase(startDirect ? {
+            phase: "form",
+            answers: {}
+        } : {
+            phase: "idle"
+        });
+        setScrollToTop(true);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "humidity-calculator",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                ref: topRef,
+                className: "calc-hero",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "calc-hero__eyebrow",
+                        children: i18n.pageEyebrow
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                        lineNumber: 101,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "calc-hero__title",
+                        children: i18n.pageTitle
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                        lineNumber: 102,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "calc-hero__intro",
+                        children: i18n.pageIntro
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                        lineNumber: 103,
+                        columnNumber: 9
+                    }, this),
+                    phase.phase === "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "calc-hero__actions",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            type: "button",
+                            onClick: handleStart,
+                            className: "calc-start-btn",
+                            children: i18n.startCta
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                            lineNumber: 106,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                        lineNumber: 105,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                lineNumber: 100,
+                columnNumber: 7
+            }, this),
+            phase.phase === "form" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$components$2f$CalculatorForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CalculatorForm"], {
+                i18n: i18n,
+                answers: phase.answers,
+                onChange: handleChange,
+                onSubmit: handleSubmit
+            }, void 0, false, {
+                fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                lineNumber: 115,
+                columnNumber: 9
+            }, this),
+            phase.phase === "result" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                ref: resultRef,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$tools$2f$components$2f$CalculatorResult$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CalculatorResult"], {
+                    locale: locale,
+                    i18n: i18n,
+                    answers: phase.answers,
+                    score: phase.score,
+                    band: phase.band,
+                    onReset: handleReset
+                }, void 0, false, {
+                    fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                    lineNumber: 126,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+                lineNumber: 125,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/tools/components/HumidityCalculator.tsx",
+        lineNumber: 98,
+        columnNumber: 5
+    }, this);
+}
+}),
+];
+
+//# sourceMappingURL=src_3ae80345._.js.map

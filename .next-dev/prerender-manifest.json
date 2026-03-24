@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/pt/articles/segundo-pior-problema-bolor-europa":{},"/pt/articles/guia-completo-avaliar-risco-bolor-casa":{},"/en/articles/europes-second-worst-mold-problem":{},"/en/articles/assess-mold-risk-home-room-by-room-guide":{},"/fr/articles/deuxieme-pire-probleme-moisissures":{},"/fr/articles/evaluer-risque-moisissures-logement-guide-piece-par-piece":{},"/de/articles/zweitschlimmstes-schimmelproblem-europa":{},"/de/articles/schimmelrisiko-wohnung-selbst-beurteilen-leitfaden":{},"/nl/articles/op-een-na-ergste-schimmelprobleem":{},"/nl/articles/schimmelrisico-woning-beoordelen-kamer-voor-kamer-gids":{},"/it/articles/secondo-peggior-problema-muffa-europa":{},"/it/articles/valutare-rischio-muffa-casa-guida-stanza-per-stanza":{},"/es/articles/segundo-peor-problema-moho-europa":{},"/es/articles/evaluar-riesgo-moho-vivienda-guia-habitacion-por-habitacion":{}},"dynamicRoutes":{"/[locale]/articles/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/articles/[slug]","routeRegex":"^\\/([^/]+?)\\/articles\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"f6760f18141a1e6c9c533bafed5e5d84","previewModeSigningKey":"b2c2de5df93a92d8e0aad8901efbb3c7768867f1af1f41514bf199bb34f368d8","previewModeEncryptionKey":"f10abf7d0d201e7512bed76ddd56f29729b0f6bf5e8924619ebdcf3f2c114495"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "f58b08597a65f669c08e2f295efc91e1",
+    "previewModeSigningKey": "114edc63080cd70d44336150885ff2a63bc8c77e90d4e219cf0cd8f4b15d0cc9",
+    "previewModeEncryptionKey": "fe8dfde8d17a16914379efd8bd92010aeb8a8580c7127724facd706eb8cbed02"
+  }
+}

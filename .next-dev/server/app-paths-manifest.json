@@ -1,8 +1,3 @@
 {
-  "/(site)/[locale]/about/page": "app/(site)/[locale]/about/page.js",
-  "/(site)/[locale]/articles/[slug]/page": "app/(site)/[locale]/articles/[slug]/page.js",
-  "/(site)/[locale]/articles/page": "app/(site)/[locale]/articles/page.js",
-  "/(site)/[locale]/inspection/[slug]/page": "app/(site)/[locale]/inspection/[slug]/page.js",
-  "/(site)/[locale]/page": "app/(site)/[locale]/page.js",
-  "/(site)/[locale]/services/page": "app/(site)/[locale]/services/page.js"
+  "/(site)/[locale]/page": "app/(site)/[locale]/page.js"
 }

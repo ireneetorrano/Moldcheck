@@ -1,4 +1,4 @@
-import { Resend } from "resend";
+﻿import { Resend } from "resend";
 import type { NewsletterLocale } from "./schema";
 import { getChecklistUrl, getCalculatorUrl } from "./checklists";
 
@@ -23,7 +23,7 @@ interface EmailCopy {
 
 const COPY: Record<NewsletterLocale, EmailCopy> = {
   pt: {
-    subject: "O seu checklist gratuito — MoldCheck.pt",
+    subject: "O seu checklist gratuito MoldCheck.pt",
     greeting: "Obrigado por subscrever o MoldCheck.pt.",
     intro: "Pode descarregar o seu checklist de humidade e bolor aqui:",
     checklistCta: "Descarregar checklist (PDF)",
@@ -33,7 +33,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · Uma iniciativa do FAIRBANK Group",
   },
   en: {
-    subject: "Your free checklist — MoldCheck.pt",
+    subject: "Your free checklist MoldCheck.pt",
     greeting: "Thank you for subscribing to MoldCheck.pt.",
     intro: "You can download your mold and damp checklist here:",
     checklistCta: "Download checklist (PDF)",
@@ -43,7 +43,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · A FAIRBANK Group initiative",
   },
   es: {
-    subject: "Tu checklist gratuito — MoldCheck.pt",
+    subject: "Tu checklist gratuito MoldCheck.pt",
     greeting: "Gracias por suscribirte a MoldCheck.pt.",
     intro: "Puedes descargar tu checklist de humedad y moho aquí:",
     checklistCta: "Descargar checklist (PDF)",
@@ -53,7 +53,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · Una iniciativa del FAIRBANK Group",
   },
   fr: {
-    subject: "Votre checklist gratuite — MoldCheck.pt",
+    subject: "Votre checklist gratuite MoldCheck.pt",
     greeting: "Merci de vous être abonné à MoldCheck.pt.",
     intro: "Vous pouvez télécharger votre checklist humidité et moisissures ici :",
     checklistCta: "Télécharger la checklist (PDF)",
@@ -63,7 +63,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · Une initiative du FAIRBANK Group",
   },
   de: {
-    subject: "Ihre kostenlose Checkliste — MoldCheck.pt",
+    subject: "Ihre kostenlose Checkliste MoldCheck.pt",
     greeting: "Vielen Dank für Ihre Anmeldung bei MoldCheck.pt.",
     intro: "Sie können Ihre Schimmel- und Feuchtigkeits-Checkliste hier herunterladen:",
     checklistCta: "Checkliste herunterladen (PDF)",
@@ -73,7 +73,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · Eine Initiative der FAIRBANK Group",
   },
   nl: {
-    subject: "Uw gratis checklist — MoldCheck.pt",
+    subject: "Uw gratis checklist MoldCheck.pt",
     greeting: "Bedankt voor uw aanmelding bij MoldCheck.pt.",
     intro: "U kunt uw schimmel- en vochtchecklist hier downloaden:",
     checklistCta: "Checklist downloaden (PDF)",
@@ -83,7 +83,7 @@ const COPY: Record<NewsletterLocale, EmailCopy> = {
     footer: "MoldCheck.pt · Een initiatief van de FAIRBANK Group",
   },
   it: {
-    subject: "La tua checklist gratuita — MoldCheck.pt",
+    subject: "La tua checklist gratuita MoldCheck.pt",
     greeting: "Grazie per esserti iscritto a MoldCheck.pt.",
     intro: "Puoi scaricare la tua checklist su umidità e muffa qui:",
     checklistCta: "Scarica la checklist (PDF)",
