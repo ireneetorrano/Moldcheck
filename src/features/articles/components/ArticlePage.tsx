@@ -165,16 +165,99 @@ const a5TocItems: Record<ActiveLocale, TocItem[]> = {
   ],
 };
 
+// ── Per-article TOC items (A2 bleach) ────────────────────────────────────
+const a2TocItems: Record<ActiveLocale, TocItem[]> = {
+  pt: [
+    { id: "o-que-a-lixvia-realmente-faz",              label: "O que faz" },
+    { id: "o-que-dizem-os-organismos-internacionais",  label: "Organismos" },
+    { id: "bolor-morto-ainda-faz-mal",                 label: "Bolor morto" },
+    { id: "o-padro-que-a-localizao-revela",            label: "Localização" },
+    { id: "o-que-realmente-funciona--por-nvel-de-gravidade", label: "O que funciona" },
+    { id: "a-pergunta-que-toda-a-gente-deve-fazer",    label: "A pergunta" },
+    { id: "o-que-fazer-esta-semana",                   label: "Esta semana" },
+    { id: "sources",                                   label: "Fontes" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  en: [
+    { id: "what-bleach-actually-does",                 label: "What it does" },
+    { id: "what-international-bodies-say",             label: "Bodies say" },
+    { id: "dead-mold-still-causes-harm",               label: "Dead mold" },
+    { id: "the-pattern-that-location-reveals",         label: "Location" },
+    { id: "what-actually-works--by-severity-level",   label: "What works" },
+    { id: "the-question-everyone-should-ask",          label: "The question" },
+    { id: "what-to-do-this-week",                      label: "This week" },
+    { id: "sources",                                   label: "Sources" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  fr: [
+    { id: "ce-que-la-javel-fait-rellement",            label: "Ce qu'elle fait" },
+    { id: "ce-que-disent-les-organismes-internationaux", label: "Organismes" },
+    { id: "les-moisissures-mortes-causent-encore-des-dommages", label: "Moisissures mortes" },
+    { id: "le-schma-que-rvle-la-localisation",         label: "Localisation" },
+    { id: "ce-qui-fonctionne-vraiment--par-niveau-de-gravit", label: "Ce qui marche" },
+    { id: "la-question-que-tout-le-monde-devrait-poser", label: "La question" },
+    { id: "que-faire-cette-semaine",                   label: "Cette semaine" },
+    { id: "sources",                                   label: "Sources" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  de: [
+    { id: "was-bleichmittel-wirklich-tut",             label: "Was es tut" },
+    { id: "was-internationale-organisationen-sagen",   label: "Organisationen" },
+    { id: "toter-schimmel-verursacht-immer-noch-schden", label: "Toter Schimmel" },
+    { id: "das-muster-das-der-standort-offenbart",     label: "Standort" },
+    { id: "was-wirklich-hilft--nach-schweregrad",      label: "Was hilft" },
+    { id: "die-frage-die-jeder-stellen-sollte",        label: "Die Frage" },
+    { id: "was-diese-woche-zu-tun-ist",                label: "Diese Woche" },
+    { id: "sources",                                   label: "Quellen" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  nl: [
+    { id: "wat-bleekwater-echt-doet",                  label: "Wat het doet" },
+    { id: "wat-internationale-organisaties-zeggen",    label: "Organisaties" },
+    { id: "dode-schimmel-veroorzaakt-nog-steeds-schade", label: "Dode schimmel" },
+    { id: "het-patroon-dat-de-locatie-onthult",        label: "Locatie" },
+    { id: "wat-echt-werkt--per-ernstniveau",           label: "Wat werkt" },
+    { id: "de-vraag-die-iedereen-zou-moeten-stellen",  label: "De vraag" },
+    { id: "wat-deze-week-te-doen",                     label: "Deze week" },
+    { id: "sources",                                   label: "Bronnen" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  it: [
+    { id: "cosa-fa-davvero-la-candeggina",             label: "Cosa fa" },
+    { id: "cosa-dicono-gli-organismi-internazionali",  label: "Organismi" },
+    { id: "la-muffa-morta-causa-ancora-danni",         label: "Muffa morta" },
+    { id: "il-modello-che-la-posizione-rivela",        label: "Posizione" },
+    { id: "cosa-funziona-davvero--per-livello-di-gravit", label: "Cosa funziona" },
+    { id: "la-domanda-che-tutti-dovrebbero-fare",      label: "La domanda" },
+    { id: "cosa-fare-questa-settimana",                label: "Questa settimana" },
+    { id: "sources",                                   label: "Fonti" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+  es: [
+    { id: "lo-que-la-leja-hace-realmente",             label: "Lo que hace" },
+    { id: "lo-que-dicen-los-organismos-internacionales", label: "Organismos" },
+    { id: "el-moho-muerto-sigue-causando-dao",         label: "Moho muerto" },
+    { id: "el-patrn-que-revela-la-ubicacin",           label: "Ubicación" },
+    { id: "lo-que-realmente-funciona--por-nivel-de-gravedad", label: "Lo que funciona" },
+    { id: "la-pregunta-que-todo-el-mundo-debera-hacer", label: "La pregunta" },
+    { id: "qu-hacer-esta-semana",                      label: "Esta semana" },
+    { id: "sources",                                   label: "Fuentes" },
+    { id: "faq",                                       label: "FAQ" },
+  ],
+};
+
 // ── Per-article TOC item registry ─────────────────────────────────────────
 const tocItemsByArticle: Record<string, Record<ActiveLocale, TocItem[]>> = {
   "a4-portugal": a4TocItems,
   "a5-mold-risk-guide": a5TocItems,
+  "a2-bleach": a2TocItems,
 };
 
 // ── Section eyebrow labels ────────────────────────────────────────────────
 const sectionLabels: Record<string, Record<ActiveLocale, string>> = {
   portugal: { pt: "Portugal", en: "Portugal", fr: "Portugal", de: "Portugal", nl: "Portugal", it: "Portogallo", es: "Portugal" },
   inspection: { pt: "Inspecção", en: "Inspection", fr: "Inspection", de: "Inspektion", nl: "Inspectie", it: "Ispezione", es: "Inspección" },
+  articles: { pt: "Artigos", en: "Articles", fr: "Articles", de: "Artikel", nl: "Artikelen", it: "Articoli", es: "Artículos" },
 };
 
 // ── UI labels ─────────────────────────────────────────────────────────────

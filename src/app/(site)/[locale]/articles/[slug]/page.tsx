@@ -4,6 +4,7 @@ import type { ActiveLocale } from "@/config/locales";
 import { activeLocales } from "@/config/locales";
 import { a4PortugalContent, a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 import { a5MoldRiskContent, a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
+import { a2BleachContent, a2BleachSlugs } from "@/features/content/data/articles/a2-bleach";
 import { ArticlePage } from "@/features/articles/components/ArticlePage";
 import { getLocalizedArticlePath } from "@/config/routeMap";
 
@@ -19,6 +20,8 @@ export async function generateStaticParams() {
     if (slugA4) params.push({ locale, slug: slugA4 });
     const slugA5 = a5MoldRiskSlugs[locale];
     if (slugA5) params.push({ locale, slug: slugA5 });
+    const slugA2 = a2BleachSlugs[locale];
+    if (slugA2) params.push({ locale, slug: slugA2 });
   }
   return params;
 }
@@ -60,6 +63,21 @@ export async function generateMetadata({
     };
   }
 
+  if (slug === a2BleachSlugs[locale]) {
+    const content = a2BleachContent[locale];
+    const alternates: Record<string, string> = {};
+    for (const loc of activeLocales) {
+      const locSlug = a2BleachSlugs[loc];
+      if (locSlug) alternates[loc] = `https://moldcheck.pt${getLocalizedArticlePath(loc, locSlug)}`;
+    }
+    return {
+      title: content.seoTitle,
+      description: content.seoDescription,
+      alternates: { languages: alternates },
+      openGraph: { title: content.seoTitle, description: content.seoDescription, locale },
+    };
+  }
+
   return {};
 }
 
@@ -90,6 +108,18 @@ export default async function ArticleDetailPage({
         articleKey="a5-mold-risk-guide"
         slugsByLocale={a5MoldRiskSlugs}
         section="inspection"
+      />
+    );
+  }
+
+  if (slug === a2BleachSlugs[locale]) {
+    return (
+      <ArticlePage
+        locale={locale}
+        content={a2BleachContent[locale]}
+        articleKey="a2-bleach"
+        slugsByLocale={a2BleachSlugs}
+        section="articles"
       />
     );
   }

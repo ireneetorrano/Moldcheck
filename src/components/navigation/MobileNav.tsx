@@ -9,8 +9,9 @@ import { Link, usePathname as useIntlPathname } from "@/lib/i18n/navigation";
 import { getLocalizedArticlePath, getLocalizedGlobalPath } from "@/config/routeMap";
 import { a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 import { a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
+import { a2BleachSlugs } from "@/features/content/data/articles/a2-bleach";
 
-const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs, a5MoldRiskSlugs];
+const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs, a5MoldRiskSlugs, a2BleachSlugs];
 
 function findArticleSlugMap(
   currentLocale: ActiveLocale,
