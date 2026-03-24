@@ -2,6 +2,15 @@ import type { ActiveLocale } from "@/config/locales";
 
 export type RiskBand = "low" | "moderate" | "high" | "critical";
 
+export interface Question {
+  id: string;
+  type: "single_choice";
+  required: boolean;
+  labelKey: string;
+  weight: number;
+  options: { value: string; labelKey: string; scoreContribution: number }[];
+}
+
 export interface AnswerOption {
   value: string;
   label: string; // resolved at runtime from i18n

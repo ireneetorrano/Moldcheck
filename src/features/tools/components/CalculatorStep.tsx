@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import type { Question } from "../types";
+import type { QuestionDef } from "../types";
 
 interface CalculatorStepProps {
-  question: Question;
+  question: QuestionDef;
   value: string | undefined;
   onChange: (value: string) => void;
   error: string | null;

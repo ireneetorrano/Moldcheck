@@ -1,5 +1,5 @@
 ﻿import type { ActiveLocale } from "@/config/locales";
-import type { CalcI18n, RiskBand } from "../types";
+import type { CalcI18n, RiskBand, Answers } from "../types";
 import { getLocalizedGlobalPath, getLocalizedArticlePath, globalRouteSlugs } from "@/config/routeMap";
 import { foundationalArticles } from "@/config/foundationalArticles";
 
