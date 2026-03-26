@@ -350,7 +350,7 @@ p { margin: 0; }
   line-height: 1.75;
 }
 .home-problem__link {
-  color: var(--mc-teal);
+  color: var(--mc-teal-dark);
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
@@ -723,7 +723,7 @@ p { margin: 0; }
 .home-about__rule {
   width: 2.5rem;
   height: 2px;
-  background: var(--mc-teal);
+  background: var(--mc-teal-dark);
 }
 .home-about__content {
   display: grid;
@@ -2533,8 +2533,8 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
 .unsubscribe-page__btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: var(--mc-teal);
-  color: #fff;
+  background: var(--mc-teal-mid);
+  color:var(--mc-teal-dark);
   font-size: 0.875rem;
   font-weight: 700;
   border: none;
@@ -2545,7 +2545,7 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
   width: fit-content;
 }
 .unsubscribe-page__btn:hover {
-  background: var(--mc-teal-dark, #1b5e5a);
+  background: var(--mc-teal-dark);
 }
 
 /* ── A5 Article: Location → Cause Table ─────────────────────────────────── */

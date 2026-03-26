@@ -1,6 +1,5 @@
 import { validateNewsletterPayload, type NewsletterPayload } from "./schema";
-import { upsertNewsletterSubscriber, markChecklistSent } from "./supabase";
-import { sendChecklistEmail } from "./email";
+import { upsertNewsletterSubscriber } from "./supabase";
 import { initNurture } from "./nurture-supabase";
 import { sendNurtureEmail } from "./nurture";
 import { unsubscribeByToken } from "./unsubscribe";

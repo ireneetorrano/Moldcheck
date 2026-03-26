@@ -5,7 +5,7 @@ R.c("server/chunks/node_modules_@supabase_auth-js_dist_module_02e1b12e._.js")
 R.c("server/chunks/node_modules_postal-mime_src_a014ae66._.js")
 R.c("server/chunks/node_modules_svix_dist_b2cd63d7._.js")
 R.c("server/chunks/node_modules_4281b5c0._.js")
-R.c("server/chunks/[root-of-the-server]__1342d650._.js")
+R.c("server/chunks/[root-of-the-server]__ae3ee91c._.js")
 R.m("[project]/.next-internal/server/app/api/newsletter/subscribe/route/actions.js [app-rsc] (server actions loader, ecmascript)")
 R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/newsletter/subscribe/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
 module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/newsletter/subscribe/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

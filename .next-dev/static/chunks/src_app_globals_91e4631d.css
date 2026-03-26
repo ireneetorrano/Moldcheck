@@ -440,7 +440,7 @@ p {
 }
 
 .home-problem__link {
-  color: var(--mc-teal);
+  color: var(--mc-teal-dark);
   font-size: .95rem;
   font-weight: 500;
   text-decoration: none;
@@ -855,7 +855,7 @@ p {
 }
 
 .home-about__rule {
-  background: var(--mc-teal);
+  background: var(--mc-teal-dark);
   width: 2.5rem;
   height: 2px;
 }
@@ -2997,8 +2997,8 @@ a.contact-info-card__value:hover {
 }
 
 .unsubscribe-page__btn {
-  background: var(--mc-teal);
-  color: #fff;
+  background: var(--mc-teal-mid);
+  color: var(--mc-teal-dark);
   border-radius: var(--radius-btn, 4px);
   cursor: pointer;
   letter-spacing: .02em;
@@ -3013,7 +3013,7 @@ a.contact-info-card__value:hover {
 }
 
 .unsubscribe-page__btn:hover {
-  background: var(--mc-teal-dark, #1b5e5a);
+  background: var(--mc-teal-dark);
 }
 
 .a5-table-wrap {
