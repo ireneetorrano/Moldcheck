@@ -10,7 +10,7 @@ export interface FoundationalArticleAlternate {
 export const foundationalArticles: FoundationalArticleAlternate[] = [
   {
     key: "black-mold",
-    section: "mold-types",
+    section: "articles",
     slugs: {
       pt: "bolor-negro-mitos-factos",
       en: "black-mold-facts-science",
@@ -23,28 +23,28 @@ export const foundationalArticles: FoundationalArticleAlternate[] = [
   },
   {
     key: "bleach",
-    section: "remediation",
+    section: "articles",
     slugs: {
-      pt: "lixivia-nao-resolve-bolor",
+      pt: "por-que-lixivia-nao-resolve-bolor",
       en: "why-bleach-doesnt-fix-mold",
-      fr: "eau-de-javel-ne-resout-pas-moisissures",
-      de: "bleichmittel-loest-schimmel-nicht",
-      nl: "bleekwater-lost-schimmel-niet-op",
-      it: "candeggina-non-risolve-muffa",
-      es: "lejia-no-resuelve-moho",
+      fr: "pourquoi-javel-ne-resout-pas-moisissures",
+      de: "warum-bleichmittel-schimmel-nicht-beseitigt",
+      nl: "waarom-bleekwater-schimmel-niet-oplost",
+      it: "perche-candeggina-non-risolve-muffa",
+      es: "por-que-la-lejia-no-soluciona-el-moho",
     },
   },
   {
     key: "health",
-    section: "health",
+    section: "articles",
     slugs: {
-      pt: "casa-afeta-saude-bolor",
-      en: "is-your-home-making-you-ill-mold",
-      fr: "logement-affecte-sante-moisissures",
-      de: "macht-wohnung-krank-schimmel",
-      nl: "woning-maakt-je-ziek-schimmel",
-      it: "casa-influisce-salute-muffa",
-      es: "vivienda-afecta-salud-moho",
+      pt: "casa-afetar-saude-bolores-doencas-respiratorias",
+      en: "is-your-home-making-you-ill",
+      fr: "votre-logement-affecte-t-il-votre-sante",
+      de: "macht-ihre-wohnung-sie-krank",
+      nl: "heeft-uw-woning-invloed-op-uw-gezondheid",
+      it: "la-tua-casa-ti-sta-facendo-ammalare",
+      es: "esta-afectando-tu-vivienda-a-tu-salud",
     },
   },
   {

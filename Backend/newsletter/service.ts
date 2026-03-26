@@ -1,6 +1,8 @@
 import { validateNewsletterPayload, type NewsletterPayload } from "./schema";
-import { upsertNewsletterSubscriber, markChecklistSent, getUnsubscribeToken } from "./supabase";
+import { upsertNewsletterSubscriber, markChecklistSent } from "./supabase";
 import { sendChecklistEmail } from "./email";
+import { initNurture } from "./nurture-supabase";
+import { sendNurtureEmail } from "./nurture";
 import { unsubscribeByToken } from "./unsubscribe";
 import { checkEnvPresence } from "@backend/shared/env";
 import type { NewsletterLocale } from "./schema";
@@ -61,16 +63,9 @@ export async function handleNewsletterSubscribe(
     return { ok: true, status: "already_subscribed" };
   }
 
-  // subscribed or resubscribed — send email
+  // subscribed or resubscribed — token is guaranteed non-null from upsert
   const emailAddress = upsert.email;
-
-  // Fetch the unsubscribe token to include in the email
-  let unsubscribeToken: string | null = null;
-  try {
-    unsubscribeToken = await getUnsubscribeToken(data.emailNorm);
-  } catch (err) {
-    log("WARN could not fetch unsubscribe token (non-fatal):", err instanceof Error ? err.message : err);
-  }
+  const unsubscribeToken = upsert.unsubscribeToken; // always a string, never null
 
   try {
     log("sending checklist email...");
@@ -87,6 +82,21 @@ export async function handleNewsletterSubscribe(
     log("markChecklistSent OK");
   } catch (err) {
     log("WARN markChecklistSent (non-fatal):", err instanceof Error ? err.message : err);
+  }
+
+  // Kick off nurture sequence — token is guaranteed non-null
+  try {
+    log("sending nurture Email 1...");
+    await sendNurtureEmail({
+      email: emailAddress,
+      locale: data.locale as NewsletterLocale,
+      step: 1,
+      unsubscribeToken,
+    });
+    await initNurture(data.emailNorm);
+    log("nurture Email 1 sent, step scheduled");
+  } catch (err) {
+    log("WARN nurture Email 1 (non-fatal):", err instanceof Error ? err.message : err);
   }
 
   log("── success ───────────────────────────────────────");

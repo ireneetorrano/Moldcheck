@@ -4,6 +4,8 @@ import { activeLocales } from "@/config/locales";
 import { a4PortugalContent, a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 import { a5MoldRiskContent, a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
 import { a2BleachContent, a2BleachSlugs } from "@/features/content/data/articles/a2-bleach";
+import { a3HealthContent, a3HealthSlugs } from "@/features/content/data/articles/a3-health";
+import { a1BlackMoldContent, a1BlackMoldSlugs } from "@/features/content/data/articles/a1-black-mold";
 import { getLocalizedArticlePath } from "@/config/routeMap";
 
 const indexMeta: Record<ActiveLocale, { title: string; description: string; eyebrow: string; heading: string }> = {
@@ -62,6 +64,12 @@ export default async function ArticlesPage({
   const a2 = a2BleachContent[locale];
   const a2Href = getLocalizedArticlePath(locale, a2BleachSlugs[locale]);
 
+  const a3 = a3HealthContent[locale];
+  const a3Href = getLocalizedArticlePath(locale, a3HealthSlugs[locale]);
+
+  const a1 = a1BlackMoldContent[locale];
+  const a1Href = getLocalizedArticlePath(locale, a1BlackMoldSlugs[locale]);
+
   return (
     <div className="articles-index">
       <header className="articles-index__header">
@@ -96,6 +104,26 @@ export default async function ArticlesPage({
               <p className="articles-index__card-title">{a2.title}</p>
               <p className="articles-index__card-byline">{a2.byline}</p>
               <p className="articles-index__card-desc">{a2.seoDescription}</p>
+              <span className="articles-index__card-cta">{readLabel[locale]}</span>
+            </article>
+          </a>
+        </li>
+        <li className="articles-index__card">
+          <a href={a3Href} className="articles-index__card-link">
+            <article>
+              <p className="articles-index__card-title">{a3.title}</p>
+              <p className="articles-index__card-byline">{a3.byline}</p>
+              <p className="articles-index__card-desc">{a3.seoDescription}</p>
+              <span className="articles-index__card-cta">{readLabel[locale]}</span>
+            </article>
+          </a>
+        </li>
+        <li className="articles-index__card">
+          <a href={a1Href} className="articles-index__card-link">
+            <article>
+              <p className="articles-index__card-title">{a1.title}</p>
+              <p className="articles-index__card-byline">{a1.byline}</p>
+              <p className="articles-index__card-desc">{a1.seoDescription}</p>
               <span className="articles-index__card-cta">{readLabel[locale]}</span>
             </article>
           </a>

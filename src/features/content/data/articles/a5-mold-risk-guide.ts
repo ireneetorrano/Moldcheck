@@ -19,7 +19,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Guia de inspecção divisão a divisão para avaliar o risco de bolor em casa. Checklist de 20 pontos, tabela localização → causa, e quando pedir ajuda profissional.",
     focusKeyword: "avaliar risco bolor casa",
     title: "Guia Completo: Como Avaliar o Risco de Bolor em Casa, Divisão a Divisão",
-    byline: "Por Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Por Pieter Paul Castelein, Cofundador & CEO, FAIRBANK Group",
     body: [
       "A maioria das pessoas descobre que tem bolor quando já é tarde demais quando a mancha é grande, quando os sintomas de saúde já estão instalados, ou quando um técnico de tratamento lhes diz que o problema é grave e caro de resolver.",
       "Este guia existe para que isso não aconteça. Para que possa fazer uma avaliação sistemática da sua casa antes de precisar de ajuda externa e para que, se precisar, chegue a essa conversa com informação suficiente para fazer as perguntas certas.",
@@ -96,7 +96,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "A room-by-room inspection guide for assessing mold risk at home. 20-point checklist, location-to-cause table, and when to call a professional.",
     focusKeyword: "assess mold risk home",
     title: "Complete Guide: How to Assess Mold Risk at Home, Room by Room",
-    byline: "By Pieter Paul Castelein, FAIRBANK Group",
+    byline: "By Pieter Paul Castelein, Co-founder & CEO, FAIRBANK Group",
     body: [
       "Most people discover they have mold when it is already too late when the patch is large, when health symptoms are already established, or when a treatment technician tells them the problem is serious and expensive to fix.",
       "This guide exists so that does not happen. So you can make a systematic assessment of your home before needing outside help and so that, if you do need it, you arrive at that conversation with enough information to ask the right questions.",
@@ -173,7 +173,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Guide d'inspection pièce par pièce pour évaluer le risque de moisissures. Checklist de 20 points, tableau localisation → cause, et quand appeler un professionnel.",
     focusKeyword: "évaluer risque moisissures logement",
     title: "Guide Complet : Comment Évaluer le Risque de Moisissures chez Soi, Pièce par Pièce",
-    byline: "Par Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Par Pieter Paul Castelein, Co-fondateur & PDG, FAIRBANK Group",
     body: [
       "La plupart des gens découvrent qu'ils ont des moisissures quand il est déjà trop tard quand la tache est grande, quand les symptômes de santé sont déjà installés, ou quand un technicien de traitement leur dit que le problème est grave et coûteux à résoudre.",
       "Ce guide existe pour que cela n'arrive pas. Pour que vous puissiez faire une évaluation systématique de votre logement avant d'avoir besoin d'aide extérieure et pour que, si vous en avez besoin, vous arriviez à cette conversation avec suffisamment d'informations pour poser les bonnes questions.",
@@ -250,7 +250,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Zimmer-für-Zimmer-Inspektionsleitfaden zur Beurteilung des Schimmelrisikos. 20-Punkte-Checkliste, Standort-Ursache-Tabelle und wann ein Fachmann gerufen werden sollte.",
     focusKeyword: "Schimmelrisiko Wohnung beurteilen",
     title: "Vollständiger Leitfaden: Wie Sie das Schimmelrisiko in Ihrer Wohnung selbst beurteilen, Zimmer für Zimmer",
-    byline: "Von Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Von Pieter Paul Castelein, Mitgründer & CEO, FAIRBANK Group",
     body: [
       "Die meisten Menschen entdecken Schimmel erst, wenn es bereits zu spät ist wenn der Fleck groß ist, wenn Gesundheitssymptome bereits aufgetreten sind oder wenn ein Behandlungstechniker ihnen sagt, dass das Problem ernst und teuer zu beheben ist.",
       "Dieser Leitfaden soll verhindern, dass das passiert. Damit Sie eine systematische Beurteilung Ihrer Wohnung vornehmen können, bevor Sie externe Hilfe benötigen und damit Sie, falls Sie diese benötigen, mit genügend Informationen in dieses Gespräch gehen, um die richtigen Fragen zu stellen.",
@@ -327,7 +327,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Kamer-voor-kamer inspectiegids voor het beoordelen van schimmelrisico. 20-punten checklist, locatie-oorzaak tabel en wanneer een professional te bellen.",
     focusKeyword: "schimmelrisico woning beoordelen",
     title: "Volledige Gids: Hoe U het Schimmelrisico in Uw Woning Beoordeelt, Kamer voor Kamer",
-    byline: "Door Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Door Pieter Paul Castelein, Medeoprichter & CEO, FAIRBANK Group",
     body: [
       "De meeste mensen ontdekken dat ze schimmel hebben als het al te laat is als de vlek groot is, als gezondheidsklachten al aanwezig zijn, of als een behandelingstechnicus hen vertelt dat het probleem ernstig en duur te verhelpen is.",
       "Deze gids bestaat zodat dat niet gebeurt. Zodat u een systematische beoordeling van uw woning kunt maken voordat u externe hulp nodig heeft en zodat u, als u die nodig heeft, dat gesprek ingaat met voldoende informatie om de juiste vragen te stellen.",
@@ -404,7 +404,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Guida di ispezione stanza per stanza per valutare il rischio di muffa in casa. Checklist di 20 punti, tabella posizione-causa e quando chiamare un professionista.",
     focusKeyword: "valutare rischio muffa casa",
     title: "Guida Completa: Come Valutare il Rischio di Muffa in Casa, Stanza per Stanza",
-    byline: "Di Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Di Pieter Paul Castelein, Co-fondatore & CEO, FAIRBANK Group",
     body: [
       "La maggior parte delle persone scopre di avere la muffa quando è già troppo tardi quando la macchia è grande, quando i sintomi di salute sono già presenti, o quando un tecnico di trattamento dice loro che il problema è grave e costoso da risolvere.",
       "Questa guida esiste affinché ciò non accada. Affinché possiate fare una valutazione sistematica della vostra casa prima di aver bisogno di aiuto esterno e affinché, se ne avete bisogno, arriviate a quella conversazione con informazioni sufficienti per fare le domande giuste.",
@@ -481,7 +481,7 @@ export const a5MoldRiskContent: Record<ActiveLocale, ArticleLocaleContent> = {
     seoDescription: "Guía de inspección habitación por habitación para evaluar el riesgo de moho en casa. Lista de verificación de 20 puntos, tabla ubicación-causa y cuándo llamar a un profesional.",
     focusKeyword: "evaluar riesgo moho vivienda",
     title: "Guía Completa: Cómo Evaluar el Riesgo de Moho en Casa, Habitación por Habitación",
-    byline: "Por Pieter Paul Castelein, FAIRBANK Group",
+    byline: "Por Pieter Paul Castelein, Cofundador y CEO, FAIRBANK Group",
     body: [
       "La mayoría de las personas descubren que tienen moho cuando ya es demasiado tarde cuando la mancha es grande, cuando los síntomas de salud ya están presentes, o cuando un técnico de tratamiento les dice que el problema es grave y costoso de resolver.",
       "Esta guía existe para que eso no ocurra. Para que pueda hacer una evaluación sistemática de su vivienda antes de necesitar ayuda externa y para que, si la necesita, llegue a esa conversación con información suficiente para hacer las preguntas correctas.",

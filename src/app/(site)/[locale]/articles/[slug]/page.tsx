@@ -5,6 +5,8 @@ import { activeLocales } from "@/config/locales";
 import { a4PortugalContent, a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 import { a5MoldRiskContent, a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
 import { a2BleachContent, a2BleachSlugs } from "@/features/content/data/articles/a2-bleach";
+import { a3HealthContent, a3HealthSlugs } from "@/features/content/data/articles/a3-health";
+import { a1BlackMoldContent, a1BlackMoldSlugs } from "@/features/content/data/articles/a1-black-mold";
 import { ArticlePage } from "@/features/articles/components/ArticlePage";
 import { getLocalizedArticlePath } from "@/config/routeMap";
 
@@ -22,6 +24,10 @@ export async function generateStaticParams() {
     if (slugA5) params.push({ locale, slug: slugA5 });
     const slugA2 = a2BleachSlugs[locale];
     if (slugA2) params.push({ locale, slug: slugA2 });
+    const slugA3 = a3HealthSlugs[locale];
+    if (slugA3) params.push({ locale, slug: slugA3 });
+    const slugA1 = a1BlackMoldSlugs[locale];
+    if (slugA1) params.push({ locale, slug: slugA1 });
   }
   return params;
 }
@@ -78,6 +84,36 @@ export async function generateMetadata({
     };
   }
 
+  if (slug === a3HealthSlugs[locale]) {
+    const content = a3HealthContent[locale];
+    const alternates: Record<string, string> = {};
+    for (const loc of activeLocales) {
+      const locSlug = a3HealthSlugs[loc];
+      if (locSlug) alternates[loc] = `https://moldcheck.pt${getLocalizedArticlePath(loc, locSlug)}`;
+    }
+    return {
+      title: content.seoTitle,
+      description: content.seoDescription,
+      alternates: { languages: alternates },
+      openGraph: { title: content.seoTitle, description: content.seoDescription, locale },
+    };
+  }
+
+  if (slug === a1BlackMoldSlugs[locale]) {
+    const content = a1BlackMoldContent[locale];
+    const alternates: Record<string, string> = {};
+    for (const loc of activeLocales) {
+      const locSlug = a1BlackMoldSlugs[loc];
+      if (locSlug) alternates[loc] = `https://moldcheck.pt${getLocalizedArticlePath(loc, locSlug)}`;
+    }
+    return {
+      title: content.seoTitle,
+      description: content.seoDescription,
+      alternates: { languages: alternates },
+      openGraph: { title: content.seoTitle, description: content.seoDescription, locale },
+    };
+  }
+
   return {};
 }
 
@@ -119,6 +155,30 @@ export default async function ArticleDetailPage({
         content={a2BleachContent[locale]}
         articleKey="a2-bleach"
         slugsByLocale={a2BleachSlugs}
+        section="articles"
+      />
+    );
+  }
+
+  if (slug === a3HealthSlugs[locale]) {
+    return (
+      <ArticlePage
+        locale={locale}
+        content={a3HealthContent[locale]}
+        articleKey="a3-health"
+        slugsByLocale={a3HealthSlugs}
+        section="articles"
+      />
+    );
+  }
+
+  if (slug === a1BlackMoldSlugs[locale]) {
+    return (
+      <ArticlePage
+        locale={locale}
+        content={a1BlackMoldContent[locale]}
+        articleKey="a1-black-mold"
+        slugsByLocale={a1BlackMoldSlugs}
         section="articles"
       />
     );

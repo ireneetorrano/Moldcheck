@@ -10,8 +10,10 @@ import { getLocalizedArticlePath, getLocalizedGlobalPath } from "@/config/routeM
 import { a4PortugalSlugs } from "@/features/content/data/articles/a4-portugal";
 import { a5MoldRiskSlugs } from "@/features/content/data/articles/a5-mold-risk-guide";
 import { a2BleachSlugs } from "@/features/content/data/articles/a2-bleach";
+import { a3HealthSlugs } from "@/features/content/data/articles/a3-health";
+import { a1BlackMoldSlugs } from "@/features/content/data/articles/a1-black-mold";
 
-const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs, a5MoldRiskSlugs, a2BleachSlugs];
+const articleSlugMaps: Record<ActiveLocale, string>[] = [a4PortugalSlugs, a5MoldRiskSlugs, a2BleachSlugs, a3HealthSlugs, a1BlackMoldSlugs];
 
 function findArticleSlugMap(
   currentLocale: ActiveLocale,

@@ -10,8 +10,8 @@ function getServiceClient() {
 }
 
 export type UpsertResult =
-  | { status: "subscribed"; email: string }
-  | { status: "resubscribed"; email: string }
+  | { status: "subscribed"; email: string; unsubscribeToken: string }
+  | { status: "resubscribed"; email: string; unsubscribeToken: string }
   | { status: "already_subscribed" };
 
 export async function upsertNewsletterSubscriber(
@@ -30,7 +30,7 @@ export async function upsertNewsletterSubscriber(
 
   if (existing) {
     if (existing.is_subscribed) {
-      // Already active — just refresh timestamps
+      // Already active — just refresh timestamps, do NOT restart nurture
       const { error: updateError } = await supabase
         .from("newsletter_subscribers")
         .update({ last_submission_at: now, locale_preference: data.locale, updated_at: now })
@@ -40,6 +40,7 @@ export async function upsertNewsletterSubscriber(
     }
 
     // Previously unsubscribed — allow resubscribe
+    // Preserve existing token if present; generate a new one only if missing
     const token = existing.unsubscribe_token ?? generateUnsubscribeToken();
     const { data: updated, error: updateError } = await supabase
       .from("newsletter_subscribers")
@@ -50,15 +51,19 @@ export async function upsertNewsletterSubscriber(
         updated_at: now,
         last_submission_at: now,
         unsubscribe_token: token,
+        nurture_step: 0,        // reset nurture so initNurture can start fresh
+        nurture_status: "active",
+        nurture_next_send_at: null,
+        nurture_last_sent_at: null,
       })
       .eq("id", existing.id)
       .select("email")
       .single();
     if (updateError) throw new Error(`Supabase update failed: ${updateError.message}`);
-    return { status: "resubscribed", email: updated.email };
+    return { status: "resubscribed", email: updated.email, unsubscribeToken: token };
   }
 
-  // New subscriber
+  // New subscriber — include nurture fields
   const token = generateUnsubscribeToken();
   const { data: inserted, error: insertError } = await supabase
     .from("newsletter_subscribers")
@@ -74,12 +79,14 @@ export async function upsertNewsletterSubscriber(
       subscribed_at: now,
       updated_at: now,
       last_submission_at: now,
+      nurture_status: "active",
+      nurture_step: 0,
     })
     .select("email")
     .single();
 
   if (insertError) throw new Error(`Supabase insert failed: ${insertError.message}`);
-  return { status: "subscribed", email: inserted.email };
+  return { status: "subscribed", email: inserted.email, unsubscribeToken: token };
 }
 
 export async function markChecklistSent(emailNorm: string): Promise<void> {

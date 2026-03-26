@@ -5,6 +5,7 @@ import type { ArticleLocaleContent, ArticleFaq, ArticleSource } from "@/features
 import type { ActiveLocale } from "@/config/locales";
 import { ArticleLocaleContext } from "@/features/articles/context/ArticleLocaleContext";
 import { A5ArticleBody } from "./A5ArticleBody";
+import { A1ArticleBody } from "./A1ArticleBody";
 
 export interface TocItem {
   id: string;
@@ -130,6 +131,7 @@ export function ArticlePageClient({
   };
 
   const isA5 = articleKey === "a5-mold-risk-guide";
+  const isA1 = articleKey === "a1-black-mold";
 
   return (
     <ArticleLocaleContext.Provider value={slugsByLocale}>
@@ -167,7 +169,9 @@ export function ArticlePageClient({
           <div className="article-page__body">
             {isA5
               ? <A5ArticleBody paragraphs={content.body} />
-              : <ArticleBody paragraphs={content.body} />
+              : isA1
+                ? <A1ArticleBody paragraphs={content.body} />
+                : <ArticleBody paragraphs={content.body} />
             }
           </div>
 

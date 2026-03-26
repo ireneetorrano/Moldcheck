@@ -3741,4 +3741,179 @@ a.contact-info-card__value:hover {
   }
 }
 
+.a1-species-table-wrap {
+  border: 1px solid var(--mc-border);
+  border-radius: 10px;
+  margin: .5rem 0 1.25rem;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(27, 77, 74, .06);
+}
+
+.a1-species-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 560px;
+  font-size: .88rem;
+}
+
+.a1-species-table__th {
+  background: var(--mc-teal-dark);
+  color: var(--mc-white);
+  text-align: left;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  padding: .75rem 1rem;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.a1-species-table__th--first {
+  border-radius: 10px 0 0;
+  min-width: 130px;
+}
+
+.a1-species-table__row {
+  border-top: 1px solid var(--mc-border);
+  transition: background .15s;
+}
+
+.a1-species-table__row:nth-child(2n) {
+  background: rgba(199, 219, 239, .15);
+}
+
+.a1-species-table__row:hover {
+  background: rgba(199, 219, 239, .35);
+}
+
+.a1-species-table__td {
+  color: var(--mc-ink);
+  vertical-align: top;
+  padding: .65rem 1rem;
+  line-height: 1.5;
+}
+
+.a1-species-table__td--label {
+  color: var(--mc-teal-dark);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.a1-species-table__td--stachybotrys {
+  color: var(--mc-ink);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .a1-species-table__th, .a1-species-table__td {
+    padding: .55rem .75rem;
+    font-size: .82rem;
+  }
+}
+
+.a1-assess {
+  gap: 1rem;
+  margin: .25rem 0 .5rem;
+  display: grid;
+}
+
+.a1-assess__intro {
+  color: var(--mc-ink);
+  margin: 0;
+  line-height: 1.75;
+}
+
+.a1-assess__subtitle {
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mc-teal-mid);
+  margin: 0;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.a1-assess__subtitle--sep {
+  border-top: 1px solid var(--mc-border);
+  margin-top: .5rem;
+  padding-top: 1rem;
+}
+
+.a1-assess__text {
+  color: var(--mc-ink);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.a1-assess__cards {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .85rem;
+  display: grid;
+}
+
+.a1-assess__card {
+  background: var(--mc-bg);
+  border: 1px solid var(--mc-border);
+  border-radius: 10px;
+  gap: .5rem;
+  padding: 1rem 1.1rem;
+  display: grid;
+}
+
+.a1-assess__card-header {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.a1-assess__card-emoji {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.a1-assess__card-title {
+  color: var(--mc-teal-dark);
+  font-size: .92rem;
+  font-weight: 700;
+}
+
+.a1-assess__card-body {
+  color: var(--mc-ink-soft);
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.65;
+}
+
+.a1-assess__options {
+  gap: .75rem;
+  display: grid;
+}
+
+.a1-assess__option {
+  border-left: 3px solid var(--mc-teal-mid);
+  background: var(--mc-bg);
+  border-radius: 0 8px 8px 0;
+  gap: .3rem;
+  padding: .85rem 1.1rem;
+  display: grid;
+}
+
+.a1-assess__option-title {
+  color: var(--mc-teal-dark);
+  margin: 0;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.a1-assess__option-body {
+  color: var(--mc-ink-soft);
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+  .a1-assess__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=src_app_globals_91e4631d.css.map*/

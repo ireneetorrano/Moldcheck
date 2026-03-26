@@ -622,15 +622,15 @@ const foundationalArticles = [
     },
     {
         key: "bleach",
-        section: "remediation",
+        section: "articles",
         slugs: {
-            pt: "lixivia-nao-resolve-bolor",
+            pt: "por-que-lixivia-nao-resolve-bolor",
             en: "why-bleach-doesnt-fix-mold",
-            fr: "eau-de-javel-ne-resout-pas-moisissures",
-            de: "bleichmittel-loest-schimmel-nicht",
-            nl: "bleekwater-lost-schimmel-niet-op",
-            it: "candeggina-non-risolve-muffa",
-            es: "lejia-no-resuelve-moho"
+            fr: "pourquoi-javel-ne-resout-pas-moisissures",
+            de: "warum-bleichmittel-schimmel-nicht-beseitigt",
+            nl: "waarom-bleekwater-schimmel-niet-oplost",
+            it: "perche-candeggina-non-risolve-muffa",
+            es: "por-que-la-lejia-no-soluciona-el-moho"
         }
     },
     {

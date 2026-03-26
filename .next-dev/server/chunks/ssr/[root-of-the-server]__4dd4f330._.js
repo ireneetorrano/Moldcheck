@@ -490,7 +490,7 @@ __turbopack_context__.s([
 const foundationalArticles = [
     {
         key: "black-mold",
-        section: "mold-types",
+        section: "articles",
         slugs: {
             pt: "bolor-negro-mitos-factos",
             en: "black-mold-facts-science",
@@ -503,28 +503,28 @@ const foundationalArticles = [
     },
     {
         key: "bleach",
-        section: "remediation",
+        section: "articles",
         slugs: {
-            pt: "lixivia-nao-resolve-bolor",
+            pt: "por-que-lixivia-nao-resolve-bolor",
             en: "why-bleach-doesnt-fix-mold",
-            fr: "eau-de-javel-ne-resout-pas-moisissures",
-            de: "bleichmittel-loest-schimmel-nicht",
-            nl: "bleekwater-lost-schimmel-niet-op",
-            it: "candeggina-non-risolve-muffa",
-            es: "lejia-no-resuelve-moho"
+            fr: "pourquoi-javel-ne-resout-pas-moisissures",
+            de: "warum-bleichmittel-schimmel-nicht-beseitigt",
+            nl: "waarom-bleekwater-schimmel-niet-oplost",
+            it: "perche-candeggina-non-risolve-muffa",
+            es: "por-que-la-lejia-no-soluciona-el-moho"
         }
     },
     {
         key: "health",
-        section: "health",
+        section: "articles",
         slugs: {
-            pt: "casa-afeta-saude-bolor",
-            en: "is-your-home-making-you-ill-mold",
-            fr: "logement-affecte-sante-moisissures",
-            de: "macht-wohnung-krank-schimmel",
-            nl: "woning-maakt-je-ziek-schimmel",
-            it: "casa-influisce-salute-muffa",
-            es: "vivienda-afecta-salud-moho"
+            pt: "casa-afetar-saude-bolores-doencas-respiratorias",
+            en: "is-your-home-making-you-ill",
+            fr: "votre-logement-affecte-t-il-votre-sante",
+            de: "macht-ihre-wohnung-sie-krank",
+            nl: "heeft-uw-woning-invloed-op-uw-gezondheid",
+            it: "la-tua-casa-ti-sta-facendo-ammalare",
+            es: "esta-afectando-tu-vivienda-a-tu-salud"
         }
     },
     {
@@ -2846,7 +2846,7 @@ const a4PortugalContent = {
         seoDescription: "Portugal tem o segundo pior problema de bolor da Europa. Dados Eurostat, causas estruturais e o défice de diagnóstico independente explicados.",
         focusKeyword: "bolor Portugal Europa",
         title: "Portugal Tem o Segundo Pior Problema de Bolor da Europa. Porque é que Ninguém Fala Nisso?",
-        byline: "Por Pieter Paul Castelein, FAIRBANK Group",
+        byline: "Por Pieter Paul Castelein, Cofundador & CEO, FAIRBANK Group",
         body: [
             "Cresci na Holanda. Em quarenta anos, nunca vi bolor numa casa.",
             "Não porque as casas holandesas sejam perfeitas não são. Mas porque a construção neerlandesa assume que vai chover, sempre, e que a humidade precisa de ser gerida activamente: isolamento adequado, ventilação mecânica, materiais que resistem à humidade. O problema é incorporado no processo de construção antes de existir.",
@@ -2925,7 +2925,7 @@ const a4PortugalContent = {
         seoDescription: "Portugal has Europe's second-worst mold problem. Eurostat data, structural causes, and the absence of independent diagnosis explained.",
         focusKeyword: "mold Portugal Europe",
         title: "Portugal Has Europe's Second-Worst Mold Problem. Why Is Nobody Talking About It?",
-        byline: "By Pieter Paul Castelein, FAIRBANK Group",
+        byline: "By Pieter Paul Castelein, Co-founder & CEO, FAIRBANK Group",
         body: [
             "When I moved from the Netherlands to Portugal, I brought with me a particular blindness.",
             "In the Netherlands, mold is not something people discuss. It's not something you discover behind a wardrobe and resign yourself to. It's not part of the standard conversation when you rent an apartment or buy a house. Dutch buildings are built cold and tight double-glazed, insulated, ventilated. The idea that a home could make your family chronically ill through something growing in its walls wasn't something that had ever occurred to me. Not once.",
@@ -3034,7 +3034,7 @@ const a4PortugalContent = {
         seoDescription: "Le Portugal a le deuxième pire problème de moisissures d'Europe. Données Eurostat, causes structurelles et absence de diagnostic indépendant expliqués.",
         focusKeyword: "moisissures Portugal Europe",
         title: "Le Portugal a le Deuxième Plus Grave Problème de Moisissures en Europe. Pourquoi Personne n'en Parle ?",
-        byline: "Par Pieter Paul Castelein, FAIRBANK Group",
+        byline: "Par Pieter Paul Castelein, Co-fondateur & PDG, FAIRBANK Group",
         body: [
             "J'ai grandi aux Pays-Bas. En quarante ans, je n'ai jamais vu de moisissures dans une maison.",
             "Pas parce que les maisons néerlandaises sont parfaites elles ne le sont pas. Mais parce que la construction hollandaise part du principe qu'il va pleuvoir, toujours, et que l'humidité doit être gérée activement : isolation suffisante, ventilation mécanique, matériaux résistants à l'humidité. Le problème est intégré dans le processus de construction avant même d'exister.",
@@ -3113,7 +3113,7 @@ const a4PortugalContent = {
         seoDescription: "Portugal hat das zweitschlimmste Schimmelproblem Europas. Eurostat-Daten, strukturelle Ursachen und das Fehlen unabhängiger Diagnose erklärt.",
         focusKeyword: "Schimmel Portugal Europa",
         title: "Portugal Hat das Zweitschlimmste Schimmelproblem Europas. Warum Spricht Niemand Darüber?",
-        byline: "Von Pieter Paul Castelein, FAIRBANK Group",
+        byline: "Von Pieter Paul Castelein, Mitgründer & CEO, FAIRBANK Group",
         body: [
             "Ich bin in den Niederlanden aufgewachsen. In vierzig Jahren habe ich in keinem einzigen Haus Schimmel gesehen.",
             "Nicht weil niederländische Häuser perfekt sind das sind sie nicht. Sondern weil der niederländische Baustil davon ausgeht, dass es regnen wird immer und dass Feuchtigkeit aktiv gemanagt werden muss: ausreichende Dämmung, mechanische Lüftung, feuchtigkeitsresistente Materialien. Das Problem wird in den Bauprozess integriert, bevor es entstehen kann.",
@@ -3191,7 +3191,7 @@ const a4PortugalContent = {
         seoDescription: "Portugal heeft het op één na ergste schimmelprobleem van Europa. Eurostat-cijfers, structurele oorzaken en het ontbreken van onafhankelijke diagnose uitgelegd.",
         focusKeyword: "schimmel Portugal Europa",
         title: "Portugal Heeft het Op Één Na Ergste Schimmelprobleem van Europa. Waarom Heeft Niemand Het Erover?",
-        byline: "Door Pieter Paul Castelein, FAIRBANK Group",
+        byline: "Door Pieter Paul Castelein, Medeoprichter & CEO, FAIRBANK Group",
         body: [
             "Ik ben opgegroeid in Nederland. In veertig jaar heb ik nooit schimmel in een huis gezien.",
             "Niet omdat Nederlandse huizen perfect zijn dat zijn ze niet. Maar omdat de Nederlandse bouw ervan uitgaat dat het gaat regenen, altijd, en dat vocht actief beheerd moet worden: voldoende isolatie, mechanische ventilatie, vochtbestendige materialen. Het probleem wordt in het bouwproces geïntegreerd voordat het kan ontstaan.",
@@ -3270,7 +3270,7 @@ const a4PortugalContent = {
         seoDescription: "Portugal tiene el segundo peor problema de moho de Europa. Datos Eurostat, causas estructurales y ausencia de diagnóstico independiente explicados.",
         focusKeyword: "moho Portugal Europa",
         title: "Portugal tiene el segundo peor problema de moho de Europa. Casi nadie habla de ello.",
-        byline: "de MoldCheck.pt",
+        byline: "Por Pieter Paul Castelein, Cofundador y CEO, FAIRBANK Group",
         body: [
             "El 24 26% de los hogares portugueses declaran tener problemas de humedad o moho. Este es el dato de Eurostat EU-SILC público, no controvertido, raramente citado.",
             "Solo Chipre lo hace peor dentro de la Unión Europea. La media europea se sitúa en torno al 13 15%. Portugal casi duplica esa cifra.",
@@ -3337,7 +3337,7 @@ const a4PortugalContent = {
         seoDescription: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Dati Eurostat, cause strutturali e assenza di diagnosi indipendente spiegati.",
         focusKeyword: "muffa Portogallo Europa",
         title: "Il Portogallo ha il secondo peggior problema di muffa in Europa. Quasi nessuno ne parla.",
-        byline: "di MoldCheck.pt",
+        byline: "Di Pieter Paul Castelein, Co-fondatore & CEO, FAIRBANK Group",
         body: [
             "Ho scoperto il problema della muffa in Portogallo nel modo in cui la maggior parte delle persone scopre qualcosa di scomodo: di persona.",
             "Vengo dall'Olanda. Ho vissuto in case costruite con criteri di isolamento che in Portogallo sarebbero considerati di lusso. Quando mi sono trasferito a Lisbona, ho iniziato ad accusare sintomi che non avevo mai avuto: naso chiuso cronico, tosse secca, stanchezza. Ho attribuito tutto all'\"adattamento\" al clima diverso, alla nuova città.",

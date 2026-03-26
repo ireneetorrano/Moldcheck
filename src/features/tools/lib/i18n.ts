@@ -21,6 +21,21 @@ function moldCausesHref(locale: ActiveLocale): string {
  return `/${locale}/${globalRouteSlugs.articles[locale]}/${slug}`;
 }
 
+// Section anchor IDs for the "how to assess / identify" section in A1 black mold article
+const BLACK_MOLD_ASSESS_ANCHORS: Partial<Record<ActiveLocale, string>> = {
+ pt: "como-identificar-o-que-tem--na-prtica",
+ en: "how-to-assess-what-you-have--in-practice",
+ it: "come-si-distingue-visivamente-con-i-limiti-del-caso",
+ es: "cmo-se-distingue-visualmente-con-las-limitaciones-del-caso",
+};
+
+function blackMoldAssessHref(locale: ActiveLocale): string {
+ const slug = foundationalArticles.find((a) => a.key === "black-mold")?.slugs[locale] ?? "";
+ const base = `/${locale}/${globalRouteSlugs.articles[locale]}/${slug}`;
+ const anchor = BLACK_MOLD_ASSESS_ANCHORS[locale];
+ return anchor ? `${base}#${anchor}` : base;
+}
+
 // ---------------------------------------------------------------------------
 // Shared question/option keys resolved per locale
 // ---------------------------------------------------------------------------
