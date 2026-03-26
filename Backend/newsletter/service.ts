@@ -66,24 +66,7 @@ export async function handleNewsletterSubscribe(
   const emailAddress = upsert.email;
   const unsubscribeToken = upsert.unsubscribeToken; // always a string, never null
 
-  try {
-    log("sending checklist email...");
-    await sendChecklistEmail(emailAddress, data.locale as NewsletterLocale, unsubscribeToken);
-    log("email sent OK");
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    log("ERROR sending email:", msg);
-    return { ok: false, httpStatus: 500, error: DEV ? `Email error: ${msg}` : "Internal server error" };
-  }
-
-  try {
-    await markChecklistSent(data.emailNorm);
-    log("markChecklistSent OK");
-  } catch (err) {
-    log("WARN markChecklistSent (non-fatal):", err instanceof Error ? err.message : err);
-  }
-
-  // Kick off nurture sequence — token is guaranteed non-null
+  // Send nurture Email 1 (welcome + checklist delivery) — this is the only immediate email
   try {
     log("sending nurture Email 1...");
     await sendNurtureEmail({
@@ -95,7 +78,9 @@ export async function handleNewsletterSubscribe(
     await initNurture(data.emailNorm);
     log("nurture Email 1 sent, step scheduled");
   } catch (err) {
-    log("WARN nurture Email 1 (non-fatal):", err instanceof Error ? err.message : err);
+    const msg = err instanceof Error ? err.message : String(err);
+    log("ERROR sending nurture Email 1:", msg);
+    return { ok: false, httpStatus: 500, error: DEV ? `Email error: ${msg}` : "Internal server error" };
   }
 
   log("── success ───────────────────────────────────────");
