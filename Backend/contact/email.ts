@@ -73,7 +73,7 @@ export async function sendContactEmail(data: ContactSubmission): Promise<void> {
     to,
     subject: `New contact: ${data.full_name} — MoldCheck.pt`,
     html,
-    reply_to: data.email,
+    replyTo: data.email,
   });
 
   if (error) {
