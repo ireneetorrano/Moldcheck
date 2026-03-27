@@ -1,5 +1,10 @@
 {
+  "/(site)/[locale]/articles/[slug]/page": "app/(site)/[locale]/articles/[slug]/page.js",
+  "/(site)/[locale]/articles/page": "app/(site)/[locale]/articles/page.js",
   "/(site)/[locale]/contact/page": "app/(site)/[locale]/contact/page.js",
+  "/(site)/[locale]/editorial-policy/page": "app/(site)/[locale]/editorial-policy/page.js",
   "/(site)/[locale]/page": "app/(site)/[locale]/page.js",
+  "/(site)/[locale]/privacy/page": "app/(site)/[locale]/privacy/page.js",
+  "/(site)/[locale]/services/page": "app/(site)/[locale]/services/page.js",
   "/api/contact/route": "app/api/contact/route.js"
 }
