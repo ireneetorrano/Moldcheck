@@ -9,8 +9,14 @@ export type ContactServiceResult =
 export async function handleContactSubmission(
   raw: Record<string, unknown>,
 ): Promise<ContactServiceResult> {
+  console.log("[contact-form] request received");
+  console.log("[contact-form] raw payload keys:", Object.keys(raw));
+
   // Honeypot — silent discard
-  if (raw.honeypot) return { ok: true };
+  if (raw.honeypot) {
+    console.log("[contact-form] honeypot triggered — discarding");
+    return { ok: true };
+  }
 
   const data: ContactFormData = {
     fullName: String(raw.fullName ?? ""),
@@ -24,8 +30,11 @@ export async function handleContactSubmission(
 
   const errors = validateContactForm(data);
   if (hasErrors(errors)) {
+    console.log("[contact-form] validation failed:", JSON.stringify(errors));
     return { ok: false, status: 422, error: "Validation failed", fields: errors as Record<string, string> };
   }
+
+  console.log("[contact-form] validation passed — from:", data.email);
 
   const now = new Date().toISOString();
   const sourcePage = typeof raw.sourcePage === "string" ? raw.sourcePage : "/contact";
@@ -42,19 +51,29 @@ export async function handleContactSubmission(
     created_at: now,
   };
 
+  // DB insert is non-fatal — email must fire regardless
   try {
     await insertContactSubmission(submission);
+    console.log("[contact-form] saved to database");
   } catch (err) {
-    console.error("[contact] Supabase error:", err);
-    return { ok: false, status: 500, error: "Database error" };
+    console.error("[contact-form] database error (non-fatal):", err instanceof Error ? err.message : err);
+    // Do NOT return here — continue to email send
   }
+
+  // Email send is the critical path
+  console.log("[contact-form] route reached — about to call Resend");
+  console.log("[contact-form] CONTACT_TO_EMAIL:", process.env.CONTACT_TO_EMAIL ?? "info@moldcheck.pt (default)");
+  console.log("[contact-form] CONTACT_FROM_EMAIL:", process.env.CONTACT_FROM_EMAIL ?? "MoldCheck <no-reply@moldcheck.pt> (default)");
+  console.log("[contact-form] RESEND_API_KEY present:", !!process.env.RESEND_API_KEY);
 
   try {
     await sendContactEmail(submission);
+    console.log("[contact-form] email sent successfully");
   } catch (err) {
-    // Email failure is non-fatal — submission is already stored
-    console.error("[contact] Resend error:", err);
+    console.error("[contact-form] email send failed:", err instanceof Error ? err.message : err);
+    // Still return ok — submission is stored (or was attempted)
   }
 
+  console.log("[contact-form] returning ok:true to frontend");
   return { ok: true };
 }
