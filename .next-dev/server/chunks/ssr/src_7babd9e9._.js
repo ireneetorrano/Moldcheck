@@ -38,7 +38,7 @@ function validateContactForm(data, msgs = DEFAULT_MESSAGES) {
     const phone = (data.phoneNumber ?? "").replace(/\s+/g, "");
     if (!phone) errors.phoneNumber = msgs.errPhoneRequired;
     else if (!DIGITS_RE.test(phone)) errors.phoneNumber = msgs.errPhoneDigits;
-    else if (phone.length < 6 || phone.length > 15) errors.phoneNumber = msgs.errPhoneLength;
+    else if (phone.length < 6 || phone.length > 9) errors.phoneNumber = msgs.errPhoneLength;
     const municipality = data.municipality?.trim() ?? "";
     if (!municipality) errors.municipality = msgs.errMunicipalityRequired;
     else if (municipality.length > 100) errors.municipality = msgs.errMunicipalityMax;
@@ -288,17 +288,19 @@ function ContactForm({ sourcePage, content, privacyHref }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 type: "text",
-                name: "website",
+                name: "faxNumber",
                 value: honeypot,
                 onChange: (e)=>setHoneypot(e.target.value),
                 tabIndex: -1,
                 "aria-hidden": "true",
-                autoComplete: "off",
+                autoComplete: "new-password",
                 style: {
                     position: "absolute",
                     left: "-9999px",
                     opacity: 0,
-                    pointerEvents: "none"
+                    pointerEvents: "none",
+                    height: 0,
+                    overflow: "hidden"
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
@@ -394,8 +396,14 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                             type: "tel",
                             className: `contact-form__input${errors.phoneNumber ? " is-error" : ""}`,
                             value: fields.phoneNumber,
-                            onChange: (e)=>set("phoneNumber", e.target.value),
+                            onChange: (e)=>{
+                                // Strip non-digits and cap at 9 characters
+                                const digits = e.target.value.replace(/\D/g, "").slice(0, 9);
+                                set("phoneNumber", digits);
+                            },
                             autoComplete: "tel-national",
+                            inputMode: "numeric",
+                            maxLength: 9,
                             placeholder: content.placeholderPhone
                         }, void 0, false, {
                             fileName: "[project]/src/features/contact/ContactForm.tsx",
@@ -426,12 +434,12 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                     placeholder: content.placeholderMunicipality
                 }, void 0, false, {
                     fileName: "[project]/src/features/contact/ContactForm.tsx",
-                    lineNumber: 148,
+                    lineNumber: 154,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 147,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -448,7 +456,7 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                         placeholder: content.placeholderMessage
                     }, void 0, false, {
                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                        lineNumber: 159,
+                        lineNumber: 165,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -459,13 +467,13 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                        lineNumber: 167,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 158,
+                lineNumber: 164,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -481,7 +489,7 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                                 onChange: (e)=>set("consentAccepted", e.target.checked)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                                lineNumber: 172,
+                                lineNumber: 178,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -493,20 +501,20 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                                         children: content.consentLinkText
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                                        lineNumber: 180,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this),
                                     "."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                                lineNumber: 178,
+                                lineNumber: 184,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                        lineNumber: 171,
+                        lineNumber: 177,
                         columnNumber: 9
                     }, this),
                     errors.consentAccepted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -514,13 +522,13 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                         children: errors.consentAccepted
                     }, void 0, false, {
                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                        lineNumber: 186,
+                        lineNumber: 192,
                         columnNumber: 36
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 170,
+                lineNumber: 176,
                 columnNumber: 7
             }, this),
             status === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -528,7 +536,7 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                 children: content.submitError
             }, void 0, false, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 190,
+                lineNumber: 196,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -538,7 +546,7 @@ function ContactForm({ sourcePage, content, privacyHref }) {
                 children: status === "sending" ? content.sendingLabel : content.submitLabel
             }, void 0, false, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 193,
+                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
@@ -562,13 +570,13 @@ function Field({ label, error, required, children }) {
                         children: " *"
                     }, void 0, false, {
                         fileName: "[project]/src/features/contact/ContactForm.tsx",
-                        lineNumber: 219,
+                        lineNumber: 225,
                         columnNumber: 22
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 217,
+                lineNumber: 223,
                 columnNumber: 7
             }, this),
             children,
@@ -577,13 +585,13 @@ function Field({ label, error, required, children }) {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/src/features/contact/ContactForm.tsx",
-                lineNumber: 222,
+                lineNumber: 228,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/contact/ContactForm.tsx",
-        lineNumber: 216,
+        lineNumber: 222,
         columnNumber: 5
     }, this);
 }

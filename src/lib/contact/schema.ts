@@ -76,7 +76,7 @@ export function validateContactForm(
   const phone = (data.phoneNumber ?? "").replace(/\s+/g, "");
   if (!phone) errors.phoneNumber = msgs.errPhoneRequired;
   else if (!DIGITS_RE.test(phone)) errors.phoneNumber = msgs.errPhoneDigits;
-  else if (phone.length < 6 || phone.length > 15) errors.phoneNumber = msgs.errPhoneLength;
+  else if (phone.length < 6 || phone.length > 9) errors.phoneNumber = msgs.errPhoneLength;
 
   const municipality = data.municipality?.trim() ?? "";
   if (!municipality) errors.municipality = msgs.errMunicipalityRequired;

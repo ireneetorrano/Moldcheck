@@ -12,12 +12,18 @@ export async function handleContactSubmission(
   console.log("[contact-form] request received");
   console.log("[contact-form] raw payload keys:", Object.keys(raw));
 
-  // Honeypot — discard only if non-empty after trim
+  // Honeypot — discard only if non-empty AND not a browser autofill false positive
   const honeypotValue = String(raw.honeypot ?? "").trim();
-  console.log("[contact-form] honeypot value:", JSON.stringify(honeypotValue));
+  const emailValue = String(raw.email ?? "").trim().toLowerCase();
+  console.log("[contact-form] honeypot raw:", JSON.stringify(honeypotValue));
   if (honeypotValue.length > 0) {
-    console.log("[contact-form] honeypot triggered — discarding");
-    return { ok: true };
+    if (honeypotValue.toLowerCase() === emailValue) {
+      // Browser autofill false positive — the user's own email was inserted into the hidden field
+      console.log("[contact-form] honeypot matches user email — treating as autofill false positive, continuing");
+    } else {
+      console.log("[contact-form] honeypot triggered — discarding (value does not match user email)");
+      return { ok: true };
+    }
   }
 
   const data: ContactFormData = {

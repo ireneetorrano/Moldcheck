@@ -80,16 +80,16 @@ export function ContactForm({ sourcePage, content, privacyHref }: Props) {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit} noValidate>
-      {/* Honeypot — hidden from real users */}
+      {/* Honeypot — hidden from real users, named to avoid browser autofill */}
       <input
         type="text"
-        name="website"
+        name="faxNumber"
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
         tabIndex={-1}
         aria-hidden="true"
-        autoComplete="off"
-        style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none" }}
+        autoComplete="new-password"
+        style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none", height: 0, overflow: "hidden" }}
       />
 
       <div className="contact-form__row">
@@ -137,8 +137,14 @@ export function ContactForm({ sourcePage, content, privacyHref }: Props) {
             type="tel"
             className={`contact-form__input${errors.phoneNumber ? " is-error" : ""}`}
             value={fields.phoneNumber}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => set("phoneNumber", e.target.value)}
+            onChange={(e: ChangeEvent<HTMLInputElement>) => {
+              // Strip non-digits and cap at 9 characters
+              const digits = e.target.value.replace(/\D/g, "").slice(0, 9);
+              set("phoneNumber", digits);
+            }}
             autoComplete="tel-national"
+            inputMode="numeric"
+            maxLength={9}
             placeholder={content.placeholderPhone}
           />
         </Field>
