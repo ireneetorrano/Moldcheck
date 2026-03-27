@@ -12,8 +12,10 @@ export async function handleContactSubmission(
   console.log("[contact-form] request received");
   console.log("[contact-form] raw payload keys:", Object.keys(raw));
 
-  // Honeypot — silent discard
-  if (raw.honeypot) {
+  // Honeypot — discard only if non-empty after trim
+  const honeypotValue = String(raw.honeypot ?? "").trim();
+  console.log("[contact-form] honeypot value:", JSON.stringify(honeypotValue));
+  if (honeypotValue.length > 0) {
     console.log("[contact-form] honeypot triggered — discarding");
     return { ok: true };
   }
