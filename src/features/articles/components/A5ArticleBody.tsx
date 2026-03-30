@@ -44,7 +44,18 @@ function getRoomIcon(label: string): string {
 // These heading prefixes identify A5-specific rich sections across all locales
 const TABLE_HEADING_PREFIXES = [
   "tabela:", "tableau :", "tabelle:", "tabel:", "tabella:", "tabla:",
-  "location-to-probable-cause", // en heading text
+  "location-to-probable-cause", // en old heading
+  "location maps to cause",     // en new heading
+  "o padrão de localização",    // pt 3-col table
+  "la localisation indique",    // fr new heading
+  "der standort zeigt",         // de new heading
+  "de locatie wijst",           // nl new heading
+];
+const ASSESSMENT_HEADING_PREFIXES = [
+  "how to interpret what you found",
+  "comment interpréter ce que vous avez trouvé",
+  "so interpretieren sie ihre befunde",
+  "hoe u uw bevindingen interpreteert",
 ];
 const CHECKLIST_HEADING_PREFIXES = [
   "checklist de 20", "20-point checklist", "20-punkte-checkliste",
@@ -55,19 +66,44 @@ const ROOM_HEADING_PREFIXES = [
   "zimmer-für-zimmer", "kamer-voor-kamer", "ispezione stanza",
   "inspección habitación",
 ];
+const BULLETS_HEADING_PREFIXES = [
+  "quand appeler un professionnel",
+  "wann ein fachmann gerufen werden sollte",
+  "wanneer een professional te bellen",
+];
 
 function matchesPrefix(heading: string, prefixes: string[]): boolean {
   const lower = heading.toLowerCase();
   return prefixes.some((p) => lower.includes(p));
 }
 
-// ── Table row parser: "Location — Cause." ─────────────────────────────────
-function parseTableRows(paragraphs: string[]): Array<{ location: string; cause: string }> {
-  const rows: Array<{ location: string; cause: string }> = [];
+// ── Table row parser ──────────────────────────────────────────────────────
+// Supports:
+//   2-col: "Location → Cause"  or  "Location — Cause"
+//   3-col: "Location | Cause | Action"
+interface TableRow {
+  location: string;
+  cause: string;
+  action?: string;
+}
+
+function parseTableRows(paragraphs: string[]): TableRow[] {
+  const rows: TableRow[] = [];
   for (const p of paragraphs) {
-    // Separator can be " — ", " → ", " - "
-    const sep = p.includes(" — ") ? " — " : p.includes(" → ") ? " → " : null;
-    if (!sep) break; // stop at next heading or non-table paragraph
+    if (p.startsWith("## ")) break;
+    if (p.includes(" | ")) {
+      const parts = p.split(" | ").map((s) => s.trim());
+      if (parts.length >= 2) {
+        rows.push({ location: parts[0], cause: parts[1], action: parts[2] });
+      }
+      continue;
+    }
+    const sep = p.includes(" → ") ? " → " : p.includes(" — ") ? " — " : null;
+    if (!sep) {
+      // Skip intro/description paragraphs; stop only if we already have rows
+      if (rows.length > 0) break;
+      continue;
+    }
     const idx = p.indexOf(sep);
     rows.push({ location: p.slice(0, idx).trim(), cause: p.slice(idx + sep.length).trim() });
   }
@@ -118,16 +154,61 @@ function parseRoomBlocks(paragraphs: string[]): RoomBlock[] {
   return rooms;
 }
 
+// ── Assessment level parser ───────────────────────────────────────────────
+// Each paragraph: "Level N — Label: body text"
+interface AssessLevel {
+  level: number;
+  label: string;
+  body: string;
+}
+
+function parseAssessmentLevels(paragraphs: string[]): AssessLevel[] {
+  const levels: AssessLevel[] = [];
+  for (const p of paragraphs) {
+    if (p.startsWith("## ")) break;
+    // Matches "Level N — Label: body" (EN), "Niveau N — Label: body" (FR), "Stufe N — Label: body" (DE)
+    const m = p.match(/^(?:Level|Niveau|Stufe)\s+(\d+)\s*[—–-]\s*([^:]+):\s*(.+)$/s);
+    if (m) {
+      levels.push({ level: Number(m[1]), label: m[2].trim(), body: m[3].trim() });
+    }
+  }
+  return levels;
+}
+
+// ── Assessment scale component ────────────────────────────────────────────
+const LEVEL_COLORS = ["#2e7d32", "#f57c00", "#c62828", "#6a1b9a"] as const;
+
+function AssessmentScale({ levels }: { levels: AssessLevel[] }) {
+  return (
+    <div className="a5-assess">
+      {levels.map((lv) => (
+        <div
+          key={lv.level}
+          className="a5-assess__level"
+          style={{ borderLeftColor: LEVEL_COLORS[(lv.level - 1) % LEVEL_COLORS.length] }}
+        >
+          <p className="a5-assess__badge" style={{ color: LEVEL_COLORS[(lv.level - 1) % LEVEL_COLORS.length] }}>
+            Level {lv.level} — {lv.label}
+          </p>
+          <p className="a5-assess__body">{lv.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ── Rich components ───────────────────────────────────────────────────────
 
-function LocationTable({ rows }: { rows: Array<{ location: string; cause: string }> }) {
+function LocationTable({ rows }: { rows: TableRow[] }) {
+  const hasAction = rows.some((r) => r.action !== undefined);
   return (
     <div className="a5-table-wrap">
       <table className="a5-table">
         <thead>
           <tr>
-            <th className="a5-table__th a5-table__th--loc">Localização / Location</th>
-            <th className="a5-table__th a5-table__th--cause">Causa provável / Probable cause</th>
+            <th className="a5-table__th a5-table__th--loc">Localização do bolor</th>
+            <th className="a5-table__th a5-table__th--cause">Causa mais provável</th>
+            {hasAction && <th className="a5-table__th a5-table__th--action">O que precisa</th>}
           </tr>
         </thead>
         <tbody>
@@ -135,6 +216,7 @@ function LocationTable({ rows }: { rows: Array<{ location: string; cause: string
             <tr key={i} className="a5-table__row">
               <td className="a5-table__td a5-table__td--loc">{row.location}</td>
               <td className="a5-table__td a5-table__td--cause">{row.cause}</td>
+              {hasAction && <td className="a5-table__td a5-table__td--action">{row.action}</td>}
             </tr>
           ))}
         </tbody>
@@ -202,6 +284,18 @@ function RoomSection({ rooms }: { rooms: RoomBlock[] }) {
   );
 }
 
+function BulletSection({ paragraphs }: { paragraphs: string[] }) {
+  return (
+    <ul className="a5-bullets">
+      {paragraphs
+        .filter((p) => p.startsWith("• "))
+        .map((p, i) => (
+          <li key={i} className="a5-bullets__item">{p.slice(2)}</li>
+        ))}
+    </ul>
+  );
+}
+
 // ── Main A5 body renderer ─────────────────────────────────────────────────
 
 export function A5ArticleBody({ paragraphs }: { paragraphs: string[] }) {
@@ -228,6 +322,22 @@ export function A5ArticleBody({ paragraphs }: { paragraphs: string[] }) {
           <h2 key={`h-${i}`} id={id} className="article-page__h2">{headingText}</h2>
         );
         elements.push(<LocationTable key={`table-${i}`} rows={rows} />);
+        i = j;
+        continue;
+      }
+
+      if (matchesPrefix(headingText, ASSESSMENT_HEADING_PREFIXES)) {
+        const assessParas: string[] = [];
+        let j = i + 1;
+        while (j < paragraphs.length && !paragraphs[j].startsWith("## ")) {
+          assessParas.push(paragraphs[j]);
+          j++;
+        }
+        const levels = parseAssessmentLevels(assessParas);
+        elements.push(
+          <h2 key={`h-${i}`} id={id} className="article-page__h2">{headingText}</h2>
+        );
+        elements.push(<AssessmentScale key={`assess-${i}`} levels={levels} />);
         i = j;
         continue;
       }
@@ -260,6 +370,21 @@ export function A5ArticleBody({ paragraphs }: { paragraphs: string[] }) {
           <h2 key={`h-${i}`} id={id} className="article-page__h2">{headingText}</h2>
         );
         elements.push(<RoomSection key={`rooms-${i}`} rooms={rooms} />);
+        i = j;
+        continue;
+      }
+
+      if (matchesPrefix(headingText, BULLETS_HEADING_PREFIXES)) {
+        const bulletParas: string[] = [];
+        let j = i + 1;
+        while (j < paragraphs.length && !paragraphs[j].startsWith("## ")) {
+          bulletParas.push(paragraphs[j]);
+          j++;
+        }
+        elements.push(
+          <h2 key={`h-${i}`} id={id} className="article-page__h2">{headingText}</h2>
+        );
+        elements.push(<BulletSection key={`bullets-${i}`} paragraphs={bulletParas} />);
         i = j;
         continue;
       }

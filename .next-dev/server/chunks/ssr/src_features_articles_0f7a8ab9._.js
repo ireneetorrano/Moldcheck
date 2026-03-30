@@ -93,7 +93,18 @@ const TABLE_HEADING_PREFIXES = [
     "tabel:",
     "tabella:",
     "tabla:",
-    "location-to-probable-cause"
+    "location-to-probable-cause",
+    "location maps to cause",
+    "o padrão de localização",
+    "la localisation indique",
+    "der standort zeigt",
+    "de locatie wijst"
+];
+const ASSESSMENT_HEADING_PREFIXES = [
+    "how to interpret what you found",
+    "comment interpréter ce que vous avez trouvé",
+    "so interpretieren sie ihre befunde",
+    "hoe u uw bevindingen interpreteert"
 ];
 const CHECKLIST_HEADING_PREFIXES = [
     "checklist de 20",
@@ -112,17 +123,36 @@ const ROOM_HEADING_PREFIXES = [
     "ispezione stanza",
     "inspección habitación"
 ];
+const BULLETS_HEADING_PREFIXES = [
+    "quand appeler un professionnel",
+    "wann ein fachmann gerufen werden sollte",
+    "wanneer een professional te bellen"
+];
 function matchesPrefix(heading, prefixes) {
     const lower = heading.toLowerCase();
     return prefixes.some((p)=>lower.includes(p));
 }
-// ── Table row parser: "Location — Cause." ─────────────────────────────────
 function parseTableRows(paragraphs) {
     const rows = [];
     for (const p of paragraphs){
-        // Separator can be " — ", " → ", " - "
-        const sep = p.includes(" — ") ? " — " : p.includes(" → ") ? " → " : null;
-        if (!sep) break; // stop at next heading or non-table paragraph
+        if (p.startsWith("## ")) break;
+        if (p.includes(" | ")) {
+            const parts = p.split(" | ").map((s)=>s.trim());
+            if (parts.length >= 2) {
+                rows.push({
+                    location: parts[0],
+                    cause: parts[1],
+                    action: parts[2]
+                });
+            }
+            continue;
+        }
+        const sep = p.includes(" → ") ? " → " : p.includes(" — ") ? " — " : null;
+        if (!sep) {
+            // Skip intro/description paragraphs; stop only if we already have rows
+            if (rows.length > 0) break;
+            continue;
+        }
         const idx = p.indexOf(sep);
         rows.push({
             location: p.slice(0, idx).trim(),
@@ -164,8 +194,77 @@ function parseRoomBlocks(paragraphs) {
     }
     return rooms;
 }
+function parseAssessmentLevels(paragraphs) {
+    const levels = [];
+    for (const p of paragraphs){
+        if (p.startsWith("## ")) break;
+        // Matches "Level N — Label: body" (EN), "Niveau N — Label: body" (FR), "Stufe N — Label: body" (DE)
+        const m = p.match(/^(?:Level|Niveau|Stufe)\s+(\d+)\s*[—–-]\s*([^:]+):\s*(.+)$/s);
+        if (m) {
+            levels.push({
+                level: Number(m[1]),
+                label: m[2].trim(),
+                body: m[3].trim()
+            });
+        }
+    }
+    return levels;
+}
+// ── Assessment scale component ────────────────────────────────────────────
+const LEVEL_COLORS = [
+    "#2e7d32",
+    "#f57c00",
+    "#c62828",
+    "#6a1b9a"
+];
+function AssessmentScale({ levels }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "a5-assess",
+        children: levels.map((lv)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "a5-assess__level",
+                style: {
+                    borderLeftColor: LEVEL_COLORS[(lv.level - 1) % LEVEL_COLORS.length]
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "a5-assess__badge",
+                        style: {
+                            color: LEVEL_COLORS[(lv.level - 1) % LEVEL_COLORS.length]
+                        },
+                        children: [
+                            "Level ",
+                            lv.level,
+                            " — ",
+                            lv.label
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                        lineNumber: 190,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "a5-assess__body",
+                        children: lv.body
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                        lineNumber: 193,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, lv.level, true, {
+                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                lineNumber: 185,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+        lineNumber: 183,
+        columnNumber: 5
+    }, this);
+}
 // ── Rich components ───────────────────────────────────────────────────────
 function LocationTable({ rows }) {
+    const hasAction = rows.some((r)=>r.action !== undefined);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "a5-table-wrap",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
@@ -176,29 +275,37 @@ function LocationTable({ rows }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                 className: "a5-table__th a5-table__th--loc",
-                                children: "Localização / Location"
+                                children: "Localização do bolor"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 129,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                 className: "a5-table__th a5-table__th--cause",
-                                children: "Causa provável / Probable cause"
+                                children: "Causa mais provável"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 130,
+                                lineNumber: 210,
                                 columnNumber: 13
+                            }, this),
+                            hasAction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                className: "a5-table__th a5-table__th--action",
+                                children: "O que precisa"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 211,
+                                columnNumber: 27
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 128,
+                        lineNumber: 208,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 127,
+                    lineNumber: 207,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -210,7 +317,7 @@ function LocationTable({ rows }) {
                                     children: row.location
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 217,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -218,29 +325,37 @@ function LocationTable({ rows }) {
                                     children: row.cause
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 218,
                                     columnNumber: 15
+                                }, this),
+                                hasAction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                    className: "a5-table__td a5-table__td--action",
+                                    children: row.action
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                    lineNumber: 219,
+                                    columnNumber: 29
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                            lineNumber: 135,
+                            lineNumber: 216,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 133,
+                    lineNumber: 214,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-            lineNumber: 126,
+            lineNumber: 206,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 125,
+        lineNumber: 205,
         columnNumber: 5
     }, this);
 }
@@ -260,7 +375,7 @@ function ChecklistSection({ groups }) {
                         children: group.label
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 155,
+                        lineNumber: 237,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -292,17 +407,17 @@ function ChecklistSection({ groups }) {
                                                 strokeLinejoin: "round"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 254,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                            lineNumber: 171,
+                                            lineNumber: 253,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 244,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -310,30 +425,30 @@ function ChecklistSection({ groups }) {
                                         children: item
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 258,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, ii, true, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 161,
+                                lineNumber: 243,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 156,
+                        lineNumber: 238,
                         columnNumber: 11
                     }, this)
                 ]
             }, gi, true, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 154,
+                lineNumber: 236,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 152,
+        lineNumber: 234,
         columnNumber: 5
     }, this);
 }
@@ -349,7 +464,7 @@ function RoomSection({ rooms }) {
                         children: getRoomIcon(room.name)
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 192,
+                        lineNumber: 274,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -360,7 +475,7 @@ function RoomSection({ rooms }) {
                                 children: room.name
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 196,
+                                lineNumber: 278,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -368,24 +483,41 @@ function RoomSection({ rooms }) {
                                 children: room.body
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 197,
+                                lineNumber: 279,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 195,
+                        lineNumber: 277,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 191,
+                lineNumber: 273,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 189,
+        lineNumber: 271,
+        columnNumber: 5
+    }, this);
+}
+function BulletSection({ paragraphs }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+        className: "a5-bullets",
+        children: paragraphs.filter((p)=>p.startsWith("• ")).map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                className: "a5-bullets__item",
+                children: p.slice(2)
+            }, i, false, {
+                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                lineNumber: 293,
+                columnNumber: 11
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+        lineNumber: 289,
         columnNumber: 5
     }, this);
 }
@@ -412,14 +544,41 @@ function A5ArticleBody({ paragraphs }) {
                     children: headingText
                 }, `h-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 228,
+                    lineNumber: 322,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(LocationTable, {
                     rows: rows
                 }, `table-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 230,
+                    lineNumber: 324,
+                    columnNumber: 23
+                }, this));
+                i = j;
+                continue;
+            }
+            if (matchesPrefix(headingText, ASSESSMENT_HEADING_PREFIXES)) {
+                const assessParas = [];
+                let j = i + 1;
+                while(j < paragraphs.length && !paragraphs[j].startsWith("## ")){
+                    assessParas.push(paragraphs[j]);
+                    j++;
+                }
+                const levels = parseAssessmentLevels(assessParas);
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    id: id,
+                    className: "article-page__h2",
+                    children: headingText
+                }, `h-${i}`, false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 338,
+                    columnNumber: 11
+                }, this));
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AssessmentScale, {
+                    levels: levels
+                }, `assess-${i}`, false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 340,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -439,14 +598,14 @@ function A5ArticleBody({ paragraphs }) {
                     children: headingText
                 }, `h-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 244,
+                    lineNumber: 354,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ChecklistSection, {
                     groups: groups
                 }, `check-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 246,
+                    lineNumber: 356,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -466,14 +625,40 @@ function A5ArticleBody({ paragraphs }) {
                     children: headingText
                 }, `h-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 260,
+                    lineNumber: 370,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(RoomSection, {
                     rooms: rooms
                 }, `rooms-${i}`, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 262,
+                    lineNumber: 372,
+                    columnNumber: 23
+                }, this));
+                i = j;
+                continue;
+            }
+            if (matchesPrefix(headingText, BULLETS_HEADING_PREFIXES)) {
+                const bulletParas = [];
+                let j = i + 1;
+                while(j < paragraphs.length && !paragraphs[j].startsWith("## ")){
+                    bulletParas.push(paragraphs[j]);
+                    j++;
+                }
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    id: id,
+                    className: "article-page__h2",
+                    children: headingText
+                }, `h-${i}`, false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 385,
+                    columnNumber: 11
+                }, this));
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(BulletSection, {
+                    paragraphs: bulletParas
+                }, `bullets-${i}`, false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 387,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -486,7 +671,7 @@ function A5ArticleBody({ paragraphs }) {
                 children: headingText
             }, `h-${i}`, false, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 269,
+                lineNumber: 394,
                 columnNumber: 9
             }, this));
             i++;
@@ -498,7 +683,7 @@ function A5ArticleBody({ paragraphs }) {
             children: para
         }, i, false, {
             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-            lineNumber: 277,
+            lineNumber: 402,
             columnNumber: 7
         }, this));
         i++;

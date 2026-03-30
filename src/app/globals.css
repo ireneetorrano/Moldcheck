@@ -2593,7 +2593,63 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
   .a5-table__th--cause { width: auto; }
   .a5-table__td { padding: 0.6rem 0.75rem; font-size: 0.85rem; }
 }
+.a5-table__th--action { width: 30%; }
+.a5-table__td--action { font-size: 0.875rem; color: var(--mc-ink); }
 
+/* ── A5 Article: Assessment scale ────────────────────────────────────────── */
+.a5-assess {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.a5-assess__level {
+  border-left: 4px solid;
+  border-radius: 0 6px 6px 0;
+  background: var(--mc-surface, #f8f9fa);
+  padding: 0.85rem 1.1rem;
+}
+.a5-assess__badge {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.01em;
+}
+.a5-assess__body {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--mc-ink);
+  line-height: 1.55;
+}
+
+/* ── A5 Article: Bullet list section ─────────────────────────────────────── */
+.a5-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.a5-bullets__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.925rem;
+  color: var(--mc-ink);
+  line-height: 1.5;
+  padding: 0.55rem 0.9rem;
+  background: var(--mc-surface, #f8f9fa);
+  border-radius: 6px;
+  border-left: 3px solid var(--mc-teal-dark);
+}
+.a5-bullets__item::before {
+  content: "→";
+  color: var(--mc-teal-dark);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
 /* ── A5 Article: Room-by-room blocks ─────────────────────────────────────── */
 .a5-rooms {
   display: grid;
