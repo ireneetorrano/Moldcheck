@@ -154,13 +154,13 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
     policyCards: [
       {
         eyebrow: "1. Indépendance vis-à-vis des traitements",
-        title: "Aucun conflit financier avec la remédiation",
-        body: "MoldCheck.pt ne reçoit aucun paiement, commission ou autre forme de compensation de la part d'entreprises qui vendent des traitements contre l'humidité, des produits anti-moisissures, des systèmes de ventilation ou des services de remédiation.\n\nCela ne signifie pas que le site ne puisse pas facturer ses propres services légitimes ou des activités liées à sa mission. Cela signifie que nous n'acceptons pas d'argent d'entreprises dont l'intérêt commercial dépend de la recommandation ou de la vente de la remédiation.\n\nLorsque nous recommandons un produit, une méthode ou un service, nous le faisons parce qu'il repose sur une base scientifique ou présente une utilité réelle pour l'utilisateur.",
+        title: "Aucun conflit d'intérêt avec les entreprises de traitement",
+        body: "MoldCheck.pt ne reçoit aucun paiement, commission ou autre forme de compensation de la part d'entreprises qui vendent des traitements contre l'humidité, des produits anti-moisissures, des systèmes de ventilation ou des services de traitement.\n\nCela ne signifie pas que le site ne puisse pas facturer ses propres services légitimes ou des activités liées à sa mission. Cela signifie que nous n'acceptons pas d'argent d'entreprises dont l'intérêt commercial dépend de la recommandation ou de la vente de traitements.\n\nLorsque nous recommandons un produit, une méthode ou un service, nous le faisons parce qu'il repose sur une base scientifique ou présente une utilité réelle pour l'utilisateur.",
       },
       {
         eyebrow: "2. Base scientifique",
         title: "Littérature évaluée par les pairs et normes reconnues",
-        body: "Tout le contenu clinique et technique de ce site repose sur de la littérature scientifique évaluée par les pairs ou sur des normes techniques reconnues au niveau international. Nos sources principales incluent :\n\nLignes directrices de l'OMS pour la qualité de l'air intérieur : humidité et moisissures (2009)\n\nIICRC S520 norme de remédiation professionnelle des moisissures, 4e édition (2024)\n\nEPA guide de remédiation des moisissures\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nRecherches scientifiques publiées avec citations explicites",
+        body: "Tout le contenu clinique et technique de ce site repose sur de publications scientifiques reconnues ou sur des normes techniques reconnues au niveau international. Nos sources principales incluent :\n\nLignes directrices de l'OMS pour la qualité de l'air intérieur : humidité et moisissures (2009)\n\nIICRC S520 norme de traitement professionnelle des moisissures, 4e édition (2024)\n\nEPA guide de traitement des moisissures\n\nInstitute of Medicine Damp Indoor Spaces and Health (2004)\n\nRecherches scientifiques publiées avec citations explicites",
       },
       {
         eyebrow: "3. Honnêteté face à l'incertitude",
@@ -170,17 +170,17 @@ const editorialPolicyByLocale: Record<ActiveLocale, EditorialPolicyLocaleContent
       {
         eyebrow: "4. Pas d'exagération du risque",
         title: "La précision avant la peur",
-        body: "Les moisissures dans le logement sont un problème réel, avec des conséquences sanitaires documentées. Ce n'est pas, dans la plupart des cas, une urgence mortelle. Écrire sur les moisissures dans le but de créer une peur disproportionnée est une pratique que ce site rejette explicitement.",
+        body: "Les moisissures dans le logement sont un problème réel, avec des conséquences sur la santé documentées. Ce n'est pas, dans la plupart des cas, une urgence mortelle. Créer une peur disproportionnée pour pousser à l'action est une pratique que ce site rejette explicitement.",
       },
       {
         eyebrow: "5. Transparence sur les limites",
         title: "Le site ne remplace pas une évaluation professionnelle",
-        body: "Ce site ne remplace pas un avis médical professionnel, une évaluation technique sur place, ni un diagnostic de laboratoire. Dans les articles de santé, cet avertissement est affiché de manière visible.",
+        body: "Ce site ne remplace pas un avis médical, une évaluation technique sur place, ni un diagnostic de laboratoire. Dans les articles de santé, cet avertissement est affiché de manière visible.",
       },
       {
         eyebrow: "6. Mises à jour",
-        title: "Révision et actualisation lorsque la science évolue",
-        body: "Nous nous engageons à revoir et à actualiser le contenu lorsque de nouvelles preuves scientifiques pertinentes sont publiées. La date de dernière révision est indiquée sur chaque article.",
+        title: "Révision et actualisation au fil des avancées scientifiques",
+        body: "Nous nous engageons à revoir et à actualiser le contenu lorsque de nouvelles données scientifiques pertinentes sont publiées. La date de dernière révision est indiquée sur chaque article.",
       },
       {
         eyebrow: "7. Erreurs et corrections",

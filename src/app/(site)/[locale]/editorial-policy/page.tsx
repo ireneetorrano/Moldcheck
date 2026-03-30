@@ -1,7 +1,6 @@
 import type { ActiveLocale } from "@/config/locales";
-import { GlobalPageBlocks } from "@/features/content/components/GlobalPageBlocks";
 import { getEditorialPolicyContent } from "@/features/content/data/editorialPolicyContent";
-import { PageShell } from "@/components/shared/PageShell";
+import { LegalPageLayout } from "@/features/content/components/LegalPageLayout";
 
 const editorialPolicyMeta: Record<ActiveLocale, { title: string; description: string }> = {
   pt: {
@@ -59,10 +58,5 @@ export default async function EditorialPolicyPage({
   const { locale } = await params;
   const page = getEditorialPolicyContent(locale);
 
-  return (
-    <>
-      <PageShell eyebrow={page.eyebrow} title={page.title} description={page.description} />
-      <GlobalPageBlocks page={page} />
-    </>
-  );
+  return <LegalPageLayout page={page} />;
 }

@@ -204,29 +204,29 @@ const homeContentByLocale: Record<ActiveLocale, HomeLocaleContent> = {
     description:
       "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
     heroTitle:
-      "Le Portugal a le deuxième pire problème de moisissures en Europe. La plupart des gens ne le savent pas.",
+      "Le Portugal est l'un des pays d'Europe les plus touchés par les moisissures. La plupart des gens l'ignorent.",
     heroBody:
-      "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+      "Une personne sur quatre au Portugal vit dans un logement touché par l'humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à vous expliquer ce que ça signifie pour votre santé, pour votre logement, et ce que vous pouvez faire concrètement.",
     heroPrimaryCtaLabel: "Évaluer mon logement gratuitement",
     heroSecondaryCtaLabel: "Lire le guide d’inspection",
     trustBarText:
       "Basé sur la recherche scientifique de l’OMS · Indépendant des entreprises de traitement · Sans publicité · Une initiative du FAIRBANK Group",
     problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
     problemBody:
-      "82 % des bâtiments au Portugal ont été construits avant l’an 2000 avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
-    problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais",
-    conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
+      "82 % des bâtiments au Portugal ont été construits avant l'an 2000, à une époque où les normes d'isolation et d'efficacité énergétique n'existaient pas encore. Porto affiche une humidité relative moyenne de 77 %, Lisbonne atteint jusqu’à 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et des qui retiennent l’humidité pendant des décennies.\n\nLa moisissure n'est pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
+    problemLink: "En savoir plus sur les bâtiments portugais et leurs failles",
+    conflictTitle: "Pourquoi le diagnostic gratuit est rarement objectif ",
     conflictBody:
-      "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
+      "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui identifie le problème est la même qui vend la solution.\n\nIl n'existe au Portugal aucune entité indépendante capable d'inspecter les moisissures dans votre logement et de vous dire ce qu'il en est, sans gagner d'argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
     conflictLink: "Lire notre politique éditoriale →",
-    featuredTitle: "Commencez ici",
+    featuredTitle: "Premiers pas",
     featuredDescription: "",
     nextStepsTitle: "Les prochaines étapes selon votre situation",
     aboutTitle: "Qui est derrière cela et pourquoi",
     aboutCardEyebrow: "MoldCheck.pt",
     aboutCardTitle: "Qui est derrière cela et pourquoi",
     aboutBody:
-      "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
+      "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne touchons aucune commission de la part des entreprises que nous mentionnons. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin, pas parce que nous avons quelque chose à y gagner.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
     aboutLink: "Lire la politique éditoriale complète →",
     footerNote:
       "© MoldCheck.pt Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
@@ -634,7 +634,7 @@ function getConflictEyebrow(locale: ActiveLocale) {
   const labels: Record<ActiveLocale, string> = {
     pt: "O conflito de interesse",
     en: "The conflict of interest",
-    fr: "Le conflit d’intérêts",
+    fr: "Le conflit d’intérêt",
     de: "Der Interessenkonflikt",
     nl: "Het belangenconflict",
     it: "Il conflitto di interessi",

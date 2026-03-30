@@ -289,17 +289,17 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
       "Diagnostic indépendant, analyse en laboratoire et suivi présentés avec clarté, sans cadrage commercial orienté vers le traitement.",
     independentTitle: "Que signifie \u00ab\u00a0ind\u00e9pendant\u00a0\u00bb ?",
     independentParagraphs: [
-      "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est le début d’un entonnoir commercial pas un service d’information impartial.",
-      "Une inspection indépendante fonctionne différemment. L’inspecteur facture son temps. Il ne reçoit aucune commission de l’entreprise de remédiation, du fabricant du système de ventilation, ni d’aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire avec précision ce que vous avez.",
+      "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est la première étape d'un processus de vente pas un service d’information impartial.",
+      "Une inspection indépendante fonctionne différemment. L'inspecteur facture sa prestation. Il ne touche aucune commission de l'entreprise de traitement, du fabricant de système de ventilation, ni d'aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire exactement ce qu'il en est.",
       "C’est le modèle qu’InspectOS représente et le seul modèle que MoldCheck.pt recommande.",
     ],
     howItWorksTitle: "Comment cela fonctionne",
     howItWorksBody:
-      "Les inspections sont réalisées par des inspecteurs certifiés InspectOS équipés de :\n\nHygromètre numérique de précision mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité ou non d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de remédiation spécifiques. Nous n’avons aucun accord commercial avec des entreprises de remédiation.",
+      "Les inspections sont réalisées par des inspecteurs certifiés InspectOS, équipés de :\n\nHygromètre numérique de précision mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité ou non d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de traitement spécifiques. Nous n’avons aucun accord commercial avec elles.",
     servicesTitle: "Services disponibles",
     tier1Cards: [
       {
-        eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
+        eyebrow: "NIVEAU 1 Inspection visuelle et technique",
         title: "Inspection standard",
         body:
           "Inspection complète du logement avec hygromètre, humidimètre et caméra thermographique. Inclut un rapport écrit.\n\nPrix indicatif : €250 €400 (jusqu’à 100 m²) · €400 €800 (jusqu’à 250 m²)",
@@ -314,7 +314,7 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
         eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
         title: "Inspection post-inondation / urgence",
         body:
-          "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Réponse rapide disponible.\n\nPrix indicatif : €300 €500",
+          "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Intervention rapide possible.\n\nPrix indicatif : €300 €500",
       },
       {
         eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
@@ -326,9 +326,9 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     tier2Cards: [
       {
         eyebrow: "NIVEAU 2 Analyse en laboratoire",
-        title: "Prélèvement d’air + analyse mycologique",
+        title: "Prélèvement d’air et analyse mycologique",
         body:
-          "Lorsque l’inspection visuelle et instrumentale ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur avec analyse dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500 €900 (inclut inspection, prélèvement et analyse)",
+          "Lorsque l’inspection visuelle et technique ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur, analysés dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500 €900 (inclut inspection, prélèvement et analyse)",
       },
       {
         eyebrow: "NIVEAU 2 Analyse en laboratoire",
@@ -366,16 +366,16 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     ],
     tier4Cards: [
       {
-        eyebrow: "NIVEAU 4 Surveillance continue",
+        eyebrow: "NIVEAU 4 Suivi régulier",
         title: "Capteur de qualité de l’air intérieur + suivi",
         body:
-          "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-remédiation.\n\nPrix indicatif : €150 €300 (installation) + €25 €60/mois",
+          "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-traitement.\n\nPrix indicatif : €150 €300 (installation) + €25 €60/mois",
       },
       {
         eyebrow: "NIVEAU 4 Surveillance continue",
         title: "Réinspection annuelle",
         body:
-          "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter précocement une récidive.\n\nPrix indicatif : €180 €280/an",
+          "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter rapidement toute récidive.\n\nPrix indicatif : €180 €280/an",
       },
     ],
     bookingTitle: "Comment réserver",
@@ -399,12 +399,12 @@ const servicesContentByLocale: Record<ActiveLocale, ServicesLocaleContent> = {
     ],
     coverageTitle: "Couverture géographique",
     coverageBody:
-      "Couverture actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion vérifiez la disponibilité pour votre zone.",
+      "Actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion vérifiez la disponibilité pour votre zone.",
     pricingTitle: "Note sur les prix",
     pricingBody:
-      "Les prix indiqués sont des fourchettes approximatives basées sur la taille et la complexité du logement. Le prix final est confirmé après un premier contact et avant tout engagement. Il n’existe pas de frais séparés de diagnostic : le coût total de l’inspection correspond au prix du service.",
+      "Les prix indiqués sont des fourchettes approximatives selon la taille et la complexité du logement. Le prix final est confirmé après un premier échange et avant tout engagement. Il n'y a pas de frais de diagnostic séparés: le coût total de l’inspection correspond au prix du service.",
     disclosureText:
-      "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne recevons aucune commission de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons qu’elle est nécessaire pas parce que nous profitons du traitement qui pourrait suivre.",
+      "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne vendons pas de traitements contre l'humidité. Nous ne touchons aucune commission de la part des entreprises que nous mentionnons. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin, pas parce que nous avons quelque chose à y gagner.",
   },
   de: {
     eyebrow: "Unabhängige Inspektion",

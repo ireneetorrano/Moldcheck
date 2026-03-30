@@ -276,16 +276,16 @@ const servicesContentByLocale = {
         description: "Diagnostic indépendant, analyse en laboratoire et suivi présentés avec clarté, sans cadrage commercial orienté vers le traitement.",
         independentTitle: "Que signifie \u00ab\u00a0ind\u00e9pendant\u00a0\u00bb ?",
         independentParagraphs: [
-            "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est le début d’un entonnoir commercial pas un service d’information impartial.",
-            "Une inspection indépendante fonctionne différemment. L’inspecteur facture son temps. Il ne reçoit aucune commission de l’entreprise de remédiation, du fabricant du système de ventilation, ni d’aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire avec précision ce que vous avez.",
+            "Au Portugal, le diagnostic des problèmes d’humidité et de moisissures est presque toujours réalisé par l’entreprise qui va ensuite vendre le traitement. Le diagnostic gratuit est la première étape d'un processus de vente pas un service d’information impartial.",
+            "Une inspection indépendante fonctionne différemment. L'inspecteur facture sa prestation. Il ne touche aucune commission de l'entreprise de traitement, du fabricant de système de ventilation, ni d'aucune autre entreprise susceptible de bénéficier du résultat du diagnostic. Son seul intérêt est de vous dire exactement ce qu'il en est.",
             "C’est le modèle qu’InspectOS représente et le seul modèle que MoldCheck.pt recommande."
         ],
         howItWorksTitle: "Comment cela fonctionne",
-        howItWorksBody: "Les inspections sont réalisées par des inspecteurs certifiés InspectOS équipés de :\n\nHygromètre numérique de précision mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité ou non d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de remédiation spécifiques. Nous n’avons aucun accord commercial avec des entreprises de remédiation.",
+        howItWorksBody: "Les inspections sont réalisées par des inspecteurs certifiés InspectOS, équipés de :\n\nHygromètre numérique de précision mesure de l’humidité relative et de la température de l’air\n\nHumidimètre pour matériaux mesure non invasive de la teneur en humidité des murs, sols et plafonds\n\nCaméra thermographique détection des ponts thermiques, infiltrations cachées et zones de condensation invisibles à l’œil nu\n\nCapacité de prélèvement surfaces, matériaux et air, pour analyse en laboratoire lorsque cela est indiqué\n\nAprès l’inspection, vous recevez un rapport écrit couvrant : la localisation et l’étendue du problème, la cause probable, des recommandations fondées sur des preuves scientifiques, et une indication claire sur la nécessité ou non d’une analyse en laboratoire.\n\nLe rapport n’inclut pas de devis de traitement. Nous ne recommandons pas d’entreprises de traitement spécifiques. Nous n’avons aucun accord commercial avec elles.",
         servicesTitle: "Services disponibles",
         tier1Cards: [
             {
-                eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
+                eyebrow: "NIVEAU 1 Inspection visuelle et technique",
                 title: "Inspection standard",
                 body: "Inspection complète du logement avec hygromètre, humidimètre et caméra thermographique. Inclut un rapport écrit.\n\nPrix indicatif : €250 €400 (jusqu’à 100 m²) · €400 €800 (jusqu’à 250 m²)"
             },
@@ -297,7 +297,7 @@ const servicesContentByLocale = {
             {
                 eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
                 title: "Inspection post-inondation / urgence",
-                body: "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Réponse rapide disponible.\n\nPrix indicatif : €300 €500"
+                body: "Pour les logements touchés par une inondation, une rupture de canalisation ou une infiltration soudaine. Axée sur l’évaluation des dégâts des eaux et du risque de contamination fongique. Intervention rapide possible.\n\nPrix indicatif : €300 €500"
             },
             {
                 eyebrow: "NIVEAU 1 Inspection visuelle et instrumentale",
@@ -308,8 +308,8 @@ const servicesContentByLocale = {
         tier2Cards: [
             {
                 eyebrow: "NIVEAU 2 Analyse en laboratoire",
-                title: "Prélèvement d’air + analyse mycologique",
-                body: "Lorsque l’inspection visuelle et instrumentale ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur avec analyse dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500 €900 (inclut inspection, prélèvement et analyse)"
+                title: "Prélèvement d’air et analyse mycologique",
+                body: "Lorsque l’inspection visuelle et technique ne suffit pas à identifier les espèces présentes ou à quantifier précisément le risque, nous recommandons une analyse en laboratoire.\n\nPrélèvement d’échantillons d’air intérieur et extérieur, analysés dans un laboratoire certifié ISO 17025. Identifie les espèces fongiques présentes et compare les concentrations intérieures et extérieures.\n\nPrix indicatif : €500 €900 (inclut inspection, prélèvement et analyse)"
             },
             {
                 eyebrow: "NIVEAU 2 Analyse en laboratoire",
@@ -342,14 +342,14 @@ const servicesContentByLocale = {
         ],
         tier4Cards: [
             {
-                eyebrow: "NIVEAU 4 Surveillance continue",
+                eyebrow: "NIVEAU 4 Suivi régulier",
                 title: "Capteur de qualité de l’air intérieur + suivi",
-                body: "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-remédiation.\n\nPrix indicatif : €150 €300 (installation) + €25 €60/mois"
+                body: "Installation d’un capteur de surveillance continue (CO₂, TVOC, température, humidité relative). Rapport mensuel avec analyse des tendances. Adapté aux logements avec problèmes récurrents ou au suivi post-traitement.\n\nPrix indicatif : €150 €300 (installation) + €25 €60/mois"
             },
             {
                 eyebrow: "NIVEAU 4 Surveillance continue",
                 title: "Réinspection annuelle",
-                body: "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter précocement une récidive.\n\nPrix indicatif : €180 €280/an"
+                body: "Pour les logements ayant un historique de problèmes d’humidité. Visite annuelle pour évaluer les conditions et détecter rapidement toute récidive.\n\nPrix indicatif : €180 €280/an"
             }
         ],
         bookingTitle: "Comment réserver",
@@ -371,10 +371,10 @@ const servicesContentByLocale = {
             }
         ],
         coverageTitle: "Couverture géographique",
-        coverageBody: "Couverture actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion vérifiez la disponibilité pour votre zone.",
+        coverageBody: "Actuellement disponible à Lisbonne, Porto, Setúbal, Cascais, Sintra, Braga et en Algarve (Faro, Lagos, Albufeira). Couverture en expansion vérifiez la disponibilité pour votre zone.",
         pricingTitle: "Note sur les prix",
-        pricingBody: "Les prix indiqués sont des fourchettes approximatives basées sur la taille et la complexité du logement. Le prix final est confirmé après un premier contact et avant tout engagement. Il n’existe pas de frais séparés de diagnostic : le coût total de l’inspection correspond au prix du service.",
-        disclosureText: "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne recevons aucune commission de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons qu’elle est nécessaire pas parce que nous profitons du traitement qui pourrait suivre."
+        pricingBody: "Les prix indiqués sont des fourchettes approximatives selon la taille et la complexité du logement. Le prix final est confirmé après un premier échange et avant tout engagement. Il n'y a pas de frais de diagnostic séparés: le coût total de l’inspection correspond au prix du service.",
+        disclosureText: "MoldCheck.pt est une initiative du FAIRBANK Group, l’entreprise à l’origine d’InspectOS. Nous ne vendons pas de traitements contre l’humidité. Nous ne vendons pas de traitements contre l'humidité. Nous ne touchons aucune commission de la part des entreprises que nous mentionnons. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin, pas parce que nous avons quelque chose à y gagner."
     },
     de: {
         eyebrow: "Unabhängige Inspektion",
@@ -933,17 +933,17 @@ const aboutContentByLocale = {
     },
     fr: {
         eyebrow: "À propos de MoldCheck",
-        title: "Ce qu'est MoldCheck et pourquoi il existe",
-        description: "MoldCheck existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
+        title: "Ce qu'est MoldCheck et sa raison d'être",
+        description: "MoldCheck existe pour expliquer les moisissures, l'humidité et leurs effets sur la santé au Portugal, de manière indépendante et fondée sur la science.",
         introParagraphs: [
-            "MoldCheck est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
-            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales les lignes directrices de l'OMS de 2009, la norme IICRC S520 existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
+            "MoldCheck est né d'une observation simple : le Portugal est le deuxième pays européen le plus touché par les moisissures, et pourtant aucune source indépendante n'existe pour les personnes confrontées à cette réalité.",
+            "Les entreprises proposent des diagnostics gratuits en gagnant de l'argent sur les traitements qu'elles recommandent, et les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins sont rarement formés pour évaluer l'impact du logement sur la santé. Quant aux principales références internationales, les lignes directrices de l'OMS de 2009, la norme IICRC S520, elles sont rédigées dans un langage technique inaccessible au grand public.",
             "Ce site existe pour combler ce manque."
         ],
         introEyebrow: "MoldCheck est né d'une observation simple :",
         behindEyebrow: "TRANSPARENCE",
-        behindTitle: "Qui est derrière cela",
-        behindBody: "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
+        behindTitle: "Qui est derrière MoldCheck",
+        behindBody: "MoldCheck est une initiative du FAIRBANK Group, qui exploite InspectOS, une plateforme d'inspection immobilière indépendante au Portugal.\n\nNotre intérêt commercial est lié au diagnostic indépendant, pas au traitement. Un inspecteur qui facture sa prestation sans toucher de commission sur les travaux qui suivent : c'est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir pris conscience de l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
     },
     de: {
         eyebrow: "Über MoldCheck",
@@ -1267,24 +1267,24 @@ const homeContentByLocale = {
     fr: {
         eyebrow: "Ressource éditoriale indépendante sur les moisissures, l’humidité et la qualité de l’air intérieur",
         description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
-        heroTitle: "Le Portugal a le deuxième pire problème de moisissures en Europe. La plupart des gens ne le savent pas.",
-        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
+        heroTitle: "Le Portugal est l'un des pays d'Europe les plus touchés par les moisissures. La plupart des gens l'ignorent.",
+        heroBody: "Une personne sur quatre au Portugal vit dans un logement touché par l'humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à vous expliquer ce que ça signifie pour votre santé, pour votre logement, et ce que vous pouvez faire concrètement.",
         heroPrimaryCtaLabel: "Évaluer mon logement gratuitement",
         heroSecondaryCtaLabel: "Lire le guide d’inspection",
         trustBarText: "Basé sur la recherche scientifique de l’OMS · Indépendant des entreprises de traitement · Sans publicité · Une initiative du FAIRBANK Group",
         problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
-        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000 avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
-        problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais",
-        conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
-        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
+        problemBody: "82 % des bâtiments au Portugal ont été construits avant l'an 2000, à une époque où les normes d'isolation et d'efficacité énergétique n'existaient pas encore. Porto affiche une humidité relative moyenne de 77 %, Lisbonne atteint jusqu’à 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et des qui retiennent l’humidité pendant des décennies.\n\nLa moisissure n'est pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
+        problemLink: "En savoir plus sur les bâtiments portugais et leurs failles",
+        conflictTitle: "Pourquoi le diagnostic gratuit est rarement objectif ",
+        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui identifie le problème est la même qui vend la solution.\n\nIl n'existe au Portugal aucune entité indépendante capable d'inspecter les moisissures dans votre logement et de vous dire ce qu'il en est, sans gagner d'argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
         conflictLink: "Lire notre politique éditoriale →",
-        featuredTitle: "Commencez ici",
+        featuredTitle: "Premiers pas",
         featuredDescription: "",
         nextStepsTitle: "Les prochaines étapes selon votre situation",
         aboutTitle: "Qui est derrière cela et pourquoi",
         aboutCardEyebrow: "MoldCheck.pt",
         aboutCardTitle: "Qui est derrière cela et pourquoi",
-        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne vendons pas de traitements contre l’humidité. Nous ne percevons pas de commissions de la part d’entreprises de remédiation. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c’est parce que nous pensons que vous en avez besoin pas parce que nous profitons du traitement qui suit.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
+        aboutBody: "MoldCheck.pt est une initiative du FAIRBANK Group. FAIRBANK exploite InspectOS, une plateforme indépendante d’inspection immobilière au Portugal.\n\nNous ne touchons aucune commission de la part des entreprises que nous mentionnons. Lorsque nous recommandons une inspection ou une analyse en laboratoire, c'est parce que nous pensons que vous en avez besoin, pas parce que nous avons quelque chose à y gagner.\n\nTout le contenu de ce site repose sur des recherches scientifiques évaluées par les pairs, notamment les recommandations de l’OMS de 2009 et la norme IICRC S520. Lorsque la science est incertaine, nous le disons.",
         aboutLink: "Lire la politique éditoriale complète →",
         footerNote: "© MoldCheck.pt Une initiative du FAIRBANK Group\nInspectOS · PropCheck.pt · Politique de confidentialité · Politique éditoriale · Contact\nCe site ne remplace pas un avis médical ou technique professionnel.",
         featuredCards: [
@@ -1621,7 +1621,7 @@ function getConflictEyebrow(locale) {
     const labels = {
         pt: "O conflito de interesse",
         en: "The conflict of interest",
-        fr: "Le conflit d’intérêts",
+        fr: "Le conflit d’intérêt",
         de: "Der Interessenkonflikt",
         nl: "Het belangenconflict",
         it: "Il conflitto di interessi",
@@ -1915,7 +1915,7 @@ const privacyContentByLocale = {
         transfersTitle: "4. Transferências internacionais de dados",
         transfersBody: "Os dados pessoais são tratados preferencialmente na União Europeia. Se um prestador de serviços tratar dados fora da UE/EEE, garantimos que exista:\n\numa decisão de adequação da Comissão Europeia, ou\n\nCláusulas Contratuais-Tipo (Standard Contractual Clauses SCC) aprovadas pela Comissão Europeia.",
         rightsTitle: "5. Os seus direitos",
-        rightsBody: "Ao abrigo do RGPD e da Lei n.º 58/2019, tem os seguintes direitos:\n\ndireito de acesso\n\ndireito de rectificação\n\ndireito ao apagamento\n\ndireito à limitação do tratamento\n\ndireito à portabilidade dos dados\n\ndireito de oposição\n\ndireito de retirar o consentimento a qualquer momento\n\nPara exercer qualquer destes direitos: info@moldcheck.pt\n\nResponderemos no prazo de 30 dias. Em casos complexos, este prazo pode ser estendido até 60 dias, sendo o utilizador informado dessa extensão.",
+        rightsBody: "Ao abrigo do RGPD e da Lei n.º 58/2019, tem os seguintes direitos:\n\n— Direito de acesso (artigo 15.º do RGPD): saber que dados pessoais seus tratamos e obter uma cópia desses dados.\n\n— Direito de rectificação (artigo 16.º): pedir a correcção de dados inexactos ou incompletos.\n\n— Direito ao apagamento (artigo 17.º): solicitar a eliminação dos seus dados pessoais (\"direito a ser esquecido\"), quando aplicável.\n\n— Direito à limitação do tratamento (artigo 18.º): pedir a suspensão do tratamento dos seus dados em determinadas circunstâncias.\n\n— Direito à portabilidade dos dados (artigo 20.º): receber os seus dados num formato estruturado, de uso corrente e legível por máquina, ou solicitar a sua transmissão a outro responsável pelo tratamento, quando tecnicamente possível.\n\n— Direito de oposição (artigo 21.º): opor-se ao tratamento baseado em interesses legítimos.\n\n— Direito de retirar o consentimento: em qualquer momento, sem comprometer a licitude do tratamento efectuado com base no consentimento antes da sua retirada.\n\nPara exercer qualquer destes direitos: privacidade@moldcheck.pt\n\nResponderemos no prazo de 30 dias. Em casos complexos, poderemos prorrogar este prazo até 60 dias, informando-o dessa extensão.",
         complaintTitle: "6. Apresentação de reclamação à autoridade de controlo",
         complaintBody: "Se considerar que o tratamento dos seus dados pessoais viola o RGPD, tem o direito de apresentar reclamação à:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisboa\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nPode também apresentar reclamação junto da autoridade de controlo do seu país de residência, se aplicável.",
         securityTitle: "7. Segurança",
@@ -1946,7 +1946,7 @@ const privacyContentByLocale = {
         transfersTitle: "4. International data transfers",
         transfersBody: "Personal data is processed preferably within the European Union. Where a service provider processes data outside the EU/EEA, we ensure that either:\n\na European Commission adequacy decision is in place, or\n\nStandard Contractual Clauses (SCCs) approved by the European Commission are in force.",
         rightsTitle: "5. Your rights",
-        rightsBody: "Under the GDPR and Portuguese Law 58/2019, you have the following rights:\n\nright of access\n\nright to rectification\n\nright to erasure\n\nright to restriction of processing\n\nright to data portability\n\nright to object\n\nright to withdraw consent at any time\n\nTo exercise any of these rights: info@moldcheck.pt\n\nWe will respond within 30 days. In complex cases, this may be extended to 60 days, and you will be informed of the extension.",
+        rightsBody: "Under the GDPR and Portuguese Law 58/2019, you have the following rights:\n\n— Right of access (Article 15 GDPR): to know what personal data we process about you and to obtain a copy.\n\n— Right to rectification (Article 16): to request correction of inaccurate or incomplete data.\n\n— Right to erasure (Article 17): to request deletion of your personal data (\"right to be forgotten\"), where applicable.\n\n— Right to restriction of processing (Article 18): to request suspension of processing in certain circumstances.\n\n— Right to data portability (Article 20): to receive your data in a structured, commonly used, machine-readable format, or to request its transfer to another controller, where technically feasible.\n\n— Right to object (Article 21): to object to processing based on legitimate interests.\n\n— Right to withdraw consent: at any time, without affecting the lawfulness of processing carried out before withdrawal.\n\nTo exercise any of these rights: privacidade@moldcheck.pt\n\nWe will respond within 30 days. In complex cases, this period may be extended to 60 days, and you will be informed of the extension.",
         complaintTitle: "6. Right to lodge a complaint",
         complaintBody: "If you believe our processing of your personal data violates the GDPR, you have the right to lodge a complaint with:\n\nCNPD Comissão Nacional de Protecção de Dados\nRua de São Bento, n.º 148, 3.º\n1200-821 Lisbon\nPortugal\nwww.cnpd.pt\n\ngeral@cnpd.pt\n\nYou may also lodge a complaint with the supervisory authority in your country of residence, where applicable.",
         securityTitle: "7. Security",

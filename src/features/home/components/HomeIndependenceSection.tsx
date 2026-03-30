@@ -30,7 +30,7 @@ const content: Record<ActiveLocale, IndependenceLocale> = {
     title: "MoldCheck.pt est l'alternative indépendante.",
     items: [
       { headline: "Aucune vente de traitements", sub: "Nous inspectons et informons — nous ne vendons pas de remédiation." },
-      { headline: "Aucune commission de remédiation", sub: "Nos incitations ne dépendent pas de ce qui est recommandé ensuite." },
+      { headline: "Aucune commission", sub: "Nos incitations ne dépendent pas de ce qui est recommandé ensuite." },
       { headline: "Information fondée sur la science", sub: "Nous publions ce que les preuves soutiennent, y compris l'incertitude là où elle existe." },
     ],
   },

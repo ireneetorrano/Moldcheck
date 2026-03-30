@@ -56,19 +56,19 @@ const aboutContentByLocale: Record<ActiveLocale, AboutLocaleContent> = {
   },
   fr: {
     eyebrow: "À propos de MoldCheck",
-    title: "Ce qu'est MoldCheck et pourquoi il existe",
+    title: "Ce qu'est MoldCheck et sa raison d'être",
     description:
-      "MoldCheck existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
+      "MoldCheck existe pour expliquer les moisissures, l'humidité et leurs effets sur la santé au Portugal, de manière indépendante et fondée sur la science.",
     introParagraphs: [
-      "MoldCheck est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
-      "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales les lignes directrices de l'OMS de 2009, la norme IICRC S520 existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
+      "MoldCheck est né d'une observation simple : le Portugal est le deuxième pays européen le plus touché par les moisissures, et pourtant aucune source indépendante n'existe pour les personnes confrontées à cette réalité.",
+      "Les entreprises proposent des diagnostics gratuits en gagnant de l'argent sur les traitements qu'elles recommandent, et les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins sont rarement formés pour évaluer l'impact du logement sur la santé. Quant aux principales références internationales, les lignes directrices de l'OMS de 2009, la norme IICRC S520, elles sont rédigées dans un langage technique inaccessible au grand public.",
       "Ce site existe pour combler ce manque.",
     ],
     introEyebrow: "MoldCheck est né d'une observation simple :",
     behindEyebrow: "TRANSPARENCE",
-    behindTitle: "Qui est derrière cela",
+    behindTitle: "Qui est derrière MoldCheck",
     behindBody:
-      "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer.",
+      "MoldCheck est une initiative du FAIRBANK Group, qui exploite InspectOS, une plateforme d'inspection immobilière indépendante au Portugal.\n\nNotre intérêt commercial est lié au diagnostic indépendant, pas au traitement. Un inspecteur qui facture sa prestation sans toucher de commission sur les travaux qui suivent : c'est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir pris conscience de l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer.",
   },
   de: {
     eyebrow: "Über MoldCheck",

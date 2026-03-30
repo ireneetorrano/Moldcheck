@@ -1,5 +1,5 @@
 module.exports = [
-"[project]/.next-internal/server/app/(site)/[locale]/about/page/actions.js [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/.next-internal/server/app/(site)/[locale]/privacy/page/actions.js [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__, module, exports) => {
 
 }),
 "[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
@@ -13,6 +13,24 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/not-found.tsx
 "[project]/src/app/(site)/[locale]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
 __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(site)/[locale]/layout.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/src/config/site.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "siteConfig",
+    ()=>siteConfig
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/locales.ts [app-rsc] (ecmascript)");
+;
+const siteConfig = {
+    name: "MoldCheck.pt",
+    legalEntity: "FAIRBANK Group",
+    defaultLocale: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["defaultLocale"],
+    domain: ("TURBOPACK compile-time value", "http://www.moldcheck.pt") ?? "https://moldcheck.pt",
+    editorialEmail: "info@moldcheck.pt",
+    contactEmail: "info@moldcheck.pt"
+}; // TODO(CONFIG): Confirm production domain and non-www redirect at platform level.
 }),
 "[project]/src/features/content/data/aboutContent.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -68,17 +86,17 @@ const aboutContentByLocale = {
     },
     fr: {
         eyebrow: "À propos de MoldCheck",
-        title: "Ce qu'est MoldCheck et sa raison d'être",
-        description: "MoldCheck existe pour expliquer les moisissures, l'humidité et leurs effets sur la santé au Portugal, de manière indépendante et fondée sur la science.",
+        title: "Ce qu'est MoldCheck et pourquoi il existe",
+        description: "MoldCheck existe pour expliquer les moisissures, l'humidité et le risque intérieur au Portugal avec indépendance éditoriale et base scientifique.",
         introParagraphs: [
-            "MoldCheck est né d'une observation simple : le Portugal est le deuxième pays européen le plus touché par les moisissures, et pourtant aucune source indépendante n'existe pour les personnes confrontées à cette réalité.",
-            "Les entreprises proposent des diagnostics gratuits en gagnant de l'argent sur les traitements qu'elles recommandent, et les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins sont rarement formés pour évaluer l'impact du logement sur la santé. Quant aux principales références internationales, les lignes directrices de l'OMS de 2009, la norme IICRC S520, elles sont rédigées dans un langage technique inaccessible au grand public.",
+            "MoldCheck est né d'une observation simple : le Portugal a le deuxième pire problème de moisissures en Europe, et il n'existe aucune source d'information indépendante pour les personnes qui vivent avec cette réalité.",
+            "Le marché propose des diagnostics gratuits d'entreprises qui gagnent de l'argent grâce aux traitements qu'elles recommandent. Les moteurs de recherche renvoient principalement des contenus produits par ces mêmes entreprises. Les médecins ont rarement une formation en médecine environnementale domestique. Et les principales normes de référence internationales les lignes directrices de l'OMS de 2009, la norme IICRC S520 existent en anglais, dans un langage technique, inaccessible au résident ordinaire.",
             "Ce site existe pour combler ce manque."
         ],
         introEyebrow: "MoldCheck est né d'une observation simple :",
         behindEyebrow: "TRANSPARENCE",
-        behindTitle: "Qui est derrière MoldCheck",
-        behindBody: "MoldCheck est une initiative du FAIRBANK Group, qui exploite InspectOS, une plateforme d'inspection immobilière indépendante au Portugal.\n\nNotre intérêt commercial est lié au diagnostic indépendant, pas au traitement. Un inspecteur qui facture sa prestation sans toucher de commission sur les travaux qui suivent : c'est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir pris conscience de l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
+        behindTitle: "Qui est derrière cela",
+        behindBody: "MoldCheck est une initiative du FAIRBANK Group. FAIRBANK Group exploite InspectOS, une plateforme indépendante d'inspection immobilière au Portugal.\n\nNotre lien commercial est avec le diagnostic indépendant pas avec le traitement. Un inspecteur indépendant qui facture son temps et ne perçoit aucune commission de l'entreprise de remédiation est exactement le modèle que ce site défend. C'est aussi le modèle qu'InspectOS représente.\n\nPieter Paul Castelein, fondateur du FAIRBANK Group, a rédigé l'essai fondateur de ce site après avoir découvert l'ampleur du problème au Portugal et constaté l'absence d'une ressource honnête pour l'expliquer."
     },
     de: {
         eyebrow: "Über MoldCheck",
@@ -165,24 +183,6 @@ function getAboutFallbackContent(locale) {
         sections: []
     };
 }
-}),
-"[project]/src/config/site.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "siteConfig",
-    ()=>siteConfig
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/locales.ts [app-rsc] (ecmascript)");
-;
-const siteConfig = {
-    name: "MoldCheck.pt",
-    legalEntity: "FAIRBANK Group",
-    defaultLocale: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["defaultLocale"],
-    domain: ("TURBOPACK compile-time value", "http://www.moldcheck.pt") ?? "https://moldcheck.pt",
-    editorialEmail: "info@moldcheck.pt",
-    contactEmail: "info@moldcheck.pt"
-}; // TODO(CONFIG): Confirm production domain and non-www redirect at platform level.
 }),
 "[project]/src/config/foundationalArticles.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -420,18 +420,18 @@ const homeContentByLocale = {
     fr: {
         eyebrow: "Ressource éditoriale indépendante sur les moisissures, l’humidité et la qualité de l’air intérieur",
         description: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
-        heroTitle: "Le Portugal est l'un des pays d'Europe les plus touchés par les moisissures. La plupart des gens l'ignorent.",
-        heroBody: "Une personne sur quatre au Portugal vit dans un logement touché par l'humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à vous expliquer ce que ça signifie pour votre santé, pour votre logement, et ce que vous pouvez faire concrètement.",
+        heroTitle: "Le Portugal a le deuxième pire problème de moisissures en Europe. La plupart des gens ne le savent pas.",
+        heroBody: "Une personne sur quatre au Portugal vit dans un logement affecté par l’humidité ou les moisissures. MoldCheck.pt est la seule ressource indépendante au Portugal dédiée à expliquer ce que cela signifie pour votre santé, votre logement, et ce que vous pouvez faire ensuite.",
         heroPrimaryCtaLabel: "Évaluer mon logement gratuitement",
         heroSecondaryCtaLabel: "Lire le guide d’inspection",
         trustBarText: "Basé sur la recherche scientifique de l’OMS · Indépendant des entreprises de traitement · Sans publicité · Une initiative du FAIRBANK Group",
         problemTitle: "Pourquoi le Portugal a-t-il autant de moisissures ?",
-        problemBody: "82 % des bâtiments au Portugal ont été construits avant l'an 2000, à une époque où les normes d'isolation et d'efficacité énergétique n'existaient pas encore. Porto affiche une humidité relative moyenne de 77 %, Lisbonne atteint jusqu’à 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et des qui retiennent l’humidité pendant des décennies.\n\nLa moisissure n'est pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
-        problemLink: "En savoir plus sur les bâtiments portugais et leurs failles",
-        conflictTitle: "Pourquoi le diagnostic gratuit est rarement objectif ",
-        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui identifie le problème est la même qui vend la solution.\n\nIl n'existe au Portugal aucune entité indépendante capable d'inspecter les moisissures dans votre logement et de vous dire ce qu'il en est, sans gagner d'argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
+        problemBody: "82 % des bâtiments au Portugal ont été construits avant l’an 2000 avant toute exigence réelle en matière d’isolation ou d’efficacité énergétique. Porto a une humidité relative moyenne de 77 %. Lisbonne atteint 84 % en hiver.\n\nLe résultat : condensation chronique, ponts thermiques, et murs qui retiennent l’humidité pendant des décennies.\n\nLes moisissures ne sont pas une fatalité. C’est le résultat prévisible de bâtiments qui n’ont jamais été correctement adaptés au climat dans lequel ils se trouvent.",
+        problemLink: "En savoir plus sur la vulnérabilité des bâtiments portugais",
+        conflictTitle: "Pourquoi le diagnostic gratuit n’est pas neutre",
+        conflictBody: "Les principales entreprises de traitement des moisissures au Portugal proposent des diagnostics gratuits à domicile. C’est une stratégie commerciale efficace : l’entreprise qui diagnostique le problème vend aussi la solution.\n\nIl n’existe au Portugal aucune entité indépendante qui évaluera les moisissures dans votre logement et vous dira ce que vous avez sans gagner d’argent sur ce qui suit.\n\nMoldCheck.pt est cette alternative. Nous ne vendons pas de traitements. Nous ne percevons pas de commissions. Nous publions ce que dit la science.",
         conflictLink: "Lire notre politique éditoriale →",
-        featuredTitle: "Premiers pas",
+        featuredTitle: "Commencez ici",
         featuredDescription: "",
         nextStepsTitle: "Les prochaines étapes selon votre situation",
         aboutTitle: "Qui est derrière cela et pourquoi",
@@ -774,7 +774,7 @@ function getConflictEyebrow(locale) {
     const labels = {
         pt: "O conflito de interesse",
         en: "The conflict of interest",
-        fr: "Le conflit d’intérêt",
+        fr: "Le conflit d’intérêts",
         de: "Der Interessenkonflikt",
         nl: "Het belangenconflict",
         it: "Il conflitto di interessi",
@@ -2490,174 +2490,246 @@ async function buildGlobalPageMetadata(locale, pageKey) {
     };
 }
 }),
-"[project]/src/app/(site)/[locale]/about/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/features/content/components/LegalPageLayout.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LegalPageLayout",
+    ()=>LegalPageLayout
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+// ── Section card rendered as a prose block ────────────────────────────────────
+function LegalCard({ card }) {
+    const paragraphs = card.body.split("\n\n").map((p)=>p.trim()).filter(Boolean);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "legal-card",
+        children: [
+            card.eyebrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "legal-card__eyebrow",
+                children: card.eyebrow
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 13,
+                columnNumber: 24
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "legal-card__title",
+                children: card.title
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "legal-card__body",
+                children: paragraphs.map((para, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: para
+                    }, i, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            card.ctaLabel && card.ctaHref && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: card.ctaHref,
+                className: "legal-card__link",
+                target: card.openInNewTab ? "_blank" : undefined,
+                rel: card.openInNewTab ? "noreferrer" : undefined,
+                children: [
+                    card.ctaLabel,
+                    " →"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 21,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+// ── Section ───────────────────────────────────────────────────────────────────
+function LegalSection({ section }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "legal-section",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "legal-section__title",
+                children: section.title
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "legal-section__cards",
+                children: section.cards.map((card, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(LegalCard, {
+                        card: card
+                    }, i, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+}
+function LegalPageLayout({ page }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "legal-page",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                className: "legal-page__header",
+                children: [
+                    page.eyebrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "legal-page__eyebrow",
+                        children: page.eyebrow
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 56,
+                        columnNumber: 26
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "legal-page__title",
+                        children: page.title
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, this),
+                    page.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "legal-page__description",
+                        children: page.description
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 58,
+                        columnNumber: 30
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 55,
+                columnNumber: 7
+            }, this),
+            page.introCards?.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "legal-intro",
+                children: page.introCards.map((card, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(LegalCard, {
+                        card: card
+                    }, i, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 65,
+                        columnNumber: 13
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 63,
+                columnNumber: 9
+            }, this) : null,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "legal-body",
+                children: page.sections.map((section, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(LegalSection, {
+                        section: section
+                    }, i, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 73,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 71,
+                columnNumber: 7
+            }, this),
+            page.disclosureTitle && page.disclosureText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: "legal-disclosure",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "legal-disclosure__title",
+                        children: page.disclosureTitle
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 80,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "legal-disclosure__text",
+                        children: page.disclosureText
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                        lineNumber: 81,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 79,
+                columnNumber: 9
+            }, this),
+            page.footerNote && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "legal-footer-note",
+                children: page.footerNote
+            }, void 0, false, {
+                fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+                lineNumber: 86,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/content/components/LegalPageLayout.tsx",
+        lineNumber: 53,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/app/(site)/[locale]/privacy/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
-    ()=>AboutPage,
+    ()=>PrivacyPage,
     "generateMetadata",
     ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$data$2f$aboutContent$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/content/data/aboutContent.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/sanity/pages.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$LegalPageLayout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/content/components/LegalPageLayout.tsx [app-rsc] (ecmascript)");
 ;
 ;
 ;
 async function generateMetadata({ params }) {
     const { locale } = await params;
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buildGlobalPageMetadata"])(locale, "about");
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buildGlobalPageMetadata"])(locale, "privacy");
 }
-async function AboutPage({ params }) {
+async function PrivacyPage({ params }) {
     const { locale } = await params;
-    const c = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$data$2f$aboutContent$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getAboutContent"])(locale);
-    const behindParagraphs = c.behindBody.split("\n\n").filter(Boolean);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "about-page",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "about-hero",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "about-hero__inner",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "about-hero__eyebrow",
-                            children: c.eyebrow
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 20,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "about-hero__title",
-                            children: c.title
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "about-hero__description",
-                            children: c.description
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 22,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                    lineNumber: 19,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "about-intro",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "about-intro__inner",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "about-intro__eyebrow",
-                            children: c.introEyebrow
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "about-intro__body",
-                            children: c.introParagraphs.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: p
-                                }, i, false, {
-                                    fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                                    lineNumber: 32,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "about-behind",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "about-behind__inner",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
-                            className: "about-behind__rule"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 41,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "about-behind__eyebrow",
-                            children: c.behindEyebrow
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "about-behind__title",
-                            children: c.behindTitle
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "about-behind__body",
-                            children: behindParagraphs.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: p
-                                }, i, false, {
-                                    fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                                    lineNumber: 46,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                            lineNumber: 44,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-                lineNumber: 39,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/(site)/[locale]/about/page.tsx",
-        lineNumber: 16,
-        columnNumber: 5
+    const page = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPageContent"])(locale, "privacy");
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$LegalPageLayout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LegalPageLayout"], {
+        page: page
+    }, void 0, false, {
+        fileName: "[project]/src/app/(site)/[locale]/privacy/page.tsx",
+        lineNumber: 13,
+        columnNumber: 10
     }, this);
 }
 }),
-"[project]/src/app/(site)/[locale]/about/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+"[project]/src/app/(site)/[locale]/privacy/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
-__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(site)/[locale]/about/page.tsx [app-rsc] (ecmascript)"));
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(site)/[locale]/privacy/page.tsx [app-rsc] (ecmascript)"));
 }),
 "[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
 
@@ -2667,4 +2739,4 @@ module.exports = mod;
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__9fabe2f6._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__e5710e61._.js.map
