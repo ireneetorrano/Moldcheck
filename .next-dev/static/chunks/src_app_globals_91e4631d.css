@@ -3151,6 +3151,57 @@ a.contact-info-card__value:hover {
   font-weight: 700;
 }
 
+.a5-hygro {
+  margin: .5rem 0 1.5rem;
+}
+
+.a5-hygro__subheading {
+  color: var(--mc-teal-dark);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 1rem 0 .4rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.a5-room--checklist .a5-room__subheading {
+  color: var(--mc-teal-dark);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: .75rem 0 .4rem;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.a5-room__checklist {
+  flex-direction: column;
+  gap: .45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.a5-room__check-item {
+  color: var(--mc-ink);
+  align-items: flex-start;
+  gap: .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  display: flex;
+}
+
+.a5-room__check-box {
+  color: var(--mc-teal-dark);
+  flex-shrink: 0;
+  margin-top: .05em;
+  font-size: 1rem;
+}
+
+.a5-room__check-text strong {
+  color: var(--mc-ink);
+}
+
 .a5-rooms {
   gap: .85rem;
   margin: .5rem 0 1rem;

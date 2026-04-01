@@ -105,13 +105,16 @@ const TABLE_HEADING_PREFIXES = [
     "o padrão de localização",
     "la localisation indique",
     "der standort zeigt",
-    "de locatie wijst"
+    "de locatie wijst",
+    "tabla de diagnóstico",
+    "leggere i risultati"
 ];
 const ASSESSMENT_HEADING_PREFIXES = [
     "how to interpret what you found",
     "comment interpréter ce que vous avez trouvé",
     "so interpretieren sie ihre befunde",
-    "hoe u uw bevindingen interpreteert"
+    "hoe u uw bevindingen interpreteert",
+    "niveles de actuación"
 ];
 const CHECKLIST_HEADING_PREFIXES = [
     "checklist de 20",
@@ -121,19 +124,27 @@ const CHECKLIST_HEADING_PREFIXES = [
     "checklist di 20",
     "lista de verificación de 20"
 ];
-const ROOM_HEADING_PREFIXES = [
-    "inspecção divisão",
+const ROOM_HEADING_PREFIXES = [];
+// All locales use checklist-style room rendering
+const ROOM_CHECKLIST_HEADING_PREFIXES = [
+    "inspección habitación",
+    "stanza per stanza",
     "room-by-room inspection",
-    "inspection pièce",
-    "zimmer-für-zimmer",
-    "kamer-voor-kamer",
-    "ispezione stanza",
-    "inspección habitación"
+    "inspecção divisão a divisão",
+    "inspection pièce par pièce",
+    "zimmer-für-zimmer-inspektion",
+    "kamer-voor-kamer inspectie"
+];
+const HYGRO_HEADING_PREFIXES = [
+    "herramienta fundamental",
+    "strumento fondamentale"
 ];
 const BULLETS_HEADING_PREFIXES = [
     "quand appeler un professionnel",
     "wann ein fachmann gerufen werden sollte",
-    "wanneer een professional te bellen"
+    "wanneer een professional te bellen",
+    "cuándo llamar",
+    "quando chiamare"
 ];
 function matchesPrefix(heading, prefixes) {
     const lower = heading.toLowerCase();
@@ -141,8 +152,13 @@ function matchesPrefix(heading, prefixes) {
 }
 function parseTableRows(paragraphs) {
     const rows = [];
+    let headers = [];
     for (const p of paragraphs){
         if (p.startsWith("## ")) break;
+        if (p.startsWith("HEADERS:")) {
+            headers = p.slice(8).split("|").map((s)=>s.trim());
+            continue;
+        }
         if (p.includes(" | ")) {
             const parts = p.split(" | ").map((s)=>s.trim());
             if (parts.length >= 2) {
@@ -156,7 +172,6 @@ function parseTableRows(paragraphs) {
         }
         const sep = p.includes(" → ") ? " → " : p.includes(" — ") ? " — " : null;
         if (!sep) {
-            // Skip intro/description paragraphs; stop only if we already have rows
             if (rows.length > 0) break;
             continue;
         }
@@ -166,7 +181,10 @@ function parseTableRows(paragraphs) {
             cause: p.slice(idx + sep.length).trim()
         });
     }
-    return rows;
+    return {
+        headers,
+        rows
+    };
 }
 function parseChecklistGroups(paragraphs) {
     const groups = [];
@@ -205,8 +223,8 @@ function parseAssessmentLevels(paragraphs) {
     const levels = [];
     for (const p of paragraphs){
         if (p.startsWith("## ")) break;
-        // Matches "Level N — Label: body" (EN), "Niveau N — Label: body" (FR), "Stufe N — Label: body" (DE)
-        const m = p.match(RegExp("^(?:Level|Niveau|Stufe)\\s+(\\d+)\\s*[—–-]\\s*([^:]+):\\s*(.+)$", "s"));
+        // Matches "Level N — Label: body" (EN), "Niveau N — Label: body" (FR/NL), "Stufe N — Label: body" (DE), "Nivel N — Label: body" (ES)
+        const m = p.match(RegExp("^(?:Level|Niveau|Stufe|Nivel)\\s+(\\d+)\\s*[—–-]\\s*([^:]+):\\s*(.+)$", "s"));
         if (m) {
             levels.push({
                 level: Number(m[1]),
@@ -247,7 +265,7 @@ function AssessmentScale(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 190,
+                        lineNumber: 217,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -255,26 +273,32 @@ function AssessmentScale(param) {
                         children: lv.body
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 193,
+                        lineNumber: 220,
                         columnNumber: 11
                     }, this)
                 ]
             }, lv.level, true, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 185,
+                lineNumber: 212,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 183,
+        lineNumber: 210,
         columnNumber: 5
     }, this);
 }
 _c = AssessmentScale;
 // ── Rich components ───────────────────────────────────────────────────────
 function LocationTable(param) {
-    let { rows } = param;
+    let { headers, rows } = param;
     const hasAction = rows.some((r)=>r.action !== undefined);
+    var _headers_;
+    const h0 = (_headers_ = headers[0]) !== null && _headers_ !== void 0 ? _headers_ : "Location";
+    var _headers_1;
+    const h1 = (_headers_1 = headers[1]) !== null && _headers_1 !== void 0 ? _headers_1 : "Cause";
+    var _headers_2;
+    const h2 = (_headers_2 = headers[2]) !== null && _headers_2 !== void 0 ? _headers_2 : "Action";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "a5-table-wrap",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
@@ -285,37 +309,37 @@ function LocationTable(param) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                 className: "a5-table__th a5-table__th--loc",
-                                children: "Localização do bolor"
+                                children: h0
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 209,
+                                lineNumber: 239,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                 className: "a5-table__th a5-table__th--cause",
-                                children: "Causa mais provável"
+                                children: h1
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 210,
+                                lineNumber: 240,
                                 columnNumber: 13
                             }, this),
                             hasAction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                 className: "a5-table__th a5-table__th--action",
-                                children: "O que precisa"
+                                children: h2
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 211,
+                                lineNumber: 241,
                                 columnNumber: 27
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 208,
+                        lineNumber: 238,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 207,
+                    lineNumber: 237,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -327,7 +351,7 @@ function LocationTable(param) {
                                     children: row.location
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 247,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -335,7 +359,7 @@ function LocationTable(param) {
                                     children: row.cause
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                    lineNumber: 218,
+                                    lineNumber: 248,
                                     columnNumber: 15
                                 }, this),
                                 hasAction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -343,29 +367,29 @@ function LocationTable(param) {
                                     children: row.action
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 249,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                            lineNumber: 216,
+                            lineNumber: 246,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 214,
+                    lineNumber: 244,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-            lineNumber: 206,
+            lineNumber: 236,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 205,
+        lineNumber: 235,
         columnNumber: 5
     }, this);
 }
@@ -388,7 +412,7 @@ function ChecklistSection(param) {
                         children: group.label
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 237,
+                        lineNumber: 267,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -420,17 +444,17 @@ function ChecklistSection(param) {
                                                 strokeLinejoin: "round"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                                lineNumber: 254,
+                                                lineNumber: 284,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 283,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                        lineNumber: 244,
+                                        lineNumber: 274,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -438,30 +462,30 @@ function ChecklistSection(param) {
                                         children: item
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 288,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, ii, true, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 243,
+                                lineNumber: 273,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 238,
+                        lineNumber: 268,
                         columnNumber: 11
                     }, this)
                 ]
             }, gi, true, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 236,
+                lineNumber: 266,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 234,
+        lineNumber: 264,
         columnNumber: 5
     }, this);
 }
@@ -480,7 +504,7 @@ function RoomSection(param) {
                         children: getRoomIcon(room.name)
                     }, void 0, false, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 274,
+                        lineNumber: 304,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -491,7 +515,7 @@ function RoomSection(param) {
                                 children: room.name
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 278,
+                                lineNumber: 308,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -499,24 +523,24 @@ function RoomSection(param) {
                                 children: room.body
                             }, void 0, false, {
                                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                                lineNumber: 279,
+                                lineNumber: 309,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                        lineNumber: 277,
+                        lineNumber: 307,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 273,
+                lineNumber: 303,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 271,
+        lineNumber: 301,
         columnNumber: 5
     }, this);
 }
@@ -530,16 +554,309 @@ function BulletSection(param) {
                 children: p.slice(2)
             }, i, false, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 293,
+                lineNumber: 323,
                 columnNumber: 11
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-        lineNumber: 289,
+        lineNumber: 319,
         columnNumber: 5
     }, this);
 }
 _c4 = BulletSection;
+function parseHygroRows(paragraphs) {
+    const intro = [];
+    let subheading = "";
+    let headers = [];
+    const rows = [];
+    for (const p of paragraphs){
+        if (p.startsWith("## ")) break;
+        if (p.startsWith("HEADERS:")) {
+            headers = p.slice(8).split("|").map((s)=>s.trim());
+            continue;
+        }
+        if (p.includes(" | ")) {
+            const parts = p.split(" | ").map((s)=>s.trim());
+            if (parts.length >= 2) rows.push({
+                hr: parts[0],
+                meaning: parts[1]
+            });
+            continue;
+        }
+        if (p.endsWith(":") && p.length < 40) {
+            subheading = p;
+            continue;
+        }
+        intro.push(p);
+    }
+    return {
+        intro,
+        subheading,
+        headers,
+        rows
+    };
+}
+function HygroTable(param) {
+    let { intro, subheading, headers, rows } = param;
+    var _headers_;
+    const h0 = (_headers_ = headers[0]) !== null && _headers_ !== void 0 ? _headers_ : "Relative humidity";
+    var _headers_1;
+    const h1 = (_headers_1 = headers[1]) !== null && _headers_1 !== void 0 ? _headers_1 : "Meaning";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "a5-hygro",
+        children: [
+            intro.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "article-page__para",
+                    children: p
+                }, i, false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 359,
+                    columnNumber: 28
+                }, this)),
+            subheading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "a5-hygro__subheading",
+                children: subheading
+            }, void 0, false, {
+                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                lineNumber: 360,
+                columnNumber: 22
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "a5-table-wrap",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                    className: "a5-table",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                        className: "a5-table__th a5-table__th--loc",
+                                        children: h0
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                        lineNumber: 365,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                        className: "a5-table__th a5-table__th--cause",
+                                        children: h1
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                        lineNumber: 366,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 364,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                            lineNumber: 363,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                            children: rows.map((row, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                    className: "a5-table__row",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                            className: "a5-table__td a5-table__td--loc",
+                                            children: row.hr
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                            lineNumber: 372,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                            className: "a5-table__td a5-table__td--cause",
+                                            children: row.meaning
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                            lineNumber: 373,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, i, true, {
+                                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                    lineNumber: 371,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                            lineNumber: 369,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 362,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                lineNumber: 361,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+        lineNumber: 358,
+        columnNumber: 5
+    }, this);
+}
+_c5 = HygroTable;
+function parseRoomChecklist(paragraphs) {
+    const rooms = [];
+    let current = null;
+    for (const p of paragraphs){
+        if (p.startsWith("## ")) break;
+        if (p.startsWith("□ ")) {
+            if (!current) continue;
+            const inner = p.slice(2).trim();
+            const boldMatch = inner.match(RegExp("^\\*\\*(.+?)\\*\\*(?:\\s*[—–-]\\s*(.+))?$", "s"));
+            if (boldMatch) {
+                var _boldMatch_;
+                var _boldMatch__trim;
+                current.items.push({
+                    bold: boldMatch[1],
+                    rest: (_boldMatch__trim = (_boldMatch_ = boldMatch[2]) === null || _boldMatch_ === void 0 ? void 0 : _boldMatch_.trim()) !== null && _boldMatch__trim !== void 0 ? _boldMatch__trim : ""
+                });
+            } else {
+                current.items.push({
+                    bold: inner,
+                    rest: ""
+                });
+            }
+            continue;
+        }
+        if (p.endsWith(":") && p.length < 30) {
+            if (current) current.subheading = p;
+            continue;
+        }
+        const colonIdx = p.indexOf(": ");
+        if (colonIdx !== -1 && colonIdx < 30) {
+            if (current) rooms.push(current);
+            current = {
+                name: p.slice(0, colonIdx).trim(),
+                description: p.slice(colonIdx + 2).trim(),
+                subheading: "",
+                items: []
+            };
+        }
+    }
+    if (current) rooms.push(current);
+    return rooms;
+}
+function RoomChecklistSection(param) {
+    let { rooms } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "a5-rooms",
+        children: rooms.map((room, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "a5-room a5-room--checklist",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "a5-room__icon",
+                        "aria-hidden": "true",
+                        children: getRoomIcon(room.name)
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                        lineNumber: 426,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "a5-room__content",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "a5-room__name",
+                                children: room.name
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 428,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "a5-room__body",
+                                children: room.description
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 429,
+                                columnNumber: 13
+                            }, this),
+                            room.subheading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "a5-room__subheading",
+                                children: room.subheading
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 430,
+                                columnNumber: 33
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                className: "a5-room__checklist",
+                                children: room.items.map((item, j)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "a5-room__check-item",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "a5-room__check-box",
+                                                "aria-hidden": "true",
+                                                children: "□"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                                lineNumber: 434,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "a5-room__check-text",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                        children: item.bold
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                                        lineNumber: 436,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    item.rest && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                        children: [
+                                                            " — ",
+                                                            item.rest
+                                                        ]
+                                                    }, void 0, true)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                                lineNumber: 435,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, j, true, {
+                                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                        lineNumber: 433,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                                lineNumber: 431,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                        lineNumber: 427,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, i, true, {
+                fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                lineNumber: 425,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+        lineNumber: 423,
+        columnNumber: 5
+    }, this);
+}
+_c6 = RoomChecklistSection;
 function A5ArticleBody(param) {
     let { paragraphs } = param;
     const elements = [];
@@ -557,21 +874,22 @@ function A5ArticleBody(param) {
                     rowParas.push(paragraphs[j]);
                     j++;
                 }
-                const rows = parseTableRows(rowParas);
+                const { headers, rows } = parseTableRows(rowParas);
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     id: id,
                     className: "article-page__h2",
                     children: headingText
                 }, "h-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 322,
+                    lineNumber: 473,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LocationTable, {
+                    headers: headers,
                     rows: rows
                 }, "table-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 324,
+                    lineNumber: 475,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -591,14 +909,14 @@ function A5ArticleBody(param) {
                     children: headingText
                 }, "h-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 338,
+                    lineNumber: 489,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AssessmentScale, {
                     levels: levels
                 }, "assess-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 340,
+                    lineNumber: 491,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -618,14 +936,14 @@ function A5ArticleBody(param) {
                     children: headingText
                 }, "h-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 354,
+                    lineNumber: 505,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChecklistSection, {
                     groups: groups
                 }, "check-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 356,
+                    lineNumber: 507,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -645,14 +963,71 @@ function A5ArticleBody(param) {
                     children: headingText
                 }, "h-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 370,
+                    lineNumber: 521,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RoomSection, {
                     rooms: rooms
                 }, "rooms-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 372,
+                    lineNumber: 523,
+                    columnNumber: 23
+                }, this));
+                i = j;
+                continue;
+            }
+            if (matchesPrefix(headingText, ROOM_CHECKLIST_HEADING_PREFIXES)) {
+                const rcParas = [];
+                let j = i + 1;
+                while(j < paragraphs.length && !paragraphs[j].startsWith("## ")){
+                    rcParas.push(paragraphs[j]);
+                    j++;
+                }
+                const rooms = parseRoomChecklist(rcParas);
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    id: id,
+                    className: "article-page__h2",
+                    children: headingText
+                }, "h-".concat(i), false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 537,
+                    columnNumber: 11
+                }, this));
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RoomChecklistSection, {
+                    rooms: rooms
+                }, "rc-".concat(i), false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 539,
+                    columnNumber: 23
+                }, this));
+                i = j;
+                continue;
+            }
+            if (matchesPrefix(headingText, HYGRO_HEADING_PREFIXES)) {
+                const hygroParas = [];
+                let j = i + 1;
+                while(j < paragraphs.length && !paragraphs[j].startsWith("## ")){
+                    hygroParas.push(paragraphs[j]);
+                    j++;
+                }
+                const { intro, subheading, headers, rows } = parseHygroRows(hygroParas);
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    id: id,
+                    className: "article-page__h2",
+                    children: headingText
+                }, "h-".concat(i), false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 553,
+                    columnNumber: 11
+                }, this));
+                elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HygroTable, {
+                    intro: intro,
+                    subheading: subheading,
+                    headers: headers,
+                    rows: rows
+                }, "hygro-".concat(i), false, {
+                    fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
+                    lineNumber: 555,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -671,14 +1046,14 @@ function A5ArticleBody(param) {
                     children: headingText
                 }, "h-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 385,
+                    lineNumber: 568,
                     columnNumber: 11
                 }, this));
                 elements.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BulletSection, {
                     paragraphs: bulletParas
                 }, "bullets-".concat(i), false, {
                     fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                    lineNumber: 387,
+                    lineNumber: 570,
                     columnNumber: 23
                 }, this));
                 i = j;
@@ -691,7 +1066,7 @@ function A5ArticleBody(param) {
                 children: headingText
             }, "h-".concat(i), false, {
                 fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-                lineNumber: 394,
+                lineNumber: 577,
                 columnNumber: 9
             }, this));
             i++;
@@ -703,7 +1078,7 @@ function A5ArticleBody(param) {
             children: para
         }, i, false, {
             fileName: "[project]/src/features/articles/components/A5ArticleBody.tsx",
-            lineNumber: 402,
+            lineNumber: 585,
             columnNumber: 7
         }, this));
         i++;
@@ -712,14 +1087,16 @@ function A5ArticleBody(param) {
         children: elements
     }, void 0, false);
 }
-_c5 = A5ArticleBody;
-var _c, _c1, _c2, _c3, _c4, _c5;
+_c7 = A5ArticleBody;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
 __turbopack_context__.k.register(_c, "AssessmentScale");
 __turbopack_context__.k.register(_c1, "LocationTable");
 __turbopack_context__.k.register(_c2, "ChecklistSection");
 __turbopack_context__.k.register(_c3, "RoomSection");
 __turbopack_context__.k.register(_c4, "BulletSection");
-__turbopack_context__.k.register(_c5, "A5ArticleBody");
+__turbopack_context__.k.register(_c5, "HygroTable");
+__turbopack_context__.k.register(_c6, "RoomChecklistSection");
+__turbopack_context__.k.register(_c7, "A5ArticleBody");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

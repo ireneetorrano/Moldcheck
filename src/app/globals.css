@@ -2650,6 +2650,52 @@ a.contact-info-card__value:hover { color: var(--mc-teal-mid); }
   flex-shrink: 0;
   margin-top: 0.05em;
 }
+
+/* ── A5 Article: Hygrometer table (ES) ───────────────────────────────────── */
+.a5-hygro { margin: 0.5rem 0 1.5rem; }
+.a5-hygro__subheading {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--mc-teal-dark);
+  margin: 1rem 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── A5 Article: Room checklist (ES) ─────────────────────────────────────── */
+.a5-room--checklist .a5-room__subheading {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--mc-teal-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.75rem 0 0.4rem;
+}
+.a5-room__checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.a5-room__check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--mc-ink);
+}
+.a5-room__check-box {
+  flex-shrink: 0;
+  color: var(--mc-teal-dark);
+  font-size: 1rem;
+  margin-top: 0.05em;
+}
+.a5-room__check-text strong {
+  color: var(--mc-ink);
+}
 /* ── A5 Article: Room-by-room blocks ─────────────────────────────────────── */
 .a5-rooms {
   display: grid;
