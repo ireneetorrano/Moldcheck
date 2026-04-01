@@ -1,15 +1,19 @@
 import type { ActiveLocale } from "@/config/locales";
+import { isActiveLocale } from "@/config/locales";
+import { notFound } from "next/navigation";
 import { getAboutContent } from "@/features/content/data/aboutContent";
 import { buildGlobalPageMetadata } from "@/lib/sanity/pages";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: ActiveLocale }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  if (!isActiveLocale(locale)) return {};
   return buildGlobalPageMetadata(locale, "about");
 }
 
-export default async function AboutPage({ params }: { params: Promise<{ locale: ActiveLocale }> }) {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const c = getAboutContent(locale);
+  if (!isActiveLocale(locale)) notFound();
+  const c = getAboutContent(locale as ActiveLocale);
   const behindParagraphs = c.behindBody.split("\n\n").filter(Boolean);
 
   return (

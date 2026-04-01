@@ -141,15 +141,13 @@ export function getAboutContent(locale: ActiveLocale): AboutLocaleContent {
 }
 
 export function getAboutFallbackContent(locale: ActiveLocale): GlobalPageContent {
-  const content = aboutContentByLocale[locale];
-
-  if (!content) {
-    throw new Error(`Missing about fallback content for locale: ${locale}`);
-  }
+  // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+  const content = aboutContentByLocale[locale] ?? aboutContentByLocale.en;
+  const safeLocale: ActiveLocale = aboutContentByLocale[locale] ? locale : "en";
 
   return {
     pageKey: "about",
-    language: locale,
+    language: safeLocale,
     translationGroup: "about",
     title: content.title,
     eyebrow: content.eyebrow,

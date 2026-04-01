@@ -909,15 +909,13 @@ export function getServicesContent(locale: ActiveLocale): ServicesLocaleContent 
 }
 
 export function getServicesFallbackContent(locale: ActiveLocale): GlobalPageContent {
-  const content = servicesContentByLocale[locale];
-
-  if (!content) {
-    throw new Error(`Missing services fallback content for locale: ${locale}`);
-  }
+  // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+  const content = servicesContentByLocale[locale] ?? servicesContentByLocale.en;
+  const safeLocale: ActiveLocale = servicesContentByLocale[locale] ? locale : "en";
 
   return {
     pageKey: "services",
-    language: locale,
+    language: safeLocale,
     translationGroup: "services",
     title: content.title,
     eyebrow: content.eyebrow,
