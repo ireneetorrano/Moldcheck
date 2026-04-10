@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+ 
 
 export const metadata: Metadata = {
   title: "MoldCheck.pt",
@@ -14,7 +16,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt">
-      <body>{children}</body>
+      <body>
+        {children}<SpeedInsights />
+      </body>
     </html>
   );
 }
