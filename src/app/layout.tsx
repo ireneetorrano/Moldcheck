@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
- 
 
 export const metadata: Metadata = {
   title: "MoldCheck.pt",
