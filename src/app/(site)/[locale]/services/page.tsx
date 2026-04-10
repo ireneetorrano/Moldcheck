@@ -204,7 +204,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         </div>
       </section>
 
-      {/* ── 6. Coverage + Pricing + Disclosure ──────────────────────────── */}
+      {/* ── 6. Coverage + Pricing ───────────────────────────────────────── */}
       <section className="services-footer-info">
         <div className="services-footer-info__inner">
           <div className="services-footer-info__block">
@@ -216,9 +216,6 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
             <p className="services-footer-info__body">{c.pricingBody}</p>
           </div>
         </div>
-        {c.disclosureText && (
-          <p className="services-footer-info__disclosure">{c.disclosureText}</p>
-        )}
       </section>
 
     </div>

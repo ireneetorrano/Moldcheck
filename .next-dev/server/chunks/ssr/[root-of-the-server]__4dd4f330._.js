@@ -455,13 +455,12 @@ function getAboutContent(locale) {
     return aboutContentByLocale[locale] ?? aboutContentByLocale.en;
 }
 function getAboutFallbackContent(locale) {
-    const content = aboutContentByLocale[locale];
-    if (!content) {
-        throw new Error(`Missing about fallback content for locale: ${locale}`);
-    }
+    // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+    const content = aboutContentByLocale[locale] ?? aboutContentByLocale.en;
+    const safeLocale = aboutContentByLocale[locale] ? locale : "en";
     return {
         pageKey: "about",
-        language: locale,
+        language: safeLocale,
         translationGroup: "about",
         title: content.title,
         eyebrow: content.eyebrow,
@@ -2363,13 +2362,12 @@ function getServicesContent(locale) {
     return servicesContentByLocale[locale] ?? servicesContentByLocale.en;
 }
 function getServicesFallbackContent(locale) {
-    const content = servicesContentByLocale[locale];
-    if (!content) {
-        throw new Error(`Missing services fallback content for locale: ${locale}`);
-    }
+    // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+    const content = servicesContentByLocale[locale] ?? servicesContentByLocale.en;
+    const safeLocale = servicesContentByLocale[locale] ? locale : "en";
     return {
         pageKey: "services",
-        language: locale,
+        language: safeLocale,
         translationGroup: "services",
         title: content.title,
         eyebrow: content.eyebrow,
@@ -4990,6 +4988,9 @@ __turbopack_context__.s([
     ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/locales.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$api$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next/dist/api/navigation.react-server.js [app-rsc] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/navigation.react-server.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/content/components/GlobalPageBlocks.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/sanity/pages.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$TrustBar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/layout/TrustBar.tsx [app-rsc] (ecmascript)");
@@ -5007,20 +5008,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$c
 ;
 ;
 ;
+;
+;
 async function generateMetadata({ params }) {
     const { locale } = await params;
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["isActiveLocale"])(locale)) return {};
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buildGlobalPageMetadata"])(locale, "home");
 }
 async function LocaleHomePage({ params }) {
     const { locale } = await params;
-    const page = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPageContent"])(locale, "home");
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$locales$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["isActiveLocale"])(locale)) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
+    const activeLocale = locale;
+    const page = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$sanity$2f$pages$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getGlobalPageContent"])(activeLocale, "home");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "home-hero-group",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: `home-hero home-hero--${locale}`,
+                        className: `home-hero home-hero--${activeLocale}`,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "home-hero__center",
                             children: [
@@ -5029,7 +5035,7 @@ async function LocaleHomePage({ params }) {
                                     children: page.eyebrow
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 34,
                                     columnNumber: 29
                                 }, this) : null,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -5037,7 +5043,7 @@ async function LocaleHomePage({ params }) {
                                     children: page.heroTitle ?? page.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 page.heroBody ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5045,7 +5051,7 @@ async function LocaleHomePage({ params }) {
                                     children: page.heroBody
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 36,
                                     columnNumber: 30
                                 }, this) : null,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5057,7 +5063,7 @@ async function LocaleHomePage({ params }) {
                                             children: page.heroPrimaryCtaLabel
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 39,
                                             columnNumber: 17
                                         }, this) : null,
                                         page.heroSecondaryCtaLabel && page.heroSecondaryCtaHref ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -5066,72 +5072,72 @@ async function LocaleHomePage({ params }) {
                                             children: page.heroSecondaryCtaLabel
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 42,
                                             columnNumber: 17
                                         }, this) : null
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                            lineNumber: 28,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                        lineNumber: 27,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     page.trustBarText ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$TrustBar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TrustBar"], {
                         text: page.trustBarText
                     }, void 0, false, {
                         fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                        lineNumber: 43,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 26,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$HomeProblemSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HomeProblemSection"], {
-                locale: locale
+                locale: activeLocale
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$HomeConflictSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HomeConflictSection"], {
-                locale: locale
+                locale: activeLocale
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 47,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$HomeFeaturedSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HomeFeaturedSection"], {
-                locale: locale
+                locale: activeLocale
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 48,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$HomeNextStepsSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HomeNextStepsSection"], {
-                locale: locale
+                locale: activeLocale
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 49,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$HomeAboutSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HomeAboutSection"], {
-                locale: locale
+                locale: activeLocale
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 50,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$content$2f$components$2f$GlobalPageBlocks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GlobalPageBlocks"], {
@@ -5139,7 +5145,7 @@ async function LocaleHomePage({ params }) {
                 disclosureVariant: "homepage"
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/page.tsx",
-                lineNumber: 51,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]

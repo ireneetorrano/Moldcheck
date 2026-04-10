@@ -3694,11 +3694,11 @@ const a4TocItems = {
             label: "O mercado"
         },
         {
-            id: "a-ligao-com-a-sade-que-raramente--feita",
+            id: "a-ligao-com-a-sade-que-raramente-feita",
             label: "Saúde"
         },
         {
-            id: "o-que-este-site--e-o-que-no-",
+            id: "o-que-este-site-e-o-que-no-",
             label: "Este site"
         },
         {
@@ -3732,7 +3732,7 @@ const a4TocItems = {
             label: "Personal"
         },
         {
-            id: "what-moldcheckpt-is--and-what-it-isnt",
+            id: "what-moldcheckpt-is-and-what-it-isnt",
             label: "About us"
         },
         {
@@ -3762,7 +3762,7 @@ const a4TocItems = {
             label: "Santé"
         },
         {
-            id: "ce-quest-ce-site--et-ce-quil-nest-pas",
+            id: "ce-quest-ce-site-et-ce-quil-nest-pas",
             label: "Ce site"
         },
         {
@@ -3792,7 +3792,7 @@ const a4TocItems = {
             label: "Gesundheit"
         },
         {
-            id: "was-diese-website-ist--und-was-sie-nicht-ist",
+            id: "was-diese-website-ist-und-was-sie-nicht-ist",
             label: "Diese Website"
         },
         {
@@ -3822,7 +3822,7 @@ const a4TocItems = {
             label: "Gezondheid"
         },
         {
-            id: "wat-deze-website-is--en-wat-ze-niet-is",
+            id: "wat-deze-website-is-en-wat-ze-niet-is",
             label: "Deze site"
         },
         {
@@ -3848,7 +3848,7 @@ const a4TocItems = {
             label: "Le cause"
         },
         {
-            id: "il-mercato-della-diagnosi-non--indipendente",
+            id: "il-mercato-della-diagnosi-non-indipendente",
             label: "Il mercato"
         },
         {
@@ -4204,7 +4204,7 @@ const a2TocItems = {
             label: "Localização"
         },
         {
-            id: "o-que-realmente-funciona--por-nvel-de-gravidade",
+            id: "o-que-realmente-funciona-por-nvel-de-gravidade",
             label: "O que funciona"
         },
         {
@@ -4242,7 +4242,7 @@ const a2TocItems = {
             label: "Location"
         },
         {
-            id: "what-actually-works--by-severity-level",
+            id: "what-actually-works-by-severity-level",
             label: "What works"
         },
         {
@@ -4280,7 +4280,7 @@ const a2TocItems = {
             label: "Localisation"
         },
         {
-            id: "ce-qui-fonctionne-vraiment--par-niveau-de-gravit",
+            id: "ce-qui-fonctionne-vraiment-par-niveau-de-gravit",
             label: "Ce qui marche"
         },
         {
@@ -4318,7 +4318,7 @@ const a2TocItems = {
             label: "Standort"
         },
         {
-            id: "was-wirklich-hilft--nach-schweregrad",
+            id: "was-wirklich-hilft-nach-schweregrad",
             label: "Was hilft"
         },
         {
@@ -4356,7 +4356,7 @@ const a2TocItems = {
             label: "Locatie"
         },
         {
-            id: "wat-echt-werkt--per-ernstniveau",
+            id: "wat-echt-werkt-per-ernstniveau",
             label: "Wat werkt"
         },
         {
@@ -4394,7 +4394,7 @@ const a2TocItems = {
             label: "Posizione"
         },
         {
-            id: "cosa-funziona-davvero--per-livello-di-gravit",
+            id: "cosa-funziona-davvero-per-livello-di-gravit",
             label: "Cosa funziona"
         },
         {
@@ -4432,7 +4432,7 @@ const a2TocItems = {
             label: "Ubicación"
         },
         {
-            id: "lo-que-realmente-funciona--por-nivel-de-gravedad",
+            id: "lo-que-realmente-funciona-por-nivel-de-gravedad",
             label: "Lo que funciona"
         },
         {
@@ -4465,7 +4465,7 @@ const a3TocItems = {
             label: "A OMS"
         },
         {
-            id: "como-o-bolor-afeta-o-organismo--os-mecanismos",
+            id: "como-o-bolor-afeta-o-organismo-os-mecanismos",
             label: "Mecanismos"
         },
         {
@@ -4477,7 +4477,7 @@ const a3TocItems = {
             label: "Sintomas"
         },
         {
-            id: "uma-nota-sobre-cirs--o-que--e-o-que-no-",
+            id: "uma-nota-sobre-cirs-o-que-e-o-que-no",
             label: "CIRS"
         },
         {
@@ -4503,7 +4503,7 @@ const a3TocItems = {
             label: "WHO"
         },
         {
-            id: "how-mold-affects-the-body--the-mechanisms",
+            id: "how-mold-affects-the-body-the-mechanisms",
             label: "Mechanisms"
         },
         {
@@ -4515,7 +4515,7 @@ const a3TocItems = {
             label: "Symptoms"
         },
         {
-            id: "a-note-on-cirs--what-it-is-and-what-it-isnt",
+            id: "a-note-on-cirs-what-it-is-and-what-it-isnt",
             label: "CIRS"
         },
         {
@@ -4549,7 +4549,7 @@ const a3TocItems = {
             label: "Groupes à risque"
         },
         {
-            id: "les-symptmes-qui-passent-inaperус",
+            id: "les-symptmes-qui-passent-inaperus",
             label: "Symptômes"
         },
         {
@@ -4714,19 +4714,19 @@ const a3TocItems = {
 const a1TocItems = {
     pt: [
         {
-            id: "primeiro-problema-bolor-negro-no--uma-espcie",
+            id: "primeiro-problema",
             label: "Espécies"
         },
         {
-            id: "stachybotrys-o-que--o-que-faz-e-o-que-no-faz",
+            id: "stachybotrys-o-que-o-que-faz-e-o-que-no-faz",
             label: "Stachybotrys"
         },
         {
-            id: "os-mitos-que-circulam--e-o-que-a-evidncia-diz",
+            id: "os-mitos-que-circulam-e-o-que-a-evidncia-diz",
             label: "Mitos"
         },
         {
-            id: "como-identificar-o-que-tem--na-prtica",
+            id: "como-identificar-o-que-tem-na-prtica",
             label: "Identificar"
         },
         {
@@ -4752,11 +4752,11 @@ const a1TocItems = {
             label: "Stachybotrys"
         },
         {
-            id: "the-myths--and-what-the-evidence-actually-says",
+            id: "the-myths-and-what-the-evidence-actually-says",
             label: "Myths"
         },
         {
-            id: "how-to-assess-what-you-have--in-practice",
+            id: "how-to-assess-what-you-have-in-practice",
             label: "Assess"
         },
         {
@@ -4774,15 +4774,15 @@ const a1TocItems = {
     ],
     fr: [
         {
-            id: "premier-problme--les-moisissures-noires-ne-sont-pas-une-seule-chose",
+            id: "premier-problme-les-moisissures-noires-ne-sont-pas-une-seule-chose",
             label: "Espèces"
         },
         {
-            id: "stachybotrys--ce-quil-est-ce-quil-fait-ce-quil-ne-fait-pas",
+            id: "stachybotrys-ce-quil-est-ce-quil-fait-ce-quil-ne-fait-pas",
             label: "Stachybotrys"
         },
         {
-            id: "les-mythes--et-ce-que-les-preuves-disent-vraiment",
+            id: "les-mythes-et-ce-que-les-preuves-disent-vraiment",
             label: "Mythes"
         },
         {
@@ -4808,7 +4808,7 @@ const a1TocItems = {
             label: "Stachybotrys"
         },
         {
-            id: "die-mythen--und-was-die-evidenz-wirklich-sagt",
+            id: "die-mythen-und-was-die-evidenz-wirklich-sagt",
             label: "Mythen"
         },
         {
@@ -4834,7 +4834,7 @@ const a1TocItems = {
             label: "Stachybotrys"
         },
         {
-            id: "de-mythen--en-wat-het-bewijs-werkelijk-zegt",
+            id: "de-mythen-en-wat-het-bewijs-werkelijk-zegt",
             label: "Mythen"
         },
         {

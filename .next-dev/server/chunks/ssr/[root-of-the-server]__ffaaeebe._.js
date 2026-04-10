@@ -805,13 +805,12 @@ function getServicesContent(locale) {
     return servicesContentByLocale[locale] ?? servicesContentByLocale.en;
 }
 function getServicesFallbackContent(locale) {
-    const content = servicesContentByLocale[locale];
-    if (!content) {
-        throw new Error(`Missing services fallback content for locale: ${locale}`);
-    }
+    // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+    const content = servicesContentByLocale[locale] ?? servicesContentByLocale.en;
+    const safeLocale = servicesContentByLocale[locale] ? locale : "en";
     return {
         pageKey: "services",
-        language: locale,
+        language: safeLocale,
         translationGroup: "services",
         title: content.title,
         eyebrow: content.eyebrow,
@@ -1006,13 +1005,12 @@ function getAboutContent(locale) {
     return aboutContentByLocale[locale] ?? aboutContentByLocale.en;
 }
 function getAboutFallbackContent(locale) {
-    const content = aboutContentByLocale[locale];
-    if (!content) {
-        throw new Error(`Missing about fallback content for locale: ${locale}`);
-    }
+    // Fall back to English if locale has no content (e.g. invalid locale passed at runtime)
+    const content = aboutContentByLocale[locale] ?? aboutContentByLocale.en;
+    const safeLocale = aboutContentByLocale[locale] ? locale : "en";
     return {
         pageKey: "about",
-        language: locale,
+        language: safeLocale,
         translationGroup: "about",
         title: content.title,
         eyebrow: content.eyebrow,
@@ -3098,76 +3096,66 @@ async function ServicesPage({ params }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "services-footer-info",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "services-footer-info__inner",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "services-footer-info__block",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "services-footer-info__title",
-                                        children: c.coverageTitle
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                        lineNumber: 211,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "services-footer-info__body",
-                                        children: c.coverageBody
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                        lineNumber: 212,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                lineNumber: 210,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "services-footer-info__block",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "services-footer-info__title",
-                                        children: c.pricingTitle
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                        lineNumber: 215,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "services-footer-info__body",
-                                        children: c.pricingBody
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                        lineNumber: 216,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                                lineNumber: 214,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                        lineNumber: 209,
-                        columnNumber: 9
-                    }, this),
-                    c.disclosureText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "services-footer-info__disclosure",
-                        children: c.disclosureText
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
-                        lineNumber: 220,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "services-footer-info__inner",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "services-footer-info__block",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "services-footer-info__title",
+                                    children: c.coverageTitle
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                                    lineNumber: 211,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "services-footer-info__body",
+                                    children: c.coverageBody
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                                    lineNumber: 212,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                            lineNumber: 210,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "services-footer-info__block",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "services-footer-info__title",
+                                    children: c.pricingTitle
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                                    lineNumber: 215,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "services-footer-info__body",
+                                    children: c.pricingBody
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                                    lineNumber: 216,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                            lineNumber: 214,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
+                    lineNumber: 209,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/app/(site)/[locale]/services/page.tsx",
                 lineNumber: 208,
                 columnNumber: 7
