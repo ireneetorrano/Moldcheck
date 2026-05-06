@@ -45,16 +45,16 @@ export const STATIC_SECURITY_HEADERS: SecurityHeader[] = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts: self + Next.js inline bootstrap + Vercel analytics
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com",
+      // Scripts: self + Next.js inline bootstrap + Vercel analytics + Google Analytics
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://www.googletagmanager.com https://www.google-analytics.com",
       // Styles: self + inline (required by Next.js)
       "style-src 'self' 'unsafe-inline'",
       // Images: self + data URIs + Sanity CDN + any HTTPS source for user-uploaded images
       "img-src 'self' data: https://cdn.sanity.io https:",
       // Fonts: self
       "font-src 'self'",
-      // Connections: self + Supabase + Resend + Brevo + Vercel analytics
-      "connect-src 'self' https://*.supabase.co https://api.resend.com https://api.brevo.com https://vitals.vercel-insights.com",
+      // Connections: self + Supabase + Resend + Brevo + Vercel analytics + Google Analytics
+      "connect-src 'self' https://*.supabase.co https://api.resend.com https://api.brevo.com https://vitals.vercel-insights.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com",
       // Frames: none
       "frame-src 'none'",
       // Objects: none
