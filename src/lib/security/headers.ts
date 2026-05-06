@@ -71,10 +71,35 @@ export const STATIC_SECURITY_HEADERS: SecurityHeader[] = [
 
 /**
  * Headers added by middleware on every response (can be dynamic).
- * Kept minimal — the heavy lifting is done by next.config.ts.
+ * Must include CSP because middleware responses take precedence over
+ * next.config.ts static headers — the static headers never reach
+ * responses that pass through the intl middleware.
  */
 export const MIDDLEWARE_SECURITY_HEADERS: Record<string, string> = {
   "X-Content-Type-Options": "nosniff",
   "X-Frame-Options": "SAMEORIGIN",
   "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Content-Security-Policy": [
+    "default-src 'self'",
+    // Scripts: self + Next.js inline bootstrap + Vercel analytics + Google Analytics
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://www.googletagmanager.com https://www.google-analytics.com",
+    // Styles: self + inline (required by Next.js)
+    "style-src 'self' 'unsafe-inline'",
+    // Images: self + data URIs + Sanity CDN + GA pixel + GTM
+    "img-src 'self' data: https://cdn.sanity.io https://www.google-analytics.com https://www.googletagmanager.com https:",
+    // Fonts: self
+    "font-src 'self'",
+    // Connections: self + Supabase + Resend + Brevo + Vercel analytics + Google Analytics
+    "connect-src 'self' https://*.supabase.co https://api.resend.com https://api.brevo.com https://vitals.vercel-insights.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net",
+    // Frames: none
+    "frame-src 'none'",
+    // Objects: none
+    "object-src 'none'",
+    // Base URI: self only
+    "base-uri 'self'",
+    // Form actions: self only
+    "form-action 'self'",
+    // Upgrade insecure requests in production
+    "upgrade-insecure-requests",
+  ].join("; "),
 };
