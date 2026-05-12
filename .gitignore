@@ -1,5 +1,7 @@
 node_modules/
 .next/
+.kiro/
+_test_
 .next-dev/
 next-dist/
 *.log
