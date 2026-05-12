@@ -71,6 +71,7 @@ declare namespace __next_route_internal_types__ {
     | `/${SafeSlug<T>}/tools`
     | `/${SafeSlug<T>}/tools/${SafeSlug<T>}`
     | `/api/tools/${SafeSlug<T>}`
+    | `/studio/${OptionalCatchAllSlug<T>}`
 
   type RouteImpl<T> = 
     | StaticRoutes

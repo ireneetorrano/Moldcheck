@@ -44,7 +44,13 @@ function isBotPath(pathname: string): boolean {
 
 // ── Security header helper ────────────────────────────────────────────────
 
-function addSecurityHeaders(res: NextResponse): NextResponse {
+function addSecurityHeaders(res: NextResponse, pathname: string): NextResponse {
+  // Skip CSP and restrictive headers for Sanity Studio — it makes many
+  // cross-origin requests to *.api.sanity.io, *.sanity.io, and uses iframes
+  // that would all be blocked by the app's strict CSP.
+  if (pathname.startsWith("/studio")) {
+    return res;
+  }
   for (const [key, value] of Object.entries(MIDDLEWARE_SECURITY_HEADERS)) {
     res.headers.set(key, value);
   }
@@ -65,6 +71,7 @@ export default function middleware(req: NextRequest): NextResponse {
     console.info(`[middleware] bot path rejected: ${pathname}`);
     return addSecurityHeaders(
       new NextResponse(null, { status: 404 }),
+      pathname,
     );
   }
 
@@ -72,14 +79,14 @@ export default function middleware(req: NextRequest): NextResponse {
   const res = intlMiddleware(req) as NextResponse;
 
   // 3. Add security headers to every response
-  addSecurityHeaders(res);
+  addSecurityHeaders(res, pathname);
 
   return res;
 }
 
 export const config = {
-  // Match all paths except Next.js internals and static files
+  // Match all paths except Next.js internals, static files, and Sanity Studio
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|icons/|img/|flags/|checklists/).*)",
+    "/((?!_next/static|_next/image|favicon.ico|icons/|img/|flags/|checklists/|studio).*)",
   ],
 };

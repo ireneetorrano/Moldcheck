@@ -1,6 +1,6 @@
 [
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|_next\\/image|favicon.ico|icons\\/|img\\/|flags\\/|checklists\\/).*))(\\\\.json)?[\\/#\\?]?$",
-    "originalSource": "/((?!_next/static|_next/image|favicon.ico|icons/|img/|flags/|checklists/).*)"
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|_next\\/image|favicon.ico|icons\\/|img\\/|flags\\/|checklists\\/|studio).*))(\\\\.json)?[\\/#\\?]?$",
+    "originalSource": "/((?!_next/static|_next/image|favicon.ico|icons/|img/|flags/|checklists/|studio).*)"
   }
 ]
